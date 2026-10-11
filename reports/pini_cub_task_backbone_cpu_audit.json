@@ -1,0 +1,27 @@
+{
+  "pid": 2545536,
+  "device": "cpu",
+  "gpu_jobs_started": false,
+  "formal_training_started": false,
+  "subject_ids": [
+    0,
+    4796
+  ],
+  "checkpoint_sha256": "22cd942efcc814a30cbfae8c03beaf9ed02501a6d394a1b34255ffda14759635",
+  "backbone_sha256": "fad31642590c6eec95a2a1ef03dc6186668b7e988e5a5d47ad877dedc8443ee1",
+  "backbone_sha256_scope": "full torchvision network state_dict, including fc",
+  "spatial_shape": [
+    2,
+    512,
+    7,
+    7
+  ],
+  "feature_channels": 512,
+  "class_logits_vs_full_network_max_abs": 0.0,
+  "input_gradient_max_abs": 13.501877784729004,
+  "frozen_parameter_gradients_absent": true,
+  "batchnorm_frozen": true,
+  "backbone_supervision": "CUB200 species class labels on 4796 train images; 1198 validation images select epoch11; test excluded",
+  "concept_supervision": "Koh species-level112 binary attributes for training; unchanged core BCE; image-level112 certainty>=3 targets only for evaluation",
+  "namespace": "rn18_task_pretrained_cub_train_val_selected"
+}

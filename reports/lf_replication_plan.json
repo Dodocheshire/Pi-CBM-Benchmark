@@ -1,0 +1,890 @@
+{
+  "supervisor_pid": 2546477,
+  "workers": 2,
+  "device": "cpu",
+  "seed42_reference_unchanged": true,
+  "jobs": [
+    {
+      "dataset": "rival10",
+      "backbone": "resnet18",
+      "seed": 43,
+      "source": "/home/pengcheng/Pi-CBM-Benchmark/artifacts/common/rival10/rn18_imagenet",
+      "teacher": "/home/pengcheng/Pi-CBM-Benchmark/artifacts/common/rival10/teacher",
+      "output": "/home/pengcheng/Pi-CBM-Benchmark/artifacts/matched/lf/rival10/rn18_imagenet/seed43",
+      "train_views": [
+        "original"
+      ],
+      "reference": "/home/pengcheng/Pi-CBM-Benchmark/artifacts/matched/lf/rival10/rn18_imagenet/seed42/report.json",
+      "reference_sha256": "fe8b38461e3b1f1e7f6728bbd0cebcbf5732cc975dbfe36845b0c9b3b0b50a36",
+      "source_manifest_sha256": "631f73c718236b6564aa1b752d54f00da5bb62443de485bd0d417143d0edb624",
+      "teacher_metadata_sha256": "7723273e624632a92af827981f1be044e20d1676e201cdf00f126fe5d5996c32",
+      "core_training": {
+        "epochs": 20,
+        "projection_steps": 1000,
+        "saga_steps": 1000,
+        "activation_cutoff": 0.25,
+        "interpretability_cutoff": 0.45,
+        "include_adapter_val": false,
+        "validation_split": "val"
+      }
+    },
+    {
+      "dataset": "rival10",
+      "backbone": "resnet18",
+      "seed": 44,
+      "source": "/home/pengcheng/Pi-CBM-Benchmark/artifacts/common/rival10/rn18_imagenet",
+      "teacher": "/home/pengcheng/Pi-CBM-Benchmark/artifacts/common/rival10/teacher",
+      "output": "/home/pengcheng/Pi-CBM-Benchmark/artifacts/matched/lf/rival10/rn18_imagenet/seed44",
+      "train_views": [
+        "original"
+      ],
+      "reference": "/home/pengcheng/Pi-CBM-Benchmark/artifacts/matched/lf/rival10/rn18_imagenet/seed42/report.json",
+      "reference_sha256": "fe8b38461e3b1f1e7f6728bbd0cebcbf5732cc975dbfe36845b0c9b3b0b50a36",
+      "source_manifest_sha256": "631f73c718236b6564aa1b752d54f00da5bb62443de485bd0d417143d0edb624",
+      "teacher_metadata_sha256": "7723273e624632a92af827981f1be044e20d1676e201cdf00f126fe5d5996c32",
+      "core_training": {
+        "epochs": 20,
+        "projection_steps": 1000,
+        "saga_steps": 1000,
+        "activation_cutoff": 0.25,
+        "interpretability_cutoff": 0.45,
+        "include_adapter_val": false,
+        "validation_split": "val"
+      }
+    },
+    {
+      "dataset": "rival10",
+      "backbone": "resnet18",
+      "seed": 43,
+      "source": "/home/pengcheng/Pi-CBM-Benchmark/artifacts/common/rival10/rn18_imagenet",
+      "teacher": "/home/pengcheng/Pi-CBM-Benchmark/artifacts/common/rival10/teacher",
+      "output": "/home/pengcheng/Pi-CBM-Benchmark/artifacts/matched/lf/rival10/rn18_imagenet/paired_augmentation/seed43",
+      "train_views": [
+        "original",
+        "changed"
+      ],
+      "reference": "/home/pengcheng/Pi-CBM-Benchmark/artifacts/matched/lf/rival10/rn18_imagenet/paired_augmentation/seed42/report.json",
+      "reference_sha256": "0985eaf9e8cc6b9b3d6fbc382bfe9177dc200bc8a1b2f47fb19fd9e2f2445fab",
+      "source_manifest_sha256": "631f73c718236b6564aa1b752d54f00da5bb62443de485bd0d417143d0edb624",
+      "teacher_metadata_sha256": "7723273e624632a92af827981f1be044e20d1676e201cdf00f126fe5d5996c32",
+      "core_training": {
+        "epochs": 20,
+        "projection_steps": 1000,
+        "saga_steps": 1000,
+        "activation_cutoff": 0.25,
+        "interpretability_cutoff": 0.45,
+        "include_adapter_val": false,
+        "validation_split": "val"
+      }
+    },
+    {
+      "dataset": "rival10",
+      "backbone": "resnet18",
+      "seed": 44,
+      "source": "/home/pengcheng/Pi-CBM-Benchmark/artifacts/common/rival10/rn18_imagenet",
+      "teacher": "/home/pengcheng/Pi-CBM-Benchmark/artifacts/common/rival10/teacher",
+      "output": "/home/pengcheng/Pi-CBM-Benchmark/artifacts/matched/lf/rival10/rn18_imagenet/paired_augmentation/seed44",
+      "train_views": [
+        "original",
+        "changed"
+      ],
+      "reference": "/home/pengcheng/Pi-CBM-Benchmark/artifacts/matched/lf/rival10/rn18_imagenet/paired_augmentation/seed42/report.json",
+      "reference_sha256": "0985eaf9e8cc6b9b3d6fbc382bfe9177dc200bc8a1b2f47fb19fd9e2f2445fab",
+      "source_manifest_sha256": "631f73c718236b6564aa1b752d54f00da5bb62443de485bd0d417143d0edb624",
+      "teacher_metadata_sha256": "7723273e624632a92af827981f1be044e20d1676e201cdf00f126fe5d5996c32",
+      "core_training": {
+        "epochs": 20,
+        "projection_steps": 1000,
+        "saga_steps": 1000,
+        "activation_cutoff": 0.25,
+        "interpretability_cutoff": 0.45,
+        "include_adapter_val": false,
+        "validation_split": "val"
+      }
+    },
+    {
+      "dataset": "rival10",
+      "backbone": "resnet50",
+      "seed": 43,
+      "source": "/home/pengcheng/Pi-CBM-Benchmark/artifacts/common/rival10/rn50_imagenet",
+      "teacher": "/home/pengcheng/Pi-CBM-Benchmark/artifacts/common/rival10/teacher",
+      "output": "/home/pengcheng/Pi-CBM-Benchmark/artifacts/matched/lf/rival10/rn50_imagenet/seed43",
+      "train_views": [
+        "original"
+      ],
+      "reference": "/home/pengcheng/Pi-CBM-Benchmark/artifacts/matched/lf/rival10/rn50_imagenet/seed42/report.json",
+      "reference_sha256": "7a236f038900da0c03d0d9c6499257157c1bfd14098e3c0d21b8b239979f1fe2",
+      "source_manifest_sha256": "a41e099b6b6556b2d0121353f083b4afac480f89184c9785c4e3819737e20ee4",
+      "teacher_metadata_sha256": "7723273e624632a92af827981f1be044e20d1676e201cdf00f126fe5d5996c32",
+      "core_training": {
+        "epochs": 20,
+        "projection_steps": 1000,
+        "saga_steps": 1000,
+        "activation_cutoff": 0.25,
+        "interpretability_cutoff": 0.45,
+        "include_adapter_val": false,
+        "validation_split": "val"
+      }
+    },
+    {
+      "dataset": "rival10",
+      "backbone": "resnet50",
+      "seed": 44,
+      "source": "/home/pengcheng/Pi-CBM-Benchmark/artifacts/common/rival10/rn50_imagenet",
+      "teacher": "/home/pengcheng/Pi-CBM-Benchmark/artifacts/common/rival10/teacher",
+      "output": "/home/pengcheng/Pi-CBM-Benchmark/artifacts/matched/lf/rival10/rn50_imagenet/seed44",
+      "train_views": [
+        "original"
+      ],
+      "reference": "/home/pengcheng/Pi-CBM-Benchmark/artifacts/matched/lf/rival10/rn50_imagenet/seed42/report.json",
+      "reference_sha256": "7a236f038900da0c03d0d9c6499257157c1bfd14098e3c0d21b8b239979f1fe2",
+      "source_manifest_sha256": "a41e099b6b6556b2d0121353f083b4afac480f89184c9785c4e3819737e20ee4",
+      "teacher_metadata_sha256": "7723273e624632a92af827981f1be044e20d1676e201cdf00f126fe5d5996c32",
+      "core_training": {
+        "epochs": 20,
+        "projection_steps": 1000,
+        "saga_steps": 1000,
+        "activation_cutoff": 0.25,
+        "interpretability_cutoff": 0.45,
+        "include_adapter_val": false,
+        "validation_split": "val"
+      }
+    },
+    {
+      "dataset": "rival10",
+      "backbone": "resnet50",
+      "seed": 43,
+      "source": "/home/pengcheng/Pi-CBM-Benchmark/artifacts/common/rival10/rn50_imagenet",
+      "teacher": "/home/pengcheng/Pi-CBM-Benchmark/artifacts/common/rival10/teacher",
+      "output": "/home/pengcheng/Pi-CBM-Benchmark/artifacts/matched/lf/rival10/rn50_imagenet/paired_augmentation/seed43",
+      "train_views": [
+        "original",
+        "changed"
+      ],
+      "reference": "/home/pengcheng/Pi-CBM-Benchmark/artifacts/matched/lf/rival10/rn50_imagenet/paired_augmentation/seed42/report.json",
+      "reference_sha256": "a804ab4232ead1b67f3bbcf8d2899144dce0fca98a89496d49bef171257d17ce",
+      "source_manifest_sha256": "a41e099b6b6556b2d0121353f083b4afac480f89184c9785c4e3819737e20ee4",
+      "teacher_metadata_sha256": "7723273e624632a92af827981f1be044e20d1676e201cdf00f126fe5d5996c32",
+      "core_training": {
+        "epochs": 20,
+        "projection_steps": 1000,
+        "saga_steps": 1000,
+        "activation_cutoff": 0.25,
+        "interpretability_cutoff": 0.45,
+        "include_adapter_val": false,
+        "validation_split": "val"
+      }
+    },
+    {
+      "dataset": "rival10",
+      "backbone": "resnet50",
+      "seed": 44,
+      "source": "/home/pengcheng/Pi-CBM-Benchmark/artifacts/common/rival10/rn50_imagenet",
+      "teacher": "/home/pengcheng/Pi-CBM-Benchmark/artifacts/common/rival10/teacher",
+      "output": "/home/pengcheng/Pi-CBM-Benchmark/artifacts/matched/lf/rival10/rn50_imagenet/paired_augmentation/seed44",
+      "train_views": [
+        "original",
+        "changed"
+      ],
+      "reference": "/home/pengcheng/Pi-CBM-Benchmark/artifacts/matched/lf/rival10/rn50_imagenet/paired_augmentation/seed42/report.json",
+      "reference_sha256": "a804ab4232ead1b67f3bbcf8d2899144dce0fca98a89496d49bef171257d17ce",
+      "source_manifest_sha256": "a41e099b6b6556b2d0121353f083b4afac480f89184c9785c4e3819737e20ee4",
+      "teacher_metadata_sha256": "7723273e624632a92af827981f1be044e20d1676e201cdf00f126fe5d5996c32",
+      "core_training": {
+        "epochs": 20,
+        "projection_steps": 1000,
+        "saga_steps": 1000,
+        "activation_cutoff": 0.25,
+        "interpretability_cutoff": 0.45,
+        "include_adapter_val": false,
+        "validation_split": "val"
+      }
+    },
+    {
+      "dataset": "rival10",
+      "backbone": "clip_RN50",
+      "seed": 43,
+      "source": "/home/pengcheng/Pi-CBM-Benchmark/artifacts/common/rival10/clip_RN50",
+      "teacher": "/home/pengcheng/Pi-CBM-Benchmark/artifacts/common/rival10/teacher",
+      "output": "/home/pengcheng/Pi-CBM-Benchmark/artifacts/matched/lf/rival10/clip_RN50/seed43",
+      "train_views": [
+        "original"
+      ],
+      "reference": "/home/pengcheng/Pi-CBM-Benchmark/artifacts/matched/lf/rival10/clip_RN50/seed42/report.json",
+      "reference_sha256": "0b24d3049c58557802a57ecfeef2427de8b69cb9c820ceeaf028c6fd2bf7f097",
+      "source_manifest_sha256": "0ca52b78ff6f78e4b8cbfc96838bebee449a9bead268443d639a92044feb719d",
+      "teacher_metadata_sha256": "7723273e624632a92af827981f1be044e20d1676e201cdf00f126fe5d5996c32",
+      "core_training": {
+        "epochs": 20,
+        "projection_steps": 1000,
+        "saga_steps": 1000,
+        "activation_cutoff": 0.25,
+        "interpretability_cutoff": 0.45,
+        "include_adapter_val": false,
+        "validation_split": "val"
+      }
+    },
+    {
+      "dataset": "rival10",
+      "backbone": "clip_RN50",
+      "seed": 44,
+      "source": "/home/pengcheng/Pi-CBM-Benchmark/artifacts/common/rival10/clip_RN50",
+      "teacher": "/home/pengcheng/Pi-CBM-Benchmark/artifacts/common/rival10/teacher",
+      "output": "/home/pengcheng/Pi-CBM-Benchmark/artifacts/matched/lf/rival10/clip_RN50/seed44",
+      "train_views": [
+        "original"
+      ],
+      "reference": "/home/pengcheng/Pi-CBM-Benchmark/artifacts/matched/lf/rival10/clip_RN50/seed42/report.json",
+      "reference_sha256": "0b24d3049c58557802a57ecfeef2427de8b69cb9c820ceeaf028c6fd2bf7f097",
+      "source_manifest_sha256": "0ca52b78ff6f78e4b8cbfc96838bebee449a9bead268443d639a92044feb719d",
+      "teacher_metadata_sha256": "7723273e624632a92af827981f1be044e20d1676e201cdf00f126fe5d5996c32",
+      "core_training": {
+        "epochs": 20,
+        "projection_steps": 1000,
+        "saga_steps": 1000,
+        "activation_cutoff": 0.25,
+        "interpretability_cutoff": 0.45,
+        "include_adapter_val": false,
+        "validation_split": "val"
+      }
+    },
+    {
+      "dataset": "rival10",
+      "backbone": "clip_RN50",
+      "seed": 43,
+      "source": "/home/pengcheng/Pi-CBM-Benchmark/artifacts/common/rival10/clip_RN50",
+      "teacher": "/home/pengcheng/Pi-CBM-Benchmark/artifacts/common/rival10/teacher",
+      "output": "/home/pengcheng/Pi-CBM-Benchmark/artifacts/matched/lf/rival10/clip_RN50/paired_augmentation/seed43",
+      "train_views": [
+        "original",
+        "changed"
+      ],
+      "reference": "/home/pengcheng/Pi-CBM-Benchmark/artifacts/matched/lf/rival10/clip_RN50/paired_augmentation/seed42/report.json",
+      "reference_sha256": "c20191574f681db481b0a7c48b122b671277e07331ed9ddc3f022c7be61ddd8d",
+      "source_manifest_sha256": "0ca52b78ff6f78e4b8cbfc96838bebee449a9bead268443d639a92044feb719d",
+      "teacher_metadata_sha256": "7723273e624632a92af827981f1be044e20d1676e201cdf00f126fe5d5996c32",
+      "core_training": {
+        "epochs": 20,
+        "projection_steps": 1000,
+        "saga_steps": 1000,
+        "activation_cutoff": 0.25,
+        "interpretability_cutoff": 0.45,
+        "include_adapter_val": false,
+        "validation_split": "val"
+      }
+    },
+    {
+      "dataset": "rival10",
+      "backbone": "clip_RN50",
+      "seed": 44,
+      "source": "/home/pengcheng/Pi-CBM-Benchmark/artifacts/common/rival10/clip_RN50",
+      "teacher": "/home/pengcheng/Pi-CBM-Benchmark/artifacts/common/rival10/teacher",
+      "output": "/home/pengcheng/Pi-CBM-Benchmark/artifacts/matched/lf/rival10/clip_RN50/paired_augmentation/seed44",
+      "train_views": [
+        "original",
+        "changed"
+      ],
+      "reference": "/home/pengcheng/Pi-CBM-Benchmark/artifacts/matched/lf/rival10/clip_RN50/paired_augmentation/seed42/report.json",
+      "reference_sha256": "c20191574f681db481b0a7c48b122b671277e07331ed9ddc3f022c7be61ddd8d",
+      "source_manifest_sha256": "0ca52b78ff6f78e4b8cbfc96838bebee449a9bead268443d639a92044feb719d",
+      "teacher_metadata_sha256": "7723273e624632a92af827981f1be044e20d1676e201cdf00f126fe5d5996c32",
+      "core_training": {
+        "epochs": 20,
+        "projection_steps": 1000,
+        "saga_steps": 1000,
+        "activation_cutoff": 0.25,
+        "interpretability_cutoff": 0.45,
+        "include_adapter_val": false,
+        "validation_split": "val"
+      }
+    },
+    {
+      "dataset": "cub",
+      "backbone": "resnet18",
+      "seed": 43,
+      "source": "/home/pengcheng/Pi-CBM-Benchmark/artifacts/common/cub/rn18_imagenet",
+      "teacher": "/home/pengcheng/Pi-CBM-Benchmark/artifacts/common/cub/teacher",
+      "output": "/home/pengcheng/Pi-CBM-Benchmark/artifacts/matched/lf/cub/rn18_imagenet/seed43",
+      "train_views": [
+        "original"
+      ],
+      "reference": "/home/pengcheng/Pi-CBM-Benchmark/artifacts/matched/lf/cub/rn18_imagenet/seed42/report.json",
+      "reference_sha256": "f2dcf9b8d7859a61d6092f413ff51e7db58cefed80d23a7e31ea75869481a69e",
+      "source_manifest_sha256": "792accb496a382b87997bd321e0f2fabf5afb35cb9695c9e7ea9a24915b5d4c5",
+      "teacher_metadata_sha256": "96d14b02ead12725ce2aaa854e469938aa5b233d411cbac3179acaa64e195641",
+      "core_training": {
+        "epochs": 20,
+        "projection_steps": 1000,
+        "saga_steps": 1000,
+        "activation_cutoff": 0.25,
+        "interpretability_cutoff": 0.45,
+        "include_adapter_val": false,
+        "validation_split": "val"
+      }
+    },
+    {
+      "dataset": "cub",
+      "backbone": "resnet18",
+      "seed": 44,
+      "source": "/home/pengcheng/Pi-CBM-Benchmark/artifacts/common/cub/rn18_imagenet",
+      "teacher": "/home/pengcheng/Pi-CBM-Benchmark/artifacts/common/cub/teacher",
+      "output": "/home/pengcheng/Pi-CBM-Benchmark/artifacts/matched/lf/cub/rn18_imagenet/seed44",
+      "train_views": [
+        "original"
+      ],
+      "reference": "/home/pengcheng/Pi-CBM-Benchmark/artifacts/matched/lf/cub/rn18_imagenet/seed42/report.json",
+      "reference_sha256": "f2dcf9b8d7859a61d6092f413ff51e7db58cefed80d23a7e31ea75869481a69e",
+      "source_manifest_sha256": "792accb496a382b87997bd321e0f2fabf5afb35cb9695c9e7ea9a24915b5d4c5",
+      "teacher_metadata_sha256": "96d14b02ead12725ce2aaa854e469938aa5b233d411cbac3179acaa64e195641",
+      "core_training": {
+        "epochs": 20,
+        "projection_steps": 1000,
+        "saga_steps": 1000,
+        "activation_cutoff": 0.25,
+        "interpretability_cutoff": 0.45,
+        "include_adapter_val": false,
+        "validation_split": "val"
+      }
+    },
+    {
+      "dataset": "cub",
+      "backbone": "resnet18",
+      "seed": 43,
+      "source": "/home/pengcheng/Pi-CBM-Benchmark/artifacts/common/cub/rn18_imagenet",
+      "teacher": "/home/pengcheng/Pi-CBM-Benchmark/artifacts/common/cub/teacher",
+      "output": "/home/pengcheng/Pi-CBM-Benchmark/artifacts/matched/lf/cub/rn18_imagenet/paired_augmentation/seed43",
+      "train_views": [
+        "original",
+        "changed"
+      ],
+      "reference": "/home/pengcheng/Pi-CBM-Benchmark/artifacts/matched/lf/cub/rn18_imagenet/paired_augmentation/seed42/report.json",
+      "reference_sha256": "4c94a5d8008d02177cebe58c0e60b06c24785339d0b73f32b14b97704cae94d4",
+      "source_manifest_sha256": "792accb496a382b87997bd321e0f2fabf5afb35cb9695c9e7ea9a24915b5d4c5",
+      "teacher_metadata_sha256": "96d14b02ead12725ce2aaa854e469938aa5b233d411cbac3179acaa64e195641",
+      "core_training": {
+        "epochs": 20,
+        "projection_steps": 1000,
+        "saga_steps": 1000,
+        "activation_cutoff": 0.25,
+        "interpretability_cutoff": 0.45,
+        "include_adapter_val": false,
+        "validation_split": "val"
+      }
+    },
+    {
+      "dataset": "cub",
+      "backbone": "resnet18",
+      "seed": 44,
+      "source": "/home/pengcheng/Pi-CBM-Benchmark/artifacts/common/cub/rn18_imagenet",
+      "teacher": "/home/pengcheng/Pi-CBM-Benchmark/artifacts/common/cub/teacher",
+      "output": "/home/pengcheng/Pi-CBM-Benchmark/artifacts/matched/lf/cub/rn18_imagenet/paired_augmentation/seed44",
+      "train_views": [
+        "original",
+        "changed"
+      ],
+      "reference": "/home/pengcheng/Pi-CBM-Benchmark/artifacts/matched/lf/cub/rn18_imagenet/paired_augmentation/seed42/report.json",
+      "reference_sha256": "4c94a5d8008d02177cebe58c0e60b06c24785339d0b73f32b14b97704cae94d4",
+      "source_manifest_sha256": "792accb496a382b87997bd321e0f2fabf5afb35cb9695c9e7ea9a24915b5d4c5",
+      "teacher_metadata_sha256": "96d14b02ead12725ce2aaa854e469938aa5b233d411cbac3179acaa64e195641",
+      "core_training": {
+        "epochs": 20,
+        "projection_steps": 1000,
+        "saga_steps": 1000,
+        "activation_cutoff": 0.25,
+        "interpretability_cutoff": 0.45,
+        "include_adapter_val": false,
+        "validation_split": "val"
+      }
+    },
+    {
+      "dataset": "cub",
+      "backbone": "resnet50",
+      "seed": 43,
+      "source": "/home/pengcheng/Pi-CBM-Benchmark/artifacts/common/cub/rn50_imagenet",
+      "teacher": "/home/pengcheng/Pi-CBM-Benchmark/artifacts/common/cub/teacher",
+      "output": "/home/pengcheng/Pi-CBM-Benchmark/artifacts/matched/lf/cub/rn50_imagenet/seed43",
+      "train_views": [
+        "original"
+      ],
+      "reference": "/home/pengcheng/Pi-CBM-Benchmark/artifacts/matched/lf/cub/rn50_imagenet/seed42/report.json",
+      "reference_sha256": "ae552a71385bbc1b8760f80535ce5235ff11211eb8bec7cbbac6e43a2e485109",
+      "source_manifest_sha256": "1ac231b69ad5fe410378aa6fecfd8232b2a0cbcdbb341b7ec41f6ea7bc5ed443",
+      "teacher_metadata_sha256": "96d14b02ead12725ce2aaa854e469938aa5b233d411cbac3179acaa64e195641",
+      "core_training": {
+        "epochs": 20,
+        "projection_steps": 1000,
+        "saga_steps": 1000,
+        "activation_cutoff": 0.25,
+        "interpretability_cutoff": 0.45,
+        "include_adapter_val": false,
+        "validation_split": "val"
+      }
+    },
+    {
+      "dataset": "cub",
+      "backbone": "resnet50",
+      "seed": 44,
+      "source": "/home/pengcheng/Pi-CBM-Benchmark/artifacts/common/cub/rn50_imagenet",
+      "teacher": "/home/pengcheng/Pi-CBM-Benchmark/artifacts/common/cub/teacher",
+      "output": "/home/pengcheng/Pi-CBM-Benchmark/artifacts/matched/lf/cub/rn50_imagenet/seed44",
+      "train_views": [
+        "original"
+      ],
+      "reference": "/home/pengcheng/Pi-CBM-Benchmark/artifacts/matched/lf/cub/rn50_imagenet/seed42/report.json",
+      "reference_sha256": "ae552a71385bbc1b8760f80535ce5235ff11211eb8bec7cbbac6e43a2e485109",
+      "source_manifest_sha256": "1ac231b69ad5fe410378aa6fecfd8232b2a0cbcdbb341b7ec41f6ea7bc5ed443",
+      "teacher_metadata_sha256": "96d14b02ead12725ce2aaa854e469938aa5b233d411cbac3179acaa64e195641",
+      "core_training": {
+        "epochs": 20,
+        "projection_steps": 1000,
+        "saga_steps": 1000,
+        "activation_cutoff": 0.25,
+        "interpretability_cutoff": 0.45,
+        "include_adapter_val": false,
+        "validation_split": "val"
+      }
+    },
+    {
+      "dataset": "cub",
+      "backbone": "resnet50",
+      "seed": 43,
+      "source": "/home/pengcheng/Pi-CBM-Benchmark/artifacts/common/cub/rn50_imagenet",
+      "teacher": "/home/pengcheng/Pi-CBM-Benchmark/artifacts/common/cub/teacher",
+      "output": "/home/pengcheng/Pi-CBM-Benchmark/artifacts/matched/lf/cub/rn50_imagenet/paired_augmentation/seed43",
+      "train_views": [
+        "original",
+        "changed"
+      ],
+      "reference": "/home/pengcheng/Pi-CBM-Benchmark/artifacts/matched/lf/cub/rn50_imagenet/paired_augmentation/seed42/report.json",
+      "reference_sha256": "f513b49f5650b1e3217e9ac272cede9c91d3e4e0f0daca6fdde9ceb46825e810",
+      "source_manifest_sha256": "1ac231b69ad5fe410378aa6fecfd8232b2a0cbcdbb341b7ec41f6ea7bc5ed443",
+      "teacher_metadata_sha256": "96d14b02ead12725ce2aaa854e469938aa5b233d411cbac3179acaa64e195641",
+      "core_training": {
+        "epochs": 20,
+        "projection_steps": 1000,
+        "saga_steps": 1000,
+        "activation_cutoff": 0.25,
+        "interpretability_cutoff": 0.45,
+        "include_adapter_val": false,
+        "validation_split": "val"
+      }
+    },
+    {
+      "dataset": "cub",
+      "backbone": "resnet50",
+      "seed": 44,
+      "source": "/home/pengcheng/Pi-CBM-Benchmark/artifacts/common/cub/rn50_imagenet",
+      "teacher": "/home/pengcheng/Pi-CBM-Benchmark/artifacts/common/cub/teacher",
+      "output": "/home/pengcheng/Pi-CBM-Benchmark/artifacts/matched/lf/cub/rn50_imagenet/paired_augmentation/seed44",
+      "train_views": [
+        "original",
+        "changed"
+      ],
+      "reference": "/home/pengcheng/Pi-CBM-Benchmark/artifacts/matched/lf/cub/rn50_imagenet/paired_augmentation/seed42/report.json",
+      "reference_sha256": "f513b49f5650b1e3217e9ac272cede9c91d3e4e0f0daca6fdde9ceb46825e810",
+      "source_manifest_sha256": "1ac231b69ad5fe410378aa6fecfd8232b2a0cbcdbb341b7ec41f6ea7bc5ed443",
+      "teacher_metadata_sha256": "96d14b02ead12725ce2aaa854e469938aa5b233d411cbac3179acaa64e195641",
+      "core_training": {
+        "epochs": 20,
+        "projection_steps": 1000,
+        "saga_steps": 1000,
+        "activation_cutoff": 0.25,
+        "interpretability_cutoff": 0.45,
+        "include_adapter_val": false,
+        "validation_split": "val"
+      }
+    },
+    {
+      "dataset": "cub",
+      "backbone": "clip_RN50",
+      "seed": 43,
+      "source": "/home/pengcheng/Pi-CBM-Benchmark/artifacts/common/cub/clip_RN50",
+      "teacher": "/home/pengcheng/Pi-CBM-Benchmark/artifacts/common/cub/teacher",
+      "output": "/home/pengcheng/Pi-CBM-Benchmark/artifacts/matched/lf/cub/clip_RN50/seed43",
+      "train_views": [
+        "original"
+      ],
+      "reference": "/home/pengcheng/Pi-CBM-Benchmark/artifacts/matched/lf/cub/clip_RN50/seed42/report.json",
+      "reference_sha256": "76508274265d9649d2000ed8a7aa025ae33e5e77149ab7bcc65f7129c597a9c7",
+      "source_manifest_sha256": "0ff5546e570cf9659e57271bd66fa8a14965b0c54efe542d1d1075c372826d18",
+      "teacher_metadata_sha256": "96d14b02ead12725ce2aaa854e469938aa5b233d411cbac3179acaa64e195641",
+      "core_training": {
+        "epochs": 20,
+        "projection_steps": 1000,
+        "saga_steps": 1000,
+        "activation_cutoff": 0.25,
+        "interpretability_cutoff": 0.45,
+        "include_adapter_val": false,
+        "validation_split": "val"
+      }
+    },
+    {
+      "dataset": "cub",
+      "backbone": "clip_RN50",
+      "seed": 44,
+      "source": "/home/pengcheng/Pi-CBM-Benchmark/artifacts/common/cub/clip_RN50",
+      "teacher": "/home/pengcheng/Pi-CBM-Benchmark/artifacts/common/cub/teacher",
+      "output": "/home/pengcheng/Pi-CBM-Benchmark/artifacts/matched/lf/cub/clip_RN50/seed44",
+      "train_views": [
+        "original"
+      ],
+      "reference": "/home/pengcheng/Pi-CBM-Benchmark/artifacts/matched/lf/cub/clip_RN50/seed42/report.json",
+      "reference_sha256": "76508274265d9649d2000ed8a7aa025ae33e5e77149ab7bcc65f7129c597a9c7",
+      "source_manifest_sha256": "0ff5546e570cf9659e57271bd66fa8a14965b0c54efe542d1d1075c372826d18",
+      "teacher_metadata_sha256": "96d14b02ead12725ce2aaa854e469938aa5b233d411cbac3179acaa64e195641",
+      "core_training": {
+        "epochs": 20,
+        "projection_steps": 1000,
+        "saga_steps": 1000,
+        "activation_cutoff": 0.25,
+        "interpretability_cutoff": 0.45,
+        "include_adapter_val": false,
+        "validation_split": "val"
+      }
+    },
+    {
+      "dataset": "cub",
+      "backbone": "clip_RN50",
+      "seed": 43,
+      "source": "/home/pengcheng/Pi-CBM-Benchmark/artifacts/common/cub/clip_RN50",
+      "teacher": "/home/pengcheng/Pi-CBM-Benchmark/artifacts/common/cub/teacher",
+      "output": "/home/pengcheng/Pi-CBM-Benchmark/artifacts/matched/lf/cub/clip_RN50/paired_augmentation/seed43",
+      "train_views": [
+        "original",
+        "changed"
+      ],
+      "reference": "/home/pengcheng/Pi-CBM-Benchmark/artifacts/matched/lf/cub/clip_RN50/paired_augmentation/seed42/report.json",
+      "reference_sha256": "541df233d8b7fc12332826efd7c772348a0c0fd74b59d8cda7c72ad7bc2fa863",
+      "source_manifest_sha256": "0ff5546e570cf9659e57271bd66fa8a14965b0c54efe542d1d1075c372826d18",
+      "teacher_metadata_sha256": "96d14b02ead12725ce2aaa854e469938aa5b233d411cbac3179acaa64e195641",
+      "core_training": {
+        "epochs": 20,
+        "projection_steps": 1000,
+        "saga_steps": 1000,
+        "activation_cutoff": 0.25,
+        "interpretability_cutoff": 0.45,
+        "include_adapter_val": false,
+        "validation_split": "val"
+      }
+    },
+    {
+      "dataset": "cub",
+      "backbone": "clip_RN50",
+      "seed": 44,
+      "source": "/home/pengcheng/Pi-CBM-Benchmark/artifacts/common/cub/clip_RN50",
+      "teacher": "/home/pengcheng/Pi-CBM-Benchmark/artifacts/common/cub/teacher",
+      "output": "/home/pengcheng/Pi-CBM-Benchmark/artifacts/matched/lf/cub/clip_RN50/paired_augmentation/seed44",
+      "train_views": [
+        "original",
+        "changed"
+      ],
+      "reference": "/home/pengcheng/Pi-CBM-Benchmark/artifacts/matched/lf/cub/clip_RN50/paired_augmentation/seed42/report.json",
+      "reference_sha256": "541df233d8b7fc12332826efd7c772348a0c0fd74b59d8cda7c72ad7bc2fa863",
+      "source_manifest_sha256": "0ff5546e570cf9659e57271bd66fa8a14965b0c54efe542d1d1075c372826d18",
+      "teacher_metadata_sha256": "96d14b02ead12725ce2aaa854e469938aa5b233d411cbac3179acaa64e195641",
+      "core_training": {
+        "epochs": 20,
+        "projection_steps": 1000,
+        "saga_steps": 1000,
+        "activation_cutoff": 0.25,
+        "interpretability_cutoff": 0.45,
+        "include_adapter_val": false,
+        "validation_split": "val"
+      }
+    },
+    {
+      "dataset": "waterbirds",
+      "backbone": "resnet18",
+      "seed": 43,
+      "source": "/home/pengcheng/Pi-CBM-Benchmark/artifacts/common/waterbirds/rn18_imagenet",
+      "teacher": "/home/pengcheng/Pi-CBM-Benchmark/artifacts/common/cub/teacher",
+      "output": "/home/pengcheng/Pi-CBM-Benchmark/artifacts/matched/lf/waterbirds/rn18_imagenet/seed43",
+      "train_views": [
+        "original"
+      ],
+      "reference": "/home/pengcheng/Pi-CBM-Benchmark/artifacts/matched/lf/waterbirds/rn18_imagenet/seed42/report.json",
+      "reference_sha256": "eba6c86b82e4baca1928471df706d9259caa40c3b1ea6628333e2814bd00a8d6",
+      "source_manifest_sha256": "aeb021d867cc7844828159349c33b3b028e968fcd412a4d08a43fad50724dbaa",
+      "teacher_metadata_sha256": "96d14b02ead12725ce2aaa854e469938aa5b233d411cbac3179acaa64e195641",
+      "core_training": {
+        "epochs": 20,
+        "projection_steps": 1000,
+        "saga_steps": 1000,
+        "activation_cutoff": 0.25,
+        "interpretability_cutoff": 0.45,
+        "include_adapter_val": false,
+        "validation_split": "val"
+      }
+    },
+    {
+      "dataset": "waterbirds",
+      "backbone": "resnet18",
+      "seed": 44,
+      "source": "/home/pengcheng/Pi-CBM-Benchmark/artifacts/common/waterbirds/rn18_imagenet",
+      "teacher": "/home/pengcheng/Pi-CBM-Benchmark/artifacts/common/cub/teacher",
+      "output": "/home/pengcheng/Pi-CBM-Benchmark/artifacts/matched/lf/waterbirds/rn18_imagenet/seed44",
+      "train_views": [
+        "original"
+      ],
+      "reference": "/home/pengcheng/Pi-CBM-Benchmark/artifacts/matched/lf/waterbirds/rn18_imagenet/seed42/report.json",
+      "reference_sha256": "eba6c86b82e4baca1928471df706d9259caa40c3b1ea6628333e2814bd00a8d6",
+      "source_manifest_sha256": "aeb021d867cc7844828159349c33b3b028e968fcd412a4d08a43fad50724dbaa",
+      "teacher_metadata_sha256": "96d14b02ead12725ce2aaa854e469938aa5b233d411cbac3179acaa64e195641",
+      "core_training": {
+        "epochs": 20,
+        "projection_steps": 1000,
+        "saga_steps": 1000,
+        "activation_cutoff": 0.25,
+        "interpretability_cutoff": 0.45,
+        "include_adapter_val": false,
+        "validation_split": "val"
+      }
+    },
+    {
+      "dataset": "waterbirds",
+      "backbone": "resnet18",
+      "seed": 43,
+      "source": "/home/pengcheng/Pi-CBM-Benchmark/artifacts/common/waterbirds/rn18_imagenet",
+      "teacher": "/home/pengcheng/Pi-CBM-Benchmark/artifacts/common/cub/teacher",
+      "output": "/home/pengcheng/Pi-CBM-Benchmark/artifacts/matched/lf/waterbirds/rn18_imagenet/paired_augmentation/seed43",
+      "train_views": [
+        "original",
+        "changed"
+      ],
+      "reference": "/home/pengcheng/Pi-CBM-Benchmark/artifacts/matched/lf/waterbirds/rn18_imagenet/paired_augmentation/seed42/report.json",
+      "reference_sha256": "bed940715a18bf821614928221dec263839e3ab23b8122c2a66ebd2c607b7706",
+      "source_manifest_sha256": "aeb021d867cc7844828159349c33b3b028e968fcd412a4d08a43fad50724dbaa",
+      "teacher_metadata_sha256": "96d14b02ead12725ce2aaa854e469938aa5b233d411cbac3179acaa64e195641",
+      "core_training": {
+        "epochs": 20,
+        "projection_steps": 1000,
+        "saga_steps": 1000,
+        "activation_cutoff": 0.25,
+        "interpretability_cutoff": 0.45,
+        "include_adapter_val": false,
+        "validation_split": "val"
+      }
+    },
+    {
+      "dataset": "waterbirds",
+      "backbone": "resnet18",
+      "seed": 44,
+      "source": "/home/pengcheng/Pi-CBM-Benchmark/artifacts/common/waterbirds/rn18_imagenet",
+      "teacher": "/home/pengcheng/Pi-CBM-Benchmark/artifacts/common/cub/teacher",
+      "output": "/home/pengcheng/Pi-CBM-Benchmark/artifacts/matched/lf/waterbirds/rn18_imagenet/paired_augmentation/seed44",
+      "train_views": [
+        "original",
+        "changed"
+      ],
+      "reference": "/home/pengcheng/Pi-CBM-Benchmark/artifacts/matched/lf/waterbirds/rn18_imagenet/paired_augmentation/seed42/report.json",
+      "reference_sha256": "bed940715a18bf821614928221dec263839e3ab23b8122c2a66ebd2c607b7706",
+      "source_manifest_sha256": "aeb021d867cc7844828159349c33b3b028e968fcd412a4d08a43fad50724dbaa",
+      "teacher_metadata_sha256": "96d14b02ead12725ce2aaa854e469938aa5b233d411cbac3179acaa64e195641",
+      "core_training": {
+        "epochs": 20,
+        "projection_steps": 1000,
+        "saga_steps": 1000,
+        "activation_cutoff": 0.25,
+        "interpretability_cutoff": 0.45,
+        "include_adapter_val": false,
+        "validation_split": "val"
+      }
+    },
+    {
+      "dataset": "waterbirds",
+      "backbone": "resnet50",
+      "seed": 43,
+      "source": "/home/pengcheng/Pi-CBM-Benchmark/artifacts/common/waterbirds/rn50_imagenet",
+      "teacher": "/home/pengcheng/Pi-CBM-Benchmark/artifacts/common/cub/teacher",
+      "output": "/home/pengcheng/Pi-CBM-Benchmark/artifacts/matched/lf/waterbirds/rn50_imagenet/seed43",
+      "train_views": [
+        "original"
+      ],
+      "reference": "/home/pengcheng/Pi-CBM-Benchmark/artifacts/matched/lf/waterbirds/rn50_imagenet/seed42/report.json",
+      "reference_sha256": "9a8bb7c1af8dcf3875a34d3b2ffb09548a23c06b817a99eb9ce0046404308024",
+      "source_manifest_sha256": "33899e412b74540b89f6f8e983f268d13394e80e3756402745d21554c155a2db",
+      "teacher_metadata_sha256": "96d14b02ead12725ce2aaa854e469938aa5b233d411cbac3179acaa64e195641",
+      "core_training": {
+        "epochs": 20,
+        "projection_steps": 1000,
+        "saga_steps": 1000,
+        "activation_cutoff": 0.25,
+        "interpretability_cutoff": 0.45,
+        "include_adapter_val": false,
+        "validation_split": "val"
+      }
+    },
+    {
+      "dataset": "waterbirds",
+      "backbone": "resnet50",
+      "seed": 44,
+      "source": "/home/pengcheng/Pi-CBM-Benchmark/artifacts/common/waterbirds/rn50_imagenet",
+      "teacher": "/home/pengcheng/Pi-CBM-Benchmark/artifacts/common/cub/teacher",
+      "output": "/home/pengcheng/Pi-CBM-Benchmark/artifacts/matched/lf/waterbirds/rn50_imagenet/seed44",
+      "train_views": [
+        "original"
+      ],
+      "reference": "/home/pengcheng/Pi-CBM-Benchmark/artifacts/matched/lf/waterbirds/rn50_imagenet/seed42/report.json",
+      "reference_sha256": "9a8bb7c1af8dcf3875a34d3b2ffb09548a23c06b817a99eb9ce0046404308024",
+      "source_manifest_sha256": "33899e412b74540b89f6f8e983f268d13394e80e3756402745d21554c155a2db",
+      "teacher_metadata_sha256": "96d14b02ead12725ce2aaa854e469938aa5b233d411cbac3179acaa64e195641",
+      "core_training": {
+        "epochs": 20,
+        "projection_steps": 1000,
+        "saga_steps": 1000,
+        "activation_cutoff": 0.25,
+        "interpretability_cutoff": 0.45,
+        "include_adapter_val": false,
+        "validation_split": "val"
+      }
+    },
+    {
+      "dataset": "waterbirds",
+      "backbone": "resnet50",
+      "seed": 43,
+      "source": "/home/pengcheng/Pi-CBM-Benchmark/artifacts/common/waterbirds/rn50_imagenet",
+      "teacher": "/home/pengcheng/Pi-CBM-Benchmark/artifacts/common/cub/teacher",
+      "output": "/home/pengcheng/Pi-CBM-Benchmark/artifacts/matched/lf/waterbirds/rn50_imagenet/paired_augmentation/seed43",
+      "train_views": [
+        "original",
+        "changed"
+      ],
+      "reference": "/home/pengcheng/Pi-CBM-Benchmark/artifacts/matched/lf/waterbirds/rn50_imagenet/paired_augmentation/seed42/report.json",
+      "reference_sha256": "d95600f192d7765c2dbf83233214390a3c379da6cbd1de84d883601f8a00dd02",
+      "source_manifest_sha256": "33899e412b74540b89f6f8e983f268d13394e80e3756402745d21554c155a2db",
+      "teacher_metadata_sha256": "96d14b02ead12725ce2aaa854e469938aa5b233d411cbac3179acaa64e195641",
+      "core_training": {
+        "epochs": 20,
+        "projection_steps": 1000,
+        "saga_steps": 1000,
+        "activation_cutoff": 0.25,
+        "interpretability_cutoff": 0.45,
+        "include_adapter_val": false,
+        "validation_split": "val"
+      }
+    },
+    {
+      "dataset": "waterbirds",
+      "backbone": "resnet50",
+      "seed": 44,
+      "source": "/home/pengcheng/Pi-CBM-Benchmark/artifacts/common/waterbirds/rn50_imagenet",
+      "teacher": "/home/pengcheng/Pi-CBM-Benchmark/artifacts/common/cub/teacher",
+      "output": "/home/pengcheng/Pi-CBM-Benchmark/artifacts/matched/lf/waterbirds/rn50_imagenet/paired_augmentation/seed44",
+      "train_views": [
+        "original",
+        "changed"
+      ],
+      "reference": "/home/pengcheng/Pi-CBM-Benchmark/artifacts/matched/lf/waterbirds/rn50_imagenet/paired_augmentation/seed42/report.json",
+      "reference_sha256": "d95600f192d7765c2dbf83233214390a3c379da6cbd1de84d883601f8a00dd02",
+      "source_manifest_sha256": "33899e412b74540b89f6f8e983f268d13394e80e3756402745d21554c155a2db",
+      "teacher_metadata_sha256": "96d14b02ead12725ce2aaa854e469938aa5b233d411cbac3179acaa64e195641",
+      "core_training": {
+        "epochs": 20,
+        "projection_steps": 1000,
+        "saga_steps": 1000,
+        "activation_cutoff": 0.25,
+        "interpretability_cutoff": 0.45,
+        "include_adapter_val": false,
+        "validation_split": "val"
+      }
+    },
+    {
+      "dataset": "waterbirds",
+      "backbone": "clip_RN50",
+      "seed": 43,
+      "source": "/home/pengcheng/Pi-CBM-Benchmark/artifacts/common/waterbirds/clip_RN50",
+      "teacher": "/home/pengcheng/Pi-CBM-Benchmark/artifacts/common/cub/teacher",
+      "output": "/home/pengcheng/Pi-CBM-Benchmark/artifacts/matched/lf/waterbirds/clip_RN50/seed43",
+      "train_views": [
+        "original"
+      ],
+      "reference": "/home/pengcheng/Pi-CBM-Benchmark/artifacts/matched/lf/waterbirds/clip_RN50/seed42/report.json",
+      "reference_sha256": "fb06fd042af1fe8004cc01e2ed4f20b13f85eececbc9d097fc1f224cae74cbed",
+      "source_manifest_sha256": "dd96b1439aa21cb2d53e556818aa6177a246968ef5410ec928852d8508191304",
+      "teacher_metadata_sha256": "96d14b02ead12725ce2aaa854e469938aa5b233d411cbac3179acaa64e195641",
+      "core_training": {
+        "epochs": 20,
+        "projection_steps": 1000,
+        "saga_steps": 1000,
+        "activation_cutoff": 0.25,
+        "interpretability_cutoff": 0.45,
+        "include_adapter_val": false,
+        "validation_split": "val"
+      }
+    },
+    {
+      "dataset": "waterbirds",
+      "backbone": "clip_RN50",
+      "seed": 44,
+      "source": "/home/pengcheng/Pi-CBM-Benchmark/artifacts/common/waterbirds/clip_RN50",
+      "teacher": "/home/pengcheng/Pi-CBM-Benchmark/artifacts/common/cub/teacher",
+      "output": "/home/pengcheng/Pi-CBM-Benchmark/artifacts/matched/lf/waterbirds/clip_RN50/seed44",
+      "train_views": [
+        "original"
+      ],
+      "reference": "/home/pengcheng/Pi-CBM-Benchmark/artifacts/matched/lf/waterbirds/clip_RN50/seed42/report.json",
+      "reference_sha256": "fb06fd042af1fe8004cc01e2ed4f20b13f85eececbc9d097fc1f224cae74cbed",
+      "source_manifest_sha256": "dd96b1439aa21cb2d53e556818aa6177a246968ef5410ec928852d8508191304",
+      "teacher_metadata_sha256": "96d14b02ead12725ce2aaa854e469938aa5b233d411cbac3179acaa64e195641",
+      "core_training": {
+        "epochs": 20,
+        "projection_steps": 1000,
+        "saga_steps": 1000,
+        "activation_cutoff": 0.25,
+        "interpretability_cutoff": 0.45,
+        "include_adapter_val": false,
+        "validation_split": "val"
+      }
+    },
+    {
+      "dataset": "waterbirds",
+      "backbone": "clip_RN50",
+      "seed": 43,
+      "source": "/home/pengcheng/Pi-CBM-Benchmark/artifacts/common/waterbirds/clip_RN50",
+      "teacher": "/home/pengcheng/Pi-CBM-Benchmark/artifacts/common/cub/teacher",
+      "output": "/home/pengcheng/Pi-CBM-Benchmark/artifacts/matched/lf/waterbirds/clip_RN50/paired_augmentation/seed43",
+      "train_views": [
+        "original",
+        "changed"
+      ],
+      "reference": "/home/pengcheng/Pi-CBM-Benchmark/artifacts/matched/lf/waterbirds/clip_RN50/paired_augmentation/seed42/report.json",
+      "reference_sha256": "384c8908a984aedb211b89fe5bfc21115ddae9749aa85ed7133c1e6dcaf5df2e",
+      "source_manifest_sha256": "dd96b1439aa21cb2d53e556818aa6177a246968ef5410ec928852d8508191304",
+      "teacher_metadata_sha256": "96d14b02ead12725ce2aaa854e469938aa5b233d411cbac3179acaa64e195641",
+      "core_training": {
+        "epochs": 20,
+        "projection_steps": 1000,
+        "saga_steps": 1000,
+        "activation_cutoff": 0.25,
+        "interpretability_cutoff": 0.45,
+        "include_adapter_val": false,
+        "validation_split": "val"
+      }
+    },
+    {
+      "dataset": "waterbirds",
+      "backbone": "clip_RN50",
+      "seed": 44,
+      "source": "/home/pengcheng/Pi-CBM-Benchmark/artifacts/common/waterbirds/clip_RN50",
+      "teacher": "/home/pengcheng/Pi-CBM-Benchmark/artifacts/common/cub/teacher",
+      "output": "/home/pengcheng/Pi-CBM-Benchmark/artifacts/matched/lf/waterbirds/clip_RN50/paired_augmentation/seed44",
+      "train_views": [
+        "original",
+        "changed"
+      ],
+      "reference": "/home/pengcheng/Pi-CBM-Benchmark/artifacts/matched/lf/waterbirds/clip_RN50/paired_augmentation/seed42/report.json",
+      "reference_sha256": "384c8908a984aedb211b89fe5bfc21115ddae9749aa85ed7133c1e6dcaf5df2e",
+      "source_manifest_sha256": "dd96b1439aa21cb2d53e556818aa6177a246968ef5410ec928852d8508191304",
+      "teacher_metadata_sha256": "96d14b02ead12725ce2aaa854e469938aa5b233d411cbac3179acaa64e195641",
+      "core_training": {
+        "epochs": 20,
+        "projection_steps": 1000,
+        "saga_steps": 1000,
+        "activation_cutoff": 0.25,
+        "interpretability_cutoff": 0.45,
+        "include_adapter_val": false,
+        "validation_split": "val"
+      }
+    }
+  ]
+}
