@@ -31,6 +31,32 @@ def concept_metrics(scores, targets, known=None):
             'average_precision_per_concept':ap,'pearson_per_concept':pearson}
 
 
+def teacher_fidelity(scores, teacher):
+    """Continuous teacher agreement, with LF-Pi's centered-cube definition."""
+    scores = np.asarray(scores, dtype=np.float64)
+    teacher = np.asarray(teacher, dtype=np.float64)
+    if scores.ndim != 2 or scores.shape != teacher.shape:
+        raise ValueError('teacher and scores must share [images, concepts] shape')
+    if not np.isfinite(scores).all() or not np.isfinite(teacher).all():
+        raise ValueError('nonfinite teacher fidelity inputs')
+    x, y = scores - scores.mean(0), teacher - teacher.mean(0)
+    norms = np.linalg.norm(x, axis=0) * np.linalg.norm(y, axis=0)
+    active = norms > 1e-12
+    pearson = np.divide((x * y).sum(0), norms,
+                        out=np.zeros_like(norms), where=active)
+    x3, y3 = x ** 3, y ** 3
+    cubed = ((x3 / np.linalg.norm(x3, axis=0).clip(1e-12)) *
+             (y3 / np.linalg.norm(y3, axis=0).clip(1e-12))).sum(0)
+    return {'teacher_pearson_macro': float(pearson[active].mean()) if active.any() else None,
+            'teacher_cos_cubed_macro': float(cubed.mean()) if len(cubed) else None,
+            'teacher_correlation_evaluable_concepts': int(active.sum()),
+            'teacher_concepts': scores.shape[1], 'images': len(scores),
+            'teacher_pearson_per_concept': [float(v) if a else None for v, a in zip(pearson, active)],
+            'teacher_cos_cubed_per_concept': cubed.tolist(),
+            'teacher': 'frozen CLIP continuous cosine; not human attribute labels',
+            'cos_cubed_definition': 'column center, cube, L2 normalize (epsilon 1e-12), sum; all columns including constants'}
+
+
 def classification_metrics(logits, labels, probabilities=False):
     logits=np.asarray(logits,dtype=np.float64);labels=np.asarray(labels,dtype=np.int64)
     if logits.ndim!=2 or len(labels)!=len(logits):raise ValueError('classification shape mismatch')

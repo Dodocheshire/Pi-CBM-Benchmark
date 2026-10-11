@@ -20,18 +20,21 @@ def main():
     parser.add_argument('--dataset', required=True)
     parser.add_argument('--out', type=Path, required=True)
     parser.add_argument('--train-views', default='original')
+    parser.add_argument('--test-views', default='original,changed')
     parser.add_argument('--steps', type=int, default=1000)
     parser.add_argument('--seed', type=int, default=42)
     parser.add_argument('--device', default='cpu')
     args = parser.parse_args(); torch.set_num_threads(3)
     args.out.mkdir(parents=True, exist_ok=True)
     views = args.train_views.split(',')
+    test_views = args.test_views.split(',')
     existing=args.out/'report.json'
     if existing.exists() and (args.out/'heads.pt').exists():
         previous=json.loads(existing.read_text())
         if (previous.get('source')==str(args.source.resolve()) and
             previous.get('concept_field')==args.field and previous.get('prefix','')==args.prefix and
             previous.get('train_views')==views and previous.get('seed')==args.seed and
+            previous.get('test_views',['original','changed'])==test_views and
             previous.get('dataset')==args.dataset):
             print(json.dumps({'completed':str(existing),'action':'reuse completed matching fit'}))
             return
@@ -66,7 +69,7 @@ def main():
                   for lr in [.001, .01] for decay in [.0001, .01]]
     dense = min(candidates, key=lambda c: c['validation_nll'])
     evaluated = []
-    for view in ['original', 'changed']:
+    for view in test_views:
         test = load('test', view)
         c = torch.from_numpy((test[args.field].astype('float32')-mean)/scale)
         for name, head in {'best_val': heads['best'], **heads['budgets']}.items():
@@ -87,6 +90,7 @@ def main():
     report.update(test_evaluations=evaluated, source=str(args.source.resolve()),
                   prefix=args.prefix,
                   concept_field=args.field, train_views=views, dataset=args.dataset,
+                  test_views=test_views,
                   normalization='mean/sample_std of training views only',
                   fitting_device=args.device,
                   dense_validation_nll=dense['validation_nll'])

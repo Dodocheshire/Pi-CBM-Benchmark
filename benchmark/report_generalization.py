@@ -18,7 +18,7 @@ COLORS={'LF-CBM':'#2878B5','LF-Pi':'#E15759','LF-Pi（8次采样）':'#E15759','
 def shared_accuracy(directory, dataset, head, view):
     data=np.load(directory/f'{head}_{view}.npz')
     manifest=json.loads((Path('artifacts/common')/dataset/'rn18_imagenet/manifest.json').read_text())
-    ep=Path(manifest['cache_root'])/'background_eligible.npy'
+    ep=Path(manifest.get('cache_root','artifacts/common/'+dataset+'/cache'))/'background_eligible.npy'
     mask=np.load(ep)[data['ids']].astype(bool) if ep.exists() else np.ones(len(data['ids']),bool)
     return classification_metrics(data['logits'][mask],data['labels'][mask])['accuracy']
 
@@ -33,10 +33,13 @@ def main():
     for file in sorted(Path('artifacts/heads').rglob('report.json')):
         r=json.loads(file.read_text());group=file.parents[1];groups.setdefault(group,[]).append((file,r))
     for index,(group,reports) in enumerate(groups.items()):
-        fig,axes=plt.subplots(1,2,figsize=(11,4.8),layout='constrained')
+        views=list(dict.fromkeys(p['view'] for _,r in reports for p in r['test_evaluations']))
+        fig,axes=plt.subplots(1,len(views),figsize=(5.5*len(views),4.8),layout='constrained',squeeze=False)
+        axes=axes[0]
         for file,r in reports:
             name=NAMES[file.parent.name];directory=file.parent
-            for ax,view,label in zip(axes,['original','changed'],['原图测试','换背景测试']):
+            for ax,view in zip(axes,views):
+                label='原图测试' if view=='original' else '换背景测试'
                 curve=[]
                 for point in r['test_evaluations']:
                     if point['view']!=view or point['head'] in ['dense','best_val']:continue
@@ -51,12 +54,14 @@ def main():
         if handles:fig.legend(handles,labels,loc='outside lower center',ncol=min(4,len(handles)))
         title=str(group.relative_to(Path('artifacts/heads')));fig.suptitle(title)
         file=f'nec_{index}.png';fig.savefig(out/file,dpi=170);plt.close(fig)
+        labels=['稠密头原图准确率' if view=='original' else '稠密头换背景准确率' for view in views]
         lines += [f'## {title}', '', f'![NEC 曲线]({file})','',
-                  '| 方法 | 稠密头原图准确率 | 稠密头换背景准确率 | SAGA 达到步数上限的路径点 |',
-                  '| --- | --- | --- | --- |']
+                  '| 方法 | '+' | '.join(labels)+' | SAGA 达到步数上限的路径点 |',
+                  '| '+' | '.join(['---']*(len(views)+2))+' |']
         for path,r in reports:
-            dense={view:shared_accuracy(path.parent,r['dataset'],'dense',view) for view in ['original','changed']}
-            lines.append(f"| {NAMES[path.parent.name]} | {100*dense['original']:.2f}% | {100*dense['changed']:.2f}% | {r['unconverged_path_points']} |")
+            cells=[f"{100*shared_accuracy(path.parent,r['dataset'],'dense',view):.2f}%"
+                   if (path.parent/f'dense_{view}.npz').exists() else '—' for view in views]
+            lines.append(f"| {NAMES[path.parent.name]} | "+' | '.join(cells)+f" | {r['unconverged_path_points']} |")
         lines += ['']
     ood=[]
     for directory in sorted(Path('artifacts/ood').glob('*/resnet18/paired/seed42')):

@@ -48,6 +48,8 @@ def main():
     conditions = []
     for report_path in sorted((ROOT/'artifacts/matched/lf').rglob('report.json')):
         report = json.loads(report_path.read_text())
+        if report.get('human_concept_annotations') is False:
+            continue  # Continuous-teacher experiments have a separate report.
         dataset = report['dataset']; source = report_path.parent
         paired = report['train_views']==['original','changed']
         proto = '背景增强训练' if paired else '原图训练'
