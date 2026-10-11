@@ -24,6 +24,8 @@ def main():
     parser.add_argument('--steps', type=int, default=1000)
     parser.add_argument('--seed', type=int, default=42)
     parser.add_argument('--device', default='cpu')
+    parser.add_argument('--saga-gradient-kernel', choices=['upstream','matmul'], default='upstream')
+    parser.add_argument('--streaming-dense', action='store_true')
     args = parser.parse_args(); torch.set_num_threads(3)
     args.out.mkdir(parents=True, exist_ok=True)
     views = args.train_views.split(',')
@@ -35,7 +37,9 @@ def main():
             previous.get('concept_field')==args.field and previous.get('prefix','')==args.prefix and
             previous.get('train_views')==views and previous.get('seed')==args.seed and
             previous.get('test_views',['original','changed'])==test_views and
-            previous.get('dataset')==args.dataset):
+            previous.get('dataset')==args.dataset and
+            previous.get('saga_gradient_kernel',{}).get('name','upstream')==args.saga_gradient_kernel and
+            previous.get('streaming_dense',False)==args.streaming_dense):
             print(json.dumps({'completed':str(existing),'action':'reuse completed matching fit'}))
             return
     def load(split, view):
@@ -62,10 +66,11 @@ def main():
     dataset_key = 'waterbirds_cub_places' if args.dataset=='waterbirds' else args.dataset
     targets = sorted({min(x.shape[1], b) for b in matrix['head_evaluation']['target_grids'][dataset_key]})
     report, heads = fit_nec_path(x, labels, vx, vlabels, classes, device=args.device,
-                                seed=args.seed, steps=args.steps, targets=targets)
+                                seed=args.seed, steps=args.steps, targets=targets,
+                                saga_gradient_kernel=args.saga_gradient_kernel)
     # The same dense fitting protocol used by the class-only control.
     train = {'features': tr, 'labels': y}; val = {'features': va, 'labels': vy}
-    candidates = [fit(train, val, args.device, args.seed, lr, decay)
+    candidates = [fit(train, val, args.device, args.seed, lr, decay,streaming_dense=args.streaming_dense)
                   for lr in [.001, .01] for decay in [.0001, .01]]
     dense = min(candidates, key=lambda c: c['validation_nll'])
     evaluated = []
@@ -87,7 +92,7 @@ def main():
         evaluated.append({'head': 'dense', 'view': view,
                           **classification_metrics(logits, test['labels']),
                           **nec(dense['head']['weight'].numpy())})
-    report.update(test_evaluations=evaluated, source=str(args.source.resolve()),
+    report.update(test_evaluations=evaluated, source=str(args.source.resolve()),streaming_dense=args.streaming_dense,
                   prefix=args.prefix,
                   concept_field=args.field, train_views=views, dataset=args.dataset,
                   test_views=test_views,

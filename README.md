@@ -61,3 +61,5 @@ python -m benchmark.report_seeds
 python -m benchmark.report_nec_seeds
 python -m benchmark.head_queue --workers 2
 ```
+
+共同分类头提供默认关闭的省显存选项：`head_suite --saga-gradient-kernel matmul` 用矩阵乘法计算原 SAGA 的批量平均梯度；`--streaming-dense` 保留原归一化、随机排列和优化器，逐批将训练特征送入显卡。核验记录见 [分类头数值回归](reports/optional_head_regression_audit.json)。小路径的所选正则、实际 NEC 和验证预测一致；2400 张训练样本上的四组稠密头配置，权重与预测逐位一致。

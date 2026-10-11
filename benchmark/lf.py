@@ -71,7 +71,8 @@ def proximal_residual(x, y, weight, bias, lam, alpha, lr=.1, batch_size=2048):
 
 def fit_nec_path(train_c, train_y, val_c, val_y, classes, *, device="cpu",
                  seed=0, steps=300, batch_size=256, lr=0.1, alpha=0.99,
-                 points=24, epsilon=0.0001, targets=None, root=None):
+                 points=24, epsilon=0.0001, targets=None, root=None,
+                 saga_gradient_kernel='upstream'):
     """Train a warm-start upstream glm_saga path using train and val only.
 
     The path starts at the empirical maximum regularization. Validation NLL
@@ -82,6 +83,8 @@ def fit_nec_path(train_c, train_y, val_c, val_y, classes, *, device="cpu",
     """
     upstream(root)
     from pi_cbm.vendor.lfcbm.elasticnet import IndexedTensorDataset, glm_saga
+    from pi_cbm.vendor.lfcbm import elasticnet
+    from .saga_kernel import gradient_kernel
     torch.manual_seed(seed)
     train_c, val_c = train_c.detach().float().cpu(), val_c.detach().float().cpu()
     train_y, val_y = train_y.long().cpu(), val_y.long().cpu()
@@ -98,7 +101,7 @@ def fit_nec_path(train_c, train_y, val_c, val_y, classes, *, device="cpu",
             sys.__stdout__.flush()
             return super().write(value)
     log = SolverLog()
-    with contextlib.redirect_stdout(log):
+    with contextlib.redirect_stdout(log), gradient_kernel(elasticnet, saga_gradient_kernel) as kernel_metadata:
         output = glm_saga(model, loader, lr, steps, alpha, epsilon=epsilon, k=points,
                           do_zero=False, val_loader=validation, n_ex=len(train_y),
                           n_classes=classes, lookbehind=5)
@@ -131,6 +134,7 @@ def fit_nec_path(train_c, train_y, val_c, val_y, classes, *, device="cpu",
                         "val_accuracy": float((logits.argmax(1) == val_y).float().mean())})
         budget_heads[str(target)] = {"weight": w, "bias": b}
     return {"solver": "frozen_upstream_glm_saga", "selection_split": "val",
+            "saga_gradient_kernel": kernel_metadata,
             "test_selection": False, "seed": seed, "steps_limit": steps,
             "path_points": points, "epsilon": epsilon, "alpha": alpha,
             "solver_tolerance": 1e-4, "lookbehind": 5,
