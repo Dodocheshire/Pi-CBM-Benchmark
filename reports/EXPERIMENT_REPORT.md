@@ -6,7 +6,7 @@ LF-CBM／LF-Pi 使用冻结 CLIP 概念相似度监督；PiNI 使用原方法的
 
 本轮 Waterbirds 为完整 CUB 鸟类按陆鸟／水鸟分组、配合 Places 换背景的二分类任务。
 
-## CUB · clip_RN50 · 背景增强训练 · 种子 42
+## CUB · CLIP RN50 · 背景增强训练 · 种子 42
 
 共同概念 86／候选 112。
 
@@ -16,7 +16,7 @@ LF-CBM／LF-Pi 使用冻结 CLIP 概念相似度监督；PiNI 使用原方法的
 
 ![相关性与概念偏移](matched_correlation_shift_0.png)
 
-## CUB · clip_RN50 · 原图训练 · 种子 42
+## CUB · CLIP RN50 · 原图训练 · 种子 42
 
 共同概念 109／候选 112。
 
@@ -26,7 +26,7 @@ LF-CBM／LF-Pi 使用冻结 CLIP 概念相似度监督；PiNI 使用原方法的
 
 ![相关性与概念偏移](matched_correlation_shift_1.png)
 
-## CUB · resnet18 · 背景增强训练 · 种子 42
+## CUB · ImageNet ResNet18 · 背景增强训练 · 种子 42
 
 共同概念 37／候选 112。
 
@@ -36,7 +36,7 @@ LF-CBM／LF-Pi 使用冻结 CLIP 概念相似度监督；PiNI 使用原方法的
 
 ![相关性与概念偏移](matched_correlation_shift_2.png)
 
-## CUB · resnet18 · 原图训练 · 种子 42
+## CUB · ImageNet ResNet18 · 原图训练 · 种子 42
 
 共同概念 50／候选 112。
 
@@ -46,7 +46,7 @@ LF-CBM／LF-Pi 使用冻结 CLIP 概念相似度监督；PiNI 使用原方法的
 
 ![相关性与概念偏移](matched_correlation_shift_3.png)
 
-## CUB · resnet50 · 背景增强训练 · 种子 42
+## CUB · ImageNet ResNet50 · 背景增强训练 · 种子 42
 
 共同概念 55／候选 112。
 
@@ -56,7 +56,7 @@ LF-CBM／LF-Pi 使用冻结 CLIP 概念相似度监督；PiNI 使用原方法的
 
 ![相关性与概念偏移](matched_correlation_shift_4.png)
 
-## CUB · resnet50 · 原图训练 · 种子 42
+## CUB · ImageNet ResNet50 · 原图训练 · 种子 42
 
 共同概念 95／候选 112。
 
@@ -66,7 +66,7 @@ LF-CBM／LF-Pi 使用冻结 CLIP 概念相似度监督；PiNI 使用原方法的
 
 ![相关性与概念偏移](matched_correlation_shift_5.png)
 
-## RIVAL10 · clip_RN50 · 背景增强训练 · 种子 42
+## RIVAL10 · CLIP RN50 · 背景增强训练 · 种子 42
 
 共同概念 17／候选 18。
 
@@ -76,7 +76,7 @@ LF-CBM／LF-Pi 使用冻结 CLIP 概念相似度监督；PiNI 使用原方法的
 
 ![相关性与概念偏移](matched_correlation_shift_6.png)
 
-## RIVAL10 · clip_RN50 · 原图训练 · 种子 42
+## RIVAL10 · CLIP RN50 · 原图训练 · 种子 42
 
 共同概念 16／候选 18。
 
@@ -86,7 +86,7 @@ LF-CBM／LF-Pi 使用冻结 CLIP 概念相似度监督；PiNI 使用原方法的
 
 ![相关性与概念偏移](matched_correlation_shift_7.png)
 
-## RIVAL10 · resnet18 · 背景增强训练 · 种子 42
+## RIVAL10 · ImageNet ResNet18 · 背景增强训练 · 种子 42
 
 共同概念 14／候选 18。
 
@@ -96,7 +96,7 @@ LF-CBM／LF-Pi 使用冻结 CLIP 概念相似度监督；PiNI 使用原方法的
 
 ![相关性与概念偏移](matched_correlation_shift_8.png)
 
-## RIVAL10 · resnet18 · 原图训练 · 种子 42
+## RIVAL10 · ImageNet ResNet18 · 原图训练 · 种子 42
 
 共同概念 13／候选 18。
 
@@ -106,7 +106,7 @@ LF-CBM／LF-Pi 使用冻结 CLIP 概念相似度监督；PiNI 使用原方法的
 
 ![相关性与概念偏移](matched_correlation_shift_9.png)
 
-## RIVAL10 · resnet50 · 背景增强训练 · 种子 42
+## RIVAL10 · ImageNet ResNet50 · 背景增强训练 · 种子 42
 
 共同概念 16／候选 18。
 
@@ -116,7 +116,7 @@ LF-CBM／LF-Pi 使用冻结 CLIP 概念相似度监督；PiNI 使用原方法的
 
 ![相关性与概念偏移](matched_correlation_shift_10.png)
 
-## RIVAL10 · resnet50 · 原图训练 · 种子 42
+## RIVAL10 · ImageNet ResNet50 · 原图训练 · 种子 42
 
 共同概念 14／候选 18。
 
@@ -126,7 +126,7 @@ LF-CBM／LF-Pi 使用冻结 CLIP 概念相似度监督；PiNI 使用原方法的
 
 ![相关性与概念偏移](matched_correlation_shift_11.png)
 
-## WATERBIRDS · clip_RN50 · 背景增强训练 · 种子 42
+## WATERBIRDS · CLIP RN50 · 背景增强训练 · 种子 42
 
 共同概念 86／候选 112。
 
@@ -136,7 +136,7 @@ LF-CBM／LF-Pi 使用冻结 CLIP 概念相似度监督；PiNI 使用原方法的
 
 ![相关性与概念偏移](matched_correlation_shift_12.png)
 
-## WATERBIRDS · clip_RN50 · 原图训练 · 种子 42
+## WATERBIRDS · CLIP RN50 · 原图训练 · 种子 42
 
 共同概念 109／候选 112。
 
@@ -146,7 +146,7 @@ LF-CBM／LF-Pi 使用冻结 CLIP 概念相似度监督；PiNI 使用原方法的
 
 ![相关性与概念偏移](matched_correlation_shift_13.png)
 
-## WATERBIRDS · resnet18 · 背景增强训练 · 种子 42
+## WATERBIRDS · ImageNet ResNet18 · 背景增强训练 · 种子 42
 
 共同概念 37／候选 112。
 
@@ -156,7 +156,7 @@ LF-CBM／LF-Pi 使用冻结 CLIP 概念相似度监督；PiNI 使用原方法的
 
 ![相关性与概念偏移](matched_correlation_shift_14.png)
 
-## WATERBIRDS · resnet18 · 原图训练 · 种子 42
+## WATERBIRDS · ImageNet ResNet18 · 原图训练 · 种子 42
 
 共同概念 50／候选 112。
 
@@ -166,7 +166,7 @@ LF-CBM／LF-Pi 使用冻结 CLIP 概念相似度监督；PiNI 使用原方法的
 
 ![相关性与概念偏移](matched_correlation_shift_15.png)
 
-## WATERBIRDS · resnet50 · 背景增强训练 · 种子 42
+## WATERBIRDS · ImageNet ResNet50 · 背景增强训练 · 种子 42
 
 共同概念 55／候选 112。
 
@@ -176,7 +176,7 @@ LF-CBM／LF-Pi 使用冻结 CLIP 概念相似度监督；PiNI 使用原方法的
 
 ![相关性与概念偏移](matched_correlation_shift_16.png)
 
-## WATERBIRDS · resnet50 · 原图训练 · 种子 42
+## WATERBIRDS · ImageNet ResNet50 · 原图训练 · 种子 42
 
 共同概念 95／候选 112。
 

@@ -1,8 +1,18 @@
 # 泛化与分类头容量
 
-## cifar10/resnet18/corruption_augmented/seed42
+## cifar10/clip_RN50/original/seed42
 
 ![NEC 曲线](nec_0.png)
+
+| 方法 | 稠密头原图准确率 | SAGA 达到步数上限的路径点 |
+| --- | --- | --- |
+| LF-CBM | 84.06% | 0 |
+| LF-Pi | 85.55% | 0 |
+| 非 CBM | 85.79% | — |
+
+## cifar10/resnet18/corruption_augmented/seed42
+
+![NEC 曲线](nec_1.png)
 
 | 方法 | 稠密头原图准确率 | SAGA 达到步数上限的路径点 |
 | --- | --- | --- |
@@ -12,7 +22,7 @@
 
 ## cifar10/resnet18/original/seed42
 
-![NEC 曲线](nec_1.png)
+![NEC 曲线](nec_2.png)
 
 | 方法 | 稠密头原图准确率 | SAGA 达到步数上限的路径点 |
 | --- | --- | --- |
@@ -22,7 +32,7 @@
 
 ## cifar10/resnet50/original/seed42
 
-![NEC 曲线](nec_2.png)
+![NEC 曲线](nec_3.png)
 
 | 方法 | 稠密头原图准确率 | SAGA 达到步数上限的路径点 |
 | --- | --- | --- |
@@ -32,7 +42,7 @@
 
 ## cub/clip_RN50/original/seed42
 
-![NEC 曲线](nec_3.png)
+![NEC 曲线](nec_4.png)
 
 | 方法 | 稠密头原图准确率 | 稠密头换背景准确率 | SAGA 达到步数上限的路径点 |
 | --- | --- | --- | --- |
@@ -42,7 +52,7 @@
 
 ## cub/resnet18/original/seed42
 
-![NEC 曲线](nec_4.png)
+![NEC 曲线](nec_5.png)
 
 | 方法 | 稠密头原图准确率 | 稠密头换背景准确率 | SAGA 达到步数上限的路径点 |
 | --- | --- | --- | --- |
@@ -52,7 +62,7 @@
 
 ## cub/resnet18/paired/seed42
 
-![NEC 曲线](nec_5.png)
+![NEC 曲线](nec_6.png)
 
 | 方法 | 稠密头原图准确率 | 稠密头换背景准确率 | SAGA 达到步数上限的路径点 |
 | --- | --- | --- | --- |
@@ -62,16 +72,26 @@
 
 ## cub/resnet50/paired/seed42
 
-![NEC 曲线](nec_6.png)
+![NEC 曲线](nec_7.png)
 
 | 方法 | 稠密头原图准确率 | 稠密头换背景准确率 | SAGA 达到步数上限的路径点 |
 | --- | --- | --- | --- |
 | LF-Pi | 60.36% | 47.98% | 0 |
 | 非 CBM | 66.51% | 53.51% | — |
 
+## rival10/clip_RN50/original/seed42
+
+![NEC 曲线](nec_8.png)
+
+| 方法 | 稠密头原图准确率 | 稠密头换背景准确率 | SAGA 达到步数上限的路径点 |
+| --- | --- | --- | --- |
+| LF-CBM | 96.91% | 86.82% | 0 |
+| LF-Pi | 98.77% | 90.67% | 0 |
+| 非 CBM | 99.22% | 92.53% | — |
+
 ## rival10/clip_RN50/paired/seed42
 
-![NEC 曲线](nec_7.png)
+![NEC 曲线](nec_9.png)
 
 | 方法 | 稠密头原图准确率 | 稠密头换背景准确率 | SAGA 达到步数上限的路径点 |
 | --- | --- | --- | --- |
@@ -81,17 +101,19 @@
 
 ## rival10/resnet18/paired/seed42
 
-![NEC 曲线](nec_8.png)
+![NEC 曲线](nec_10.png)
 
 | 方法 | 稠密头原图准确率 | 稠密头换背景准确率 | SAGA 达到步数上限的路径点 |
 | --- | --- | --- | --- |
+| LF-CBM | 92.56% | 85.48% | 0 |
+| LF-Pi | 97.33% | 93.56% | 0 |
 | PiNI 均值 | 97.99% | 94.74% | 0 |
 | PiNI 均值＋噪声 | 97.92% | 94.77% | 0 |
 | 非 CBM | 98.35% | 95.08% | — |
 
 ## waterbirds/clip_RN50/paired/seed42
 
-![NEC 曲线](nec_9.png)
+![NEC 曲线](nec_11.png)
 
 | 方法 | 稠密头原图准确率 | 稠密头换背景准确率 | SAGA 达到步数上限的路径点 |
 | --- | --- | --- | --- |
@@ -102,7 +124,7 @@
 
 ## waterbirds/resnet50/paired/seed42
 
-![NEC 曲线](nec_10.png)
+![NEC 曲线](nec_12.png)
 
 | 方法 | 稠密头原图准确率 | 稠密头换背景准确率 | SAGA 达到步数上限的路径点 |
 | --- | --- | --- | --- |

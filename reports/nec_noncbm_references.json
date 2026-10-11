@@ -1,5 +1,30 @@
 [
   {
+    "group": "artifacts/heads/cifar10/clip_RN50/original/seed42",
+    "references": {
+      "original": [
+        {
+          "seed": 42,
+          "accuracy": 0.8568,
+          "source": "artifacts/noncbm/cifar10_clip_RN50/seed42/test_predictions.npz",
+          "nec": null
+        },
+        {
+          "seed": 43,
+          "accuracy": 0.8592,
+          "source": "artifacts/noncbm/cifar10_clip_RN50/seed43/test_predictions.npz",
+          "nec": null
+        },
+        {
+          "seed": 44,
+          "accuracy": 0.8577,
+          "source": "artifacts/noncbm/cifar10_clip_RN50/seed44/test_predictions.npz",
+          "nec": null
+        }
+      ]
+    }
+  },
+  {
     "group": "artifacts/heads/cifar10/resnet18/corruption_augmented/seed42",
     "references": {
       "original": [
@@ -249,6 +274,51 @@
           "seed": 44,
           "accuracy": 0.5327925440110459,
           "source": "artifacts/noncbm/cub_rn50_imagenet_paired/seed44/changed_predictions.npz",
+          "nec": null
+        }
+      ]
+    }
+  },
+  {
+    "group": "artifacts/heads/rival10/clip_RN50/original/seed42",
+    "references": {
+      "original": [
+        {
+          "seed": 42,
+          "accuracy": 0.9924271109428247,
+          "source": "artifacts/noncbm/rival10_clip_RN50/seed42/test_predictions.npz",
+          "nec": null
+        },
+        {
+          "seed": 43,
+          "accuracy": 0.9920484664899659,
+          "source": "artifacts/noncbm/rival10_clip_RN50/seed43/test_predictions.npz",
+          "nec": null
+        },
+        {
+          "seed": 44,
+          "accuracy": 0.9920484664899659,
+          "source": "artifacts/noncbm/rival10_clip_RN50/seed44/test_predictions.npz",
+          "nec": null
+        }
+      ],
+      "changed": [
+        {
+          "seed": 42,
+          "accuracy": 0.9237031427489587,
+          "source": "artifacts/noncbm/rival10_clip_RN50/seed42/changed_predictions.npz",
+          "nec": null
+        },
+        {
+          "seed": 43,
+          "accuracy": 0.9250283983339644,
+          "source": "artifacts/noncbm/rival10_clip_RN50/seed43/changed_predictions.npz",
+          "nec": null
+        },
+        {
+          "seed": 44,
+          "accuracy": 0.927300265051117,
+          "source": "artifacts/noncbm/rival10_clip_RN50/seed44/changed_predictions.npz",
           "nec": null
         }
       ]
