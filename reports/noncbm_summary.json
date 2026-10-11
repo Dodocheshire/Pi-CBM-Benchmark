@@ -1,0 +1,132 @@
+[
+  {
+    "experiment": "cifar100_cliprn50",
+    "training_seeds": [
+      42,
+      43,
+      44
+    ],
+    "train_views": [
+      "original"
+    ],
+    "fit_images": 45000,
+    "feature_dimension": 1024,
+    "original": {
+      "mean_accuracy": 0.6936333333333334,
+      "seed_std": 0.001050396750439244,
+      "examples": 10000
+    }
+  },
+  {
+    "experiment": "cifar10_cliprn50",
+    "training_seeds": [
+      42,
+      43,
+      44
+    ],
+    "train_views": [
+      "original"
+    ],
+    "fit_images": 45000,
+    "feature_dimension": 1024,
+    "original": {
+      "mean_accuracy": 0.8850666666666666,
+      "seed_std": 0.0011547005383792527,
+      "examples": 10000
+    }
+  },
+  {
+    "experiment": "cub_rn18_imagenet",
+    "training_seeds": [
+      42,
+      43,
+      44
+    ],
+    "train_views": [
+      "original"
+    ],
+    "fit_images": 4796,
+    "feature_dimension": 512,
+    "original": {
+      "mean_accuracy": 0.6139684731331263,
+      "seed_std": 0.0019628031422427817,
+      "examples": 5794
+    },
+    "changed": {
+      "mean_accuracy": 0.3867218962144747,
+      "seed_std": 0.0015660634666685293,
+      "examples": 5794
+    }
+  },
+  {
+    "experiment": "cub_rn18_imagenet_paired",
+    "training_seeds": [
+      42,
+      43,
+      44
+    ],
+    "train_views": [
+      "original",
+      "changed"
+    ],
+    "fit_images": 9592,
+    "feature_dimension": 512,
+    "original": {
+      "mean_accuracy": 0.6308249913703832,
+      "seed_std": 0.0005978773930165794,
+      "examples": 5794
+    },
+    "changed": {
+      "mean_accuracy": 0.5040846853066391,
+      "seed_std": 0.002219226961452723,
+      "examples": 5794
+    }
+  },
+  {
+    "experiment": "rival10_rn18_imagenet",
+    "training_seeds": [
+      42,
+      43,
+      44
+    ],
+    "train_views": [
+      "original"
+    ],
+    "fit_images": 18987,
+    "feature_dimension": 512,
+    "original": {
+      "mean_accuracy": 0.9836675495018289,
+      "seed_std": 0.0007162199956867081,
+      "examples": 5286
+    },
+    "changed": {
+      "mean_accuracy": 0.8949426157144659,
+      "seed_std": 0.0012596156107604153,
+      "examples": 5286
+    }
+  },
+  {
+    "experiment": "rival10_rn18_imagenet_paired",
+    "training_seeds": [
+      42,
+      43,
+      44
+    ],
+    "train_views": [
+      "original",
+      "changed"
+    ],
+    "fit_images": 37974,
+    "feature_dimension": 512,
+    "original": {
+      "mean_accuracy": 0.9834783705385295,
+      "seed_std": 0.0005461126269292207,
+      "examples": 5286
+    },
+    "changed": {
+      "mean_accuracy": 0.95087652919662,
+      "seed_std": 0.00028897563973741654,
+      "examples": 5286
+    }
+  }
+]
