@@ -70,9 +70,18 @@
 | LF-Pi | 50.66% | 39.25% | 0 |
 | 非 CBM | 63.08% | 50.41% | — |
 
-## cub/resnet50/paired/seed42
+## cub/resnet50/original/seed42
 
 ![NEC 曲线](nec_7.png)
+
+| 方法 | 稠密头原图准确率 | 稠密头换背景准确率 | SAGA 达到步数上限的路径点 |
+| --- | --- | --- | --- |
+| LF-Pi | 59.72% | 35.62% | 0 |
+| 非 CBM | 65.22% | 41.93% | — |
+
+## cub/resnet50/paired/seed42
+
+![NEC 曲线](nec_8.png)
 
 | 方法 | 稠密头原图准确率 | 稠密头换背景准确率 | SAGA 达到步数上限的路径点 |
 | --- | --- | --- | --- |
@@ -81,7 +90,7 @@
 
 ## rival10/clip_RN50/original/seed42
 
-![NEC 曲线](nec_8.png)
+![NEC 曲线](nec_9.png)
 
 | 方法 | 稠密头原图准确率 | 稠密头换背景准确率 | SAGA 达到步数上限的路径点 |
 | --- | --- | --- | --- |
@@ -91,7 +100,7 @@
 
 ## rival10/clip_RN50/paired/seed42
 
-![NEC 曲线](nec_9.png)
+![NEC 曲线](nec_10.png)
 
 | 方法 | 稠密头原图准确率 | 稠密头换背景准确率 | SAGA 达到步数上限的路径点 |
 | --- | --- | --- | --- |
@@ -99,9 +108,19 @@
 | LF-Pi | 98.88% | 95.87% | 0 |
 | 非 CBM | 99.18% | 97.10% | — |
 
+## rival10/resnet18/original/seed42
+
+![NEC 曲线](nec_11.png)
+
+| 方法 | 稠密头原图准确率 | 稠密头换背景准确率 | SAGA 达到步数上限的路径点 |
+| --- | --- | --- | --- |
+| LF-CBM | 93.30% | 75.71% | 0 |
+| LF-Pi | 97.54% | 84.55% | 0 |
+| 非 CBM | 98.38% | 89.50% | — |
+
 ## rival10/resnet18/paired/seed42
 
-![NEC 曲线](nec_10.png)
+![NEC 曲线](nec_12.png)
 
 | 方法 | 稠密头原图准确率 | 稠密头换背景准确率 | SAGA 达到步数上限的路径点 |
 | --- | --- | --- | --- |
@@ -111,9 +130,18 @@
 | PiNI 均值＋噪声 | 97.92% | 94.77% | 0 |
 | 非 CBM | 98.35% | 95.08% | — |
 
+## rival10/resnet50/paired/seed42
+
+![NEC 曲线](nec_13.png)
+
+| 方法 | 稠密头原图准确率 | 稠密头换背景准确率 | SAGA 达到步数上限的路径点 |
+| --- | --- | --- | --- |
+| LF-CBM | 95.95% | 91.40% | 0 |
+| 非 CBM | 99.10% | 96.42% | — |
+
 ## waterbirds/clip_RN50/paired/seed42
 
-![NEC 曲线](nec_11.png)
+![NEC 曲线](nec_14.png)
 
 | 方法 | 稠密头原图准确率 | 稠密头换背景准确率 | SAGA 达到步数上限的路径点 |
 | --- | --- | --- | --- |
@@ -124,7 +152,7 @@
 
 ## waterbirds/resnet50/paired/seed42
 
-![NEC 曲线](nec_12.png)
+![NEC 曲线](nec_15.png)
 
 | 方法 | 稠密头原图准确率 | 稠密头换背景准确率 | SAGA 达到步数上限的路径点 |
 | --- | --- | --- | --- |
@@ -132,17 +160,21 @@
 | PiNI 均值＋噪声 | 96.44% | 94.29% | 0 |
 | 非 CBM | 96.85% | 93.27% | — |
 
-## cifar10/resnet18/corruption_augmented/seed42 · 官方 CIFAR-C · 固定分类头
+## cifar10/clip_RN50/original/seed42 · 官方 CIFAR-C · 固定分类头
 
 ![扰动下 NEC 曲线](nec_corruptions_0.png)
 
-## cifar10/resnet18/original/seed42 · 官方 CIFAR-C · 固定分类头
+## cifar10/resnet18/corruption_augmented/seed42 · 官方 CIFAR-C · 固定分类头
 
 ![扰动下 NEC 曲线](nec_corruptions_1.png)
 
-## cifar10/resnet50/original/seed42 · 官方 CIFAR-C · 固定分类头
+## cifar10/resnet18/original/seed42 · 官方 CIFAR-C · 固定分类头
 
 ![扰动下 NEC 曲线](nec_corruptions_2.png)
+
+## cifar10/resnet50/original/seed42 · 官方 CIFAR-C · 固定分类头
+
+![扰动下 NEC 曲线](nec_corruptions_3.png)
 
 ## CUB 图像扰动
 
