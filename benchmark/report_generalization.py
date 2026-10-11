@@ -29,17 +29,36 @@ def main():
     if font.exists():
         font_manager.fontManager.addfont(str(font));plt.rcParams['font.family']=font_manager.FontProperties(fname=str(font)).get_name()
     plt.rcParams['axes.unicode_minus']=False
-    lines=['# 泛化与分类头容量', '']; groups={}
+    lines=['# 泛化与分类头容量', '']; groups={}; head_summary=[]
     for file in sorted(Path('artifacts/heads').rglob('report.json')):
-        r=json.loads(file.read_text());group=file.parents[1];groups.setdefault(group,[]).append((file,r))
+        r=json.loads(file.read_text())
+        if 'test_evaluations' not in r:continue
+        group=file.parents[1];groups.setdefault(group,[]).append((file,r))
     for index,(group,reports) in enumerate(groups.items()):
+        if any(path.parent.name=='lfpi_global_1draw' for path,_ in reports):
+            reports=[(path,r) for path,r in reports if path.parent.name!='lfpi_global']
+        for path,r in reports:
+            points=[]
+            for point in r['test_evaluations']:
+                counts=point['per_class']
+                points.append({'head':point['head'],'view':point['view'],
+                               'accuracy':shared_accuracy(path.parent,r['dataset'],point['head'],point['view']),
+                               'actual_nec':point['nec'],'nonzero_connections':point['nonzero_connections'],
+                               'per_class_connections_min':min(counts),'per_class_connections_max':max(counts)})
+            head_summary.append({'group':str(group),'method':NAMES[path.parent.name],
+                                 'source':r['source'],'train_views':r['train_views'],
+                                 'dataset':r['dataset'],'concept_field':r['concept_field'],
+                                 'concept_count':r['concept_count'],
+                                 'unconverged_path_points':r['unconverged_path_points'],
+                                 'validation_selected_path':r['best_val_index'],
+                                 'test_evaluations':points})
         views=list(dict.fromkeys(p['view'] for _,r in reports for p in r['test_evaluations']))
         fig,axes=plt.subplots(1,len(views),figsize=(5.5*len(views),4.8),layout='constrained',squeeze=False)
         axes=axes[0]
         for file,r in reports:
             name=NAMES[file.parent.name];directory=file.parent
             for ax,view in zip(axes,views):
-                label='原图测试' if view=='original' else '换背景测试'
+                label='原图测试' if view=='original' else '高斯噪声测试' if view=='gaussian_noise_s1' else '换背景测试'
                 curve=[]
                 for point in r['test_evaluations']:
                     if point['view']!=view or point['head'] in ['dense','best_val']:continue
@@ -63,6 +82,35 @@ def main():
                    if (path.parent/f'dense_{view}.npz').exists() else '—' for view in views]
             lines.append(f"| {NAMES[path.parent.name]} | "+' | '.join(cells)+f" | {r['unconverged_path_points']} |")
         lines += ['']
+    shift_groups={};shift_summary=[]
+    for path in sorted(Path('artifacts/heads').rglob('shifts/report.json')):
+        report=json.loads(path.read_text());shift_groups.setdefault(path.parents[2],[]).append((path,report))
+    for index,(group,reports) in enumerate(shift_groups.items()):
+        fig,axes=plt.subplots(2,2,figsize=(11,8),layout='constrained')
+        for ax,kind,title in zip(axes.flat,['gaussian_noise','gaussian_blur','contrast','jpeg_compression'],
+                                  ['高斯噪声','高斯模糊','降低对比度','JPEG 压缩']):
+            for path,report in reports:
+                method=NAMES[path.parents[1].name]
+                for severity,style,marker in [(1,'-','o'),(3,'--','s'),(5,':','^')]:
+                    points=sorted((row['nec'],100*row['accuracy']) for row in report['evaluation']
+                                  if row['setting']==f'{kind}_{severity}' and row['head'] not in ['dense','best_val'])
+                    if points:
+                        ax.plot(*np.asarray(points).T,color=COLORS[method],linestyle=style,marker=marker,
+                                markersize=3,label=f'{method} · {severity} 档')
+            ax.set_title(title);ax.set_xlabel('每类有效概念连接数（实际 NEC）')
+            ax.set_ylabel('分类准确率（%）');ax.set_ylim(0,102);ax.spines[['top','right']].set_visible(False)
+        handles,labels=axes[0,0].get_legend_handles_labels()
+        if handles:fig.legend(handles,labels,loc='outside lower center',ncol=3)
+        title=str(group.relative_to(Path('artifacts/heads')))+' · 官方 CIFAR-C · 固定分类头'
+        fig.suptitle(title);name=f'nec_corruptions_{index}.png';fig.savefig(out/name,dpi=170);plt.close(fig)
+        lines += [f'## {title}','',f'![扰动下 NEC 曲线]({name})','']
+        for path,report in reports:
+            shift_summary.append({'group':str(group),'method':NAMES[path.parents[1].name],
+                                  'heads_sha256':report['heads_sha256'],'refitting':report['refitting'],
+                                  'source':report['source'],'points':[{k:r[k] for k in
+                                      ['setting','head','accuracy','balanced_accuracy','nec','nonzero_connections']}
+                                      for r in report['evaluation']]})
+    write_metrics(out/'nec_shift_summary.json',shift_summary)
     ood=[]
     for directory in sorted(Path('artifacts/ood').glob('*/resnet18/paired/seed42')):
         dataset=directory.parents[2].name
@@ -112,6 +160,7 @@ def main():
             file='masked_waterbirds_balanced.png';fig.savefig(out/file,dpi=170);plt.close(fig)
             lines += [f'![水鸟两类平均准确率]({file})','']
     write_metrics(out/'generalization_summary.json',ood)
+    write_metrics(out/'nec_summary.json',head_summary)
     (out/'GENERALIZATION_RESULT.md').write_text('\n'.join(lines))
 
 

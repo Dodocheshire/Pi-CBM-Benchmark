@@ -1,0 +1,5414 @@
+[
+  {
+    "group": "artifacts/heads/cifar10/resnet18/corruption_augmented/seed42",
+    "method": "LF-CBM",
+    "heads_sha256": "4a5347a62f502f9f93476ce0f83ab58dddbdafaa70c38822a8c31c5817df57ec",
+    "refitting": false,
+    "source": "/home/pengcheng/Pi-CBM-Benchmark/artifacts/matched/lf/cifar10/rn18_imagenet/gaussian_noise_augmented/seed42/corruptions",
+    "points": [
+      {
+        "setting": "contrast_1",
+        "head": "best_val",
+        "accuracy": 0.8474,
+        "balanced_accuracy": 0.8474,
+        "nec": 106.9,
+        "nonzero_connections": 1069
+      },
+      {
+        "setting": "contrast_1",
+        "head": "1",
+        "accuracy": 0.6255,
+        "balanced_accuracy": 0.6255,
+        "nec": 1.0,
+        "nonzero_connections": 10
+      },
+      {
+        "setting": "contrast_1",
+        "head": "2",
+        "accuracy": 0.7495,
+        "balanced_accuracy": 0.7495,
+        "nec": 2.0,
+        "nonzero_connections": 20
+      },
+      {
+        "setting": "contrast_1",
+        "head": "3",
+        "accuracy": 0.7777,
+        "balanced_accuracy": 0.7777000000000001,
+        "nec": 3.0,
+        "nonzero_connections": 30
+      },
+      {
+        "setting": "contrast_1",
+        "head": "5",
+        "accuracy": 0.7912,
+        "balanced_accuracy": 0.7912,
+        "nec": 5.0,
+        "nonzero_connections": 50
+      },
+      {
+        "setting": "contrast_1",
+        "head": "8",
+        "accuracy": 0.8062,
+        "balanced_accuracy": 0.8061999999999999,
+        "nec": 8.0,
+        "nonzero_connections": 80
+      },
+      {
+        "setting": "contrast_1",
+        "head": "10",
+        "accuracy": 0.8111,
+        "balanced_accuracy": 0.8111,
+        "nec": 10.0,
+        "nonzero_connections": 100
+      },
+      {
+        "setting": "contrast_1",
+        "head": "15",
+        "accuracy": 0.8224,
+        "balanced_accuracy": 0.8224,
+        "nec": 15.0,
+        "nonzero_connections": 150
+      },
+      {
+        "setting": "contrast_1",
+        "head": "20",
+        "accuracy": 0.8276,
+        "balanced_accuracy": 0.8276,
+        "nec": 20.0,
+        "nonzero_connections": 200
+      },
+      {
+        "setting": "contrast_1",
+        "head": "30",
+        "accuracy": 0.8322,
+        "balanced_accuracy": 0.8322,
+        "nec": 30.0,
+        "nonzero_connections": 300
+      },
+      {
+        "setting": "contrast_1",
+        "head": "50",
+        "accuracy": 0.8411,
+        "balanced_accuracy": 0.8411000000000002,
+        "nec": 50.0,
+        "nonzero_connections": 500
+      },
+      {
+        "setting": "contrast_1",
+        "head": "80",
+        "accuracy": 0.8461,
+        "balanced_accuracy": 0.8461000000000001,
+        "nec": 80.0,
+        "nonzero_connections": 800
+      },
+      {
+        "setting": "contrast_1",
+        "head": "113",
+        "accuracy": 0.8474,
+        "balanced_accuracy": 0.8474,
+        "nec": 106.9,
+        "nonzero_connections": 1069
+      },
+      {
+        "setting": "contrast_1",
+        "head": "dense",
+        "accuracy": 0.8476,
+        "balanced_accuracy": 0.8476000000000001,
+        "nec": 113.0,
+        "nonzero_connections": 1130
+      },
+      {
+        "setting": "contrast_3",
+        "head": "best_val",
+        "accuracy": 0.7331,
+        "balanced_accuracy": 0.7331,
+        "nec": 106.9,
+        "nonzero_connections": 1069
+      },
+      {
+        "setting": "contrast_3",
+        "head": "1",
+        "accuracy": 0.5021,
+        "balanced_accuracy": 0.5021,
+        "nec": 1.0,
+        "nonzero_connections": 10
+      },
+      {
+        "setting": "contrast_3",
+        "head": "2",
+        "accuracy": 0.6061,
+        "balanced_accuracy": 0.6061000000000001,
+        "nec": 2.0,
+        "nonzero_connections": 20
+      },
+      {
+        "setting": "contrast_3",
+        "head": "3",
+        "accuracy": 0.6457,
+        "balanced_accuracy": 0.6456999999999999,
+        "nec": 3.0,
+        "nonzero_connections": 30
+      },
+      {
+        "setting": "contrast_3",
+        "head": "5",
+        "accuracy": 0.6619,
+        "balanced_accuracy": 0.6618999999999999,
+        "nec": 5.0,
+        "nonzero_connections": 50
+      },
+      {
+        "setting": "contrast_3",
+        "head": "8",
+        "accuracy": 0.6778,
+        "balanced_accuracy": 0.6778000000000001,
+        "nec": 8.0,
+        "nonzero_connections": 80
+      },
+      {
+        "setting": "contrast_3",
+        "head": "10",
+        "accuracy": 0.6825,
+        "balanced_accuracy": 0.6825,
+        "nec": 10.0,
+        "nonzero_connections": 100
+      },
+      {
+        "setting": "contrast_3",
+        "head": "15",
+        "accuracy": 0.692,
+        "balanced_accuracy": 0.6920000000000001,
+        "nec": 15.0,
+        "nonzero_connections": 150
+      },
+      {
+        "setting": "contrast_3",
+        "head": "20",
+        "accuracy": 0.6974,
+        "balanced_accuracy": 0.6974,
+        "nec": 20.0,
+        "nonzero_connections": 200
+      },
+      {
+        "setting": "contrast_3",
+        "head": "30",
+        "accuracy": 0.6996,
+        "balanced_accuracy": 0.6996,
+        "nec": 30.0,
+        "nonzero_connections": 300
+      },
+      {
+        "setting": "contrast_3",
+        "head": "50",
+        "accuracy": 0.7129,
+        "balanced_accuracy": 0.7129000000000001,
+        "nec": 50.0,
+        "nonzero_connections": 500
+      },
+      {
+        "setting": "contrast_3",
+        "head": "80",
+        "accuracy": 0.726,
+        "balanced_accuracy": 0.7259999999999999,
+        "nec": 80.0,
+        "nonzero_connections": 800
+      },
+      {
+        "setting": "contrast_3",
+        "head": "113",
+        "accuracy": 0.7331,
+        "balanced_accuracy": 0.7331,
+        "nec": 106.9,
+        "nonzero_connections": 1069
+      },
+      {
+        "setting": "contrast_3",
+        "head": "dense",
+        "accuracy": 0.7366,
+        "balanced_accuracy": 0.7365999999999999,
+        "nec": 113.0,
+        "nonzero_connections": 1130
+      },
+      {
+        "setting": "contrast_5",
+        "head": "best_val",
+        "accuracy": 0.4165,
+        "balanced_accuracy": 0.4165,
+        "nec": 106.9,
+        "nonzero_connections": 1069
+      },
+      {
+        "setting": "contrast_5",
+        "head": "1",
+        "accuracy": 0.1823,
+        "balanced_accuracy": 0.1823,
+        "nec": 1.0,
+        "nonzero_connections": 10
+      },
+      {
+        "setting": "contrast_5",
+        "head": "2",
+        "accuracy": 0.2472,
+        "balanced_accuracy": 0.24720000000000003,
+        "nec": 2.0,
+        "nonzero_connections": 20
+      },
+      {
+        "setting": "contrast_5",
+        "head": "3",
+        "accuracy": 0.3119,
+        "balanced_accuracy": 0.31189999999999996,
+        "nec": 3.0,
+        "nonzero_connections": 30
+      },
+      {
+        "setting": "contrast_5",
+        "head": "5",
+        "accuracy": 0.3448,
+        "balanced_accuracy": 0.3448,
+        "nec": 5.0,
+        "nonzero_connections": 50
+      },
+      {
+        "setting": "contrast_5",
+        "head": "8",
+        "accuracy": 0.3615,
+        "balanced_accuracy": 0.3615,
+        "nec": 8.0,
+        "nonzero_connections": 80
+      },
+      {
+        "setting": "contrast_5",
+        "head": "10",
+        "accuracy": 0.367,
+        "balanced_accuracy": 0.36699999999999994,
+        "nec": 10.0,
+        "nonzero_connections": 100
+      },
+      {
+        "setting": "contrast_5",
+        "head": "15",
+        "accuracy": 0.3772,
+        "balanced_accuracy": 0.3772,
+        "nec": 15.0,
+        "nonzero_connections": 150
+      },
+      {
+        "setting": "contrast_5",
+        "head": "20",
+        "accuracy": 0.3847,
+        "balanced_accuracy": 0.3847,
+        "nec": 20.0,
+        "nonzero_connections": 200
+      },
+      {
+        "setting": "contrast_5",
+        "head": "30",
+        "accuracy": 0.3874,
+        "balanced_accuracy": 0.38739999999999997,
+        "nec": 30.0,
+        "nonzero_connections": 300
+      },
+      {
+        "setting": "contrast_5",
+        "head": "50",
+        "accuracy": 0.3958,
+        "balanced_accuracy": 0.39579999999999993,
+        "nec": 50.0,
+        "nonzero_connections": 500
+      },
+      {
+        "setting": "contrast_5",
+        "head": "80",
+        "accuracy": 0.4072,
+        "balanced_accuracy": 0.4071999999999999,
+        "nec": 80.0,
+        "nonzero_connections": 800
+      },
+      {
+        "setting": "contrast_5",
+        "head": "113",
+        "accuracy": 0.4165,
+        "balanced_accuracy": 0.4165,
+        "nec": 106.9,
+        "nonzero_connections": 1069
+      },
+      {
+        "setting": "contrast_5",
+        "head": "dense",
+        "accuracy": 0.4161,
+        "balanced_accuracy": 0.4161,
+        "nec": 113.0,
+        "nonzero_connections": 1130
+      },
+      {
+        "setting": "gaussian_blur_1",
+        "head": "best_val",
+        "accuracy": 0.8469,
+        "balanced_accuracy": 0.8469,
+        "nec": 106.9,
+        "nonzero_connections": 1069
+      },
+      {
+        "setting": "gaussian_blur_1",
+        "head": "1",
+        "accuracy": 0.6327,
+        "balanced_accuracy": 0.6327,
+        "nec": 1.0,
+        "nonzero_connections": 10
+      },
+      {
+        "setting": "gaussian_blur_1",
+        "head": "2",
+        "accuracy": 0.7516,
+        "balanced_accuracy": 0.7516,
+        "nec": 2.0,
+        "nonzero_connections": 20
+      },
+      {
+        "setting": "gaussian_blur_1",
+        "head": "3",
+        "accuracy": 0.779,
+        "balanced_accuracy": 0.7789999999999999,
+        "nec": 3.0,
+        "nonzero_connections": 30
+      },
+      {
+        "setting": "gaussian_blur_1",
+        "head": "5",
+        "accuracy": 0.7915,
+        "balanced_accuracy": 0.7914999999999999,
+        "nec": 5.0,
+        "nonzero_connections": 50
+      },
+      {
+        "setting": "gaussian_blur_1",
+        "head": "8",
+        "accuracy": 0.8048,
+        "balanced_accuracy": 0.8048000000000002,
+        "nec": 8.0,
+        "nonzero_connections": 80
+      },
+      {
+        "setting": "gaussian_blur_1",
+        "head": "10",
+        "accuracy": 0.8134,
+        "balanced_accuracy": 0.8134,
+        "nec": 10.0,
+        "nonzero_connections": 100
+      },
+      {
+        "setting": "gaussian_blur_1",
+        "head": "15",
+        "accuracy": 0.8235,
+        "balanced_accuracy": 0.8234999999999999,
+        "nec": 15.0,
+        "nonzero_connections": 150
+      },
+      {
+        "setting": "gaussian_blur_1",
+        "head": "20",
+        "accuracy": 0.8288,
+        "balanced_accuracy": 0.8288,
+        "nec": 20.0,
+        "nonzero_connections": 200
+      },
+      {
+        "setting": "gaussian_blur_1",
+        "head": "30",
+        "accuracy": 0.8336,
+        "balanced_accuracy": 0.8336,
+        "nec": 30.0,
+        "nonzero_connections": 300
+      },
+      {
+        "setting": "gaussian_blur_1",
+        "head": "50",
+        "accuracy": 0.8397,
+        "balanced_accuracy": 0.8397,
+        "nec": 50.0,
+        "nonzero_connections": 500
+      },
+      {
+        "setting": "gaussian_blur_1",
+        "head": "80",
+        "accuracy": 0.8452,
+        "balanced_accuracy": 0.8452,
+        "nec": 80.0,
+        "nonzero_connections": 800
+      },
+      {
+        "setting": "gaussian_blur_1",
+        "head": "113",
+        "accuracy": 0.8469,
+        "balanced_accuracy": 0.8469,
+        "nec": 106.9,
+        "nonzero_connections": 1069
+      },
+      {
+        "setting": "gaussian_blur_1",
+        "head": "dense",
+        "accuracy": 0.8478,
+        "balanced_accuracy": 0.8478,
+        "nec": 113.0,
+        "nonzero_connections": 1130
+      },
+      {
+        "setting": "gaussian_blur_3",
+        "head": "best_val",
+        "accuracy": 0.6912,
+        "balanced_accuracy": 0.6912,
+        "nec": 106.9,
+        "nonzero_connections": 1069
+      },
+      {
+        "setting": "gaussian_blur_3",
+        "head": "1",
+        "accuracy": 0.5145,
+        "balanced_accuracy": 0.5145000000000001,
+        "nec": 1.0,
+        "nonzero_connections": 10
+      },
+      {
+        "setting": "gaussian_blur_3",
+        "head": "2",
+        "accuracy": 0.5979,
+        "balanced_accuracy": 0.5978999999999999,
+        "nec": 2.0,
+        "nonzero_connections": 20
+      },
+      {
+        "setting": "gaussian_blur_3",
+        "head": "3",
+        "accuracy": 0.6161,
+        "balanced_accuracy": 0.6161000000000001,
+        "nec": 3.0,
+        "nonzero_connections": 30
+      },
+      {
+        "setting": "gaussian_blur_3",
+        "head": "5",
+        "accuracy": 0.6281,
+        "balanced_accuracy": 0.6281000000000001,
+        "nec": 5.0,
+        "nonzero_connections": 50
+      },
+      {
+        "setting": "gaussian_blur_3",
+        "head": "8",
+        "accuracy": 0.6446,
+        "balanced_accuracy": 0.6446000000000001,
+        "nec": 8.0,
+        "nonzero_connections": 80
+      },
+      {
+        "setting": "gaussian_blur_3",
+        "head": "10",
+        "accuracy": 0.6491,
+        "balanced_accuracy": 0.6491,
+        "nec": 10.0,
+        "nonzero_connections": 100
+      },
+      {
+        "setting": "gaussian_blur_3",
+        "head": "15",
+        "accuracy": 0.659,
+        "balanced_accuracy": 0.659,
+        "nec": 15.0,
+        "nonzero_connections": 150
+      },
+      {
+        "setting": "gaussian_blur_3",
+        "head": "20",
+        "accuracy": 0.6623,
+        "balanced_accuracy": 0.6623,
+        "nec": 20.0,
+        "nonzero_connections": 200
+      },
+      {
+        "setting": "gaussian_blur_3",
+        "head": "30",
+        "accuracy": 0.6695,
+        "balanced_accuracy": 0.6695,
+        "nec": 30.0,
+        "nonzero_connections": 300
+      },
+      {
+        "setting": "gaussian_blur_3",
+        "head": "50",
+        "accuracy": 0.6799,
+        "balanced_accuracy": 0.6799,
+        "nec": 50.0,
+        "nonzero_connections": 500
+      },
+      {
+        "setting": "gaussian_blur_3",
+        "head": "80",
+        "accuracy": 0.6879,
+        "balanced_accuracy": 0.6879,
+        "nec": 80.0,
+        "nonzero_connections": 800
+      },
+      {
+        "setting": "gaussian_blur_3",
+        "head": "113",
+        "accuracy": 0.6912,
+        "balanced_accuracy": 0.6912,
+        "nec": 106.9,
+        "nonzero_connections": 1069
+      },
+      {
+        "setting": "gaussian_blur_3",
+        "head": "dense",
+        "accuracy": 0.6943,
+        "balanced_accuracy": 0.6942999999999999,
+        "nec": 113.0,
+        "nonzero_connections": 1130
+      },
+      {
+        "setting": "gaussian_blur_5",
+        "head": "best_val",
+        "accuracy": 0.457,
+        "balanced_accuracy": 0.457,
+        "nec": 106.9,
+        "nonzero_connections": 1069
+      },
+      {
+        "setting": "gaussian_blur_5",
+        "head": "1",
+        "accuracy": 0.3434,
+        "balanced_accuracy": 0.34340000000000004,
+        "nec": 1.0,
+        "nonzero_connections": 10
+      },
+      {
+        "setting": "gaussian_blur_5",
+        "head": "2",
+        "accuracy": 0.3905,
+        "balanced_accuracy": 0.39049999999999996,
+        "nec": 2.0,
+        "nonzero_connections": 20
+      },
+      {
+        "setting": "gaussian_blur_5",
+        "head": "3",
+        "accuracy": 0.4053,
+        "balanced_accuracy": 0.4053,
+        "nec": 3.0,
+        "nonzero_connections": 30
+      },
+      {
+        "setting": "gaussian_blur_5",
+        "head": "5",
+        "accuracy": 0.4127,
+        "balanced_accuracy": 0.41270000000000007,
+        "nec": 5.0,
+        "nonzero_connections": 50
+      },
+      {
+        "setting": "gaussian_blur_5",
+        "head": "8",
+        "accuracy": 0.4222,
+        "balanced_accuracy": 0.42219999999999996,
+        "nec": 8.0,
+        "nonzero_connections": 80
+      },
+      {
+        "setting": "gaussian_blur_5",
+        "head": "10",
+        "accuracy": 0.4276,
+        "balanced_accuracy": 0.4276,
+        "nec": 10.0,
+        "nonzero_connections": 100
+      },
+      {
+        "setting": "gaussian_blur_5",
+        "head": "15",
+        "accuracy": 0.4296,
+        "balanced_accuracy": 0.42960000000000004,
+        "nec": 15.0,
+        "nonzero_connections": 150
+      },
+      {
+        "setting": "gaussian_blur_5",
+        "head": "20",
+        "accuracy": 0.4359,
+        "balanced_accuracy": 0.43590000000000007,
+        "nec": 20.0,
+        "nonzero_connections": 200
+      },
+      {
+        "setting": "gaussian_blur_5",
+        "head": "30",
+        "accuracy": 0.4421,
+        "balanced_accuracy": 0.44209999999999994,
+        "nec": 30.0,
+        "nonzero_connections": 300
+      },
+      {
+        "setting": "gaussian_blur_5",
+        "head": "50",
+        "accuracy": 0.4478,
+        "balanced_accuracy": 0.4478,
+        "nec": 50.0,
+        "nonzero_connections": 500
+      },
+      {
+        "setting": "gaussian_blur_5",
+        "head": "80",
+        "accuracy": 0.4533,
+        "balanced_accuracy": 0.45330000000000004,
+        "nec": 80.0,
+        "nonzero_connections": 800
+      },
+      {
+        "setting": "gaussian_blur_5",
+        "head": "113",
+        "accuracy": 0.457,
+        "balanced_accuracy": 0.457,
+        "nec": 106.9,
+        "nonzero_connections": 1069
+      },
+      {
+        "setting": "gaussian_blur_5",
+        "head": "dense",
+        "accuracy": 0.4572,
+        "balanced_accuracy": 0.4572,
+        "nec": 113.0,
+        "nonzero_connections": 1130
+      },
+      {
+        "setting": "gaussian_noise_1",
+        "head": "best_val",
+        "accuracy": 0.7276,
+        "balanced_accuracy": 0.7276,
+        "nec": 106.9,
+        "nonzero_connections": 1069
+      },
+      {
+        "setting": "gaussian_noise_1",
+        "head": "1",
+        "accuracy": 0.5412,
+        "balanced_accuracy": 0.5412,
+        "nec": 1.0,
+        "nonzero_connections": 10
+      },
+      {
+        "setting": "gaussian_noise_1",
+        "head": "2",
+        "accuracy": 0.6277,
+        "balanced_accuracy": 0.6277,
+        "nec": 2.0,
+        "nonzero_connections": 20
+      },
+      {
+        "setting": "gaussian_noise_1",
+        "head": "3",
+        "accuracy": 0.6608,
+        "balanced_accuracy": 0.6607999999999999,
+        "nec": 3.0,
+        "nonzero_connections": 30
+      },
+      {
+        "setting": "gaussian_noise_1",
+        "head": "5",
+        "accuracy": 0.6729,
+        "balanced_accuracy": 0.6729,
+        "nec": 5.0,
+        "nonzero_connections": 50
+      },
+      {
+        "setting": "gaussian_noise_1",
+        "head": "8",
+        "accuracy": 0.6868,
+        "balanced_accuracy": 0.6868,
+        "nec": 8.0,
+        "nonzero_connections": 80
+      },
+      {
+        "setting": "gaussian_noise_1",
+        "head": "10",
+        "accuracy": 0.6903,
+        "balanced_accuracy": 0.6903000000000001,
+        "nec": 10.0,
+        "nonzero_connections": 100
+      },
+      {
+        "setting": "gaussian_noise_1",
+        "head": "15",
+        "accuracy": 0.7009,
+        "balanced_accuracy": 0.7009000000000001,
+        "nec": 15.0,
+        "nonzero_connections": 150
+      },
+      {
+        "setting": "gaussian_noise_1",
+        "head": "20",
+        "accuracy": 0.7053,
+        "balanced_accuracy": 0.7053,
+        "nec": 20.0,
+        "nonzero_connections": 200
+      },
+      {
+        "setting": "gaussian_noise_1",
+        "head": "30",
+        "accuracy": 0.7102,
+        "balanced_accuracy": 0.7102,
+        "nec": 30.0,
+        "nonzero_connections": 300
+      },
+      {
+        "setting": "gaussian_noise_1",
+        "head": "50",
+        "accuracy": 0.7145,
+        "balanced_accuracy": 0.7145,
+        "nec": 50.0,
+        "nonzero_connections": 500
+      },
+      {
+        "setting": "gaussian_noise_1",
+        "head": "80",
+        "accuracy": 0.725,
+        "balanced_accuracy": 0.725,
+        "nec": 80.0,
+        "nonzero_connections": 800
+      },
+      {
+        "setting": "gaussian_noise_1",
+        "head": "113",
+        "accuracy": 0.7276,
+        "balanced_accuracy": 0.7276,
+        "nec": 106.9,
+        "nonzero_connections": 1069
+      },
+      {
+        "setting": "gaussian_noise_1",
+        "head": "dense",
+        "accuracy": 0.7262,
+        "balanced_accuracy": 0.7262,
+        "nec": 113.0,
+        "nonzero_connections": 1130
+      },
+      {
+        "setting": "gaussian_noise_3",
+        "head": "best_val",
+        "accuracy": 0.489,
+        "balanced_accuracy": 0.489,
+        "nec": 106.9,
+        "nonzero_connections": 1069
+      },
+      {
+        "setting": "gaussian_noise_3",
+        "head": "1",
+        "accuracy": 0.4133,
+        "balanced_accuracy": 0.4133,
+        "nec": 1.0,
+        "nonzero_connections": 10
+      },
+      {
+        "setting": "gaussian_noise_3",
+        "head": "2",
+        "accuracy": 0.4494,
+        "balanced_accuracy": 0.44939999999999997,
+        "nec": 2.0,
+        "nonzero_connections": 20
+      },
+      {
+        "setting": "gaussian_noise_3",
+        "head": "3",
+        "accuracy": 0.4519,
+        "balanced_accuracy": 0.4519,
+        "nec": 3.0,
+        "nonzero_connections": 30
+      },
+      {
+        "setting": "gaussian_noise_3",
+        "head": "5",
+        "accuracy": 0.4573,
+        "balanced_accuracy": 0.45730000000000004,
+        "nec": 5.0,
+        "nonzero_connections": 50
+      },
+      {
+        "setting": "gaussian_noise_3",
+        "head": "8",
+        "accuracy": 0.4599,
+        "balanced_accuracy": 0.45990000000000003,
+        "nec": 8.0,
+        "nonzero_connections": 80
+      },
+      {
+        "setting": "gaussian_noise_3",
+        "head": "10",
+        "accuracy": 0.469,
+        "balanced_accuracy": 0.46900000000000003,
+        "nec": 10.0,
+        "nonzero_connections": 100
+      },
+      {
+        "setting": "gaussian_noise_3",
+        "head": "15",
+        "accuracy": 0.4812,
+        "balanced_accuracy": 0.4812,
+        "nec": 15.0,
+        "nonzero_connections": 150
+      },
+      {
+        "setting": "gaussian_noise_3",
+        "head": "20",
+        "accuracy": 0.4866,
+        "balanced_accuracy": 0.48660000000000003,
+        "nec": 20.0,
+        "nonzero_connections": 200
+      },
+      {
+        "setting": "gaussian_noise_3",
+        "head": "30",
+        "accuracy": 0.493,
+        "balanced_accuracy": 0.493,
+        "nec": 30.0,
+        "nonzero_connections": 300
+      },
+      {
+        "setting": "gaussian_noise_3",
+        "head": "50",
+        "accuracy": 0.4988,
+        "balanced_accuracy": 0.49879999999999997,
+        "nec": 50.0,
+        "nonzero_connections": 500
+      },
+      {
+        "setting": "gaussian_noise_3",
+        "head": "80",
+        "accuracy": 0.4973,
+        "balanced_accuracy": 0.49729999999999996,
+        "nec": 80.0,
+        "nonzero_connections": 800
+      },
+      {
+        "setting": "gaussian_noise_3",
+        "head": "113",
+        "accuracy": 0.489,
+        "balanced_accuracy": 0.489,
+        "nec": 106.9,
+        "nonzero_connections": 1069
+      },
+      {
+        "setting": "gaussian_noise_3",
+        "head": "dense",
+        "accuracy": 0.4834,
+        "balanced_accuracy": 0.48340000000000005,
+        "nec": 113.0,
+        "nonzero_connections": 1130
+      },
+      {
+        "setting": "gaussian_noise_5",
+        "head": "best_val",
+        "accuracy": 0.3477,
+        "balanced_accuracy": 0.3477,
+        "nec": 106.9,
+        "nonzero_connections": 1069
+      },
+      {
+        "setting": "gaussian_noise_5",
+        "head": "1",
+        "accuracy": 0.3468,
+        "balanced_accuracy": 0.3468,
+        "nec": 1.0,
+        "nonzero_connections": 10
+      },
+      {
+        "setting": "gaussian_noise_5",
+        "head": "2",
+        "accuracy": 0.3673,
+        "balanced_accuracy": 0.36730000000000007,
+        "nec": 2.0,
+        "nonzero_connections": 20
+      },
+      {
+        "setting": "gaussian_noise_5",
+        "head": "3",
+        "accuracy": 0.3621,
+        "balanced_accuracy": 0.36210000000000003,
+        "nec": 3.0,
+        "nonzero_connections": 30
+      },
+      {
+        "setting": "gaussian_noise_5",
+        "head": "5",
+        "accuracy": 0.3628,
+        "balanced_accuracy": 0.36279999999999996,
+        "nec": 5.0,
+        "nonzero_connections": 50
+      },
+      {
+        "setting": "gaussian_noise_5",
+        "head": "8",
+        "accuracy": 0.3635,
+        "balanced_accuracy": 0.3635,
+        "nec": 8.0,
+        "nonzero_connections": 80
+      },
+      {
+        "setting": "gaussian_noise_5",
+        "head": "10",
+        "accuracy": 0.3722,
+        "balanced_accuracy": 0.3722,
+        "nec": 10.0,
+        "nonzero_connections": 100
+      },
+      {
+        "setting": "gaussian_noise_5",
+        "head": "15",
+        "accuracy": 0.3764,
+        "balanced_accuracy": 0.37639999999999996,
+        "nec": 15.0,
+        "nonzero_connections": 150
+      },
+      {
+        "setting": "gaussian_noise_5",
+        "head": "20",
+        "accuracy": 0.3789,
+        "balanced_accuracy": 0.37889999999999996,
+        "nec": 20.0,
+        "nonzero_connections": 200
+      },
+      {
+        "setting": "gaussian_noise_5",
+        "head": "30",
+        "accuracy": 0.3842,
+        "balanced_accuracy": 0.3842,
+        "nec": 30.0,
+        "nonzero_connections": 300
+      },
+      {
+        "setting": "gaussian_noise_5",
+        "head": "50",
+        "accuracy": 0.383,
+        "balanced_accuracy": 0.383,
+        "nec": 50.0,
+        "nonzero_connections": 500
+      },
+      {
+        "setting": "gaussian_noise_5",
+        "head": "80",
+        "accuracy": 0.3658,
+        "balanced_accuracy": 0.3658,
+        "nec": 80.0,
+        "nonzero_connections": 800
+      },
+      {
+        "setting": "gaussian_noise_5",
+        "head": "113",
+        "accuracy": 0.3477,
+        "balanced_accuracy": 0.3477,
+        "nec": 106.9,
+        "nonzero_connections": 1069
+      },
+      {
+        "setting": "gaussian_noise_5",
+        "head": "dense",
+        "accuracy": 0.3387,
+        "balanced_accuracy": 0.3387,
+        "nec": 113.0,
+        "nonzero_connections": 1130
+      },
+      {
+        "setting": "jpeg_compression_1",
+        "head": "best_val",
+        "accuracy": 0.7308,
+        "balanced_accuracy": 0.7308000000000001,
+        "nec": 106.9,
+        "nonzero_connections": 1069
+      },
+      {
+        "setting": "jpeg_compression_1",
+        "head": "1",
+        "accuracy": 0.5319,
+        "balanced_accuracy": 0.5319,
+        "nec": 1.0,
+        "nonzero_connections": 10
+      },
+      {
+        "setting": "jpeg_compression_1",
+        "head": "2",
+        "accuracy": 0.6248,
+        "balanced_accuracy": 0.6248000000000001,
+        "nec": 2.0,
+        "nonzero_connections": 20
+      },
+      {
+        "setting": "jpeg_compression_1",
+        "head": "3",
+        "accuracy": 0.6542,
+        "balanced_accuracy": 0.6542,
+        "nec": 3.0,
+        "nonzero_connections": 30
+      },
+      {
+        "setting": "jpeg_compression_1",
+        "head": "5",
+        "accuracy": 0.6742,
+        "balanced_accuracy": 0.6741999999999999,
+        "nec": 5.0,
+        "nonzero_connections": 50
+      },
+      {
+        "setting": "jpeg_compression_1",
+        "head": "8",
+        "accuracy": 0.6941,
+        "balanced_accuracy": 0.6940999999999999,
+        "nec": 8.0,
+        "nonzero_connections": 80
+      },
+      {
+        "setting": "jpeg_compression_1",
+        "head": "10",
+        "accuracy": 0.7048,
+        "balanced_accuracy": 0.7048,
+        "nec": 10.0,
+        "nonzero_connections": 100
+      },
+      {
+        "setting": "jpeg_compression_1",
+        "head": "15",
+        "accuracy": 0.711,
+        "balanced_accuracy": 0.711,
+        "nec": 15.0,
+        "nonzero_connections": 150
+      },
+      {
+        "setting": "jpeg_compression_1",
+        "head": "20",
+        "accuracy": 0.7167,
+        "balanced_accuracy": 0.7167000000000001,
+        "nec": 20.0,
+        "nonzero_connections": 200
+      },
+      {
+        "setting": "jpeg_compression_1",
+        "head": "30",
+        "accuracy": 0.7177,
+        "balanced_accuracy": 0.7177,
+        "nec": 30.0,
+        "nonzero_connections": 300
+      },
+      {
+        "setting": "jpeg_compression_1",
+        "head": "50",
+        "accuracy": 0.7261,
+        "balanced_accuracy": 0.7261,
+        "nec": 50.0,
+        "nonzero_connections": 500
+      },
+      {
+        "setting": "jpeg_compression_1",
+        "head": "80",
+        "accuracy": 0.7319,
+        "balanced_accuracy": 0.7318999999999999,
+        "nec": 80.0,
+        "nonzero_connections": 800
+      },
+      {
+        "setting": "jpeg_compression_1",
+        "head": "113",
+        "accuracy": 0.7308,
+        "balanced_accuracy": 0.7308000000000001,
+        "nec": 106.9,
+        "nonzero_connections": 1069
+      },
+      {
+        "setting": "jpeg_compression_1",
+        "head": "dense",
+        "accuracy": 0.734,
+        "balanced_accuracy": 0.734,
+        "nec": 113.0,
+        "nonzero_connections": 1130
+      },
+      {
+        "setting": "jpeg_compression_3",
+        "head": "best_val",
+        "accuracy": 0.6469,
+        "balanced_accuracy": 0.6469,
+        "nec": 106.9,
+        "nonzero_connections": 1069
+      },
+      {
+        "setting": "jpeg_compression_3",
+        "head": "1",
+        "accuracy": 0.4704,
+        "balanced_accuracy": 0.47040000000000004,
+        "nec": 1.0,
+        "nonzero_connections": 10
+      },
+      {
+        "setting": "jpeg_compression_3",
+        "head": "2",
+        "accuracy": 0.5465,
+        "balanced_accuracy": 0.5465,
+        "nec": 2.0,
+        "nonzero_connections": 20
+      },
+      {
+        "setting": "jpeg_compression_3",
+        "head": "3",
+        "accuracy": 0.5738,
+        "balanced_accuracy": 0.5738,
+        "nec": 3.0,
+        "nonzero_connections": 30
+      },
+      {
+        "setting": "jpeg_compression_3",
+        "head": "5",
+        "accuracy": 0.5905,
+        "balanced_accuracy": 0.5905,
+        "nec": 5.0,
+        "nonzero_connections": 50
+      },
+      {
+        "setting": "jpeg_compression_3",
+        "head": "8",
+        "accuracy": 0.6095,
+        "balanced_accuracy": 0.6094999999999999,
+        "nec": 8.0,
+        "nonzero_connections": 80
+      },
+      {
+        "setting": "jpeg_compression_3",
+        "head": "10",
+        "accuracy": 0.6171,
+        "balanced_accuracy": 0.6171,
+        "nec": 10.0,
+        "nonzero_connections": 100
+      },
+      {
+        "setting": "jpeg_compression_3",
+        "head": "15",
+        "accuracy": 0.6265,
+        "balanced_accuracy": 0.6265,
+        "nec": 15.0,
+        "nonzero_connections": 150
+      },
+      {
+        "setting": "jpeg_compression_3",
+        "head": "20",
+        "accuracy": 0.6351,
+        "balanced_accuracy": 0.6351000000000001,
+        "nec": 20.0,
+        "nonzero_connections": 200
+      },
+      {
+        "setting": "jpeg_compression_3",
+        "head": "30",
+        "accuracy": 0.6361,
+        "balanced_accuracy": 0.6361,
+        "nec": 30.0,
+        "nonzero_connections": 300
+      },
+      {
+        "setting": "jpeg_compression_3",
+        "head": "50",
+        "accuracy": 0.6428,
+        "balanced_accuracy": 0.6428,
+        "nec": 50.0,
+        "nonzero_connections": 500
+      },
+      {
+        "setting": "jpeg_compression_3",
+        "head": "80",
+        "accuracy": 0.645,
+        "balanced_accuracy": 0.645,
+        "nec": 80.0,
+        "nonzero_connections": 800
+      },
+      {
+        "setting": "jpeg_compression_3",
+        "head": "113",
+        "accuracy": 0.6469,
+        "balanced_accuracy": 0.6469,
+        "nec": 106.9,
+        "nonzero_connections": 1069
+      },
+      {
+        "setting": "jpeg_compression_3",
+        "head": "dense",
+        "accuracy": 0.6471,
+        "balanced_accuracy": 0.6471,
+        "nec": 113.0,
+        "nonzero_connections": 1130
+      },
+      {
+        "setting": "jpeg_compression_5",
+        "head": "best_val",
+        "accuracy": 0.5914,
+        "balanced_accuracy": 0.5913999999999999,
+        "nec": 106.9,
+        "nonzero_connections": 1069
+      },
+      {
+        "setting": "jpeg_compression_5",
+        "head": "1",
+        "accuracy": 0.4363,
+        "balanced_accuracy": 0.43629999999999997,
+        "nec": 1.0,
+        "nonzero_connections": 10
+      },
+      {
+        "setting": "jpeg_compression_5",
+        "head": "2",
+        "accuracy": 0.4993,
+        "balanced_accuracy": 0.4993,
+        "nec": 2.0,
+        "nonzero_connections": 20
+      },
+      {
+        "setting": "jpeg_compression_5",
+        "head": "3",
+        "accuracy": 0.5247,
+        "balanced_accuracy": 0.5246999999999999,
+        "nec": 3.0,
+        "nonzero_connections": 30
+      },
+      {
+        "setting": "jpeg_compression_5",
+        "head": "5",
+        "accuracy": 0.5411,
+        "balanced_accuracy": 0.5410999999999999,
+        "nec": 5.0,
+        "nonzero_connections": 50
+      },
+      {
+        "setting": "jpeg_compression_5",
+        "head": "8",
+        "accuracy": 0.5659,
+        "balanced_accuracy": 0.5659,
+        "nec": 8.0,
+        "nonzero_connections": 80
+      },
+      {
+        "setting": "jpeg_compression_5",
+        "head": "10",
+        "accuracy": 0.5743,
+        "balanced_accuracy": 0.5742999999999999,
+        "nec": 10.0,
+        "nonzero_connections": 100
+      },
+      {
+        "setting": "jpeg_compression_5",
+        "head": "15",
+        "accuracy": 0.5773,
+        "balanced_accuracy": 0.5772999999999999,
+        "nec": 15.0,
+        "nonzero_connections": 150
+      },
+      {
+        "setting": "jpeg_compression_5",
+        "head": "20",
+        "accuracy": 0.58,
+        "balanced_accuracy": 0.5800000000000001,
+        "nec": 20.0,
+        "nonzero_connections": 200
+      },
+      {
+        "setting": "jpeg_compression_5",
+        "head": "30",
+        "accuracy": 0.5827,
+        "balanced_accuracy": 0.5827,
+        "nec": 30.0,
+        "nonzero_connections": 300
+      },
+      {
+        "setting": "jpeg_compression_5",
+        "head": "50",
+        "accuracy": 0.5864,
+        "balanced_accuracy": 0.5864,
+        "nec": 50.0,
+        "nonzero_connections": 500
+      },
+      {
+        "setting": "jpeg_compression_5",
+        "head": "80",
+        "accuracy": 0.5893,
+        "balanced_accuracy": 0.5892999999999999,
+        "nec": 80.0,
+        "nonzero_connections": 800
+      },
+      {
+        "setting": "jpeg_compression_5",
+        "head": "113",
+        "accuracy": 0.5914,
+        "balanced_accuracy": 0.5913999999999999,
+        "nec": 106.9,
+        "nonzero_connections": 1069
+      },
+      {
+        "setting": "jpeg_compression_5",
+        "head": "dense",
+        "accuracy": 0.5889,
+        "balanced_accuracy": 0.5889,
+        "nec": 113.0,
+        "nonzero_connections": 1130
+      }
+    ]
+  },
+  {
+    "group": "artifacts/heads/cifar10/resnet18/corruption_augmented/seed42",
+    "method": "LF-Pi",
+    "heads_sha256": "9ddbc3e20ca3b53cecaf757066cf3015f193766c89f0bf096da243d985500834",
+    "refitting": false,
+    "source": "/home/pengcheng/Pi-CBM-Benchmark/artifacts/matched/lf/cifar10/rn18_imagenet/gaussian_noise_augmented/seed42/corruptions",
+    "points": [
+      {
+        "setting": "contrast_1",
+        "head": "best_val",
+        "accuracy": 0.861,
+        "balanced_accuracy": 0.861,
+        "nec": 86.0,
+        "nonzero_connections": 860
+      },
+      {
+        "setting": "contrast_1",
+        "head": "1",
+        "accuracy": 0.6443,
+        "balanced_accuracy": 0.6443,
+        "nec": 1.0,
+        "nonzero_connections": 10
+      },
+      {
+        "setting": "contrast_1",
+        "head": "2",
+        "accuracy": 0.784,
+        "balanced_accuracy": 0.784,
+        "nec": 2.0,
+        "nonzero_connections": 20
+      },
+      {
+        "setting": "contrast_1",
+        "head": "3",
+        "accuracy": 0.8175,
+        "balanced_accuracy": 0.8175000000000001,
+        "nec": 3.0,
+        "nonzero_connections": 30
+      },
+      {
+        "setting": "contrast_1",
+        "head": "5",
+        "accuracy": 0.8239,
+        "balanced_accuracy": 0.8239000000000001,
+        "nec": 5.0,
+        "nonzero_connections": 50
+      },
+      {
+        "setting": "contrast_1",
+        "head": "8",
+        "accuracy": 0.8426,
+        "balanced_accuracy": 0.8426,
+        "nec": 8.0,
+        "nonzero_connections": 80
+      },
+      {
+        "setting": "contrast_1",
+        "head": "10",
+        "accuracy": 0.8478,
+        "balanced_accuracy": 0.8478,
+        "nec": 10.0,
+        "nonzero_connections": 100
+      },
+      {
+        "setting": "contrast_1",
+        "head": "15",
+        "accuracy": 0.8546,
+        "balanced_accuracy": 0.8546000000000001,
+        "nec": 15.0,
+        "nonzero_connections": 150
+      },
+      {
+        "setting": "contrast_1",
+        "head": "20",
+        "accuracy": 0.8565,
+        "balanced_accuracy": 0.8564999999999999,
+        "nec": 20.0,
+        "nonzero_connections": 200
+      },
+      {
+        "setting": "contrast_1",
+        "head": "30",
+        "accuracy": 0.86,
+        "balanced_accuracy": 0.86,
+        "nec": 30.0,
+        "nonzero_connections": 300
+      },
+      {
+        "setting": "contrast_1",
+        "head": "50",
+        "accuracy": 0.862,
+        "balanced_accuracy": 0.8620000000000001,
+        "nec": 50.0,
+        "nonzero_connections": 500
+      },
+      {
+        "setting": "contrast_1",
+        "head": "80",
+        "accuracy": 0.8616,
+        "balanced_accuracy": 0.8615999999999999,
+        "nec": 80.0,
+        "nonzero_connections": 800
+      },
+      {
+        "setting": "contrast_1",
+        "head": "113",
+        "accuracy": 0.8617,
+        "balanced_accuracy": 0.8617000000000001,
+        "nec": 98.2,
+        "nonzero_connections": 982
+      },
+      {
+        "setting": "contrast_1",
+        "head": "dense",
+        "accuracy": 0.8622,
+        "balanced_accuracy": 0.8622000000000002,
+        "nec": 113.0,
+        "nonzero_connections": 1130
+      },
+      {
+        "setting": "contrast_3",
+        "head": "best_val",
+        "accuracy": 0.7619,
+        "balanced_accuracy": 0.7619,
+        "nec": 86.0,
+        "nonzero_connections": 860
+      },
+      {
+        "setting": "contrast_3",
+        "head": "1",
+        "accuracy": 0.5443,
+        "balanced_accuracy": 0.5443,
+        "nec": 1.0,
+        "nonzero_connections": 10
+      },
+      {
+        "setting": "contrast_3",
+        "head": "2",
+        "accuracy": 0.6665,
+        "balanced_accuracy": 0.6665,
+        "nec": 2.0,
+        "nonzero_connections": 20
+      },
+      {
+        "setting": "contrast_3",
+        "head": "3",
+        "accuracy": 0.7039,
+        "balanced_accuracy": 0.7039,
+        "nec": 3.0,
+        "nonzero_connections": 30
+      },
+      {
+        "setting": "contrast_3",
+        "head": "5",
+        "accuracy": 0.7134,
+        "balanced_accuracy": 0.7133999999999999,
+        "nec": 5.0,
+        "nonzero_connections": 50
+      },
+      {
+        "setting": "contrast_3",
+        "head": "8",
+        "accuracy": 0.7361,
+        "balanced_accuracy": 0.7361000000000001,
+        "nec": 8.0,
+        "nonzero_connections": 80
+      },
+      {
+        "setting": "contrast_3",
+        "head": "10",
+        "accuracy": 0.7398,
+        "balanced_accuracy": 0.7398,
+        "nec": 10.0,
+        "nonzero_connections": 100
+      },
+      {
+        "setting": "contrast_3",
+        "head": "15",
+        "accuracy": 0.7463,
+        "balanced_accuracy": 0.7463,
+        "nec": 15.0,
+        "nonzero_connections": 150
+      },
+      {
+        "setting": "contrast_3",
+        "head": "20",
+        "accuracy": 0.7501,
+        "balanced_accuracy": 0.7501,
+        "nec": 20.0,
+        "nonzero_connections": 200
+      },
+      {
+        "setting": "contrast_3",
+        "head": "30",
+        "accuracy": 0.7567,
+        "balanced_accuracy": 0.7567,
+        "nec": 30.0,
+        "nonzero_connections": 300
+      },
+      {
+        "setting": "contrast_3",
+        "head": "50",
+        "accuracy": 0.7586,
+        "balanced_accuracy": 0.7585999999999999,
+        "nec": 50.0,
+        "nonzero_connections": 500
+      },
+      {
+        "setting": "contrast_3",
+        "head": "80",
+        "accuracy": 0.7623,
+        "balanced_accuracy": 0.7623,
+        "nec": 80.0,
+        "nonzero_connections": 800
+      },
+      {
+        "setting": "contrast_3",
+        "head": "113",
+        "accuracy": 0.7628,
+        "balanced_accuracy": 0.7628,
+        "nec": 98.2,
+        "nonzero_connections": 982
+      },
+      {
+        "setting": "contrast_3",
+        "head": "dense",
+        "accuracy": 0.7634,
+        "balanced_accuracy": 0.7634000000000001,
+        "nec": 113.0,
+        "nonzero_connections": 1130
+      },
+      {
+        "setting": "contrast_5",
+        "head": "best_val",
+        "accuracy": 0.4262,
+        "balanced_accuracy": 0.42619999999999997,
+        "nec": 86.0,
+        "nonzero_connections": 860
+      },
+      {
+        "setting": "contrast_5",
+        "head": "1",
+        "accuracy": 0.2012,
+        "balanced_accuracy": 0.2012,
+        "nec": 1.0,
+        "nonzero_connections": 10
+      },
+      {
+        "setting": "contrast_5",
+        "head": "2",
+        "accuracy": 0.2899,
+        "balanced_accuracy": 0.2899,
+        "nec": 2.0,
+        "nonzero_connections": 20
+      },
+      {
+        "setting": "contrast_5",
+        "head": "3",
+        "accuracy": 0.3686,
+        "balanced_accuracy": 0.3686,
+        "nec": 3.0,
+        "nonzero_connections": 30
+      },
+      {
+        "setting": "contrast_5",
+        "head": "5",
+        "accuracy": 0.3789,
+        "balanced_accuracy": 0.3789,
+        "nec": 5.0,
+        "nonzero_connections": 50
+      },
+      {
+        "setting": "contrast_5",
+        "head": "8",
+        "accuracy": 0.3947,
+        "balanced_accuracy": 0.39469999999999994,
+        "nec": 8.0,
+        "nonzero_connections": 80
+      },
+      {
+        "setting": "contrast_5",
+        "head": "10",
+        "accuracy": 0.399,
+        "balanced_accuracy": 0.39899999999999997,
+        "nec": 10.0,
+        "nonzero_connections": 100
+      },
+      {
+        "setting": "contrast_5",
+        "head": "15",
+        "accuracy": 0.4088,
+        "balanced_accuracy": 0.4088,
+        "nec": 15.0,
+        "nonzero_connections": 150
+      },
+      {
+        "setting": "contrast_5",
+        "head": "20",
+        "accuracy": 0.4144,
+        "balanced_accuracy": 0.4144,
+        "nec": 20.0,
+        "nonzero_connections": 200
+      },
+      {
+        "setting": "contrast_5",
+        "head": "30",
+        "accuracy": 0.4188,
+        "balanced_accuracy": 0.41879999999999995,
+        "nec": 30.0,
+        "nonzero_connections": 300
+      },
+      {
+        "setting": "contrast_5",
+        "head": "50",
+        "accuracy": 0.4258,
+        "balanced_accuracy": 0.4258,
+        "nec": 50.0,
+        "nonzero_connections": 500
+      },
+      {
+        "setting": "contrast_5",
+        "head": "80",
+        "accuracy": 0.426,
+        "balanced_accuracy": 0.426,
+        "nec": 80.0,
+        "nonzero_connections": 800
+      },
+      {
+        "setting": "contrast_5",
+        "head": "113",
+        "accuracy": 0.4273,
+        "balanced_accuracy": 0.42730000000000007,
+        "nec": 98.2,
+        "nonzero_connections": 982
+      },
+      {
+        "setting": "contrast_5",
+        "head": "dense",
+        "accuracy": 0.4305,
+        "balanced_accuracy": 0.4305,
+        "nec": 113.0,
+        "nonzero_connections": 1130
+      },
+      {
+        "setting": "gaussian_blur_1",
+        "head": "best_val",
+        "accuracy": 0.8634,
+        "balanced_accuracy": 0.8634000000000001,
+        "nec": 86.0,
+        "nonzero_connections": 860
+      },
+      {
+        "setting": "gaussian_blur_1",
+        "head": "1",
+        "accuracy": 0.653,
+        "balanced_accuracy": 0.6529999999999999,
+        "nec": 1.0,
+        "nonzero_connections": 10
+      },
+      {
+        "setting": "gaussian_blur_1",
+        "head": "2",
+        "accuracy": 0.7902,
+        "balanced_accuracy": 0.7901999999999999,
+        "nec": 2.0,
+        "nonzero_connections": 20
+      },
+      {
+        "setting": "gaussian_blur_1",
+        "head": "3",
+        "accuracy": 0.8206,
+        "balanced_accuracy": 0.8206,
+        "nec": 3.0,
+        "nonzero_connections": 30
+      },
+      {
+        "setting": "gaussian_blur_1",
+        "head": "5",
+        "accuracy": 0.8271,
+        "balanced_accuracy": 0.8271,
+        "nec": 5.0,
+        "nonzero_connections": 50
+      },
+      {
+        "setting": "gaussian_blur_1",
+        "head": "8",
+        "accuracy": 0.8459,
+        "balanced_accuracy": 0.8459000000000001,
+        "nec": 8.0,
+        "nonzero_connections": 80
+      },
+      {
+        "setting": "gaussian_blur_1",
+        "head": "10",
+        "accuracy": 0.8502,
+        "balanced_accuracy": 0.8501999999999998,
+        "nec": 10.0,
+        "nonzero_connections": 100
+      },
+      {
+        "setting": "gaussian_blur_1",
+        "head": "15",
+        "accuracy": 0.8552,
+        "balanced_accuracy": 0.8552000000000002,
+        "nec": 15.0,
+        "nonzero_connections": 150
+      },
+      {
+        "setting": "gaussian_blur_1",
+        "head": "20",
+        "accuracy": 0.8572,
+        "balanced_accuracy": 0.8572,
+        "nec": 20.0,
+        "nonzero_connections": 200
+      },
+      {
+        "setting": "gaussian_blur_1",
+        "head": "30",
+        "accuracy": 0.8609,
+        "balanced_accuracy": 0.8609,
+        "nec": 30.0,
+        "nonzero_connections": 300
+      },
+      {
+        "setting": "gaussian_blur_1",
+        "head": "50",
+        "accuracy": 0.8625,
+        "balanced_accuracy": 0.8625,
+        "nec": 50.0,
+        "nonzero_connections": 500
+      },
+      {
+        "setting": "gaussian_blur_1",
+        "head": "80",
+        "accuracy": 0.8633,
+        "balanced_accuracy": 0.8633,
+        "nec": 80.0,
+        "nonzero_connections": 800
+      },
+      {
+        "setting": "gaussian_blur_1",
+        "head": "113",
+        "accuracy": 0.8633,
+        "balanced_accuracy": 0.8633,
+        "nec": 98.2,
+        "nonzero_connections": 982
+      },
+      {
+        "setting": "gaussian_blur_1",
+        "head": "dense",
+        "accuracy": 0.8637,
+        "balanced_accuracy": 0.8636999999999999,
+        "nec": 113.0,
+        "nonzero_connections": 1130
+      },
+      {
+        "setting": "gaussian_blur_3",
+        "head": "best_val",
+        "accuracy": 0.718,
+        "balanced_accuracy": 0.718,
+        "nec": 86.0,
+        "nonzero_connections": 860
+      },
+      {
+        "setting": "gaussian_blur_3",
+        "head": "1",
+        "accuracy": 0.5441,
+        "balanced_accuracy": 0.5441,
+        "nec": 1.0,
+        "nonzero_connections": 10
+      },
+      {
+        "setting": "gaussian_blur_3",
+        "head": "2",
+        "accuracy": 0.6466,
+        "balanced_accuracy": 0.6466000000000001,
+        "nec": 2.0,
+        "nonzero_connections": 20
+      },
+      {
+        "setting": "gaussian_blur_3",
+        "head": "3",
+        "accuracy": 0.6634,
+        "balanced_accuracy": 0.6634,
+        "nec": 3.0,
+        "nonzero_connections": 30
+      },
+      {
+        "setting": "gaussian_blur_3",
+        "head": "5",
+        "accuracy": 0.6737,
+        "balanced_accuracy": 0.6737,
+        "nec": 5.0,
+        "nonzero_connections": 50
+      },
+      {
+        "setting": "gaussian_blur_3",
+        "head": "8",
+        "accuracy": 0.6979,
+        "balanced_accuracy": 0.6979,
+        "nec": 8.0,
+        "nonzero_connections": 80
+      },
+      {
+        "setting": "gaussian_blur_3",
+        "head": "10",
+        "accuracy": 0.7028,
+        "balanced_accuracy": 0.7028000000000001,
+        "nec": 10.0,
+        "nonzero_connections": 100
+      },
+      {
+        "setting": "gaussian_blur_3",
+        "head": "15",
+        "accuracy": 0.712,
+        "balanced_accuracy": 0.712,
+        "nec": 15.0,
+        "nonzero_connections": 150
+      },
+      {
+        "setting": "gaussian_blur_3",
+        "head": "20",
+        "accuracy": 0.7145,
+        "balanced_accuracy": 0.7144999999999999,
+        "nec": 20.0,
+        "nonzero_connections": 200
+      },
+      {
+        "setting": "gaussian_blur_3",
+        "head": "30",
+        "accuracy": 0.7179,
+        "balanced_accuracy": 0.7179,
+        "nec": 30.0,
+        "nonzero_connections": 300
+      },
+      {
+        "setting": "gaussian_blur_3",
+        "head": "50",
+        "accuracy": 0.7195,
+        "balanced_accuracy": 0.7195,
+        "nec": 50.0,
+        "nonzero_connections": 500
+      },
+      {
+        "setting": "gaussian_blur_3",
+        "head": "80",
+        "accuracy": 0.7178,
+        "balanced_accuracy": 0.7177999999999999,
+        "nec": 80.0,
+        "nonzero_connections": 800
+      },
+      {
+        "setting": "gaussian_blur_3",
+        "head": "113",
+        "accuracy": 0.7177,
+        "balanced_accuracy": 0.7177,
+        "nec": 98.2,
+        "nonzero_connections": 982
+      },
+      {
+        "setting": "gaussian_blur_3",
+        "head": "dense",
+        "accuracy": 0.7205,
+        "balanced_accuracy": 0.7205,
+        "nec": 113.0,
+        "nonzero_connections": 1130
+      },
+      {
+        "setting": "gaussian_blur_5",
+        "head": "best_val",
+        "accuracy": 0.5073,
+        "balanced_accuracy": 0.5073000000000001,
+        "nec": 86.0,
+        "nonzero_connections": 860
+      },
+      {
+        "setting": "gaussian_blur_5",
+        "head": "1",
+        "accuracy": 0.3732,
+        "balanced_accuracy": 0.37320000000000003,
+        "nec": 1.0,
+        "nonzero_connections": 10
+      },
+      {
+        "setting": "gaussian_blur_5",
+        "head": "2",
+        "accuracy": 0.4413,
+        "balanced_accuracy": 0.4413,
+        "nec": 2.0,
+        "nonzero_connections": 20
+      },
+      {
+        "setting": "gaussian_blur_5",
+        "head": "3",
+        "accuracy": 0.4497,
+        "balanced_accuracy": 0.4497,
+        "nec": 3.0,
+        "nonzero_connections": 30
+      },
+      {
+        "setting": "gaussian_blur_5",
+        "head": "5",
+        "accuracy": 0.4602,
+        "balanced_accuracy": 0.46020000000000005,
+        "nec": 5.0,
+        "nonzero_connections": 50
+      },
+      {
+        "setting": "gaussian_blur_5",
+        "head": "8",
+        "accuracy": 0.4843,
+        "balanced_accuracy": 0.4843,
+        "nec": 8.0,
+        "nonzero_connections": 80
+      },
+      {
+        "setting": "gaussian_blur_5",
+        "head": "10",
+        "accuracy": 0.4852,
+        "balanced_accuracy": 0.4852,
+        "nec": 10.0,
+        "nonzero_connections": 100
+      },
+      {
+        "setting": "gaussian_blur_5",
+        "head": "15",
+        "accuracy": 0.4951,
+        "balanced_accuracy": 0.49510000000000004,
+        "nec": 15.0,
+        "nonzero_connections": 150
+      },
+      {
+        "setting": "gaussian_blur_5",
+        "head": "20",
+        "accuracy": 0.4998,
+        "balanced_accuracy": 0.4997999999999999,
+        "nec": 20.0,
+        "nonzero_connections": 200
+      },
+      {
+        "setting": "gaussian_blur_5",
+        "head": "30",
+        "accuracy": 0.5055,
+        "balanced_accuracy": 0.5055,
+        "nec": 30.0,
+        "nonzero_connections": 300
+      },
+      {
+        "setting": "gaussian_blur_5",
+        "head": "50",
+        "accuracy": 0.5102,
+        "balanced_accuracy": 0.5102,
+        "nec": 50.0,
+        "nonzero_connections": 500
+      },
+      {
+        "setting": "gaussian_blur_5",
+        "head": "80",
+        "accuracy": 0.507,
+        "balanced_accuracy": 0.507,
+        "nec": 80.0,
+        "nonzero_connections": 800
+      },
+      {
+        "setting": "gaussian_blur_5",
+        "head": "113",
+        "accuracy": 0.5056,
+        "balanced_accuracy": 0.5056,
+        "nec": 98.2,
+        "nonzero_connections": 982
+      },
+      {
+        "setting": "gaussian_blur_5",
+        "head": "dense",
+        "accuracy": 0.5099,
+        "balanced_accuracy": 0.5099,
+        "nec": 113.0,
+        "nonzero_connections": 1130
+      },
+      {
+        "setting": "gaussian_noise_1",
+        "head": "best_val",
+        "accuracy": 0.758,
+        "balanced_accuracy": 0.7579999999999999,
+        "nec": 86.0,
+        "nonzero_connections": 860
+      },
+      {
+        "setting": "gaussian_noise_1",
+        "head": "1",
+        "accuracy": 0.5564,
+        "balanced_accuracy": 0.5564,
+        "nec": 1.0,
+        "nonzero_connections": 10
+      },
+      {
+        "setting": "gaussian_noise_1",
+        "head": "2",
+        "accuracy": 0.676,
+        "balanced_accuracy": 0.6759999999999999,
+        "nec": 2.0,
+        "nonzero_connections": 20
+      },
+      {
+        "setting": "gaussian_noise_1",
+        "head": "3",
+        "accuracy": 0.7093,
+        "balanced_accuracy": 0.7093,
+        "nec": 3.0,
+        "nonzero_connections": 30
+      },
+      {
+        "setting": "gaussian_noise_1",
+        "head": "5",
+        "accuracy": 0.7165,
+        "balanced_accuracy": 0.7165000000000001,
+        "nec": 5.0,
+        "nonzero_connections": 50
+      },
+      {
+        "setting": "gaussian_noise_1",
+        "head": "8",
+        "accuracy": 0.7343,
+        "balanced_accuracy": 0.7343,
+        "nec": 8.0,
+        "nonzero_connections": 80
+      },
+      {
+        "setting": "gaussian_noise_1",
+        "head": "10",
+        "accuracy": 0.7399,
+        "balanced_accuracy": 0.7399,
+        "nec": 10.0,
+        "nonzero_connections": 100
+      },
+      {
+        "setting": "gaussian_noise_1",
+        "head": "15",
+        "accuracy": 0.7471,
+        "balanced_accuracy": 0.7470999999999999,
+        "nec": 15.0,
+        "nonzero_connections": 150
+      },
+      {
+        "setting": "gaussian_noise_1",
+        "head": "20",
+        "accuracy": 0.7499,
+        "balanced_accuracy": 0.7499,
+        "nec": 20.0,
+        "nonzero_connections": 200
+      },
+      {
+        "setting": "gaussian_noise_1",
+        "head": "30",
+        "accuracy": 0.7539,
+        "balanced_accuracy": 0.7539,
+        "nec": 30.0,
+        "nonzero_connections": 300
+      },
+      {
+        "setting": "gaussian_noise_1",
+        "head": "50",
+        "accuracy": 0.7574,
+        "balanced_accuracy": 0.7574,
+        "nec": 50.0,
+        "nonzero_connections": 500
+      },
+      {
+        "setting": "gaussian_noise_1",
+        "head": "80",
+        "accuracy": 0.7584,
+        "balanced_accuracy": 0.7584,
+        "nec": 80.0,
+        "nonzero_connections": 800
+      },
+      {
+        "setting": "gaussian_noise_1",
+        "head": "113",
+        "accuracy": 0.7584,
+        "balanced_accuracy": 0.7584000000000001,
+        "nec": 98.2,
+        "nonzero_connections": 982
+      },
+      {
+        "setting": "gaussian_noise_1",
+        "head": "dense",
+        "accuracy": 0.7572,
+        "balanced_accuracy": 0.7572000000000001,
+        "nec": 113.0,
+        "nonzero_connections": 1130
+      },
+      {
+        "setting": "gaussian_noise_3",
+        "head": "best_val",
+        "accuracy": 0.5085,
+        "balanced_accuracy": 0.5085,
+        "nec": 86.0,
+        "nonzero_connections": 860
+      },
+      {
+        "setting": "gaussian_noise_3",
+        "head": "1",
+        "accuracy": 0.4359,
+        "balanced_accuracy": 0.4359,
+        "nec": 1.0,
+        "nonzero_connections": 10
+      },
+      {
+        "setting": "gaussian_noise_3",
+        "head": "2",
+        "accuracy": 0.4624,
+        "balanced_accuracy": 0.46240000000000003,
+        "nec": 2.0,
+        "nonzero_connections": 20
+      },
+      {
+        "setting": "gaussian_noise_3",
+        "head": "3",
+        "accuracy": 0.4618,
+        "balanced_accuracy": 0.46179999999999993,
+        "nec": 3.0,
+        "nonzero_connections": 30
+      },
+      {
+        "setting": "gaussian_noise_3",
+        "head": "5",
+        "accuracy": 0.4758,
+        "balanced_accuracy": 0.4758,
+        "nec": 5.0,
+        "nonzero_connections": 50
+      },
+      {
+        "setting": "gaussian_noise_3",
+        "head": "8",
+        "accuracy": 0.4918,
+        "balanced_accuracy": 0.4918,
+        "nec": 8.0,
+        "nonzero_connections": 80
+      },
+      {
+        "setting": "gaussian_noise_3",
+        "head": "10",
+        "accuracy": 0.4982,
+        "balanced_accuracy": 0.49820000000000003,
+        "nec": 10.0,
+        "nonzero_connections": 100
+      },
+      {
+        "setting": "gaussian_noise_3",
+        "head": "15",
+        "accuracy": 0.5045,
+        "balanced_accuracy": 0.5045,
+        "nec": 15.0,
+        "nonzero_connections": 150
+      },
+      {
+        "setting": "gaussian_noise_3",
+        "head": "20",
+        "accuracy": 0.5079,
+        "balanced_accuracy": 0.5078999999999999,
+        "nec": 20.0,
+        "nonzero_connections": 200
+      },
+      {
+        "setting": "gaussian_noise_3",
+        "head": "30",
+        "accuracy": 0.5103,
+        "balanced_accuracy": 0.5103,
+        "nec": 30.0,
+        "nonzero_connections": 300
+      },
+      {
+        "setting": "gaussian_noise_3",
+        "head": "50",
+        "accuracy": 0.5124,
+        "balanced_accuracy": 0.5124000000000002,
+        "nec": 50.0,
+        "nonzero_connections": 500
+      },
+      {
+        "setting": "gaussian_noise_3",
+        "head": "80",
+        "accuracy": 0.5081,
+        "balanced_accuracy": 0.5081,
+        "nec": 80.0,
+        "nonzero_connections": 800
+      },
+      {
+        "setting": "gaussian_noise_3",
+        "head": "113",
+        "accuracy": 0.5068,
+        "balanced_accuracy": 0.5068,
+        "nec": 98.2,
+        "nonzero_connections": 982
+      },
+      {
+        "setting": "gaussian_noise_3",
+        "head": "dense",
+        "accuracy": 0.5118,
+        "balanced_accuracy": 0.5117999999999999,
+        "nec": 113.0,
+        "nonzero_connections": 1130
+      },
+      {
+        "setting": "gaussian_noise_5",
+        "head": "best_val",
+        "accuracy": 0.3686,
+        "balanced_accuracy": 0.3686,
+        "nec": 86.0,
+        "nonzero_connections": 860
+      },
+      {
+        "setting": "gaussian_noise_5",
+        "head": "1",
+        "accuracy": 0.362,
+        "balanced_accuracy": 0.362,
+        "nec": 1.0,
+        "nonzero_connections": 10
+      },
+      {
+        "setting": "gaussian_noise_5",
+        "head": "2",
+        "accuracy": 0.3674,
+        "balanced_accuracy": 0.36740000000000006,
+        "nec": 2.0,
+        "nonzero_connections": 20
+      },
+      {
+        "setting": "gaussian_noise_5",
+        "head": "3",
+        "accuracy": 0.3562,
+        "balanced_accuracy": 0.35619999999999996,
+        "nec": 3.0,
+        "nonzero_connections": 30
+      },
+      {
+        "setting": "gaussian_noise_5",
+        "head": "5",
+        "accuracy": 0.3609,
+        "balanced_accuracy": 0.3609,
+        "nec": 5.0,
+        "nonzero_connections": 50
+      },
+      {
+        "setting": "gaussian_noise_5",
+        "head": "8",
+        "accuracy": 0.368,
+        "balanced_accuracy": 0.368,
+        "nec": 8.0,
+        "nonzero_connections": 80
+      },
+      {
+        "setting": "gaussian_noise_5",
+        "head": "10",
+        "accuracy": 0.3753,
+        "balanced_accuracy": 0.37529999999999997,
+        "nec": 10.0,
+        "nonzero_connections": 100
+      },
+      {
+        "setting": "gaussian_noise_5",
+        "head": "15",
+        "accuracy": 0.383,
+        "balanced_accuracy": 0.383,
+        "nec": 15.0,
+        "nonzero_connections": 150
+      },
+      {
+        "setting": "gaussian_noise_5",
+        "head": "20",
+        "accuracy": 0.3844,
+        "balanced_accuracy": 0.38439999999999996,
+        "nec": 20.0,
+        "nonzero_connections": 200
+      },
+      {
+        "setting": "gaussian_noise_5",
+        "head": "30",
+        "accuracy": 0.3771,
+        "balanced_accuracy": 0.37709999999999994,
+        "nec": 30.0,
+        "nonzero_connections": 300
+      },
+      {
+        "setting": "gaussian_noise_5",
+        "head": "50",
+        "accuracy": 0.3722,
+        "balanced_accuracy": 0.3722,
+        "nec": 50.0,
+        "nonzero_connections": 500
+      },
+      {
+        "setting": "gaussian_noise_5",
+        "head": "80",
+        "accuracy": 0.3681,
+        "balanced_accuracy": 0.3681,
+        "nec": 80.0,
+        "nonzero_connections": 800
+      },
+      {
+        "setting": "gaussian_noise_5",
+        "head": "113",
+        "accuracy": 0.366,
+        "balanced_accuracy": 0.366,
+        "nec": 98.2,
+        "nonzero_connections": 982
+      },
+      {
+        "setting": "gaussian_noise_5",
+        "head": "dense",
+        "accuracy": 0.3702,
+        "balanced_accuracy": 0.3702,
+        "nec": 113.0,
+        "nonzero_connections": 1130
+      },
+      {
+        "setting": "jpeg_compression_1",
+        "head": "best_val",
+        "accuracy": 0.7527,
+        "balanced_accuracy": 0.7527,
+        "nec": 86.0,
+        "nonzero_connections": 860
+      },
+      {
+        "setting": "jpeg_compression_1",
+        "head": "1",
+        "accuracy": 0.5522,
+        "balanced_accuracy": 0.5522,
+        "nec": 1.0,
+        "nonzero_connections": 10
+      },
+      {
+        "setting": "jpeg_compression_1",
+        "head": "2",
+        "accuracy": 0.6615,
+        "balanced_accuracy": 0.6615,
+        "nec": 2.0,
+        "nonzero_connections": 20
+      },
+      {
+        "setting": "jpeg_compression_1",
+        "head": "3",
+        "accuracy": 0.7016,
+        "balanced_accuracy": 0.7016,
+        "nec": 3.0,
+        "nonzero_connections": 30
+      },
+      {
+        "setting": "jpeg_compression_1",
+        "head": "5",
+        "accuracy": 0.7104,
+        "balanced_accuracy": 0.7104,
+        "nec": 5.0,
+        "nonzero_connections": 50
+      },
+      {
+        "setting": "jpeg_compression_1",
+        "head": "8",
+        "accuracy": 0.7384,
+        "balanced_accuracy": 0.7384000000000001,
+        "nec": 8.0,
+        "nonzero_connections": 80
+      },
+      {
+        "setting": "jpeg_compression_1",
+        "head": "10",
+        "accuracy": 0.7426,
+        "balanced_accuracy": 0.7426000000000001,
+        "nec": 10.0,
+        "nonzero_connections": 100
+      },
+      {
+        "setting": "jpeg_compression_1",
+        "head": "15",
+        "accuracy": 0.7482,
+        "balanced_accuracy": 0.7482,
+        "nec": 15.0,
+        "nonzero_connections": 150
+      },
+      {
+        "setting": "jpeg_compression_1",
+        "head": "20",
+        "accuracy": 0.75,
+        "balanced_accuracy": 0.75,
+        "nec": 20.0,
+        "nonzero_connections": 200
+      },
+      {
+        "setting": "jpeg_compression_1",
+        "head": "30",
+        "accuracy": 0.752,
+        "balanced_accuracy": 0.752,
+        "nec": 30.0,
+        "nonzero_connections": 300
+      },
+      {
+        "setting": "jpeg_compression_1",
+        "head": "50",
+        "accuracy": 0.7523,
+        "balanced_accuracy": 0.7523,
+        "nec": 50.0,
+        "nonzero_connections": 500
+      },
+      {
+        "setting": "jpeg_compression_1",
+        "head": "80",
+        "accuracy": 0.7528,
+        "balanced_accuracy": 0.7528,
+        "nec": 80.0,
+        "nonzero_connections": 800
+      },
+      {
+        "setting": "jpeg_compression_1",
+        "head": "113",
+        "accuracy": 0.7511,
+        "balanced_accuracy": 0.7511,
+        "nec": 98.2,
+        "nonzero_connections": 982
+      },
+      {
+        "setting": "jpeg_compression_1",
+        "head": "dense",
+        "accuracy": 0.7507,
+        "balanced_accuracy": 0.7506999999999999,
+        "nec": 113.0,
+        "nonzero_connections": 1130
+      },
+      {
+        "setting": "jpeg_compression_3",
+        "head": "best_val",
+        "accuracy": 0.6645,
+        "balanced_accuracy": 0.6645,
+        "nec": 86.0,
+        "nonzero_connections": 860
+      },
+      {
+        "setting": "jpeg_compression_3",
+        "head": "1",
+        "accuracy": 0.4928,
+        "balanced_accuracy": 0.4928,
+        "nec": 1.0,
+        "nonzero_connections": 10
+      },
+      {
+        "setting": "jpeg_compression_3",
+        "head": "2",
+        "accuracy": 0.575,
+        "balanced_accuracy": 0.575,
+        "nec": 2.0,
+        "nonzero_connections": 20
+      },
+      {
+        "setting": "jpeg_compression_3",
+        "head": "3",
+        "accuracy": 0.6066,
+        "balanced_accuracy": 0.6066,
+        "nec": 3.0,
+        "nonzero_connections": 30
+      },
+      {
+        "setting": "jpeg_compression_3",
+        "head": "5",
+        "accuracy": 0.6182,
+        "balanced_accuracy": 0.6182,
+        "nec": 5.0,
+        "nonzero_connections": 50
+      },
+      {
+        "setting": "jpeg_compression_3",
+        "head": "8",
+        "accuracy": 0.6481,
+        "balanced_accuracy": 0.6481,
+        "nec": 8.0,
+        "nonzero_connections": 80
+      },
+      {
+        "setting": "jpeg_compression_3",
+        "head": "10",
+        "accuracy": 0.6516,
+        "balanced_accuracy": 0.6516000000000001,
+        "nec": 10.0,
+        "nonzero_connections": 100
+      },
+      {
+        "setting": "jpeg_compression_3",
+        "head": "15",
+        "accuracy": 0.6594,
+        "balanced_accuracy": 0.6594,
+        "nec": 15.0,
+        "nonzero_connections": 150
+      },
+      {
+        "setting": "jpeg_compression_3",
+        "head": "20",
+        "accuracy": 0.6624,
+        "balanced_accuracy": 0.6624,
+        "nec": 20.0,
+        "nonzero_connections": 200
+      },
+      {
+        "setting": "jpeg_compression_3",
+        "head": "30",
+        "accuracy": 0.6632,
+        "balanced_accuracy": 0.6632,
+        "nec": 30.0,
+        "nonzero_connections": 300
+      },
+      {
+        "setting": "jpeg_compression_3",
+        "head": "50",
+        "accuracy": 0.6636,
+        "balanced_accuracy": 0.6636000000000001,
+        "nec": 50.0,
+        "nonzero_connections": 500
+      },
+      {
+        "setting": "jpeg_compression_3",
+        "head": "80",
+        "accuracy": 0.6643,
+        "balanced_accuracy": 0.6642999999999999,
+        "nec": 80.0,
+        "nonzero_connections": 800
+      },
+      {
+        "setting": "jpeg_compression_3",
+        "head": "113",
+        "accuracy": 0.6639,
+        "balanced_accuracy": 0.6639,
+        "nec": 98.2,
+        "nonzero_connections": 982
+      },
+      {
+        "setting": "jpeg_compression_3",
+        "head": "dense",
+        "accuracy": 0.6642,
+        "balanced_accuracy": 0.6641999999999999,
+        "nec": 113.0,
+        "nonzero_connections": 1130
+      },
+      {
+        "setting": "jpeg_compression_5",
+        "head": "best_val",
+        "accuracy": 0.5986,
+        "balanced_accuracy": 0.5986,
+        "nec": 86.0,
+        "nonzero_connections": 860
+      },
+      {
+        "setting": "jpeg_compression_5",
+        "head": "1",
+        "accuracy": 0.4512,
+        "balanced_accuracy": 0.45119999999999993,
+        "nec": 1.0,
+        "nonzero_connections": 10
+      },
+      {
+        "setting": "jpeg_compression_5",
+        "head": "2",
+        "accuracy": 0.5237,
+        "balanced_accuracy": 0.5237,
+        "nec": 2.0,
+        "nonzero_connections": 20
+      },
+      {
+        "setting": "jpeg_compression_5",
+        "head": "3",
+        "accuracy": 0.5488,
+        "balanced_accuracy": 0.5488000000000001,
+        "nec": 3.0,
+        "nonzero_connections": 30
+      },
+      {
+        "setting": "jpeg_compression_5",
+        "head": "5",
+        "accuracy": 0.5582,
+        "balanced_accuracy": 0.5582,
+        "nec": 5.0,
+        "nonzero_connections": 50
+      },
+      {
+        "setting": "jpeg_compression_5",
+        "head": "8",
+        "accuracy": 0.5917,
+        "balanced_accuracy": 0.5917000000000001,
+        "nec": 8.0,
+        "nonzero_connections": 80
+      },
+      {
+        "setting": "jpeg_compression_5",
+        "head": "10",
+        "accuracy": 0.5962,
+        "balanced_accuracy": 0.5962,
+        "nec": 10.0,
+        "nonzero_connections": 100
+      },
+      {
+        "setting": "jpeg_compression_5",
+        "head": "15",
+        "accuracy": 0.601,
+        "balanced_accuracy": 0.601,
+        "nec": 15.0,
+        "nonzero_connections": 150
+      },
+      {
+        "setting": "jpeg_compression_5",
+        "head": "20",
+        "accuracy": 0.6032,
+        "balanced_accuracy": 0.6032,
+        "nec": 20.0,
+        "nonzero_connections": 200
+      },
+      {
+        "setting": "jpeg_compression_5",
+        "head": "30",
+        "accuracy": 0.6026,
+        "balanced_accuracy": 0.6026,
+        "nec": 30.0,
+        "nonzero_connections": 300
+      },
+      {
+        "setting": "jpeg_compression_5",
+        "head": "50",
+        "accuracy": 0.5983,
+        "balanced_accuracy": 0.5983,
+        "nec": 50.0,
+        "nonzero_connections": 500
+      },
+      {
+        "setting": "jpeg_compression_5",
+        "head": "80",
+        "accuracy": 0.5989,
+        "balanced_accuracy": 0.5989000000000001,
+        "nec": 80.0,
+        "nonzero_connections": 800
+      },
+      {
+        "setting": "jpeg_compression_5",
+        "head": "113",
+        "accuracy": 0.5987,
+        "balanced_accuracy": 0.5986999999999999,
+        "nec": 98.2,
+        "nonzero_connections": 982
+      },
+      {
+        "setting": "jpeg_compression_5",
+        "head": "dense",
+        "accuracy": 0.6009,
+        "balanced_accuracy": 0.6009,
+        "nec": 113.0,
+        "nonzero_connections": 1130
+      }
+    ]
+  },
+  {
+    "group": "artifacts/heads/cifar10/resnet18/original/seed42",
+    "method": "LF-CBM",
+    "heads_sha256": "7850fae1558e9a462c31b0046a491cc0f7855d029eecabcdc79647726925d145",
+    "refitting": false,
+    "source": "/home/pengcheng/Pi-CBM-Benchmark/artifacts/matched/lf/cifar10/rn18_imagenet/seed42/corruptions",
+    "points": [
+      {
+        "setting": "contrast_1",
+        "head": "best_val",
+        "accuracy": 0.8549,
+        "balanced_accuracy": 0.8549,
+        "nec": 98.6,
+        "nonzero_connections": 986
+      },
+      {
+        "setting": "contrast_1",
+        "head": "1",
+        "accuracy": 0.6148,
+        "balanced_accuracy": 0.6148,
+        "nec": 1.0,
+        "nonzero_connections": 10
+      },
+      {
+        "setting": "contrast_1",
+        "head": "2",
+        "accuracy": 0.7336,
+        "balanced_accuracy": 0.7336,
+        "nec": 2.0,
+        "nonzero_connections": 20
+      },
+      {
+        "setting": "contrast_1",
+        "head": "3",
+        "accuracy": 0.7987,
+        "balanced_accuracy": 0.7987,
+        "nec": 3.0,
+        "nonzero_connections": 30
+      },
+      {
+        "setting": "contrast_1",
+        "head": "5",
+        "accuracy": 0.8153,
+        "balanced_accuracy": 0.8153,
+        "nec": 5.0,
+        "nonzero_connections": 50
+      },
+      {
+        "setting": "contrast_1",
+        "head": "8",
+        "accuracy": 0.8248,
+        "balanced_accuracy": 0.8248,
+        "nec": 8.0,
+        "nonzero_connections": 80
+      },
+      {
+        "setting": "contrast_1",
+        "head": "10",
+        "accuracy": 0.829,
+        "balanced_accuracy": 0.829,
+        "nec": 10.0,
+        "nonzero_connections": 100
+      },
+      {
+        "setting": "contrast_1",
+        "head": "15",
+        "accuracy": 0.8386,
+        "balanced_accuracy": 0.8386000000000001,
+        "nec": 15.0,
+        "nonzero_connections": 150
+      },
+      {
+        "setting": "contrast_1",
+        "head": "20",
+        "accuracy": 0.8395,
+        "balanced_accuracy": 0.8394999999999999,
+        "nec": 20.0,
+        "nonzero_connections": 200
+      },
+      {
+        "setting": "contrast_1",
+        "head": "30",
+        "accuracy": 0.8449,
+        "balanced_accuracy": 0.8449,
+        "nec": 30.0,
+        "nonzero_connections": 300
+      },
+      {
+        "setting": "contrast_1",
+        "head": "50",
+        "accuracy": 0.8511,
+        "balanced_accuracy": 0.8511,
+        "nec": 50.0,
+        "nonzero_connections": 500
+      },
+      {
+        "setting": "contrast_1",
+        "head": "80",
+        "accuracy": 0.8541,
+        "balanced_accuracy": 0.8541000000000001,
+        "nec": 80.0,
+        "nonzero_connections": 800
+      },
+      {
+        "setting": "contrast_1",
+        "head": "103",
+        "accuracy": 0.8549,
+        "balanced_accuracy": 0.8549,
+        "nec": 98.6,
+        "nonzero_connections": 986
+      },
+      {
+        "setting": "contrast_1",
+        "head": "dense",
+        "accuracy": 0.8551,
+        "balanced_accuracy": 0.8551,
+        "nec": 103.0,
+        "nonzero_connections": 1030
+      },
+      {
+        "setting": "contrast_3",
+        "head": "best_val",
+        "accuracy": 0.7259,
+        "balanced_accuracy": 0.7259000000000001,
+        "nec": 98.6,
+        "nonzero_connections": 986
+      },
+      {
+        "setting": "contrast_3",
+        "head": "1",
+        "accuracy": 0.5101,
+        "balanced_accuracy": 0.5101,
+        "nec": 1.0,
+        "nonzero_connections": 10
+      },
+      {
+        "setting": "contrast_3",
+        "head": "2",
+        "accuracy": 0.5713,
+        "balanced_accuracy": 0.5713,
+        "nec": 2.0,
+        "nonzero_connections": 20
+      },
+      {
+        "setting": "contrast_3",
+        "head": "3",
+        "accuracy": 0.6513,
+        "balanced_accuracy": 0.6513,
+        "nec": 3.0,
+        "nonzero_connections": 30
+      },
+      {
+        "setting": "contrast_3",
+        "head": "5",
+        "accuracy": 0.6744,
+        "balanced_accuracy": 0.6744000000000001,
+        "nec": 5.0,
+        "nonzero_connections": 50
+      },
+      {
+        "setting": "contrast_3",
+        "head": "8",
+        "accuracy": 0.6877,
+        "balanced_accuracy": 0.6877,
+        "nec": 8.0,
+        "nonzero_connections": 80
+      },
+      {
+        "setting": "contrast_3",
+        "head": "10",
+        "accuracy": 0.6909,
+        "balanced_accuracy": 0.6909000000000001,
+        "nec": 10.0,
+        "nonzero_connections": 100
+      },
+      {
+        "setting": "contrast_3",
+        "head": "15",
+        "accuracy": 0.6949,
+        "balanced_accuracy": 0.6949,
+        "nec": 15.0,
+        "nonzero_connections": 150
+      },
+      {
+        "setting": "contrast_3",
+        "head": "20",
+        "accuracy": 0.6978,
+        "balanced_accuracy": 0.6978,
+        "nec": 20.0,
+        "nonzero_connections": 200
+      },
+      {
+        "setting": "contrast_3",
+        "head": "30",
+        "accuracy": 0.702,
+        "balanced_accuracy": 0.702,
+        "nec": 30.0,
+        "nonzero_connections": 300
+      },
+      {
+        "setting": "contrast_3",
+        "head": "50",
+        "accuracy": 0.7098,
+        "balanced_accuracy": 0.7097999999999999,
+        "nec": 50.0,
+        "nonzero_connections": 500
+      },
+      {
+        "setting": "contrast_3",
+        "head": "80",
+        "accuracy": 0.7235,
+        "balanced_accuracy": 0.7235,
+        "nec": 80.0,
+        "nonzero_connections": 800
+      },
+      {
+        "setting": "contrast_3",
+        "head": "103",
+        "accuracy": 0.7259,
+        "balanced_accuracy": 0.7259000000000001,
+        "nec": 98.6,
+        "nonzero_connections": 986
+      },
+      {
+        "setting": "contrast_3",
+        "head": "dense",
+        "accuracy": 0.7205,
+        "balanced_accuracy": 0.7205000000000001,
+        "nec": 103.0,
+        "nonzero_connections": 1030
+      },
+      {
+        "setting": "contrast_5",
+        "head": "best_val",
+        "accuracy": 0.3779,
+        "balanced_accuracy": 0.37789999999999996,
+        "nec": 98.6,
+        "nonzero_connections": 986
+      },
+      {
+        "setting": "contrast_5",
+        "head": "1",
+        "accuracy": 0.3024,
+        "balanced_accuracy": 0.3024,
+        "nec": 1.0,
+        "nonzero_connections": 10
+      },
+      {
+        "setting": "contrast_5",
+        "head": "2",
+        "accuracy": 0.212,
+        "balanced_accuracy": 0.21200000000000002,
+        "nec": 2.0,
+        "nonzero_connections": 20
+      },
+      {
+        "setting": "contrast_5",
+        "head": "3",
+        "accuracy": 0.328,
+        "balanced_accuracy": 0.328,
+        "nec": 3.0,
+        "nonzero_connections": 30
+      },
+      {
+        "setting": "contrast_5",
+        "head": "5",
+        "accuracy": 0.3638,
+        "balanced_accuracy": 0.3638,
+        "nec": 5.0,
+        "nonzero_connections": 50
+      },
+      {
+        "setting": "contrast_5",
+        "head": "8",
+        "accuracy": 0.3706,
+        "balanced_accuracy": 0.37059999999999993,
+        "nec": 8.0,
+        "nonzero_connections": 80
+      },
+      {
+        "setting": "contrast_5",
+        "head": "10",
+        "accuracy": 0.3794,
+        "balanced_accuracy": 0.37940000000000007,
+        "nec": 10.0,
+        "nonzero_connections": 100
+      },
+      {
+        "setting": "contrast_5",
+        "head": "15",
+        "accuracy": 0.3772,
+        "balanced_accuracy": 0.37720000000000004,
+        "nec": 15.0,
+        "nonzero_connections": 150
+      },
+      {
+        "setting": "contrast_5",
+        "head": "20",
+        "accuracy": 0.3806,
+        "balanced_accuracy": 0.3806,
+        "nec": 20.0,
+        "nonzero_connections": 200
+      },
+      {
+        "setting": "contrast_5",
+        "head": "30",
+        "accuracy": 0.3725,
+        "balanced_accuracy": 0.3725,
+        "nec": 30.0,
+        "nonzero_connections": 300
+      },
+      {
+        "setting": "contrast_5",
+        "head": "50",
+        "accuracy": 0.3716,
+        "balanced_accuracy": 0.37160000000000004,
+        "nec": 50.0,
+        "nonzero_connections": 500
+      },
+      {
+        "setting": "contrast_5",
+        "head": "80",
+        "accuracy": 0.3763,
+        "balanced_accuracy": 0.37629999999999997,
+        "nec": 80.0,
+        "nonzero_connections": 800
+      },
+      {
+        "setting": "contrast_5",
+        "head": "103",
+        "accuracy": 0.3779,
+        "balanced_accuracy": 0.37789999999999996,
+        "nec": 98.6,
+        "nonzero_connections": 986
+      },
+      {
+        "setting": "contrast_5",
+        "head": "dense",
+        "accuracy": 0.3776,
+        "balanced_accuracy": 0.37760000000000005,
+        "nec": 103.0,
+        "nonzero_connections": 1030
+      },
+      {
+        "setting": "gaussian_blur_1",
+        "head": "best_val",
+        "accuracy": 0.8575,
+        "balanced_accuracy": 0.8574999999999999,
+        "nec": 98.6,
+        "nonzero_connections": 986
+      },
+      {
+        "setting": "gaussian_blur_1",
+        "head": "1",
+        "accuracy": 0.6288,
+        "balanced_accuracy": 0.6288,
+        "nec": 1.0,
+        "nonzero_connections": 10
+      },
+      {
+        "setting": "gaussian_blur_1",
+        "head": "2",
+        "accuracy": 0.746,
+        "balanced_accuracy": 0.7459999999999999,
+        "nec": 2.0,
+        "nonzero_connections": 20
+      },
+      {
+        "setting": "gaussian_blur_1",
+        "head": "3",
+        "accuracy": 0.8045,
+        "balanced_accuracy": 0.8045,
+        "nec": 3.0,
+        "nonzero_connections": 30
+      },
+      {
+        "setting": "gaussian_blur_1",
+        "head": "5",
+        "accuracy": 0.8229,
+        "balanced_accuracy": 0.8229000000000001,
+        "nec": 5.0,
+        "nonzero_connections": 50
+      },
+      {
+        "setting": "gaussian_blur_1",
+        "head": "8",
+        "accuracy": 0.8307,
+        "balanced_accuracy": 0.8307,
+        "nec": 8.0,
+        "nonzero_connections": 80
+      },
+      {
+        "setting": "gaussian_blur_1",
+        "head": "10",
+        "accuracy": 0.8363,
+        "balanced_accuracy": 0.8362999999999999,
+        "nec": 10.0,
+        "nonzero_connections": 100
+      },
+      {
+        "setting": "gaussian_blur_1",
+        "head": "15",
+        "accuracy": 0.8429,
+        "balanced_accuracy": 0.8428999999999999,
+        "nec": 15.0,
+        "nonzero_connections": 150
+      },
+      {
+        "setting": "gaussian_blur_1",
+        "head": "20",
+        "accuracy": 0.8456,
+        "balanced_accuracy": 0.8455999999999999,
+        "nec": 20.0,
+        "nonzero_connections": 200
+      },
+      {
+        "setting": "gaussian_blur_1",
+        "head": "30",
+        "accuracy": 0.8496,
+        "balanced_accuracy": 0.8496,
+        "nec": 30.0,
+        "nonzero_connections": 300
+      },
+      {
+        "setting": "gaussian_blur_1",
+        "head": "50",
+        "accuracy": 0.8554,
+        "balanced_accuracy": 0.8554,
+        "nec": 50.0,
+        "nonzero_connections": 500
+      },
+      {
+        "setting": "gaussian_blur_1",
+        "head": "80",
+        "accuracy": 0.8573,
+        "balanced_accuracy": 0.8573000000000001,
+        "nec": 80.0,
+        "nonzero_connections": 800
+      },
+      {
+        "setting": "gaussian_blur_1",
+        "head": "103",
+        "accuracy": 0.8575,
+        "balanced_accuracy": 0.8574999999999999,
+        "nec": 98.6,
+        "nonzero_connections": 986
+      },
+      {
+        "setting": "gaussian_blur_1",
+        "head": "dense",
+        "accuracy": 0.8591,
+        "balanced_accuracy": 0.8591000000000001,
+        "nec": 103.0,
+        "nonzero_connections": 1030
+      },
+      {
+        "setting": "gaussian_blur_3",
+        "head": "best_val",
+        "accuracy": 0.7046,
+        "balanced_accuracy": 0.7046,
+        "nec": 98.6,
+        "nonzero_connections": 986
+      },
+      {
+        "setting": "gaussian_blur_3",
+        "head": "1",
+        "accuracy": 0.5091,
+        "balanced_accuracy": 0.5091,
+        "nec": 1.0,
+        "nonzero_connections": 10
+      },
+      {
+        "setting": "gaussian_blur_3",
+        "head": "2",
+        "accuracy": 0.6013,
+        "balanced_accuracy": 0.6013,
+        "nec": 2.0,
+        "nonzero_connections": 20
+      },
+      {
+        "setting": "gaussian_blur_3",
+        "head": "3",
+        "accuracy": 0.6405,
+        "balanced_accuracy": 0.6405,
+        "nec": 3.0,
+        "nonzero_connections": 30
+      },
+      {
+        "setting": "gaussian_blur_3",
+        "head": "5",
+        "accuracy": 0.6639,
+        "balanced_accuracy": 0.6638999999999999,
+        "nec": 5.0,
+        "nonzero_connections": 50
+      },
+      {
+        "setting": "gaussian_blur_3",
+        "head": "8",
+        "accuracy": 0.6688,
+        "balanced_accuracy": 0.6688,
+        "nec": 8.0,
+        "nonzero_connections": 80
+      },
+      {
+        "setting": "gaussian_blur_3",
+        "head": "10",
+        "accuracy": 0.6713,
+        "balanced_accuracy": 0.6712999999999999,
+        "nec": 10.0,
+        "nonzero_connections": 100
+      },
+      {
+        "setting": "gaussian_blur_3",
+        "head": "15",
+        "accuracy": 0.6763,
+        "balanced_accuracy": 0.6763,
+        "nec": 15.0,
+        "nonzero_connections": 150
+      },
+      {
+        "setting": "gaussian_blur_3",
+        "head": "20",
+        "accuracy": 0.6844,
+        "balanced_accuracy": 0.6844,
+        "nec": 20.0,
+        "nonzero_connections": 200
+      },
+      {
+        "setting": "gaussian_blur_3",
+        "head": "30",
+        "accuracy": 0.6906,
+        "balanced_accuracy": 0.6906,
+        "nec": 30.0,
+        "nonzero_connections": 300
+      },
+      {
+        "setting": "gaussian_blur_3",
+        "head": "50",
+        "accuracy": 0.6981,
+        "balanced_accuracy": 0.6980999999999999,
+        "nec": 50.0,
+        "nonzero_connections": 500
+      },
+      {
+        "setting": "gaussian_blur_3",
+        "head": "80",
+        "accuracy": 0.7052,
+        "balanced_accuracy": 0.7051999999999999,
+        "nec": 80.0,
+        "nonzero_connections": 800
+      },
+      {
+        "setting": "gaussian_blur_3",
+        "head": "103",
+        "accuracy": 0.7046,
+        "balanced_accuracy": 0.7046,
+        "nec": 98.6,
+        "nonzero_connections": 986
+      },
+      {
+        "setting": "gaussian_blur_3",
+        "head": "dense",
+        "accuracy": 0.7041,
+        "balanced_accuracy": 0.7040999999999998,
+        "nec": 103.0,
+        "nonzero_connections": 1030
+      },
+      {
+        "setting": "gaussian_blur_5",
+        "head": "best_val",
+        "accuracy": 0.4864,
+        "balanced_accuracy": 0.4864,
+        "nec": 98.6,
+        "nonzero_connections": 986
+      },
+      {
+        "setting": "gaussian_blur_5",
+        "head": "1",
+        "accuracy": 0.3675,
+        "balanced_accuracy": 0.3675,
+        "nec": 1.0,
+        "nonzero_connections": 10
+      },
+      {
+        "setting": "gaussian_blur_5",
+        "head": "2",
+        "accuracy": 0.401,
+        "balanced_accuracy": 0.40099999999999997,
+        "nec": 2.0,
+        "nonzero_connections": 20
+      },
+      {
+        "setting": "gaussian_blur_5",
+        "head": "3",
+        "accuracy": 0.4164,
+        "balanced_accuracy": 0.4164,
+        "nec": 3.0,
+        "nonzero_connections": 30
+      },
+      {
+        "setting": "gaussian_blur_5",
+        "head": "5",
+        "accuracy": 0.4415,
+        "balanced_accuracy": 0.4415,
+        "nec": 5.0,
+        "nonzero_connections": 50
+      },
+      {
+        "setting": "gaussian_blur_5",
+        "head": "8",
+        "accuracy": 0.442,
+        "balanced_accuracy": 0.442,
+        "nec": 8.0,
+        "nonzero_connections": 80
+      },
+      {
+        "setting": "gaussian_blur_5",
+        "head": "10",
+        "accuracy": 0.4369,
+        "balanced_accuracy": 0.43689999999999996,
+        "nec": 10.0,
+        "nonzero_connections": 100
+      },
+      {
+        "setting": "gaussian_blur_5",
+        "head": "15",
+        "accuracy": 0.4342,
+        "balanced_accuracy": 0.43420000000000003,
+        "nec": 15.0,
+        "nonzero_connections": 150
+      },
+      {
+        "setting": "gaussian_blur_5",
+        "head": "20",
+        "accuracy": 0.4457,
+        "balanced_accuracy": 0.4457,
+        "nec": 20.0,
+        "nonzero_connections": 200
+      },
+      {
+        "setting": "gaussian_blur_5",
+        "head": "30",
+        "accuracy": 0.4589,
+        "balanced_accuracy": 0.45890000000000003,
+        "nec": 30.0,
+        "nonzero_connections": 300
+      },
+      {
+        "setting": "gaussian_blur_5",
+        "head": "50",
+        "accuracy": 0.4729,
+        "balanced_accuracy": 0.4729,
+        "nec": 50.0,
+        "nonzero_connections": 500
+      },
+      {
+        "setting": "gaussian_blur_5",
+        "head": "80",
+        "accuracy": 0.4855,
+        "balanced_accuracy": 0.48550000000000004,
+        "nec": 80.0,
+        "nonzero_connections": 800
+      },
+      {
+        "setting": "gaussian_blur_5",
+        "head": "103",
+        "accuracy": 0.4864,
+        "balanced_accuracy": 0.4864,
+        "nec": 98.6,
+        "nonzero_connections": 986
+      },
+      {
+        "setting": "gaussian_blur_5",
+        "head": "dense",
+        "accuracy": 0.4883,
+        "balanced_accuracy": 0.4883,
+        "nec": 103.0,
+        "nonzero_connections": 1030
+      },
+      {
+        "setting": "gaussian_noise_1",
+        "head": "best_val",
+        "accuracy": 0.4275,
+        "balanced_accuracy": 0.42749999999999994,
+        "nec": 98.6,
+        "nonzero_connections": 986
+      },
+      {
+        "setting": "gaussian_noise_1",
+        "head": "1",
+        "accuracy": 0.2913,
+        "balanced_accuracy": 0.2913,
+        "nec": 1.0,
+        "nonzero_connections": 10
+      },
+      {
+        "setting": "gaussian_noise_1",
+        "head": "2",
+        "accuracy": 0.3626,
+        "balanced_accuracy": 0.3626,
+        "nec": 2.0,
+        "nonzero_connections": 20
+      },
+      {
+        "setting": "gaussian_noise_1",
+        "head": "3",
+        "accuracy": 0.4181,
+        "balanced_accuracy": 0.4181,
+        "nec": 3.0,
+        "nonzero_connections": 30
+      },
+      {
+        "setting": "gaussian_noise_1",
+        "head": "5",
+        "accuracy": 0.3873,
+        "balanced_accuracy": 0.3873,
+        "nec": 5.0,
+        "nonzero_connections": 50
+      },
+      {
+        "setting": "gaussian_noise_1",
+        "head": "8",
+        "accuracy": 0.3864,
+        "balanced_accuracy": 0.38639999999999997,
+        "nec": 8.0,
+        "nonzero_connections": 80
+      },
+      {
+        "setting": "gaussian_noise_1",
+        "head": "10",
+        "accuracy": 0.3867,
+        "balanced_accuracy": 0.38670000000000004,
+        "nec": 10.0,
+        "nonzero_connections": 100
+      },
+      {
+        "setting": "gaussian_noise_1",
+        "head": "15",
+        "accuracy": 0.3897,
+        "balanced_accuracy": 0.3897,
+        "nec": 15.0,
+        "nonzero_connections": 150
+      },
+      {
+        "setting": "gaussian_noise_1",
+        "head": "20",
+        "accuracy": 0.3963,
+        "balanced_accuracy": 0.3963,
+        "nec": 20.0,
+        "nonzero_connections": 200
+      },
+      {
+        "setting": "gaussian_noise_1",
+        "head": "30",
+        "accuracy": 0.4089,
+        "balanced_accuracy": 0.40890000000000004,
+        "nec": 30.0,
+        "nonzero_connections": 300
+      },
+      {
+        "setting": "gaussian_noise_1",
+        "head": "50",
+        "accuracy": 0.4171,
+        "balanced_accuracy": 0.4171,
+        "nec": 50.0,
+        "nonzero_connections": 500
+      },
+      {
+        "setting": "gaussian_noise_1",
+        "head": "80",
+        "accuracy": 0.4254,
+        "balanced_accuracy": 0.42539999999999994,
+        "nec": 80.0,
+        "nonzero_connections": 800
+      },
+      {
+        "setting": "gaussian_noise_1",
+        "head": "103",
+        "accuracy": 0.4275,
+        "balanced_accuracy": 0.42749999999999994,
+        "nec": 98.6,
+        "nonzero_connections": 986
+      },
+      {
+        "setting": "gaussian_noise_1",
+        "head": "dense",
+        "accuracy": 0.4295,
+        "balanced_accuracy": 0.4295,
+        "nec": 103.0,
+        "nonzero_connections": 1030
+      },
+      {
+        "setting": "gaussian_noise_3",
+        "head": "best_val",
+        "accuracy": 0.2169,
+        "balanced_accuracy": 0.2169,
+        "nec": 98.6,
+        "nonzero_connections": 986
+      },
+      {
+        "setting": "gaussian_noise_3",
+        "head": "1",
+        "accuracy": 0.1466,
+        "balanced_accuracy": 0.1466,
+        "nec": 1.0,
+        "nonzero_connections": 10
+      },
+      {
+        "setting": "gaussian_noise_3",
+        "head": "2",
+        "accuracy": 0.1928,
+        "balanced_accuracy": 0.1928,
+        "nec": 2.0,
+        "nonzero_connections": 20
+      },
+      {
+        "setting": "gaussian_noise_3",
+        "head": "3",
+        "accuracy": 0.2121,
+        "balanced_accuracy": 0.2121,
+        "nec": 3.0,
+        "nonzero_connections": 30
+      },
+      {
+        "setting": "gaussian_noise_3",
+        "head": "5",
+        "accuracy": 0.1773,
+        "balanced_accuracy": 0.17729999999999999,
+        "nec": 5.0,
+        "nonzero_connections": 50
+      },
+      {
+        "setting": "gaussian_noise_3",
+        "head": "8",
+        "accuracy": 0.1759,
+        "balanced_accuracy": 0.1759,
+        "nec": 8.0,
+        "nonzero_connections": 80
+      },
+      {
+        "setting": "gaussian_noise_3",
+        "head": "10",
+        "accuracy": 0.1823,
+        "balanced_accuracy": 0.1823,
+        "nec": 10.0,
+        "nonzero_connections": 100
+      },
+      {
+        "setting": "gaussian_noise_3",
+        "head": "15",
+        "accuracy": 0.1891,
+        "balanced_accuracy": 0.1891,
+        "nec": 15.0,
+        "nonzero_connections": 150
+      },
+      {
+        "setting": "gaussian_noise_3",
+        "head": "20",
+        "accuracy": 0.1931,
+        "balanced_accuracy": 0.1931,
+        "nec": 20.0,
+        "nonzero_connections": 200
+      },
+      {
+        "setting": "gaussian_noise_3",
+        "head": "30",
+        "accuracy": 0.2026,
+        "balanced_accuracy": 0.20259999999999997,
+        "nec": 30.0,
+        "nonzero_connections": 300
+      },
+      {
+        "setting": "gaussian_noise_3",
+        "head": "50",
+        "accuracy": 0.21,
+        "balanced_accuracy": 0.21000000000000002,
+        "nec": 50.0,
+        "nonzero_connections": 500
+      },
+      {
+        "setting": "gaussian_noise_3",
+        "head": "80",
+        "accuracy": 0.2182,
+        "balanced_accuracy": 0.21819999999999995,
+        "nec": 80.0,
+        "nonzero_connections": 800
+      },
+      {
+        "setting": "gaussian_noise_3",
+        "head": "103",
+        "accuracy": 0.2169,
+        "balanced_accuracy": 0.2169,
+        "nec": 98.6,
+        "nonzero_connections": 986
+      },
+      {
+        "setting": "gaussian_noise_3",
+        "head": "dense",
+        "accuracy": 0.2182,
+        "balanced_accuracy": 0.2182,
+        "nec": 103.0,
+        "nonzero_connections": 1030
+      },
+      {
+        "setting": "gaussian_noise_5",
+        "head": "best_val",
+        "accuracy": 0.1781,
+        "balanced_accuracy": 0.17809999999999998,
+        "nec": 98.6,
+        "nonzero_connections": 986
+      },
+      {
+        "setting": "gaussian_noise_5",
+        "head": "1",
+        "accuracy": 0.1236,
+        "balanced_accuracy": 0.1236,
+        "nec": 1.0,
+        "nonzero_connections": 10
+      },
+      {
+        "setting": "gaussian_noise_5",
+        "head": "2",
+        "accuracy": 0.1621,
+        "balanced_accuracy": 0.16210000000000002,
+        "nec": 2.0,
+        "nonzero_connections": 20
+      },
+      {
+        "setting": "gaussian_noise_5",
+        "head": "3",
+        "accuracy": 0.1744,
+        "balanced_accuracy": 0.1744,
+        "nec": 3.0,
+        "nonzero_connections": 30
+      },
+      {
+        "setting": "gaussian_noise_5",
+        "head": "5",
+        "accuracy": 0.145,
+        "balanced_accuracy": 0.145,
+        "nec": 5.0,
+        "nonzero_connections": 50
+      },
+      {
+        "setting": "gaussian_noise_5",
+        "head": "8",
+        "accuracy": 0.1455,
+        "balanced_accuracy": 0.14550000000000002,
+        "nec": 8.0,
+        "nonzero_connections": 80
+      },
+      {
+        "setting": "gaussian_noise_5",
+        "head": "10",
+        "accuracy": 0.1522,
+        "balanced_accuracy": 0.1522,
+        "nec": 10.0,
+        "nonzero_connections": 100
+      },
+      {
+        "setting": "gaussian_noise_5",
+        "head": "15",
+        "accuracy": 0.1571,
+        "balanced_accuracy": 0.15709999999999996,
+        "nec": 15.0,
+        "nonzero_connections": 150
+      },
+      {
+        "setting": "gaussian_noise_5",
+        "head": "20",
+        "accuracy": 0.159,
+        "balanced_accuracy": 0.15899999999999997,
+        "nec": 20.0,
+        "nonzero_connections": 200
+      },
+      {
+        "setting": "gaussian_noise_5",
+        "head": "30",
+        "accuracy": 0.1681,
+        "balanced_accuracy": 0.16809999999999997,
+        "nec": 30.0,
+        "nonzero_connections": 300
+      },
+      {
+        "setting": "gaussian_noise_5",
+        "head": "50",
+        "accuracy": 0.1731,
+        "balanced_accuracy": 0.17309999999999998,
+        "nec": 50.0,
+        "nonzero_connections": 500
+      },
+      {
+        "setting": "gaussian_noise_5",
+        "head": "80",
+        "accuracy": 0.1783,
+        "balanced_accuracy": 0.1783,
+        "nec": 80.0,
+        "nonzero_connections": 800
+      },
+      {
+        "setting": "gaussian_noise_5",
+        "head": "103",
+        "accuracy": 0.1781,
+        "balanced_accuracy": 0.17809999999999998,
+        "nec": 98.6,
+        "nonzero_connections": 986
+      },
+      {
+        "setting": "gaussian_noise_5",
+        "head": "dense",
+        "accuracy": 0.1799,
+        "balanced_accuracy": 0.1799,
+        "nec": 103.0,
+        "nonzero_connections": 1030
+      },
+      {
+        "setting": "jpeg_compression_1",
+        "head": "best_val",
+        "accuracy": 0.7294,
+        "balanced_accuracy": 0.7293999999999999,
+        "nec": 98.6,
+        "nonzero_connections": 986
+      },
+      {
+        "setting": "jpeg_compression_1",
+        "head": "1",
+        "accuracy": 0.5341,
+        "balanced_accuracy": 0.5341,
+        "nec": 1.0,
+        "nonzero_connections": 10
+      },
+      {
+        "setting": "jpeg_compression_1",
+        "head": "2",
+        "accuracy": 0.5947,
+        "balanced_accuracy": 0.5946999999999999,
+        "nec": 2.0,
+        "nonzero_connections": 20
+      },
+      {
+        "setting": "jpeg_compression_1",
+        "head": "3",
+        "accuracy": 0.6622,
+        "balanced_accuracy": 0.6622,
+        "nec": 3.0,
+        "nonzero_connections": 30
+      },
+      {
+        "setting": "jpeg_compression_1",
+        "head": "5",
+        "accuracy": 0.6863,
+        "balanced_accuracy": 0.6863,
+        "nec": 5.0,
+        "nonzero_connections": 50
+      },
+      {
+        "setting": "jpeg_compression_1",
+        "head": "8",
+        "accuracy": 0.7011,
+        "balanced_accuracy": 0.7011,
+        "nec": 8.0,
+        "nonzero_connections": 80
+      },
+      {
+        "setting": "jpeg_compression_1",
+        "head": "10",
+        "accuracy": 0.7058,
+        "balanced_accuracy": 0.7058000000000001,
+        "nec": 10.0,
+        "nonzero_connections": 100
+      },
+      {
+        "setting": "jpeg_compression_1",
+        "head": "15",
+        "accuracy": 0.7189,
+        "balanced_accuracy": 0.7189,
+        "nec": 15.0,
+        "nonzero_connections": 150
+      },
+      {
+        "setting": "jpeg_compression_1",
+        "head": "20",
+        "accuracy": 0.7207,
+        "balanced_accuracy": 0.7207,
+        "nec": 20.0,
+        "nonzero_connections": 200
+      },
+      {
+        "setting": "jpeg_compression_1",
+        "head": "30",
+        "accuracy": 0.7237,
+        "balanced_accuracy": 0.7237,
+        "nec": 30.0,
+        "nonzero_connections": 300
+      },
+      {
+        "setting": "jpeg_compression_1",
+        "head": "50",
+        "accuracy": 0.7267,
+        "balanced_accuracy": 0.7266999999999999,
+        "nec": 50.0,
+        "nonzero_connections": 500
+      },
+      {
+        "setting": "jpeg_compression_1",
+        "head": "80",
+        "accuracy": 0.7317,
+        "balanced_accuracy": 0.7316999999999999,
+        "nec": 80.0,
+        "nonzero_connections": 800
+      },
+      {
+        "setting": "jpeg_compression_1",
+        "head": "103",
+        "accuracy": 0.7294,
+        "balanced_accuracy": 0.7293999999999999,
+        "nec": 98.6,
+        "nonzero_connections": 986
+      },
+      {
+        "setting": "jpeg_compression_1",
+        "head": "dense",
+        "accuracy": 0.7291,
+        "balanced_accuracy": 0.7291000000000001,
+        "nec": 103.0,
+        "nonzero_connections": 1030
+      },
+      {
+        "setting": "jpeg_compression_3",
+        "head": "best_val",
+        "accuracy": 0.641,
+        "balanced_accuracy": 0.641,
+        "nec": 98.6,
+        "nonzero_connections": 986
+      },
+      {
+        "setting": "jpeg_compression_3",
+        "head": "1",
+        "accuracy": 0.4821,
+        "balanced_accuracy": 0.4821,
+        "nec": 1.0,
+        "nonzero_connections": 10
+      },
+      {
+        "setting": "jpeg_compression_3",
+        "head": "2",
+        "accuracy": 0.5214,
+        "balanced_accuracy": 0.5214,
+        "nec": 2.0,
+        "nonzero_connections": 20
+      },
+      {
+        "setting": "jpeg_compression_3",
+        "head": "3",
+        "accuracy": 0.5801,
+        "balanced_accuracy": 0.5801000000000001,
+        "nec": 3.0,
+        "nonzero_connections": 30
+      },
+      {
+        "setting": "jpeg_compression_3",
+        "head": "5",
+        "accuracy": 0.6014,
+        "balanced_accuracy": 0.6013999999999999,
+        "nec": 5.0,
+        "nonzero_connections": 50
+      },
+      {
+        "setting": "jpeg_compression_3",
+        "head": "8",
+        "accuracy": 0.6128,
+        "balanced_accuracy": 0.6128,
+        "nec": 8.0,
+        "nonzero_connections": 80
+      },
+      {
+        "setting": "jpeg_compression_3",
+        "head": "10",
+        "accuracy": 0.6194,
+        "balanced_accuracy": 0.6194,
+        "nec": 10.0,
+        "nonzero_connections": 100
+      },
+      {
+        "setting": "jpeg_compression_3",
+        "head": "15",
+        "accuracy": 0.6302,
+        "balanced_accuracy": 0.6302000000000001,
+        "nec": 15.0,
+        "nonzero_connections": 150
+      },
+      {
+        "setting": "jpeg_compression_3",
+        "head": "20",
+        "accuracy": 0.6295,
+        "balanced_accuracy": 0.6295000000000001,
+        "nec": 20.0,
+        "nonzero_connections": 200
+      },
+      {
+        "setting": "jpeg_compression_3",
+        "head": "30",
+        "accuracy": 0.6356,
+        "balanced_accuracy": 0.6355999999999999,
+        "nec": 30.0,
+        "nonzero_connections": 300
+      },
+      {
+        "setting": "jpeg_compression_3",
+        "head": "50",
+        "accuracy": 0.6392,
+        "balanced_accuracy": 0.6392,
+        "nec": 50.0,
+        "nonzero_connections": 500
+      },
+      {
+        "setting": "jpeg_compression_3",
+        "head": "80",
+        "accuracy": 0.6407,
+        "balanced_accuracy": 0.6407,
+        "nec": 80.0,
+        "nonzero_connections": 800
+      },
+      {
+        "setting": "jpeg_compression_3",
+        "head": "103",
+        "accuracy": 0.641,
+        "balanced_accuracy": 0.641,
+        "nec": 98.6,
+        "nonzero_connections": 986
+      },
+      {
+        "setting": "jpeg_compression_3",
+        "head": "dense",
+        "accuracy": 0.6375,
+        "balanced_accuracy": 0.6375,
+        "nec": 103.0,
+        "nonzero_connections": 1030
+      },
+      {
+        "setting": "jpeg_compression_5",
+        "head": "best_val",
+        "accuracy": 0.584,
+        "balanced_accuracy": 0.5839999999999999,
+        "nec": 98.6,
+        "nonzero_connections": 986
+      },
+      {
+        "setting": "jpeg_compression_5",
+        "head": "1",
+        "accuracy": 0.4402,
+        "balanced_accuracy": 0.4402000000000001,
+        "nec": 1.0,
+        "nonzero_connections": 10
+      },
+      {
+        "setting": "jpeg_compression_5",
+        "head": "2",
+        "accuracy": 0.4803,
+        "balanced_accuracy": 0.4802999999999999,
+        "nec": 2.0,
+        "nonzero_connections": 20
+      },
+      {
+        "setting": "jpeg_compression_5",
+        "head": "3",
+        "accuracy": 0.5338,
+        "balanced_accuracy": 0.5338,
+        "nec": 3.0,
+        "nonzero_connections": 30
+      },
+      {
+        "setting": "jpeg_compression_5",
+        "head": "5",
+        "accuracy": 0.5539,
+        "balanced_accuracy": 0.5539,
+        "nec": 5.0,
+        "nonzero_connections": 50
+      },
+      {
+        "setting": "jpeg_compression_5",
+        "head": "8",
+        "accuracy": 0.5644,
+        "balanced_accuracy": 0.5644000000000001,
+        "nec": 8.0,
+        "nonzero_connections": 80
+      },
+      {
+        "setting": "jpeg_compression_5",
+        "head": "10",
+        "accuracy": 0.5682,
+        "balanced_accuracy": 0.5681999999999999,
+        "nec": 10.0,
+        "nonzero_connections": 100
+      },
+      {
+        "setting": "jpeg_compression_5",
+        "head": "15",
+        "accuracy": 0.575,
+        "balanced_accuracy": 0.575,
+        "nec": 15.0,
+        "nonzero_connections": 150
+      },
+      {
+        "setting": "jpeg_compression_5",
+        "head": "20",
+        "accuracy": 0.5799,
+        "balanced_accuracy": 0.5799,
+        "nec": 20.0,
+        "nonzero_connections": 200
+      },
+      {
+        "setting": "jpeg_compression_5",
+        "head": "30",
+        "accuracy": 0.5823,
+        "balanced_accuracy": 0.5823,
+        "nec": 30.0,
+        "nonzero_connections": 300
+      },
+      {
+        "setting": "jpeg_compression_5",
+        "head": "50",
+        "accuracy": 0.5844,
+        "balanced_accuracy": 0.5844000000000001,
+        "nec": 50.0,
+        "nonzero_connections": 500
+      },
+      {
+        "setting": "jpeg_compression_5",
+        "head": "80",
+        "accuracy": 0.5859,
+        "balanced_accuracy": 0.5859,
+        "nec": 80.0,
+        "nonzero_connections": 800
+      },
+      {
+        "setting": "jpeg_compression_5",
+        "head": "103",
+        "accuracy": 0.584,
+        "balanced_accuracy": 0.5839999999999999,
+        "nec": 98.6,
+        "nonzero_connections": 986
+      },
+      {
+        "setting": "jpeg_compression_5",
+        "head": "dense",
+        "accuracy": 0.5839,
+        "balanced_accuracy": 0.5839000000000001,
+        "nec": 103.0,
+        "nonzero_connections": 1030
+      }
+    ]
+  },
+  {
+    "group": "artifacts/heads/cifar10/resnet18/original/seed42",
+    "method": "LF-Pi",
+    "heads_sha256": "0c67190995fefdc67fa7c941e6b56225951a3235bbedd236de9146ed3df76c84",
+    "refitting": false,
+    "source": "/home/pengcheng/Pi-CBM-Benchmark/artifacts/matched/lf/cifar10/rn18_imagenet/seed42/corruptions",
+    "points": [
+      {
+        "setting": "contrast_1",
+        "head": "best_val",
+        "accuracy": 0.8707,
+        "balanced_accuracy": 0.8707,
+        "nec": 48.8,
+        "nonzero_connections": 488
+      },
+      {
+        "setting": "contrast_1",
+        "head": "1",
+        "accuracy": 0.7209,
+        "balanced_accuracy": 0.7209,
+        "nec": 1.0,
+        "nonzero_connections": 10
+      },
+      {
+        "setting": "contrast_1",
+        "head": "2",
+        "accuracy": 0.8159,
+        "balanced_accuracy": 0.8159000000000001,
+        "nec": 2.0,
+        "nonzero_connections": 20
+      },
+      {
+        "setting": "contrast_1",
+        "head": "3",
+        "accuracy": 0.8282,
+        "balanced_accuracy": 0.8282,
+        "nec": 3.0,
+        "nonzero_connections": 30
+      },
+      {
+        "setting": "contrast_1",
+        "head": "5",
+        "accuracy": 0.8511,
+        "balanced_accuracy": 0.8511000000000001,
+        "nec": 5.0,
+        "nonzero_connections": 50
+      },
+      {
+        "setting": "contrast_1",
+        "head": "8",
+        "accuracy": 0.8589,
+        "balanced_accuracy": 0.8589,
+        "nec": 8.0,
+        "nonzero_connections": 80
+      },
+      {
+        "setting": "contrast_1",
+        "head": "10",
+        "accuracy": 0.8626,
+        "balanced_accuracy": 0.8625999999999999,
+        "nec": 10.0,
+        "nonzero_connections": 100
+      },
+      {
+        "setting": "contrast_1",
+        "head": "15",
+        "accuracy": 0.8681,
+        "balanced_accuracy": 0.8680999999999999,
+        "nec": 15.0,
+        "nonzero_connections": 150
+      },
+      {
+        "setting": "contrast_1",
+        "head": "20",
+        "accuracy": 0.8684,
+        "balanced_accuracy": 0.8684000000000001,
+        "nec": 20.0,
+        "nonzero_connections": 200
+      },
+      {
+        "setting": "contrast_1",
+        "head": "30",
+        "accuracy": 0.8716,
+        "balanced_accuracy": 0.8716000000000002,
+        "nec": 30.0,
+        "nonzero_connections": 300
+      },
+      {
+        "setting": "contrast_1",
+        "head": "50",
+        "accuracy": 0.8703,
+        "balanced_accuracy": 0.8703,
+        "nec": 50.0,
+        "nonzero_connections": 500
+      },
+      {
+        "setting": "contrast_1",
+        "head": "80",
+        "accuracy": 0.871,
+        "balanced_accuracy": 0.8710000000000001,
+        "nec": 80.0,
+        "nonzero_connections": 800
+      },
+      {
+        "setting": "contrast_1",
+        "head": "103",
+        "accuracy": 0.8709,
+        "balanced_accuracy": 0.8709,
+        "nec": 90.6,
+        "nonzero_connections": 906
+      },
+      {
+        "setting": "contrast_1",
+        "head": "dense",
+        "accuracy": 0.871,
+        "balanced_accuracy": 0.8710000000000001,
+        "nec": 103.0,
+        "nonzero_connections": 1030
+      },
+      {
+        "setting": "contrast_3",
+        "head": "best_val",
+        "accuracy": 0.7502,
+        "balanced_accuracy": 0.7502000000000001,
+        "nec": 48.8,
+        "nonzero_connections": 488
+      },
+      {
+        "setting": "contrast_3",
+        "head": "1",
+        "accuracy": 0.5879,
+        "balanced_accuracy": 0.5879,
+        "nec": 1.0,
+        "nonzero_connections": 10
+      },
+      {
+        "setting": "contrast_3",
+        "head": "2",
+        "accuracy": 0.6823,
+        "balanced_accuracy": 0.6822999999999999,
+        "nec": 2.0,
+        "nonzero_connections": 20
+      },
+      {
+        "setting": "contrast_3",
+        "head": "3",
+        "accuracy": 0.6906,
+        "balanced_accuracy": 0.6905999999999999,
+        "nec": 3.0,
+        "nonzero_connections": 30
+      },
+      {
+        "setting": "contrast_3",
+        "head": "5",
+        "accuracy": 0.7193,
+        "balanced_accuracy": 0.7192999999999999,
+        "nec": 5.0,
+        "nonzero_connections": 50
+      },
+      {
+        "setting": "contrast_3",
+        "head": "8",
+        "accuracy": 0.7323,
+        "balanced_accuracy": 0.7323000000000001,
+        "nec": 8.0,
+        "nonzero_connections": 80
+      },
+      {
+        "setting": "contrast_3",
+        "head": "10",
+        "accuracy": 0.7352,
+        "balanced_accuracy": 0.7352000000000001,
+        "nec": 10.0,
+        "nonzero_connections": 100
+      },
+      {
+        "setting": "contrast_3",
+        "head": "15",
+        "accuracy": 0.7438,
+        "balanced_accuracy": 0.7438,
+        "nec": 15.0,
+        "nonzero_connections": 150
+      },
+      {
+        "setting": "contrast_3",
+        "head": "20",
+        "accuracy": 0.7452,
+        "balanced_accuracy": 0.7452,
+        "nec": 20.0,
+        "nonzero_connections": 200
+      },
+      {
+        "setting": "contrast_3",
+        "head": "30",
+        "accuracy": 0.7481,
+        "balanced_accuracy": 0.7481,
+        "nec": 30.0,
+        "nonzero_connections": 300
+      },
+      {
+        "setting": "contrast_3",
+        "head": "50",
+        "accuracy": 0.7517,
+        "balanced_accuracy": 0.7516999999999999,
+        "nec": 50.0,
+        "nonzero_connections": 500
+      },
+      {
+        "setting": "contrast_3",
+        "head": "80",
+        "accuracy": 0.753,
+        "balanced_accuracy": 0.753,
+        "nec": 80.0,
+        "nonzero_connections": 800
+      },
+      {
+        "setting": "contrast_3",
+        "head": "103",
+        "accuracy": 0.7535,
+        "balanced_accuracy": 0.7535000000000001,
+        "nec": 90.6,
+        "nonzero_connections": 906
+      },
+      {
+        "setting": "contrast_3",
+        "head": "dense",
+        "accuracy": 0.7499,
+        "balanced_accuracy": 0.7499,
+        "nec": 103.0,
+        "nonzero_connections": 1030
+      },
+      {
+        "setting": "contrast_5",
+        "head": "best_val",
+        "accuracy": 0.3914,
+        "balanced_accuracy": 0.39139999999999997,
+        "nec": 48.8,
+        "nonzero_connections": 488
+      },
+      {
+        "setting": "contrast_5",
+        "head": "1",
+        "accuracy": 0.1912,
+        "balanced_accuracy": 0.19119999999999998,
+        "nec": 1.0,
+        "nonzero_connections": 10
+      },
+      {
+        "setting": "contrast_5",
+        "head": "2",
+        "accuracy": 0.2754,
+        "balanced_accuracy": 0.2754,
+        "nec": 2.0,
+        "nonzero_connections": 20
+      },
+      {
+        "setting": "contrast_5",
+        "head": "3",
+        "accuracy": 0.3215,
+        "balanced_accuracy": 0.3215,
+        "nec": 3.0,
+        "nonzero_connections": 30
+      },
+      {
+        "setting": "contrast_5",
+        "head": "5",
+        "accuracy": 0.3633,
+        "balanced_accuracy": 0.3633,
+        "nec": 5.0,
+        "nonzero_connections": 50
+      },
+      {
+        "setting": "contrast_5",
+        "head": "8",
+        "accuracy": 0.3779,
+        "balanced_accuracy": 0.3779,
+        "nec": 8.0,
+        "nonzero_connections": 80
+      },
+      {
+        "setting": "contrast_5",
+        "head": "10",
+        "accuracy": 0.3867,
+        "balanced_accuracy": 0.3867,
+        "nec": 10.0,
+        "nonzero_connections": 100
+      },
+      {
+        "setting": "contrast_5",
+        "head": "15",
+        "accuracy": 0.3894,
+        "balanced_accuracy": 0.3894000000000001,
+        "nec": 15.0,
+        "nonzero_connections": 150
+      },
+      {
+        "setting": "contrast_5",
+        "head": "20",
+        "accuracy": 0.3894,
+        "balanced_accuracy": 0.3894,
+        "nec": 20.0,
+        "nonzero_connections": 200
+      },
+      {
+        "setting": "contrast_5",
+        "head": "30",
+        "accuracy": 0.3896,
+        "balanced_accuracy": 0.38959999999999995,
+        "nec": 30.0,
+        "nonzero_connections": 300
+      },
+      {
+        "setting": "contrast_5",
+        "head": "50",
+        "accuracy": 0.3908,
+        "balanced_accuracy": 0.3908,
+        "nec": 50.0,
+        "nonzero_connections": 500
+      },
+      {
+        "setting": "contrast_5",
+        "head": "80",
+        "accuracy": 0.3928,
+        "balanced_accuracy": 0.3928,
+        "nec": 80.0,
+        "nonzero_connections": 800
+      },
+      {
+        "setting": "contrast_5",
+        "head": "103",
+        "accuracy": 0.393,
+        "balanced_accuracy": 0.39299999999999996,
+        "nec": 90.6,
+        "nonzero_connections": 906
+      },
+      {
+        "setting": "contrast_5",
+        "head": "dense",
+        "accuracy": 0.3832,
+        "balanced_accuracy": 0.3832,
+        "nec": 103.0,
+        "nonzero_connections": 1030
+      },
+      {
+        "setting": "gaussian_blur_1",
+        "head": "best_val",
+        "accuracy": 0.8729,
+        "balanced_accuracy": 0.8729000000000001,
+        "nec": 48.8,
+        "nonzero_connections": 488
+      },
+      {
+        "setting": "gaussian_blur_1",
+        "head": "1",
+        "accuracy": 0.7332,
+        "balanced_accuracy": 0.7332,
+        "nec": 1.0,
+        "nonzero_connections": 10
+      },
+      {
+        "setting": "gaussian_blur_1",
+        "head": "2",
+        "accuracy": 0.8248,
+        "balanced_accuracy": 0.8248,
+        "nec": 2.0,
+        "nonzero_connections": 20
+      },
+      {
+        "setting": "gaussian_blur_1",
+        "head": "3",
+        "accuracy": 0.8385,
+        "balanced_accuracy": 0.8385,
+        "nec": 3.0,
+        "nonzero_connections": 30
+      },
+      {
+        "setting": "gaussian_blur_1",
+        "head": "5",
+        "accuracy": 0.8566,
+        "balanced_accuracy": 0.8566,
+        "nec": 5.0,
+        "nonzero_connections": 50
+      },
+      {
+        "setting": "gaussian_blur_1",
+        "head": "8",
+        "accuracy": 0.8639,
+        "balanced_accuracy": 0.8639000000000001,
+        "nec": 8.0,
+        "nonzero_connections": 80
+      },
+      {
+        "setting": "gaussian_blur_1",
+        "head": "10",
+        "accuracy": 0.8659,
+        "balanced_accuracy": 0.8659000000000001,
+        "nec": 10.0,
+        "nonzero_connections": 100
+      },
+      {
+        "setting": "gaussian_blur_1",
+        "head": "15",
+        "accuracy": 0.8693,
+        "balanced_accuracy": 0.8693,
+        "nec": 15.0,
+        "nonzero_connections": 150
+      },
+      {
+        "setting": "gaussian_blur_1",
+        "head": "20",
+        "accuracy": 0.8704,
+        "balanced_accuracy": 0.8704000000000001,
+        "nec": 20.0,
+        "nonzero_connections": 200
+      },
+      {
+        "setting": "gaussian_blur_1",
+        "head": "30",
+        "accuracy": 0.8707,
+        "balanced_accuracy": 0.8707,
+        "nec": 30.0,
+        "nonzero_connections": 300
+      },
+      {
+        "setting": "gaussian_blur_1",
+        "head": "50",
+        "accuracy": 0.8731,
+        "balanced_accuracy": 0.8731000000000002,
+        "nec": 50.0,
+        "nonzero_connections": 500
+      },
+      {
+        "setting": "gaussian_blur_1",
+        "head": "80",
+        "accuracy": 0.8732,
+        "balanced_accuracy": 0.8732,
+        "nec": 80.0,
+        "nonzero_connections": 800
+      },
+      {
+        "setting": "gaussian_blur_1",
+        "head": "103",
+        "accuracy": 0.8733,
+        "balanced_accuracy": 0.8733000000000001,
+        "nec": 90.6,
+        "nonzero_connections": 906
+      },
+      {
+        "setting": "gaussian_blur_1",
+        "head": "dense",
+        "accuracy": 0.8736,
+        "balanced_accuracy": 0.8736,
+        "nec": 103.0,
+        "nonzero_connections": 1030
+      },
+      {
+        "setting": "gaussian_blur_3",
+        "head": "best_val",
+        "accuracy": 0.7296,
+        "balanced_accuracy": 0.7296,
+        "nec": 48.8,
+        "nonzero_connections": 488
+      },
+      {
+        "setting": "gaussian_blur_3",
+        "head": "1",
+        "accuracy": 0.6072,
+        "balanced_accuracy": 0.6072000000000001,
+        "nec": 1.0,
+        "nonzero_connections": 10
+      },
+      {
+        "setting": "gaussian_blur_3",
+        "head": "2",
+        "accuracy": 0.6709,
+        "balanced_accuracy": 0.6708999999999999,
+        "nec": 2.0,
+        "nonzero_connections": 20
+      },
+      {
+        "setting": "gaussian_blur_3",
+        "head": "3",
+        "accuracy": 0.678,
+        "balanced_accuracy": 0.6779999999999999,
+        "nec": 3.0,
+        "nonzero_connections": 30
+      },
+      {
+        "setting": "gaussian_blur_3",
+        "head": "5",
+        "accuracy": 0.7047,
+        "balanced_accuracy": 0.7047,
+        "nec": 5.0,
+        "nonzero_connections": 50
+      },
+      {
+        "setting": "gaussian_blur_3",
+        "head": "8",
+        "accuracy": 0.7129,
+        "balanced_accuracy": 0.7128999999999999,
+        "nec": 8.0,
+        "nonzero_connections": 80
+      },
+      {
+        "setting": "gaussian_blur_3",
+        "head": "10",
+        "accuracy": 0.7147,
+        "balanced_accuracy": 0.7147,
+        "nec": 10.0,
+        "nonzero_connections": 100
+      },
+      {
+        "setting": "gaussian_blur_3",
+        "head": "15",
+        "accuracy": 0.7205,
+        "balanced_accuracy": 0.7205,
+        "nec": 15.0,
+        "nonzero_connections": 150
+      },
+      {
+        "setting": "gaussian_blur_3",
+        "head": "20",
+        "accuracy": 0.7233,
+        "balanced_accuracy": 0.7232999999999999,
+        "nec": 20.0,
+        "nonzero_connections": 200
+      },
+      {
+        "setting": "gaussian_blur_3",
+        "head": "30",
+        "accuracy": 0.7267,
+        "balanced_accuracy": 0.7266999999999999,
+        "nec": 30.0,
+        "nonzero_connections": 300
+      },
+      {
+        "setting": "gaussian_blur_3",
+        "head": "50",
+        "accuracy": 0.7302,
+        "balanced_accuracy": 0.7302,
+        "nec": 50.0,
+        "nonzero_connections": 500
+      },
+      {
+        "setting": "gaussian_blur_3",
+        "head": "80",
+        "accuracy": 0.7323,
+        "balanced_accuracy": 0.7323000000000001,
+        "nec": 80.0,
+        "nonzero_connections": 800
+      },
+      {
+        "setting": "gaussian_blur_3",
+        "head": "103",
+        "accuracy": 0.7329,
+        "balanced_accuracy": 0.7329000000000001,
+        "nec": 90.6,
+        "nonzero_connections": 906
+      },
+      {
+        "setting": "gaussian_blur_3",
+        "head": "dense",
+        "accuracy": 0.7268,
+        "balanced_accuracy": 0.7268,
+        "nec": 103.0,
+        "nonzero_connections": 1030
+      },
+      {
+        "setting": "gaussian_blur_5",
+        "head": "best_val",
+        "accuracy": 0.5158,
+        "balanced_accuracy": 0.5158,
+        "nec": 48.8,
+        "nonzero_connections": 488
+      },
+      {
+        "setting": "gaussian_blur_5",
+        "head": "1",
+        "accuracy": 0.4091,
+        "balanced_accuracy": 0.4091,
+        "nec": 1.0,
+        "nonzero_connections": 10
+      },
+      {
+        "setting": "gaussian_blur_5",
+        "head": "2",
+        "accuracy": 0.4511,
+        "balanced_accuracy": 0.4511,
+        "nec": 2.0,
+        "nonzero_connections": 20
+      },
+      {
+        "setting": "gaussian_blur_5",
+        "head": "3",
+        "accuracy": 0.448,
+        "balanced_accuracy": 0.44799999999999995,
+        "nec": 3.0,
+        "nonzero_connections": 30
+      },
+      {
+        "setting": "gaussian_blur_5",
+        "head": "5",
+        "accuracy": 0.4724,
+        "balanced_accuracy": 0.47240000000000004,
+        "nec": 5.0,
+        "nonzero_connections": 50
+      },
+      {
+        "setting": "gaussian_blur_5",
+        "head": "8",
+        "accuracy": 0.4857,
+        "balanced_accuracy": 0.4857,
+        "nec": 8.0,
+        "nonzero_connections": 80
+      },
+      {
+        "setting": "gaussian_blur_5",
+        "head": "10",
+        "accuracy": 0.4844,
+        "balanced_accuracy": 0.48439999999999994,
+        "nec": 10.0,
+        "nonzero_connections": 100
+      },
+      {
+        "setting": "gaussian_blur_5",
+        "head": "15",
+        "accuracy": 0.4926,
+        "balanced_accuracy": 0.49260000000000004,
+        "nec": 15.0,
+        "nonzero_connections": 150
+      },
+      {
+        "setting": "gaussian_blur_5",
+        "head": "20",
+        "accuracy": 0.496,
+        "balanced_accuracy": 0.496,
+        "nec": 20.0,
+        "nonzero_connections": 200
+      },
+      {
+        "setting": "gaussian_blur_5",
+        "head": "30",
+        "accuracy": 0.5086,
+        "balanced_accuracy": 0.5086,
+        "nec": 30.0,
+        "nonzero_connections": 300
+      },
+      {
+        "setting": "gaussian_blur_5",
+        "head": "50",
+        "accuracy": 0.517,
+        "balanced_accuracy": 0.5170000000000001,
+        "nec": 50.0,
+        "nonzero_connections": 500
+      },
+      {
+        "setting": "gaussian_blur_5",
+        "head": "80",
+        "accuracy": 0.5208,
+        "balanced_accuracy": 0.5208,
+        "nec": 80.0,
+        "nonzero_connections": 800
+      },
+      {
+        "setting": "gaussian_blur_5",
+        "head": "103",
+        "accuracy": 0.5202,
+        "balanced_accuracy": 0.5202,
+        "nec": 90.6,
+        "nonzero_connections": 906
+      },
+      {
+        "setting": "gaussian_blur_5",
+        "head": "dense",
+        "accuracy": 0.5191,
+        "balanced_accuracy": 0.5190999999999999,
+        "nec": 103.0,
+        "nonzero_connections": 1030
+      },
+      {
+        "setting": "gaussian_noise_1",
+        "head": "best_val",
+        "accuracy": 0.4577,
+        "balanced_accuracy": 0.4577,
+        "nec": 48.8,
+        "nonzero_connections": 488
+      },
+      {
+        "setting": "gaussian_noise_1",
+        "head": "1",
+        "accuracy": 0.4015,
+        "balanced_accuracy": 0.40149999999999997,
+        "nec": 1.0,
+        "nonzero_connections": 10
+      },
+      {
+        "setting": "gaussian_noise_1",
+        "head": "2",
+        "accuracy": 0.4614,
+        "balanced_accuracy": 0.4614000000000001,
+        "nec": 2.0,
+        "nonzero_connections": 20
+      },
+      {
+        "setting": "gaussian_noise_1",
+        "head": "3",
+        "accuracy": 0.4662,
+        "balanced_accuracy": 0.46620000000000006,
+        "nec": 3.0,
+        "nonzero_connections": 30
+      },
+      {
+        "setting": "gaussian_noise_1",
+        "head": "5",
+        "accuracy": 0.4372,
+        "balanced_accuracy": 0.4372,
+        "nec": 5.0,
+        "nonzero_connections": 50
+      },
+      {
+        "setting": "gaussian_noise_1",
+        "head": "8",
+        "accuracy": 0.4384,
+        "balanced_accuracy": 0.43839999999999996,
+        "nec": 8.0,
+        "nonzero_connections": 80
+      },
+      {
+        "setting": "gaussian_noise_1",
+        "head": "10",
+        "accuracy": 0.4372,
+        "balanced_accuracy": 0.4372000000000001,
+        "nec": 10.0,
+        "nonzero_connections": 100
+      },
+      {
+        "setting": "gaussian_noise_1",
+        "head": "15",
+        "accuracy": 0.441,
+        "balanced_accuracy": 0.441,
+        "nec": 15.0,
+        "nonzero_connections": 150
+      },
+      {
+        "setting": "gaussian_noise_1",
+        "head": "20",
+        "accuracy": 0.4445,
+        "balanced_accuracy": 0.44449999999999995,
+        "nec": 20.0,
+        "nonzero_connections": 200
+      },
+      {
+        "setting": "gaussian_noise_1",
+        "head": "30",
+        "accuracy": 0.4532,
+        "balanced_accuracy": 0.4532,
+        "nec": 30.0,
+        "nonzero_connections": 300
+      },
+      {
+        "setting": "gaussian_noise_1",
+        "head": "50",
+        "accuracy": 0.4583,
+        "balanced_accuracy": 0.45830000000000004,
+        "nec": 50.0,
+        "nonzero_connections": 500
+      },
+      {
+        "setting": "gaussian_noise_1",
+        "head": "80",
+        "accuracy": 0.4614,
+        "balanced_accuracy": 0.4614,
+        "nec": 80.0,
+        "nonzero_connections": 800
+      },
+      {
+        "setting": "gaussian_noise_1",
+        "head": "103",
+        "accuracy": 0.4617,
+        "balanced_accuracy": 0.4617,
+        "nec": 90.6,
+        "nonzero_connections": 906
+      },
+      {
+        "setting": "gaussian_noise_1",
+        "head": "dense",
+        "accuracy": 0.456,
+        "balanced_accuracy": 0.45600000000000007,
+        "nec": 103.0,
+        "nonzero_connections": 1030
+      },
+      {
+        "setting": "gaussian_noise_3",
+        "head": "best_val",
+        "accuracy": 0.2213,
+        "balanced_accuracy": 0.2213,
+        "nec": 48.8,
+        "nonzero_connections": 488
+      },
+      {
+        "setting": "gaussian_noise_3",
+        "head": "1",
+        "accuracy": 0.2255,
+        "balanced_accuracy": 0.22550000000000003,
+        "nec": 1.0,
+        "nonzero_connections": 10
+      },
+      {
+        "setting": "gaussian_noise_3",
+        "head": "2",
+        "accuracy": 0.2527,
+        "balanced_accuracy": 0.2527,
+        "nec": 2.0,
+        "nonzero_connections": 20
+      },
+      {
+        "setting": "gaussian_noise_3",
+        "head": "3",
+        "accuracy": 0.251,
+        "balanced_accuracy": 0.251,
+        "nec": 3.0,
+        "nonzero_connections": 30
+      },
+      {
+        "setting": "gaussian_noise_3",
+        "head": "5",
+        "accuracy": 0.2248,
+        "balanced_accuracy": 0.22479999999999997,
+        "nec": 5.0,
+        "nonzero_connections": 50
+      },
+      {
+        "setting": "gaussian_noise_3",
+        "head": "8",
+        "accuracy": 0.226,
+        "balanced_accuracy": 0.22599999999999998,
+        "nec": 8.0,
+        "nonzero_connections": 80
+      },
+      {
+        "setting": "gaussian_noise_3",
+        "head": "10",
+        "accuracy": 0.2294,
+        "balanced_accuracy": 0.2294,
+        "nec": 10.0,
+        "nonzero_connections": 100
+      },
+      {
+        "setting": "gaussian_noise_3",
+        "head": "15",
+        "accuracy": 0.2259,
+        "balanced_accuracy": 0.2259,
+        "nec": 15.0,
+        "nonzero_connections": 150
+      },
+      {
+        "setting": "gaussian_noise_3",
+        "head": "20",
+        "accuracy": 0.2245,
+        "balanced_accuracy": 0.22449999999999998,
+        "nec": 20.0,
+        "nonzero_connections": 200
+      },
+      {
+        "setting": "gaussian_noise_3",
+        "head": "30",
+        "accuracy": 0.2237,
+        "balanced_accuracy": 0.2237,
+        "nec": 30.0,
+        "nonzero_connections": 300
+      },
+      {
+        "setting": "gaussian_noise_3",
+        "head": "50",
+        "accuracy": 0.2208,
+        "balanced_accuracy": 0.22079999999999997,
+        "nec": 50.0,
+        "nonzero_connections": 500
+      },
+      {
+        "setting": "gaussian_noise_3",
+        "head": "80",
+        "accuracy": 0.22,
+        "balanced_accuracy": 0.21999999999999997,
+        "nec": 80.0,
+        "nonzero_connections": 800
+      },
+      {
+        "setting": "gaussian_noise_3",
+        "head": "103",
+        "accuracy": 0.2199,
+        "balanced_accuracy": 0.21989999999999998,
+        "nec": 90.6,
+        "nonzero_connections": 906
+      },
+      {
+        "setting": "gaussian_noise_3",
+        "head": "dense",
+        "accuracy": 0.2213,
+        "balanced_accuracy": 0.2213,
+        "nec": 103.0,
+        "nonzero_connections": 1030
+      },
+      {
+        "setting": "gaussian_noise_5",
+        "head": "best_val",
+        "accuracy": 0.1688,
+        "balanced_accuracy": 0.1688,
+        "nec": 48.8,
+        "nonzero_connections": 488
+      },
+      {
+        "setting": "gaussian_noise_5",
+        "head": "1",
+        "accuracy": 0.2053,
+        "balanced_accuracy": 0.20529999999999998,
+        "nec": 1.0,
+        "nonzero_connections": 10
+      },
+      {
+        "setting": "gaussian_noise_5",
+        "head": "2",
+        "accuracy": 0.2146,
+        "balanced_accuracy": 0.21459999999999999,
+        "nec": 2.0,
+        "nonzero_connections": 20
+      },
+      {
+        "setting": "gaussian_noise_5",
+        "head": "3",
+        "accuracy": 0.2102,
+        "balanced_accuracy": 0.2102,
+        "nec": 3.0,
+        "nonzero_connections": 30
+      },
+      {
+        "setting": "gaussian_noise_5",
+        "head": "5",
+        "accuracy": 0.1939,
+        "balanced_accuracy": 0.19390000000000002,
+        "nec": 5.0,
+        "nonzero_connections": 50
+      },
+      {
+        "setting": "gaussian_noise_5",
+        "head": "8",
+        "accuracy": 0.1972,
+        "balanced_accuracy": 0.19720000000000001,
+        "nec": 8.0,
+        "nonzero_connections": 80
+      },
+      {
+        "setting": "gaussian_noise_5",
+        "head": "10",
+        "accuracy": 0.1955,
+        "balanced_accuracy": 0.1955,
+        "nec": 10.0,
+        "nonzero_connections": 100
+      },
+      {
+        "setting": "gaussian_noise_5",
+        "head": "15",
+        "accuracy": 0.1875,
+        "balanced_accuracy": 0.18749999999999994,
+        "nec": 15.0,
+        "nonzero_connections": 150
+      },
+      {
+        "setting": "gaussian_noise_5",
+        "head": "20",
+        "accuracy": 0.1835,
+        "balanced_accuracy": 0.18349999999999997,
+        "nec": 20.0,
+        "nonzero_connections": 200
+      },
+      {
+        "setting": "gaussian_noise_5",
+        "head": "30",
+        "accuracy": 0.1758,
+        "balanced_accuracy": 0.1758,
+        "nec": 30.0,
+        "nonzero_connections": 300
+      },
+      {
+        "setting": "gaussian_noise_5",
+        "head": "50",
+        "accuracy": 0.1686,
+        "balanced_accuracy": 0.16860000000000003,
+        "nec": 50.0,
+        "nonzero_connections": 500
+      },
+      {
+        "setting": "gaussian_noise_5",
+        "head": "80",
+        "accuracy": 0.1638,
+        "balanced_accuracy": 0.16379999999999997,
+        "nec": 80.0,
+        "nonzero_connections": 800
+      },
+      {
+        "setting": "gaussian_noise_5",
+        "head": "103",
+        "accuracy": 0.1628,
+        "balanced_accuracy": 0.1628,
+        "nec": 90.6,
+        "nonzero_connections": 906
+      },
+      {
+        "setting": "gaussian_noise_5",
+        "head": "dense",
+        "accuracy": 0.1682,
+        "balanced_accuracy": 0.1682,
+        "nec": 103.0,
+        "nonzero_connections": 1030
+      },
+      {
+        "setting": "jpeg_compression_1",
+        "head": "best_val",
+        "accuracy": 0.7512,
+        "balanced_accuracy": 0.7512,
+        "nec": 48.8,
+        "nonzero_connections": 488
+      },
+      {
+        "setting": "jpeg_compression_1",
+        "head": "1",
+        "accuracy": 0.5949,
+        "balanced_accuracy": 0.5949,
+        "nec": 1.0,
+        "nonzero_connections": 10
+      },
+      {
+        "setting": "jpeg_compression_1",
+        "head": "2",
+        "accuracy": 0.6772,
+        "balanced_accuracy": 0.6772,
+        "nec": 2.0,
+        "nonzero_connections": 20
+      },
+      {
+        "setting": "jpeg_compression_1",
+        "head": "3",
+        "accuracy": 0.6955,
+        "balanced_accuracy": 0.6955,
+        "nec": 3.0,
+        "nonzero_connections": 30
+      },
+      {
+        "setting": "jpeg_compression_1",
+        "head": "5",
+        "accuracy": 0.7233,
+        "balanced_accuracy": 0.7233,
+        "nec": 5.0,
+        "nonzero_connections": 50
+      },
+      {
+        "setting": "jpeg_compression_1",
+        "head": "8",
+        "accuracy": 0.7364,
+        "balanced_accuracy": 0.7363999999999999,
+        "nec": 8.0,
+        "nonzero_connections": 80
+      },
+      {
+        "setting": "jpeg_compression_1",
+        "head": "10",
+        "accuracy": 0.7423,
+        "balanced_accuracy": 0.7423,
+        "nec": 10.0,
+        "nonzero_connections": 100
+      },
+      {
+        "setting": "jpeg_compression_1",
+        "head": "15",
+        "accuracy": 0.749,
+        "balanced_accuracy": 0.749,
+        "nec": 15.0,
+        "nonzero_connections": 150
+      },
+      {
+        "setting": "jpeg_compression_1",
+        "head": "20",
+        "accuracy": 0.7506,
+        "balanced_accuracy": 0.7506,
+        "nec": 20.0,
+        "nonzero_connections": 200
+      },
+      {
+        "setting": "jpeg_compression_1",
+        "head": "30",
+        "accuracy": 0.7528,
+        "balanced_accuracy": 0.7527999999999999,
+        "nec": 30.0,
+        "nonzero_connections": 300
+      },
+      {
+        "setting": "jpeg_compression_1",
+        "head": "50",
+        "accuracy": 0.7521,
+        "balanced_accuracy": 0.7521000000000001,
+        "nec": 50.0,
+        "nonzero_connections": 500
+      },
+      {
+        "setting": "jpeg_compression_1",
+        "head": "80",
+        "accuracy": 0.7524,
+        "balanced_accuracy": 0.7524,
+        "nec": 80.0,
+        "nonzero_connections": 800
+      },
+      {
+        "setting": "jpeg_compression_1",
+        "head": "103",
+        "accuracy": 0.7519,
+        "balanced_accuracy": 0.7518999999999999,
+        "nec": 90.6,
+        "nonzero_connections": 906
+      },
+      {
+        "setting": "jpeg_compression_1",
+        "head": "dense",
+        "accuracy": 0.7505,
+        "balanced_accuracy": 0.7505,
+        "nec": 103.0,
+        "nonzero_connections": 1030
+      },
+      {
+        "setting": "jpeg_compression_3",
+        "head": "best_val",
+        "accuracy": 0.6627,
+        "balanced_accuracy": 0.6627,
+        "nec": 48.8,
+        "nonzero_connections": 488
+      },
+      {
+        "setting": "jpeg_compression_3",
+        "head": "1",
+        "accuracy": 0.5276,
+        "balanced_accuracy": 0.5276,
+        "nec": 1.0,
+        "nonzero_connections": 10
+      },
+      {
+        "setting": "jpeg_compression_3",
+        "head": "2",
+        "accuracy": 0.5884,
+        "balanced_accuracy": 0.5884,
+        "nec": 2.0,
+        "nonzero_connections": 20
+      },
+      {
+        "setting": "jpeg_compression_3",
+        "head": "3",
+        "accuracy": 0.6077,
+        "balanced_accuracy": 0.6077,
+        "nec": 3.0,
+        "nonzero_connections": 30
+      },
+      {
+        "setting": "jpeg_compression_3",
+        "head": "5",
+        "accuracy": 0.6377,
+        "balanced_accuracy": 0.6377,
+        "nec": 5.0,
+        "nonzero_connections": 50
+      },
+      {
+        "setting": "jpeg_compression_3",
+        "head": "8",
+        "accuracy": 0.6493,
+        "balanced_accuracy": 0.6493,
+        "nec": 8.0,
+        "nonzero_connections": 80
+      },
+      {
+        "setting": "jpeg_compression_3",
+        "head": "10",
+        "accuracy": 0.653,
+        "balanced_accuracy": 0.6530000000000001,
+        "nec": 10.0,
+        "nonzero_connections": 100
+      },
+      {
+        "setting": "jpeg_compression_3",
+        "head": "15",
+        "accuracy": 0.6568,
+        "balanced_accuracy": 0.6568,
+        "nec": 15.0,
+        "nonzero_connections": 150
+      },
+      {
+        "setting": "jpeg_compression_3",
+        "head": "20",
+        "accuracy": 0.6597,
+        "balanced_accuracy": 0.6597000000000001,
+        "nec": 20.0,
+        "nonzero_connections": 200
+      },
+      {
+        "setting": "jpeg_compression_3",
+        "head": "30",
+        "accuracy": 0.662,
+        "balanced_accuracy": 0.662,
+        "nec": 30.0,
+        "nonzero_connections": 300
+      },
+      {
+        "setting": "jpeg_compression_3",
+        "head": "50",
+        "accuracy": 0.6619,
+        "balanced_accuracy": 0.6619,
+        "nec": 50.0,
+        "nonzero_connections": 500
+      },
+      {
+        "setting": "jpeg_compression_3",
+        "head": "80",
+        "accuracy": 0.6611,
+        "balanced_accuracy": 0.6611,
+        "nec": 80.0,
+        "nonzero_connections": 800
+      },
+      {
+        "setting": "jpeg_compression_3",
+        "head": "103",
+        "accuracy": 0.6601,
+        "balanced_accuracy": 0.6601,
+        "nec": 90.6,
+        "nonzero_connections": 906
+      },
+      {
+        "setting": "jpeg_compression_3",
+        "head": "dense",
+        "accuracy": 0.6565,
+        "balanced_accuracy": 0.6565000000000001,
+        "nec": 103.0,
+        "nonzero_connections": 1030
+      },
+      {
+        "setting": "jpeg_compression_5",
+        "head": "best_val",
+        "accuracy": 0.602,
+        "balanced_accuracy": 0.6020000000000001,
+        "nec": 48.8,
+        "nonzero_connections": 488
+      },
+      {
+        "setting": "jpeg_compression_5",
+        "head": "1",
+        "accuracy": 0.4924,
+        "balanced_accuracy": 0.49240000000000006,
+        "nec": 1.0,
+        "nonzero_connections": 10
+      },
+      {
+        "setting": "jpeg_compression_5",
+        "head": "2",
+        "accuracy": 0.5398,
+        "balanced_accuracy": 0.5398000000000001,
+        "nec": 2.0,
+        "nonzero_connections": 20
+      },
+      {
+        "setting": "jpeg_compression_5",
+        "head": "3",
+        "accuracy": 0.5551,
+        "balanced_accuracy": 0.5551,
+        "nec": 3.0,
+        "nonzero_connections": 30
+      },
+      {
+        "setting": "jpeg_compression_5",
+        "head": "5",
+        "accuracy": 0.5787,
+        "balanced_accuracy": 0.5787,
+        "nec": 5.0,
+        "nonzero_connections": 50
+      },
+      {
+        "setting": "jpeg_compression_5",
+        "head": "8",
+        "accuracy": 0.5866,
+        "balanced_accuracy": 0.5866,
+        "nec": 8.0,
+        "nonzero_connections": 80
+      },
+      {
+        "setting": "jpeg_compression_5",
+        "head": "10",
+        "accuracy": 0.592,
+        "balanced_accuracy": 0.592,
+        "nec": 10.0,
+        "nonzero_connections": 100
+      },
+      {
+        "setting": "jpeg_compression_5",
+        "head": "15",
+        "accuracy": 0.5989,
+        "balanced_accuracy": 0.5989,
+        "nec": 15.0,
+        "nonzero_connections": 150
+      },
+      {
+        "setting": "jpeg_compression_5",
+        "head": "20",
+        "accuracy": 0.5993,
+        "balanced_accuracy": 0.5993000000000002,
+        "nec": 20.0,
+        "nonzero_connections": 200
+      },
+      {
+        "setting": "jpeg_compression_5",
+        "head": "30",
+        "accuracy": 0.6006,
+        "balanced_accuracy": 0.6006,
+        "nec": 30.0,
+        "nonzero_connections": 300
+      },
+      {
+        "setting": "jpeg_compression_5",
+        "head": "50",
+        "accuracy": 0.6017,
+        "balanced_accuracy": 0.6016999999999999,
+        "nec": 50.0,
+        "nonzero_connections": 500
+      },
+      {
+        "setting": "jpeg_compression_5",
+        "head": "80",
+        "accuracy": 0.5998,
+        "balanced_accuracy": 0.5998000000000001,
+        "nec": 80.0,
+        "nonzero_connections": 800
+      },
+      {
+        "setting": "jpeg_compression_5",
+        "head": "103",
+        "accuracy": 0.5986,
+        "balanced_accuracy": 0.5986,
+        "nec": 90.6,
+        "nonzero_connections": 906
+      },
+      {
+        "setting": "jpeg_compression_5",
+        "head": "dense",
+        "accuracy": 0.5961,
+        "balanced_accuracy": 0.5961000000000001,
+        "nec": 103.0,
+        "nonzero_connections": 1030
+      }
+    ]
+  }
+]

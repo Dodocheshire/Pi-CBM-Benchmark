@@ -16,8 +16,11 @@ def main():
     p.add_argument('--inference-draws',type=int,choices=[1,8],default=1)
     args=p.parse_args();jobs=[]
     for file in sorted(Path('artifacts/matched/lf').rglob('report.json')):
-        r=json.loads(file.read_text());bone=r['feature_provenance'].get('backbone_name','resnet18')
-        proto='paired' if r['train_views']==['original','changed'] else 'original'
+        r=json.loads(file.read_text())
+        if 'feature_provenance' not in r:continue
+        bone=r['feature_provenance'].get('backbone_name','resnet18')
+        proto=('paired' if r['train_views']==['original','changed'] else
+               'corruption_augmented' if len(r['train_views'])>1 else 'original')
         test_views=['original'] if r['dataset'] in ['cifar10','cifar100','imagenet_200_per_class','places365'] else ['original','changed']
         for arm in ['lfcbm','lfpi_global']:
             source=file.parent;head_arm=arm
@@ -33,9 +36,20 @@ def main():
         dataset=file.parents[2].name;arm=file.parent.name
         bone='resnet18' if file.parents[3].name=='pini_matched' else file.parents[3].name
         if bone=='clip_rn50':bone='clip_RN50'
-        out=Path('artifacts/heads')/dataset/bone/'paired'/'seed42'/('pini_'+arm)
+        r=json.loads(file.read_text())
+        if dataset in ['cifar10','cifar100']:
+            train_views='original,gaussian_noise_s1'
+            test_views='original,gaussian_noise_s1'
+            proto='corruption_augmented'
+        else:
+            train_views='original,changed';test_views='original,changed';proto='paired'
+        required=[file.parent/f'{split}_{view}.npz' for split in ['train','val','test']
+                  for view in train_views.split(',')]
+        if not all(path.exists() for path in required):continue
+        seed=r.get('training_seed',42)
+        out=Path('artifacts/heads')/dataset/bone/proto/f'seed{seed}'/('pini_'+arm)
         jobs.append({'source':str(file.parent),'prefix':'','field':'concept_logits',
-                     'dataset':dataset,'out':str(out),'train_views':'original,changed','seed':42})
+                     'dataset':dataset,'out':str(out),'train_views':train_views,'test_views':test_views,'seed':seed})
     jobs=[j for j in jobs if not (Path(j['out'])/'report.json').exists() and j['out'] not in args.exclude]
     if args.include is not None:
         jobs=[j for j in jobs if j['out'] in args.include]

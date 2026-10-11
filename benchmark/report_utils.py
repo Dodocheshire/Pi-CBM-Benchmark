@@ -8,7 +8,8 @@ import tempfile
 def compact(value):
     if isinstance(value,dict):
         return {k:compact(v) for k,v in value.items() if k not in
-                {'average_precision_per_concept','pearson_per_concept'}}
+                {'average_precision_per_concept','pearson_per_concept',
+                 'teacher_pearson_per_concept','teacher_cos_cubed_per_concept'}}
     if isinstance(value,list):return [compact(v) for v in value]
     return value
 

@@ -48,6 +48,8 @@ def main():
     conditions = []
     for report_path in sorted((ROOT/'artifacts/matched/lf').rglob('report.json')):
         report = json.loads(report_path.read_text())
+        if 'feature_provenance' not in report:
+            continue
         if report.get('human_concept_annotations') is False:
             continue  # Continuous-teacher experiments have a separate report.
         dataset = report['dataset']; source = report_path.parent

@@ -21,7 +21,7 @@ git clone --recurse-submodules https://github.com/Dodocheshire/Pi-CBM-Benchmark.
 
 NEC 网格根据数据集与概念库规模设置，同时保留 NEC=5 和 5–30 的参考区间。参考 [VLG-CBM §5.1 与附录 F](https://arxiv.org/html/2408.01432v3)：使用 GLM-SAGA 正则化路径，选取 NEC 接近目标的权重，再剪除最小连接达到规定平均 NEC。每个点保存实际 NEC、每类连接数与原始路径位置。充分 NEC 对照使用验证集选择的全路径模型和稠密分类头。
 
-结果位于 [同条件评测](reports/EXPERIMENT_REPORT.md)、[非 CBM 对照](reports/NONCBM_RESULT.md) 和 [泛化／NEC 曲线](reports/GENERALIZATION_RESULT.md)。数据、模型和逐图预测写入忽略的 `artifacts/`。
+结果位于 [同条件评测](reports/EXPERIMENT_REPORT.md)、[非 CBM 对照](reports/NONCBM_RESULT.md)、[泛化／NEC 曲线](reports/GENERALIZATION_RESULT.md)、[CIFAR 与官方 CIFAR-C](reports/CIFAR_RESULT.md) 和 [大规模数据集](reports/SCALE_RESULT.md)。数据、模型和逐图预测写入忽略的 `artifacts/`。
 
 ## 已执行与继续运行
 
@@ -31,9 +31,13 @@ ResNet18 的三个数据集已完成前景／背景分离与四类图像腐蚀�
 
 本机使用环境 `/home/pengcheng/miniconda3/envs/pi-cbm/bin/python`，已有数据与区域缓存来自 `/home/pengcheng/Pi-CBM/PiNI/artifacts/`。
 
+CIFAR10／100 的 ResNet18 原图训练和高斯噪声增强训练，以及四类官方 CIFAR-C、各三个严重度的测试已完成；ResNet50 和 CLIP RN50 继续扩展。Places365 已完成 ResNet18 的 LF-CBM／LF-Pi 与三个种子的非 CBM 对照，使用 73000／7300／36500 张训练／验证／测试图像。ImageNet 1000 类训练和 PiNI 的 CIFAR 区域标注与训练继续运行。
+
 ```bash
 python -m benchmark.report_matched
 python -m benchmark.report_noncbm
 python -m benchmark.report_generalization
+python -m benchmark.report_cifar
+python -m benchmark.report_scale
 python -m benchmark.head_queue --workers 2
 ```

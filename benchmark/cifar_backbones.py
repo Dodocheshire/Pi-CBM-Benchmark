@@ -46,8 +46,12 @@ def cache(dataset, backbone, batch, device):
     features = np.load(output / 'original_features.npy', mmap_mode='r')
     for split in ['train', 'val', 'test']:
         with np.load(original / f'{split}_original.npz') as common:
-            np.savez_compressed(output / f'{split}_original.npz',
-                                features=features[common['ids']], labels=common['labels'], ids=common['ids'])
+            temporary=output / f'{split}_original.pending.npz'
+            np.savez_compressed(temporary, features=features[common['ids']],
+                                labels=common['labels'], ids=common['ids'],
+                                targets=common['targets'],known=common['known'],
+                                concept_names=common['concept_names'])
+            temporary.replace(output / f'{split}_original.npz')
     manifest = json.loads((original / 'manifest.json').read_text())
     metadata = json.loads(marker.read_text())
     manifest.update(backbone_name=backbone, backbone=backbone+' independently frozen; no task fitting',
