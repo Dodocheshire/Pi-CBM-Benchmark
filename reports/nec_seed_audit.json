@@ -1,14 +1,13 @@
 {
   "dataset": "rival10",
-  "backbone": "resnet18",
   "seeds": [
     42,
     43,
     44
   ],
   "test_subjects": 5282,
-  "head_reports": 12,
-  "view_evaluations": 216,
+  "head_reports": 24,
+  "view_evaluations": 420,
   "actual_nec_from_weight_threshold": 1e-05,
   "weight_counts_and_per_class_counts_verified": true,
   "means_and_ddof1_std_verified": true,
@@ -17,5 +16,9 @@
   "protocols": [
     "original",
     "paired"
+  ],
+  "backbones": [
+    "resnet18",
+    "resnet50"
   ]
 }
