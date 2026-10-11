@@ -20,9 +20,19 @@
 | LF-Pi | 88.21% | 0 |
 | 非 CBM | 88.43% | — |
 
-## cub/clip_RN50/original/seed42
+## cifar10/resnet50/original/seed42
 
 ![NEC 曲线](nec_2.png)
+
+| 方法 | 稠密头原图准确率 | SAGA 达到步数上限的路径点 |
+| --- | --- | --- |
+| LF-CBM | 89.60% | 0 |
+| LF-Pi | 91.30% | 0 |
+| 非 CBM | 91.54% | — |
+
+## cub/clip_RN50/original/seed42
+
+![NEC 曲线](nec_3.png)
 
 | 方法 | 稠密头原图准确率 | 稠密头换背景准确率 | SAGA 达到步数上限的路径点 |
 | --- | --- | --- | --- |
@@ -32,7 +42,7 @@
 
 ## cub/resnet18/original/seed42
 
-![NEC 曲线](nec_3.png)
+![NEC 曲线](nec_4.png)
 
 | 方法 | 稠密头原图准确率 | 稠密头换背景准确率 | SAGA 达到步数上限的路径点 |
 | --- | --- | --- | --- |
@@ -42,7 +52,7 @@
 
 ## cub/resnet18/paired/seed42
 
-![NEC 曲线](nec_4.png)
+![NEC 曲线](nec_5.png)
 
 | 方法 | 稠密头原图准确率 | 稠密头换背景准确率 | SAGA 达到步数上限的路径点 |
 | --- | --- | --- | --- |
@@ -50,9 +60,28 @@
 | LF-Pi | 50.66% | 39.25% | 0 |
 | 非 CBM | 63.08% | 50.41% | — |
 
+## cub/resnet50/paired/seed42
+
+![NEC 曲线](nec_6.png)
+
+| 方法 | 稠密头原图准确率 | 稠密头换背景准确率 | SAGA 达到步数上限的路径点 |
+| --- | --- | --- | --- |
+| LF-Pi | 60.36% | 47.98% | 0 |
+| 非 CBM | 66.51% | 53.51% | — |
+
+## rival10/clip_RN50/paired/seed42
+
+![NEC 曲线](nec_7.png)
+
+| 方法 | 稠密头原图准确率 | 稠密头换背景准确率 | SAGA 达到步数上限的路径点 |
+| --- | --- | --- | --- |
+| LF-CBM | 96.65% | 91.10% | 0 |
+| LF-Pi | 98.88% | 95.87% | 0 |
+| 非 CBM | 99.18% | 97.10% | — |
+
 ## rival10/resnet18/paired/seed42
 
-![NEC 曲线](nec_5.png)
+![NEC 曲线](nec_8.png)
 
 | 方法 | 稠密头原图准确率 | 稠密头换背景准确率 | SAGA 达到步数上限的路径点 |
 | --- | --- | --- | --- |
@@ -62,7 +91,7 @@
 
 ## waterbirds/clip_RN50/paired/seed42
 
-![NEC 曲线](nec_6.png)
+![NEC 曲线](nec_9.png)
 
 | 方法 | 稠密头原图准确率 | 稠密头换背景准确率 | SAGA 达到步数上限的路径点 |
 | --- | --- | --- | --- |
@@ -73,7 +102,7 @@
 
 ## waterbirds/resnet50/paired/seed42
 
-![NEC 曲线](nec_7.png)
+![NEC 曲线](nec_10.png)
 
 | 方法 | 稠密头原图准确率 | 稠密头换背景准确率 | SAGA 达到步数上限的路径点 |
 | --- | --- | --- | --- |
@@ -88,6 +117,10 @@
 ## cifar10/resnet18/original/seed42 · 官方 CIFAR-C · 固定分类头
 
 ![扰动下 NEC 曲线](nec_corruptions_1.png)
+
+## cifar10/resnet50/original/seed42 · 官方 CIFAR-C · 固定分类头
+
+![扰动下 NEC 曲线](nec_corruptions_2.png)
 
 ## CUB 图像扰动
 

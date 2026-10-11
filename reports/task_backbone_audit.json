@@ -1,0 +1,308 @@
+{
+  "audit_type": "read-only task-pretrained backbone provenance; no GPU model training/reencoding; frozen submodules unchanged",
+  "shared_current_splits": {
+    "rival10": {
+      "id_namespace": "historical all-row RGB cache row indices (not dataset-native ID)",
+      "protocol": "/home/pengcheng/Pi-CBM/PiNI/artifacts/rival10_aligned_rn18/cache/protocol.json",
+      "protocol_sha256": "05e2e23cb42f12299f472db4a8d0af7663309898afca45b8e7b57006634db5cf",
+      "counts": {
+        "train": 18987,
+        "val": 2111,
+        "test": 5286
+      },
+      "folds": {
+        "train": {
+          "ids": {
+            "count": 18987,
+            "ordered_json_sha256": "68ec97c25fe6dad244edbbff971fcbd36ee75cc91e1e1b9cb9a15c1fbf757358"
+          },
+          "ids_int64_bytes_sha256": "401e80c1bd951005c7f5921166312dd9484b4575b0930c90512a94c6206ac40b",
+          "common_npz": "/home/pengcheng/Pi-CBM-Benchmark/artifacts/common/rival10/rn18_imagenet/train_original.npz"
+        },
+        "val": {
+          "ids": {
+            "count": 2111,
+            "ordered_json_sha256": "a3e64375b689c618ea8aec2241fa29347c5952e4e66f4126d6fabe5a00ecb033"
+          },
+          "ids_int64_bytes_sha256": "b7dc9387fd093784db8ee31914cb9f8430774a8291a509e9c2bcf38681f08ccb",
+          "common_npz": "/home/pengcheng/Pi-CBM-Benchmark/artifacts/common/rival10/rn18_imagenet/val_original.npz"
+        },
+        "test": {
+          "ids": {
+            "count": 5286,
+            "ordered_json_sha256": "a74c5b4a1d3f7145958572b8990729409d5b81e77daebfe5bbf38d78bd351bc9"
+          },
+          "ids_int64_bytes_sha256": "328250517e25a50ce130d65212fd80221b678785e3ddda794c167cd222aaa86d",
+          "common_npz": "/home/pengcheng/Pi-CBM-Benchmark/artifacts/common/rival10/rn18_imagenet/test_original.npz"
+        }
+      },
+      "exact_common_vs_historical_fold_parity": true
+    },
+    "cub": {
+      "id_namespace": "historical all-row RGB cache row indices (not dataset-native ID)",
+      "protocol": "/home/pengcheng/Pi-CBM/PiNI/artifacts/cub_aligned_rn18/cache/protocol.json",
+      "protocol_sha256": "199cc1b320e96d1d754598a785f36ea44dda3920961373a7b27c39079d5991eb",
+      "counts": {
+        "train": 4796,
+        "val": 1198,
+        "test": 5794
+      },
+      "folds": {
+        "train": {
+          "ids": {
+            "count": 4796,
+            "ordered_json_sha256": "dd77572f2a5f413ae6c3c941cf1275ee8dbb8e58c5ed02cc902e8dc822ef2420"
+          },
+          "ids_int64_bytes_sha256": "a25f5723d11454edaf8f305569796d4773da9fb404da479f740b81f8fa6859e2",
+          "common_npz": "/home/pengcheng/Pi-CBM-Benchmark/artifacts/common/cub/rn18_imagenet/train_original.npz"
+        },
+        "val": {
+          "ids": {
+            "count": 1198,
+            "ordered_json_sha256": "f60a2e417d519fe76233de85980125b85f72461bb022633b5b15b959bfaa8f7e"
+          },
+          "ids_int64_bytes_sha256": "316dd3d4e1415c6cf418a4789c127ccc92ddf76b09ff270b9f0514f7daaf8ab9",
+          "common_npz": "/home/pengcheng/Pi-CBM-Benchmark/artifacts/common/cub/rn18_imagenet/val_original.npz"
+        },
+        "test": {
+          "ids": {
+            "count": 5794,
+            "ordered_json_sha256": "7c1379172349a953d3a1d8c539e38fecdc453b3eaf65d75550e76b0c085a0fac"
+          },
+          "ids_int64_bytes_sha256": "9e279849784941eb5b28d1c28800ce63b4730e92c549d75e2c21cf76aace4c5d",
+          "common_npz": "/home/pengcheng/Pi-CBM-Benchmark/artifacts/common/cub/rn18_imagenet/test_original.npz"
+        }
+      },
+      "exact_common_vs_historical_fold_parity": true
+    }
+  },
+  "rival_source_manifest": {
+    "path": "/home/pengcheng/Pi-CBM/PiNI/artifacts/rival_vitl14/manifest.json",
+    "sha256": "cb96dd054693b9911cf76fa4924f56ef6f69d258341e438275cb178c482c85ee",
+    "matches_historical_protocol": true
+  },
+  "candidates": [
+    {
+      "dataset": "rival10",
+      "path": "/home/pengcheng/Pi-CBM/PiNI/artifacts/rival10_aligned_rn18/backbone/selection/best.pt",
+      "checkpoint_sha256": "ac58a248f6cbbe09cf48c49c0662181037110738bbd6d87e3241a580cec6b8fc",
+      "state_dict_sha256": "f9f8635557a0078bf229426e1aa2162f3b07e63ac0cf0dec2a51b63e521fd775",
+      "architecture": "torchvision ResNet18, fc Linear(512,10); spatial children[:-2] = N512x7x7; global spatial mean = N512",
+      "feature_dim": 512,
+      "classifier_classes": 10,
+      "label_supervision": "Cross entropy on RIVAL10 image class labels; no concept supervision during backbone fitting",
+      "initialization": "ImageNet resnet18-f37072fd",
+      "training_seed": 42,
+      "selected_epoch": 14,
+      "checkpoint_metadata": {
+        "seed": 42,
+        "stage": "selection",
+        "epoch": 14,
+        "fit_images": 18987,
+        "initialization": "ImageNet resnet18-f37072fd"
+      },
+      "training_ids": {
+        "count": 18987,
+        "ordered_json_sha256": "68ec97c25fe6dad244edbbff971fcbd36ee75cc91e1e1b9cb9a15c1fbf757358"
+      },
+      "evidence_strength": "Source-defined IDs reconstructed from same immutable historical protocol and verified common-fold parity; checkpoint stores fit_images/stage, not explicit IDs",
+      "source": "/home/pengcheng/Pi-CBM/PiNI/spatial_noise/rn18_datasets.py",
+      "source_sha256": "949d6cbff2ba7c8efbe57bf0d6ab65a4d76c34dc7b7d999b80136f7dba80cad9",
+      "source_function": "pretrain_rival; ids=train for selection, train+val for refit; F.cross_entropy; selection val accuracy vs refit training loss",
+      "completion_receipt": {
+        "path": "/home/pengcheng/Pi-CBM/PiNI/artifacts/rival10_aligned_rn18/backbone/selection/COMPLETE.json",
+        "sha256": "9ceb1ee4a1135add405fe9961283c4bf639e824ae733a7c57aaca648611c0fd0",
+        "content": {
+          "selected_epoch": 14,
+          "epochs": 15,
+          "fit_images": 18987,
+          "selection": "validation accuracy",
+          "seconds": 55.81260371208191
+        }
+      },
+      "history": {
+        "path": "/home/pengcheng/Pi-CBM/PiNI/artifacts/rival10_aligned_rn18/backbone/selection/history.json",
+        "sha256": "e88a9819d65470fb4d23cabe1c648af0f9d25605a9ff9a7db4809f5d86a84c11"
+      },
+      "training_overlap_current": {
+        "train": 18987,
+        "val": 0,
+        "test": 0
+      },
+      "backbone_selection_exposure_current_val": true,
+      "test_gradient_exposure_from_reconstructed_protocol": 0,
+      "test_model_selection_exposure_from_local_backbone_code": 0,
+      "usable_for_current_folds": true,
+      "decision": "Usable as a separate shared task_pretrained benchmark backbone; current val selected backbone epoch and is not untouched, but no val gradient or test selection in local code.",
+      "class_names": [
+        "truck",
+        "car",
+        "plane",
+        "ship",
+        "cat",
+        "dog",
+        "equine",
+        "deer",
+        "frog",
+        "bird"
+      ],
+      "label_source": {
+        "path": "/home/pengcheng/Pi-CBM/PiNI/artifacts/rival10_aligned_rn18/cache/labels.npy",
+        "sha256": "f7450dd943e999b3c38b54dfbdf20bcf5c0651898147667c76aa2dd4e1f9e24a"
+      },
+      "source_recipe": {
+        "epochs": 15,
+        "batch": 128,
+        "optimizer": "AdamW",
+        "lr": 0.0003,
+        "weight_decay": 0.0001,
+        "scheduler": "CosineAnnealingLR15",
+        "augmentation": "horizontal flip p=.5 on shared224 RGB",
+        "normalization": "ImageNet mean/std",
+        "mixed_precision": "CUDA fp16 GradScaler",
+        "scope": "Defaults in recovered source plus matching COMPLETE receipts; no separate saved CLI arguments"
+      }
+    },
+    {
+      "dataset": "rival10",
+      "path": "/home/pengcheng/Pi-CBM/PiNI/artifacts/rival10_aligned_rn18/backbone/refit/best.pt",
+      "checkpoint_sha256": "503254b37500e4eaba6fc9565de55d9bbbac074484985bae4a42cc555cf80e03",
+      "state_dict_sha256": "053757ed693783641b9345996c66acdc27316eca2ddb30ecafdec6d6b6413010",
+      "architecture": "torchvision ResNet18, fc Linear(512,10); spatial children[:-2] = N512x7x7; global spatial mean = N512",
+      "feature_dim": 512,
+      "classifier_classes": 10,
+      "label_supervision": "Cross entropy on RIVAL10 image class labels; no concept supervision during backbone fitting",
+      "initialization": "ImageNet resnet18-f37072fd",
+      "training_seed": 42,
+      "selected_epoch": 14,
+      "checkpoint_metadata": {
+        "seed": 42,
+        "stage": "refit",
+        "epoch": 14,
+        "fit_images": 21098,
+        "initialization": "ImageNet resnet18-f37072fd"
+      },
+      "training_ids": {
+        "count": 21098,
+        "ordered_json_sha256": "612ebe43f5453d37c20208ec933d343c05e1c369768d0d956abc3c3c315ac943"
+      },
+      "evidence_strength": "Source-defined IDs reconstructed from same immutable historical protocol and verified common-fold parity; checkpoint stores fit_images/stage, not explicit IDs",
+      "source": "/home/pengcheng/Pi-CBM/PiNI/spatial_noise/rn18_datasets.py",
+      "source_sha256": "949d6cbff2ba7c8efbe57bf0d6ab65a4d76c34dc7b7d999b80136f7dba80cad9",
+      "source_function": "pretrain_rival; ids=train for selection, train+val for refit; F.cross_entropy; selection val accuracy vs refit training loss",
+      "completion_receipt": {
+        "path": "/home/pengcheng/Pi-CBM/PiNI/artifacts/rival10_aligned_rn18/backbone/refit/COMPLETE.json",
+        "sha256": "bfe09b946ce7c9c34c5655651f49e96db4db59beeb07705e162dcd4eae7dc818",
+        "content": {
+          "selected_epoch": 14,
+          "epochs": 15,
+          "fit_images": 21098,
+          "selection": "training loss",
+          "seconds": 60.07843589782715
+        }
+      },
+      "history": {
+        "path": "/home/pengcheng/Pi-CBM/PiNI/artifacts/rival10_aligned_rn18/backbone/refit/history.json",
+        "sha256": "9c8bbb3d879e2fc9d69f09124c38f332053a04b0cbe728ecba2a2732d220dbcf"
+      },
+      "training_overlap_current": {
+        "train": 18987,
+        "val": 2111,
+        "test": 0
+      },
+      "backbone_selection_exposure_current_val": false,
+      "test_gradient_exposure_from_reconstructed_protocol": 0,
+      "test_model_selection_exposure_from_local_backbone_code": 0,
+      "usable_for_current_folds": false,
+      "decision": "Reject for current val-only benchmark: all2111 current val images received classification gradient. Optional separate trainval-refit/test-only protocol after all hyperparameters fixed, without calling exposed current val a held-out validation.",
+      "class_names": [
+        "truck",
+        "car",
+        "plane",
+        "ship",
+        "cat",
+        "dog",
+        "equine",
+        "deer",
+        "frog",
+        "bird"
+      ],
+      "label_source": {
+        "path": "/home/pengcheng/Pi-CBM/PiNI/artifacts/rival10_aligned_rn18/cache/labels.npy",
+        "sha256": "f7450dd943e999b3c38b54dfbdf20bcf5c0651898147667c76aa2dd4e1f9e24a"
+      },
+      "source_recipe": {
+        "epochs": 15,
+        "batch": 128,
+        "optimizer": "AdamW",
+        "lr": 0.0003,
+        "weight_decay": 0.0001,
+        "scheduler": "CosineAnnealingLR15",
+        "augmentation": "horizontal flip p=.5 on shared224 RGB",
+        "normalization": "ImageNet mean/std",
+        "mixed_precision": "CUDA fp16 GradScaler",
+        "scope": "Defaults in recovered source plus matching COMPLETE receipts; no separate saved CLI arguments"
+      }
+    },
+    {
+      "dataset": "cub",
+      "path": "/root/.torch/models/resnet18_cub-2333-200d8b9c.pth",
+      "checkpoint_sha256": "3f17083f874124060f882a2d375efc7ebdcb7d9144a56dd2d6a368f2c8b84551",
+      "checkpoint_sha1": "200d8b9c48baf073a4c2ea0cbba4d7f81288e684",
+      "upstream_expected_sha1_verified": true,
+      "architecture": "pytorchcv resnet18_cub, 11,279,112 parameters; output Linear(512,200); features without finalpool = N512x7x7; global N512",
+      "feature_dim": 512,
+      "classifier_classes": 200,
+      "label_supervision": "External CUB-200 image classification weights (200 bird species); exact original optimization logs/IDs not present locally",
+      "checkpoint_payload": "state_dict only; no train IDs/seed/optimizer/best-epoch receipt",
+      "model_registry": {
+        "path": "/home/pengcheng/miniconda3/envs/pi-cbm/lib/python3.11/site-packages/pytorchcv/models/common/model_metainfos.csv",
+        "sha256": "c0fce1a517d4fcedc9928b8f471a911650262086fd225a37ed2a3e2aebafc3e8",
+        "row": "\"resnet18_cub\",11279112,2333,\"200d8b9c48baf073a4c2ea0cbba4d7f81288e684\",\"v0.0.344\",NA,NA,\"cub\",NA,NA,NA,NA",
+        "release_tag": "v0.0.344"
+      },
+      "source_native_ids": {
+        "path": "/home/pengcheng/Pi-CBM/PiNI/artifacts/cub_aligned_rn18/cache/native_ids.npy",
+        "sha256": "1e05a51f1daf63a9ba0c1cadb5a73728bf57b7ba18a4fb35162df6336f5bf6f7"
+      },
+      "source_official_train_test_split": {
+        "path": "/home/pengcheng/Pi-CBM/PiNI/artifacts/datasets/local/CUB_200_2011/train_test_split.txt",
+        "sha256": "8bbbfcc09b4d3c9c6e3e40c9874bd863eb6658f4f456e472df1b33d3403d2600",
+        "train5994": 5994,
+        "test5794": 5794
+      },
+      "inferred_training_protocol": {
+        "confidence": "Inference from official upstream dataset loader, not a recovered checkpoint run log",
+        "source": "https://github.com/osmr/imgclsmob/blob/master/pytorch/datasets/cub200_2011_cls_dataset.py",
+        "train_rule": "split_flag=1 for mode train, else0; no independent val split in this loader",
+        "expected_train_native_ids": {
+          "count": 5994,
+          "ordered_json_sha256": "02174b65d5e2e13862e3756ac75deabdf6eb45bb5f2e622d78e546a61fa878b2"
+        },
+        "expected_training_overlap_current": {
+          "train": 4796,
+          "val": 1198,
+          "test": 0
+        },
+        "potential_checkpoint_selection_exposure_current_test": 5794,
+        "selection_evidence": "Upstream CUB dataset mode val maps to official test, val_metric Top1Error and saver_acc_ind0; actual released checkpoint selection run has not been recovered."
+      },
+      "usable_for_current_folds": false,
+      "decision": "Do not label as fresh fair current-train-only task_pretrained. Expected official-train exposure includes all1198 current val; official test may also have been checkpoint-selection set. Exact historical recipe/IDs remain unverified. Can retain as explicitly external/historical diagnostic, or train a new shared checkpoint using current train only.",
+      "class_label_mapping": {
+        "source": "/home/pengcheng/Pi-CBM/PiNI/artifacts/datasets/local/CUB_200_2011/image_class_labels.txt",
+        "sha256": "e9df8c96d897994a245746fe2c98914b9b31f5342bddc6e8b06bdfbf45e49b02",
+        "mapping": "official CUB class_id minus1; exact all11788 native ID label parity verified",
+        "verified": true
+      }
+    }
+  ],
+  "fair_next_group": {
+    "rival10": "Use existing selection/best.pt for every method as one shared frozen backbone; declare train18987 fitting + val2111 checkpoint selection; test5286 excluded. New namespace rn18_task_train_val_selected, new feature-cache manifest and teacher-sharing protocol; do not reuse refit backbone cache. New caches only after root authorization.",
+    "cub": "Train a new external torchvision RN18 checkpoint from same ImageNet1K_V1 initialization, class CE on current train4796 only, choose epoch on current val1198 (or preset epochs with untouched val). Freeze one chosen checkpoint across LF-CBM/LF-Pi/PiNI/non-CBM; keep test5794 out of backbone fitting/selection. New namespace and backbone SHA/preprocessing provenance, then concept fits/heads using original fixed split. Existing resnet18_cub cannot establish this clean protocol from current evidence.",
+    "all_methods": "Hold dataset, IDs, canonical RGB, frozen backbone weight SHA, raw CLIP teacher/text/candidate bank, training views and inference budget fixed. Fit representation/head only on train; select thresholds/lambda on val; classify/semantic/shift score once on test. Declare any task-label supervision and backbone-selection val use.",
+    "current_trainval_refit_optional": "If using RIVAL refit or externally official-train CUB weights, define separate exposed-development/trainval-refit protocol; do not claim current val held out. Nested group requires a backbone not fit on its new inner validation subjects; re-splitting already gradient-exposed data does not undo exposure."
+  },
+  "source_audit_sha256": "c41bb65e1377d112511c4f453b3b3a9750f63cc03a53a9b8346ddb6edbedfb49",
+  "source_audit_path": "artifacts/audit/task_backbones.json"
+}

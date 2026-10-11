@@ -33,6 +33,8 @@ ResNet18 的三个数据集已完成前景／背景分离与四类图像腐蚀�
 
 CIFAR10／100 的 ResNet18 原图训练和高斯噪声增强训练，以及四类官方 CIFAR-C、各三个严重度的测试已完成；ResNet50 和 CLIP RN50 继续扩展。Places365 已完成 ResNet18 的 LF-CBM／LF-Pi 与三个种子的非 CBM 对照，使用 73000／7300／36500 张训练／验证／测试图像。ImageNet 1000 类训练和 PiNI 的 CIFAR 区域标注与训练继续运行。
 
+PiNI 的 CIFAR 入口为 `python -m benchmark.pini_cifar --datasets cifar10 cifar100 --dino-batch 4`。它复用冻结 ResNet18 和同一图像划分，以训练集 CLIP 相似度生成概念监督，调用子模块原有的均值／加噪训练。区域缓存支持中断续跑；只准备原图区域可使用 `--prepare-only --region-views original`。CIFAR 没有人工概念标注，报告使用 CLIP 教师相关性；区域缓存和初始化完成后，还需完成正式训练及预测导出才计入结果。
+
 ```bash
 python -m benchmark.report_matched
 python -m benchmark.report_noncbm
