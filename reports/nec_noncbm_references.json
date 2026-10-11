@@ -1,0 +1,322 @@
+[
+  {
+    "group": "artifacts/heads/cifar10/resnet18/corruption_augmented/seed42",
+    "references": {
+      "original": [
+        {
+          "seed": 42,
+          "accuracy": 0.8721,
+          "source": "artifacts/noncbm/cifar10_rn18_imagenet_gaussian_noise_augmented/seed42/test_predictions.npz",
+          "nec": null
+        },
+        {
+          "seed": 43,
+          "accuracy": 0.874,
+          "source": "artifacts/noncbm/cifar10_rn18_imagenet_gaussian_noise_augmented/seed43/test_predictions.npz",
+          "nec": null
+        },
+        {
+          "seed": 44,
+          "accuracy": 0.8736,
+          "source": "artifacts/noncbm/cifar10_rn18_imagenet_gaussian_noise_augmented/seed44/test_predictions.npz",
+          "nec": null
+        }
+      ]
+    }
+  },
+  {
+    "group": "artifacts/heads/cifar10/resnet18/original/seed42",
+    "references": {
+      "original": [
+        {
+          "seed": 42,
+          "accuracy": 0.8838,
+          "source": "artifacts/noncbm/cifar10_rn18_imagenet/seed42/test_predictions.npz",
+          "nec": null
+        },
+        {
+          "seed": 43,
+          "accuracy": 0.8839,
+          "source": "artifacts/noncbm/cifar10_rn18_imagenet/seed43/test_predictions.npz",
+          "nec": null
+        },
+        {
+          "seed": 44,
+          "accuracy": 0.8853,
+          "source": "artifacts/noncbm/cifar10_rn18_imagenet/seed44/test_predictions.npz",
+          "nec": null
+        }
+      ]
+    }
+  },
+  {
+    "group": "artifacts/heads/cub/clip_RN50/original/seed42",
+    "references": {
+      "original": [
+        {
+          "seed": 42,
+          "accuracy": 0.7076285812909907,
+          "source": "artifacts/noncbm/cub_clip_RN50/seed42/test_predictions.npz",
+          "nec": null
+        },
+        {
+          "seed": 43,
+          "accuracy": 0.7022782188470832,
+          "source": "artifacts/noncbm/cub_clip_RN50/seed43/test_predictions.npz",
+          "nec": null
+        },
+        {
+          "seed": 44,
+          "accuracy": 0.7096996893337936,
+          "source": "artifacts/noncbm/cub_clip_RN50/seed44/test_predictions.npz",
+          "nec": null
+        }
+      ],
+      "changed": [
+        {
+          "seed": 42,
+          "accuracy": 0.3370728339661719,
+          "source": "artifacts/noncbm/cub_clip_RN50/seed42/changed_predictions.npz",
+          "nec": null
+        },
+        {
+          "seed": 43,
+          "accuracy": 0.3279254401104591,
+          "source": "artifacts/noncbm/cub_clip_RN50/seed43/changed_predictions.npz",
+          "nec": null
+        },
+        {
+          "seed": 44,
+          "accuracy": 0.3301691404901622,
+          "source": "artifacts/noncbm/cub_clip_RN50/seed44/changed_predictions.npz",
+          "nec": null
+        }
+      ]
+    }
+  },
+  {
+    "group": "artifacts/heads/cub/resnet18/original/seed42",
+    "references": {
+      "original": [
+        {
+          "seed": 42,
+          "accuracy": 0.6123576113220573,
+          "source": "artifacts/noncbm/cub_rn18_imagenet/seed42/test_predictions.npz",
+          "nec": null
+        },
+        {
+          "seed": 43,
+          "accuracy": 0.6161546427338627,
+          "source": "artifacts/noncbm/cub_rn18_imagenet/seed43/test_predictions.npz",
+          "nec": null
+        },
+        {
+          "seed": 44,
+          "accuracy": 0.6133931653434588,
+          "source": "artifacts/noncbm/cub_rn18_imagenet/seed44/test_predictions.npz",
+          "nec": null
+        }
+      ],
+      "changed": [
+        {
+          "seed": 42,
+          "accuracy": 0.3850535036244391,
+          "source": "artifacts/noncbm/cub_rn18_imagenet/seed42/changed_predictions.npz",
+          "nec": null
+        },
+        {
+          "seed": 43,
+          "accuracy": 0.38695201933034173,
+          "source": "artifacts/noncbm/cub_rn18_imagenet/seed43/changed_predictions.npz",
+          "nec": null
+        },
+        {
+          "seed": 44,
+          "accuracy": 0.3881601656886434,
+          "source": "artifacts/noncbm/cub_rn18_imagenet/seed44/changed_predictions.npz",
+          "nec": null
+        }
+      ]
+    }
+  },
+  {
+    "group": "artifacts/heads/cub/resnet18/paired/seed42",
+    "references": {
+      "original": [
+        {
+          "seed": 42,
+          "accuracy": 0.6311701760441837,
+          "source": "artifacts/noncbm/cub_rn18_imagenet_paired/seed42/test_predictions.npz",
+          "nec": null
+        },
+        {
+          "seed": 43,
+          "accuracy": 0.6301346220227821,
+          "source": "artifacts/noncbm/cub_rn18_imagenet_paired/seed43/test_predictions.npz",
+          "nec": null
+        },
+        {
+          "seed": 44,
+          "accuracy": 0.6311701760441837,
+          "source": "artifacts/noncbm/cub_rn18_imagenet_paired/seed44/test_predictions.npz",
+          "nec": null
+        }
+      ],
+      "changed": [
+        {
+          "seed": 42,
+          "accuracy": 0.5056955471177079,
+          "source": "artifacts/noncbm/cub_rn18_imagenet_paired/seed42/changed_predictions.npz",
+          "nec": null
+        },
+        {
+          "seed": 43,
+          "accuracy": 0.5015533310321022,
+          "source": "artifacts/noncbm/cub_rn18_imagenet_paired/seed43/changed_predictions.npz",
+          "nec": null
+        },
+        {
+          "seed": 44,
+          "accuracy": 0.505005177770107,
+          "source": "artifacts/noncbm/cub_rn18_imagenet_paired/seed44/changed_predictions.npz",
+          "nec": null
+        }
+      ]
+    }
+  },
+  {
+    "group": "artifacts/heads/rival10/resnet18/paired/seed42",
+    "references": {
+      "original": [
+        {
+          "seed": 42,
+          "accuracy": 0.983150321847785,
+          "source": "artifacts/noncbm/rival10_rn18_imagenet_paired/seed42/test_predictions.npz",
+          "nec": null
+        },
+        {
+          "seed": 43,
+          "accuracy": 0.9840969329799318,
+          "source": "artifacts/noncbm/rival10_rn18_imagenet_paired/seed43/test_predictions.npz",
+          "nec": null
+        },
+        {
+          "seed": 44,
+          "accuracy": 0.983150321847785,
+          "source": "artifacts/noncbm/rival10_rn18_imagenet_paired/seed44/test_predictions.npz",
+          "nec": null
+        }
+      ],
+      "changed": [
+        {
+          "seed": 42,
+          "accuracy": 0.9507762211283605,
+          "source": "artifacts/noncbm/rival10_rn18_imagenet_paired/seed42/changed_predictions.npz",
+          "nec": null
+        },
+        {
+          "seed": 43,
+          "accuracy": 0.9511548655812192,
+          "source": "artifacts/noncbm/rival10_rn18_imagenet_paired/seed43/changed_predictions.npz",
+          "nec": null
+        },
+        {
+          "seed": 44,
+          "accuracy": 0.950586898901931,
+          "source": "artifacts/noncbm/rival10_rn18_imagenet_paired/seed44/changed_predictions.npz",
+          "nec": null
+        }
+      ]
+    }
+  },
+  {
+    "group": "artifacts/heads/waterbirds/clip_RN50/paired/seed42",
+    "references": {
+      "original": [
+        {
+          "seed": 42,
+          "accuracy": 0.964963755609251,
+          "source": "artifacts/noncbm/waterbirds_clip_RN50_paired/seed42/test_predictions.npz",
+          "nec": null
+        },
+        {
+          "seed": 43,
+          "accuracy": 0.9666896789782534,
+          "source": "artifacts/noncbm/waterbirds_clip_RN50_paired/seed43/test_predictions.npz",
+          "nec": null
+        },
+        {
+          "seed": 44,
+          "accuracy": 0.9661719019675526,
+          "source": "artifacts/noncbm/waterbirds_clip_RN50_paired/seed44/test_predictions.npz",
+          "nec": null
+        }
+      ],
+      "changed": [
+        {
+          "seed": 42,
+          "accuracy": 0.9311356575768036,
+          "source": "artifacts/noncbm/waterbirds_clip_RN50_paired/seed42/changed_predictions.npz",
+          "nec": null
+        },
+        {
+          "seed": 43,
+          "accuracy": 0.9285467725233,
+          "source": "artifacts/noncbm/waterbirds_clip_RN50_paired/seed43/changed_predictions.npz",
+          "nec": null
+        },
+        {
+          "seed": 44,
+          "accuracy": 0.9299275112185019,
+          "source": "artifacts/noncbm/waterbirds_clip_RN50_paired/seed44/changed_predictions.npz",
+          "nec": null
+        }
+      ]
+    }
+  },
+  {
+    "group": "artifacts/heads/waterbirds/resnet50/paired/seed42",
+    "references": {
+      "original": [
+        {
+          "seed": 42,
+          "accuracy": 0.9680704176734553,
+          "source": "artifacts/noncbm/waterbirds_rn50_imagenet_paired/seed42/test_predictions.npz",
+          "nec": null
+        },
+        {
+          "seed": 43,
+          "accuracy": 0.9684156023472558,
+          "source": "artifacts/noncbm/waterbirds_rn50_imagenet_paired/seed43/test_predictions.npz",
+          "nec": null
+        },
+        {
+          "seed": 44,
+          "accuracy": 0.9691059716948568,
+          "source": "artifacts/noncbm/waterbirds_rn50_imagenet_paired/seed44/test_predictions.npz",
+          "nec": null
+        }
+      ],
+      "changed": [
+        {
+          "seed": 42,
+          "accuracy": 0.9314808422506041,
+          "source": "artifacts/noncbm/waterbirds_rn50_imagenet_paired/seed42/changed_predictions.npz",
+          "nec": null
+        },
+        {
+          "seed": 43,
+          "accuracy": 0.9361408353469106,
+          "source": "artifacts/noncbm/waterbirds_rn50_imagenet_paired/seed43/changed_predictions.npz",
+          "nec": null
+        },
+        {
+          "seed": 44,
+          "accuracy": 0.9304452882292026,
+          "source": "artifacts/noncbm/waterbirds_rn50_imagenet_paired/seed44/changed_predictions.npz",
+          "nec": null
+        }
+      ]
+    }
+  }
+]

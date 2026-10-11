@@ -82,10 +82,21 @@ def run(out,pini_root=None):
                     'classification':classification_metrics(values['logits'],values['labels']),
                     'teacher_score_field':'concept_logits',
                     'CLIP_teacher':fidelity,'CLIP_teacher_probability_secondary':teacher_fidelity(values['concepts'],teacher[values['ids']][:,index])})
-        path=lf/'corruptions/report.json'
-        if path.exists():corruption_reports[dataset]=json.loads(path.read_text())
-        path=lf.parent/'gaussian_noise_augmented/seed42/corruptions/report.json'
-        if path.exists():corruption_reports[dataset+'/gaussian_noise_s1_augmented']=json.loads(path.read_text())
+        for bone in ['rn18_imagenet','rn50_imagenet','clip_RN50']:
+            for augmented in [False,True]:
+                directory=lf.parent.parent/bone
+                directory=directory/'gaussian_noise_augmented/seed42' if augmented else directory/'seed42'
+                path=directory/'corruptions/report.json'
+                if path.exists():
+                    report=json.loads(path.read_text())
+                    if len(report.get('settings', {}))!=12 or len(report.get('metrics', {}))!=24:
+                        continue
+                    report.setdefault('backbone',bone)
+                    key=dataset+'/'+bone+('/gaussian_noise_s1_augmented' if augmented else '/clean')
+                    report['source_report']=str(path)
+                    if 'feature_provenance' in report:
+                        report['feature_provenance']={k:v for k,v in report['feature_provenance'].items() if k!='splits'}
+                    corruption_reports[key]=report
     for dataset in ['cifar10','cifar100']:
         for paired in [False,True]:
             group=[r for r in rows if r['dataset']==dataset and (len(r['train_views'])>1)==paired]
@@ -101,21 +112,24 @@ def run(out,pini_root=None):
     controls=[]
     for dataset in ['cifar10','cifar100']:
         for bone in ['rn18_imagenet','rn50_imagenet','clip_RN50']:
-            for seed in [42,43,44]:
-                path=ROOT/'artifacts/noncbm'/f'{dataset}_{bone}'/f'seed{seed}'/'results.json'
-                if not path.exists():continue
-                result=json.loads(path.read_text());source=Path(result['input_paths']['test'])
-                if source.resolve()!=(ROOT/'artifacts/common'/dataset/bone/'test_original.npz').resolve():continue
-                predicted=np.load(path.parent/'test_predictions.npz');raw=np.load(source)
-                if not np.array_equal(predicted['ids'],raw['ids']) or not np.array_equal(predicted['labels'],raw['labels']):raise ValueError('NonCBM canonical test mismatch')
-                controls.append({'dataset':dataset,'backbone':bone,'head_seed':seed,'train_views':['original'],
-                    'source':str(path),'method':'noncbm','classification':classification_metrics(predicted['logits'],predicted['labels'])})
+            for augmented in [False,True]:
+                suffix='_gaussian_noise_augmented' if augmented else ''
+                for seed in [42,43,44]:
+                    path=ROOT/'artifacts/noncbm'/f'{dataset}_{bone}{suffix}'/f'seed{seed}'/'results.json'
+                    if not path.exists():continue
+                    result=json.loads(path.read_text());source=Path(result['input_paths']['test'])
+                    if source.resolve()!=(ROOT/'artifacts/common'/dataset/bone/'test_original.npz').resolve():continue
+                    predicted=np.load(path.parent/'test_predictions.npz');raw=np.load(source)
+                    if not np.array_equal(predicted['ids'],raw['ids']) or not np.array_equal(predicted['labels'],raw['labels']):raise ValueError('NonCBM canonical test mismatch')
+                    train_views=['original','gaussian_noise_s1'] if augmented else ['original']
+                    controls.append({'dataset':dataset,'backbone':bone,'head_seed':seed,'train_views':train_views,
+                        'source':str(path),'method':'noncbm','classification':classification_metrics(predicted['logits'],predicted['labels'])})
     shifted_controls=[]
     for control in controls:
         path=Path(control['source']).parent/'shifts/report.json'
         if not path.exists():continue
         report=json.loads(path.read_text())
-        shifted_controls.append({'dataset':control['dataset'],'backbone':control['backbone'],
+        shifted_controls.append({'dataset':control['dataset'],'backbone':control['backbone'],'train_views':control['train_views'],
             'seed':control['head_seed'],'source':str(path),'refitting':report['refitting'],
             'evaluation':report['evaluation']})
     summary={'scope':'Fresh frozen-backbone full training seed42; inference1draw; compare identical training protocols; test excluded from selection',
@@ -148,7 +162,7 @@ def run(out,pini_root=None):
                      ('CLIP 教师三次余弦（共同概念）',[(row['CLIP_teacher_common_intersection'] or row['CLIP_teacher'])['teacher_cos_cubed_macro'] for row in selected])]
             for metric_index,(ax,(title,values)) in enumerate(zip(axes[i],metrics)):
                 labels=list(methods);palette=list(colors);plotted=list(values)
-                reference=[c['classification']['accuracy'] for c in controls if c['dataset']==dataset and c['backbone']==bone] if not paired else []
+                reference=[c['classification']['accuracy'] for c in controls if c['dataset']==dataset and c['backbone']==bone and (len(c['train_views'])>1)==paired]
                 if metric_index==0 and reference:
                     labels.append(f'非 CBM\n{len(reference)} 个头种子');palette.append(COLORS['noncbm']);plotted.append(float(np.mean(reference)))
                 bars=ax.bar(labels,plotted,color=palette);ax.bar_label(bars,fmt='%.3f',padding=3)
@@ -160,14 +174,15 @@ def run(out,pini_root=None):
         fig,axes=plt.subplots(len(corruption_reports),4,figsize=(14,3.5*len(corruption_reports)),layout='constrained',squeeze=False)
         titles={'gaussian_noise':'高斯噪声','gaussian_blur':'高斯模糊','contrast':'对比度','jpeg_compression':'JPEG 压缩'}
         for i,(_,report) in enumerate(sorted(corruption_reports.items())):
-            dataset=report['dataset'];protocol='高斯噪声配对训练' if len(report['training_protocol'])>1 else '原图训练'
+            dataset=report['dataset'];bone=report.get('backbone','rn18_imagenet');protocol='高斯噪声配对训练' if len(report['training_protocol'])>1 else '原图训练'
             for ax,kind in zip(axes[i],CORRUPTIONS):
                 for method in ['lfcbm','lfpi_global']:
                     points=[(severity,report['metrics'][f'{method}/{kind}_{severity}']['classification']['accuracy'])
                         for severity in [1,3,5] if f'{method}/{kind}_{severity}' in report.get('metrics',{})]
                     if points:ax.plot(*zip(*points),marker='o',label=METHODS[method],color=COLORS[method])
-                if len(report['training_protocol'])==1:
-                    controls_here=[c for c in shifted_controls if c['dataset']==dataset and c['backbone']=='rn18_imagenet']
+                controls_here=[c for c in shifted_controls if c['dataset']==dataset and c['backbone']==bone
+                               and (len(c['train_views'])>1)==(len(report['training_protocol'])>1)]
+                if controls_here:
                     points=[]
                     for severity in [1,3,5]:
                         values=[row['accuracy'] for c in controls_here for row in c['evaluation']
@@ -176,9 +191,9 @@ def run(out,pini_root=None):
                     if points:
                         ax.errorbar([p[0] for p in points],[p[1] for p in points],yerr=[p[2] for p in points],
                                     marker='s',capsize=3,color=COLORS['noncbm'],label=f'非 CBM（{len(controls_here)} 个头种子）')
-                ax.set_title(dataset.upper()+'｜'+protocol+'\n'+titles[kind]);ax.set_xlabel('官方 CIFAR-C 腐蚀强度');ax.set_ylabel('准确率');ax.set_ylim(0,1);ax.set_xticks([1,3,5])
+                ax.set_title(dataset.upper()+'｜'+bone+'｜'+protocol+'\n'+titles[kind]);ax.set_xlabel('官方 CIFAR-C 腐蚀强度');ax.set_ylabel('准确率');ax.set_ylim(0,1);ax.set_xticks([1,3,5])
                 if ax.lines:ax.legend()
-        fig.suptitle('RN18｜官方原生 32×32 CIFAR-C 四类腐蚀子集｜每设置全部 10000 测试图｜单次推理')
+        fig.suptitle('跨骨干｜官方原生 32×32 CIFAR-C 四类腐蚀子集｜每设置全部 10000 测试图｜单次推理')
         fig.savefig(out/'corruptions.png',dpi=170);plt.close(fig)
     print(json.dumps({'report':str(out/'summary.json'),'clean_runs':len(rows),'corruption_datasets':len(corruption_reports)}),flush=True)
 

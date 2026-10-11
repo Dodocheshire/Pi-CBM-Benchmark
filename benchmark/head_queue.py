@@ -17,7 +17,7 @@ def main():
     args=p.parse_args();jobs=[]
     for file in sorted(Path('artifacts/matched/lf').rglob('report.json')):
         r=json.loads(file.read_text())
-        if 'feature_provenance' not in r:continue
+        if not {'feature_provenance','train_views','training_seed'}.issubset(r):continue
         bone=r['feature_provenance'].get('backbone_name','resnet18')
         proto=('paired' if r['train_views']==['original','changed'] else
                'corruption_augmented' if len(r['train_views'])>1 else 'original')

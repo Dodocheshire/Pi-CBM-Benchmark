@@ -15,6 +15,30 @@ COLORS={'LF-CBM':'#2878B5','LF-Pi':'#E15759','LF-Pi（8次采样）':'#E15759','
         'PiNI 均值＋噪声':'#B07AA1','非 CBM':'#F28E2B'}
 
 
+def noncbm_reference(group, view):
+    dataset,bone,protocol,_=group.relative_to(Path('artifacts/heads')).parts
+    folder={'resnet18':'rn18_imagenet','resnet50':'rn50_imagenet'}.get(bone,bone)
+    suffix={'original':'','paired':'_paired','corruption_augmented':'_gaussian_noise_augmented'}[protocol]
+    references=[]
+    baseline=next(group.glob('*/dense_original.npz'))
+    expected=np.load(baseline)
+    for directory in sorted((Path('artifacts/noncbm')/f'{dataset}_{folder}{suffix}').glob('seed*')):
+        name='test_predictions.npz' if view=='original' else f'{view}_predictions.npz'
+        path=directory/name
+        if not path.exists() or not (directory/'results.json').exists():continue
+        report=json.loads((directory/'results.json').read_text())
+        if not Path(report['input_paths']['test']).resolve().is_relative_to(Path('artifacts/common').resolve()):continue
+        data=np.load(path)
+        if not np.array_equal(data['ids'],expected['ids']) or not np.array_equal(data['labels'],expected['labels']):
+            raise ValueError('Non-CBM reference test subjects/classes differ from concept-head tests')
+        manifest=json.loads((Path('artifacts/common')/dataset/'rn18_imagenet/manifest.json').read_text())
+        eligible=Path(manifest.get('cache_root',f'artifacts/common/{dataset}/cache'))/'background_eligible.npy'
+        mask=np.load(eligible)[data['ids']].astype(bool) if eligible.exists() else np.ones(len(data['ids']),bool)
+        accuracy=classification_metrics(data['logits'][mask],data['labels'][mask])['accuracy']
+        references.append({'seed':report['seed'],'accuracy':accuracy,'source':str(path),'nec':None})
+    return references
+
+
 def shared_accuracy(directory, dataset, head, view):
     data=np.load(directory/f'{head}_{view}.npz')
     manifest=json.loads((Path('artifacts/common')/dataset/'rn18_imagenet/manifest.json').read_text())
@@ -29,7 +53,7 @@ def main():
     if font.exists():
         font_manager.fontManager.addfont(str(font));plt.rcParams['font.family']=font_manager.FontProperties(fname=str(font)).get_name()
     plt.rcParams['axes.unicode_minus']=False
-    lines=['# 泛化与分类头容量', '']; groups={}; head_summary=[]
+    lines=['# 泛化与分类头容量', '']; groups={}; head_summary=[];noncbm_summary=[]
     for file in sorted(Path('artifacts/heads').rglob('report.json')):
         r=json.loads(file.read_text())
         if 'test_evaluations' not in r:continue
@@ -69,11 +93,17 @@ def main():
                 ax.set_xlabel('每类有效概念连接数（实际 NEC）');ax.set_ylabel('分类准确率（%）')
                 ax.set_title(label);ax.set_ylim(0,102);ax.spines[['top','right']].set_visible(False)
             # Dense references are exported in JSON, kept separate from sparse curves.
+        controls={view:noncbm_reference(group,view) for view in views}
+        for ax,view in zip(axes,views):
+            if controls[view]:
+                ax.axhline(100*np.mean([r['accuracy'] for r in controls[view]]),color=COLORS['非 CBM'],
+                           linestyle='--',label=f'非 CBM（{len(controls[view])} 个头种子）')
+        if any(controls.values()):noncbm_summary.append({'group':str(group),'references':controls})
         handles,labels=axes[0].get_legend_handles_labels()
         if handles:fig.legend(handles,labels,loc='outside lower center',ncol=min(4,len(handles)))
         title=str(group.relative_to(Path('artifacts/heads')));fig.suptitle(title)
         file=f'nec_{index}.png';fig.savefig(out/file,dpi=170);plt.close(fig)
-        labels=['稠密头原图准确率' if view=='original' else '稠密头换背景准确率' for view in views]
+        labels=['稠密头原图准确率' if view=='original' else '稠密头高斯噪声准确率' if view=='gaussian_noise_s1' else '稠密头换背景准确率' for view in views]
         lines += [f'## {title}', '', f'![NEC 曲线]({file})','',
                   '| 方法 | '+' | '.join(labels)+' | SAGA 达到步数上限的路径点 |',
                   '| '+' | '.join(['---']*(len(views)+2))+' |']
@@ -81,6 +111,9 @@ def main():
             cells=[f"{100*shared_accuracy(path.parent,r['dataset'],'dense',view):.2f}%"
                    if (path.parent/f'dense_{view}.npz').exists() else '—' for view in views]
             lines.append(f"| {NAMES[path.parent.name]} | "+' | '.join(cells)+f" | {r['unconverged_path_points']} |")
+        if any(controls.values()):
+            cells=[f"{100*np.mean([r['accuracy'] for r in controls[view]]):.2f}%" if controls[view] else '—' for view in views]
+            lines.append('| 非 CBM | '+' | '.join(cells)+' | — |')
         lines += ['']
     shift_groups={};shift_summary=[]
     for path in sorted(Path('artifacts/heads').rglob('shifts/report.json')):
@@ -161,6 +194,7 @@ def main():
             lines += [f'![水鸟两类平均准确率]({file})','']
     write_metrics(out/'generalization_summary.json',ood)
     write_metrics(out/'nec_summary.json',head_summary)
+    write_metrics(out/'nec_noncbm_references.json',noncbm_summary)
     (out/'GENERALIZATION_RESULT.md').write_text('\n'.join(lines))
 
 

@@ -1,6 +1,6 @@
 [
   {
-    "experiment": "cifar100_cliprn50",
+    "experiment": "cifar100_clip_RN50",
     "training_seeds": [
       42,
       43,
@@ -12,13 +12,73 @@
     "fit_images": 45000,
     "feature_dimension": 1024,
     "original": {
-      "mean_accuracy": 0.6936333333333334,
-      "seed_std": 0.001050396750439244,
+      "mean_accuracy": 0.6687,
+      "seed_std": 0.0009165151389911277,
       "examples": 10000
     }
   },
   {
-    "experiment": "cifar10_cliprn50",
+    "experiment": "cifar100_rn18_imagenet",
+    "training_seeds": [
+      42,
+      43,
+      44
+    ],
+    "train_views": [
+      "original"
+    ],
+    "fit_images": 45000,
+    "feature_dimension": 512,
+    "original": {
+      "mean_accuracy": 0.7011333333333334,
+      "seed_std": 0.0010408329997330763,
+      "examples": 10000
+    }
+  },
+  {
+    "experiment": "cifar100_rn18_imagenet_gaussian_noise_augmented",
+    "training_seeds": [
+      42,
+      43,
+      44
+    ],
+    "train_views": [
+      "original",
+      "gaussian_noise_s1"
+    ],
+    "fit_images": 90000,
+    "feature_dimension": 512,
+    "original": {
+      "mean_accuracy": 0.6871,
+      "seed_std": 0.0008999999999999564,
+      "examples": 10000
+    },
+    "gaussian_noise_s1": {
+      "mean_accuracy": 0.5336666666666666,
+      "seed_std": 0.0009865765724632683,
+      "examples": 10000
+    }
+  },
+  {
+    "experiment": "cifar100_rn50_imagenet",
+    "training_seeds": [
+      42,
+      43,
+      44
+    ],
+    "train_views": [
+      "original"
+    ],
+    "fit_images": 45000,
+    "feature_dimension": 2048,
+    "original": {
+      "mean_accuracy": 0.7323666666666666,
+      "seed_std": 0.0008082903768654466,
+      "examples": 10000
+    }
+  },
+  {
+    "experiment": "cifar10_clip_RN50",
     "training_seeds": [
       42,
       43,
@@ -30,8 +90,68 @@
     "fit_images": 45000,
     "feature_dimension": 1024,
     "original": {
-      "mean_accuracy": 0.8850666666666666,
-      "seed_std": 0.0011547005383792527,
+      "mean_accuracy": 0.8579,
+      "seed_std": 0.0012124355652981904,
+      "examples": 10000
+    }
+  },
+  {
+    "experiment": "cifar10_rn18_imagenet",
+    "training_seeds": [
+      42,
+      43,
+      44
+    ],
+    "train_views": [
+      "original"
+    ],
+    "fit_images": 45000,
+    "feature_dimension": 512,
+    "original": {
+      "mean_accuracy": 0.8843333333333333,
+      "seed_std": 0.00083864970836058,
+      "examples": 10000
+    }
+  },
+  {
+    "experiment": "cifar10_rn18_imagenet_gaussian_noise_augmented",
+    "training_seeds": [
+      42,
+      43,
+      44
+    ],
+    "train_views": [
+      "original",
+      "gaussian_noise_s1"
+    ],
+    "fit_images": 90000,
+    "feature_dimension": 512,
+    "original": {
+      "mean_accuracy": 0.8732333333333333,
+      "seed_std": 0.0010016652800877966,
+      "examples": 10000
+    },
+    "gaussian_noise_s1": {
+      "mean_accuracy": 0.7564333333333333,
+      "seed_std": 0.001792577287966495,
+      "examples": 10000
+    }
+  },
+  {
+    "experiment": "cifar10_rn50_imagenet",
+    "training_seeds": [
+      42,
+      43,
+      44
+    ],
+    "train_views": [
+      "original"
+    ],
+    "fit_images": 45000,
+    "feature_dimension": 2048,
+    "original": {
+      "mean_accuracy": 0.9154333333333334,
+      "seed_std": 0.0004509249752822972,
       "examples": 10000
     }
   },
@@ -174,6 +294,42 @@
       "mean_accuracy": 0.5350937751697159,
       "seed_std": 0.002109113195239156,
       "examples": 5794
+    }
+  },
+  {
+    "experiment": "imagenet_200_per_class_rn18_imagenet",
+    "training_seeds": [
+      42,
+      43,
+      44
+    ],
+    "train_views": [
+      "original"
+    ],
+    "fit_images": 200000,
+    "feature_dimension": 512,
+    "original": {
+      "mean_accuracy": 0.6647533333333334,
+      "seed_std": 0.0019698054049405956,
+      "examples": 50000
+    }
+  },
+  {
+    "experiment": "places365_rn18_imagenet",
+    "training_seeds": [
+      42,
+      43,
+      44
+    ],
+    "train_views": [
+      "original"
+    ],
+    "fit_images": 73000,
+    "feature_dimension": 512,
+    "original": {
+      "mean_accuracy": 0.374365296803653,
+      "seed_std": 0.001384126653473854,
+      "examples": 36500
     }
   },
   {

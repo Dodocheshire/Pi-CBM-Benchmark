@@ -22,11 +22,13 @@ def main():
     for folder in sorted(root.iterdir()):
         if not folder.is_dir(): continue
         reports = [json.loads(p.read_text()) for p in sorted(folder.glob('seed*/results.json'))]
+        reports = [r for r in reports if Path(r['input_paths']['test']).resolve().is_relative_to(
+            Path('artifacts/common').resolve())]
         if not reports: continue
         row = {'experiment': folder.name, 'training_seeds': [r['seed'] for r in reports],
                'train_views': reports[0].get('train_views', ['original']),
                'fit_images': reports[0]['fit_images'], 'feature_dimension': reports[0]['feature_dimension']}
-        for view, key in [('original', 'test'), ('changed', 'changed')]:
+        for view, key in [('original', 'test'), ('changed', 'changed'), ('gaussian_noise_s1', 'gaussian_noise_s1')]:
             if all(key in r for r in reports):
                 a = np.array([r[key]['accuracy'] for r in reports])
                 row[view] = {'mean_accuracy': float(a.mean()),
@@ -52,8 +54,8 @@ def main():
     fig.savefig(out/'noncbm_background.png', dpi=180); plt.close(fig)
     lines = ['# 非 CBM 对照', '', '使用冻结骨干输出直接训练线性分类头。四组固定学习率／权重衰减组合按验证集 NLL 选择，三个训练种子为 42、43、44。', '',
              '![原图与换背景准确率](noncbm_background.png)', '',
-             '| 数据与骨干 | 训练视图 | 原图准确率 | 换背景准确率 |',
-             '| --- | --- | --- | --- |']
+             '| 数据与骨干 | 训练视图 | 原图准确率 | 换背景准确率 | 高斯噪声准确率 |',
+             '| --- | --- | --- | --- | --- |']
     for r in rows:
         def fmt(view):
             if view not in r:return '—'
@@ -61,11 +63,12 @@ def main():
             suffix=f" ± {100*metric['seed_std']:.2f}" if metric['seed_std'] is not None else '（1 个种子）'
             return f"{100*metric['mean_accuracy']:.2f}%"+suffix
         dataset=r['experiment'].split('_')[0]
-        labels={'cifar10':'CIFAR-10','cifar100':'CIFAR-100','cub':'CUB','rival10':'RIVAL10','waterbirds':'CUB–Places 水鸟二分类'}
+        labels={'cifar10':'CIFAR-10','cifar100':'CIFAR-100','cub':'CUB','rival10':'RIVAL10','waterbirds':'CUB–Places 水鸟二分类',
+                'imagenet':'ImageNet 1000 类','places365':'Places365'}
         backbone='CLIP RN50' if 'clip' in r['experiment'].lower() else ('ResNet50' if '_rn50_' in r['experiment'] else 'ResNet18')
-        views='原图＋换背景' if len(r['train_views'])>1 else '原图'
-        lines.append(f"| {labels[dataset]}／{backbone} | {views} | {fmt('original')} | {fmt('changed')} |")
-    lines += ['', 'CIFAR-10／100 使用既有冻结 CLIP RN50 特征；其他数据集使用本轮重新编码的共享骨干特征。误差为独立分类头训练种子间的标准差。', '']
+        views=('原图＋高斯噪声' if 'gaussian_noise_s1' in r['train_views'] else '原图＋换背景') if len(r['train_views'])>1 else '原图'
+        lines.append(f"| {labels.get(dataset,dataset)}／{backbone} | {views} | {fmt('original')} | {fmt('changed')} | {fmt('gaussian_noise_s1')} |")
+    lines += ['', '各组使用本轮共用的冻结骨干特征。误差为独立分类头训练种子间的标准差。', '']
     (out/'NONCBM_RESULT.md').write_text('\n'.join(lines))
 
 
