@@ -3421,5 +3421,3428 @@
     },
     "aggregation": "same requested budgets; x = mean actual NEC; no interpolation; errors = sample std ddof1",
     "head_selection": "validation only; original frozen head also applied to background-changed test"
+  },
+  {
+    "dataset": "rival10",
+    "backbone": "resnet18",
+    "protocol": "paired",
+    "seeds": [
+      42,
+      43,
+      44
+    ],
+    "test_subjects": 5282,
+    "methods": {
+      "LF-CBM": {
+        "per_seed": [
+          {
+            "seed": 42,
+            "directory": "/home/pengcheng/Pi-CBM-Benchmark/artifacts/heads/rival10/resnet18/paired/seed42/lfcbm",
+            "concept_count": 14,
+            "unconverged_path_points": 0,
+            "evaluations": [
+              {
+                "head": "1",
+                "view": "original",
+                "requested_nec": 1.0,
+                "actual_nec": 1.0,
+                "per_class_connections": [
+                  2,
+                  1,
+                  2,
+                  0,
+                  1,
+                  1,
+                  1,
+                  1,
+                  0,
+                  1
+                ],
+                "accuracy": 0.5946611132146914
+              },
+              {
+                "head": "1",
+                "view": "changed",
+                "requested_nec": 1.0,
+                "actual_nec": 1.0,
+                "per_class_connections": [
+                  2,
+                  1,
+                  2,
+                  0,
+                  1,
+                  1,
+                  1,
+                  1,
+                  0,
+                  1
+                ],
+                "accuracy": 0.5325634229458538
+              },
+              {
+                "head": "2",
+                "view": "original",
+                "requested_nec": 2.0,
+                "actual_nec": 2.0,
+                "per_class_connections": [
+                  3,
+                  2,
+                  2,
+                  2,
+                  3,
+                  2,
+                  2,
+                  1,
+                  2,
+                  1
+                ],
+                "accuracy": 0.7828474062854979
+              },
+              {
+                "head": "2",
+                "view": "changed",
+                "requested_nec": 2.0,
+                "actual_nec": 2.0,
+                "per_class_connections": [
+                  3,
+                  2,
+                  2,
+                  2,
+                  3,
+                  2,
+                  2,
+                  1,
+                  2,
+                  1
+                ],
+                "accuracy": 0.6951912154486937
+              },
+              {
+                "head": "3",
+                "view": "original",
+                "requested_nec": 3.0,
+                "actual_nec": 3.0,
+                "per_class_connections": [
+                  5,
+                  3,
+                  3,
+                  2,
+                  3,
+                  4,
+                  2,
+                  2,
+                  4,
+                  2
+                ],
+                "accuracy": 0.8458917076864824
+              },
+              {
+                "head": "3",
+                "view": "changed",
+                "requested_nec": 3.0,
+                "actual_nec": 3.0,
+                "per_class_connections": [
+                  5,
+                  3,
+                  3,
+                  2,
+                  3,
+                  4,
+                  2,
+                  2,
+                  4,
+                  2
+                ],
+                "accuracy": 0.7671336614918591
+              },
+              {
+                "head": "5",
+                "view": "original",
+                "requested_nec": 5.0,
+                "actual_nec": 5.0,
+                "per_class_connections": [
+                  5,
+                  3,
+                  6,
+                  4,
+                  5,
+                  7,
+                  5,
+                  3,
+                  8,
+                  4
+                ],
+                "accuracy": 0.9015524422567209
+              },
+              {
+                "head": "5",
+                "view": "changed",
+                "requested_nec": 5.0,
+                "actual_nec": 5.0,
+                "per_class_connections": [
+                  5,
+                  3,
+                  6,
+                  4,
+                  5,
+                  7,
+                  5,
+                  3,
+                  8,
+                  4
+                ],
+                "accuracy": 0.8326391518364256
+              },
+              {
+                "head": "8",
+                "view": "original",
+                "requested_nec": 8.0,
+                "actual_nec": 8.0,
+                "per_class_connections": [
+                  10,
+                  5,
+                  9,
+                  6,
+                  10,
+                  8,
+                  8,
+                  8,
+                  10,
+                  6
+                ],
+                "accuracy": 0.9161302536917835
+              },
+              {
+                "head": "8",
+                "view": "changed",
+                "requested_nec": 8.0,
+                "actual_nec": 8.0,
+                "per_class_connections": [
+                  10,
+                  5,
+                  9,
+                  6,
+                  10,
+                  8,
+                  8,
+                  8,
+                  10,
+                  6
+                ],
+                "accuracy": 0.8451344187807649
+              },
+              {
+                "head": "12",
+                "view": "original",
+                "requested_nec": 12.0,
+                "actual_nec": 12.0,
+                "per_class_connections": [
+                  12,
+                  12,
+                  12,
+                  8,
+                  13,
+                  11,
+                  14,
+                  13,
+                  13,
+                  12
+                ],
+                "accuracy": 0.9246497538811056
+              },
+              {
+                "head": "12",
+                "view": "changed",
+                "requested_nec": 12.0,
+                "actual_nec": 12.0,
+                "per_class_connections": [
+                  12,
+                  12,
+                  12,
+                  8,
+                  13,
+                  11,
+                  14,
+                  13,
+                  13,
+                  12
+                ],
+                "accuracy": 0.8544112078758046
+              },
+              {
+                "head": "14",
+                "view": "original",
+                "requested_nec": 14.0,
+                "actual_nec": 13.7,
+                "per_class_connections": [
+                  14,
+                  14,
+                  14,
+                  14,
+                  13,
+                  14,
+                  14,
+                  14,
+                  14,
+                  12
+                ],
+                "accuracy": 0.9257856872396819
+              },
+              {
+                "head": "14",
+                "view": "changed",
+                "requested_nec": 14.0,
+                "actual_nec": 13.7,
+                "per_class_connections": [
+                  14,
+                  14,
+                  14,
+                  14,
+                  13,
+                  14,
+                  14,
+                  14,
+                  14,
+                  12
+                ],
+                "accuracy": 0.8542218856493753
+              },
+              {
+                "head": "best_val",
+                "view": "original",
+                "requested_nec": null,
+                "actual_nec": 13.7,
+                "per_class_connections": [
+                  14,
+                  14,
+                  14,
+                  14,
+                  13,
+                  14,
+                  14,
+                  14,
+                  14,
+                  12
+                ],
+                "accuracy": 0.9259750094661113
+              },
+              {
+                "head": "best_val",
+                "view": "changed",
+                "requested_nec": null,
+                "actual_nec": 13.7,
+                "per_class_connections": [
+                  14,
+                  14,
+                  14,
+                  14,
+                  13,
+                  14,
+                  14,
+                  14,
+                  14,
+                  12
+                ],
+                "accuracy": 0.8549791745550928
+              },
+              {
+                "head": "dense",
+                "view": "original",
+                "requested_nec": null,
+                "actual_nec": 14.0,
+                "per_class_connections": [
+                  14,
+                  14,
+                  14,
+                  14,
+                  14,
+                  14,
+                  14,
+                  14,
+                  14,
+                  14
+                ],
+                "accuracy": 0.9255963650132526
+              },
+              {
+                "head": "dense",
+                "view": "changed",
+                "requested_nec": null,
+                "actual_nec": 14.0,
+                "per_class_connections": [
+                  14,
+                  14,
+                  14,
+                  14,
+                  14,
+                  14,
+                  14,
+                  14,
+                  14,
+                  14
+                ],
+                "accuracy": 0.8547898523286633
+              }
+            ]
+          },
+          {
+            "seed": 43,
+            "directory": "/home/pengcheng/Pi-CBM-Benchmark/artifacts/heads/rival10/resnet18/paired/seed43/lfcbm",
+            "concept_count": 14,
+            "unconverged_path_points": 0,
+            "evaluations": [
+              {
+                "head": "1",
+                "view": "original",
+                "requested_nec": 1.0,
+                "actual_nec": 1.0,
+                "per_class_connections": [
+                  1,
+                  1,
+                  2,
+                  0,
+                  1,
+                  1,
+                  1,
+                  1,
+                  1,
+                  1
+                ],
+                "accuracy": 0.6054524801211663
+              },
+              {
+                "head": "1",
+                "view": "changed",
+                "requested_nec": 1.0,
+                "actual_nec": 1.0,
+                "per_class_connections": [
+                  1,
+                  1,
+                  2,
+                  0,
+                  1,
+                  1,
+                  1,
+                  1,
+                  1,
+                  1
+                ],
+                "accuracy": 0.5361605452480122
+              },
+              {
+                "head": "2",
+                "view": "original",
+                "requested_nec": 2.0,
+                "actual_nec": 2.0,
+                "per_class_connections": [
+                  3,
+                  2,
+                  2,
+                  2,
+                  3,
+                  3,
+                  1,
+                  1,
+                  2,
+                  1
+                ],
+                "accuracy": 0.7703521393411586
+              },
+              {
+                "head": "2",
+                "view": "changed",
+                "requested_nec": 2.0,
+                "actual_nec": 2.0,
+                "per_class_connections": [
+                  3,
+                  2,
+                  2,
+                  2,
+                  3,
+                  3,
+                  1,
+                  1,
+                  2,
+                  1
+                ],
+                "accuracy": 0.6927300265051117
+              },
+              {
+                "head": "3",
+                "view": "original",
+                "requested_nec": 3.0,
+                "actual_nec": 3.0,
+                "per_class_connections": [
+                  5,
+                  3,
+                  2,
+                  2,
+                  3,
+                  5,
+                  2,
+                  2,
+                  4,
+                  2
+                ],
+                "accuracy": 0.8307459295721318
+              },
+              {
+                "head": "3",
+                "view": "changed",
+                "requested_nec": 3.0,
+                "actual_nec": 3.0,
+                "per_class_connections": [
+                  5,
+                  3,
+                  2,
+                  2,
+                  3,
+                  5,
+                  2,
+                  2,
+                  4,
+                  2
+                ],
+                "accuracy": 0.7728133282847406
+              },
+              {
+                "head": "5",
+                "view": "original",
+                "requested_nec": 5.0,
+                "actual_nec": 5.0,
+                "per_class_connections": [
+                  5,
+                  3,
+                  6,
+                  4,
+                  5,
+                  7,
+                  5,
+                  3,
+                  8,
+                  4
+                ],
+                "accuracy": 0.8939795531995456
+              },
+              {
+                "head": "5",
+                "view": "changed",
+                "requested_nec": 5.0,
+                "actual_nec": 5.0,
+                "per_class_connections": [
+                  5,
+                  3,
+                  6,
+                  4,
+                  5,
+                  7,
+                  5,
+                  3,
+                  8,
+                  4
+                ],
+                "accuracy": 0.8288527073078379
+              },
+              {
+                "head": "8",
+                "view": "original",
+                "requested_nec": 8.0,
+                "actual_nec": 8.0,
+                "per_class_connections": [
+                  9,
+                  5,
+                  9,
+                  6,
+                  10,
+                  9,
+                  8,
+                  8,
+                  10,
+                  6
+                ],
+                "accuracy": 0.9163195759182128
+              },
+              {
+                "head": "8",
+                "view": "changed",
+                "requested_nec": 8.0,
+                "actual_nec": 8.0,
+                "per_class_connections": [
+                  9,
+                  5,
+                  9,
+                  6,
+                  10,
+                  9,
+                  8,
+                  8,
+                  10,
+                  6
+                ],
+                "accuracy": 0.8489208633093526
+              },
+              {
+                "head": "12",
+                "view": "original",
+                "requested_nec": 12.0,
+                "actual_nec": 12.0,
+                "per_class_connections": [
+                  12,
+                  12,
+                  13,
+                  11,
+                  11,
+                  11,
+                  13,
+                  12,
+                  14,
+                  11
+                ],
+                "accuracy": 0.9174555092767891
+              },
+              {
+                "head": "12",
+                "view": "changed",
+                "requested_nec": 12.0,
+                "actual_nec": 12.0,
+                "per_class_connections": [
+                  12,
+                  12,
+                  13,
+                  11,
+                  11,
+                  11,
+                  13,
+                  12,
+                  14,
+                  11
+                ],
+                "accuracy": 0.854600530102234
+              },
+              {
+                "head": "14",
+                "view": "original",
+                "requested_nec": 14.0,
+                "actual_nec": 13.8,
+                "per_class_connections": [
+                  14,
+                  14,
+                  14,
+                  14,
+                  13,
+                  13,
+                  14,
+                  14,
+                  14,
+                  14
+                ],
+                "accuracy": 0.9176448315032185
+              },
+              {
+                "head": "14",
+                "view": "changed",
+                "requested_nec": 14.0,
+                "actual_nec": 13.8,
+                "per_class_connections": [
+                  14,
+                  14,
+                  14,
+                  14,
+                  13,
+                  13,
+                  14,
+                  14,
+                  14,
+                  14
+                ],
+                "accuracy": 0.8538432411965164
+              },
+              {
+                "head": "best_val",
+                "view": "original",
+                "requested_nec": null,
+                "actual_nec": 13.8,
+                "per_class_connections": [
+                  14,
+                  14,
+                  14,
+                  14,
+                  13,
+                  13,
+                  14,
+                  14,
+                  14,
+                  14
+                ],
+                "accuracy": 0.9176448315032185
+              },
+              {
+                "head": "best_val",
+                "view": "changed",
+                "requested_nec": null,
+                "actual_nec": 13.8,
+                "per_class_connections": [
+                  14,
+                  14,
+                  14,
+                  14,
+                  13,
+                  13,
+                  14,
+                  14,
+                  14,
+                  14
+                ],
+                "accuracy": 0.8538432411965164
+              },
+              {
+                "head": "dense",
+                "view": "original",
+                "requested_nec": null,
+                "actual_nec": 14.0,
+                "per_class_connections": [
+                  14,
+                  14,
+                  14,
+                  14,
+                  14,
+                  14,
+                  14,
+                  14,
+                  14,
+                  14
+                ],
+                "accuracy": 0.9191594093146536
+              },
+              {
+                "head": "dense",
+                "view": "changed",
+                "requested_nec": null,
+                "actual_nec": 14.0,
+                "per_class_connections": [
+                  14,
+                  14,
+                  14,
+                  14,
+                  14,
+                  14,
+                  14,
+                  14,
+                  14,
+                  14
+                ],
+                "accuracy": 0.8549791745550928
+              }
+            ]
+          },
+          {
+            "seed": 44,
+            "directory": "/home/pengcheng/Pi-CBM-Benchmark/artifacts/heads/rival10/resnet18/paired/seed44/lfcbm",
+            "concept_count": 14,
+            "unconverged_path_points": 0,
+            "evaluations": [
+              {
+                "head": "1",
+                "view": "original",
+                "requested_nec": 1.0,
+                "actual_nec": 1.0,
+                "per_class_connections": [
+                  2,
+                  1,
+                  2,
+                  0,
+                  1,
+                  1,
+                  1,
+                  1,
+                  0,
+                  1
+                ],
+                "accuracy": 0.5957970465732677
+              },
+              {
+                "head": "1",
+                "view": "changed",
+                "requested_nec": 1.0,
+                "actual_nec": 1.0,
+                "per_class_connections": [
+                  2,
+                  1,
+                  2,
+                  0,
+                  1,
+                  1,
+                  1,
+                  1,
+                  0,
+                  1
+                ],
+                "accuracy": 0.5346459674365771
+              },
+              {
+                "head": "2",
+                "view": "original",
+                "requested_nec": 2.0,
+                "actual_nec": 2.0,
+                "per_class_connections": [
+                  3,
+                  2,
+                  2,
+                  2,
+                  3,
+                  3,
+                  1,
+                  1,
+                  2,
+                  1
+                ],
+                "accuracy": 0.7807648617947747
+              },
+              {
+                "head": "2",
+                "view": "changed",
+                "requested_nec": 2.0,
+                "actual_nec": 2.0,
+                "per_class_connections": [
+                  3,
+                  2,
+                  2,
+                  2,
+                  3,
+                  3,
+                  1,
+                  1,
+                  2,
+                  1
+                ],
+                "accuracy": 0.6995456266565695
+              },
+              {
+                "head": "3",
+                "view": "original",
+                "requested_nec": 3.0,
+                "actual_nec": 3.0,
+                "per_class_connections": [
+                  5,
+                  3,
+                  3,
+                  2,
+                  3,
+                  5,
+                  2,
+                  2,
+                  3,
+                  2
+                ],
+                "accuracy": 0.8652025747822795
+              },
+              {
+                "head": "3",
+                "view": "changed",
+                "requested_nec": 3.0,
+                "actual_nec": 3.0,
+                "per_class_connections": [
+                  5,
+                  3,
+                  3,
+                  2,
+                  3,
+                  5,
+                  2,
+                  2,
+                  3,
+                  2
+                ],
+                "accuracy": 0.7885270730783794
+              },
+              {
+                "head": "5",
+                "view": "original",
+                "requested_nec": 5.0,
+                "actual_nec": 5.0,
+                "per_class_connections": [
+                  6,
+                  3,
+                  6,
+                  4,
+                  5,
+                  7,
+                  5,
+                  3,
+                  7,
+                  4
+                ],
+                "accuracy": 0.8937902309731163
+              },
+              {
+                "head": "5",
+                "view": "changed",
+                "requested_nec": 5.0,
+                "actual_nec": 5.0,
+                "per_class_connections": [
+                  6,
+                  3,
+                  6,
+                  4,
+                  5,
+                  7,
+                  5,
+                  3,
+                  7,
+                  4
+                ],
+                "accuracy": 0.8286633850814086
+              },
+              {
+                "head": "8",
+                "view": "original",
+                "requested_nec": 8.0,
+                "actual_nec": 8.0,
+                "per_class_connections": [
+                  9,
+                  4,
+                  8,
+                  6,
+                  8,
+                  9,
+                  9,
+                  8,
+                  12,
+                  7
+                ],
+                "accuracy": 0.9125331313896251
+              },
+              {
+                "head": "8",
+                "view": "changed",
+                "requested_nec": 8.0,
+                "actual_nec": 8.0,
+                "per_class_connections": [
+                  9,
+                  4,
+                  8,
+                  6,
+                  8,
+                  9,
+                  9,
+                  8,
+                  12,
+                  7
+                ],
+                "accuracy": 0.848163574403635
+              },
+              {
+                "head": "12",
+                "view": "original",
+                "requested_nec": 12.0,
+                "actual_nec": 12.0,
+                "per_class_connections": [
+                  12,
+                  10,
+                  13,
+                  11,
+                  13,
+                  10,
+                  13,
+                  12,
+                  14,
+                  12
+                ],
+                "accuracy": 0.9172661870503597
+              },
+              {
+                "head": "12",
+                "view": "changed",
+                "requested_nec": 12.0,
+                "actual_nec": 12.0,
+                "per_class_connections": [
+                  12,
+                  10,
+                  13,
+                  11,
+                  13,
+                  10,
+                  13,
+                  12,
+                  14,
+                  12
+                ],
+                "accuracy": 0.8561151079136691
+              },
+              {
+                "head": "14",
+                "view": "original",
+                "requested_nec": 14.0,
+                "actual_nec": 13.9,
+                "per_class_connections": [
+                  14,
+                  14,
+                  14,
+                  14,
+                  14,
+                  13,
+                  14,
+                  14,
+                  14,
+                  14
+                ],
+                "accuracy": 0.9176448315032185
+              },
+              {
+                "head": "14",
+                "view": "changed",
+                "requested_nec": 14.0,
+                "actual_nec": 13.9,
+                "per_class_connections": [
+                  14,
+                  14,
+                  14,
+                  14,
+                  14,
+                  13,
+                  14,
+                  14,
+                  14,
+                  14
+                ],
+                "accuracy": 0.8578190079515335
+              },
+              {
+                "head": "best_val",
+                "view": "original",
+                "requested_nec": null,
+                "actual_nec": 13.9,
+                "per_class_connections": [
+                  14,
+                  14,
+                  14,
+                  14,
+                  14,
+                  13,
+                  14,
+                  14,
+                  14,
+                  14
+                ],
+                "accuracy": 0.9176448315032185
+              },
+              {
+                "head": "best_val",
+                "view": "changed",
+                "requested_nec": null,
+                "actual_nec": 13.9,
+                "per_class_connections": [
+                  14,
+                  14,
+                  14,
+                  14,
+                  14,
+                  13,
+                  14,
+                  14,
+                  14,
+                  14
+                ],
+                "accuracy": 0.8578190079515335
+              },
+              {
+                "head": "dense",
+                "view": "original",
+                "requested_nec": null,
+                "actual_nec": 14.0,
+                "per_class_connections": [
+                  14,
+                  14,
+                  14,
+                  14,
+                  14,
+                  14,
+                  14,
+                  14,
+                  14,
+                  14
+                ],
+                "accuracy": 0.9168875425975009
+              },
+              {
+                "head": "dense",
+                "view": "changed",
+                "requested_nec": null,
+                "actual_nec": 14.0,
+                "per_class_connections": [
+                  14,
+                  14,
+                  14,
+                  14,
+                  14,
+                  14,
+                  14,
+                  14,
+                  14,
+                  14
+                ],
+                "accuracy": 0.8576296857251041
+              }
+            ]
+          }
+        ],
+        "aggregate": [
+          {
+            "head": "1",
+            "view": "original",
+            "requested_nec": 1.0,
+            "actual_nec": {
+              "mean": 1.0,
+              "std": 0.0,
+              "values": [
+                1.0,
+                1.0,
+                1.0
+              ],
+              "seeds": [
+                42,
+                43,
+                44
+              ],
+              "n": 3
+            },
+            "accuracy": {
+              "mean": 0.5986368799697085,
+              "std": 0.0059297462186163885,
+              "values": [
+                0.5946611132146914,
+                0.6054524801211663,
+                0.5957970465732677
+              ],
+              "seeds": [
+                42,
+                43,
+                44
+              ],
+              "n": 3
+            }
+          },
+          {
+            "head": "1",
+            "view": "changed",
+            "requested_nec": 1.0,
+            "actual_nec": {
+              "mean": 1.0,
+              "std": 0.0,
+              "values": [
+                1.0,
+                1.0,
+                1.0
+              ],
+              "seeds": [
+                42,
+                43,
+                44
+              ],
+              "n": 3
+            },
+            "accuracy": {
+              "mean": 0.5344566452101477,
+              "std": 0.0018060189349052833,
+              "values": [
+                0.5325634229458538,
+                0.5361605452480122,
+                0.5346459674365771
+              ],
+              "seeds": [
+                42,
+                43,
+                44
+              ],
+              "n": 3
+            }
+          },
+          {
+            "head": "2",
+            "view": "original",
+            "requested_nec": 2.0,
+            "actual_nec": {
+              "mean": 2.0,
+              "std": 0.0,
+              "values": [
+                2.0,
+                2.0,
+                2.0
+              ],
+              "seeds": [
+                42,
+                43,
+                44
+              ],
+              "n": 3
+            },
+            "accuracy": {
+              "mean": 0.7779881358071438,
+              "std": 0.0066944439209215036,
+              "values": [
+                0.7828474062854979,
+                0.7703521393411586,
+                0.7807648617947747
+              ],
+              "seeds": [
+                42,
+                43,
+                44
+              ],
+              "n": 3
+            }
+          },
+          {
+            "head": "2",
+            "view": "changed",
+            "requested_nec": 2.0,
+            "actual_nec": {
+              "mean": 2.0,
+              "std": 0.0,
+              "values": [
+                2.0,
+                2.0,
+                2.0
+              ],
+              "seeds": [
+                42,
+                43,
+                44
+              ],
+              "n": 3
+            },
+            "accuracy": {
+              "mean": 0.6958222895367916,
+              "std": 0.00345134643793394,
+              "values": [
+                0.6951912154486937,
+                0.6927300265051117,
+                0.6995456266565695
+              ],
+              "seeds": [
+                42,
+                43,
+                44
+              ],
+              "n": 3
+            }
+          },
+          {
+            "head": "3",
+            "view": "original",
+            "requested_nec": 3.0,
+            "actual_nec": {
+              "mean": 3.0,
+              "std": 0.0,
+              "values": [
+                3.0,
+                3.0,
+                3.0
+              ],
+              "seeds": [
+                42,
+                43,
+                44
+              ],
+              "n": 3
+            },
+            "accuracy": {
+              "mean": 0.847280070680298,
+              "std": 0.017270227666028194,
+              "values": [
+                0.8458917076864824,
+                0.8307459295721318,
+                0.8652025747822795
+              ],
+              "seeds": [
+                42,
+                43,
+                44
+              ],
+              "n": 3
+            }
+          },
+          {
+            "head": "3",
+            "view": "changed",
+            "requested_nec": 3.0,
+            "actual_nec": {
+              "mean": 3.0,
+              "std": 0.0,
+              "values": [
+                3.0,
+                3.0,
+                3.0
+              ],
+              "seeds": [
+                42,
+                43,
+                44
+              ],
+              "n": 3
+            },
+            "accuracy": {
+              "mean": 0.7761580209516598,
+              "std": 0.011081955675992947,
+              "values": [
+                0.7671336614918591,
+                0.7728133282847406,
+                0.7885270730783794
+              ],
+              "seeds": [
+                42,
+                43,
+                44
+              ],
+              "n": 3
+            }
+          },
+          {
+            "head": "5",
+            "view": "original",
+            "requested_nec": 5.0,
+            "actual_nec": {
+              "mean": 5.0,
+              "std": 0.0,
+              "values": [
+                5.0,
+                5.0,
+                5.0
+              ],
+              "seeds": [
+                42,
+                43,
+                44
+              ],
+              "n": 3
+            },
+            "accuracy": {
+              "mean": 0.8964407421431275,
+              "std": 0.00442787412477338,
+              "values": [
+                0.9015524422567209,
+                0.8939795531995456,
+                0.8937902309731163
+              ],
+              "seeds": [
+                42,
+                43,
+                44
+              ],
+              "n": 3
+            }
+          },
+          {
+            "head": "5",
+            "view": "changed",
+            "requested_nec": 5.0,
+            "actual_nec": {
+              "mean": 5.0,
+              "std": 0.0,
+              "values": [
+                5.0,
+                5.0,
+                5.0
+              ],
+              "seeds": [
+                42,
+                43,
+                44
+              ],
+              "n": 3
+            },
+            "accuracy": {
+              "mean": 0.8300517480752241,
+              "std": 0.002242755981814561,
+              "values": [
+                0.8326391518364256,
+                0.8288527073078379,
+                0.8286633850814086
+              ],
+              "seeds": [
+                42,
+                43,
+                44
+              ],
+              "n": 3
+            }
+          },
+          {
+            "head": "8",
+            "view": "original",
+            "requested_nec": 8.0,
+            "actual_nec": {
+              "mean": 8.0,
+              "std": 0.0,
+              "values": [
+                8.0,
+                8.0,
+                8.0
+              ],
+              "seeds": [
+                42,
+                43,
+                44
+              ],
+              "n": 3
+            },
+            "accuracy": {
+              "mean": 0.9149943203332072,
+              "std": 0.002133553136990685,
+              "values": [
+                0.9161302536917835,
+                0.9163195759182128,
+                0.9125331313896251
+              ],
+              "seeds": [
+                42,
+                43,
+                44
+              ],
+              "n": 3
+            }
+          },
+          {
+            "head": "8",
+            "view": "changed",
+            "requested_nec": 8.0,
+            "actual_nec": {
+              "mean": 8.0,
+              "std": 0.0,
+              "values": [
+                8.0,
+                8.0,
+                8.0
+              ],
+              "seeds": [
+                42,
+                43,
+                44
+              ],
+              "n": 3
+            },
+            "accuracy": {
+              "mean": 0.8474062854979175,
+              "std": 0.002003598115156828,
+              "values": [
+                0.8451344187807649,
+                0.8489208633093526,
+                0.848163574403635
+              ],
+              "seeds": [
+                42,
+                43,
+                44
+              ],
+              "n": 3
+            }
+          },
+          {
+            "head": "12",
+            "view": "original",
+            "requested_nec": 12.0,
+            "actual_nec": {
+              "mean": 12.0,
+              "std": 0.0,
+              "values": [
+                12.0,
+                12.0,
+                12.0
+              ],
+              "seeds": [
+                42,
+                43,
+                44
+              ],
+              "n": 3
+            },
+            "accuracy": {
+              "mean": 0.9197904834027515,
+              "std": 0.004209316204885078,
+              "values": [
+                0.9246497538811056,
+                0.9174555092767891,
+                0.9172661870503597
+              ],
+              "seeds": [
+                42,
+                43,
+                44
+              ],
+              "n": 3
+            }
+          },
+          {
+            "head": "12",
+            "view": "changed",
+            "requested_nec": 12.0,
+            "actual_nec": {
+              "mean": 12.0,
+              "std": 0.0,
+              "values": [
+                12.0,
+                12.0,
+                12.0
+              ],
+              "seeds": [
+                42,
+                43,
+                44
+              ],
+              "n": 3
+            },
+            "accuracy": {
+              "mean": 0.8550422819639025,
+              "std": 0.0009339043662090632,
+              "values": [
+                0.8544112078758046,
+                0.854600530102234,
+                0.8561151079136691
+              ],
+              "seeds": [
+                42,
+                43,
+                44
+              ],
+              "n": 3
+            }
+          },
+          {
+            "head": "14",
+            "view": "original",
+            "requested_nec": 14.0,
+            "actual_nec": {
+              "mean": 13.799999999999999,
+              "std": 0.10000000000000053,
+              "values": [
+                13.7,
+                13.8,
+                13.9
+              ],
+              "seeds": [
+                42,
+                43,
+                44
+              ],
+              "n": 3
+            },
+            "accuracy": {
+              "mean": 0.9203584500820395,
+              "std": 0.004700125250881049,
+              "values": [
+                0.9257856872396819,
+                0.9176448315032185,
+                0.9176448315032185
+              ],
+              "seeds": [
+                42,
+                43,
+                44
+              ],
+              "n": 3
+            }
+          },
+          {
+            "head": "14",
+            "view": "changed",
+            "requested_nec": 14.0,
+            "actual_nec": {
+              "mean": 13.799999999999999,
+              "std": 0.10000000000000053,
+              "values": [
+                13.7,
+                13.8,
+                13.9
+              ],
+              "seeds": [
+                42,
+                43,
+                44
+              ],
+              "n": 3
+            },
+            "accuracy": {
+              "mean": 0.8552947115991417,
+              "std": 0.0021942873470546277,
+              "values": [
+                0.8542218856493753,
+                0.8538432411965164,
+                0.8578190079515335
+              ],
+              "seeds": [
+                42,
+                43,
+                44
+              ],
+              "n": 3
+            }
+          },
+          {
+            "head": "best_val",
+            "view": "original",
+            "requested_nec": null,
+            "actual_nec": {
+              "mean": 13.799999999999999,
+              "std": 0.10000000000000053,
+              "values": [
+                13.7,
+                13.8,
+                13.9
+              ],
+              "seeds": [
+                42,
+                43,
+                44
+              ],
+              "n": 3
+            },
+            "accuracy": {
+              "mean": 0.9204215574908495,
+              "std": 0.004809430489273655,
+              "values": [
+                0.9259750094661113,
+                0.9176448315032185,
+                0.9176448315032185
+              ],
+              "seeds": [
+                42,
+                43,
+                44
+              ],
+              "n": 3
+            }
+          },
+          {
+            "head": "best_val",
+            "view": "changed",
+            "requested_nec": null,
+            "actual_nec": {
+              "mean": 13.799999999999999,
+              "std": 0.10000000000000053,
+              "values": [
+                13.7,
+                13.8,
+                13.9
+              ],
+              "seeds": [
+                42,
+                43,
+                44
+              ],
+              "n": 3
+            },
+            "accuracy": {
+              "mean": 0.8555471412343808,
+              "std": 0.0020478329849284594,
+              "values": [
+                0.8549791745550928,
+                0.8538432411965164,
+                0.8578190079515335
+              ],
+              "seeds": [
+                42,
+                43,
+                44
+              ],
+              "n": 3
+            }
+          },
+          {
+            "head": "dense",
+            "view": "original",
+            "requested_nec": null,
+            "actual_nec": {
+              "mean": 14.0,
+              "std": 0.0,
+              "values": [
+                14.0,
+                14.0,
+                14.0
+              ],
+              "seeds": [
+                42,
+                43,
+                44
+              ],
+              "n": 3
+            },
+            "accuracy": {
+              "mean": 0.9205477723084691,
+              "std": 0.004517362152763694,
+              "values": [
+                0.9255963650132526,
+                0.9191594093146536,
+                0.9168875425975009
+              ],
+              "seeds": [
+                42,
+                43,
+                44
+              ],
+              "n": 3
+            }
+          },
+          {
+            "head": "dense",
+            "view": "changed",
+            "requested_nec": null,
+            "actual_nec": {
+              "mean": 14.0,
+              "std": 0.0,
+              "values": [
+                14.0,
+                14.0,
+                14.0
+              ],
+              "seeds": [
+                42,
+                43,
+                44
+              ],
+              "n": 3
+            },
+            "accuracy": {
+              "mean": 0.8557995708696201,
+              "std": 0.0015877502998118426,
+              "values": [
+                0.8547898523286633,
+                0.8549791745550928,
+                0.8576296857251041
+              ],
+              "seeds": [
+                42,
+                43,
+                44
+              ],
+              "n": 3
+            }
+          }
+        ]
+      },
+      "LF-Pi": {
+        "per_seed": [
+          {
+            "seed": 42,
+            "directory": "/home/pengcheng/Pi-CBM-Benchmark/artifacts/heads/rival10/resnet18/paired/seed42/lfpi_global_1draw",
+            "concept_count": 14,
+            "unconverged_path_points": 0,
+            "evaluations": [
+              {
+                "head": "1",
+                "view": "original",
+                "requested_nec": 1.0,
+                "actual_nec": 1.0,
+                "per_class_connections": [
+                  1,
+                  1,
+                  1,
+                  0,
+                  1,
+                  1,
+                  1,
+                  1,
+                  2,
+                  1
+                ],
+                "accuracy": 0.7076864823930329
+              },
+              {
+                "head": "1",
+                "view": "changed",
+                "requested_nec": 1.0,
+                "actual_nec": 1.0,
+                "per_class_connections": [
+                  1,
+                  1,
+                  1,
+                  0,
+                  1,
+                  1,
+                  1,
+                  1,
+                  2,
+                  1
+                ],
+                "accuracy": 0.6183263915183642
+              },
+              {
+                "head": "2",
+                "view": "original",
+                "requested_nec": 2.0,
+                "actual_nec": 2.0,
+                "per_class_connections": [
+                  4,
+                  2,
+                  2,
+                  2,
+                  2,
+                  3,
+                  1,
+                  1,
+                  2,
+                  1
+                ],
+                "accuracy": 0.9127224536160545
+              },
+              {
+                "head": "2",
+                "view": "changed",
+                "requested_nec": 2.0,
+                "actual_nec": 2.0,
+                "per_class_connections": [
+                  4,
+                  2,
+                  2,
+                  2,
+                  2,
+                  3,
+                  1,
+                  1,
+                  2,
+                  1
+                ],
+                "accuracy": 0.8366149185914427
+              },
+              {
+                "head": "3",
+                "view": "original",
+                "requested_nec": 3.0,
+                "actual_nec": 3.0,
+                "per_class_connections": [
+                  4,
+                  3,
+                  3,
+                  2,
+                  4,
+                  6,
+                  2,
+                  1,
+                  4,
+                  1
+                ],
+                "accuracy": 0.9526694433926542
+              },
+              {
+                "head": "3",
+                "view": "changed",
+                "requested_nec": 3.0,
+                "actual_nec": 3.0,
+                "per_class_connections": [
+                  4,
+                  3,
+                  3,
+                  2,
+                  4,
+                  6,
+                  2,
+                  1,
+                  4,
+                  1
+                ],
+                "accuracy": 0.8884892086330936
+              },
+              {
+                "head": "5",
+                "view": "original",
+                "requested_nec": 5.0,
+                "actual_nec": 5.0,
+                "per_class_connections": [
+                  5,
+                  3,
+                  5,
+                  5,
+                  5,
+                  7,
+                  4,
+                  4,
+                  9,
+                  3
+                ],
+                "accuracy": 0.96932979931844
+              },
+              {
+                "head": "5",
+                "view": "changed",
+                "requested_nec": 5.0,
+                "actual_nec": 5.0,
+                "per_class_connections": [
+                  5,
+                  3,
+                  5,
+                  5,
+                  5,
+                  7,
+                  4,
+                  4,
+                  9,
+                  3
+                ],
+                "accuracy": 0.9218099204846649
+              },
+              {
+                "head": "8",
+                "view": "original",
+                "requested_nec": 8.0,
+                "actual_nec": 8.0,
+                "per_class_connections": [
+                  13,
+                  4,
+                  8,
+                  7,
+                  11,
+                  8,
+                  6,
+                  6,
+                  11,
+                  6
+                ],
+                "accuracy": 0.974252177205604
+              },
+              {
+                "head": "8",
+                "view": "changed",
+                "requested_nec": 8.0,
+                "actual_nec": 8.0,
+                "per_class_connections": [
+                  13,
+                  4,
+                  8,
+                  7,
+                  11,
+                  8,
+                  6,
+                  6,
+                  11,
+                  6
+                ],
+                "accuracy": 0.9308973873532753
+              },
+              {
+                "head": "12",
+                "view": "original",
+                "requested_nec": 12.0,
+                "actual_nec": 12.0,
+                "per_class_connections": [
+                  14,
+                  11,
+                  14,
+                  12,
+                  12,
+                  14,
+                  12,
+                  9,
+                  12,
+                  10
+                ],
+                "accuracy": 0.9748201438848921
+              },
+              {
+                "head": "12",
+                "view": "changed",
+                "requested_nec": 12.0,
+                "actual_nec": 12.0,
+                "per_class_connections": [
+                  14,
+                  11,
+                  14,
+                  12,
+                  12,
+                  14,
+                  12,
+                  9,
+                  12,
+                  10
+                ],
+                "accuracy": 0.9360090874668686
+              },
+              {
+                "head": "14",
+                "view": "original",
+                "requested_nec": 14.0,
+                "actual_nec": 14.0,
+                "per_class_connections": [
+                  14,
+                  14,
+                  14,
+                  14,
+                  14,
+                  14,
+                  14,
+                  14,
+                  14,
+                  14
+                ],
+                "accuracy": 0.9744414994320333
+              },
+              {
+                "head": "14",
+                "view": "changed",
+                "requested_nec": 14.0,
+                "actual_nec": 14.0,
+                "per_class_connections": [
+                  14,
+                  14,
+                  14,
+                  14,
+                  14,
+                  14,
+                  14,
+                  14,
+                  14,
+                  14
+                ],
+                "accuracy": 0.9365770541461568
+              },
+              {
+                "head": "best_val",
+                "view": "original",
+                "requested_nec": null,
+                "actual_nec": 14.0,
+                "per_class_connections": [
+                  14,
+                  14,
+                  14,
+                  14,
+                  14,
+                  14,
+                  14,
+                  14,
+                  14,
+                  14
+                ],
+                "accuracy": 0.9744414994320333
+              },
+              {
+                "head": "best_val",
+                "view": "changed",
+                "requested_nec": null,
+                "actual_nec": 14.0,
+                "per_class_connections": [
+                  14,
+                  14,
+                  14,
+                  14,
+                  14,
+                  14,
+                  14,
+                  14,
+                  14,
+                  14
+                ],
+                "accuracy": 0.9365770541461568
+              },
+              {
+                "head": "dense",
+                "view": "original",
+                "requested_nec": null,
+                "actual_nec": 14.0,
+                "per_class_connections": [
+                  14,
+                  14,
+                  14,
+                  14,
+                  14,
+                  14,
+                  14,
+                  14,
+                  14,
+                  14
+                ],
+                "accuracy": 0.973305566073457
+              },
+              {
+                "head": "dense",
+                "view": "changed",
+                "requested_nec": null,
+                "actual_nec": 14.0,
+                "per_class_connections": [
+                  14,
+                  14,
+                  14,
+                  14,
+                  14,
+                  14,
+                  14,
+                  14,
+                  14,
+                  14
+                ],
+                "accuracy": 0.9356304430140099
+              }
+            ]
+          },
+          {
+            "seed": 43,
+            "directory": "/home/pengcheng/Pi-CBM-Benchmark/artifacts/heads/rival10/resnet18/paired/seed43/lfpi_global_1draw",
+            "concept_count": 14,
+            "unconverged_path_points": 0,
+            "evaluations": [
+              {
+                "head": "1",
+                "view": "original",
+                "requested_nec": 1.0,
+                "actual_nec": 1.0,
+                "per_class_connections": [
+                  0,
+                  1,
+                  1,
+                  0,
+                  1,
+                  2,
+                  1,
+                  1,
+                  2,
+                  1
+                ],
+                "accuracy": 0.7417644831503218
+              },
+              {
+                "head": "1",
+                "view": "changed",
+                "requested_nec": 1.0,
+                "actual_nec": 1.0,
+                "per_class_connections": [
+                  0,
+                  1,
+                  1,
+                  0,
+                  1,
+                  2,
+                  1,
+                  1,
+                  2,
+                  1
+                ],
+                "accuracy": 0.6330935251798561
+              },
+              {
+                "head": "2",
+                "view": "original",
+                "requested_nec": 2.0,
+                "actual_nec": 2.0,
+                "per_class_connections": [
+                  3,
+                  2,
+                  2,
+                  2,
+                  3,
+                  2,
+                  1,
+                  1,
+                  3,
+                  1
+                ],
+                "accuracy": 0.7943960620976903
+              },
+              {
+                "head": "2",
+                "view": "changed",
+                "requested_nec": 2.0,
+                "actual_nec": 2.0,
+                "per_class_connections": [
+                  3,
+                  2,
+                  2,
+                  2,
+                  3,
+                  2,
+                  1,
+                  1,
+                  3,
+                  1
+                ],
+                "accuracy": 0.6703900037864445
+              },
+              {
+                "head": "3",
+                "view": "original",
+                "requested_nec": 3.0,
+                "actual_nec": 3.0,
+                "per_class_connections": [
+                  4,
+                  3,
+                  4,
+                  2,
+                  4,
+                  5,
+                  2,
+                  1,
+                  4,
+                  1
+                ],
+                "accuracy": 0.9503975766755017
+              },
+              {
+                "head": "3",
+                "view": "changed",
+                "requested_nec": 3.0,
+                "actual_nec": 3.0,
+                "per_class_connections": [
+                  4,
+                  3,
+                  4,
+                  2,
+                  4,
+                  5,
+                  2,
+                  1,
+                  4,
+                  1
+                ],
+                "accuracy": 0.8856493752366528
+              },
+              {
+                "head": "5",
+                "view": "original",
+                "requested_nec": 5.0,
+                "actual_nec": 5.0,
+                "per_class_connections": [
+                  5,
+                  3,
+                  4,
+                  6,
+                  5,
+                  7,
+                  4,
+                  3,
+                  10,
+                  3
+                ],
+                "accuracy": 0.9704657326770163
+              },
+              {
+                "head": "5",
+                "view": "changed",
+                "requested_nec": 5.0,
+                "actual_nec": 5.0,
+                "per_class_connections": [
+                  5,
+                  3,
+                  4,
+                  6,
+                  5,
+                  7,
+                  4,
+                  3,
+                  10,
+                  3
+                ],
+                "accuracy": 0.9225672093903824
+              },
+              {
+                "head": "8",
+                "view": "original",
+                "requested_nec": 8.0,
+                "actual_nec": 8.0,
+                "per_class_connections": [
+                  13,
+                  4,
+                  7,
+                  8,
+                  9,
+                  8,
+                  7,
+                  6,
+                  11,
+                  7
+                ],
+                "accuracy": 0.9736842105263158
+              },
+              {
+                "head": "8",
+                "view": "changed",
+                "requested_nec": 8.0,
+                "actual_nec": 8.0,
+                "per_class_connections": [
+                  13,
+                  4,
+                  7,
+                  8,
+                  9,
+                  8,
+                  7,
+                  6,
+                  11,
+                  7
+                ],
+                "accuracy": 0.9295721317682696
+              },
+              {
+                "head": "12",
+                "view": "original",
+                "requested_nec": 12.0,
+                "actual_nec": 12.0,
+                "per_class_connections": [
+                  14,
+                  14,
+                  9,
+                  11,
+                  12,
+                  14,
+                  13,
+                  10,
+                  12,
+                  11
+                ],
+                "accuracy": 0.9753881105641803
+              },
+              {
+                "head": "12",
+                "view": "changed",
+                "requested_nec": 12.0,
+                "actual_nec": 12.0,
+                "per_class_connections": [
+                  14,
+                  14,
+                  9,
+                  11,
+                  12,
+                  14,
+                  13,
+                  10,
+                  12,
+                  11
+                ],
+                "accuracy": 0.9324119651647104
+              },
+              {
+                "head": "14",
+                "view": "original",
+                "requested_nec": 14.0,
+                "actual_nec": 13.6,
+                "per_class_connections": [
+                  14,
+                  14,
+                  14,
+                  13,
+                  13,
+                  14,
+                  14,
+                  14,
+                  13,
+                  13
+                ],
+                "accuracy": 0.9750094661113214
+              },
+              {
+                "head": "14",
+                "view": "changed",
+                "requested_nec": 14.0,
+                "actual_nec": 13.6,
+                "per_class_connections": [
+                  14,
+                  14,
+                  14,
+                  13,
+                  13,
+                  14,
+                  14,
+                  14,
+                  13,
+                  13
+                ],
+                "accuracy": 0.9335478985232867
+              },
+              {
+                "head": "best_val",
+                "view": "original",
+                "requested_nec": null,
+                "actual_nec": 13.3,
+                "per_class_connections": [
+                  14,
+                  14,
+                  13,
+                  12,
+                  13,
+                  14,
+                  14,
+                  13,
+                  13,
+                  13
+                ],
+                "accuracy": 0.9750094661113214
+              },
+              {
+                "head": "best_val",
+                "view": "changed",
+                "requested_nec": null,
+                "actual_nec": 13.3,
+                "per_class_connections": [
+                  14,
+                  14,
+                  13,
+                  12,
+                  13,
+                  14,
+                  14,
+                  13,
+                  13,
+                  13
+                ],
+                "accuracy": 0.9331692540704278
+              },
+              {
+                "head": "dense",
+                "view": "original",
+                "requested_nec": null,
+                "actual_nec": 14.0,
+                "per_class_connections": [
+                  14,
+                  14,
+                  14,
+                  14,
+                  14,
+                  14,
+                  14,
+                  14,
+                  14,
+                  14
+                ],
+                "accuracy": 0.9759560772434683
+              },
+              {
+                "head": "dense",
+                "view": "changed",
+                "requested_nec": null,
+                "actual_nec": 14.0,
+                "per_class_connections": [
+                  14,
+                  14,
+                  14,
+                  14,
+                  14,
+                  14,
+                  14,
+                  14,
+                  14,
+                  14
+                ],
+                "accuracy": 0.9346838318818629
+              }
+            ]
+          },
+          {
+            "seed": 44,
+            "directory": "/home/pengcheng/Pi-CBM-Benchmark/artifacts/heads/rival10/resnet18/paired/seed44/lfpi_global_1draw",
+            "concept_count": 14,
+            "unconverged_path_points": 0,
+            "evaluations": [
+              {
+                "head": "1",
+                "view": "original",
+                "requested_nec": 1.0,
+                "actual_nec": 1.0,
+                "per_class_connections": [
+                  1,
+                  1,
+                  1,
+                  0,
+                  1,
+                  2,
+                  1,
+                  1,
+                  1,
+                  1
+                ],
+                "accuracy": 0.6972737599394169
+              },
+              {
+                "head": "1",
+                "view": "changed",
+                "requested_nec": 1.0,
+                "actual_nec": 1.0,
+                "per_class_connections": [
+                  1,
+                  1,
+                  1,
+                  0,
+                  1,
+                  2,
+                  1,
+                  1,
+                  1,
+                  1
+                ],
+                "accuracy": 0.6060204468004544
+              },
+              {
+                "head": "2",
+                "view": "original",
+                "requested_nec": 2.0,
+                "actual_nec": 2.0,
+                "per_class_connections": [
+                  4,
+                  2,
+                  2,
+                  2,
+                  3,
+                  2,
+                  1,
+                  1,
+                  2,
+                  1
+                ],
+                "accuracy": 0.8970087088224158
+              },
+              {
+                "head": "2",
+                "view": "changed",
+                "requested_nec": 2.0,
+                "actual_nec": 2.0,
+                "per_class_connections": [
+                  4,
+                  2,
+                  2,
+                  2,
+                  3,
+                  2,
+                  1,
+                  1,
+                  2,
+                  1
+                ],
+                "accuracy": 0.8199545626656569
+              },
+              {
+                "head": "3",
+                "view": "original",
+                "requested_nec": 3.0,
+                "actual_nec": 3.0,
+                "per_class_connections": [
+                  5,
+                  3,
+                  3,
+                  2,
+                  4,
+                  4,
+                  2,
+                  1,
+                  4,
+                  2
+                ],
+                "accuracy": 0.9513441878076486
+              },
+              {
+                "head": "3",
+                "view": "changed",
+                "requested_nec": 3.0,
+                "actual_nec": 3.0,
+                "per_class_connections": [
+                  5,
+                  3,
+                  3,
+                  2,
+                  4,
+                  4,
+                  2,
+                  1,
+                  4,
+                  2
+                ],
+                "accuracy": 0.8873532752745172
+              },
+              {
+                "head": "5",
+                "view": "original",
+                "requested_nec": 5.0,
+                "actual_nec": 5.0,
+                "per_class_connections": [
+                  6,
+                  3,
+                  5,
+                  4,
+                  5,
+                  7,
+                  4,
+                  4,
+                  8,
+                  4
+                ],
+                "accuracy": 0.9697084437712987
+              },
+              {
+                "head": "5",
+                "view": "changed",
+                "requested_nec": 5.0,
+                "actual_nec": 5.0,
+                "per_class_connections": [
+                  6,
+                  3,
+                  5,
+                  4,
+                  5,
+                  7,
+                  4,
+                  4,
+                  8,
+                  4
+                ],
+                "accuracy": 0.9233244982961
+              },
+              {
+                "head": "8",
+                "view": "original",
+                "requested_nec": 8.0,
+                "actual_nec": 8.0,
+                "per_class_connections": [
+                  12,
+                  4,
+                  9,
+                  6,
+                  9,
+                  10,
+                  6,
+                  6,
+                  12,
+                  6
+                ],
+                "accuracy": 0.9725482771677395
+              },
+              {
+                "head": "8",
+                "view": "changed",
+                "requested_nec": 8.0,
+                "actual_nec": 8.0,
+                "per_class_connections": [
+                  12,
+                  4,
+                  9,
+                  6,
+                  9,
+                  10,
+                  6,
+                  6,
+                  12,
+                  6
+                ],
+                "accuracy": 0.9326012873911397
+              },
+              {
+                "head": "12",
+                "view": "original",
+                "requested_nec": 12.0,
+                "actual_nec": 12.0,
+                "per_class_connections": [
+                  14,
+                  11,
+                  11,
+                  12,
+                  12,
+                  13,
+                  11,
+                  14,
+                  12,
+                  10
+                ],
+                "accuracy": 0.9755774327906096
+              },
+              {
+                "head": "12",
+                "view": "changed",
+                "requested_nec": 12.0,
+                "actual_nec": 12.0,
+                "per_class_connections": [
+                  14,
+                  11,
+                  11,
+                  12,
+                  12,
+                  13,
+                  11,
+                  14,
+                  12,
+                  10
+                ],
+                "accuracy": 0.9326012873911397
+              },
+              {
+                "head": "14",
+                "view": "original",
+                "requested_nec": 14.0,
+                "actual_nec": 13.6,
+                "per_class_connections": [
+                  14,
+                  13,
+                  13,
+                  14,
+                  14,
+                  14,
+                  13,
+                  14,
+                  14,
+                  13
+                ],
+                "accuracy": 0.9759560772434683
+              },
+              {
+                "head": "14",
+                "view": "changed",
+                "requested_nec": 14.0,
+                "actual_nec": 13.6,
+                "per_class_connections": [
+                  14,
+                  13,
+                  13,
+                  14,
+                  14,
+                  14,
+                  13,
+                  14,
+                  14,
+                  13
+                ],
+                "accuracy": 0.9339265429761454
+              },
+              {
+                "head": "best_val",
+                "view": "original",
+                "requested_nec": null,
+                "actual_nec": 13.0,
+                "per_class_connections": [
+                  14,
+                  13,
+                  12,
+                  13,
+                  13,
+                  14,
+                  12,
+                  14,
+                  13,
+                  12
+                ],
+                "accuracy": 0.9755774327906096
+              },
+              {
+                "head": "best_val",
+                "view": "changed",
+                "requested_nec": null,
+                "actual_nec": 13.0,
+                "per_class_connections": [
+                  14,
+                  13,
+                  12,
+                  13,
+                  13,
+                  14,
+                  12,
+                  14,
+                  13,
+                  12
+                ],
+                "accuracy": 0.9329799318439985
+              },
+              {
+                "head": "dense",
+                "view": "original",
+                "requested_nec": null,
+                "actual_nec": 14.0,
+                "per_class_connections": [
+                  14,
+                  14,
+                  14,
+                  14,
+                  14,
+                  14,
+                  14,
+                  14,
+                  14,
+                  14
+                ],
+                "accuracy": 0.9753881105641803
+              },
+              {
+                "head": "dense",
+                "view": "changed",
+                "requested_nec": null,
+                "actual_nec": 14.0,
+                "per_class_connections": [
+                  14,
+                  14,
+                  14,
+                  14,
+                  14,
+                  14,
+                  14,
+                  14,
+                  14,
+                  14
+                ],
+                "accuracy": 0.933737220749716
+              }
+            ]
+          }
+        ],
+        "aggregate": [
+          {
+            "head": "1",
+            "view": "original",
+            "requested_nec": 1.0,
+            "actual_nec": {
+              "mean": 1.0,
+              "std": 0.0,
+              "values": [
+                1.0,
+                1.0,
+                1.0
+              ],
+              "seeds": [
+                42,
+                43,
+                44
+              ],
+              "n": 3
+            },
+            "accuracy": {
+              "mean": 0.7155749084942572,
+              "std": 0.023270723296090246,
+              "values": [
+                0.7076864823930329,
+                0.7417644831503218,
+                0.6972737599394169
+              ],
+              "seeds": [
+                42,
+                43,
+                44
+              ],
+              "n": 3
+            }
+          },
+          {
+            "head": "1",
+            "view": "changed",
+            "requested_nec": 1.0,
+            "actual_nec": {
+              "mean": 1.0,
+              "std": 0.0,
+              "values": [
+                1.0,
+                1.0,
+                1.0
+              ],
+              "seeds": [
+                42,
+                43,
+                44
+              ],
+              "n": 3
+            },
+            "accuracy": {
+              "mean": 0.6191467878328916,
+              "std": 0.013555171736978244,
+              "values": [
+                0.6183263915183642,
+                0.6330935251798561,
+                0.6060204468004544
+              ],
+              "seeds": [
+                42,
+                43,
+                44
+              ],
+              "n": 3
+            }
+          },
+          {
+            "head": "2",
+            "view": "original",
+            "requested_nec": 2.0,
+            "actual_nec": {
+              "mean": 2.0,
+              "std": 0.0,
+              "values": [
+                2.0,
+                2.0,
+                2.0
+              ],
+              "seeds": [
+                42,
+                43,
+                44
+              ],
+              "n": 3
+            },
+            "accuracy": {
+              "mean": 0.8680424081787202,
+              "std": 0.06426172003747661,
+              "values": [
+                0.9127224536160545,
+                0.7943960620976903,
+                0.8970087088224158
+              ],
+              "seeds": [
+                42,
+                43,
+                44
+              ],
+              "n": 3
+            }
+          },
+          {
+            "head": "2",
+            "view": "changed",
+            "requested_nec": 2.0,
+            "actual_nec": {
+              "mean": 2.0,
+              "std": 0.0,
+              "values": [
+                2.0,
+                2.0,
+                2.0
+              ],
+              "seeds": [
+                42,
+                43,
+                44
+              ],
+              "n": 3
+            },
+            "accuracy": {
+              "mean": 0.7756531616811814,
+              "std": 0.09154038000998624,
+              "values": [
+                0.8366149185914427,
+                0.6703900037864445,
+                0.8199545626656569
+              ],
+              "seeds": [
+                42,
+                43,
+                44
+              ],
+              "n": 3
+            }
+          },
+          {
+            "head": "3",
+            "view": "original",
+            "requested_nec": 3.0,
+            "actual_nec": {
+              "mean": 3.0,
+              "std": 0.0,
+              "values": [
+                3.0,
+                3.0,
+                3.0
+              ],
+              "seeds": [
+                42,
+                43,
+                44
+              ],
+              "n": 3
+            },
+            "accuracy": {
+              "mean": 0.9514704026252683,
+              "std": 0.0011411801918480686,
+              "values": [
+                0.9526694433926542,
+                0.9503975766755017,
+                0.9513441878076486
+              ],
+              "seeds": [
+                42,
+                43,
+                44
+              ],
+              "n": 3
+            }
+          },
+          {
+            "head": "3",
+            "view": "changed",
+            "requested_nec": 3.0,
+            "actual_nec": {
+              "mean": 3.0,
+              "std": 0.0,
+              "values": [
+                3.0,
+                3.0,
+                3.0
+              ],
+              "seeds": [
+                42,
+                43,
+                44
+              ],
+              "n": 3
+            },
+            "accuracy": {
+              "mean": 0.8871639530480878,
+              "std": 0.0014293514644587008,
+              "values": [
+                0.8884892086330936,
+                0.8856493752366528,
+                0.8873532752745172
+              ],
+              "seeds": [
+                42,
+                43,
+                44
+              ],
+              "n": 3
+            }
+          },
+          {
+            "head": "5",
+            "view": "original",
+            "requested_nec": 5.0,
+            "actual_nec": {
+              "mean": 5.0,
+              "std": 0.0,
+              "values": [
+                5.0,
+                5.0,
+                5.0
+              ],
+              "seeds": [
+                42,
+                43,
+                44
+              ],
+              "n": 3
+            },
+            "accuracy": {
+              "mean": 0.9698346585889183,
+              "std": 0.0005783889555668229,
+              "values": [
+                0.96932979931844,
+                0.9704657326770163,
+                0.9697084437712987
+              ],
+              "seeds": [
+                42,
+                43,
+                44
+              ],
+              "n": 3
+            }
+          },
+          {
+            "head": "5",
+            "view": "changed",
+            "requested_nec": 5.0,
+            "actual_nec": {
+              "mean": 5.0,
+              "std": 0.0,
+              "values": [
+                5.0,
+                5.0,
+                5.0
+              ],
+              "seeds": [
+                42,
+                43,
+                44
+              ],
+              "n": 3
+            },
+            "accuracy": {
+              "mean": 0.9225672093903824,
+              "std": 0.0007572889057175236,
+              "values": [
+                0.9218099204846649,
+                0.9225672093903824,
+                0.9233244982961
+              ],
+              "seeds": [
+                42,
+                43,
+                44
+              ],
+              "n": 3
+            }
+          },
+          {
+            "head": "8",
+            "view": "original",
+            "requested_nec": 8.0,
+            "actual_nec": {
+              "mean": 8.0,
+              "std": 0.0,
+              "values": [
+                8.0,
+                8.0,
+                8.0
+              ],
+              "seeds": [
+                42,
+                43,
+                44
+              ],
+              "n": 3
+            },
+            "accuracy": {
+              "mean": 0.9734948882998865,
+              "std": 0.0008675834333502283,
+              "values": [
+                0.974252177205604,
+                0.9736842105263158,
+                0.9725482771677395
+              ],
+              "seeds": [
+                42,
+                43,
+                44
+              ],
+              "n": 3
+            }
+          },
+          {
+            "head": "8",
+            "view": "changed",
+            "requested_nec": 8.0,
+            "actual_nec": {
+              "mean": 8.0,
+              "std": 0.0,
+              "values": [
+                8.0,
+                8.0,
+                8.0
+              ],
+              "seeds": [
+                42,
+                43,
+                44
+              ],
+              "n": 3
+            },
+            "accuracy": {
+              "mean": 0.931023602170895,
+              "std": 0.0015185169021224058,
+              "values": [
+                0.9308973873532753,
+                0.9295721317682696,
+                0.9326012873911397
+              ],
+              "seeds": [
+                42,
+                43,
+                44
+              ],
+              "n": 3
+            }
+          },
+          {
+            "head": "12",
+            "view": "original",
+            "requested_nec": 12.0,
+            "actual_nec": {
+              "mean": 12.0,
+              "std": 0.0,
+              "values": [
+                12.0,
+                12.0,
+                12.0
+              ],
+              "seeds": [
+                42,
+                43,
+                44
+              ],
+              "n": 3
+            },
+            "accuracy": {
+              "mean": 0.9752618957465606,
+              "std": 0.0003941056417012507,
+              "values": [
+                0.9748201438848921,
+                0.9753881105641803,
+                0.9755774327906096
+              ],
+              "seeds": [
+                42,
+                43,
+                44
+              ],
+              "n": 3
+            }
+          },
+          {
+            "head": "12",
+            "view": "changed",
+            "requested_nec": 12.0,
+            "actual_nec": {
+              "mean": 12.0,
+              "std": 0.0,
+              "values": [
+                12.0,
+                12.0,
+                12.0
+              ],
+              "seeds": [
+                42,
+                43,
+                44
+              ],
+              "n": 3
+            },
+            "accuracy": {
+              "mean": 0.9336741133409062,
+              "std": 0.002024361344483843,
+              "values": [
+                0.9360090874668686,
+                0.9324119651647104,
+                0.9326012873911397
+              ],
+              "seeds": [
+                42,
+                43,
+                44
+              ],
+              "n": 3
+            }
+          },
+          {
+            "head": "14",
+            "view": "original",
+            "requested_nec": 14.0,
+            "actual_nec": {
+              "mean": 13.733333333333334,
+              "std": 0.23094010767585052,
+              "values": [
+                14.0,
+                13.6,
+                13.6
+              ],
+              "seeds": [
+                42,
+                43,
+                44
+              ],
+              "n": 3
+            },
+            "accuracy": {
+              "mean": 0.975135680928941,
+              "std": 0.0007651366687480753,
+              "values": [
+                0.9744414994320333,
+                0.9750094661113214,
+                0.9759560772434683
+              ],
+              "seeds": [
+                42,
+                43,
+                44
+              ],
+              "n": 3
+            }
+          },
+          {
+            "head": "14",
+            "view": "changed",
+            "requested_nec": 14.0,
+            "actual_nec": {
+              "mean": 13.733333333333334,
+              "std": 0.23094010767585052,
+              "values": [
+                14.0,
+                13.6,
+                13.6
+              ],
+              "seeds": [
+                42,
+                43,
+                44
+              ],
+              "n": 3
+            },
+            "accuracy": {
+              "mean": 0.934683831881863,
+              "std": 0.0016504729055435996,
+              "values": [
+                0.9365770541461568,
+                0.9335478985232867,
+                0.9339265429761454
+              ],
+              "seeds": [
+                42,
+                43,
+                44
+              ],
+              "n": 3
+            }
+          },
+          {
+            "head": "best_val",
+            "view": "original",
+            "requested_nec": null,
+            "actual_nec": {
+              "mean": 13.433333333333332,
+              "std": 0.5131601439446882,
+              "values": [
+                14.0,
+                13.3,
+                13.0
+              ],
+              "seeds": [
+                42,
+                43,
+                44
+              ],
+              "n": 3
+            },
+            "accuracy": {
+              "mean": 0.9750094661113214,
+              "std": 0.0005679666792881566,
+              "values": [
+                0.9744414994320333,
+                0.9750094661113214,
+                0.9755774327906096
+              ],
+              "seeds": [
+                42,
+                43,
+                44
+              ],
+              "n": 3
+            }
+          },
+          {
+            "head": "best_val",
+            "view": "changed",
+            "requested_nec": null,
+            "actual_nec": {
+              "mean": 13.433333333333332,
+              "std": 0.5131601439446882,
+              "values": [
+                14.0,
+                13.3,
+                13.0
+              ],
+              "seeds": [
+                42,
+                43,
+                44
+              ],
+              "n": 3
+            },
+            "accuracy": {
+              "mean": 0.9342420800201944,
+              "std": 0.002024361344483843,
+              "values": [
+                0.9365770541461568,
+                0.9331692540704278,
+                0.9329799318439985
+              ],
+              "seeds": [
+                42,
+                43,
+                44
+              ],
+              "n": 3
+            }
+          },
+          {
+            "head": "dense",
+            "view": "original",
+            "requested_nec": null,
+            "actual_nec": {
+              "mean": 14.0,
+              "std": 0.0,
+              "values": [
+                14.0,
+                14.0,
+                14.0
+              ],
+              "seeds": [
+                42,
+                43,
+                44
+              ],
+              "n": 3
+            },
+            "accuracy": {
+              "mean": 0.9748832512937019,
+              "std": 0.0013955158644134978,
+              "values": [
+                0.973305566073457,
+                0.9759560772434683,
+                0.9753881105641803
+              ],
+              "seeds": [
+                42,
+                43,
+                44
+              ],
+              "n": 3
+            }
+          },
+          {
+            "head": "dense",
+            "view": "changed",
+            "requested_nec": null,
+            "actual_nec": {
+              "mean": 14.0,
+              "std": 0.0,
+              "values": [
+                14.0,
+                14.0,
+                14.0
+              ],
+              "seeds": [
+                42,
+                43,
+                44
+              ],
+              "n": 3
+            },
+            "accuracy": {
+              "mean": 0.934683831881863,
+              "std": 0.0009466111321469461,
+              "values": [
+                0.9356304430140099,
+                0.9346838318818629,
+                0.933737220749716
+              ],
+              "seeds": [
+                42,
+                43,
+                44
+              ],
+              "n": 3
+            }
+          }
+        ]
+      }
+    },
+    "noncbm": {
+      "original": {
+        "accuracy": {
+          "mean": 0.9834658588918339,
+          "std": 0.0005465261919629037,
+          "values": [
+            0.983150321847785,
+            0.9840969329799318,
+            0.983150321847785
+          ],
+          "seeds": [
+            42,
+            43,
+            44
+          ],
+          "n": 3
+        }
+      },
+      "changed": {
+        "accuracy": {
+          "mean": 0.9508393285371702,
+          "std": 0.0002891944777834054,
+          "values": [
+            0.9507762211283605,
+            0.9511548655812192,
+            0.950586898901931
+          ],
+          "seeds": [
+            42,
+            43,
+            44
+          ],
+          "n": 3
+        }
+      }
+    },
+    "aggregation": "same requested budgets; x = mean actual NEC; no interpolation; errors = sample std ddof1",
+    "head_selection": "validation only; original frozen head also applied to background-changed test"
   }
 ]

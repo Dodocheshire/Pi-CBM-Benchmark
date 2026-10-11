@@ -45,11 +45,11 @@ CUB 任务骨干从 ImageNet ResNet18 初始化，使用 4796／1198／5794 张�
 
 CUB 的 PiNI 同骨干入口为 `python -m benchmark.pini_cub_task_backbone prepare`，完整共享缓存就绪后核验图像、概念标签和区域顺序；`train` 调用原有初始化、均值与加噪训练。接口核验见 [PiNI CUB 任务骨干](reports/pini_cub_task_backbone_cpu_audit.json)。
 
-CUB 任务骨干的两视图共享缓存已完成，六份划分文件与原数据的标签、概念和图像编号一致，见 [共享缓存核验](reports/cub_task_cache_audit.json)。六个非 CBM 分类头和 LF-CBM／LF-Pi 原图训练已完成；背景增强组继续训练，PiNI 完成了 [共享输入核验](reports/pini_cub_task_cache_audit.json)，等待显存后训练。
+CUB 任务骨干的两视图共享缓存已完成，六份划分文件与原数据的标签、概念和图像编号一致，见 [共享缓存核验](reports/cub_task_cache_audit.json)。六个非 CBM 分类头及 LF-CBM／LF-Pi 的原图、背景增强训练均已完成，见 [预测文件核验](reports/cub_task_predictions_audit.json)。共同分类头扫描继续运行；PiNI 完成了 [共享输入核验](reports/pini_cub_task_cache_audit.json)，等待显存后训练。
 
 `python -m benchmark.lf_replication_queue --workers 2` 正在补跑三种共享骨干、三个有概念标注的数据集、两种训练视图的种子 43／44，共 36 组 LF-CBM／LF-Pi 配对训练。沿用种子 42 的骨干、教师缓存和训练设置；每组完成后导出单次噪声推理预测。运行计划见 [多种子重复实验](reports/lf_replication_plan.json)。
 
-RIVAL10／ImageNet ResNet18 的原图与背景增强训练均已完成种子 42、43、44。`python -m benchmark.report_seeds` 汇总三个种子都完成的组：使用相同有效测试图与三个种子共同保留的概念列，绘制均值、样本标准差及各个种子的结果。原图组的三种子 NEC 扫描已完成；`python -m benchmark.report_nec_seeds` 按相同目标预算汇总，并以实际 NEC 的均值和波动绘图。
+RIVAL10／ImageNet ResNet18、ResNet50 的原图与背景增强训练均已完成种子 42、43、44。`python -m benchmark.report_seeds` 汇总三个种子都完成的组：使用相同有效测试图与三个种子共同保留的概念列，绘制均值、样本标准差及各个种子的结果。ResNet18 两组的三种子 NEC 扫描已完成；`python -m benchmark.report_nec_seeds` 按相同目标预算汇总，并以实际 NEC 的均值和波动绘图。
 
 ```bash
 python -m benchmark.report_matched

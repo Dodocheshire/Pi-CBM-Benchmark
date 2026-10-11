@@ -155,208 +155,219 @@
     "common_indices": [
       1,
       6,
-      8,
       12,
       18,
       27,
-      29,
-      33,
-      34,
-      35,
-      36,
       41,
       46,
       53,
       56,
-      58,
-      62,
       66,
-      70,
-      71,
       72,
-      74,
-      75,
       91,
       92,
       93,
-      94,
       95,
-      96,
-      98,
-      100,
       102,
       104,
-      105,
-      107
+      105
     ],
     "results": [
       {
         "backbone": "resnet18",
         "method": "LF-CBM",
         "view": "original",
-        "mAP": 0.37198242182154584,
-        "pearson": 0.2165848703890292
+        "mAP": 0.45796643621361405,
+        "pearson": 0.3719605335737979
       },
       {
         "backbone": "resnet18",
         "method": "LF-CBM",
         "view": "changed",
-        "mAP": 0.35783303509140846,
-        "pearson": 0.2029634930982103
+        "mAP": 0.4280527923275861,
+        "pearson": 0.34001431704486856
       },
       {
         "backbone": "resnet18",
         "method": "LF-Pi",
         "view": "original",
-        "mAP": 0.3739092337638933,
-        "pearson": 0.22247197992864112
+        "mAP": 0.453961440975767,
+        "pearson": 0.3693792655417922
       },
       {
         "backbone": "resnet18",
         "method": "LF-Pi",
         "view": "changed",
-        "mAP": 0.3661096015949651,
-        "pearson": 0.21548844483775778
+        "mAP": 0.4359302245039929,
+        "pearson": 0.34896732014803894
       },
       {
         "backbone": "resnet18",
         "method": "PiNI \u5747\u503c",
         "view": "original",
-        "mAP": 0.568260104359975,
-        "pearson": 0.45940241504293594
+        "mAP": 0.6271283990035994,
+        "pearson": 0.5456757333168947
       },
       {
         "backbone": "resnet18",
         "method": "PiNI \u5747\u503c",
         "view": "changed",
-        "mAP": 0.5389105770554544,
-        "pearson": 0.4344708004050797
+        "mAP": 0.5945952852877128,
+        "pearson": 0.525484366473959
       },
       {
         "backbone": "resnet18",
         "method": "PiNI \u5747\u503c\uff0b\u566a\u58f0",
         "view": "original",
-        "mAP": 0.5687982520312033,
-        "pearson": 0.46026682978713834
+        "mAP": 0.6275819371711606,
+        "pearson": 0.546694901720007
       },
       {
         "backbone": "resnet18",
         "method": "PiNI \u5747\u503c\uff0b\u566a\u58f0",
         "view": "changed",
-        "mAP": 0.5395856668220105,
-        "pearson": 0.43610452749309
+        "mAP": 0.5947618206834517,
+        "pearson": 0.52698927284799
       },
       {
         "backbone": "resnet50",
         "method": "LF-CBM",
         "view": "original",
-        "mAP": 0.39013773576628685,
-        "pearson": 0.23029268884770532
+        "mAP": 0.4899848395702207,
+        "pearson": 0.39428204610347944
       },
       {
         "backbone": "resnet50",
         "method": "LF-CBM",
         "view": "changed",
-        "mAP": 0.37268730899889335,
-        "pearson": 0.2174433813455358
+        "mAP": 0.4602588548355361,
+        "pearson": 0.3652909429617446
       },
       {
         "backbone": "resnet50",
         "method": "LF-Pi",
         "view": "original",
-        "mAP": 0.3920308173097437,
-        "pearson": 0.23872784802584107
+        "mAP": 0.48522589647586833,
+        "pearson": 0.393339677816801
       },
       {
         "backbone": "resnet50",
         "method": "LF-Pi",
         "view": "changed",
-        "mAP": 0.37728487203209066,
-        "pearson": 0.22567252414751723
+        "mAP": 0.46173443386130447,
+        "pearson": 0.3691484555449965
       },
       {
         "backbone": "resnet50",
         "method": "PiNI \u5747\u503c",
         "view": "original",
-        "mAP": 0.5800020652681531,
-        "pearson": 0.4629800771245452
+        "mAP": 0.6376389434361533,
+        "pearson": 0.5421316231701586
       },
       {
         "backbone": "resnet50",
         "method": "PiNI \u5747\u503c",
         "view": "changed",
-        "mAP": 0.5572168818093061,
-        "pearson": 0.44714638506098925
+        "mAP": 0.6119173303540751,
+        "pearson": 0.5315719071948046
       },
       {
         "backbone": "resnet50",
         "method": "PiNI \u5747\u503c\uff0b\u566a\u58f0",
         "view": "original",
-        "mAP": 0.5805283069622925,
-        "pearson": 0.4663958342881293
+        "mAP": 0.638377221977803,
+        "pearson": 0.5465358959661182
       },
       {
         "backbone": "resnet50",
         "method": "PiNI \u5747\u503c\uff0b\u566a\u58f0",
         "view": "changed",
-        "mAP": 0.5583343087753665,
-        "pearson": 0.451574282488819
+        "mAP": 0.6129811974122592,
+        "pearson": 0.5357889144734428
       },
       {
         "backbone": "clip_RN50",
         "method": "LF-CBM",
         "view": "original",
-        "mAP": 0.4035869618691769,
-        "pearson": 0.25849828132106434
+        "mAP": 0.500797361071979,
+        "pearson": 0.4243377497314134
       },
       {
         "backbone": "clip_RN50",
         "method": "LF-CBM",
         "view": "changed",
-        "mAP": 0.37213973399394906,
-        "pearson": 0.21405276921980385
+        "mAP": 0.4449901968302966,
+        "pearson": 0.3498360858431385
       },
       {
         "backbone": "clip_RN50",
         "method": "LF-Pi",
         "view": "original",
-        "mAP": 0.40164889509521984,
-        "pearson": 0.2599476603067919
+        "mAP": 0.48669089634368157,
+        "pearson": 0.4135439425334895
       },
       {
         "backbone": "clip_RN50",
         "method": "LF-Pi",
         "view": "changed",
-        "mAP": 0.38179749596652474,
-        "pearson": 0.22960569453743607
+        "mAP": 0.4537608825317085,
+        "pearson": 0.36778238865343005
       },
       {
         "backbone": "clip_RN50",
         "method": "PiNI \u5747\u503c",
         "view": "original",
-        "mAP": 0.5867621500562658,
-        "pearson": 0.47860620962483247
+        "mAP": 0.6494547194928639,
+        "pearson": 0.565656401452059
       },
       {
         "backbone": "clip_RN50",
         "method": "PiNI \u5747\u503c",
         "view": "changed",
-        "mAP": 0.5272470593883787,
-        "pearson": 0.43228410674015216
+        "mAP": 0.5800897917481496,
+        "pearson": 0.5240219078109596
       },
       {
         "backbone": "clip_RN50",
         "method": "PiNI \u5747\u503c\uff0b\u566a\u58f0",
         "view": "original",
-        "mAP": 0.5858010901429225,
-        "pearson": 0.47929139103294266
+        "mAP": 0.6483749835429944,
+        "pearson": 0.5664557801918777
       },
       {
         "backbone": "clip_RN50",
         "method": "PiNI \u5747\u503c\uff0b\u566a\u58f0",
         "view": "changed",
-        "mAP": 0.5269565629947849,
-        "pearson": 0.4327648431445335
+        "mAP": 0.5798288280234886,
+        "pearson": 0.5247386441621607
+      },
+      {
+        "backbone": "resnet18_cub_trainonly",
+        "method": "LF-CBM",
+        "view": "original",
+        "mAP": 0.4937996697835156,
+        "pearson": 0.40567790315024715
+      },
+      {
+        "backbone": "resnet18_cub_trainonly",
+        "method": "LF-CBM",
+        "view": "changed",
+        "mAP": 0.4826984810401971,
+        "pearson": 0.39619322326794554
+      },
+      {
+        "backbone": "resnet18_cub_trainonly",
+        "method": "LF-Pi",
+        "view": "original",
+        "mAP": 0.47626850029440454,
+        "pearson": 0.3913276219627779
+      },
+      {
+        "backbone": "resnet18_cub_trainonly",
+        "method": "LF-Pi",
+        "view": "changed",
+        "mAP": 0.47655096982504275,
+        "pearson": 0.39188790849166105
       }
     ]
   },

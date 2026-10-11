@@ -1,0 +1,97 @@
+{
+  "all_predictions_verified": true,
+  "lf_npz_count": 22,
+  "single_draw_npz_count": 12,
+  "test_metrics": [
+    {
+      "protocol": "original",
+      "method": "lfcbm",
+      "view": "original",
+      "selected_concepts": 34,
+      "candidate_concepts": 112,
+      "accuracy": 0.4532274767000345,
+      "source": "/home/pengcheng/Pi-CBM-Benchmark/artifacts/matched/lf/cub/rn18_task_pretrained_cub_train_val_selected/seed42/lfcbm_test_original.npz"
+    },
+    {
+      "protocol": "original",
+      "method": "lfcbm",
+      "view": "changed",
+      "selected_concepts": 34,
+      "candidate_concepts": 112,
+      "accuracy": 0.2814981014842941,
+      "source": "/home/pengcheng/Pi-CBM-Benchmark/artifacts/matched/lf/cub/rn18_task_pretrained_cub_train_val_selected/seed42/lfcbm_test_changed.npz"
+    },
+    {
+      "protocol": "original",
+      "method": "lfpi_global",
+      "view": "changed",
+      "selected_concepts": 34,
+      "candidate_concepts": 112,
+      "accuracy": 0.36727649292371417,
+      "source": "/home/pengcheng/Pi-CBM-Benchmark/artifacts/matched/lf/cub/rn18_task_pretrained_cub_train_val_selected/seed42/single_draw/lfpi_global_test_changed.npz"
+    },
+    {
+      "protocol": "original",
+      "method": "lfpi_global",
+      "view": "original",
+      "selected_concepts": 34,
+      "candidate_concepts": 112,
+      "accuracy": 0.5626510182947877,
+      "source": "/home/pengcheng/Pi-CBM-Benchmark/artifacts/matched/lf/cub/rn18_task_pretrained_cub_train_val_selected/seed42/single_draw/lfpi_global_test_original.npz"
+    },
+    {
+      "protocol": "paired",
+      "method": "lfcbm",
+      "view": "original",
+      "selected_concepts": 18,
+      "candidate_concepts": 112,
+      "accuracy": 0.41370383154987916,
+      "source": "/home/pengcheng/Pi-CBM-Benchmark/artifacts/matched/lf/cub/rn18_task_pretrained_cub_train_val_selected/paired_augmentation/seed42/lfcbm_test_original.npz"
+    },
+    {
+      "protocol": "paired",
+      "method": "lfcbm",
+      "view": "changed",
+      "selected_concepts": 18,
+      "candidate_concepts": 112,
+      "accuracy": 0.288574387297204,
+      "source": "/home/pengcheng/Pi-CBM-Benchmark/artifacts/matched/lf/cub/rn18_task_pretrained_cub_train_val_selected/paired_augmentation/seed42/lfcbm_test_changed.npz"
+    },
+    {
+      "protocol": "paired",
+      "method": "lfpi_global",
+      "view": "changed",
+      "selected_concepts": 18,
+      "candidate_concepts": 112,
+      "accuracy": 0.43890231273731445,
+      "source": "/home/pengcheng/Pi-CBM-Benchmark/artifacts/matched/lf/cub/rn18_task_pretrained_cub_train_val_selected/paired_augmentation/seed42/single_draw/lfpi_global_test_changed.npz"
+    },
+    {
+      "protocol": "paired",
+      "method": "lfpi_global",
+      "view": "original",
+      "selected_concepts": 18,
+      "candidate_concepts": 112,
+      "accuracy": 0.5673110113910942,
+      "source": "/home/pengcheng/Pi-CBM-Benchmark/artifacts/matched/lf/cub/rn18_task_pretrained_cub_train_val_selected/paired_augmentation/seed42/single_draw/lfpi_global_test_original.npz"
+    }
+  ],
+  "convergence": [
+    {
+      "protocol": "original",
+      "core_saga_max_steps": 1000,
+      "unconverged_head_fit_warnings": 2,
+      "log": "/home/pengcheng/Pi-CBM-Benchmark/logs/cub-task-lf-original.log",
+      "warning_interpretation": "fixed-budget upstream stopping criterion not reached; not a claim of fully optimized head"
+    },
+    {
+      "protocol": "paired",
+      "core_saga_max_steps": 1000,
+      "unconverged_head_fit_warnings": 2,
+      "log": "/home/pengcheng/Pi-CBM-Benchmark/logs/cub-task-lf-paired.log",
+      "warning_interpretation": "fixed-budget upstream stopping criterion not reached; not a claim of fully optimized head"
+    }
+  ],
+  "noncbm_verified": "/home/pengcheng/Pi-CBM-Benchmark/artifacts/audit/cub_task_noncbm_verified.json",
+  "source": "/home/pengcheng/Pi-CBM-Benchmark/artifacts/common/cub/rn18_task_pretrained_cub_train_val_selected"
+}

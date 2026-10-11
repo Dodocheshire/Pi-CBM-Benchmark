@@ -5,3 +5,9 @@
 ![多种子实际 NEC 曲线](nec_seeds_rival10_resnet18_original.png)
 
 ![多种子稠密头分类结果](nec_seeds_dense_rival10_resnet18_original.png)
+
+## RIVAL10 · ImageNet ResNet18 · 背景增强训练
+
+![多种子实际 NEC 曲线](nec_seeds_rival10_resnet18_paired.png)
+
+![多种子稠密头分类结果](nec_seeds_dense_rival10_resnet18_paired.png)
