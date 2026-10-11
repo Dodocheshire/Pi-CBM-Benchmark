@@ -14,12 +14,14 @@ def main():
     p.add_argument('--backbones',nargs='+',default=['rn50_imagenet','clip_RN50'])
     p.add_argument('--datasets',nargs='+',default=['rival10','cub','waterbirds'])
     p.add_argument('--seeds',nargs='+',type=int,default=[42,43,44])
+    p.add_argument('--protocols',nargs='+',choices=['original','paired'],default=['original','paired'])
     p.add_argument('--device',default='cpu');a=p.parse_args();torch.set_num_threads(3)
     for dataset in a.datasets:
         for backbone in a.backbones:
             source=Path('artifacts/common')/dataset/backbone
             if not (source/'manifest.json').exists():continue
-            for paired in [False,True]:
+            for protocol in a.protocols:
+                paired=protocol=='paired'
                 if paired:
                     inputs=source/'paired';inputs.mkdir(exist_ok=True)
                     for split in ['train','val']:
@@ -32,6 +34,15 @@ def main():
                 for seed in a.seeds:
                     out=Path('artifacts/noncbm')/f"{dataset}_{backbone}{'_paired' if paired else ''}"/f'seed{seed}'
                     if not (out/'results.json').exists():run(train,val,source/'test_original.npz',out,a.device,seed)
+                    if not (source/'test_changed.npz').exists():
+                        report=json.loads((out/'results.json').read_text())
+                        report.update(backbone=backbone,training_device=a.device,
+                                      train_views=['original','changed'] if paired else ['original'],
+                                      shared_backbone_manifest=str(source/'manifest.json'))
+                        (out/'results.json').write_text(json.dumps(report,indent=2)+'\n')
+                        print(json.dumps({'dataset':dataset,'backbone':backbone,'paired':paired,
+                                          'seed':seed,'original_accuracy':report['test']['accuracy']}),flush=True)
+                        continue
                     state=torch.load(out/'best.pt',weights_only=True)
                     changed=load_split(source/'test_changed.npz')
                     head=nn.Linear(changed['features'].shape[1],state['head']['weight'].shape[0]).to(a.device)
