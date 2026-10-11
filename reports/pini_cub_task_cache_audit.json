@@ -1,0 +1,61 @@
+{
+  "dataset": "cub",
+  "backbone_name": "resnet18_cub_trainonly",
+  "spatial_audit": {
+    "original": {
+      "rgb_sha256": "9c3468a1b3e53c187e057d1c6958b777ded3dc404463456c02e1c2b0b16dd6d3",
+      "spatial_sha256": "e1d85039b178386996a748a239ccf6871d0f997ebe67d0116de8d0e908936d56",
+      "shared_global_sha256": "217c1b6c3459c05ba5331a8ae6194857e63ccc8cf23a0220c78a7c0f51a512ac",
+      "global_meanpool_max_abs_error": 0.0,
+      "region_complete_sha256": "826500be6f5375edea2d77541c627da1d93211fc33461cb74d56f7d6248db332",
+      "region_rows": 11788,
+      "ordered_ids_sha256": "8e2388218bd35c49bc024bbb94d527c37190dd78ec4741872214a781fa2105c7",
+      "region_order_evidence": "frozen producer assigns output[offset:end] from rgb[offset:end]; same source RGB full-file SHA, completed row count and canonical ordered split IDs verified",
+      "region_producer_file_sha256": "1564048919ccad91428ee12698f777be0660276bc8f0792bb1654da413a6455e",
+      "region_producer_function_sha256": "0d28a84566798d34c31e189cf00cc98fa16d47a687d53f00b6d53ef09336bd7e",
+      "historical_region_marker_contains_rgb_hash": false,
+      "region_precision_evidence": "core cub_regions default fp32; legacy marker may omit precision field",
+      "checkpoint_sha256": "22cd942efcc814a30cbfae8c03beaf9ed02501a6d394a1b34255ffda14759635",
+      "backbone_sha256": "fad31642590c6eec95a2a1ef03dc6186668b7e988e5a5d47ad877dedc8443ee1",
+      "live_cpu_sample_ids": [
+        0,
+        4796
+      ],
+      "live_cpu_vs_cached_spatial_max_abs": 0.0,
+      "live_cpu_vs_cached_spatial_relative_l2": 0.0,
+      "live_cpu_exact_feature_identity_claimed": true
+    },
+    "changed": {
+      "rgb_sha256": "a0caaeb0c1ce4f31a4d3253ae4f2bc5517983f9e4e9644a8deac5eda8d4e7ccc",
+      "spatial_sha256": "eeca89b1fd6307f361fe1706937b5c9cacaef2adc109ed759f588e591b720b6e",
+      "shared_global_sha256": "a77c5d1e9ef123e79d9b2cfa6e38595acdb5d711eefeabea035480a70424ddc8",
+      "global_meanpool_max_abs_error": 0.0,
+      "region_complete_sha256": "3c61c422bd03422d6bd7a3df849b147e93a708ceadf9452e3c9dfc49d1aba25f",
+      "region_rows": 11788,
+      "ordered_ids_sha256": "8e2388218bd35c49bc024bbb94d527c37190dd78ec4741872214a781fa2105c7",
+      "region_order_evidence": "frozen producer assigns output[offset:end] from rgb[offset:end]; same source RGB full-file SHA, completed row count and canonical ordered split IDs verified",
+      "region_producer_file_sha256": "1564048919ccad91428ee12698f777be0660276bc8f0792bb1654da413a6455e",
+      "region_producer_function_sha256": "0d28a84566798d34c31e189cf00cc98fa16d47a687d53f00b6d53ef09336bd7e",
+      "historical_region_marker_contains_rgb_hash": false,
+      "region_precision_evidence": "core cub_regions default fp32; legacy marker may omit precision field",
+      "checkpoint_sha256": "22cd942efcc814a30cbfae8c03beaf9ed02501a6d394a1b34255ffda14759635",
+      "backbone_sha256": "fad31642590c6eec95a2a1ef03dc6186668b7e988e5a5d47ad877dedc8443ee1",
+      "live_cpu_sample_ids": [
+        0,
+        4796
+      ],
+      "live_cpu_vs_cached_spatial_max_abs": 0.0,
+      "live_cpu_vs_cached_spatial_relative_l2": 0.0,
+      "live_cpu_exact_feature_identity_claimed": true
+    }
+  },
+  "holdout_audited": true,
+  "cache_backbone_matches_live": true,
+  "fit_split": "train only",
+  "selection_split": "val; also selected new backbone epoch11 from15 epochs",
+  "concept_supervision": "Koh species-level112 binary attributes for training; original core BCE; image-level112 certainty>=3 only for evaluation",
+  "shared_cache_manifest_sha256": "b9d3383935a2b7651e2a4517bc426e4df4f8a17cfc1ca722fef0b5441fdc1bfe",
+  "split_protocol_sha256": "199cc1b320e96d1d754598a785f36ea44dda3920961373a7b27c39079d5991eb",
+  "prepared_on_cpu": true,
+  "formal_training_started": false
+}

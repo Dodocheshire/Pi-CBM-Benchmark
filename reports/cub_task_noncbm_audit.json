@@ -1,0 +1,38 @@
+[
+  {
+    "protocol": "original",
+    "seed": 42,
+    "original_accuracy": 0.7095270969968933,
+    "changed_accuracy": 0.5673110113910942
+  },
+  {
+    "protocol": "original",
+    "seed": 43,
+    "original_accuracy": 0.7050396962374871,
+    "changed_accuracy": 0.5685191577493959
+  },
+  {
+    "protocol": "original",
+    "seed": 44,
+    "original_accuracy": 0.7033137728684846,
+    "changed_accuracy": 0.5645495340006904
+  },
+  {
+    "protocol": "paired",
+    "seed": 42,
+    "original_accuracy": 0.7040041422160856,
+    "changed_accuracy": 0.61425612702796
+  },
+  {
+    "protocol": "paired",
+    "seed": 43,
+    "original_accuracy": 0.7065930272695893,
+    "changed_accuracy": 0.6133931653434588
+  },
+  {
+    "protocol": "paired",
+    "seed": 44,
+    "original_accuracy": 0.7079737659647911,
+    "changed_accuracy": 0.6197790818087677
+  }
+]

@@ -1,0 +1,18 @@
+{
+  "dataset": "rival10",
+  "backbone": "resnet18",
+  "protocol": "original",
+  "seeds": [
+    42,
+    43,
+    44
+  ],
+  "test_subjects": 5282,
+  "head_reports": 6,
+  "view_evaluations": 108,
+  "actual_nec_from_weight_threshold": 1e-05,
+  "weight_counts_and_per_class_counts_verified": true,
+  "means_and_ddof1_std_verified": true,
+  "aggregation_at_common_requested_budget_no_interpolation": true,
+  "old_seed_summary_unchanged": true
+}

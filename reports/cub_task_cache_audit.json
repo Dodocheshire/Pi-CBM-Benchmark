@@ -1,0 +1,54 @@
+{
+  "source": "/home/pengcheng/Pi-CBM-Benchmark/artifacts/common/cub/rn18_task_pretrained_cub_train_val_selected",
+  "checkpoint_sha256": "22cd942efcc814a30cbfae8c03beaf9ed02501a6d394a1b34255ffda14759635",
+  "manifest_sha256": "b9d3383935a2b7651e2a4517bc426e4df4f8a17cfc1ca722fef0b5441fdc1bfe",
+  "checks": {
+    "train/original": {
+      "rows": 4796,
+      "fields_exact_source_parity": true,
+      "teacher_exact_same_view_parity": true,
+      "feature_dim": 512,
+      "ids_int64_bytes_sha256": "a25f5723d11454edaf8f305569796d4773da9fb404da479f740b81f8fa6859e2"
+    },
+    "val/original": {
+      "rows": 1198,
+      "fields_exact_source_parity": true,
+      "teacher_exact_same_view_parity": true,
+      "feature_dim": 512,
+      "ids_int64_bytes_sha256": "316dd3d4e1415c6cf418a4789c127ccc92ddf76b09ff270b9f0514f7daaf8ab9"
+    },
+    "test/original": {
+      "rows": 5794,
+      "fields_exact_source_parity": true,
+      "teacher_exact_same_view_parity": true,
+      "feature_dim": 512,
+      "ids_int64_bytes_sha256": "9e279849784941eb5b28d1c28800ce63b4730e92c549d75e2c21cf76aace4c5d"
+    },
+    "train/changed": {
+      "rows": 4796,
+      "fields_exact_source_parity": true,
+      "teacher_exact_same_view_parity": true,
+      "feature_dim": 512,
+      "ids_int64_bytes_sha256": "a25f5723d11454edaf8f305569796d4773da9fb404da479f740b81f8fa6859e2"
+    },
+    "val/changed": {
+      "rows": 1198,
+      "fields_exact_source_parity": true,
+      "teacher_exact_same_view_parity": true,
+      "feature_dim": 512,
+      "ids_int64_bytes_sha256": "316dd3d4e1415c6cf418a4789c127ccc92ddf76b09ff270b9f0514f7daaf8ab9"
+    },
+    "test/changed": {
+      "rows": 5794,
+      "fields_exact_source_parity": true,
+      "teacher_exact_same_view_parity": true,
+      "feature_dim": 512,
+      "ids_int64_bytes_sha256": "9e279849784941eb5b28d1c28800ce63b4730e92c549d75e2c21cf76aace4c5d"
+    }
+  },
+  "global_spatial_max_abs": {
+    "original": 0.0,
+    "changed": 0.0
+  },
+  "training_started_before_cache_validation": false
+}

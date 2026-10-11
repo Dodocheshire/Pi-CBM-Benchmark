@@ -1,0 +1,126 @@
+[
+  {
+    "dataset": "rival10",
+    "protocol": "/home/pengcheng/Pi-CBM/PiNI/artifacts/rival10_aligned_rn18/cache/background_protocol.json",
+    "sha256": "bd05d18d63e7d65dedaa136f427607d6324db8deca9fd6ae56e56c3db5cca434",
+    "unique_background_source_counts": {
+      "train": 240,
+      "val": 240,
+      "test": 240
+    },
+    "cross_split_background_source_overlap": {
+      "train_val": 0,
+      "train_test": 0,
+      "val_test": 0
+    },
+    "dataset_foreground_mask_used_for_rgb_pair_generation": true,
+    "native_foreground_not_passed_to_PiNI_generator": true,
+    "artificial_changed_view": "foreground pasted on independent Places background",
+    "standard_waterbirds_dataset": null,
+    "background_producer_file": "/home/pengcheng/Pi-CBM-Benchmark/methods/PiNI/spatial_noise/cub_regions.py",
+    "background_producer_sha256": "1564048919ccad91428ee12698f777be0660276bc8f0792bb1654da413a6455e",
+    "background_assignment_path": "/home/pengcheng/Pi-CBM/PiNI/artifacts/rival10_aligned_rn18/cache/background_index.npy",
+    "background_assignment_sha256": "2751ad695d5840e9033064ab8fecb9da90568de7ea3567fc300ab9ef444bc557",
+    "background_assignment_bounds": {
+      "train": {
+        "minimum": 0,
+        "maximum": 239,
+        "pool_size": 240
+      },
+      "val": {
+        "minimum": 0,
+        "maximum": 239,
+        "pool_size": 240
+      },
+      "test": {
+        "minimum": 0,
+        "maximum": 239,
+        "pool_size": 240
+      }
+    },
+    "assignment_producer_evidence": "per split, bank=banks[split]; assignment[selection]=choice; changed=np.where(native_foreground, original, bank[choice])"
+  },
+  {
+    "dataset": "cub",
+    "protocol": "/home/pengcheng/Pi-CBM/PiNI/artifacts/cub_aligned_rn18/cache/background_protocol.json",
+    "sha256": "bd05d18d63e7d65dedaa136f427607d6324db8deca9fd6ae56e56c3db5cca434",
+    "unique_background_source_counts": {
+      "train": 240,
+      "val": 240,
+      "test": 240
+    },
+    "cross_split_background_source_overlap": {
+      "train_val": 0,
+      "train_test": 0,
+      "val_test": 0
+    },
+    "dataset_foreground_mask_used_for_rgb_pair_generation": true,
+    "native_foreground_not_passed_to_PiNI_generator": true,
+    "artificial_changed_view": "foreground pasted on independent Places background",
+    "standard_waterbirds_dataset": null,
+    "background_producer_file": "/home/pengcheng/Pi-CBM-Benchmark/methods/PiNI/spatial_noise/cub_regions.py",
+    "background_producer_sha256": "1564048919ccad91428ee12698f777be0660276bc8f0792bb1654da413a6455e",
+    "background_assignment_path": "/home/pengcheng/Pi-CBM/PiNI/artifacts/cub_aligned_rn18/cache/background_index.npy",
+    "background_assignment_sha256": "178c7c471c8a89c9abcd3f1211e7d769535743eca248514f203f460ea5bb17dc",
+    "background_assignment_bounds": {
+      "train": {
+        "minimum": 0,
+        "maximum": 239,
+        "pool_size": 240
+      },
+      "val": {
+        "minimum": 0,
+        "maximum": 239,
+        "pool_size": 240
+      },
+      "test": {
+        "minimum": 0,
+        "maximum": 239,
+        "pool_size": 240
+      }
+    },
+    "assignment_producer_evidence": "per split, bank=banks[split]; assignment[selection]=choice; changed=np.where(native_foreground, original, bank[choice])"
+  },
+  {
+    "dataset": "waterbirds",
+    "protocol": "/home/pengcheng/Pi-CBM/PiNI/artifacts/waterbirds_aligned_rn18/cache/background_protocol.json",
+    "sha256": "bd05d18d63e7d65dedaa136f427607d6324db8deca9fd6ae56e56c3db5cca434",
+    "unique_background_source_counts": {
+      "train": 240,
+      "val": 240,
+      "test": 240
+    },
+    "cross_split_background_source_overlap": {
+      "train_val": 0,
+      "train_test": 0,
+      "val_test": 0
+    },
+    "dataset_foreground_mask_used_for_rgb_pair_generation": true,
+    "native_foreground_not_passed_to_PiNI_generator": true,
+    "artificial_changed_view": "foreground pasted on independent Places background",
+    "standard_waterbirds_dataset": false,
+    "background_assignment_reuse": "CUB same ordered raw RGB, both views byte-identical; only WB class labels differ",
+    "background_producer_file": "/home/pengcheng/Pi-CBM-Benchmark/methods/PiNI/spatial_noise/cub_regions.py",
+    "background_producer_sha256": "1564048919ccad91428ee12698f777be0660276bc8f0792bb1654da413a6455e",
+    "background_assignment_path": "/home/pengcheng/Pi-CBM/PiNI/artifacts/cub_aligned_rn18/cache/background_index.npy",
+    "background_assignment_sha256": "178c7c471c8a89c9abcd3f1211e7d769535743eca248514f203f460ea5bb17dc",
+    "background_assignment_bounds": {
+      "train": {
+        "minimum": 0,
+        "maximum": 239,
+        "pool_size": 240
+      },
+      "val": {
+        "minimum": 0,
+        "maximum": 239,
+        "pool_size": 240
+      },
+      "test": {
+        "minimum": 0,
+        "maximum": 239,
+        "pool_size": 240
+      }
+    },
+    "assignment_producer_evidence": "per split, bank=banks[split]; assignment[selection]=choice; changed=np.where(native_foreground, original, bank[choice])"
+  }
+]
