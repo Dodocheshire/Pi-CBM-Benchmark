@@ -9,7 +9,7 @@ from matplotlib import font_manager
 import numpy as np
 
 from .metrics import classification_metrics, concept_metrics, paired_concept_metrics
-from .report_utils import write_metrics
+from .report_utils import write_metrics, backbone_cache_folder, backbone_order, backbone_label
 
 ROOT = Path(__file__).resolve().parents[1]
 COLORS = {'LF-CBM':'#2878B5', 'LF-Pi':'#E15759', 'PiNI 均值':'#59A14F',
@@ -70,7 +70,7 @@ def main():
                 for s in ['train','val','test'] for v in ['original','changed'])
             esource=single if method=='LF-Pi' and complete else source
             row['methods'][method] = evaluate(esource, prefix, mask)
-            row['methods'][method]['inference_draws']=1 if method=='LF-CBM' or esource==single else 8
+            row['methods'][method]['inference_draws']=1 if method=='LF-CBM' or esource==single else report.get('inference',{}).get('lfpi_draws',8)
             row['methods'][method]['source']=str(esource)
         # Latest PiNI is intrinsically trained on paired views, with native targets.
         if paired and seed==42:
@@ -81,7 +81,7 @@ def main():
                 if (ps/'results.json').exists():
                     row['methods'][method] = evaluate(ps, '', mask, report['selected_indices'])
                     row['methods'][method].update(inference_draws=1,source=str(ps))
-        bfolder={'resnet18':'rn18_imagenet','resnet50':'rn50_imagenet','clip_RN50':'clip_RN50'}[backbone]
+        bfolder=backbone_cache_folder(backbone)
         noncbm = ROOT/'artifacts/noncbm'/f"{dataset}_{bfolder}{'_paired' if paired else ''}"/f'seed{seed}'
         if (noncbm/'changed_predictions.npz').exists():
             method = {}
@@ -95,7 +95,7 @@ def main():
              'LF-CBM／LF-Pi 使用冻结 CLIP 概念相似度监督；PiNI 使用原方法的属性标签监督。CUB 评测使用逐图人工属性，已知标注按 certainty ≥ 3 筛选。', '']
     lines += ['本轮 Waterbirds 为完整 CUB 鸟类按陆鸟／水鸟分组、配合 Places 换背景的二分类任务。','']
     for i, row in enumerate(conditions):
-        title = f"{row['dataset'].upper()} · {row['backbone']} · {row['protocol']} · 种子 {row['training_seed']}"
+        title = f"{row['dataset'].upper()} · {backbone_label(row['backbone'])} · {row['protocol']} · 种子 {row['training_seed']}"
         names = list(row['methods']); x = np.arange(len(names)); fig, axes = plt.subplots(1,2,figsize=(12,4.5),layout='constrained')
         for ax, view, label in zip(axes,['original','changed'],['原图测试','换背景测试']):
             values = [100*row['methods'][name][view]['classification']['accuracy'] for name in names]
@@ -137,7 +137,7 @@ def main():
         for protocol in ['原图训练','背景增强训练']:
             group=[r for r in conditions if r['dataset']==dataset and r['protocol']==protocol and r['training_seed']==42]
             if len(group)<2:continue
-            group=sorted(group,key=lambda r:['resnet18','resnet50','clip_RN50'].index(r['backbone']))
+            group=sorted(group,key=lambda r:backbone_order(r['backbone']))
             common=set(group[0]['shared_concept_indices'])
             for row in group[1:]:common &= set(row['shared_concept_indices'])
             common=sorted(common)
@@ -161,7 +161,7 @@ def main():
                     points=[(i,100*v['mAP']) for i,row in enumerate(group) for v in values
                             if v['backbone']==row['backbone'] and v['method']==method and v['view']==view and v['mAP'] is not None]
                     if points:ax.plot(*np.array(points).T,'o-',color=COLORS[method],label=method)
-                ax.set_xticks(range(len(group)),[r['backbone'] for r in group]);ax.set_ylabel('相同概念列 mAP（%）')
+                ax.set_xticks(range(len(group)),[backbone_label(r['backbone']) for r in group],rotation=10);ax.set_ylabel('相同概念列 mAP（%）')
                 ax.set_ylim(0,102);ax.set_title(title);ax.spines[['top','right']].set_visible(False)
             handles,labels=axes[0].get_legend_handles_labels()
             if handles:fig.legend(handles,labels,loc='outside lower center',ncol=4)

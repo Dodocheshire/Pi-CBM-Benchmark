@@ -7,6 +7,7 @@ matplotlib.use('Agg')
 import matplotlib.pyplot as plt
 from matplotlib import font_manager
 import numpy as np
+from .report_utils import backbone_label
 
 
 def main():
@@ -66,6 +67,8 @@ def main():
         labels={'cifar10':'CIFAR-10','cifar100':'CIFAR-100','cub':'CUB','rival10':'RIVAL10','waterbirds':'CUB–Places 水鸟二分类',
                 'imagenet':'ImageNet 1000 类','places365':'Places365'}
         backbone='CLIP RN50' if 'clip' in r['experiment'].lower() else ('ResNet50' if '_rn50_' in r['experiment'] else 'ResNet18')
+        if '_rn18_task_pretrained_train_val_selected' in r['experiment']:
+            backbone=backbone_label('resnet18_rival10')
         views=('原图＋高斯噪声' if 'gaussian_noise_s1' in r['train_views'] else '原图＋换背景') if len(r['train_views'])>1 else '原图'
         lines.append(f"| {labels.get(dataset,dataset)}／{backbone} | {views} | {fmt('original')} | {fmt('changed')} | {fmt('gaussian_noise_s1')} |")
     lines += ['', '各组使用本轮共用的冻结骨干特征。误差为独立分类头训练种子间的标准差。', '']

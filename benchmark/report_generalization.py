@@ -7,7 +7,7 @@ import matplotlib.pyplot as plt
 from matplotlib import font_manager
 import numpy as np
 from .metrics import classification_metrics
-from .report_utils import write_metrics
+from .report_utils import write_metrics, backbone_cache_folder
 
 NAMES={'lfcbm':'LF-CBM','lfpi_global':'LF-Pi（8次采样）','lfpi_global_1draw':'LF-Pi','lfpi':'LF-Pi（8次采样）','lfpi_single':'LF-Pi','pini_mean':'PiNI 均值',
        'pini_noise':'PiNI 均值＋噪声','noncbm':'非 CBM'}
@@ -17,7 +17,7 @@ COLORS={'LF-CBM':'#2878B5','LF-Pi':'#E15759','LF-Pi（8次采样）':'#E15759','
 
 def noncbm_reference(group, view):
     dataset,bone,protocol,_=group.relative_to(Path('artifacts/heads')).parts
-    folder={'resnet18':'rn18_imagenet','resnet50':'rn50_imagenet'}.get(bone,bone)
+    folder=backbone_cache_folder(bone)
     suffix={'original':'','paired':'_paired','corruption_augmented':'_gaussian_noise_augmented'}[protocol]
     references=[]
     baseline=next(group.glob('*/dense_original.npz'))
@@ -31,7 +31,7 @@ def noncbm_reference(group, view):
         data=np.load(path)
         if not np.array_equal(data['ids'],expected['ids']) or not np.array_equal(data['labels'],expected['labels']):
             raise ValueError('Non-CBM reference test subjects/classes differ from concept-head tests')
-        manifest=json.loads((Path('artifacts/common')/dataset/'rn18_imagenet/manifest.json').read_text())
+        manifest=json.loads((Path('artifacts/common')/dataset/folder/'manifest.json').read_text())
         eligible=Path(manifest.get('cache_root',f'artifacts/common/{dataset}/cache'))/'background_eligible.npy'
         mask=np.load(eligible)[data['ids']].astype(bool) if eligible.exists() else np.ones(len(data['ids']),bool)
         accuracy=classification_metrics(data['logits'][mask],data['labels'][mask])['accuracy']
@@ -41,7 +41,8 @@ def noncbm_reference(group, view):
 
 def shared_accuracy(directory, dataset, head, view):
     data=np.load(directory/f'{head}_{view}.npz')
-    manifest=json.loads((Path('artifacts/common')/dataset/'rn18_imagenet/manifest.json').read_text())
+    bone=directory.relative_to(Path('artifacts/heads')).parts[1]
+    manifest=json.loads((Path('artifacts/common')/dataset/backbone_cache_folder(bone)/'manifest.json').read_text())
     ep=Path(manifest.get('cache_root','artifacts/common/'+dataset+'/cache'))/'background_eligible.npy'
     mask=np.load(ep)[data['ids']].astype(bool) if ep.exists() else np.ones(len(data['ids']),bool)
     return classification_metrics(data['logits'][mask],data['labels'][mask])['accuracy']
