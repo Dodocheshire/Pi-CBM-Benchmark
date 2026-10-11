@@ -1,0 +1,31 @@
+{
+  "pid": 2532280,
+  "device": "cpu",
+  "gpu_jobs_started": false,
+  "formal_training_started": false,
+  "subject_ids": [
+    0,
+    31
+  ],
+  "checkpoint_sha256": "ac58a248f6cbbe09cf48c49c0662181037110738bbd6d87e3241a580cec6b8fc",
+  "backbone_sha256": "f9f8635557a0078bf229426e1aa2162f3b07e63ac0cf0dec2a51b63e521fd775",
+  "backbone_sha256_scope": "full torchvision network state_dict, including fc",
+  "spatial_shape": [
+    2,
+    512,
+    7,
+    7
+  ],
+  "feature_channels": 512,
+  "class_logits_vs_full_network_max_abs": 0.0,
+  "input_gradient_max_abs": 9.36937427520752,
+  "frozen_parameter_gradients_absent": true,
+  "batchnorm_frozen": true,
+  "backbone_supervision": "RIVAL class labels on 18987 train images; 2111 validation images select epoch14; test excluded",
+  "concept_supervision": "native RIVAL18 binary image attributes; unchanged core BCE",
+  "namespace": "rn18_task_pretrained_train_val_selected",
+  "source_audit_path": "artifacts/pini_matched/resnet18_rival10/rival10/adapter_cpu_audit.json",
+  "source_audit_sha256": "2393b2271ada687714f585e2a650ba24d6f4eb7e991275e0097c1bd66a7a6be3",
+  "adapter_source_sha256": "066864fc9c1deb25b59a6df33ec73dc199026bfd0d12e0bcc29e574697326137",
+  "incomplete_shared_cache_refused_before_training": true
+}

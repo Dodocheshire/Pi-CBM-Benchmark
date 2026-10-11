@@ -1,0 +1,131 @@
+{
+  "dataset": "cub",
+  "evaluation_namespace": "rn18_task_pretrained_cub_train_val_selected",
+  "backbone_name": "resnet18_cub_trainonly",
+  "core_global_model_backbone_name": "resnet18",
+  "feature_dim": 512,
+  "spatial_shape": [
+    512,
+    7,
+    7
+  ],
+  "loader_input": "raw canonical N3x224x224 RGB float[0,1]; adapter normalizes internally; spatial/global/class_logits methods",
+  "source_common_manifest": "/home/pengcheng/Pi-CBM-Benchmark/artifacts/common/cub/rn18_imagenet/manifest.json",
+  "source_common_manifest_sha256": "792accb496a382b87997bd321e0f2fabf5afb35cb9695c9e7ea9a24915b5d4c5",
+  "rgb_original": "/home/pengcheng/Pi-CBM/PiNI/artifacts/cub_aligned_rn18/cache/rgb_original.npy",
+  "rgb_changed": "/home/pengcheng/Pi-CBM/PiNI/artifacts/cub_aligned_rn18/cache/rgb_changed.npy",
+  "split_protocol": "/home/pengcheng/Pi-CBM/PiNI/artifacts/cub_aligned_rn18/cache/protocol.json",
+  "split_protocol_sha256": "199cc1b320e96d1d754598a785f36ea44dda3920961373a7b27c39079d5991eb",
+  "exact_split_ids": {
+    "train": {
+      "count": 4796,
+      "ordered_json_sha256": "dd77572f2a5f413ae6c3c941cf1275ee8dbb8e58c5ed02cc902e8dc822ef2420"
+    },
+    "val": {
+      "count": 1198,
+      "ordered_json_sha256": "f60a2e417d519fe76233de85980125b85f72461bb022633b5b15b959bfaa8f7e"
+    },
+    "test": {
+      "count": 5794,
+      "ordered_json_sha256": "7c1379172349a953d3a1d8c539e38fecdc453b3eaf65d75550e76b0c085a0fac"
+    }
+  },
+  "exact_native_split_ids": {
+    "train": {
+      "count": 4796,
+      "ordered_json_sha256": "a5f86e0911aef0857ba11b4f19682978eb8bb01aa64c80782b03706ace965781"
+    },
+    "val": {
+      "count": 1198,
+      "ordered_json_sha256": "1e27529dfc7d0f9ec4857e6167edb893ea08d0cceb128e7a496fde6d6d0e2139"
+    },
+    "test": {
+      "count": 5794,
+      "ordered_json_sha256": "f00d589817ec7a64429343b2a353ea5476100179b20c3392875f6b40126b6e9d"
+    }
+  },
+  "native_ids_path": "/home/pengcheng/Pi-CBM/PiNI/artifacts/cub_aligned_rn18/cache/native_ids.npy",
+  "native_ids_sha256": "1e05a51f1daf63a9ba0c1cadb5a73728bf57b7ba18a4fb35162df6336f5bf6f7",
+  "training_plan": {
+    "seed": 42,
+    "epochs": 15,
+    "batch": 128,
+    "threads": 4,
+    "optimizer": "AdamW",
+    "lr": 0.0003,
+    "weight_decay": 0.0001,
+    "scheduler": "CosineAnnealingLR",
+    "scheduler_T_max": 15,
+    "loss": "class-label cross entropy; 200 species; no concept supervision",
+    "augmentation": "train-only horizontal flip p=.5; original canonical224RGB; no additional resize/crop",
+    "normalization": "ImageNet RGB mean/std",
+    "selection": "strictly higher val accuracy; ties keep earliest epoch; train all15 epochs",
+    "test_protocol": "test only once after loading selected frozen checkpoint; never choose epoch or hyperparameter on test",
+    "train_subjects": 4796,
+    "val_subjects": 1198,
+    "test_subjects": 5794
+  },
+  "backbone_supervision": "train4796 species class labels; val1198 only epoch selection; no concept loss",
+  "gradient_exposure": {
+    "train": 4796,
+    "val": 0,
+    "test": 0
+  },
+  "validation_role": "1198 selected best backbone epoch; no validation gradient",
+  "test_role": "5794 entirely excluded until one final frozen-selected-model class evaluation",
+  "existing_external_cub_checkpoint_used": false,
+  "future_shared_teacher": "/home/pengcheng/Pi-CBM-Benchmark/artifacts/common/cub/teacher",
+  "future_cache_fields": [
+    "features",
+    "labels",
+    "ids",
+    "targets",
+    "known",
+    "training_targets",
+    "concept_names",
+    "teacher"
+  ],
+  "historical_checkpoint": false,
+  "audit_device": "cpu",
+  "audit_scope": "ImageNet initialization interface only; NOT trained CUB task features",
+  "task_checkpoint_trained": false,
+  "task_training_started": false,
+  "gpu_jobs_started": false,
+  "gradient_exposure_is_plan": true,
+  "actual_gradient_exposure": {
+    "train": 0,
+    "val": 0,
+    "test": 0
+  },
+  "initialized_state_sha256": "b3a6caf71ef1a3c8881d77454f2fb90fb47e3d1d48948709820177512bb2b578",
+  "initialization": {
+    "initialization": "ImageNet1K_V1 resnet18-f37072fd",
+    "initialization_file_sha256": "f37072fd47e89c5e827621c5baffa7500819f7896bbacec160b1a16c560e07ec",
+    "task_checkpoint_trained": false,
+    "classifier_seed": 42
+  },
+  "spatial_audit_shape": [
+    2,
+    512,
+    7,
+    7
+  ],
+  "global_audit_shape": [
+    2,
+    512
+  ],
+  "classifier_audit_shape": [
+    2,
+    200
+  ],
+  "class_logits_vs_full_network_max_abs": 0.0,
+  "spatial_global_exact_parity": true,
+  "frozen_batchnorm_verified": true,
+  "input_gradient_supported": true,
+  "sample_global_ids": [
+    0,
+    4796
+  ],
+  "source_audit_path": "artifacts/audit/cub_task_backbone_initialization_cpu.json",
+  "source_audit_sha256": "99a1f2e092d7e7f8f6d1a6402a3c543a7a8b8e9a42135dbbbc54ccbb00f82a74"
+}

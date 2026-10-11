@@ -69,6 +69,8 @@ def main():
         backbone='CLIP RN50' if 'clip' in r['experiment'].lower() else ('ResNet50' if '_rn50_' in r['experiment'] else 'ResNet18')
         if '_rn18_task_pretrained_train_val_selected' in r['experiment']:
             backbone=backbone_label('resnet18_rival10')
+        elif '_rn18_task_pretrained_cub_train_val_selected' in r['experiment']:
+            backbone=backbone_label('resnet18_cub_trainonly')
         views=('原图＋高斯噪声' if 'gaussian_noise_s1' in r['train_views'] else '原图＋换背景') if len(r['train_views'])>1 else '原图'
         lines.append(f"| {labels.get(dataset,dataset)}／{backbone} | {views} | {fmt('original')} | {fmt('changed')} | {fmt('gaussian_noise_s1')} |")
     lines += ['', '各组使用本轮共用的冻结骨干特征。误差为独立分类头训练种子间的标准差。', '']

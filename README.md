@@ -37,6 +37,10 @@ PiNI 的 CIFAR 入口为 `python -m benchmark.pini_cifar --datasets cifar10 cifa
 
 RIVAL10 的任务预训练 ResNet18 使用 18987 张训练图更新权重、2111 张验证图选轮次，5286 张测试图用于最终评测。共享骨干接口为 `benchmark.task_backbones`；`python -m benchmark.task_backbones audit` 核验权重、特征和像素梯度，`python -m benchmark.task_backbones encode --device cpu --batch 32 --spatial` 生成独立的 `rn18_task_pretrained_train_val_selected` 缓存。核验记录见 [任务骨干来源](reports/task_backbone_audit.json) 和 [CPU 特征核验](reports/rival_task_backbone_cpu_audit.json)。
 
+缓存完成后，`python -m benchmark.task_backbone_queue` 核验数据并运行 LF-CBM／LF-Pi 和三个种子的非 CBM 对照。PiNI 的同骨干适配入口为 `python -m benchmark.pini_task_backbone prepare`，复用共享空间特征和区域缓存；`audit` 检查权重与像素梯度，`train` 调用原有初始化、均值与加噪训练。CPU 核验见 [PiNI 任务骨干适配](reports/pini_task_backbone_cpu_audit.json)。
+
+CUB 任务骨干从 ImageNet ResNet18 初始化，使用 4796／1198／5794 张训练／验证／测试图，固定训练 15 轮、按验证准确率选轮次。`python -m benchmark.cub_task_backbone audit` 核验初始化接口；`python -m benchmark.cub_task_gpu_queue` 等待连续三次显存余量达到 10 GiB 后启动训练。当前已通过 [初始化核验](reports/cub_task_backbone_initialization_cpu_audit.json)，训练结果完成后再计入图表。
+
 ```bash
 python -m benchmark.report_matched
 python -m benchmark.report_noncbm

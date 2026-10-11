@@ -10,6 +10,7 @@ BACKBONE_CACHE_FOLDERS = {
     'resnet50': 'rn50_imagenet',
     'clip_RN50': 'clip_RN50',
     'resnet18_rival10': 'rn18_task_pretrained_train_val_selected',
+    'resnet18_cub_trainonly': 'rn18_task_pretrained_cub_train_val_selected',
 }
 
 
@@ -28,6 +29,8 @@ def backbone_label(name):
         'clip_RN50': 'CLIP RN50',
         'resnet18_rival10': 'RIVAL10 任务预训练 ResNet18',
         'rn18_task_pretrained_train_val_selected': 'RIVAL10 任务预训练 ResNet18',
+        'resnet18_cub_trainonly': 'CUB 任务预训练 ResNet18',
+        'rn18_task_pretrained_cub_train_val_selected': 'CUB 任务预训练 ResNet18',
     }.get(name, name)
 
 
