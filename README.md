@@ -35,6 +35,8 @@ CIFAR10／100 的 ResNet18 原图训练和高斯噪声增强训练，以及四�
 
 PiNI 的 CIFAR 入口为 `python -m benchmark.pini_cifar --datasets cifar10 cifar100 --dino-batch 4`。它复用冻结 ResNet18 和同一图像划分，以训练集 CLIP 相似度生成概念监督，调用子模块原有的均值／加噪训练。区域缓存支持中断续跑；只准备原图区域可使用 `--prepare-only --region-views original`。CIFAR 没有人工概念标注，报告使用 CLIP 教师相关性；区域缓存和初始化完成后，还需完成正式训练及预测导出才计入结果。
 
+RIVAL10 的任务预训练 ResNet18 使用 18987 张训练图更新权重、2111 张验证图选轮次，5286 张测试图用于最终评测。共享骨干接口为 `benchmark.task_backbones`；`python -m benchmark.task_backbones audit` 核验权重、特征和像素梯度，`python -m benchmark.task_backbones encode --device cpu --batch 32 --spatial` 生成独立的 `rn18_task_pretrained_train_val_selected` 缓存。核验记录见 [任务骨干来源](reports/task_backbone_audit.json) 和 [CPU 特征核验](reports/rival_task_backbone_cpu_audit.json)。
+
 ```bash
 python -m benchmark.report_matched
 python -m benchmark.report_noncbm

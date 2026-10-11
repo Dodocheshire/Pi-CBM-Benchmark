@@ -1,0 +1,160 @@
+{
+  "dataset": "rival10",
+  "evaluation_namespace": "rn18_task_pretrained_train_val_selected",
+  "backbone_name": "resnet18_rival10",
+  "core_global_model_backbone_name": "resnet18",
+  "backbone": "torchvision ResNet18, ImageNet-initialized then class-supervised on current RIVAL train only; frozen",
+  "feature_dim": 512,
+  "feature_shape": [
+    5286,
+    512
+  ],
+  "all_row_feature_shape": [
+    26384,
+    512
+  ],
+  "spatial_shape": [
+    512,
+    7,
+    7
+  ],
+  "features": "raw spatial average; no LN or fitted feature normalization",
+  "checkpoint": "/home/pengcheng/Pi-CBM/PiNI/artifacts/rival10_aligned_rn18/backbone/selection/best.pt",
+  "checkpoint_sha256": "ac58a248f6cbbe09cf48c49c0662181037110738bbd6d87e3241a580cec6b8fc",
+  "backbone_sha256": "f9f8635557a0078bf229426e1aa2162f3b07e63ac0cf0dec2a51b63e521fd775",
+  "backbone_sha256_scope": "full torchvision network state_dict, including classifier",
+  "checkpoint_metadata": {
+    "seed": 42,
+    "stage": "selection",
+    "epoch": 14,
+    "fit_images": 18987,
+    "initialization": "ImageNet resnet18-f37072fd"
+  },
+  "backbone_supervision": "RIVAL10 class labels, cross entropy; no concept supervision",
+  "task_fit_sample_ids": {
+    "count": 18987,
+    "ordered_json_sha256": "68ec97c25fe6dad244edbbff971fcbd36ee75cc91e1e1b9cb9a15c1fbf757358"
+  },
+  "backbone_validation_selection_ids": {
+    "count": 2111,
+    "ordered_json_sha256": "a3e64375b689c618ea8aec2241fa29347c5952e4e66f4126d6fabe5a00ecb033"
+  },
+  "task_fit_counts": {
+    "train": 18987,
+    "val_gradient": 0,
+    "test_gradient": 0
+  },
+  "validation_role": "current 2111 validation images selected backbone epoch14; not gradient-trained; subsequent CBM/head val selection uses this same development fold",
+  "test_role": "all5286 test subjects excluded from local backbone fitting and checkpoint selection",
+  "preprocess": "exact shared canonical224 uint8 RGB /255, no additional crop/resize; ImageNet mean/std inside adapter",
+  "loader_input": "N3x224x224 RGB float in [0,1]; forward outputs N512x7x7; global_features outputs N512",
+  "split_protocol": "/home/pengcheng/Pi-CBM/PiNI/artifacts/rival10_aligned_rn18/cache/protocol.json",
+  "split_protocol_sha256": "05e2e23cb42f12299f472db4a8d0af7663309898afca45b8e7b57006634db5cf",
+  "counts": {
+    "train": 18987,
+    "val": 2111,
+    "test": 5286
+  },
+  "splits": {
+    "train": {
+      "count": 18987,
+      "ordered_json_sha256": "68ec97c25fe6dad244edbbff971fcbd36ee75cc91e1e1b9cb9a15c1fbf757358"
+    },
+    "val": {
+      "count": 2111,
+      "ordered_json_sha256": "a3e64375b689c618ea8aec2241fa29347c5952e4e66f4126d6fabe5a00ecb033"
+    },
+    "test": {
+      "count": 5286,
+      "ordered_json_sha256": "a74c5b4a1d3f7145958572b8990729409d5b81e77daebfe5bbf38d78bd351bc9"
+    }
+  },
+  "source_imagenet_manifest": "/home/pengcheng/Pi-CBM-Benchmark/artifacts/common/rival10/rn18_imagenet/manifest.json",
+  "historical_checkpoint": false,
+  "registered_existing_task_checkpoint": true,
+  "checkpoint_history": "Previously trained class-supervised selection checkpoint; independently audited train-only gradient IDs/val epoch selection; not a trainval-refit representation",
+  "feature_cache_protocol": "new encoding from registered checkpoint; never alias ImageNet or trainval-refit features",
+  "teacher": "same independently frozen CLIP ViT-B/16, exact shared candidate names/raw cosine arrays; teacher not refit",
+  "audit_source": "/home/pengcheng/Pi-CBM-Benchmark/artifacts/audit/task_backbones.json",
+  "audit_source_sha256": "c41bb65e1377d112511c4f453b3b3a9750f63cc03a53a9b8346ddb6edbedfb49",
+  "cache_root": "/home/pengcheng/Pi-CBM/PiNI/artifacts/rival10_aligned_rn18/cache",
+  "rgb_original": "/home/pengcheng/Pi-CBM/PiNI/artifacts/rival10_aligned_rn18/cache/rgb_original.npy",
+  "rgb_changed": "/home/pengcheng/Pi-CBM/PiNI/artifacts/rival10_aligned_rn18/cache/rgb_changed.npy",
+  "labels": "/home/pengcheng/Pi-CBM/PiNI/artifacts/rival10_aligned_rn18/cache/labels.npy",
+  "concept_names": [
+    "long-snout",
+    "wings",
+    "wheels",
+    "text",
+    "horns",
+    "floppy-ears",
+    "ears",
+    "colored-eyes",
+    "tail",
+    "mane",
+    "beak",
+    "hairy",
+    "metallic",
+    "rectangular",
+    "wet",
+    "long",
+    "tall",
+    "patterned"
+  ],
+  "training_targets": "native image attributes",
+  "targets": "native image attribute audit certainty>=3",
+  "known": "all true for RIVAL, native certainty>=3 for CUB/WB",
+  "native_audit": {
+    "type": "RIVAL10 native image attributes"
+  },
+  "teacher_root": "/home/pengcheng/Pi-CBM-Benchmark/artifacts/common/rival10/teacher",
+  "teacher_inputs": {
+    "original_teacher.npy": {
+      "path": "/home/pengcheng/Pi-CBM-Benchmark/artifacts/common/rival10/teacher/original_teacher.npy",
+      "sha256": "292a574f636ee2051888996d283666f78451ee212a2b7bde4665b969d935fa54"
+    },
+    "changed_teacher.npy": {
+      "path": "/home/pengcheng/Pi-CBM-Benchmark/artifacts/common/rival10/teacher/changed_teacher.npy",
+      "sha256": "95165fd6b124c84bd212e399a7cc42d2c94ae6e54565097c6816bfdbe279cf04"
+    },
+    "text.npy": {
+      "path": "/home/pengcheng/Pi-CBM-Benchmark/artifacts/common/rival10/teacher/text.npy",
+      "sha256": "b1c9503ae83e4e4d8259f7f21f0822c65c3f8166bb4512755e88cd5da09e4f3b"
+    },
+    "metadata.json": {
+      "path": "/home/pengcheng/Pi-CBM-Benchmark/artifacts/common/rival10/teacher/metadata.json",
+      "sha256": "7723273e624632a92af827981f1be044e20d1676e201cdf00f126fe5d5996c32"
+    }
+  },
+  "audit_device": "cpu",
+  "full_cache_started": false,
+  "gpu_jobs_started": false,
+  "audit_subject_rows": [
+    0,
+    31
+  ],
+  "sample_rgb_bytes_sha256": "763ab304259aed8d85cb602e55698c9c5228aeee3546c2a174c2fa52fa4af2d1",
+  "rgb_source_sha256": "7571df7c459b9c587bce33dfdd4d0e1a67eda112ef5911539395f9859595da76",
+  "spatial_audit_shape": [
+    2,
+    512,
+    7,
+    7
+  ],
+  "global_audit_shape": [
+    2,
+    512
+  ],
+  "classifier_audit_shape": [
+    2,
+    10
+  ],
+  "class_logits_vs_full_network_max_abs": 0.0,
+  "state_sha_verified": true,
+  "spatial_global_exact_parity": true,
+  "frozen_batchnorm_train_override_verified": true,
+  "input_gradient_supported": true,
+  "frozen_parameter_gradients_absent": true,
+  "source_audit_path": "artifacts/audit/rival_task_backbone_cpu.json",
+  "source_audit_sha256": "edefb8c18f3c74e96e4fb6099b18c564abd8e7d58ed5c7c99a4b172bfabeed64"
+}
