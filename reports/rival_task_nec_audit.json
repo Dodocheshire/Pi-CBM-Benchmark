@@ -1,0 +1,50 @@
+[
+  {
+    "directory": "artifacts/heads/rival10/resnet18_rival10/original/seed42/lfcbm",
+    "evaluations": 18,
+    "actual_nec_weight_count_verified": true,
+    "all_prediction_subjects_and_classes_aligned": true,
+    "selection_split": "validation",
+    "test_selection": false
+  },
+  {
+    "directory": "artifacts/heads/rival10/resnet18_rival10/original/seed42/lfpi_global_1draw",
+    "evaluations": 18,
+    "actual_nec_weight_count_verified": true,
+    "all_prediction_subjects_and_classes_aligned": true,
+    "selection_split": "validation",
+    "test_selection": false
+  },
+  {
+    "directory": "artifacts/heads/rival10/resnet18_rival10/paired/seed42/lfcbm",
+    "evaluations": 18,
+    "actual_nec_weight_count_verified": true,
+    "all_prediction_subjects_and_classes_aligned": true,
+    "selection_split": "validation",
+    "test_selection": false
+  },
+  {
+    "directory": "artifacts/heads/rival10/resnet18_rival10/paired/seed42/lfpi_global_1draw",
+    "evaluations": 18,
+    "actual_nec_weight_count_verified": true,
+    "all_prediction_subjects_and_classes_aligned": true,
+    "selection_split": "validation",
+    "test_selection": false
+  },
+  {
+    "directory": "artifacts/heads/rival10/resnet18_rival10/paired/seed42/pini_mean",
+    "evaluations": 18,
+    "actual_nec_weight_count_verified": true,
+    "all_prediction_subjects_and_classes_aligned": true,
+    "selection_split": "validation",
+    "test_selection": false
+  },
+  {
+    "directory": "artifacts/heads/rival10/resnet18_rival10/paired/seed42/pini_noise",
+    "evaluations": 18,
+    "actual_nec_weight_count_verified": true,
+    "all_prediction_subjects_and_classes_aligned": true,
+    "selection_split": "validation",
+    "test_selection": false
+  }
+]

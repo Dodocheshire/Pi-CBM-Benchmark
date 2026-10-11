@@ -1,0 +1,31 @@
+{
+  "selected_epoch": 11,
+  "val_accuracy": 0.7120200395584106,
+  "test_evaluation_count": 1,
+  "checkpoint_sha256": "22cd942efcc814a30cbfae8c03beaf9ed02501a6d394a1b34255ffda14759635",
+  "backbone_state_sha256": "fad31642590c6eec95a2a1ef03dc6186668b7e988e5a5d47ad877dedc8443ee1",
+  "seed": 42,
+  "test_selection": false,
+  "actual_epochs": 15,
+  "device": "cuda",
+  "dataset": "cub",
+  "backbone_name": "resnet18_cub_trainonly",
+  "gradient_exposure": {
+    "train": 4796,
+    "val": 0,
+    "test": 0
+  },
+  "split_counts": {
+    "train": 4796,
+    "val": 1198,
+    "test": 5794
+  },
+  "test": {
+    "accuracy": 0.7247152226441146,
+    "nll": 1.2206470653295618,
+    "examples": 5794,
+    "correct": 4199
+  },
+  "protocol_source": "artifacts/task_backbones/cub/rn18_task_pretrained_cub_train_val_selected/seed42/config.json",
+  "training_history_source": "artifacts/task_backbones/cub/rn18_task_pretrained_cub_train_val_selected/seed42/history.json"
+}

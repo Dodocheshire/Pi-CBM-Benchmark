@@ -1,0 +1,131 @@
+{
+  "six_head_jobs_complete": true,
+  "jobs": [
+    {
+      "directory": "artifacts/heads/rival10/resnet18_rival10/original/seed42/lfcbm",
+      "pid": 2537964,
+      "exit_code": 0,
+      "concept_count": 13,
+      "path_points": 24,
+      "unconverged_path_points": 0,
+      "test_evaluations": 18,
+      "missing_outputs": [],
+      "budget_shortfalls": [
+        {
+          "target_nec": 13,
+          "actual_nec": 12.5
+        }
+      ],
+      "test_counts": {
+        "original": 5286,
+        "changed": 5286
+      }
+    },
+    {
+      "directory": "artifacts/heads/rival10/resnet18_rival10/original/seed42/lfpi_global_1draw",
+      "pid": 2537965,
+      "exit_code": 0,
+      "concept_count": 13,
+      "path_points": 24,
+      "unconverged_path_points": 0,
+      "test_evaluations": 18,
+      "missing_outputs": [],
+      "budget_shortfalls": [
+        {
+          "target_nec": 13,
+          "actual_nec": 12.2
+        }
+      ],
+      "test_counts": {
+        "original": 5286,
+        "changed": 5286
+      }
+    },
+    {
+      "directory": "artifacts/heads/rival10/resnet18_rival10/paired/seed42/lfcbm",
+      "pid": 2538626,
+      "exit_code": 0,
+      "concept_count": 13,
+      "path_points": 24,
+      "unconverged_path_points": 0,
+      "test_evaluations": 18,
+      "missing_outputs": [],
+      "budget_shortfalls": [
+        {
+          "target_nec": 13,
+          "actual_nec": 12.9
+        }
+      ],
+      "test_counts": {
+        "original": 5286,
+        "changed": 5286
+      }
+    },
+    {
+      "directory": "artifacts/heads/rival10/resnet18_rival10/paired/seed42/lfpi_global_1draw",
+      "pid": 2538627,
+      "exit_code": 0,
+      "concept_count": 13,
+      "path_points": 24,
+      "unconverged_path_points": 0,
+      "test_evaluations": 18,
+      "missing_outputs": [],
+      "budget_shortfalls": [
+        {
+          "target_nec": 13,
+          "actual_nec": 12.8
+        }
+      ],
+      "test_counts": {
+        "original": 5286,
+        "changed": 5286
+      }
+    },
+    {
+      "directory": "artifacts/heads/rival10/resnet18_rival10/paired/seed42/pini_mean",
+      "pid": 2541381,
+      "exit_code": 0,
+      "concept_count": 18,
+      "path_points": 24,
+      "unconverged_path_points": 0,
+      "test_evaluations": 18,
+      "missing_outputs": [],
+      "budget_shortfalls": [
+        {
+          "target_nec": 18,
+          "actual_nec": 16.8
+        }
+      ],
+      "test_counts": {
+        "original": 5286,
+        "changed": 5286
+      }
+    },
+    {
+      "directory": "artifacts/heads/rival10/resnet18_rival10/paired/seed42/pini_noise",
+      "pid": 2541382,
+      "exit_code": 0,
+      "concept_count": 18,
+      "path_points": 24,
+      "unconverged_path_points": 0,
+      "test_evaluations": 18,
+      "missing_outputs": [],
+      "budget_shortfalls": [
+        {
+          "target_nec": 18,
+          "actual_nec": 16.4
+        }
+      ],
+      "test_counts": {
+        "original": 5286,
+        "changed": 5286
+      }
+    }
+  ],
+  "matched_report_task_protocols": 2,
+  "cross_backbone_task_namespace_present": true,
+  "nec_summary_task_namespace_present": false,
+  "remaining_report_action": "Regenerate NEC summary and figures; render achieved rather than requested NEC at pool maximum",
+  "task_backbone_supervision": "train class labels18987; val2111 selects checkpoint; no test fitting",
+  "concept_supervision_difference": "PiNI native18 image attrs; LF frozen CLIP teacher13 retained concepts; concept comparison uses shared intersection"
+}
