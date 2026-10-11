@@ -50,6 +50,8 @@ def main():
         report = json.loads(report_path.read_text())
         if not {'feature_provenance','train_views','training_seed'}.issubset(report):
             continue
+        if report['training_seed'] != 42:
+            continue  # Repeated seeds are summarized together by report_seeds.
         if report.get('human_concept_annotations') is False:
             continue  # Continuous-teacher experiments have a separate report.
         dataset = report['dataset']; source = report_path.parent
