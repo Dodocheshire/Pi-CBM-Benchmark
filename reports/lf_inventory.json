@@ -1,0 +1,1740 @@
+{
+  "historical_checkpoints": [
+    {
+      "path": "/home/pengcheng/Pi-CBM/LF-Pi/artifacts/cifar-nec-runs/20260926-083504-528352-cifar10_target_global_finetune_nec/checkpoint.pt",
+      "dataset": "cifar10",
+      "backbone": {
+        "name": "clip_RN50",
+        "precision": "native"
+      },
+      "site": "target_global",
+      "seed": 0,
+      "data_protocol": {
+        "dataset": "cifar10",
+        "root": "/home/pengcheng/VLG-CBM/datasets",
+        "concepts": "configs/concepts/cifar10_official.txt",
+        "train_per_class": 0,
+        "val_per_class": 500,
+        "test_per_class": 0,
+        "batch_size": 512,
+        "cache_internal": true,
+        "cache_images": true,
+        "split_seed": 0,
+        "num_workers": 4,
+        "version": "cifar10-official-v1",
+        "internal_dtype": "native"
+      },
+      "baseline_protocol": {
+        "import_dir": null,
+        "include_adapter_val": true,
+        "validation_split": "test",
+        "seed": 0,
+        "activation_cutoff": 0.25,
+        "interpretability_cutoff": 0.45,
+        "projection_steps": 1000,
+        "projection_lr": 0.001,
+        "projection_batch_size": 50000,
+        "head": {
+          "steps": 1000,
+          "batch_size": 256,
+          "lr": 0.1,
+          "lambda": 0.0007,
+          "alpha": 0.99
+        }
+      },
+      "classes": 10,
+      "concept_count": 132,
+      "feature_cache_exists": false,
+      "saved_baseline_concept_shapes": {
+        "test": [
+          10000,
+          132
+        ]
+      },
+      "saved_baseline_concepts_scope": "Historical baseline representation; adapted checkpoint head must not be substituted without matching its representation."
+    },
+    {
+      "path": "/home/pengcheng/Pi-CBM/LF-Pi/artifacts/cifar-nec-runs/20260926-083713-300663-cifar10_target_image_finetune_nec/checkpoint.pt",
+      "dataset": "cifar10",
+      "backbone": {
+        "name": "clip_RN50",
+        "precision": "native"
+      },
+      "site": "target_image",
+      "seed": 0,
+      "data_protocol": {
+        "dataset": "cifar10",
+        "root": "/home/pengcheng/VLG-CBM/datasets",
+        "concepts": "configs/concepts/cifar10_official.txt",
+        "train_per_class": 0,
+        "val_per_class": 500,
+        "test_per_class": 0,
+        "batch_size": 512,
+        "cache_internal": true,
+        "cache_images": true,
+        "split_seed": 0,
+        "num_workers": 4,
+        "version": "cifar10-official-v1",
+        "internal_dtype": "native"
+      },
+      "baseline_protocol": {
+        "import_dir": null,
+        "include_adapter_val": true,
+        "validation_split": "test",
+        "seed": 0,
+        "activation_cutoff": 0.25,
+        "interpretability_cutoff": 0.45,
+        "projection_steps": 1000,
+        "projection_lr": 0.001,
+        "projection_batch_size": 50000,
+        "head": {
+          "steps": 1000,
+          "batch_size": 256,
+          "lr": 0.1,
+          "lambda": 0.0007,
+          "alpha": 0.99
+        }
+      },
+      "classes": 10,
+      "concept_count": 132,
+      "feature_cache_exists": false,
+      "saved_baseline_concept_shapes": {
+        "test": [
+          10000,
+          132
+        ]
+      },
+      "saved_baseline_concepts_scope": "Historical baseline representation; adapted checkpoint head must not be substituted without matching its representation."
+    },
+    {
+      "path": "/home/pengcheng/Pi-CBM/LF-Pi/artifacts/cifar-nec-runs/20260926-083825-874432-cifar10_target_internal_finetune_nec/checkpoint.pt",
+      "dataset": "cifar10",
+      "backbone": {
+        "name": "clip_RN50",
+        "precision": "native"
+      },
+      "site": "target_internal",
+      "seed": 0,
+      "data_protocol": {
+        "dataset": "cifar10",
+        "root": "/home/pengcheng/VLG-CBM/datasets",
+        "concepts": "configs/concepts/cifar10_official.txt",
+        "train_per_class": 0,
+        "val_per_class": 500,
+        "test_per_class": 0,
+        "batch_size": 512,
+        "cache_internal": true,
+        "cache_images": true,
+        "split_seed": 0,
+        "num_workers": 4,
+        "version": "cifar10-official-v1",
+        "internal_dtype": "native"
+      },
+      "baseline_protocol": {
+        "import_dir": null,
+        "include_adapter_val": true,
+        "validation_split": "test",
+        "seed": 0,
+        "activation_cutoff": 0.25,
+        "interpretability_cutoff": 0.45,
+        "projection_steps": 1000,
+        "projection_lr": 0.001,
+        "projection_batch_size": 50000,
+        "head": {
+          "steps": 1000,
+          "batch_size": 256,
+          "lr": 0.1,
+          "lambda": 0.0007,
+          "alpha": 0.99
+        }
+      },
+      "classes": 10,
+      "concept_count": 132,
+      "feature_cache_exists": false,
+      "saved_baseline_concept_shapes": {
+        "test": [
+          10000,
+          132
+        ]
+      },
+      "saved_baseline_concepts_scope": "Historical baseline representation; adapted checkpoint head must not be substituted without matching its representation."
+    },
+    {
+      "path": "/home/pengcheng/Pi-CBM/LF-Pi/artifacts/cifar-nec-runs/20260926-090837-960711-cifar100_target_global_finetune_nec/checkpoint.pt",
+      "dataset": "cifar100",
+      "backbone": {
+        "name": "clip_RN50",
+        "precision": "native"
+      },
+      "site": "target_global",
+      "seed": 0,
+      "data_protocol": {
+        "dataset": "cifar100",
+        "root": "/home/pengcheng/VLG-CBM/datasets",
+        "concepts": "configs/concepts/cifar100_official.txt",
+        "train_per_class": 0,
+        "val_per_class": 50,
+        "test_per_class": 0,
+        "batch_size": 512,
+        "cache_internal": true,
+        "cache_images": true,
+        "split_seed": 0,
+        "num_workers": 4,
+        "version": "cifar100-official-v1",
+        "internal_dtype": "native"
+      },
+      "baseline_protocol": {
+        "import_dir": null,
+        "include_adapter_val": true,
+        "validation_split": "test",
+        "seed": 0,
+        "activation_cutoff": 0.25,
+        "interpretability_cutoff": 0.45,
+        "projection_steps": 1000,
+        "projection_lr": 0.001,
+        "projection_batch_size": 50000,
+        "head": {
+          "steps": 1000,
+          "batch_size": 256,
+          "lr": 0.1,
+          "lambda": 0.0007,
+          "alpha": 0.99
+        }
+      },
+      "classes": 100,
+      "concept_count": 824,
+      "feature_cache_exists": false,
+      "saved_baseline_concept_shapes": {
+        "test": [
+          10000,
+          824
+        ]
+      },
+      "saved_baseline_concepts_scope": "Historical baseline representation; adapted checkpoint head must not be substituted without matching its representation."
+    },
+    {
+      "path": "/home/pengcheng/Pi-CBM/LF-Pi/artifacts/cifar-nec-runs/20260926-092202-535249-cifar100_target_image_finetune_clip1_lr3e4/checkpoint.pt",
+      "dataset": "cifar100",
+      "backbone": {
+        "name": "clip_RN50",
+        "precision": "native"
+      },
+      "site": "target_image",
+      "seed": 0,
+      "data_protocol": {
+        "dataset": "cifar100",
+        "root": "/home/pengcheng/VLG-CBM/datasets",
+        "concepts": "configs/concepts/cifar100_official.txt",
+        "train_per_class": 0,
+        "val_per_class": 50,
+        "test_per_class": 0,
+        "batch_size": 512,
+        "cache_internal": true,
+        "cache_images": true,
+        "split_seed": 0,
+        "num_workers": 4,
+        "version": "cifar100-official-v1",
+        "internal_dtype": "native"
+      },
+      "baseline_protocol": {
+        "import_dir": null,
+        "include_adapter_val": true,
+        "validation_split": "test",
+        "seed": 0,
+        "activation_cutoff": 0.25,
+        "interpretability_cutoff": 0.45,
+        "projection_steps": 1000,
+        "projection_lr": 0.001,
+        "projection_batch_size": 50000,
+        "head": {
+          "steps": 1000,
+          "batch_size": 256,
+          "lr": 0.1,
+          "lambda": 0.0007,
+          "alpha": 0.99
+        }
+      },
+      "classes": 100,
+      "concept_count": 824,
+      "feature_cache_exists": false,
+      "saved_baseline_concept_shapes": {
+        "test": [
+          10000,
+          824
+        ]
+      },
+      "saved_baseline_concepts_scope": "Historical baseline representation; adapted checkpoint head must not be substituted without matching its representation."
+    },
+    {
+      "path": "/home/pengcheng/Pi-CBM/LF-Pi/artifacts/cifar-nec-runs/20260926-092202-642765-cifar100_target_global_finetune_clip1_lr3e4/checkpoint.pt",
+      "dataset": "cifar100",
+      "backbone": {
+        "name": "clip_RN50",
+        "precision": "native"
+      },
+      "site": "target_global",
+      "seed": 0,
+      "data_protocol": {
+        "dataset": "cifar100",
+        "root": "/home/pengcheng/VLG-CBM/datasets",
+        "concepts": "configs/concepts/cifar100_official.txt",
+        "train_per_class": 0,
+        "val_per_class": 50,
+        "test_per_class": 0,
+        "batch_size": 512,
+        "cache_internal": true,
+        "cache_images": true,
+        "split_seed": 0,
+        "num_workers": 4,
+        "version": "cifar100-official-v1",
+        "internal_dtype": "native"
+      },
+      "baseline_protocol": {
+        "import_dir": null,
+        "include_adapter_val": true,
+        "validation_split": "test",
+        "seed": 0,
+        "activation_cutoff": 0.25,
+        "interpretability_cutoff": 0.45,
+        "projection_steps": 1000,
+        "projection_lr": 0.001,
+        "projection_batch_size": 50000,
+        "head": {
+          "steps": 1000,
+          "batch_size": 256,
+          "lr": 0.1,
+          "lambda": 0.0007,
+          "alpha": 0.99
+        }
+      },
+      "classes": 100,
+      "concept_count": 824,
+      "feature_cache_exists": false,
+      "saved_baseline_concept_shapes": {
+        "test": [
+          10000,
+          824
+        ]
+      },
+      "saved_baseline_concepts_scope": "Historical baseline representation; adapted checkpoint head must not be substituted without matching its representation."
+    },
+    {
+      "path": "/home/pengcheng/Pi-CBM/LF-Pi/artifacts/cifar-nec-runs/20260926-092306-797530-cifar100_target_internal_finetune_clip1_lr3e4/checkpoint.pt",
+      "dataset": "cifar100",
+      "backbone": {
+        "name": "clip_RN50",
+        "precision": "native"
+      },
+      "site": "target_internal",
+      "seed": 0,
+      "data_protocol": {
+        "dataset": "cifar100",
+        "root": "/home/pengcheng/VLG-CBM/datasets",
+        "concepts": "configs/concepts/cifar100_official.txt",
+        "train_per_class": 0,
+        "val_per_class": 50,
+        "test_per_class": 0,
+        "batch_size": 512,
+        "cache_internal": true,
+        "cache_images": true,
+        "split_seed": 0,
+        "num_workers": 4,
+        "version": "cifar100-official-v1",
+        "internal_dtype": "native"
+      },
+      "baseline_protocol": {
+        "import_dir": null,
+        "include_adapter_val": true,
+        "validation_split": "test",
+        "seed": 0,
+        "activation_cutoff": 0.25,
+        "interpretability_cutoff": 0.45,
+        "projection_steps": 1000,
+        "projection_lr": 0.001,
+        "projection_batch_size": 50000,
+        "head": {
+          "steps": 1000,
+          "batch_size": 256,
+          "lr": 0.1,
+          "lambda": 0.0007,
+          "alpha": 0.99
+        }
+      },
+      "classes": 100,
+      "concept_count": 824,
+      "feature_cache_exists": false,
+      "saved_baseline_concept_shapes": {
+        "test": [
+          10000,
+          824
+        ]
+      },
+      "saved_baseline_concepts_scope": "Historical baseline representation; adapted checkpoint head must not be substituted without matching its representation."
+    },
+    {
+      "path": "/home/pengcheng/Pi-CBM/LF-Pi/artifacts/cifar-nec-runs/20260926-093431-788692-cifar10_target_global_finetune_clip1_lr3e4/checkpoint.pt",
+      "dataset": "cifar10",
+      "backbone": {
+        "name": "clip_RN50",
+        "precision": "native"
+      },
+      "site": "target_global",
+      "seed": 0,
+      "data_protocol": {
+        "dataset": "cifar10",
+        "root": "/home/pengcheng/VLG-CBM/datasets",
+        "concepts": "configs/concepts/cifar10_official.txt",
+        "train_per_class": 0,
+        "val_per_class": 500,
+        "test_per_class": 0,
+        "batch_size": 512,
+        "cache_internal": true,
+        "cache_images": false,
+        "split_seed": 0,
+        "num_workers": 4,
+        "version": "cifar10-official-v1",
+        "internal_dtype": "native"
+      },
+      "baseline_protocol": {
+        "import_dir": null,
+        "include_adapter_val": true,
+        "validation_split": "test",
+        "seed": 0,
+        "activation_cutoff": 0.25,
+        "interpretability_cutoff": 0.45,
+        "projection_steps": 1000,
+        "projection_lr": 0.001,
+        "projection_batch_size": 50000,
+        "head": {
+          "steps": 1000,
+          "batch_size": 256,
+          "lr": 0.1,
+          "lambda": 0.0007,
+          "alpha": 0.99
+        }
+      },
+      "classes": 10,
+      "concept_count": 132,
+      "feature_cache_exists": false,
+      "saved_baseline_concept_shapes": {
+        "test": [
+          10000,
+          132
+        ]
+      },
+      "saved_baseline_concepts_scope": "Historical baseline representation; adapted checkpoint head must not be substituted without matching its representation."
+    },
+    {
+      "path": "/home/pengcheng/Pi-CBM/LF-Pi/artifacts/cifar-nec-runs/20260926-093530-372710-cifar10_target_internal_finetune_clip1_lr3e4/checkpoint.pt",
+      "dataset": "cifar10",
+      "backbone": {
+        "name": "clip_RN50",
+        "precision": "native"
+      },
+      "site": "target_internal",
+      "seed": 0,
+      "data_protocol": {
+        "dataset": "cifar10",
+        "root": "/home/pengcheng/VLG-CBM/datasets",
+        "concepts": "configs/concepts/cifar10_official.txt",
+        "train_per_class": 0,
+        "val_per_class": 500,
+        "test_per_class": 0,
+        "batch_size": 512,
+        "cache_internal": true,
+        "cache_images": false,
+        "split_seed": 0,
+        "num_workers": 4,
+        "version": "cifar10-official-v1",
+        "internal_dtype": "native"
+      },
+      "baseline_protocol": {
+        "import_dir": null,
+        "include_adapter_val": true,
+        "validation_split": "test",
+        "seed": 0,
+        "activation_cutoff": 0.25,
+        "interpretability_cutoff": 0.45,
+        "projection_steps": 1000,
+        "projection_lr": 0.001,
+        "projection_batch_size": 50000,
+        "head": {
+          "steps": 1000,
+          "batch_size": 256,
+          "lr": 0.1,
+          "lambda": 0.0007,
+          "alpha": 0.99
+        }
+      },
+      "classes": 10,
+      "concept_count": 132,
+      "feature_cache_exists": false,
+      "saved_baseline_concept_shapes": {
+        "test": [
+          10000,
+          132
+        ]
+      },
+      "saved_baseline_concepts_scope": "Historical baseline representation; adapted checkpoint head must not be substituted without matching its representation."
+    },
+    {
+      "path": "/home/pengcheng/Pi-CBM/LF-Pi/artifacts/cifar-nec-runs/20260926-095519-966822-cifar10_target_image_finetune_clip1_lr3e4/checkpoint.pt",
+      "dataset": "cifar10",
+      "backbone": {
+        "name": "clip_RN50",
+        "precision": "native"
+      },
+      "site": "target_image",
+      "seed": 0,
+      "data_protocol": {
+        "dataset": "cifar10",
+        "root": "/home/pengcheng/VLG-CBM/datasets",
+        "concepts": "configs/concepts/cifar10_official.txt",
+        "train_per_class": 0,
+        "val_per_class": 500,
+        "test_per_class": 0,
+        "batch_size": 512,
+        "cache_internal": true,
+        "cache_images": true,
+        "split_seed": 0,
+        "num_workers": 4,
+        "version": "cifar10-official-v1",
+        "internal_dtype": "native"
+      },
+      "baseline_protocol": {
+        "import_dir": null,
+        "include_adapter_val": true,
+        "validation_split": "test",
+        "seed": 0,
+        "activation_cutoff": 0.25,
+        "interpretability_cutoff": 0.45,
+        "projection_steps": 1000,
+        "projection_lr": 0.001,
+        "projection_batch_size": 50000,
+        "head": {
+          "steps": 1000,
+          "batch_size": 256,
+          "lr": 0.1,
+          "lambda": 0.0007,
+          "alpha": 0.99
+        }
+      },
+      "classes": 10,
+      "concept_count": 132,
+      "feature_cache_exists": false,
+      "saved_baseline_concept_shapes": {
+        "test": [
+          10000,
+          132
+        ]
+      },
+      "saved_baseline_concepts_scope": "Historical baseline representation; adapted checkpoint head must not be substituted without matching its representation."
+    },
+    {
+      "path": "/home/pengcheng/Pi-CBM/LF-Pi/artifacts/cub-image-runs/20260926-075413-183411-cub_image_finetune_projection/checkpoint.pt",
+      "dataset": "cub",
+      "backbone": {
+        "name": "resnet18_cub"
+      },
+      "site": "target_image",
+      "seed": 0,
+      "data_protocol": {
+        "dataset": "cub",
+        "root": "/home/pengcheng/VLG-CBM/datasets/CUB",
+        "concepts": "configs/concepts/cub_lfcbm.txt",
+        "train_per_class": 0,
+        "val_per_class": 5,
+        "test_per_class": 0,
+        "batch_size": 128,
+        "cache_internal": false,
+        "cache_images": true,
+        "split_seed": 0,
+        "num_workers": 4,
+        "version": "cub200-existing-rgb-5990train-5790test-v1"
+      },
+      "baseline_protocol": {
+        "import_dir": "/home/pengcheng/Pi-CBM/artifacts/pretrained/lfcbm-cub",
+        "include_adapter_val": false,
+        "validation_split": "val",
+        "seed": 0,
+        "activation_cutoff": 0.26,
+        "interpretability_cutoff": 0.45,
+        "projection_steps": 1000,
+        "projection_lr": 0.001,
+        "projection_batch_size": 50000,
+        "head": {
+          "steps": 5000,
+          "batch_size": 256,
+          "lr": 0.1,
+          "lambda": 0.0002,
+          "alpha": 0.99
+        }
+      },
+      "classes": 200,
+      "concept_count": 208,
+      "feature_cache_exists": false,
+      "saved_baseline_concept_shapes": {
+        "test": [
+          5790,
+          208
+        ]
+      },
+      "saved_baseline_concepts_scope": "Historical baseline representation; adapted checkpoint head must not be substituted without matching its representation."
+    },
+    {
+      "path": "/home/pengcheng/Pi-CBM/LF-Pi/artifacts/cub-position-runs/20260926-080816-170309-cub_global_finetune_projection/checkpoint.pt",
+      "dataset": "cub",
+      "backbone": {
+        "name": "resnet18_cub"
+      },
+      "site": "target_global",
+      "seed": 0,
+      "data_protocol": {
+        "dataset": "cub",
+        "root": "/home/pengcheng/VLG-CBM/datasets/CUB",
+        "concepts": "configs/concepts/cub_lfcbm.txt",
+        "train_per_class": 0,
+        "val_per_class": 5,
+        "test_per_class": 0,
+        "batch_size": 128,
+        "cache_internal": false,
+        "cache_images": true,
+        "split_seed": 0,
+        "num_workers": 4,
+        "version": "cub200-existing-rgb-5990train-5790test-v1"
+      },
+      "baseline_protocol": {
+        "import_dir": "/home/pengcheng/Pi-CBM/artifacts/pretrained/lfcbm-cub",
+        "include_adapter_val": false,
+        "validation_split": "val",
+        "seed": 0,
+        "activation_cutoff": 0.26,
+        "interpretability_cutoff": 0.45,
+        "projection_steps": 1000,
+        "projection_lr": 0.001,
+        "projection_batch_size": 50000,
+        "head": {
+          "steps": 5000,
+          "batch_size": 256,
+          "lr": 0.1,
+          "lambda": 0.0002,
+          "alpha": 0.99
+        }
+      },
+      "classes": 200,
+      "concept_count": 208,
+      "feature_cache_exists": false,
+      "saved_baseline_concept_shapes": {
+        "test": [
+          5790,
+          208
+        ]
+      },
+      "saved_baseline_concepts_scope": "Historical baseline representation; adapted checkpoint head must not be substituted without matching its representation."
+    },
+    {
+      "path": "/home/pengcheng/Pi-CBM/LF-Pi/artifacts/cub-position-runs/20260926-081008-182344-cub_internal_finetune_projection/checkpoint.pt",
+      "dataset": "cub",
+      "backbone": {
+        "name": "resnet18_cub"
+      },
+      "site": "target_internal",
+      "seed": 0,
+      "data_protocol": {
+        "dataset": "cub",
+        "root": "/home/pengcheng/VLG-CBM/datasets/CUB",
+        "concepts": "configs/concepts/cub_lfcbm.txt",
+        "train_per_class": 0,
+        "val_per_class": 5,
+        "test_per_class": 0,
+        "batch_size": 128,
+        "cache_internal": true,
+        "cache_images": false,
+        "split_seed": 0,
+        "num_workers": 4,
+        "version": "cub200-existing-rgb-5990train-5790test-v1"
+      },
+      "baseline_protocol": {
+        "import_dir": "/home/pengcheng/Pi-CBM/artifacts/pretrained/lfcbm-cub",
+        "include_adapter_val": false,
+        "validation_split": "val",
+        "seed": 0,
+        "activation_cutoff": 0.26,
+        "interpretability_cutoff": 0.45,
+        "projection_steps": 1000,
+        "projection_lr": 0.001,
+        "projection_batch_size": 50000,
+        "head": {
+          "steps": 5000,
+          "batch_size": 256,
+          "lr": 0.1,
+          "lambda": 0.0002,
+          "alpha": 0.99
+        }
+      },
+      "classes": 200,
+      "concept_count": 208,
+      "feature_cache_exists": false,
+      "saved_baseline_concept_shapes": {
+        "test": [
+          5790,
+          208
+        ]
+      },
+      "saved_baseline_concepts_scope": "Historical baseline representation; adapted checkpoint head must not be substituted without matching its representation."
+    },
+    {
+      "path": "/home/pengcheng/Pi-CBM/LF-Pi/artifacts/image-smoke-runs/20260926-074221-716262-cifar10_image/checkpoint.pt",
+      "dataset": "cifar10",
+      "backbone": {
+        "name": "resnet18"
+      },
+      "site": "target_image",
+      "seed": 0,
+      "data_protocol": {
+        "dataset": "cifar10",
+        "root": "/home/pengcheng/VLG-CBM/datasets",
+        "concepts": "configs/concepts/cifar10_official.txt",
+        "train_per_class": 10,
+        "val_per_class": 5,
+        "test_per_class": 10,
+        "batch_size": 16,
+        "cache_internal": false,
+        "cache_images": true,
+        "split_seed": null,
+        "num_workers": 2,
+        "version": "cifar10-official-v1"
+      },
+      "baseline_protocol": {
+        "import_dir": null,
+        "include_adapter_val": false,
+        "validation_split": "val",
+        "seed": null,
+        "activation_cutoff": -1,
+        "interpretability_cutoff": -1,
+        "projection_steps": 51,
+        "projection_lr": 0.001,
+        "projection_batch_size": 100,
+        "head": {
+          "steps": 20,
+          "batch_size": 32,
+          "lr": 0.1,
+          "lambda": 0.001,
+          "alpha": 0.99
+        }
+      },
+      "classes": 10,
+      "concept_count": 143,
+      "feature_cache_exists": false,
+      "saved_baseline_concept_shapes": {
+        "test": [
+          100,
+          143
+        ]
+      },
+      "saved_baseline_concepts_scope": "Historical baseline representation; adapted checkpoint head must not be substituted without matching its representation."
+    },
+    {
+      "path": "/home/pengcheng/Pi-CBM/LF-Pi/artifacts/runs-imagenet100/20260926-150917-689146-baseline/checkpoint.pt",
+      "dataset": "imagenet",
+      "backbone": {
+        "name": "resnet50",
+        "precision": "native"
+      },
+      "site": "baseline",
+      "seed": 0,
+      "data_protocol": {
+        "dataset": "imagenet",
+        "root": "/home/pengcheng/VLG-CBM/datasets/imagenet/ILSVRC/Data/CLS-LOC/ImageNet_train_100_10",
+        "concepts": "configs/concepts/imagenet_official.txt",
+        "train_per_class": 100,
+        "val_per_class": 10,
+        "test_per_class": 0,
+        "batch_size": 64,
+        "cache_internal": false,
+        "cache_images": false,
+        "split_seed": 42,
+        "num_workers": 8,
+        "version": "imagenet100-adapter10-datacomp-f5486581-seed42-v1",
+        "internal_dtype": "native",
+        "official_val_root": "/home/pengcheng/VLG-CBM/datasets/imagenet/ILSVRC/Data/CLS-LOC/ImageNet_val",
+        "input_mode": "stream"
+      },
+      "baseline_protocol": {
+        "import_dir": null,
+        "include_adapter_val": false,
+        "validation_split": "test",
+        "seed": 0,
+        "activation_cutoff": 0.28,
+        "interpretability_cutoff": 0.45,
+        "projection_steps": 1000,
+        "projection_lr": 0.001,
+        "projection_batch_size": 50000,
+        "head": {
+          "steps": 80,
+          "batch_size": 256,
+          "lr": 0.1,
+          "lambda": 0.0001,
+          "alpha": 0.99
+        }
+      },
+      "classes": 1000,
+      "concept_count": 3970,
+      "feature_cache_exists": false,
+      "saved_baseline_concept_shapes": {
+        "test": [
+          50000,
+          3970
+        ]
+      },
+      "saved_baseline_concepts_scope": "Historical baseline representation; adapted checkpoint head must not be substituted without matching its representation."
+    },
+    {
+      "path": "/home/pengcheng/Pi-CBM/LF-Pi/artifacts/runs-imagenet200/20260926-181117-513923-baseline/checkpoint.pt",
+      "dataset": "imagenet",
+      "backbone": {
+        "name": "resnet50",
+        "precision": "native"
+      },
+      "site": "baseline",
+      "seed": 0,
+      "data_protocol": {
+        "dataset": "imagenet",
+        "root": "/home/pengcheng/VLG-CBM/datasets/imagenet/ILSVRC/Data/CLS-LOC/ImageNet_train_200_10_clean",
+        "concepts": "configs/concepts/imagenet_official.txt",
+        "train_per_class": 200,
+        "val_per_class": 10,
+        "test_per_class": 0,
+        "batch_size": 64,
+        "cache_internal": false,
+        "cache_images": false,
+        "split_seed": 42,
+        "num_workers": 8,
+        "version": "imagenet200-adapter10-datacomp-clean356588cc-seed42-v1",
+        "internal_dtype": "native",
+        "official_val_root": "/home/pengcheng/VLG-CBM/datasets/imagenet/ILSVRC/Data/CLS-LOC/ImageNet_val",
+        "input_mode": "stream"
+      },
+      "baseline_protocol": {
+        "import_dir": null,
+        "include_adapter_val": false,
+        "validation_split": "test",
+        "seed": 0,
+        "activation_cutoff": 0.28,
+        "interpretability_cutoff": 0.45,
+        "projection_steps": 1000,
+        "projection_lr": 0.001,
+        "projection_batch_size": 50000,
+        "head": {
+          "steps": 80,
+          "batch_size": 256,
+          "lr": 0.1,
+          "lambda": 0.0001,
+          "alpha": 0.99
+        }
+      },
+      "classes": 1000,
+      "concept_count": 4141,
+      "feature_cache_exists": false,
+      "saved_baseline_concept_shapes": {
+        "test": [
+          50000,
+          4141
+        ]
+      },
+      "saved_baseline_concepts_scope": "Historical baseline representation; adapted checkpoint head must not be substituted without matching its representation."
+    },
+    {
+      "path": "/home/pengcheng/Pi-CBM/LF-Pi/artifacts/runs-imagenet200/20260926-195646-580525-baseline/checkpoint.pt",
+      "dataset": "imagenet",
+      "backbone": {
+        "name": "resnet50",
+        "precision": "native"
+      },
+      "site": "baseline",
+      "seed": 0,
+      "data_protocol": {
+        "dataset": "imagenet",
+        "root": "/home/pengcheng/VLG-CBM/datasets/imagenet/ILSVRC/Data/CLS-LOC/ImageNet_train_200_10_clean",
+        "concepts": "configs/concepts/imagenet_official.txt",
+        "train_per_class": 200,
+        "val_per_class": 10,
+        "test_per_class": 0,
+        "batch_size": 64,
+        "cache_internal": false,
+        "cache_images": false,
+        "split_seed": 42,
+        "num_workers": 8,
+        "version": "imagenet200-adapter10-datacomp-1over4-verified-1over2-supplement-seed42-v2",
+        "internal_dtype": "native",
+        "official_val_root": "/home/pengcheng/VLG-CBM/datasets/imagenet/ILSVRC/Data/CLS-LOC/ImageNet_val",
+        "input_mode": "stream"
+      },
+      "baseline_protocol": {
+        "import_dir": null,
+        "include_adapter_val": false,
+        "validation_split": "test",
+        "seed": 0,
+        "activation_cutoff": 0.28,
+        "interpretability_cutoff": 0.45,
+        "projection_steps": 1000,
+        "projection_lr": 0.001,
+        "projection_batch_size": 50000,
+        "head": {
+          "steps": 80,
+          "batch_size": 256,
+          "lr": 0.1,
+          "lambda": 0.0001,
+          "alpha": 0.99
+        }
+      },
+      "classes": 1000,
+      "concept_count": 4141,
+      "feature_cache_exists": false,
+      "saved_baseline_concept_shapes": {
+        "test": [
+          50000,
+          4141
+        ]
+      },
+      "saved_baseline_concepts_scope": "Historical baseline representation; adapted checkpoint head must not be substituted without matching its representation."
+    },
+    {
+      "path": "/home/pengcheng/Pi-CBM/LF-Pi/artifacts/runs-imagenet200/20260926-205924-339368-target_global-mean_scale-seed0/checkpoint.pt",
+      "dataset": "imagenet",
+      "backbone": {
+        "name": "resnet50",
+        "precision": "native"
+      },
+      "site": "target_global",
+      "seed": 0,
+      "data_protocol": {
+        "dataset": "imagenet",
+        "root": "/home/pengcheng/VLG-CBM/datasets/imagenet/ILSVRC/Data/CLS-LOC/ImageNet_train_200_10_clean",
+        "concepts": "configs/concepts/imagenet_official.txt",
+        "train_per_class": 200,
+        "val_per_class": 10,
+        "test_per_class": 0,
+        "batch_size": 64,
+        "cache_internal": false,
+        "cache_images": false,
+        "split_seed": 42,
+        "num_workers": 8,
+        "version": "imagenet200-adapter10-datacomp-1over4-verified-1over2-supplement-seed42-v2",
+        "internal_dtype": "native",
+        "official_val_root": "/home/pengcheng/VLG-CBM/datasets/imagenet/ILSVRC/Data/CLS-LOC/ImageNet_val",
+        "input_mode": "stream"
+      },
+      "baseline_protocol": {
+        "import_dir": null,
+        "include_adapter_val": false,
+        "validation_split": "test",
+        "seed": 0,
+        "activation_cutoff": 0.28,
+        "interpretability_cutoff": 0.45,
+        "projection_steps": 1000,
+        "projection_lr": 0.001,
+        "projection_batch_size": 50000,
+        "head": {
+          "steps": 80,
+          "batch_size": 256,
+          "lr": 0.1,
+          "lambda": 0.0001,
+          "alpha": 0.99
+        }
+      },
+      "classes": 1000,
+      "concept_count": 4141,
+      "feature_cache_exists": false,
+      "saved_baseline_concept_shapes": {
+        "test": [
+          50000,
+          4141
+        ]
+      },
+      "saved_baseline_concepts_scope": "Historical baseline representation; adapted checkpoint head must not be substituted without matching its representation."
+    },
+    {
+      "path": "/home/pengcheng/Pi-CBM/LF-Pi/artifacts/runs-imagenet200/20260926-213155-047254-target_internal-mean_scale-seed0/checkpoint.pt",
+      "dataset": "imagenet",
+      "backbone": {
+        "name": "resnet50",
+        "precision": "native"
+      },
+      "site": "target_internal",
+      "seed": 0,
+      "data_protocol": {
+        "dataset": "imagenet",
+        "root": "/home/pengcheng/VLG-CBM/datasets/imagenet/ILSVRC/Data/CLS-LOC/ImageNet_train_200_10_clean",
+        "concepts": "configs/concepts/imagenet_official.txt",
+        "train_per_class": 200,
+        "val_per_class": 10,
+        "test_per_class": 0,
+        "batch_size": 64,
+        "cache_internal": false,
+        "cache_images": false,
+        "split_seed": 42,
+        "num_workers": 8,
+        "version": "imagenet200-adapter10-datacomp-1over4-verified-1over2-supplement-seed42-v2",
+        "internal_dtype": "native",
+        "official_val_root": "/home/pengcheng/VLG-CBM/datasets/imagenet/ILSVRC/Data/CLS-LOC/ImageNet_val",
+        "input_mode": "stream"
+      },
+      "baseline_protocol": {
+        "import_dir": null,
+        "include_adapter_val": false,
+        "validation_split": "test",
+        "seed": 0,
+        "activation_cutoff": 0.28,
+        "interpretability_cutoff": 0.45,
+        "projection_steps": 1000,
+        "projection_lr": 0.001,
+        "projection_batch_size": 50000,
+        "head": {
+          "steps": 80,
+          "batch_size": 256,
+          "lr": 0.1,
+          "lambda": 0.0001,
+          "alpha": 0.99
+        }
+      },
+      "classes": 1000,
+      "concept_count": 4141,
+      "feature_cache_exists": false,
+      "saved_baseline_concept_shapes": {
+        "test": [
+          50000,
+          4141
+        ]
+      },
+      "saved_baseline_concepts_scope": "Historical baseline representation; adapted checkpoint head must not be substituted without matching its representation."
+    },
+    {
+      "path": "/home/pengcheng/Pi-CBM/LF-Pi/artifacts/runs-imagenet200/20260927-011527-789511-target_image-mean_scale-seed0/checkpoint.pt",
+      "dataset": "imagenet",
+      "backbone": {
+        "name": "resnet50",
+        "precision": "native"
+      },
+      "site": "target_image",
+      "seed": 0,
+      "data_protocol": {
+        "dataset": "imagenet",
+        "root": "/home/pengcheng/VLG-CBM/datasets/imagenet/ILSVRC/Data/CLS-LOC/ImageNet_train_200_10_clean",
+        "concepts": "configs/concepts/imagenet_official.txt",
+        "train_per_class": 200,
+        "val_per_class": 10,
+        "test_per_class": 0,
+        "batch_size": 64,
+        "cache_internal": false,
+        "cache_images": false,
+        "split_seed": 42,
+        "num_workers": 8,
+        "version": "imagenet200-adapter10-datacomp-1over4-verified-1over2-supplement-seed42-v2",
+        "internal_dtype": "native",
+        "official_val_root": "/home/pengcheng/VLG-CBM/datasets/imagenet/ILSVRC/Data/CLS-LOC/ImageNet_val",
+        "input_mode": "stream"
+      },
+      "baseline_protocol": {
+        "import_dir": null,
+        "include_adapter_val": false,
+        "validation_split": "test",
+        "seed": 0,
+        "activation_cutoff": 0.28,
+        "interpretability_cutoff": 0.45,
+        "projection_steps": 1000,
+        "projection_lr": 0.001,
+        "projection_batch_size": 50000,
+        "head": {
+          "steps": 80,
+          "batch_size": 256,
+          "lr": 0.1,
+          "lambda": 0.0001,
+          "alpha": 0.99
+        }
+      },
+      "classes": 1000,
+      "concept_count": 4141,
+      "feature_cache_exists": false,
+      "saved_baseline_concept_shapes": {
+        "test": [
+          50000,
+          4141
+        ]
+      },
+      "saved_baseline_concepts_scope": "Historical baseline representation; adapted checkpoint head must not be substituted without matching its representation."
+    },
+    {
+      "path": "/home/pengcheng/Pi-CBM/LF-Pi/artifacts/runs-places365-500/20260926-152200-569965-baseline/checkpoint.pt",
+      "dataset": "places365",
+      "backbone": {
+        "name": "resnet50",
+        "precision": "native"
+      },
+      "site": "baseline",
+      "seed": 0,
+      "data_protocol": {
+        "dataset": "places365",
+        "root": "/home/pengcheng/VLG-CBM/datasets/places365_torch",
+        "concepts": "configs/concepts/places365.txt",
+        "train_per_class": 500,
+        "val_per_class": 50,
+        "test_per_class": 0,
+        "batch_size": 64,
+        "cache_internal": false,
+        "cache_images": false,
+        "split_seed": 0,
+        "num_workers": 8,
+        "version": "places365-standard-train500-val50-officialval-test-v2",
+        "internal_dtype": "native",
+        "input_mode": "stream"
+      },
+      "baseline_protocol": {
+        "import_dir": null,
+        "include_adapter_val": false,
+        "validation_split": "test",
+        "seed": 0,
+        "activation_cutoff": 0.28,
+        "interpretability_cutoff": 0.45,
+        "projection_steps": 1000,
+        "projection_lr": 0.001,
+        "projection_batch_size": 50000,
+        "head": {
+          "steps": 80,
+          "batch_size": 256,
+          "lr": 0.1,
+          "lambda": 0.0003,
+          "alpha": 0.99
+        }
+      },
+      "classes": 365,
+      "concept_count": 1868,
+      "feature_cache_exists": false,
+      "saved_baseline_concept_shapes": {
+        "test": [
+          36500,
+          1868
+        ]
+      },
+      "saved_baseline_concepts_scope": "Historical baseline representation; adapted checkpoint head must not be substituted without matching its representation."
+    },
+    {
+      "path": "/home/pengcheng/Pi-CBM/LF-Pi/artifacts/runs-places365-500/20260926-153201-544196-target_global-mean_scale-seed0/checkpoint.pt",
+      "dataset": "places365",
+      "backbone": {
+        "name": "resnet50",
+        "precision": "native"
+      },
+      "site": "target_global",
+      "seed": 0,
+      "data_protocol": {
+        "dataset": "places365",
+        "root": "/home/pengcheng/VLG-CBM/datasets/places365_torch",
+        "concepts": "configs/concepts/places365.txt",
+        "train_per_class": 500,
+        "val_per_class": 50,
+        "test_per_class": 0,
+        "batch_size": 64,
+        "cache_internal": false,
+        "cache_images": false,
+        "split_seed": 0,
+        "num_workers": 8,
+        "version": "places365-standard-train500-val50-officialval-test-v2",
+        "internal_dtype": "native",
+        "input_mode": "stream"
+      },
+      "baseline_protocol": {
+        "import_dir": null,
+        "include_adapter_val": false,
+        "validation_split": "test",
+        "seed": 0,
+        "activation_cutoff": 0.28,
+        "interpretability_cutoff": 0.45,
+        "projection_steps": 1000,
+        "projection_lr": 0.001,
+        "projection_batch_size": 50000,
+        "head": {
+          "steps": 80,
+          "batch_size": 256,
+          "lr": 0.1,
+          "lambda": 0.0003,
+          "alpha": 0.99
+        }
+      },
+      "classes": 365,
+      "concept_count": 1868,
+      "feature_cache_exists": false,
+      "saved_baseline_concept_shapes": {
+        "test": [
+          36500,
+          1868
+        ]
+      },
+      "saved_baseline_concepts_scope": "Historical baseline representation; adapted checkpoint head must not be substituted without matching its representation."
+    },
+    {
+      "path": "/home/pengcheng/Pi-CBM/LF-Pi/artifacts/runs-places365-full/20260926-160440-145000-baseline/checkpoint.pt",
+      "dataset": "places365",
+      "backbone": {
+        "name": "resnet50",
+        "precision": "native"
+      },
+      "site": "baseline",
+      "seed": 0,
+      "data_protocol": {
+        "dataset": "places365",
+        "root": "/home/pengcheng/VLG-CBM/datasets/places365_torch",
+        "concepts": "configs/concepts/places365.txt",
+        "train_per_class": 0,
+        "val_per_class": 50,
+        "test_per_class": 0,
+        "batch_size": 64,
+        "cache_internal": false,
+        "cache_images": false,
+        "split_seed": 0,
+        "num_workers": 8,
+        "version": "places365-standard-fulltrain-adapterval50-v1",
+        "internal_dtype": "native",
+        "input_mode": "stream"
+      },
+      "baseline_protocol": {
+        "import_dir": null,
+        "include_adapter_val": true,
+        "validation_split": "test",
+        "seed": 0,
+        "activation_cutoff": 0.28,
+        "interpretability_cutoff": 0.45,
+        "projection_steps": 1000,
+        "projection_lr": 0.001,
+        "projection_batch_size": 50000,
+        "head": {
+          "steps": 80,
+          "batch_size": 256,
+          "lr": 0.1,
+          "lambda": 0.0003,
+          "alpha": 0.99
+        }
+      },
+      "classes": 365,
+      "concept_count": 2157,
+      "feature_cache_exists": false,
+      "saved_baseline_concept_shapes": {
+        "test": [
+          36500,
+          2157
+        ]
+      },
+      "saved_baseline_concepts_scope": "Historical baseline representation; adapted checkpoint head must not be substituted without matching its representation."
+    },
+    {
+      "path": "/home/pengcheng/Pi-CBM/LF-Pi/artifacts/runs-places365-full/20260926-164656-004817-baseline/checkpoint.pt",
+      "dataset": "places365",
+      "backbone": {
+        "name": "resnet50",
+        "precision": "native"
+      },
+      "site": "baseline",
+      "seed": 0,
+      "data_protocol": {
+        "dataset": "places365",
+        "root": "/home/pengcheng/VLG-CBM/datasets/places365_torch",
+        "concepts": "configs/concepts/places365.txt",
+        "train_per_class": 0,
+        "val_per_class": 50,
+        "test_per_class": 0,
+        "batch_size": 64,
+        "cache_internal": false,
+        "cache_images": false,
+        "split_seed": 0,
+        "num_workers": 8,
+        "version": "places365-standard-fulltrain-adapterval50-v1",
+        "internal_dtype": "native",
+        "input_mode": "stream"
+      },
+      "baseline_protocol": {
+        "import_dir": null,
+        "include_adapter_val": true,
+        "validation_split": "test",
+        "seed": 0,
+        "activation_cutoff": 0.28,
+        "interpretability_cutoff": 0.45,
+        "projection_steps": 1000,
+        "projection_lr": 0.001,
+        "projection_batch_size": 50000,
+        "head": {
+          "steps": 80,
+          "batch_size": 256,
+          "lr": 0.1,
+          "lambda": 0.0003,
+          "alpha": 0.99
+        }
+      },
+      "classes": 365,
+      "concept_count": 2157,
+      "feature_cache_exists": false,
+      "saved_baseline_concept_shapes": {
+        "test": [
+          36500,
+          2157
+        ]
+      },
+      "saved_baseline_concepts_scope": "Historical baseline representation; adapted checkpoint head must not be substituted without matching its representation."
+    },
+    {
+      "path": "/home/pengcheng/Pi-CBM/LF-Pi/artifacts/runs-places365-full/20260926-170744-116812-baseline/checkpoint.pt",
+      "dataset": "places365",
+      "backbone": {
+        "name": "resnet50",
+        "precision": "native"
+      },
+      "site": "baseline",
+      "seed": 0,
+      "data_protocol": {
+        "dataset": "places365",
+        "root": "/home/pengcheng/VLG-CBM/datasets/places365_torch",
+        "concepts": "configs/concepts/places365.txt",
+        "train_per_class": 0,
+        "val_per_class": 50,
+        "test_per_class": 0,
+        "batch_size": 64,
+        "cache_internal": false,
+        "cache_images": false,
+        "split_seed": 0,
+        "num_workers": 8,
+        "version": "places365-standard-fulltrain-adapterval50-v1",
+        "internal_dtype": "native",
+        "input_mode": "stream"
+      },
+      "baseline_protocol": {
+        "import_dir": null,
+        "include_adapter_val": true,
+        "validation_split": "test",
+        "seed": 0,
+        "activation_cutoff": 0.28,
+        "interpretability_cutoff": 0.45,
+        "projection_steps": 1000,
+        "projection_lr": 0.001,
+        "projection_batch_size": 50000,
+        "head": {
+          "steps": 80,
+          "batch_size": 256,
+          "lr": 0.1,
+          "lambda": 0.0003,
+          "alpha": 0.99
+        }
+      },
+      "classes": 365,
+      "concept_count": 2157,
+      "feature_cache_exists": false,
+      "saved_baseline_concept_shapes": {
+        "test": [
+          36500,
+          2157
+        ]
+      },
+      "saved_baseline_concepts_scope": "Historical baseline representation; adapted checkpoint head must not be substituted without matching its representation."
+    },
+    {
+      "path": "/home/pengcheng/Pi-CBM/LF-Pi/artifacts/runs-places365-full/20260926-170857-886670-baseline/checkpoint.pt",
+      "dataset": "places365",
+      "backbone": {
+        "name": "resnet50",
+        "precision": "native"
+      },
+      "site": "baseline",
+      "seed": 0,
+      "data_protocol": {
+        "dataset": "places365",
+        "root": "/home/pengcheng/VLG-CBM/datasets/places365_torch",
+        "concepts": "configs/concepts/places365.txt",
+        "train_per_class": 0,
+        "val_per_class": 50,
+        "test_per_class": 0,
+        "batch_size": 64,
+        "cache_internal": false,
+        "cache_images": false,
+        "split_seed": 0,
+        "num_workers": 8,
+        "version": "places365-standard-fulltrain-adapterval50-v1",
+        "internal_dtype": "native",
+        "input_mode": "stream"
+      },
+      "baseline_protocol": {
+        "import_dir": null,
+        "include_adapter_val": true,
+        "validation_split": "test",
+        "seed": 0,
+        "activation_cutoff": 0.28,
+        "interpretability_cutoff": 0.45,
+        "projection_steps": 1000,
+        "projection_lr": 0.001,
+        "projection_batch_size": 50000,
+        "head": {
+          "steps": 80,
+          "batch_size": 256,
+          "lr": 0.1,
+          "lambda": 0.0003,
+          "alpha": 0.99
+        }
+      },
+      "classes": 365,
+      "concept_count": 2157,
+      "feature_cache_exists": false,
+      "saved_baseline_concept_shapes": {
+        "test": [
+          36500,
+          2157
+        ]
+      },
+      "saved_baseline_concepts_scope": "Historical baseline representation; adapted checkpoint head must not be substituted without matching its representation."
+    },
+    {
+      "path": "/home/pengcheng/Pi-CBM/LF-Pi/artifacts/runs-places365-full/20260926-170901-954632-target_global-mean_scale-seed0/checkpoint.pt",
+      "dataset": "places365",
+      "backbone": {
+        "name": "resnet50",
+        "precision": "native"
+      },
+      "site": "target_global",
+      "seed": 0,
+      "data_protocol": {
+        "dataset": "places365",
+        "root": "/home/pengcheng/VLG-CBM/datasets/places365_torch",
+        "concepts": "configs/concepts/places365.txt",
+        "train_per_class": 0,
+        "val_per_class": 50,
+        "test_per_class": 0,
+        "batch_size": 64,
+        "cache_internal": false,
+        "cache_images": false,
+        "split_seed": 0,
+        "num_workers": 8,
+        "version": "places365-standard-fulltrain-adapterval50-v1",
+        "internal_dtype": "native",
+        "input_mode": "stream"
+      },
+      "baseline_protocol": {
+        "import_dir": null,
+        "include_adapter_val": true,
+        "validation_split": "test",
+        "seed": 0,
+        "activation_cutoff": 0.28,
+        "interpretability_cutoff": 0.45,
+        "projection_steps": 1000,
+        "projection_lr": 0.001,
+        "projection_batch_size": 50000,
+        "head": {
+          "steps": 80,
+          "batch_size": 256,
+          "lr": 0.1,
+          "lambda": 0.0003,
+          "alpha": 0.99
+        }
+      },
+      "classes": 365,
+      "concept_count": 2157,
+      "feature_cache_exists": false,
+      "saved_baseline_concept_shapes": {
+        "test": [
+          36500,
+          2157
+        ]
+      },
+      "saved_baseline_concepts_scope": "Historical baseline representation; adapted checkpoint head must not be substituted without matching its representation."
+    },
+    {
+      "path": "/home/pengcheng/Pi-CBM/LF-Pi/artifacts/runs-places365-full/20260927-025457-165126-target_internal-mean_scale-seed0/checkpoint.pt",
+      "dataset": "places365",
+      "backbone": {
+        "name": "resnet50",
+        "precision": "native"
+      },
+      "site": "target_internal",
+      "seed": 0,
+      "data_protocol": {
+        "dataset": "places365",
+        "root": "/home/pengcheng/VLG-CBM/datasets/places365_torch",
+        "concepts": "configs/concepts/places365.txt",
+        "train_per_class": 0,
+        "val_per_class": 50,
+        "test_per_class": 0,
+        "batch_size": 64,
+        "cache_internal": false,
+        "cache_images": false,
+        "split_seed": 0,
+        "num_workers": 8,
+        "version": "places365-standard-fulltrain-adapterval50-v1",
+        "internal_dtype": "native",
+        "input_mode": "stream"
+      },
+      "baseline_protocol": {
+        "import_dir": null,
+        "include_adapter_val": true,
+        "validation_split": "test",
+        "seed": 0,
+        "activation_cutoff": 0.28,
+        "interpretability_cutoff": 0.45,
+        "projection_steps": 1000,
+        "projection_lr": 0.001,
+        "projection_batch_size": 50000,
+        "head": {
+          "steps": 80,
+          "batch_size": 256,
+          "lr": 0.1,
+          "lambda": 0.0003,
+          "alpha": 0.99
+        }
+      },
+      "classes": 365,
+      "concept_count": 2157,
+      "feature_cache_exists": false,
+      "saved_baseline_concept_shapes": {
+        "test": [
+          36500,
+          2157
+        ]
+      },
+      "saved_baseline_concepts_scope": "Historical baseline representation; adapted checkpoint head must not be substituted without matching its representation."
+    },
+    {
+      "path": "/home/pengcheng/Pi-CBM/LF-Pi/artifacts/runs-places365-full/20260928-013347-751795-target_image-mean_scale-seed0/checkpoint.pt",
+      "dataset": "places365",
+      "backbone": {
+        "name": "resnet50",
+        "precision": "native"
+      },
+      "site": "target_image",
+      "seed": 0,
+      "data_protocol": {
+        "dataset": "places365",
+        "root": "/home/pengcheng/VLG-CBM/datasets/places365_torch",
+        "concepts": "configs/concepts/places365.txt",
+        "train_per_class": 0,
+        "val_per_class": 50,
+        "test_per_class": 0,
+        "batch_size": 64,
+        "cache_internal": false,
+        "cache_images": false,
+        "split_seed": 0,
+        "num_workers": 8,
+        "version": "places365-standard-fulltrain-adapterval50-v1",
+        "internal_dtype": "native",
+        "input_mode": "stream"
+      },
+      "baseline_protocol": {
+        "import_dir": null,
+        "include_adapter_val": true,
+        "validation_split": "test",
+        "seed": 0,
+        "activation_cutoff": 0.28,
+        "interpretability_cutoff": 0.45,
+        "projection_steps": 1000,
+        "projection_lr": 0.001,
+        "projection_batch_size": 50000,
+        "head": {
+          "steps": 80,
+          "batch_size": 256,
+          "lr": 0.1,
+          "lambda": 0.0003,
+          "alpha": 0.99
+        }
+      },
+      "classes": 365,
+      "concept_count": 2157,
+      "feature_cache_exists": false,
+      "saved_baseline_concept_shapes": {
+        "test": [
+          36500,
+          2157
+        ]
+      },
+      "saved_baseline_concepts_scope": "Historical baseline representation; adapted checkpoint head must not be substituted without matching its representation."
+    }
+  ],
+  "existing_diagnostic_caches": [
+    {
+      "path": "/home/pengcheng/Pi-CBM/LF-Pi/artifacts/mechanism_v1/cifar10/clean_test.pt",
+      "dataset": "cifar10",
+      "tensor_shapes": {
+        "features": [
+          10000,
+          1024
+        ],
+        "labels": [
+          10000
+        ],
+        "indices": [
+          10000
+        ]
+      }
+    },
+    {
+      "path": "/home/pengcheng/Pi-CBM/LF-Pi/artifacts/mechanism_v1/cifar10/clean_train.pt",
+      "dataset": "cifar10",
+      "tensor_shapes": {
+        "features": [
+          45000,
+          1024
+        ],
+        "labels": [
+          45000
+        ],
+        "indices": [
+          45000
+        ]
+      }
+    },
+    {
+      "path": "/home/pengcheng/Pi-CBM/LF-Pi/artifacts/mechanism_v1/cifar10/clean_val.pt",
+      "dataset": "cifar10",
+      "tensor_shapes": {
+        "features": [
+          5000,
+          1024
+        ],
+        "labels": [
+          5000
+        ],
+        "indices": [
+          5000
+        ]
+      }
+    },
+    {
+      "path": "/home/pengcheng/Pi-CBM/LF-Pi/artifacts/mechanism_v1/cifar10/matched_global_controls/predictions.pt",
+      "dataset": "cifar10",
+      "tensor_shapes": {
+        "labels": [
+          10000
+        ]
+      }
+    },
+    {
+      "path": "/home/pengcheng/Pi-CBM/LF-Pi/artifacts/mechanism_v1/cifar10/matched_global_controls/teacher_train.pt",
+      "dataset": "cifar10",
+      "tensor_shapes": [
+        45000,
+        132
+      ]
+    },
+    {
+      "path": "/home/pengcheng/Pi-CBM/LF-Pi/artifacts/mechanism_v1/cifar10/matched_global_controls/teacher_val.pt",
+      "dataset": "cifar10",
+      "tensor_shapes": [
+        5000,
+        132
+      ]
+    },
+    {
+      "path": "/home/pengcheng/Pi-CBM/LF-Pi/artifacts/mechanism_v1/cifar10/predictions.pt",
+      "dataset": "cifar10",
+      "tensor_shapes": {
+        "labels": [
+          10000
+        ],
+        "indices": [
+          10000
+        ]
+      }
+    },
+    {
+      "path": "/home/pengcheng/Pi-CBM/LF-Pi/artifacts/mechanism_v1/cifar100/clean_test.pt",
+      "dataset": "cifar100",
+      "tensor_shapes": {
+        "features": [
+          10000,
+          1024
+        ],
+        "labels": [
+          10000
+        ],
+        "indices": [
+          10000
+        ]
+      }
+    },
+    {
+      "path": "/home/pengcheng/Pi-CBM/LF-Pi/artifacts/mechanism_v1/cifar100/clean_train.pt",
+      "dataset": "cifar100",
+      "tensor_shapes": {
+        "features": [
+          45000,
+          1024
+        ],
+        "labels": [
+          45000
+        ],
+        "indices": [
+          45000
+        ]
+      }
+    },
+    {
+      "path": "/home/pengcheng/Pi-CBM/LF-Pi/artifacts/mechanism_v1/cifar100/clean_val.pt",
+      "dataset": "cifar100",
+      "tensor_shapes": {
+        "features": [
+          5000,
+          1024
+        ],
+        "labels": [
+          5000
+        ],
+        "indices": [
+          5000
+        ]
+      }
+    },
+    {
+      "path": "/home/pengcheng/Pi-CBM/LF-Pi/artifacts/mechanism_v1/cifar100/predictions.pt",
+      "dataset": "cifar100",
+      "tensor_shapes": {
+        "labels": [
+          10000
+        ],
+        "indices": [
+          10000
+        ]
+      }
+    },
+    {
+      "path": "/home/pengcheng/Pi-CBM/LF-Pi/artifacts/mechanism_v1/cub/dataset.pt",
+      "dataset": "cub",
+      "tensor_shapes": {}
+    },
+    {
+      "path": "/home/pengcheng/Pi-CBM/LF-Pi/artifacts/mechanism_v1/cub/predictions.pt",
+      "dataset": "cub",
+      "tensor_shapes": {
+        "labels": [
+          800
+        ],
+        "indices": [
+          800
+        ],
+        "baseline_cam_focus": [
+          800
+        ]
+      }
+    },
+    {
+      "path": "/home/pengcheng/Pi-CBM/LF-Pi/artifacts/mechanism_v1/cub/training_reference.pt",
+      "dataset": "cub",
+      "tensor_shapes": {
+        "features": [
+          4990,
+          512
+        ],
+        "concepts": [
+          4990,
+          208
+        ],
+        "indices": [
+          4990
+        ]
+      }
+    }
+  ],
+  "scope": "Historical inventory; not newly trained matched comparisons",
+  "limitation": "CIFAR/ImageNet/Places old concept selection used test; old ImageNet subsets and RGB-only CUB are not standard full-dataset protocols."
+}

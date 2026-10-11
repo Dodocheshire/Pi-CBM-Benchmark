@@ -39,13 +39,21 @@ def classification_metrics(logits, labels, probabilities=False):
     if probabilities and (np.any(p<0) or not np.allclose(p.sum(1),1,atol=1e-5)):
         raise ValueError('invalid probabilities')
     correct=p.argmax(1)==labels
+    counts=np.bincount(labels,minlength=logits.shape[1])
+    hits=np.bincount(labels[correct],minlength=logits.shape[1])
+    present=counts>0
+    per_class=np.divide(hits,counts,out=np.zeros_like(hits,dtype=float),where=present)
     confidence=p.max(1);ece=0.
     bins=np.minimum((confidence*15).astype(int),14)
     for b in range(15):
         use=bins==b
         if use.any():ece+=use.mean()*abs(correct[use].mean()-confidence[use].mean())
     return {'accuracy':float(correct.mean()),'nll':float(-np.log(p[np.arange(len(p)),labels].clip(1e-12)).mean()),
-            'ece_15_bins':float(ece),'examples':len(labels),'correct':int(correct.sum())}
+            'ece_15_bins':float(ece),'examples':len(labels),'correct':int(correct.sum()),
+            'balanced_accuracy':float(per_class[present].mean()),
+            'worst_observed_class_accuracy':float(per_class[present].min()),
+            'class_counts':counts.tolist(),
+            'per_class_accuracy':[float(v) if n else None for v,n in zip(per_class,counts)]}
 
 
 def nec(weights, threshold=1e-5):
@@ -67,8 +75,8 @@ def paired_concept_metrics(a,b,train_scores=None):
         scale=np.asarray(train_scores,dtype=float).std(0)
         active=np.isfinite(scale)&(scale>1e-8)
         normalized=difference[:,active]/scale[active]
-        result.update(standardized_mae=float(np.abs(normalized).mean()),
-                      standardized_mse=float(np.square(normalized).mean()),
+        result.update(standardized_mae=float(np.abs(normalized).mean()) if active.any() else None,
+                      standardized_mse=float(np.square(normalized).mean()) if active.any() else None,
                       normalized_concepts=int(active.sum()))
     return result
 

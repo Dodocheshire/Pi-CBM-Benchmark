@@ -1,0 +1,27 @@
+{
+  "entrypoint": "python -m benchmark.lf_matched",
+  "datasets": ["rival10", "cub", "waterbirds"],
+  "backbones": ["resnet18", "resnet50", "clip_RN50"],
+  "training_seeds": [42, 43, 44],
+  "train_views": ["original", "original,changed"],
+  "core_training": {
+    "epochs": 20,
+    "projection_steps": 1000,
+    "saga_steps": 1000,
+    "activation_cutoff": 0.25,
+    "interpretability_cutoff": 0.45,
+    "include_adapter_val": false,
+    "validation_split": "val"
+  },
+  "teacher_pattern": "artifacts/common/{dataset}/teacher",
+  "feature_pattern": "artifacts/common/{dataset}/{backbone_cache_name}",
+  "backbone_cache_names": {"resnet18": "rn18_imagenet", "resnet50": "rn50_imagenet", "clip_RN50": "clip_RN50"},
+  "output_pattern": "artifacts/matched/lf/{dataset}/{backbone}/{protocol}/seed{seed}",
+  "protocols": {
+    "original": "Original views in train and validation; both views only at test",
+    "paired_augmentation": "Both views concatenated within train/val subject folds; unchanged upstream LF loss"
+  },
+  "selection": "Projection/concept selection, adapter epoch and head lambda use validation only; test is evaluated after choices freeze",
+  "concept_scoring": "Primary AP on semantic intersection with selected LF concept bank, report retained coverage. Missing-output-zero coverage penalty is a separate nonstandard diagnostic.",
+  "existing_seed0": "Exploratory execution confirmation, not one of the three scheduled seeds"
+}

@@ -1,0 +1,60 @@
+{
+  "dataset": "rival10",
+  "concept_count": 18,
+  "class_count": 10,
+  "output_root": "/home/pengcheng/Pi-CBM-Benchmark/artifacts/pini_new_selection",
+  "cache_by_stage": {
+    "selection": "/home/pengcheng/Pi-CBM-Benchmark/artifacts/common/rival10/selection_cache",
+    "refit": "/home/pengcheng/Pi-CBM-Benchmark/artifacts/common/rival10/refit_cache"
+  },
+  "regions_by_stage": {
+    "selection": "/home/pengcheng/Pi-CBM/PiNI/artifacts/rival10_aligned_rn18/regions",
+    "refit": "/home/pengcheng/Pi-CBM/PiNI/artifacts/rival10_aligned_rn18/regions"
+  },
+  "region_phrases": [
+    "animal",
+    "vehicle",
+    "head",
+    "wing",
+    "wheel",
+    "tail",
+    "ear",
+    "beak",
+    "eye",
+    "horn",
+    "leg",
+    "body"
+  ],
+  "backbone_by_stage": {
+    "selection": {
+      "factory": "spatial_noise.rn18_datasets:RivalBackbone",
+      "kwargs": {
+        "path": "/home/pengcheng/Pi-CBM/PiNI/artifacts/rival10_aligned_rn18/backbone/selection/best.pt"
+      }
+    },
+    "refit": {
+      "factory": "spatial_noise.rn18_datasets:RivalBackbone",
+      "kwargs": {
+        "path": "/home/pengcheng/Pi-CBM/PiNI/artifacts/rival10_aligned_rn18/backbone/refit/best.pt"
+      }
+    }
+  },
+  "backbone_provenance_by_stage": {
+    "selection": {
+      "trained_on_trainval": false,
+      "holdout_audited": false,
+      "audit_needed": "Verify actual checkpoint fit ids and extract selection-stage spatial feature cache before enabling"
+    },
+    "refit": {
+      "trained_on_trainval": true,
+      "holdout_audited": false,
+      "audit_needed": "Verify no test fitting"
+    }
+  },
+  "status": "adapter_template_not_executed",
+  "notes": [
+    "Frozen core SimpleCBM supports output dimension512. Alternate architectures require an external frozen wrapper yielding512 spatial channels.",
+    "Initialize stage matching SimpleCBM checkpoint before core train call. Separate output_root per stage.",
+    "Fresh train manifests must state classifier/concept labels, frozen detector, backbone data provenance, and stage-specific splits."
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "pid": 2467403,
+  "stage": "refit",
+  "adapter_load_verified": true,
+  "frozen_backbone": true,
+  "native_concept_shape": [
+    26384,
+    18
+  ],
+  "features_shape": [
+    26384,
+    512,
+    7,
+    7
+  ],
+  "grounder_feature_shape": [
+    26384,
+    256,
+    14,
+    14
+  ],
+  "grounder_maps_shape": [
+    26384,
+    12,
+    14,
+    14
+  ],
+  "core_train_interface": "spatial_noise.cub_noise.train(method, seed, epochs, batch, refit, spatial_prior, experiment=e)",
+  "cbm_parameter_shapes": {
+    "concepts": [
+      18,
+      512
+    ],
+    "classes": [
+      10,
+      18
+    ]
+  },
+  "new_training_executed": false
+}

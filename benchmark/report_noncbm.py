@@ -34,8 +34,8 @@ def main():
                              'examples': reports[0][key]['examples']}
         rows.append(row)
     (out/'noncbm_summary.json').write_text(json.dumps(rows, indent=2)+'\n')
-    paired = [r for r in rows if 'changed' in r]
-    fig, ax = plt.subplots(figsize=(11, 4.8), layout='constrained')
+    paired = [r for r in rows if 'changed' in r and '_rn18_imagenet' in r['experiment']]
+    fig, ax = plt.subplots(figsize=(13, 4.8), layout='constrained')
     x = np.arange(len(paired))
     for view, offset, color, label in [('original', -.18, '#2878B5', '原图测试'),
                                       ('changed', .18, '#F28E2B', '换背景测试')]:
@@ -55,9 +55,17 @@ def main():
              '| 数据与骨干 | 训练视图 | 原图准确率 | 换背景准确率 |',
              '| --- | --- | --- | --- |']
     for r in rows:
-        fmt = lambda v: '—' if v not in r else f"{100*r[v]['mean_accuracy']:.2f}% ± {100*(r[v]['seed_std'] or 0):.2f}"
-        lines.append(f"| {r['experiment']} | {'＋'.join(r['train_views'])} | {fmt('original')} | {fmt('changed')} |")
-    lines += ['', 'CIFAR-10／100 使用既有冻结 CLIP RN50 特征；RIVAL10／CUB 使用本轮共享的 ImageNet ResNet18 特征。误差为独立分类头训练种子间的标准差。', '']
+        def fmt(view):
+            if view not in r:return '—'
+            metric=r[view]
+            suffix=f" ± {100*metric['seed_std']:.2f}" if metric['seed_std'] is not None else '（1 个种子）'
+            return f"{100*metric['mean_accuracy']:.2f}%"+suffix
+        dataset=r['experiment'].split('_')[0]
+        labels={'cifar10':'CIFAR-10','cifar100':'CIFAR-100','cub':'CUB','rival10':'RIVAL10','waterbirds':'CUB–Places 水鸟二分类'}
+        backbone='CLIP RN50' if 'clip' in r['experiment'].lower() else ('ResNet50' if '_rn50_' in r['experiment'] else 'ResNet18')
+        views='原图＋换背景' if len(r['train_views'])>1 else '原图'
+        lines.append(f"| {labels[dataset]}／{backbone} | {views} | {fmt('original')} | {fmt('changed')} |")
+    lines += ['', 'CIFAR-10／100 使用既有冻结 CLIP RN50 特征；其他数据集使用本轮重新编码的共享骨干特征。误差为独立分类头训练种子间的标准差。', '']
     (out/'NONCBM_RESULT.md').write_text('\n'.join(lines))
 
 

@@ -8,7 +8,7 @@ from .noncbm import run,load_split
 from .metrics import classification_metrics
 
 torch.set_num_threads(4)
-for dataset in ['rival10','cub']:
+for dataset in ['rival10','cub','waterbirds']:
     source=Path('artifacts/common')/dataset/'rn18_imagenet'
     for seed in [42,43,44]:
         out=Path('artifacts/noncbm')/(dataset+'_rn18_imagenet')/('seed'+str(seed))

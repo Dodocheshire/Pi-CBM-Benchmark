@@ -3,3 +3,8 @@ logs/
 __pycache__/
 *.pyc
 .venv/
+/reports/lf_matched_metrics.json
+/reports/lf_seed42*.json
+/reports/lf_single_draw_ready.json
+/reports/pini_initial.json
+/reports/pini_robustness.json

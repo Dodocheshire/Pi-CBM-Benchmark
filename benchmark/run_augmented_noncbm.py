@@ -12,7 +12,7 @@ from .noncbm import load_split, run
 
 def main():
     torch.set_num_threads(4)
-    for dataset in ['rival10', 'cub']:
+    for dataset in ['rival10', 'cub', 'waterbirds']:
         source = Path('artifacts/common') / dataset / 'rn18_imagenet'
         paired = source / 'paired'
         paired.mkdir(exist_ok=True)
@@ -25,7 +25,8 @@ def main():
                 k: np.concatenate([v[k] for v in views]) for k in ['features', 'labels', 'ids']})
         for seed in [42, 43, 44]:
             out = Path('artifacts/noncbm') / f'{dataset}_rn18_imagenet_paired' / f'seed{seed}'
-            run(paired / 'train.npz', paired / 'val.npz', source / 'test_original.npz', out, 'cuda', seed)
+            if not (out/'results.json').exists():
+                run(paired / 'train.npz', paired / 'val.npz', source / 'test_original.npz', out, 'cuda', seed)
             state = torch.load(out / 'best.pt', weights_only=True)
             changed = load_split(source / 'test_changed.npz')
             head = nn.Linear(changed['features'].shape[1], state['head']['weight'].shape[0]).cuda()
