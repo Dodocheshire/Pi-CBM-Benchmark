@@ -1,0 +1,12 @@
+{
+  "LF-Pi": {
+    "commit": "ba0e8421ac153c65e6db61fdd5d339e8a2a8161d",
+    "branch": "main",
+    "source": "https://github.com/Dodocheshire/LF-Pi.git"
+  },
+  "PiNI": {
+    "commit": "eb2e4363ed30e4f5a6456ea781288c10cd4cbfcd",
+    "branch": "simplified-spatial-noise",
+    "source": "https://github.com/Dodocheshire/PiNI.git"
+  }
+}

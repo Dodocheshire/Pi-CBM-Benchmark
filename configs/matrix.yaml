@@ -1,0 +1,35 @@
+version: 1
+seeds: [42, 43, 44]
+methods: [lf_cbm, lf_pi, pini, non_cbm]
+primary_datasets: [cifar10, cifar100, cub, rival10, waterbirds_cub_places]
+scale_datasets: [imagenet_200_per_class, places365]
+backbones:
+  shared: [resnet18, resnet50, clip_RN50]
+  task_pretrained: [resnet18_cub, resnet18_rival10]
+noise_sites_lf_pi: [target_image, target_internal, target_global]
+protocols: [original_train, background_augmented_train]
+shifts:
+  native_masks: [background_swap, foreground_only, background_only]
+  common_corruptions: [gaussian_noise, gaussian_blur, contrast, jpeg]
+  corruption_severities: [1, 3, 5]
+concept_supervision:
+  shared_pool: true
+  report_native_annotations_and_clip_teacher_separately: true
+  cub_native_known_certainty_min: 3
+head_evaluation:
+  fitting: upstream_glm_saga
+  selection_split: validation
+  dense_reference: true
+  nec_threshold: 0.00001
+  target_grids:
+    rival10: [1, 2, 3, 5, 8, 12, 18]
+    waterbirds_cub_places: [1, 2, 3, 5, 8, 12, 20, 30, 50, 80, 112]
+    cifar10: [1, 2, 3, 5, 8, 10, 15, 20, 30, 50, 80, 120]
+    cifar100: [1, 3, 5, 10, 15, 20, 30, 50, 80, 120, 200]
+    cub: [1, 3, 5, 10, 15, 20, 30, 50, 80, 112]
+    imagenet_200_per_class: [5, 10, 15, 20, 30, 50, 80, 120, 200, 400]
+    places365: [5, 10, 15, 20, 30, 50, 80, 120, 200]
+  clip_grid_to_actual_concept_count: true
+  target_nec_selection: closest_path_point_then_global_magnitude_prune
+  report_actual_nec_and_per_class_distribution: true
+  saturation: validation_selected_dense_and_full_regularization_path

@@ -1,0 +1,8 @@
+[submodule "methods/LF-Pi"]
+	path = methods/LF-Pi
+	url = https://github.com/Dodocheshire/LF-Pi.git
+	branch = main
+[submodule "methods/PiNI"]
+	path = methods/PiNI
+	url = https://github.com/Dodocheshire/PiNI.git
+	branch = simplified-spatial-noise
