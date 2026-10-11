@@ -31,13 +31,15 @@ ResNet18 的三个数据集已完成前景／背景分离与四类图像腐蚀�
 
 本机使用环境 `/home/pengcheng/miniconda3/envs/pi-cbm/bin/python`，已有数据与区域缓存来自 `/home/pengcheng/Pi-CBM/PiNI/artifacts/`。
 
-CIFAR10／100 的 ResNet18 原图训练和高斯噪声增强训练，以及四类官方 CIFAR-C、各三个严重度的测试已完成；ResNet50 和 CLIP RN50 继续扩展。Places365 已完成 ResNet18 的 LF-CBM／LF-Pi 与三个种子的非 CBM 对照，使用 73000／7300／36500 张训练／验证／测试图像。ImageNet 1000 类训练和 PiNI 的 CIFAR 区域标注与训练继续运行。
+CIFAR10／100 已完成三种共享骨干的原图训练，以及 ResNet18 的高斯噪声增强训练。8 组 LF-CBM／LF-Pi 条件均完成四类官方 CIFAR-C、各三个严重度的测试，非 CBM 每组使用三个种子。Places365 已完成 ResNet18 的 LF-CBM／LF-Pi 与三个种子的非 CBM 对照，使用 73000／7300／36500 张训练／验证／测试图像。ImageNet 的三个非 CBM 分类头已完成；LF-CBM／LF-Pi 训练、NEC 扫描和 PiNI 的 CIFAR 区域标注与训练继续运行。
 
 PiNI 的 CIFAR 入口为 `python -m benchmark.pini_cifar --datasets cifar10 cifar100 --dino-batch 4`。它复用冻结 ResNet18 和同一图像划分，以训练集 CLIP 相似度生成概念监督，调用子模块原有的均值／加噪训练。区域缓存支持中断续跑；只准备原图区域可使用 `--prepare-only --region-views original`。CIFAR 没有人工概念标注，报告使用 CLIP 教师相关性；区域缓存和初始化完成后，还需完成正式训练及预测导出才计入结果。
 
 RIVAL10 的任务预训练 ResNet18 使用 18987 张训练图更新权重、2111 张验证图选轮次，5286 张测试图用于最终评测。共享骨干接口为 `benchmark.task_backbones`；`python -m benchmark.task_backbones audit` 核验权重、特征和像素梯度，`python -m benchmark.task_backbones encode --device cpu --batch 32 --spatial` 生成独立的 `rn18_task_pretrained_train_val_selected` 缓存。核验记录见 [任务骨干来源](reports/task_backbone_audit.json) 和 [CPU 特征核验](reports/rival_task_backbone_cpu_audit.json)。
 
 缓存完成后，`python -m benchmark.task_backbone_queue` 核验数据并运行 LF-CBM／LF-Pi 和三个种子的非 CBM 对照。PiNI 的同骨干适配入口为 `python -m benchmark.pini_task_backbone prepare`，复用共享空间特征和区域缓存；`audit` 检查权重与像素梯度，`train` 调用原有初始化、均值与加噪训练。CPU 核验见 [PiNI 任务骨干适配](reports/pini_task_backbone_cpu_audit.json)。
+
+RIVAL10 任务骨干的两组 LF-CBM／LF-Pi、六个非 CBM 分类头，以及 PiNI 均值／均值加噪训练已完成。背景增强组使用相同的 5282 张有效测试图和 13 个共同概念列展示五种方法；NEC 扫描继续运行。完整共享缓存核验见 [缓存一致性记录](reports/rival_task_cache_audit.json)。
 
 CUB 任务骨干从 ImageNet ResNet18 初始化，使用 4796／1198／5794 张训练／验证／测试图，固定训练 15 轮、按验证准确率选轮次。`python -m benchmark.cub_task_backbone audit` 核验初始化接口；`python -m benchmark.cub_task_gpu_queue` 等待连续三次显存余量达到 10 GiB 后启动训练。当前已通过 [初始化核验](reports/cub_task_backbone_initialization_cpu_audit.json)，训练结果完成后再计入图表。
 

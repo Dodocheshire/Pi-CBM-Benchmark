@@ -5,7 +5,7 @@ primary_datasets: [cifar10, cifar100, cub, rival10, waterbirds_cub_places]
 scale_datasets: [imagenet_200_per_class, places365]
 backbones:
   shared: [resnet18, resnet50, clip_RN50]
-  task_pretrained: [resnet18_cub, resnet18_rival10]
+  task_pretrained: [resnet18_cub_trainonly, resnet18_rival10]
 noise_sites_lf_pi: [target_image, target_internal, target_global]
 protocols: [original_train, background_augmented_train]
 shifts:

@@ -1,0 +1,115 @@
+{
+  "source": "/home/pengcheng/Pi-CBM-Benchmark/artifacts/common/rival10/rn18_task_pretrained_train_val_selected",
+  "checkpoint_sha256": "ac58a248f6cbbe09cf48c49c0662181037110738bbd6d87e3241a580cec6b8fc",
+  "manifest_sha256": "97a1f4eb13bb3e8e0ad19bb2f6b2554cdee01cef0447799313f523e1023a4869",
+  "checks": {
+    "train/original": {
+      "rows": 18987,
+      "fields_exact_source_parity": true,
+      "teacher_exact_same_view_parity": true,
+      "feature_dim": 512,
+      "ids_int64_bytes_sha256": "401e80c1bd951005c7f5921166312dd9484b4575b0930c90512a94c6206ac40b"
+    },
+    "val/original": {
+      "rows": 2111,
+      "fields_exact_source_parity": true,
+      "teacher_exact_same_view_parity": true,
+      "feature_dim": 512,
+      "ids_int64_bytes_sha256": "b7dc9387fd093784db8ee31914cb9f8430774a8291a509e9c2bcf38681f08ccb"
+    },
+    "test/original": {
+      "rows": 5286,
+      "fields_exact_source_parity": true,
+      "teacher_exact_same_view_parity": true,
+      "feature_dim": 512,
+      "ids_int64_bytes_sha256": "328250517e25a50ce130d65212fd80221b678785e3ddda794c167cd222aaa86d"
+    },
+    "train/changed": {
+      "rows": 18987,
+      "fields_exact_source_parity": true,
+      "teacher_exact_same_view_parity": true,
+      "feature_dim": 512,
+      "ids_int64_bytes_sha256": "401e80c1bd951005c7f5921166312dd9484b4575b0930c90512a94c6206ac40b"
+    },
+    "val/changed": {
+      "rows": 2111,
+      "fields_exact_source_parity": true,
+      "teacher_exact_same_view_parity": true,
+      "feature_dim": 512,
+      "ids_int64_bytes_sha256": "b7dc9387fd093784db8ee31914cb9f8430774a8291a509e9c2bcf38681f08ccb"
+    },
+    "test/changed": {
+      "rows": 5286,
+      "fields_exact_source_parity": true,
+      "teacher_exact_same_view_parity": true,
+      "feature_dim": 512,
+      "ids_int64_bytes_sha256": "328250517e25a50ce130d65212fd80221b678785e3ddda794c167cd222aaa86d"
+    }
+  },
+  "global_spatial_max_abs": {
+    "original": 0.0,
+    "changed": 0.0
+  },
+  "training_started_before_cache_validation": false,
+  "source_audit_path": "artifacts/audit/rival_task_cache_verified.json",
+  "source_audit_sha256": "d55df66d6b6ff566ff4f949a7d60bda987e3734855504a4e89bfe978b28db431",
+  "pini_shared_cache_preparation": {
+    "backbone_name": "resnet18_rival10",
+    "feature_channels": 512,
+    "fit_split": "train only",
+    "selection_split": "val; also selected backbone epoch14",
+    "concept_supervision": "native RIVAL18 binary image attributes; original core BCE",
+    "backbone_label_supervision": "RIVAL10 class labels, cross entropy; no concept supervision",
+    "core_revision": "eb2e4363ed30e4f5a6456ea781288c10cd4cbfcd",
+    "shared_cache_manifest_sha256": "97a1f4eb13bb3e8e0ad19bb2f6b2554cdee01cef0447799313f523e1023a4869",
+    "spatial_audit": {
+      "original": {
+        "rgb_sha256": "7571df7c459b9c587bce33dfdd4d0e1a67eda112ef5911539395f9859595da76",
+        "spatial_sha256": "dc6d508af06b60d96607a2c129a1544ae773a1f76a46db7d4da0396c0a4af4aa",
+        "shared_global_sha256": "6724d8ea52daf14e0a880566fce667c1e5c73044e164da14a04697ef69717d61",
+        "global_meanpool_max_abs_error": 0.0,
+        "region_complete_sha256": "871bd0bc6d3287b9ff3acdc9579caab6bff03d7acdf45a0733d0b804e0844e31",
+        "region_rows": 26384,
+        "ordered_ids_sha256": "14acb18a8f329c313c9f7dbf2ef3c8ce400297168715f8fc9aa36f87a214af99",
+        "region_order_evidence": "frozen producer assigns output[offset:end] from rgb[offset:end]; same source RGB full-file SHA, completed row count and canonical ordered split IDs verified",
+        "region_producer_file_sha256": "1564048919ccad91428ee12698f777be0660276bc8f0792bb1654da413a6455e",
+        "region_producer_function_sha256": "0d28a84566798d34c31e189cf00cc98fa16d47a687d53f00b6d53ef09336bd7e",
+        "historical_region_marker_contains_rgb_hash": false,
+        "checkpoint_sha256": "ac58a248f6cbbe09cf48c49c0662181037110738bbd6d87e3241a580cec6b8fc",
+        "backbone_sha256": "f9f8635557a0078bf229426e1aa2162f3b07e63ac0cf0dec2a51b63e521fd775",
+        "live_cpu_sample_ids": [
+          0,
+          31
+        ],
+        "live_cpu_vs_cached_spatial_max_abs": 0.0,
+        "live_cpu_vs_cached_spatial_relative_l2": 0.0,
+        "live_cpu_exact_feature_identity_claimed": true
+      },
+      "changed": {
+        "rgb_sha256": "bc0c7c33b723cae402f84c48851b49c16df62535b605f08c53662de57adfb09c",
+        "spatial_sha256": "5f240684d0a97361015cb4ede3618a10fd7aac2bb18ef68e582cffc921fc31dc",
+        "shared_global_sha256": "b039f53985f686f6903e21510c07628bb1985f24a6f7dc5265855d679330dcca",
+        "global_meanpool_max_abs_error": 0.0,
+        "region_complete_sha256": "997ebaacf1a5ca3d423ed17d7ee8c65b1a2a5a98f0d64840f318ae4f4726a4e5",
+        "region_rows": 26384,
+        "ordered_ids_sha256": "14acb18a8f329c313c9f7dbf2ef3c8ce400297168715f8fc9aa36f87a214af99",
+        "region_order_evidence": "frozen producer assigns output[offset:end] from rgb[offset:end]; same source RGB full-file SHA, completed row count and canonical ordered split IDs verified",
+        "region_producer_file_sha256": "1564048919ccad91428ee12698f777be0660276bc8f0792bb1654da413a6455e",
+        "region_producer_function_sha256": "0d28a84566798d34c31e189cf00cc98fa16d47a687d53f00b6d53ef09336bd7e",
+        "historical_region_marker_contains_rgb_hash": false,
+        "checkpoint_sha256": "ac58a248f6cbbe09cf48c49c0662181037110738bbd6d87e3241a580cec6b8fc",
+        "backbone_sha256": "f9f8635557a0078bf229426e1aa2162f3b07e63ac0cf0dec2a51b63e521fd775",
+        "live_cpu_sample_ids": [
+          0,
+          31
+        ],
+        "live_cpu_vs_cached_spatial_max_abs": 0.0,
+        "live_cpu_vs_cached_spatial_relative_l2": 0.0,
+        "live_cpu_exact_feature_identity_claimed": true
+      }
+    },
+    "prepared_on_cpu": true,
+    "formal_training_started": false
+  },
+  "pini_preparation_source_sha256": "a3d240dabb1dd60459bb7107feefcd466558ed6950048859ec4d23522cbb9999"
+}

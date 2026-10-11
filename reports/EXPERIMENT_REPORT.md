@@ -106,9 +106,9 @@ LF-CBM／LF-Pi 使用冻结 CLIP 概念相似度监督；PiNI 使用原方法的
 
 ![相关性与概念偏移](matched_correlation_shift_9.png)
 
-## RIVAL10 · ImageNet ResNet50 · 背景增强训练 · 种子 42
+## RIVAL10 · RIVAL10 任务预训练 ResNet18 · 背景增强训练 · 种子 42
 
-共同概念 16／候选 18。
+共同概念 13／候选 18。
 
 ![分类结果](matched_classification_10.png)
 
@@ -116,9 +116,9 @@ LF-CBM／LF-Pi 使用冻结 CLIP 概念相似度监督；PiNI 使用原方法的
 
 ![相关性与概念偏移](matched_correlation_shift_10.png)
 
-## RIVAL10 · ImageNet ResNet50 · 原图训练 · 种子 42
+## RIVAL10 · RIVAL10 任务预训练 ResNet18 · 原图训练 · 种子 42
 
-共同概念 14／候选 18。
+共同概念 13／候选 18。
 
 ![分类结果](matched_classification_11.png)
 
@@ -126,9 +126,9 @@ LF-CBM／LF-Pi 使用冻结 CLIP 概念相似度监督；PiNI 使用原方法的
 
 ![相关性与概念偏移](matched_correlation_shift_11.png)
 
-## WATERBIRDS · CLIP RN50 · 背景增强训练 · 种子 42
+## RIVAL10 · ImageNet ResNet50 · 背景增强训练 · 种子 42
 
-共同概念 86／候选 112。
+共同概念 16／候选 18。
 
 ![分类结果](matched_classification_12.png)
 
@@ -136,9 +136,9 @@ LF-CBM／LF-Pi 使用冻结 CLIP 概念相似度监督；PiNI 使用原方法的
 
 ![相关性与概念偏移](matched_correlation_shift_12.png)
 
-## WATERBIRDS · CLIP RN50 · 原图训练 · 种子 42
+## RIVAL10 · ImageNet ResNet50 · 原图训练 · 种子 42
 
-共同概念 109／候选 112。
+共同概念 14／候选 18。
 
 ![分类结果](matched_classification_13.png)
 
@@ -146,9 +146,9 @@ LF-CBM／LF-Pi 使用冻结 CLIP 概念相似度监督；PiNI 使用原方法的
 
 ![相关性与概念偏移](matched_correlation_shift_13.png)
 
-## WATERBIRDS · ImageNet ResNet18 · 背景增强训练 · 种子 42
+## WATERBIRDS · CLIP RN50 · 背景增强训练 · 种子 42
 
-共同概念 37／候选 112。
+共同概念 86／候选 112。
 
 ![分类结果](matched_classification_14.png)
 
@@ -156,9 +156,9 @@ LF-CBM／LF-Pi 使用冻结 CLIP 概念相似度监督；PiNI 使用原方法的
 
 ![相关性与概念偏移](matched_correlation_shift_14.png)
 
-## WATERBIRDS · ImageNet ResNet18 · 原图训练 · 种子 42
+## WATERBIRDS · CLIP RN50 · 原图训练 · 种子 42
 
-共同概念 50／候选 112。
+共同概念 109／候选 112。
 
 ![分类结果](matched_classification_15.png)
 
@@ -166,9 +166,9 @@ LF-CBM／LF-Pi 使用冻结 CLIP 概念相似度监督；PiNI 使用原方法的
 
 ![相关性与概念偏移](matched_correlation_shift_15.png)
 
-## WATERBIRDS · ImageNet ResNet50 · 背景增强训练 · 种子 42
+## WATERBIRDS · ImageNet ResNet18 · 背景增强训练 · 种子 42
 
-共同概念 55／候选 112。
+共同概念 37／候选 112。
 
 ![分类结果](matched_classification_16.png)
 
@@ -176,15 +176,35 @@ LF-CBM／LF-Pi 使用冻结 CLIP 概念相似度监督；PiNI 使用原方法的
 
 ![相关性与概念偏移](matched_correlation_shift_16.png)
 
-## WATERBIRDS · ImageNet ResNet50 · 原图训练 · 种子 42
+## WATERBIRDS · ImageNet ResNet18 · 原图训练 · 种子 42
 
-共同概念 95／候选 112。
+共同概念 50／候选 112。
 
 ![分类结果](matched_classification_17.png)
 
 ![概念结果](matched_concepts_17.png)
 
 ![相关性与概念偏移](matched_correlation_shift_17.png)
+
+## WATERBIRDS · ImageNet ResNet50 · 背景增强训练 · 种子 42
+
+共同概念 55／候选 112。
+
+![分类结果](matched_classification_18.png)
+
+![概念结果](matched_concepts_18.png)
+
+![相关性与概念偏移](matched_correlation_shift_18.png)
+
+## WATERBIRDS · ImageNet ResNet50 · 原图训练 · 种子 42
+
+共同概念 95／候选 112。
+
+![分类结果](matched_classification_19.png)
+
+![概念结果](matched_concepts_19.png)
+
+![相关性与概念偏移](matched_correlation_shift_19.png)
 
 ## CUB · 原图训练 · 骨干间共同概念 49 个
 
@@ -198,7 +218,7 @@ LF-CBM／LF-Pi 使用冻结 CLIP 概念相似度监督；PiNI 使用原方法的
 
 ![骨干间共同概念比较](cross_backbone_rival10_原图训练.png)
 
-## RIVAL10 · 背景增强训练 · 骨干间共同概念 14 个
+## RIVAL10 · 背景增强训练 · 骨干间共同概念 13 个
 
 ![骨干间共同概念比较](cross_backbone_rival10_背景增强训练.png)
 
