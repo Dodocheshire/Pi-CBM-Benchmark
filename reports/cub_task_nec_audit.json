@@ -1,0 +1,30 @@
+[
+  {
+    "directory": "artifacts/heads/cub/resnet18_cub_trainonly/original/seed42/lfcbm",
+    "view_evaluations": 20,
+    "actual_nec_from_weights_verified": true,
+    "subjects_classes_aligned": true,
+    "test_selection": false
+  },
+  {
+    "directory": "artifacts/heads/cub/resnet18_cub_trainonly/original/seed42/lfpi_global_1draw",
+    "view_evaluations": 20,
+    "actual_nec_from_weights_verified": true,
+    "subjects_classes_aligned": true,
+    "test_selection": false
+  },
+  {
+    "directory": "artifacts/heads/cub/resnet18_cub_trainonly/paired/seed42/lfcbm",
+    "view_evaluations": 16,
+    "actual_nec_from_weights_verified": true,
+    "subjects_classes_aligned": true,
+    "test_selection": false
+  },
+  {
+    "directory": "artifacts/heads/cub/resnet18_cub_trainonly/paired/seed42/lfpi_global_1draw",
+    "view_evaluations": 16,
+    "actual_nec_from_weights_verified": true,
+    "subjects_classes_aligned": true,
+    "test_selection": false
+  }
+]

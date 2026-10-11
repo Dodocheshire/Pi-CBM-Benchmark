@@ -23,3 +23,33 @@
 ![三种子分类与概念结果](seeds_rival10_resnet50_paired.png)
 
 ![三种子相关性与偏移](seeds_shift_rival10_resnet50_paired.png)
+
+## RIVAL10 · CLIP RN50 · 原图训练
+
+![三种子分类与概念结果](seeds_rival10_clip_RN50_original.png)
+
+![三种子相关性与偏移](seeds_shift_rival10_clip_RN50_original.png)
+
+## RIVAL10 · CLIP RN50 · 背景增强训练
+
+![三种子分类与概念结果](seeds_rival10_clip_RN50_paired.png)
+
+![三种子相关性与偏移](seeds_shift_rival10_clip_RN50_paired.png)
+
+## CUB · ImageNet ResNet18 · 原图训练
+
+![三种子分类与概念结果](seeds_cub_resnet18_original.png)
+
+![三种子相关性与偏移](seeds_shift_cub_resnet18_original.png)
+
+## CUB · ImageNet ResNet18 · 背景增强训练
+
+![三种子分类与概念结果](seeds_cub_resnet18_paired.png)
+
+![三种子相关性与偏移](seeds_shift_cub_resnet18_paired.png)
+
+## CUB · ImageNet ResNet50 · 原图训练
+
+![三种子分类与概念结果](seeds_cub_resnet50_original.png)
+
+![三种子相关性与偏移](seeds_shift_cub_resnet50_original.png)

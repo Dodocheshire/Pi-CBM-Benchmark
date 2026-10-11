@@ -77,6 +77,8 @@ def main():
                                  'unconverged_path_points':r['unconverged_path_points'],
                                  'validation_selected_path':r['best_val_index'],
                                  'test_evaluations':points})
+        if group.name != 'seed42':
+            continue  # Other seeds contribute to the separate aggregate NEC figures.
         views=list(dict.fromkeys(p['view'] for _,r in reports for p in r['test_evaluations']))
         fig,axes=plt.subplots(1,len(views),figsize=(5.5*len(views),4.8),layout='constrained',squeeze=False)
         axes=axes[0]
