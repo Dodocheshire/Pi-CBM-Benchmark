@@ -59,3 +59,9 @@
 ![三种子分类与概念结果](seeds_cub_resnet50_paired.png)
 
 ![三种子相关性与偏移](seeds_shift_cub_resnet50_paired.png)
+
+## CUB · CLIP RN50 · 原图训练
+
+![三种子分类与概念结果](seeds_cub_clip_RN50_original.png)
+
+![三种子相关性与偏移](seeds_shift_cub_clip_RN50_original.png)
