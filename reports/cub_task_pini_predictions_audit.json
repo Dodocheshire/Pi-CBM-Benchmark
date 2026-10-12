@@ -1,0 +1,128 @@
+{
+  "terminal_state": "succeeded",
+  "exit_code": 0,
+  "native_fields_verified": [
+    "ids",
+    "labels",
+    "targets",
+    "known"
+  ],
+  "finite_outputs_verified": [
+    "concept_logits",
+    "concepts",
+    "logits"
+  ],
+  "checks": [
+    {
+      "arm": "mean",
+      "split": "train",
+      "view": "original",
+      "images": 4796,
+      "concepts": 112,
+      "classes": 200
+    },
+    {
+      "arm": "mean",
+      "split": "train",
+      "view": "changed",
+      "images": 4796,
+      "concepts": 112,
+      "classes": 200
+    },
+    {
+      "arm": "mean",
+      "split": "val",
+      "view": "original",
+      "images": 1198,
+      "concepts": 112,
+      "classes": 200
+    },
+    {
+      "arm": "mean",
+      "split": "val",
+      "view": "changed",
+      "images": 1198,
+      "concepts": 112,
+      "classes": 200
+    },
+    {
+      "arm": "mean",
+      "split": "test",
+      "view": "original",
+      "images": 5794,
+      "concepts": 112,
+      "classes": 200
+    },
+    {
+      "arm": "mean",
+      "split": "test",
+      "view": "changed",
+      "images": 5794,
+      "concepts": 112,
+      "classes": 200
+    },
+    {
+      "arm": "noise",
+      "split": "train",
+      "view": "original",
+      "images": 4796,
+      "concepts": 112,
+      "classes": 200
+    },
+    {
+      "arm": "noise",
+      "split": "train",
+      "view": "changed",
+      "images": 4796,
+      "concepts": 112,
+      "classes": 200
+    },
+    {
+      "arm": "noise",
+      "split": "val",
+      "view": "original",
+      "images": 1198,
+      "concepts": 112,
+      "classes": 200
+    },
+    {
+      "arm": "noise",
+      "split": "val",
+      "view": "changed",
+      "images": 1198,
+      "concepts": 112,
+      "classes": 200
+    },
+    {
+      "arm": "noise",
+      "split": "test",
+      "view": "original",
+      "images": 5794,
+      "concepts": 112,
+      "classes": 200
+    },
+    {
+      "arm": "noise",
+      "split": "test",
+      "view": "changed",
+      "images": 5794,
+      "concepts": 112,
+      "classes": 200
+    }
+  ],
+  "model_source": {
+    "checkpoint": "/home/pengcheng/Pi-CBM-Benchmark/artifacts/task_backbones/cub/rn18_task_pretrained_cub_train_val_selected/seed42/best.pt",
+    "checkpoint_sha256": "22cd942efcc814a30cbfae8c03beaf9ed02501a6d394a1b34255ffda14759635",
+    "full_network_state_sha256": "fad31642590c6eec95a2a1ef03dc6186668b7e988e5a5d47ad877dedc8443ee1",
+    "scope": "full torchvision network including fc",
+    "output_channels": 512,
+    "all_backbone_params_frozen": true,
+    "shared_manifest_sha256": "b9d3383935a2b7651e2a4517bc426e4df4f8a17cfc1ca722fef0b5441fdc1bfe",
+    "supervision": "train4796 species class labels; val1198 only epoch selection; no concept loss",
+    "test_excluded_from_fit": true
+  },
+  "native_per_image_targets_known_exact": true,
+  "species_class_targets_constant_asserted_all_200": true,
+  "concept_supervision": "Koh species-level112 binary attributes for training; original core BCE; image-level112 certainty>=3 only for evaluation",
+  "cores_unchanged": true
+}

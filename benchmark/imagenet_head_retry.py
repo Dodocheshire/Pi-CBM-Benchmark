@@ -67,11 +67,11 @@ def main():
             if not proc.name.isdigit():
                 continue
             try:
-                args = (proc / 'cmdline').read_bytes().split(b'\0')
+                process_args = (proc / 'cmdline').read_bytes().split(b'\0')
             except (FileNotFoundError, ProcessLookupError, PermissionError):
                 continue
-            if b'benchmark.head_suite' in args and b'--out' in args:
-                target = args[args.index(b'--out')+1].decode()
+            if b'benchmark.head_suite' in process_args and b'--out' in process_args:
+                target = process_args[process_args.index(b'--out')+1].decode()
                 if (ROOT / target).resolve() == out:
                     raise RuntimeError(f'Another process owns the retry head: {proc.name}')
         free = int(subprocess.check_output(['nvidia-smi', '--query-gpu=memory.free',

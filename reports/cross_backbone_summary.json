@@ -368,6 +368,34 @@
         "view": "changed",
         "mAP": 0.47655096982504275,
         "pearson": 0.39188790849166105
+      },
+      {
+        "backbone": "resnet18_cub_trainonly",
+        "method": "PiNI \u5747\u503c",
+        "view": "original",
+        "mAP": 0.6440578713133328,
+        "pearson": 0.5804122535040441
+      },
+      {
+        "backbone": "resnet18_cub_trainonly",
+        "method": "PiNI \u5747\u503c",
+        "view": "changed",
+        "mAP": 0.6225103884754909,
+        "pearson": 0.5659894315635406
+      },
+      {
+        "backbone": "resnet18_cub_trainonly",
+        "method": "PiNI \u5747\u503c\uff0b\u566a\u58f0",
+        "view": "original",
+        "mAP": 0.6413582468499575,
+        "pearson": 0.5800119130043816
+      },
+      {
+        "backbone": "resnet18_cub_trainonly",
+        "method": "PiNI \u5747\u503c\uff0b\u566a\u58f0",
+        "view": "changed",
+        "mAP": 0.6221306595315264,
+        "pearson": 0.566379132316135
       }
     ]
   },
