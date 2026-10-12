@@ -1,0 +1,199 @@
+{
+  "dataset": "rival10",
+  "native_export_verification": {
+    "images": 256,
+    "settings": 13,
+    "full_concepts": 18,
+    "native_fields_exact": true,
+    "selected_probabilities_exact": true
+  },
+  "raw_logit_classifier_reconstruction": [
+    {
+      "arm": "mean",
+      "setting": "original_0",
+      "images": 256,
+      "raw_logit_classify_reconstruction_max_abs": 3.814697265625e-06,
+      "class_predictions_exact": true
+    },
+    {
+      "arm": "mean",
+      "setting": "gaussian_noise_1",
+      "images": 256,
+      "raw_logit_classify_reconstruction_max_abs": 3.814697265625e-06,
+      "class_predictions_exact": true
+    },
+    {
+      "arm": "mean",
+      "setting": "gaussian_noise_3",
+      "images": 256,
+      "raw_logit_classify_reconstruction_max_abs": 3.814697265625e-06,
+      "class_predictions_exact": true
+    },
+    {
+      "arm": "mean",
+      "setting": "gaussian_noise_5",
+      "images": 256,
+      "raw_logit_classify_reconstruction_max_abs": 3.814697265625e-06,
+      "class_predictions_exact": true
+    },
+    {
+      "arm": "mean",
+      "setting": "gaussian_blur_1",
+      "images": 256,
+      "raw_logit_classify_reconstruction_max_abs": 5.7220458984375e-06,
+      "class_predictions_exact": true
+    },
+    {
+      "arm": "mean",
+      "setting": "gaussian_blur_3",
+      "images": 256,
+      "raw_logit_classify_reconstruction_max_abs": 2.86102294921875e-06,
+      "class_predictions_exact": true
+    },
+    {
+      "arm": "mean",
+      "setting": "gaussian_blur_5",
+      "images": 256,
+      "raw_logit_classify_reconstruction_max_abs": 1.9073486328125e-06,
+      "class_predictions_exact": true
+    },
+    {
+      "arm": "mean",
+      "setting": "contrast_1",
+      "images": 256,
+      "raw_logit_classify_reconstruction_max_abs": 3.814697265625e-06,
+      "class_predictions_exact": true
+    },
+    {
+      "arm": "mean",
+      "setting": "contrast_3",
+      "images": 256,
+      "raw_logit_classify_reconstruction_max_abs": 3.814697265625e-06,
+      "class_predictions_exact": true
+    },
+    {
+      "arm": "mean",
+      "setting": "contrast_5",
+      "images": 256,
+      "raw_logit_classify_reconstruction_max_abs": 3.814697265625e-06,
+      "class_predictions_exact": true
+    },
+    {
+      "arm": "mean",
+      "setting": "jpeg_1",
+      "images": 256,
+      "raw_logit_classify_reconstruction_max_abs": 3.814697265625e-06,
+      "class_predictions_exact": true
+    },
+    {
+      "arm": "mean",
+      "setting": "jpeg_3",
+      "images": 256,
+      "raw_logit_classify_reconstruction_max_abs": 2.86102294921875e-06,
+      "class_predictions_exact": true
+    },
+    {
+      "arm": "mean",
+      "setting": "jpeg_5",
+      "images": 256,
+      "raw_logit_classify_reconstruction_max_abs": 3.814697265625e-06,
+      "class_predictions_exact": true
+    },
+    {
+      "arm": "noise",
+      "setting": "original_0",
+      "images": 256,
+      "raw_logit_classify_reconstruction_max_abs": 3.814697265625e-06,
+      "class_predictions_exact": true
+    },
+    {
+      "arm": "noise",
+      "setting": "gaussian_noise_1",
+      "images": 256,
+      "raw_logit_classify_reconstruction_max_abs": 5.7220458984375e-06,
+      "class_predictions_exact": true
+    },
+    {
+      "arm": "noise",
+      "setting": "gaussian_noise_3",
+      "images": 256,
+      "raw_logit_classify_reconstruction_max_abs": 3.814697265625e-06,
+      "class_predictions_exact": true
+    },
+    {
+      "arm": "noise",
+      "setting": "gaussian_noise_5",
+      "images": 256,
+      "raw_logit_classify_reconstruction_max_abs": 2.86102294921875e-06,
+      "class_predictions_exact": true
+    },
+    {
+      "arm": "noise",
+      "setting": "gaussian_blur_1",
+      "images": 256,
+      "raw_logit_classify_reconstruction_max_abs": 3.814697265625e-06,
+      "class_predictions_exact": true
+    },
+    {
+      "arm": "noise",
+      "setting": "gaussian_blur_3",
+      "images": 256,
+      "raw_logit_classify_reconstruction_max_abs": 3.814697265625e-06,
+      "class_predictions_exact": true
+    },
+    {
+      "arm": "noise",
+      "setting": "gaussian_blur_5",
+      "images": 256,
+      "raw_logit_classify_reconstruction_max_abs": 2.86102294921875e-06,
+      "class_predictions_exact": true
+    },
+    {
+      "arm": "noise",
+      "setting": "contrast_1",
+      "images": 256,
+      "raw_logit_classify_reconstruction_max_abs": 2.86102294921875e-06,
+      "class_predictions_exact": true
+    },
+    {
+      "arm": "noise",
+      "setting": "contrast_3",
+      "images": 256,
+      "raw_logit_classify_reconstruction_max_abs": 3.814697265625e-06,
+      "class_predictions_exact": true
+    },
+    {
+      "arm": "noise",
+      "setting": "contrast_5",
+      "images": 256,
+      "raw_logit_classify_reconstruction_max_abs": 2.86102294921875e-06,
+      "class_predictions_exact": true
+    },
+    {
+      "arm": "noise",
+      "setting": "jpeg_1",
+      "images": 256,
+      "raw_logit_classify_reconstruction_max_abs": 3.814697265625e-06,
+      "class_predictions_exact": true
+    },
+    {
+      "arm": "noise",
+      "setting": "jpeg_3",
+      "images": 256,
+      "raw_logit_classify_reconstruction_max_abs": 3.814697265625e-06,
+      "class_predictions_exact": true
+    },
+    {
+      "arm": "noise",
+      "setting": "jpeg_5",
+      "images": 256,
+      "raw_logit_classify_reconstruction_max_abs": 2.86102294921875e-06,
+      "class_predictions_exact": true
+    }
+  ],
+  "formula": "linear((concept_logits - concept_center)/concept_scale, classifier.weight, classifier.bias)",
+  "reconstruction_tolerance": {
+    "rtol": 1e-05,
+    "atol": 1e-05
+  }
+}

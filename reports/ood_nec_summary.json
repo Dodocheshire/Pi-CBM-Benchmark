@@ -5186,7 +5186,9 @@
     ],
     "head_fingerprints": {
       "lfcbm": "04f1053e223147fd7d784bdcc050c9dfc73fc7ecbfaa113a092544834dba81cf",
-      "lfpi_single": "e9ee0dd16f07b91abfbf5d7476e591379fc83a5f30c988fe1742101f05c83cb4"
+      "lfpi_single": "e9ee0dd16f07b91abfbf5d7476e591379fc83a5f30c988fe1742101f05c83cb4",
+      "pini_mean": "376cc7615be0e80af045ea58aa05e8fa4ea45f23c61583300759f20c3aac08da",
+      "pini_noise": "d4bee84950227697d6fbb0cd4aae7d6d5b72f4f5b4e61286e7a87afa24ad61ae"
     },
     "refitting": false,
     "training_seed": 42,
@@ -7791,6 +7793,3126 @@
         "nonzero_connections": 7400,
         "accuracy": 0.19140625,
         "balanced_accuracy": 0.18358484238765926,
+        "images": 256
+      },
+      {
+        "method": "pini_mean",
+        "setting": "original_0",
+        "head": "1",
+        "actual_nec": 1.0,
+        "nonzero_connections": 200,
+        "accuracy": 0.15625,
+        "balanced_accuracy": 0.1306338028169014,
+        "images": 256
+      },
+      {
+        "method": "pini_mean",
+        "setting": "original_0",
+        "head": "3",
+        "actual_nec": 3.0,
+        "nonzero_connections": 600,
+        "accuracy": 0.25390625,
+        "balanced_accuracy": 0.1948692152917505,
+        "images": 256
+      },
+      {
+        "method": "pini_mean",
+        "setting": "original_0",
+        "head": "5",
+        "actual_nec": 5.0,
+        "nonzero_connections": 1000,
+        "accuracy": 0.37890625,
+        "balanced_accuracy": 0.3141851106639839,
+        "images": 256
+      },
+      {
+        "method": "pini_mean",
+        "setting": "original_0",
+        "head": "10",
+        "actual_nec": 10.0,
+        "nonzero_connections": 2000,
+        "accuracy": 0.4921875,
+        "balanced_accuracy": 0.44723340040241444,
+        "images": 256
+      },
+      {
+        "method": "pini_mean",
+        "setting": "original_0",
+        "head": "15",
+        "actual_nec": 15.0,
+        "nonzero_connections": 3000,
+        "accuracy": 0.546875,
+        "balanced_accuracy": 0.5076794097920858,
+        "images": 256
+      },
+      {
+        "method": "pini_mean",
+        "setting": "original_0",
+        "head": "20",
+        "actual_nec": 20.0,
+        "nonzero_connections": 4000,
+        "accuracy": 0.5625,
+        "balanced_accuracy": 0.5173038229376258,
+        "images": 256
+      },
+      {
+        "method": "pini_mean",
+        "setting": "original_0",
+        "head": "30",
+        "actual_nec": 30.0,
+        "nonzero_connections": 6000,
+        "accuracy": 0.55859375,
+        "balanced_accuracy": 0.5073272971160294,
+        "images": 256
+      },
+      {
+        "method": "pini_mean",
+        "setting": "original_0",
+        "head": "50",
+        "actual_nec": 50.0,
+        "nonzero_connections": 10000,
+        "accuracy": 0.55078125,
+        "balanced_accuracy": 0.4996478873239436,
+        "images": 256
+      },
+      {
+        "method": "pini_mean",
+        "setting": "original_0",
+        "head": "80",
+        "actual_nec": 80.0,
+        "nonzero_connections": 16000,
+        "accuracy": 0.58203125,
+        "balanced_accuracy": 0.5428906773977196,
+        "images": 256
+      },
+      {
+        "method": "pini_mean",
+        "setting": "original_0",
+        "head": "112",
+        "actual_nec": 105.505,
+        "nonzero_connections": 21101,
+        "accuracy": 0.5859375,
+        "balanced_accuracy": 0.5516934942991281,
+        "images": 256
+      },
+      {
+        "method": "pini_mean",
+        "setting": "original_0",
+        "head": "best_val",
+        "actual_nec": 38.225,
+        "nonzero_connections": 7645,
+        "accuracy": 0.5703125,
+        "balanced_accuracy": 0.5163145539906103,
+        "images": 256
+      },
+      {
+        "method": "pini_mean",
+        "setting": "original_0",
+        "head": "dense",
+        "actual_nec": 112.0,
+        "nonzero_connections": 22400,
+        "accuracy": 0.578125,
+        "balanced_accuracy": 0.5600771294433265,
+        "images": 256
+      },
+      {
+        "method": "pini_mean",
+        "setting": "gaussian_noise_1",
+        "head": "1",
+        "actual_nec": 1.0,
+        "nonzero_connections": 200,
+        "accuracy": 0.13671875,
+        "balanced_accuracy": 0.11462105969148222,
+        "images": 256
+      },
+      {
+        "method": "pini_mean",
+        "setting": "gaussian_noise_1",
+        "head": "3",
+        "actual_nec": 3.0,
+        "nonzero_connections": 600,
+        "accuracy": 0.265625,
+        "balanced_accuracy": 0.21770623742454728,
+        "images": 256
+      },
+      {
+        "method": "pini_mean",
+        "setting": "gaussian_noise_1",
+        "head": "5",
+        "actual_nec": 5.0,
+        "nonzero_connections": 1000,
+        "accuracy": 0.35546875,
+        "balanced_accuracy": 0.30392354124748494,
+        "images": 256
+      },
+      {
+        "method": "pini_mean",
+        "setting": "gaussian_noise_1",
+        "head": "10",
+        "actual_nec": 10.0,
+        "nonzero_connections": 2000,
+        "accuracy": 0.4921875,
+        "balanced_accuracy": 0.4313883299798793,
+        "images": 256
+      },
+      {
+        "method": "pini_mean",
+        "setting": "gaussian_noise_1",
+        "head": "15",
+        "actual_nec": 15.0,
+        "nonzero_connections": 3000,
+        "accuracy": 0.5078125,
+        "balanced_accuracy": 0.44371227364185106,
+        "images": 256
+      },
+      {
+        "method": "pini_mean",
+        "setting": "gaussian_noise_1",
+        "head": "20",
+        "actual_nec": 20.0,
+        "nonzero_connections": 4000,
+        "accuracy": 0.5078125,
+        "balanced_accuracy": 0.4466465459423206,
+        "images": 256
+      },
+      {
+        "method": "pini_mean",
+        "setting": "gaussian_noise_1",
+        "head": "30",
+        "actual_nec": 30.0,
+        "nonzero_connections": 6000,
+        "accuracy": 0.515625,
+        "balanced_accuracy": 0.46836016096579475,
+        "images": 256
+      },
+      {
+        "method": "pini_mean",
+        "setting": "gaussian_noise_1",
+        "head": "50",
+        "actual_nec": 50.0,
+        "nonzero_connections": 10000,
+        "accuracy": 0.5234375,
+        "balanced_accuracy": 0.4890677397719651,
+        "images": 256
+      },
+      {
+        "method": "pini_mean",
+        "setting": "gaussian_noise_1",
+        "head": "80",
+        "actual_nec": 80.0,
+        "nonzero_connections": 16000,
+        "accuracy": 0.515625,
+        "balanced_accuracy": 0.48554661301140173,
+        "images": 256
+      },
+      {
+        "method": "pini_mean",
+        "setting": "gaussian_noise_1",
+        "head": "112",
+        "actual_nec": 105.505,
+        "nonzero_connections": 21101,
+        "accuracy": 0.515625,
+        "balanced_accuracy": 0.4908283031522468,
+        "images": 256
+      },
+      {
+        "method": "pini_mean",
+        "setting": "gaussian_noise_1",
+        "head": "best_val",
+        "actual_nec": 38.225,
+        "nonzero_connections": 7645,
+        "accuracy": 0.5234375,
+        "balanced_accuracy": 0.48789403085177735,
+        "images": 256
+      },
+      {
+        "method": "pini_mean",
+        "setting": "gaussian_noise_1",
+        "head": "dense",
+        "actual_nec": 112.0,
+        "nonzero_connections": 22400,
+        "accuracy": 0.5234375,
+        "balanced_accuracy": 0.5109490274983233,
+        "images": 256
+      },
+      {
+        "method": "pini_mean",
+        "setting": "gaussian_noise_3",
+        "head": "1",
+        "actual_nec": 1.0,
+        "nonzero_connections": 200,
+        "accuracy": 0.12890625,
+        "balanced_accuracy": 0.0960261569416499,
+        "images": 256
+      },
+      {
+        "method": "pini_mean",
+        "setting": "gaussian_noise_3",
+        "head": "3",
+        "actual_nec": 3.0,
+        "nonzero_connections": 600,
+        "accuracy": 0.16796875,
+        "balanced_accuracy": 0.12744802146210596,
+        "images": 256
+      },
+      {
+        "method": "pini_mean",
+        "setting": "gaussian_noise_3",
+        "head": "5",
+        "actual_nec": 5.0,
+        "nonzero_connections": 1000,
+        "accuracy": 0.19140625,
+        "balanced_accuracy": 0.14564050972501677,
+        "images": 256
+      },
+      {
+        "method": "pini_mean",
+        "setting": "gaussian_noise_3",
+        "head": "10",
+        "actual_nec": 10.0,
+        "nonzero_connections": 2000,
+        "accuracy": 0.2578125,
+        "balanced_accuracy": 0.21747149564050972,
+        "images": 256
+      },
+      {
+        "method": "pini_mean",
+        "setting": "gaussian_noise_3",
+        "head": "15",
+        "actual_nec": 15.0,
+        "nonzero_connections": 3000,
+        "accuracy": 0.28515625,
+        "balanced_accuracy": 0.2398390342052314,
+        "images": 256
+      },
+      {
+        "method": "pini_mean",
+        "setting": "gaussian_noise_3",
+        "head": "20",
+        "actual_nec": 20.0,
+        "nonzero_connections": 4000,
+        "accuracy": 0.26953125,
+        "balanced_accuracy": 0.2302649228705567,
+        "images": 256
+      },
+      {
+        "method": "pini_mean",
+        "setting": "gaussian_noise_3",
+        "head": "30",
+        "actual_nec": 30.0,
+        "nonzero_connections": 6000,
+        "accuracy": 0.27734375,
+        "balanced_accuracy": 0.23906773977196513,
+        "images": 256
+      },
+      {
+        "method": "pini_mean",
+        "setting": "gaussian_noise_3",
+        "head": "50",
+        "actual_nec": 50.0,
+        "nonzero_connections": 10000,
+        "accuracy": 0.3125,
+        "balanced_accuracy": 0.27256874580818247,
+        "images": 256
+      },
+      {
+        "method": "pini_mean",
+        "setting": "gaussian_noise_3",
+        "head": "80",
+        "actual_nec": 80.0,
+        "nonzero_connections": 16000,
+        "accuracy": 0.3046875,
+        "balanced_accuracy": 0.2722669349429913,
+        "images": 256
+      },
+      {
+        "method": "pini_mean",
+        "setting": "gaussian_noise_3",
+        "head": "112",
+        "actual_nec": 105.505,
+        "nonzero_connections": 21101,
+        "accuracy": 0.30078125,
+        "balanced_accuracy": 0.2617035546613012,
+        "images": 256
+      },
+      {
+        "method": "pini_mean",
+        "setting": "gaussian_noise_3",
+        "head": "best_val",
+        "actual_nec": 38.225,
+        "nonzero_connections": 7645,
+        "accuracy": 0.2890625,
+        "balanced_accuracy": 0.2461099932930919,
+        "images": 256
+      },
+      {
+        "method": "pini_mean",
+        "setting": "gaussian_noise_3",
+        "head": "dense",
+        "actual_nec": 112.0,
+        "nonzero_connections": 22400,
+        "accuracy": 0.328125,
+        "balanced_accuracy": 0.2924547283702213,
+        "images": 256
+      },
+      {
+        "method": "pini_mean",
+        "setting": "gaussian_noise_5",
+        "head": "1",
+        "actual_nec": 1.0,
+        "nonzero_connections": 200,
+        "accuracy": 0.03515625,
+        "balanced_accuracy": 0.024061032863849766,
+        "images": 256
+      },
+      {
+        "method": "pini_mean",
+        "setting": "gaussian_noise_5",
+        "head": "3",
+        "actual_nec": 3.0,
+        "nonzero_connections": 600,
+        "accuracy": 0.05078125,
+        "balanced_accuracy": 0.039738430583501,
+        "images": 256
+      },
+      {
+        "method": "pini_mean",
+        "setting": "gaussian_noise_5",
+        "head": "5",
+        "actual_nec": 5.0,
+        "nonzero_connections": 1000,
+        "accuracy": 0.0546875,
+        "balanced_accuracy": 0.03898390342052313,
+        "images": 256
+      },
+      {
+        "method": "pini_mean",
+        "setting": "gaussian_noise_5",
+        "head": "10",
+        "actual_nec": 10.0,
+        "nonzero_connections": 2000,
+        "accuracy": 0.05859375,
+        "balanced_accuracy": 0.055583501006036214,
+        "images": 256
+      },
+      {
+        "method": "pini_mean",
+        "setting": "gaussian_noise_5",
+        "head": "15",
+        "actual_nec": 15.0,
+        "nonzero_connections": 3000,
+        "accuracy": 0.078125,
+        "balanced_accuracy": 0.07318913480885311,
+        "images": 256
+      },
+      {
+        "method": "pini_mean",
+        "setting": "gaussian_noise_5",
+        "head": "20",
+        "actual_nec": 20.0,
+        "nonzero_connections": 4000,
+        "accuracy": 0.08984375,
+        "balanced_accuracy": 0.08433936955063714,
+        "images": 256
+      },
+      {
+        "method": "pini_mean",
+        "setting": "gaussian_noise_5",
+        "head": "30",
+        "actual_nec": 30.0,
+        "nonzero_connections": 6000,
+        "accuracy": 0.0859375,
+        "balanced_accuracy": 0.08257880617035546,
+        "images": 256
+      },
+      {
+        "method": "pini_mean",
+        "setting": "gaussian_noise_5",
+        "head": "50",
+        "actual_nec": 50.0,
+        "nonzero_connections": 10000,
+        "accuracy": 0.08203125,
+        "balanced_accuracy": 0.08492622401073105,
+        "images": 256
+      },
+      {
+        "method": "pini_mean",
+        "setting": "gaussian_noise_5",
+        "head": "80",
+        "actual_nec": 80.0,
+        "nonzero_connections": 16000,
+        "accuracy": 0.08984375,
+        "balanced_accuracy": 0.09448356807511737,
+        "images": 256
+      },
+      {
+        "method": "pini_mean",
+        "setting": "gaussian_noise_5",
+        "head": "112",
+        "actual_nec": 105.505,
+        "nonzero_connections": 21101,
+        "accuracy": 0.09765625,
+        "balanced_accuracy": 0.10387323943661972,
+        "images": 256
+      },
+      {
+        "method": "pini_mean",
+        "setting": "gaussian_noise_5",
+        "head": "best_val",
+        "actual_nec": 38.225,
+        "nonzero_connections": 7645,
+        "accuracy": 0.08984375,
+        "balanced_accuracy": 0.0943158953722334,
+        "images": 256
+      },
+      {
+        "method": "pini_mean",
+        "setting": "gaussian_noise_5",
+        "head": "dense",
+        "actual_nec": 112.0,
+        "nonzero_connections": 22400,
+        "accuracy": 0.09375,
+        "balanced_accuracy": 0.11267605633802817,
+        "images": 256
+      },
+      {
+        "method": "pini_mean",
+        "setting": "gaussian_blur_1",
+        "head": "1",
+        "actual_nec": 1.0,
+        "nonzero_connections": 200,
+        "accuracy": 0.13671875,
+        "balanced_accuracy": 0.11549295774647886,
+        "images": 256
+      },
+      {
+        "method": "pini_mean",
+        "setting": "gaussian_blur_1",
+        "head": "3",
+        "actual_nec": 3.0,
+        "nonzero_connections": 600,
+        "accuracy": 0.265625,
+        "balanced_accuracy": 0.23137156270959086,
+        "images": 256
+      },
+      {
+        "method": "pini_mean",
+        "setting": "gaussian_blur_1",
+        "head": "5",
+        "actual_nec": 5.0,
+        "nonzero_connections": 1000,
+        "accuracy": 0.37109375,
+        "balanced_accuracy": 0.321579476861167,
+        "images": 256
+      },
+      {
+        "method": "pini_mean",
+        "setting": "gaussian_blur_1",
+        "head": "10",
+        "actual_nec": 10.0,
+        "nonzero_connections": 2000,
+        "accuracy": 0.51171875,
+        "balanced_accuracy": 0.46777330650570087,
+        "images": 256
+      },
+      {
+        "method": "pini_mean",
+        "setting": "gaussian_blur_1",
+        "head": "15",
+        "actual_nec": 15.0,
+        "nonzero_connections": 3000,
+        "accuracy": 0.515625,
+        "balanced_accuracy": 0.4765761234071093,
+        "images": 256
+      },
+      {
+        "method": "pini_mean",
+        "setting": "gaussian_blur_1",
+        "head": "20",
+        "actual_nec": 20.0,
+        "nonzero_connections": 4000,
+        "accuracy": 0.55859375,
+        "balanced_accuracy": 0.5184775318578134,
+        "images": 256
+      },
+      {
+        "method": "pini_mean",
+        "setting": "gaussian_blur_1",
+        "head": "30",
+        "actual_nec": 30.0,
+        "nonzero_connections": 6000,
+        "accuracy": 0.56640625,
+        "balanced_accuracy": 0.5243460764587525,
+        "images": 256
+      },
+      {
+        "method": "pini_mean",
+        "setting": "gaussian_blur_1",
+        "head": "50",
+        "actual_nec": 50.0,
+        "nonzero_connections": 10000,
+        "accuracy": 0.578125,
+        "balanced_accuracy": 0.5440643863179074,
+        "images": 256
+      },
+      {
+        "method": "pini_mean",
+        "setting": "gaussian_blur_1",
+        "head": "80",
+        "actual_nec": 80.0,
+        "nonzero_connections": 16000,
+        "accuracy": 0.58203125,
+        "balanced_accuracy": 0.5624245472837022,
+        "images": 256
+      },
+      {
+        "method": "pini_mean",
+        "setting": "gaussian_blur_1",
+        "head": "112",
+        "actual_nec": 105.505,
+        "nonzero_connections": 21101,
+        "accuracy": 0.57421875,
+        "balanced_accuracy": 0.5589034205231388,
+        "images": 256
+      },
+      {
+        "method": "pini_mean",
+        "setting": "gaussian_blur_1",
+        "head": "best_val",
+        "actual_nec": 38.225,
+        "nonzero_connections": 7645,
+        "accuracy": 0.56640625,
+        "balanced_accuracy": 0.5217639168343393,
+        "images": 256
+      },
+      {
+        "method": "pini_mean",
+        "setting": "gaussian_blur_1",
+        "head": "dense",
+        "actual_nec": 112.0,
+        "nonzero_connections": 22400,
+        "accuracy": 0.5703125,
+        "balanced_accuracy": 0.5454057679409792,
+        "images": 256
+      },
+      {
+        "method": "pini_mean",
+        "setting": "gaussian_blur_3",
+        "head": "1",
+        "actual_nec": 1.0,
+        "nonzero_connections": 200,
+        "accuracy": 0.1171875,
+        "balanced_accuracy": 0.10880281690140844,
+        "images": 256
+      },
+      {
+        "method": "pini_mean",
+        "setting": "gaussian_blur_3",
+        "head": "3",
+        "actual_nec": 3.0,
+        "nonzero_connections": 600,
+        "accuracy": 0.20703125,
+        "balanced_accuracy": 0.18219315895372235,
+        "images": 256
+      },
+      {
+        "method": "pini_mean",
+        "setting": "gaussian_blur_3",
+        "head": "5",
+        "actual_nec": 5.0,
+        "nonzero_connections": 1000,
+        "accuracy": 0.27734375,
+        "balanced_accuracy": 0.24828973843058347,
+        "images": 256
+      },
+      {
+        "method": "pini_mean",
+        "setting": "gaussian_blur_3",
+        "head": "10",
+        "actual_nec": 10.0,
+        "nonzero_connections": 2000,
+        "accuracy": 0.359375,
+        "balanced_accuracy": 0.34216968477531856,
+        "images": 256
+      },
+      {
+        "method": "pini_mean",
+        "setting": "gaussian_blur_3",
+        "head": "15",
+        "actual_nec": 15.0,
+        "nonzero_connections": 3000,
+        "accuracy": 0.359375,
+        "balanced_accuracy": 0.33536217303822935,
+        "images": 256
+      },
+      {
+        "method": "pini_mean",
+        "setting": "gaussian_blur_3",
+        "head": "20",
+        "actual_nec": 20.0,
+        "nonzero_connections": 4000,
+        "accuracy": 0.4140625,
+        "balanced_accuracy": 0.38660295103957076,
+        "images": 256
+      },
+      {
+        "method": "pini_mean",
+        "setting": "gaussian_blur_3",
+        "head": "30",
+        "actual_nec": 30.0,
+        "nonzero_connections": 6000,
+        "accuracy": 0.42578125,
+        "balanced_accuracy": 0.41594567404426563,
+        "images": 256
+      },
+      {
+        "method": "pini_mean",
+        "setting": "gaussian_blur_3",
+        "head": "50",
+        "actual_nec": 50.0,
+        "nonzero_connections": 10000,
+        "accuracy": 0.4296875,
+        "balanced_accuracy": 0.4192823608316566,
+        "images": 256
+      },
+      {
+        "method": "pini_mean",
+        "setting": "gaussian_blur_3",
+        "head": "80",
+        "actual_nec": 80.0,
+        "nonzero_connections": 16000,
+        "accuracy": 0.41796875,
+        "balanced_accuracy": 0.41275989268947016,
+        "images": 256
+      },
+      {
+        "method": "pini_mean",
+        "setting": "gaussian_blur_3",
+        "head": "112",
+        "actual_nec": 105.505,
+        "nonzero_connections": 21101,
+        "accuracy": 0.40625,
+        "balanced_accuracy": 0.41158618376928235,
+        "images": 256
+      },
+      {
+        "method": "pini_mean",
+        "setting": "gaussian_blur_3",
+        "head": "best_val",
+        "actual_nec": 38.225,
+        "nonzero_connections": 7645,
+        "accuracy": 0.41796875,
+        "balanced_accuracy": 0.4124245472837022,
+        "images": 256
+      },
+      {
+        "method": "pini_mean",
+        "setting": "gaussian_blur_3",
+        "head": "dense",
+        "actual_nec": 112.0,
+        "nonzero_connections": 22400,
+        "accuracy": 0.43359375,
+        "balanced_accuracy": 0.42278672032193165,
+        "images": 256
+      },
+      {
+        "method": "pini_mean",
+        "setting": "gaussian_blur_5",
+        "head": "1",
+        "actual_nec": 1.0,
+        "nonzero_connections": 200,
+        "accuracy": 0.07421875,
+        "balanced_accuracy": 0.07276995305164319,
+        "images": 256
+      },
+      {
+        "method": "pini_mean",
+        "setting": "gaussian_blur_5",
+        "head": "3",
+        "actual_nec": 3.0,
+        "nonzero_connections": 600,
+        "accuracy": 0.109375,
+        "balanced_accuracy": 0.10353789403085178,
+        "images": 256
+      },
+      {
+        "method": "pini_mean",
+        "setting": "gaussian_blur_5",
+        "head": "5",
+        "actual_nec": 5.0,
+        "nonzero_connections": 1000,
+        "accuracy": 0.125,
+        "balanced_accuracy": 0.11668343393695504,
+        "images": 256
+      },
+      {
+        "method": "pini_mean",
+        "setting": "gaussian_blur_5",
+        "head": "10",
+        "actual_nec": 10.0,
+        "nonzero_connections": 2000,
+        "accuracy": 0.171875,
+        "balanced_accuracy": 0.16520791415157612,
+        "images": 256
+      },
+      {
+        "method": "pini_mean",
+        "setting": "gaussian_blur_5",
+        "head": "15",
+        "actual_nec": 15.0,
+        "nonzero_connections": 3000,
+        "accuracy": 0.16796875,
+        "balanced_accuracy": 0.15036887994634476,
+        "images": 256
+      },
+      {
+        "method": "pini_mean",
+        "setting": "gaussian_blur_5",
+        "head": "20",
+        "actual_nec": 20.0,
+        "nonzero_connections": 4000,
+        "accuracy": 0.1796875,
+        "balanced_accuracy": 0.1710764587525151,
+        "images": 256
+      },
+      {
+        "method": "pini_mean",
+        "setting": "gaussian_blur_5",
+        "head": "30",
+        "actual_nec": 30.0,
+        "nonzero_connections": 6000,
+        "accuracy": 0.171875,
+        "balanced_accuracy": 0.16145204560697518,
+        "images": 256
+      },
+      {
+        "method": "pini_mean",
+        "setting": "gaussian_blur_5",
+        "head": "50",
+        "actual_nec": 50.0,
+        "nonzero_connections": 10000,
+        "accuracy": 0.16015625,
+        "balanced_accuracy": 0.17183098591549298,
+        "images": 256
+      },
+      {
+        "method": "pini_mean",
+        "setting": "gaussian_blur_5",
+        "head": "80",
+        "actual_nec": 80.0,
+        "nonzero_connections": 16000,
+        "accuracy": 0.16796875,
+        "balanced_accuracy": 0.19037558685446007,
+        "images": 256
+      },
+      {
+        "method": "pini_mean",
+        "setting": "gaussian_blur_5",
+        "head": "112",
+        "actual_nec": 105.505,
+        "nonzero_connections": 21101,
+        "accuracy": 0.1875,
+        "balanced_accuracy": 0.21854460093896713,
+        "images": 256
+      },
+      {
+        "method": "pini_mean",
+        "setting": "gaussian_blur_5",
+        "head": "best_val",
+        "actual_nec": 38.225,
+        "nonzero_connections": 7645,
+        "accuracy": 0.17578125,
+        "balanced_accuracy": 0.16732059020791415,
+        "images": 256
+      },
+      {
+        "method": "pini_mean",
+        "setting": "gaussian_blur_5",
+        "head": "dense",
+        "actual_nec": 112.0,
+        "nonzero_connections": 22400,
+        "accuracy": 0.203125,
+        "balanced_accuracy": 0.21267605633802816,
+        "images": 256
+      },
+      {
+        "method": "pini_mean",
+        "setting": "contrast_1",
+        "head": "1",
+        "actual_nec": 1.0,
+        "nonzero_connections": 200,
+        "accuracy": 0.14453125,
+        "balanced_accuracy": 0.1147887323943662,
+        "images": 256
+      },
+      {
+        "method": "pini_mean",
+        "setting": "contrast_1",
+        "head": "3",
+        "actual_nec": 3.0,
+        "nonzero_connections": 600,
+        "accuracy": 0.28515625,
+        "balanced_accuracy": 0.23594902749832328,
+        "images": 256
+      },
+      {
+        "method": "pini_mean",
+        "setting": "contrast_1",
+        "head": "5",
+        "actual_nec": 5.0,
+        "nonzero_connections": 1000,
+        "accuracy": 0.36328125,
+        "balanced_accuracy": 0.31857813547954394,
+        "images": 256
+      },
+      {
+        "method": "pini_mean",
+        "setting": "contrast_1",
+        "head": "10",
+        "actual_nec": 10.0,
+        "nonzero_connections": 2000,
+        "accuracy": 0.48828125,
+        "balanced_accuracy": 0.4507545271629779,
+        "images": 256
+      },
+      {
+        "method": "pini_mean",
+        "setting": "contrast_1",
+        "head": "15",
+        "actual_nec": 15.0,
+        "nonzero_connections": 3000,
+        "accuracy": 0.5390625,
+        "balanced_accuracy": 0.49894366197183093,
+        "images": 256
+      },
+      {
+        "method": "pini_mean",
+        "setting": "contrast_1",
+        "head": "20",
+        "actual_nec": 20.0,
+        "nonzero_connections": 4000,
+        "accuracy": 0.55078125,
+        "balanced_accuracy": 0.5089201877934272,
+        "images": 256
+      },
+      {
+        "method": "pini_mean",
+        "setting": "contrast_1",
+        "head": "30",
+        "actual_nec": 30.0,
+        "nonzero_connections": 6000,
+        "accuracy": 0.56640625,
+        "balanced_accuracy": 0.5309859154929577,
+        "images": 256
+      },
+      {
+        "method": "pini_mean",
+        "setting": "contrast_1",
+        "head": "50",
+        "actual_nec": 50.0,
+        "nonzero_connections": 10000,
+        "accuracy": 0.56640625,
+        "balanced_accuracy": 0.5407276995305165,
+        "images": 256
+      },
+      {
+        "method": "pini_mean",
+        "setting": "contrast_1",
+        "head": "80",
+        "actual_nec": 80.0,
+        "nonzero_connections": 16000,
+        "accuracy": 0.58203125,
+        "balanced_accuracy": 0.5593226022803488,
+        "images": 256
+      },
+      {
+        "method": "pini_mean",
+        "setting": "contrast_1",
+        "head": "112",
+        "actual_nec": 105.505,
+        "nonzero_connections": 21101,
+        "accuracy": 0.578125,
+        "balanced_accuracy": 0.552280348759222,
+        "images": 256
+      },
+      {
+        "method": "pini_mean",
+        "setting": "contrast_1",
+        "head": "best_val",
+        "actual_nec": 38.225,
+        "nonzero_connections": 7645,
+        "accuracy": 0.5703125,
+        "balanced_accuracy": 0.5444835680751173,
+        "images": 256
+      },
+      {
+        "method": "pini_mean",
+        "setting": "contrast_1",
+        "head": "dense",
+        "actual_nec": 112.0,
+        "nonzero_connections": 22400,
+        "accuracy": 0.5859375,
+        "balanced_accuracy": 0.5677733065057009,
+        "images": 256
+      },
+      {
+        "method": "pini_mean",
+        "setting": "contrast_3",
+        "head": "1",
+        "actual_nec": 1.0,
+        "nonzero_connections": 200,
+        "accuracy": 0.1015625,
+        "balanced_accuracy": 0.0875586854460094,
+        "images": 256
+      },
+      {
+        "method": "pini_mean",
+        "setting": "contrast_3",
+        "head": "3",
+        "actual_nec": 3.0,
+        "nonzero_connections": 600,
+        "accuracy": 0.24609375,
+        "balanced_accuracy": 0.22414486921529175,
+        "images": 256
+      },
+      {
+        "method": "pini_mean",
+        "setting": "contrast_3",
+        "head": "5",
+        "actual_nec": 5.0,
+        "nonzero_connections": 1000,
+        "accuracy": 0.28125,
+        "balanced_accuracy": 0.2596747149564051,
+        "images": 256
+      },
+      {
+        "method": "pini_mean",
+        "setting": "contrast_3",
+        "head": "10",
+        "actual_nec": 10.0,
+        "nonzero_connections": 2000,
+        "accuracy": 0.36328125,
+        "balanced_accuracy": 0.3522635814889336,
+        "images": 256
+      },
+      {
+        "method": "pini_mean",
+        "setting": "contrast_3",
+        "head": "15",
+        "actual_nec": 15.0,
+        "nonzero_connections": 3000,
+        "accuracy": 0.38671875,
+        "balanced_accuracy": 0.3619047619047619,
+        "images": 256
+      },
+      {
+        "method": "pini_mean",
+        "setting": "contrast_3",
+        "head": "20",
+        "actual_nec": 20.0,
+        "nonzero_connections": 4000,
+        "accuracy": 0.41015625,
+        "balanced_accuracy": 0.37951039570757883,
+        "images": 256
+      },
+      {
+        "method": "pini_mean",
+        "setting": "contrast_3",
+        "head": "30",
+        "actual_nec": 30.0,
+        "nonzero_connections": 6000,
+        "accuracy": 0.41015625,
+        "balanced_accuracy": 0.3982897384305835,
+        "images": 256
+      },
+      {
+        "method": "pini_mean",
+        "setting": "contrast_3",
+        "head": "50",
+        "actual_nec": 50.0,
+        "nonzero_connections": 10000,
+        "accuracy": 0.42578125,
+        "balanced_accuracy": 0.4306841046277666,
+        "images": 256
+      },
+      {
+        "method": "pini_mean",
+        "setting": "contrast_3",
+        "head": "80",
+        "actual_nec": 80.0,
+        "nonzero_connections": 16000,
+        "accuracy": 0.38671875,
+        "balanced_accuracy": 0.390878604963112,
+        "images": 256
+      },
+      {
+        "method": "pini_mean",
+        "setting": "contrast_3",
+        "head": "112",
+        "actual_nec": 105.505,
+        "nonzero_connections": 21101,
+        "accuracy": 0.3828125,
+        "balanced_accuracy": 0.38383635144198525,
+        "images": 256
+      },
+      {
+        "method": "pini_mean",
+        "setting": "contrast_3",
+        "head": "best_val",
+        "actual_nec": 38.225,
+        "nonzero_connections": 7645,
+        "accuracy": 0.41796875,
+        "balanced_accuracy": 0.41061368209255533,
+        "images": 256
+      },
+      {
+        "method": "pini_mean",
+        "setting": "contrast_3",
+        "head": "dense",
+        "actual_nec": 112.0,
+        "nonzero_connections": 22400,
+        "accuracy": 0.41796875,
+        "balanced_accuracy": 0.4275653923541247,
+        "images": 256
+      },
+      {
+        "method": "pini_mean",
+        "setting": "contrast_5",
+        "head": "1",
+        "actual_nec": 1.0,
+        "nonzero_connections": 200,
+        "accuracy": 0.05859375,
+        "balanced_accuracy": 0.05974178403755869,
+        "images": 256
+      },
+      {
+        "method": "pini_mean",
+        "setting": "contrast_5",
+        "head": "3",
+        "actual_nec": 3.0,
+        "nonzero_connections": 600,
+        "accuracy": 0.06640625,
+        "balanced_accuracy": 0.06638162307176391,
+        "images": 256
+      },
+      {
+        "method": "pini_mean",
+        "setting": "contrast_5",
+        "head": "5",
+        "actual_nec": 5.0,
+        "nonzero_connections": 1000,
+        "accuracy": 0.10546875,
+        "balanced_accuracy": 0.10201207243460765,
+        "images": 256
+      },
+      {
+        "method": "pini_mean",
+        "setting": "contrast_5",
+        "head": "10",
+        "actual_nec": 10.0,
+        "nonzero_connections": 2000,
+        "accuracy": 0.1015625,
+        "balanced_accuracy": 0.10687458081824279,
+        "images": 256
+      },
+      {
+        "method": "pini_mean",
+        "setting": "contrast_5",
+        "head": "15",
+        "actual_nec": 15.0,
+        "nonzero_connections": 3000,
+        "accuracy": 0.125,
+        "balanced_accuracy": 0.13001341381623072,
+        "images": 256
+      },
+      {
+        "method": "pini_mean",
+        "setting": "contrast_5",
+        "head": "20",
+        "actual_nec": 20.0,
+        "nonzero_connections": 4000,
+        "accuracy": 0.12109375,
+        "balanced_accuracy": 0.13428906773977198,
+        "images": 256
+      },
+      {
+        "method": "pini_mean",
+        "setting": "contrast_5",
+        "head": "30",
+        "actual_nec": 30.0,
+        "nonzero_connections": 6000,
+        "accuracy": 0.14453125,
+        "balanced_accuracy": 0.162458081824279,
+        "images": 256
+      },
+      {
+        "method": "pini_mean",
+        "setting": "contrast_5",
+        "head": "50",
+        "actual_nec": 50.0,
+        "nonzero_connections": 10000,
+        "accuracy": 0.14453125,
+        "balanced_accuracy": 0.1692655935613682,
+        "images": 256
+      },
+      {
+        "method": "pini_mean",
+        "setting": "contrast_5",
+        "head": "80",
+        "actual_nec": 80.0,
+        "nonzero_connections": 16000,
+        "accuracy": 0.140625,
+        "balanced_accuracy": 0.16222334004024144,
+        "images": 256
+      },
+      {
+        "method": "pini_mean",
+        "setting": "contrast_5",
+        "head": "112",
+        "actual_nec": 105.505,
+        "nonzero_connections": 21101,
+        "accuracy": 0.1328125,
+        "balanced_accuracy": 0.1516599597585513,
+        "images": 256
+      },
+      {
+        "method": "pini_mean",
+        "setting": "contrast_5",
+        "head": "best_val",
+        "actual_nec": 38.225,
+        "nonzero_connections": 7645,
+        "accuracy": 0.140625,
+        "balanced_accuracy": 0.16222334004024144,
+        "images": 256
+      },
+      {
+        "method": "pini_mean",
+        "setting": "contrast_5",
+        "head": "dense",
+        "actual_nec": 112.0,
+        "nonzero_connections": 22400,
+        "accuracy": 0.1328125,
+        "balanced_accuracy": 0.1374077800134138,
+        "images": 256
+      },
+      {
+        "method": "pini_mean",
+        "setting": "jpeg_1",
+        "head": "1",
+        "actual_nec": 1.0,
+        "nonzero_connections": 200,
+        "accuracy": 0.1328125,
+        "balanced_accuracy": 0.10600268276324613,
+        "images": 256
+      },
+      {
+        "method": "pini_mean",
+        "setting": "jpeg_1",
+        "head": "3",
+        "actual_nec": 3.0,
+        "nonzero_connections": 600,
+        "accuracy": 0.23828125,
+        "balanced_accuracy": 0.19716633132126088,
+        "images": 256
+      },
+      {
+        "method": "pini_mean",
+        "setting": "jpeg_1",
+        "head": "5",
+        "actual_nec": 5.0,
+        "nonzero_connections": 1000,
+        "accuracy": 0.34375,
+        "balanced_accuracy": 0.2886653252850436,
+        "images": 256
+      },
+      {
+        "method": "pini_mean",
+        "setting": "jpeg_1",
+        "head": "10",
+        "actual_nec": 10.0,
+        "nonzero_connections": 2000,
+        "accuracy": 0.4375,
+        "balanced_accuracy": 0.40040241448692154,
+        "images": 256
+      },
+      {
+        "method": "pini_mean",
+        "setting": "jpeg_1",
+        "head": "15",
+        "actual_nec": 15.0,
+        "nonzero_connections": 3000,
+        "accuracy": 0.47265625,
+        "balanced_accuracy": 0.43678739101274316,
+        "images": 256
+      },
+      {
+        "method": "pini_mean",
+        "setting": "jpeg_1",
+        "head": "20",
+        "actual_nec": 20.0,
+        "nonzero_connections": 4000,
+        "accuracy": 0.50390625,
+        "balanced_accuracy": 0.45838363514419844,
+        "images": 256
+      },
+      {
+        "method": "pini_mean",
+        "setting": "jpeg_1",
+        "head": "30",
+        "actual_nec": 30.0,
+        "nonzero_connections": 6000,
+        "accuracy": 0.52734375,
+        "balanced_accuracy": 0.4846244131455399,
+        "images": 256
+      },
+      {
+        "method": "pini_mean",
+        "setting": "jpeg_1",
+        "head": "50",
+        "actual_nec": 50.0,
+        "nonzero_connections": 10000,
+        "accuracy": 0.5078125,
+        "balanced_accuracy": 0.47382629107981217,
+        "images": 256
+      },
+      {
+        "method": "pini_mean",
+        "setting": "jpeg_1",
+        "head": "80",
+        "actual_nec": 80.0,
+        "nonzero_connections": 16000,
+        "accuracy": 0.5234375,
+        "balanced_accuracy": 0.49840710932260224,
+        "images": 256
+      },
+      {
+        "method": "pini_mean",
+        "setting": "jpeg_1",
+        "head": "112",
+        "actual_nec": 105.505,
+        "nonzero_connections": 21101,
+        "accuracy": 0.5234375,
+        "balanced_accuracy": 0.500167672702884,
+        "images": 256
+      },
+      {
+        "method": "pini_mean",
+        "setting": "jpeg_1",
+        "head": "best_val",
+        "actual_nec": 38.225,
+        "nonzero_connections": 7645,
+        "accuracy": 0.53125,
+        "balanced_accuracy": 0.4969483568075117,
+        "images": 256
+      },
+      {
+        "method": "pini_mean",
+        "setting": "jpeg_1",
+        "head": "dense",
+        "actual_nec": 112.0,
+        "nonzero_connections": 22400,
+        "accuracy": 0.5625,
+        "balanced_accuracy": 0.5473507712944332,
+        "images": 256
+      },
+      {
+        "method": "pini_mean",
+        "setting": "jpeg_3",
+        "head": "1",
+        "actual_nec": 1.0,
+        "nonzero_connections": 200,
+        "accuracy": 0.12109375,
+        "balanced_accuracy": 0.09619382964453387,
+        "images": 256
+      },
+      {
+        "method": "pini_mean",
+        "setting": "jpeg_3",
+        "head": "3",
+        "actual_nec": 3.0,
+        "nonzero_connections": 600,
+        "accuracy": 0.23046875,
+        "balanced_accuracy": 0.2000335345405768,
+        "images": 256
+      },
+      {
+        "method": "pini_mean",
+        "setting": "jpeg_3",
+        "head": "5",
+        "actual_nec": 5.0,
+        "nonzero_connections": 1000,
+        "accuracy": 0.28515625,
+        "balanced_accuracy": 0.24124748490945672,
+        "images": 256
+      },
+      {
+        "method": "pini_mean",
+        "setting": "jpeg_3",
+        "head": "10",
+        "actual_nec": 10.0,
+        "nonzero_connections": 2000,
+        "accuracy": 0.3828125,
+        "balanced_accuracy": 0.33690476190476193,
+        "images": 256
+      },
+      {
+        "method": "pini_mean",
+        "setting": "jpeg_3",
+        "head": "15",
+        "actual_nec": 15.0,
+        "nonzero_connections": 3000,
+        "accuracy": 0.39453125,
+        "balanced_accuracy": 0.37012072434607646,
+        "images": 256
+      },
+      {
+        "method": "pini_mean",
+        "setting": "jpeg_3",
+        "head": "20",
+        "actual_nec": 20.0,
+        "nonzero_connections": 4000,
+        "accuracy": 0.41015625,
+        "balanced_accuracy": 0.38983903420523136,
+        "images": 256
+      },
+      {
+        "method": "pini_mean",
+        "setting": "jpeg_3",
+        "head": "30",
+        "actual_nec": 30.0,
+        "nonzero_connections": 6000,
+        "accuracy": 0.421875,
+        "balanced_accuracy": 0.40333668678739104,
+        "images": 256
+      },
+      {
+        "method": "pini_mean",
+        "setting": "jpeg_3",
+        "head": "50",
+        "actual_nec": 50.0,
+        "nonzero_connections": 10000,
+        "accuracy": 0.421875,
+        "balanced_accuracy": 0.3985244802146211,
+        "images": 256
+      },
+      {
+        "method": "pini_mean",
+        "setting": "jpeg_3",
+        "head": "80",
+        "actual_nec": 80.0,
+        "nonzero_connections": 16000,
+        "accuracy": 0.41015625,
+        "balanced_accuracy": 0.3846076458752515,
+        "images": 256
+      },
+      {
+        "method": "pini_mean",
+        "setting": "jpeg_3",
+        "head": "112",
+        "actual_nec": 105.505,
+        "nonzero_connections": 21101,
+        "accuracy": 0.41796875,
+        "balanced_accuracy": 0.4000335345405768,
+        "images": 256
+      },
+      {
+        "method": "pini_mean",
+        "setting": "jpeg_3",
+        "head": "best_val",
+        "actual_nec": 38.225,
+        "nonzero_connections": 7645,
+        "accuracy": 0.43359375,
+        "balanced_accuracy": 0.4195338698859826,
+        "images": 256
+      },
+      {
+        "method": "pini_mean",
+        "setting": "jpeg_3",
+        "head": "dense",
+        "actual_nec": 112.0,
+        "nonzero_connections": 22400,
+        "accuracy": 0.4453125,
+        "balanced_accuracy": 0.4279007377598927,
+        "images": 256
+      },
+      {
+        "method": "pini_mean",
+        "setting": "jpeg_5",
+        "head": "1",
+        "actual_nec": 1.0,
+        "nonzero_connections": 200,
+        "accuracy": 0.0859375,
+        "balanced_accuracy": 0.0755868544600939,
+        "images": 256
+      },
+      {
+        "method": "pini_mean",
+        "setting": "jpeg_5",
+        "head": "3",
+        "actual_nec": 3.0,
+        "nonzero_connections": 600,
+        "accuracy": 0.1328125,
+        "balanced_accuracy": 0.11586183769282361,
+        "images": 256
+      },
+      {
+        "method": "pini_mean",
+        "setting": "jpeg_5",
+        "head": "5",
+        "actual_nec": 5.0,
+        "nonzero_connections": 1000,
+        "accuracy": 0.1484375,
+        "balanced_accuracy": 0.1278336686787391,
+        "images": 256
+      },
+      {
+        "method": "pini_mean",
+        "setting": "jpeg_5",
+        "head": "10",
+        "actual_nec": 10.0,
+        "nonzero_connections": 2000,
+        "accuracy": 0.1796875,
+        "balanced_accuracy": 0.15254862508383638,
+        "images": 256
+      },
+      {
+        "method": "pini_mean",
+        "setting": "jpeg_5",
+        "head": "15",
+        "actual_nec": 15.0,
+        "nonzero_connections": 3000,
+        "accuracy": 0.19921875,
+        "balanced_accuracy": 0.17719651240778,
+        "images": 256
+      },
+      {
+        "method": "pini_mean",
+        "setting": "jpeg_5",
+        "head": "20",
+        "actual_nec": 20.0,
+        "nonzero_connections": 4000,
+        "accuracy": 0.1796875,
+        "balanced_accuracy": 0.15724346076458753,
+        "images": 256
+      },
+      {
+        "method": "pini_mean",
+        "setting": "jpeg_5",
+        "head": "30",
+        "actual_nec": 30.0,
+        "nonzero_connections": 6000,
+        "accuracy": 0.1875,
+        "balanced_accuracy": 0.1625251509054326,
+        "images": 256
+      },
+      {
+        "method": "pini_mean",
+        "setting": "jpeg_5",
+        "head": "50",
+        "actual_nec": 50.0,
+        "nonzero_connections": 10000,
+        "accuracy": 0.19921875,
+        "balanced_accuracy": 0.1818242790073776,
+        "images": 256
+      },
+      {
+        "method": "pini_mean",
+        "setting": "jpeg_5",
+        "head": "80",
+        "actual_nec": 80.0,
+        "nonzero_connections": 16000,
+        "accuracy": 0.19921875,
+        "balanced_accuracy": 0.18938631790744467,
+        "images": 256
+      },
+      {
+        "method": "pini_mean",
+        "setting": "jpeg_5",
+        "head": "112",
+        "actual_nec": 105.505,
+        "nonzero_connections": 21101,
+        "accuracy": 0.20703125,
+        "balanced_accuracy": 0.19642857142857142,
+        "images": 256
+      },
+      {
+        "method": "pini_mean",
+        "setting": "jpeg_5",
+        "head": "best_val",
+        "actual_nec": 38.225,
+        "nonzero_connections": 7645,
+        "accuracy": 0.19921875,
+        "balanced_accuracy": 0.1688128772635815,
+        "images": 256
+      },
+      {
+        "method": "pini_mean",
+        "setting": "jpeg_5",
+        "head": "dense",
+        "actual_nec": 112.0,
+        "nonzero_connections": 22400,
+        "accuracy": 0.234375,
+        "balanced_accuracy": 0.222719651240778,
+        "images": 256
+      },
+      {
+        "method": "pini_noise",
+        "setting": "original_0",
+        "head": "1",
+        "actual_nec": 1.0,
+        "nonzero_connections": 200,
+        "accuracy": 0.14453125,
+        "balanced_accuracy": 0.12476525821596246,
+        "images": 256
+      },
+      {
+        "method": "pini_noise",
+        "setting": "original_0",
+        "head": "3",
+        "actual_nec": 3.0,
+        "nonzero_connections": 600,
+        "accuracy": 0.28125,
+        "balanced_accuracy": 0.22503353454057679,
+        "images": 256
+      },
+      {
+        "method": "pini_noise",
+        "setting": "original_0",
+        "head": "5",
+        "actual_nec": 5.0,
+        "nonzero_connections": 1000,
+        "accuracy": 0.39453125,
+        "balanced_accuracy": 0.33707243460764585,
+        "images": 256
+      },
+      {
+        "method": "pini_noise",
+        "setting": "original_0",
+        "head": "10",
+        "actual_nec": 10.0,
+        "nonzero_connections": 2000,
+        "accuracy": 0.47265625,
+        "balanced_accuracy": 0.4349094567404426,
+        "images": 256
+      },
+      {
+        "method": "pini_noise",
+        "setting": "original_0",
+        "head": "15",
+        "actual_nec": 15.0,
+        "nonzero_connections": 3000,
+        "accuracy": 0.5390625,
+        "balanced_accuracy": 0.49617706237424547,
+        "images": 256
+      },
+      {
+        "method": "pini_noise",
+        "setting": "original_0",
+        "head": "20",
+        "actual_nec": 20.0,
+        "nonzero_connections": 4000,
+        "accuracy": 0.5546875,
+        "balanced_accuracy": 0.5049798792756539,
+        "images": 256
+      },
+      {
+        "method": "pini_noise",
+        "setting": "original_0",
+        "head": "30",
+        "actual_nec": 30.0,
+        "nonzero_connections": 6000,
+        "accuracy": 0.5625,
+        "balanced_accuracy": 0.5190643863179074,
+        "images": 256
+      },
+      {
+        "method": "pini_noise",
+        "setting": "original_0",
+        "head": "50",
+        "actual_nec": 50.0,
+        "nonzero_connections": 10000,
+        "accuracy": 0.5859375,
+        "balanced_accuracy": 0.5417840375586854,
+        "images": 256
+      },
+      {
+        "method": "pini_noise",
+        "setting": "original_0",
+        "head": "80",
+        "actual_nec": 80.0,
+        "nonzero_connections": 16000,
+        "accuracy": 0.578125,
+        "balanced_accuracy": 0.5477531857813547,
+        "images": 256
+      },
+      {
+        "method": "pini_noise",
+        "setting": "original_0",
+        "head": "112",
+        "actual_nec": 105.365,
+        "nonzero_connections": 21073,
+        "accuracy": 0.58203125,
+        "balanced_accuracy": 0.5559691482226693,
+        "images": 256
+      },
+      {
+        "method": "pini_noise",
+        "setting": "original_0",
+        "head": "best_val",
+        "actual_nec": 38.45,
+        "nonzero_connections": 7690,
+        "accuracy": 0.57421875,
+        "balanced_accuracy": 0.5288732394366197,
+        "images": 256
+      },
+      {
+        "method": "pini_noise",
+        "setting": "original_0",
+        "head": "dense",
+        "actual_nec": 112.0,
+        "nonzero_connections": 22400,
+        "accuracy": 0.59375,
+        "balanced_accuracy": 0.5699530516431924,
+        "images": 256
+      },
+      {
+        "method": "pini_noise",
+        "setting": "gaussian_noise_1",
+        "head": "1",
+        "actual_nec": 1.0,
+        "nonzero_connections": 200,
+        "accuracy": 0.13671875,
+        "balanced_accuracy": 0.11849429912810194,
+        "images": 256
+      },
+      {
+        "method": "pini_noise",
+        "setting": "gaussian_noise_1",
+        "head": "3",
+        "actual_nec": 3.0,
+        "nonzero_connections": 600,
+        "accuracy": 0.26953125,
+        "balanced_accuracy": 0.22592219986586184,
+        "images": 256
+      },
+      {
+        "method": "pini_noise",
+        "setting": "gaussian_noise_1",
+        "head": "5",
+        "actual_nec": 5.0,
+        "nonzero_connections": 1000,
+        "accuracy": 0.3515625,
+        "balanced_accuracy": 0.3015761234071093,
+        "images": 256
+      },
+      {
+        "method": "pini_noise",
+        "setting": "gaussian_noise_1",
+        "head": "10",
+        "actual_nec": 10.0,
+        "nonzero_connections": 2000,
+        "accuracy": 0.4921875,
+        "balanced_accuracy": 0.4313883299798793,
+        "images": 256
+      },
+      {
+        "method": "pini_noise",
+        "setting": "gaussian_noise_1",
+        "head": "15",
+        "actual_nec": 15.0,
+        "nonzero_connections": 3000,
+        "accuracy": 0.5,
+        "balanced_accuracy": 0.435261569416499,
+        "images": 256
+      },
+      {
+        "method": "pini_noise",
+        "setting": "gaussian_noise_1",
+        "head": "20",
+        "actual_nec": 20.0,
+        "nonzero_connections": 4000,
+        "accuracy": 0.51953125,
+        "balanced_accuracy": 0.46014419852448013,
+        "images": 256
+      },
+      {
+        "method": "pini_noise",
+        "setting": "gaussian_noise_1",
+        "head": "30",
+        "actual_nec": 30.0,
+        "nonzero_connections": 6000,
+        "accuracy": 0.5234375,
+        "balanced_accuracy": 0.47422870556673374,
+        "images": 256
+      },
+      {
+        "method": "pini_noise",
+        "setting": "gaussian_noise_1",
+        "head": "50",
+        "actual_nec": 50.0,
+        "nonzero_connections": 10000,
+        "accuracy": 0.53515625,
+        "balanced_accuracy": 0.49610999329309186,
+        "images": 256
+      },
+      {
+        "method": "pini_noise",
+        "setting": "gaussian_noise_1",
+        "head": "80",
+        "actual_nec": 80.0,
+        "nonzero_connections": 16000,
+        "accuracy": 0.50390625,
+        "balanced_accuracy": 0.47322266934942986,
+        "images": 256
+      },
+      {
+        "method": "pini_noise",
+        "setting": "gaussian_noise_1",
+        "head": "112",
+        "actual_nec": 105.365,
+        "nonzero_connections": 21073,
+        "accuracy": 0.49609375,
+        "balanced_accuracy": 0.4697015425888665,
+        "images": 256
+      },
+      {
+        "method": "pini_noise",
+        "setting": "gaussian_noise_1",
+        "head": "best_val",
+        "actual_nec": 38.45,
+        "nonzero_connections": 7690,
+        "accuracy": 0.52734375,
+        "balanced_accuracy": 0.4859657947686116,
+        "images": 256
+      },
+      {
+        "method": "pini_noise",
+        "setting": "gaussian_noise_1",
+        "head": "dense",
+        "actual_nec": 112.0,
+        "nonzero_connections": 22400,
+        "accuracy": 0.51953125,
+        "balanced_accuracy": 0.5105298457411134,
+        "images": 256
+      },
+      {
+        "method": "pini_noise",
+        "setting": "gaussian_noise_3",
+        "head": "1",
+        "actual_nec": 1.0,
+        "nonzero_connections": 200,
+        "accuracy": 0.125,
+        "balanced_accuracy": 0.10459423205902078,
+        "images": 256
+      },
+      {
+        "method": "pini_noise",
+        "setting": "gaussian_noise_3",
+        "head": "3",
+        "actual_nec": 3.0,
+        "nonzero_connections": 600,
+        "accuracy": 0.19140625,
+        "balanced_accuracy": 0.15268276324614352,
+        "images": 256
+      },
+      {
+        "method": "pini_noise",
+        "setting": "gaussian_noise_3",
+        "head": "5",
+        "actual_nec": 5.0,
+        "nonzero_connections": 1000,
+        "accuracy": 0.19921875,
+        "balanced_accuracy": 0.1532696177062374,
+        "images": 256
+      },
+      {
+        "method": "pini_noise",
+        "setting": "gaussian_noise_3",
+        "head": "10",
+        "actual_nec": 10.0,
+        "nonzero_connections": 2000,
+        "accuracy": 0.265625,
+        "balanced_accuracy": 0.2249329309188464,
+        "images": 256
+      },
+      {
+        "method": "pini_noise",
+        "setting": "gaussian_noise_3",
+        "head": "15",
+        "actual_nec": 15.0,
+        "nonzero_connections": 3000,
+        "accuracy": 0.2734375,
+        "balanced_accuracy": 0.23256203890006702,
+        "images": 256
+      },
+      {
+        "method": "pini_noise",
+        "setting": "gaussian_noise_3",
+        "head": "20",
+        "actual_nec": 20.0,
+        "nonzero_connections": 4000,
+        "accuracy": 0.2890625,
+        "balanced_accuracy": 0.2506371562709591,
+        "images": 256
+      },
+      {
+        "method": "pini_noise",
+        "setting": "gaussian_noise_3",
+        "head": "30",
+        "actual_nec": 30.0,
+        "nonzero_connections": 6000,
+        "accuracy": 0.3046875,
+        "balanced_accuracy": 0.2660630449362844,
+        "images": 256
+      },
+      {
+        "method": "pini_noise",
+        "setting": "gaussian_noise_3",
+        "head": "50",
+        "actual_nec": 50.0,
+        "nonzero_connections": 10000,
+        "accuracy": 0.296875,
+        "balanced_accuracy": 0.2635311871227365,
+        "images": 256
+      },
+      {
+        "method": "pini_noise",
+        "setting": "gaussian_noise_3",
+        "head": "80",
+        "actual_nec": 80.0,
+        "nonzero_connections": 16000,
+        "accuracy": 0.29296875,
+        "balanced_accuracy": 0.2626425217974514,
+        "images": 256
+      },
+      {
+        "method": "pini_noise",
+        "setting": "gaussian_noise_3",
+        "head": "112",
+        "actual_nec": 105.365,
+        "nonzero_connections": 21073,
+        "accuracy": 0.30078125,
+        "balanced_accuracy": 0.2679242119382964,
+        "images": 256
+      },
+      {
+        "method": "pini_noise",
+        "setting": "gaussian_noise_3",
+        "head": "best_val",
+        "actual_nec": 38.45,
+        "nonzero_connections": 7690,
+        "accuracy": 0.31640625,
+        "balanced_accuracy": 0.27744802146210595,
+        "images": 256
+      },
+      {
+        "method": "pini_noise",
+        "setting": "gaussian_noise_3",
+        "head": "dense",
+        "actual_nec": 112.0,
+        "nonzero_connections": 22400,
+        "accuracy": 0.33203125,
+        "balanced_accuracy": 0.2860663983903421,
+        "images": 256
+      },
+      {
+        "method": "pini_noise",
+        "setting": "gaussian_noise_5",
+        "head": "1",
+        "actual_nec": 1.0,
+        "nonzero_connections": 200,
+        "accuracy": 0.0390625,
+        "balanced_accuracy": 0.027230046948356807,
+        "images": 256
+      },
+      {
+        "method": "pini_noise",
+        "setting": "gaussian_noise_5",
+        "head": "3",
+        "actual_nec": 3.0,
+        "nonzero_connections": 600,
+        "accuracy": 0.046875,
+        "balanced_accuracy": 0.03621730382293762,
+        "images": 256
+      },
+      {
+        "method": "pini_noise",
+        "setting": "gaussian_noise_5",
+        "head": "5",
+        "actual_nec": 5.0,
+        "nonzero_connections": 1000,
+        "accuracy": 0.046875,
+        "balanced_accuracy": 0.028420523138832997,
+        "images": 256
+      },
+      {
+        "method": "pini_noise",
+        "setting": "gaussian_noise_5",
+        "head": "10",
+        "actual_nec": 10.0,
+        "nonzero_connections": 2000,
+        "accuracy": 0.06640625,
+        "balanced_accuracy": 0.060865191146881284,
+        "images": 256
+      },
+      {
+        "method": "pini_noise",
+        "setting": "gaussian_noise_5",
+        "head": "15",
+        "actual_nec": 15.0,
+        "nonzero_connections": 3000,
+        "accuracy": 0.0703125,
+        "balanced_accuracy": 0.06790744466800805,
+        "images": 256
+      },
+      {
+        "method": "pini_noise",
+        "setting": "gaussian_noise_5",
+        "head": "20",
+        "actual_nec": 20.0,
+        "nonzero_connections": 4000,
+        "accuracy": 0.08984375,
+        "balanced_accuracy": 0.08375251509054325,
+        "images": 256
+      },
+      {
+        "method": "pini_noise",
+        "setting": "gaussian_noise_5",
+        "head": "30",
+        "actual_nec": 30.0,
+        "nonzero_connections": 6000,
+        "accuracy": 0.0859375,
+        "balanced_accuracy": 0.08199195171026157,
+        "images": 256
+      },
+      {
+        "method": "pini_noise",
+        "setting": "gaussian_noise_5",
+        "head": "50",
+        "actual_nec": 50.0,
+        "nonzero_connections": 10000,
+        "accuracy": 0.09375,
+        "balanced_accuracy": 0.0943158953722334,
+        "images": 256
+      },
+      {
+        "method": "pini_noise",
+        "setting": "gaussian_noise_5",
+        "head": "80",
+        "actual_nec": 80.0,
+        "nonzero_connections": 16000,
+        "accuracy": 0.08984375,
+        "balanced_accuracy": 0.09976525821596245,
+        "images": 256
+      },
+      {
+        "method": "pini_noise",
+        "setting": "gaussian_noise_5",
+        "head": "112",
+        "actual_nec": 105.365,
+        "nonzero_connections": 21073,
+        "accuracy": 0.08984375,
+        "balanced_accuracy": 0.09976525821596245,
+        "images": 256
+      },
+      {
+        "method": "pini_noise",
+        "setting": "gaussian_noise_5",
+        "head": "best_val",
+        "actual_nec": 38.45,
+        "nonzero_connections": 7690,
+        "accuracy": 0.09375,
+        "balanced_accuracy": 0.09783702213279678,
+        "images": 256
+      },
+      {
+        "method": "pini_noise",
+        "setting": "gaussian_noise_5",
+        "head": "dense",
+        "actual_nec": 112.0,
+        "nonzero_connections": 22400,
+        "accuracy": 0.08984375,
+        "balanced_accuracy": 0.1068075117370892,
+        "images": 256
+      },
+      {
+        "method": "pini_noise",
+        "setting": "gaussian_blur_1",
+        "head": "1",
+        "actual_nec": 1.0,
+        "nonzero_connections": 200,
+        "accuracy": 0.14453125,
+        "balanced_accuracy": 0.1254694835680751,
+        "images": 256
+      },
+      {
+        "method": "pini_noise",
+        "setting": "gaussian_blur_1",
+        "head": "3",
+        "actual_nec": 3.0,
+        "nonzero_connections": 600,
+        "accuracy": 0.26171875,
+        "balanced_accuracy": 0.23489268947015424,
+        "images": 256
+      },
+      {
+        "method": "pini_noise",
+        "setting": "gaussian_blur_1",
+        "head": "5",
+        "actual_nec": 5.0,
+        "nonzero_connections": 1000,
+        "accuracy": 0.375,
+        "balanced_accuracy": 0.3239268947015425,
+        "images": 256
+      },
+      {
+        "method": "pini_noise",
+        "setting": "gaussian_blur_1",
+        "head": "10",
+        "actual_nec": 10.0,
+        "nonzero_connections": 2000,
+        "accuracy": 0.484375,
+        "balanced_accuracy": 0.4413648558014755,
+        "images": 256
+      },
+      {
+        "method": "pini_noise",
+        "setting": "gaussian_blur_1",
+        "head": "15",
+        "actual_nec": 15.0,
+        "nonzero_connections": 3000,
+        "accuracy": 0.51171875,
+        "balanced_accuracy": 0.47422870556673374,
+        "images": 256
+      },
+      {
+        "method": "pini_noise",
+        "setting": "gaussian_blur_1",
+        "head": "20",
+        "actual_nec": 20.0,
+        "nonzero_connections": 4000,
+        "accuracy": 0.55078125,
+        "balanced_accuracy": 0.5014587525150905,
+        "images": 256
+      },
+      {
+        "method": "pini_noise",
+        "setting": "gaussian_blur_1",
+        "head": "30",
+        "actual_nec": 30.0,
+        "nonzero_connections": 6000,
+        "accuracy": 0.5703125,
+        "balanced_accuracy": 0.5284540576794099,
+        "images": 256
+      },
+      {
+        "method": "pini_noise",
+        "setting": "gaussian_blur_1",
+        "head": "50",
+        "actual_nec": 50.0,
+        "nonzero_connections": 10000,
+        "accuracy": 0.58203125,
+        "balanced_accuracy": 0.5581488933601609,
+        "images": 256
+      },
+      {
+        "method": "pini_noise",
+        "setting": "gaussian_blur_1",
+        "head": "80",
+        "actual_nec": 80.0,
+        "nonzero_connections": 16000,
+        "accuracy": 0.5625,
+        "balanced_accuracy": 0.5543762575452715,
+        "images": 256
+      },
+      {
+        "method": "pini_noise",
+        "setting": "gaussian_blur_1",
+        "head": "112",
+        "actual_nec": 105.365,
+        "nonzero_connections": 21073,
+        "accuracy": 0.54296875,
+        "balanced_accuracy": 0.5326626425217975,
+        "images": 256
+      },
+      {
+        "method": "pini_noise",
+        "setting": "gaussian_blur_1",
+        "head": "best_val",
+        "actual_nec": 38.45,
+        "nonzero_connections": 7690,
+        "accuracy": 0.55859375,
+        "balanced_accuracy": 0.5126089872568746,
+        "images": 256
+      },
+      {
+        "method": "pini_noise",
+        "setting": "gaussian_blur_1",
+        "head": "dense",
+        "actual_nec": 112.0,
+        "nonzero_connections": 22400,
+        "accuracy": 0.5703125,
+        "balanced_accuracy": 0.5339034205231389,
+        "images": 256
+      },
+      {
+        "method": "pini_noise",
+        "setting": "gaussian_blur_3",
+        "head": "1",
+        "actual_nec": 1.0,
+        "nonzero_connections": 200,
+        "accuracy": 0.12890625,
+        "balanced_accuracy": 0.12582159624413145,
+        "images": 256
+      },
+      {
+        "method": "pini_noise",
+        "setting": "gaussian_blur_3",
+        "head": "3",
+        "actual_nec": 3.0,
+        "nonzero_connections": 600,
+        "accuracy": 0.2109375,
+        "balanced_accuracy": 0.19426559356136822,
+        "images": 256
+      },
+      {
+        "method": "pini_noise",
+        "setting": "gaussian_blur_3",
+        "head": "5",
+        "actual_nec": 5.0,
+        "nonzero_connections": 1000,
+        "accuracy": 0.28515625,
+        "balanced_accuracy": 0.25280013413816227,
+        "images": 256
+      },
+      {
+        "method": "pini_noise",
+        "setting": "gaussian_blur_3",
+        "head": "10",
+        "actual_nec": 10.0,
+        "nonzero_connections": 2000,
+        "accuracy": 0.34765625,
+        "balanced_accuracy": 0.32339034205231393,
+        "images": 256
+      },
+      {
+        "method": "pini_noise",
+        "setting": "gaussian_blur_3",
+        "head": "15",
+        "actual_nec": 15.0,
+        "nonzero_connections": 3000,
+        "accuracy": 0.375,
+        "balanced_accuracy": 0.36036217303822937,
+        "images": 256
+      },
+      {
+        "method": "pini_noise",
+        "setting": "gaussian_blur_3",
+        "head": "20",
+        "actual_nec": 20.0,
+        "nonzero_connections": 4000,
+        "accuracy": 0.40625,
+        "balanced_accuracy": 0.3920523138832998,
+        "images": 256
+      },
+      {
+        "method": "pini_noise",
+        "setting": "gaussian_blur_3",
+        "head": "30",
+        "actual_nec": 30.0,
+        "nonzero_connections": 6000,
+        "accuracy": 0.4140625,
+        "balanced_accuracy": 0.3958081824279008,
+        "images": 256
+      },
+      {
+        "method": "pini_noise",
+        "setting": "gaussian_blur_3",
+        "head": "50",
+        "actual_nec": 50.0,
+        "nonzero_connections": 10000,
+        "accuracy": 0.41796875,
+        "balanced_accuracy": 0.4081321260898726,
+        "images": 256
+      },
+      {
+        "method": "pini_noise",
+        "setting": "gaussian_blur_3",
+        "head": "80",
+        "actual_nec": 80.0,
+        "nonzero_connections": 16000,
+        "accuracy": 0.41015625,
+        "balanced_accuracy": 0.40571763916834336,
+        "images": 256
+      },
+      {
+        "method": "pini_noise",
+        "setting": "gaussian_blur_3",
+        "head": "112",
+        "actual_nec": 105.365,
+        "nonzero_connections": 21073,
+        "accuracy": 0.40625,
+        "balanced_accuracy": 0.40571763916834336,
+        "images": 256
+      },
+      {
+        "method": "pini_noise",
+        "setting": "gaussian_blur_3",
+        "head": "best_val",
+        "actual_nec": 38.45,
+        "nonzero_connections": 7690,
+        "accuracy": 0.40625,
+        "balanced_accuracy": 0.3940476190476191,
+        "images": 256
+      },
+      {
+        "method": "pini_noise",
+        "setting": "gaussian_blur_3",
+        "head": "dense",
+        "actual_nec": 112.0,
+        "nonzero_connections": 22400,
+        "accuracy": 0.4453125,
+        "balanced_accuracy": 0.43569751844399734,
+        "images": 256
+      },
+      {
+        "method": "pini_noise",
+        "setting": "gaussian_blur_5",
+        "head": "1",
+        "actual_nec": 1.0,
+        "nonzero_connections": 200,
+        "accuracy": 0.05859375,
+        "balanced_accuracy": 0.05457746478873239,
+        "images": 256
+      },
+      {
+        "method": "pini_noise",
+        "setting": "gaussian_blur_5",
+        "head": "3",
+        "actual_nec": 3.0,
+        "nonzero_connections": 600,
+        "accuracy": 0.10546875,
+        "balanced_accuracy": 0.0976693494299128,
+        "images": 256
+      },
+      {
+        "method": "pini_noise",
+        "setting": "gaussian_blur_5",
+        "head": "5",
+        "actual_nec": 5.0,
+        "nonzero_connections": 1000,
+        "accuracy": 0.12109375,
+        "balanced_accuracy": 0.11081488933601609,
+        "images": 256
+      },
+      {
+        "method": "pini_noise",
+        "setting": "gaussian_blur_5",
+        "head": "10",
+        "actual_nec": 10.0,
+        "nonzero_connections": 2000,
+        "accuracy": 0.1640625,
+        "balanced_accuracy": 0.15640509725016766,
+        "images": 256
+      },
+      {
+        "method": "pini_noise",
+        "setting": "gaussian_blur_5",
+        "head": "15",
+        "actual_nec": 15.0,
+        "nonzero_connections": 3000,
+        "accuracy": 0.1875,
+        "balanced_accuracy": 0.17208249496981892,
+        "images": 256
+      },
+      {
+        "method": "pini_noise",
+        "setting": "gaussian_blur_5",
+        "head": "20",
+        "actual_nec": 20.0,
+        "nonzero_connections": 4000,
+        "accuracy": 0.1875,
+        "balanced_accuracy": 0.17349094567404427,
+        "images": 256
+      },
+      {
+        "method": "pini_noise",
+        "setting": "gaussian_blur_5",
+        "head": "30",
+        "actual_nec": 30.0,
+        "nonzero_connections": 6000,
+        "accuracy": 0.1875,
+        "balanced_accuracy": 0.16973507712944333,
+        "images": 256
+      },
+      {
+        "method": "pini_noise",
+        "setting": "gaussian_blur_5",
+        "head": "50",
+        "actual_nec": 50.0,
+        "nonzero_connections": 10000,
+        "accuracy": 0.16796875,
+        "balanced_accuracy": 0.1790576794097921,
+        "images": 256
+      },
+      {
+        "method": "pini_noise",
+        "setting": "gaussian_blur_5",
+        "head": "80",
+        "actual_nec": 80.0,
+        "nonzero_connections": 16000,
+        "accuracy": 0.16796875,
+        "balanced_accuracy": 0.19565727699530516,
+        "images": 256
+      },
+      {
+        "method": "pini_noise",
+        "setting": "gaussian_blur_5",
+        "head": "112",
+        "actual_nec": 105.365,
+        "nonzero_connections": 21073,
+        "accuracy": 0.1640625,
+        "balanced_accuracy": 0.1907276995305164,
+        "images": 256
+      },
+      {
+        "method": "pini_noise",
+        "setting": "gaussian_blur_5",
+        "head": "best_val",
+        "actual_nec": 38.45,
+        "nonzero_connections": 7690,
+        "accuracy": 0.17578125,
+        "balanced_accuracy": 0.16849429912810196,
+        "images": 256
+      },
+      {
+        "method": "pini_noise",
+        "setting": "gaussian_blur_5",
+        "head": "dense",
+        "actual_nec": 112.0,
+        "nonzero_connections": 22400,
+        "accuracy": 0.1875,
+        "balanced_accuracy": 0.19976525821596244,
+        "images": 256
+      },
+      {
+        "method": "pini_noise",
+        "setting": "contrast_1",
+        "head": "1",
+        "actual_nec": 1.0,
+        "nonzero_connections": 200,
+        "accuracy": 0.15234375,
+        "balanced_accuracy": 0.1353286384976526,
+        "images": 256
+      },
+      {
+        "method": "pini_noise",
+        "setting": "contrast_1",
+        "head": "3",
+        "actual_nec": 3.0,
+        "nonzero_connections": 600,
+        "accuracy": 0.29296875,
+        "balanced_accuracy": 0.2494466800804829,
+        "images": 256
+      },
+      {
+        "method": "pini_noise",
+        "setting": "contrast_1",
+        "head": "5",
+        "actual_nec": 5.0,
+        "nonzero_connections": 1000,
+        "accuracy": 0.390625,
+        "balanced_accuracy": 0.33413816230717636,
+        "images": 256
+      },
+      {
+        "method": "pini_noise",
+        "setting": "contrast_1",
+        "head": "10",
+        "actual_nec": 10.0,
+        "nonzero_connections": 2000,
+        "accuracy": 0.49609375,
+        "balanced_accuracy": 0.44864185110663984,
+        "images": 256
+      },
+      {
+        "method": "pini_noise",
+        "setting": "contrast_1",
+        "head": "15",
+        "actual_nec": 15.0,
+        "nonzero_connections": 3000,
+        "accuracy": 0.5390625,
+        "balanced_accuracy": 0.49659624413145537,
+        "images": 256
+      },
+      {
+        "method": "pini_noise",
+        "setting": "contrast_1",
+        "head": "20",
+        "actual_nec": 20.0,
+        "nonzero_connections": 4000,
+        "accuracy": 0.5390625,
+        "balanced_accuracy": 0.4907276995305165,
+        "images": 256
+      },
+      {
+        "method": "pini_noise",
+        "setting": "contrast_1",
+        "head": "30",
+        "actual_nec": 30.0,
+        "nonzero_connections": 6000,
+        "accuracy": 0.546875,
+        "balanced_accuracy": 0.5104460093896713,
+        "images": 256
+      },
+      {
+        "method": "pini_noise",
+        "setting": "contrast_1",
+        "head": "50",
+        "actual_nec": 50.0,
+        "nonzero_connections": 10000,
+        "accuracy": 0.57421875,
+        "balanced_accuracy": 0.5427230046948357,
+        "images": 256
+      },
+      {
+        "method": "pini_noise",
+        "setting": "contrast_1",
+        "head": "80",
+        "actual_nec": 80.0,
+        "nonzero_connections": 16000,
+        "accuracy": 0.56640625,
+        "balanced_accuracy": 0.5433098591549295,
+        "images": 256
+      },
+      {
+        "method": "pini_noise",
+        "setting": "contrast_1",
+        "head": "112",
+        "actual_nec": 105.365,
+        "nonzero_connections": 21073,
+        "accuracy": 0.56640625,
+        "balanced_accuracy": 0.5446512407780013,
+        "images": 256
+      },
+      {
+        "method": "pini_noise",
+        "setting": "contrast_1",
+        "head": "best_val",
+        "actual_nec": 38.45,
+        "nonzero_connections": 7690,
+        "accuracy": 0.5546875,
+        "balanced_accuracy": 0.5145539906103286,
+        "images": 256
+      },
+      {
+        "method": "pini_noise",
+        "setting": "contrast_1",
+        "head": "dense",
+        "actual_nec": 112.0,
+        "nonzero_connections": 22400,
+        "accuracy": 0.59765625,
+        "balanced_accuracy": 0.5699530516431924,
+        "images": 256
+      },
+      {
+        "method": "pini_noise",
+        "setting": "contrast_3",
+        "head": "1",
+        "actual_nec": 1.0,
+        "nonzero_connections": 200,
+        "accuracy": 0.109375,
+        "balanced_accuracy": 0.09248826291079812,
+        "images": 256
+      },
+      {
+        "method": "pini_noise",
+        "setting": "contrast_3",
+        "head": "3",
+        "actual_nec": 3.0,
+        "nonzero_connections": 600,
+        "accuracy": 0.25,
+        "balanced_accuracy": 0.22268611670020122,
+        "images": 256
+      },
+      {
+        "method": "pini_noise",
+        "setting": "contrast_3",
+        "head": "5",
+        "actual_nec": 5.0,
+        "nonzero_connections": 1000,
+        "accuracy": 0.2890625,
+        "balanced_accuracy": 0.2606639839034205,
+        "images": 256
+      },
+      {
+        "method": "pini_noise",
+        "setting": "contrast_3",
+        "head": "10",
+        "actual_nec": 10.0,
+        "nonzero_connections": 2000,
+        "accuracy": 0.3671875,
+        "balanced_accuracy": 0.35298457411133466,
+        "images": 256
+      },
+      {
+        "method": "pini_noise",
+        "setting": "contrast_3",
+        "head": "15",
+        "actual_nec": 15.0,
+        "nonzero_connections": 3000,
+        "accuracy": 0.3984375,
+        "balanced_accuracy": 0.38021462105969145,
+        "images": 256
+      },
+      {
+        "method": "pini_noise",
+        "setting": "contrast_3",
+        "head": "20",
+        "actual_nec": 20.0,
+        "nonzero_connections": 4000,
+        "accuracy": 0.390625,
+        "balanced_accuracy": 0.371411804158283,
+        "images": 256
+      },
+      {
+        "method": "pini_noise",
+        "setting": "contrast_3",
+        "head": "30",
+        "actual_nec": 30.0,
+        "nonzero_connections": 6000,
+        "accuracy": 0.4140625,
+        "balanced_accuracy": 0.40603621730382294,
+        "images": 256
+      },
+      {
+        "method": "pini_noise",
+        "setting": "contrast_3",
+        "head": "50",
+        "actual_nec": 50.0,
+        "nonzero_connections": 10000,
+        "accuracy": 0.44921875,
+        "balanced_accuracy": 0.45145875251509054,
+        "images": 256
+      },
+      {
+        "method": "pini_noise",
+        "setting": "contrast_3",
+        "head": "80",
+        "actual_nec": 80.0,
+        "nonzero_connections": 16000,
+        "accuracy": 0.41015625,
+        "balanced_accuracy": 0.419466800804829,
+        "images": 256
+      },
+      {
+        "method": "pini_noise",
+        "setting": "contrast_3",
+        "head": "112",
+        "actual_nec": 105.365,
+        "nonzero_connections": 21073,
+        "accuracy": 0.3984375,
+        "balanced_accuracy": 0.40362173038229376,
+        "images": 256
+      },
+      {
+        "method": "pini_noise",
+        "setting": "contrast_3",
+        "head": "best_val",
+        "actual_nec": 38.45,
+        "nonzero_connections": 7690,
+        "accuracy": 0.4296875,
+        "balanced_accuracy": 0.42892354124748494,
+        "images": 256
+      },
+      {
+        "method": "pini_noise",
+        "setting": "contrast_3",
+        "head": "dense",
+        "actual_nec": 112.0,
+        "nonzero_connections": 22400,
+        "accuracy": 0.4140625,
+        "balanced_accuracy": 0.4323775989268947,
+        "images": 256
+      },
+      {
+        "method": "pini_noise",
+        "setting": "contrast_5",
+        "head": "1",
+        "actual_nec": 1.0,
+        "nonzero_connections": 200,
+        "accuracy": 0.0546875,
+        "balanced_accuracy": 0.05211267605633803,
+        "images": 256
+      },
+      {
+        "method": "pini_noise",
+        "setting": "contrast_5",
+        "head": "3",
+        "actual_nec": 3.0,
+        "nonzero_connections": 600,
+        "accuracy": 0.05859375,
+        "balanced_accuracy": 0.050184439973172366,
+        "images": 256
+      },
+      {
+        "method": "pini_noise",
+        "setting": "contrast_5",
+        "head": "5",
+        "actual_nec": 5.0,
+        "nonzero_connections": 1000,
+        "accuracy": 0.08984375,
+        "balanced_accuracy": 0.08750838363514421,
+        "images": 256
+      },
+      {
+        "method": "pini_noise",
+        "setting": "contrast_5",
+        "head": "10",
+        "actual_nec": 10.0,
+        "nonzero_connections": 2000,
+        "accuracy": 0.10546875,
+        "balanced_accuracy": 0.11156941649899396,
+        "images": 256
+      },
+      {
+        "method": "pini_noise",
+        "setting": "contrast_5",
+        "head": "15",
+        "actual_nec": 15.0,
+        "nonzero_connections": 3000,
+        "accuracy": 0.125,
+        "balanced_accuracy": 0.14502012072434606,
+        "images": 256
+      },
+      {
+        "method": "pini_noise",
+        "setting": "contrast_5",
+        "head": "20",
+        "actual_nec": 20.0,
+        "nonzero_connections": 4000,
+        "accuracy": 0.12109375,
+        "balanced_accuracy": 0.13663648558014754,
+        "images": 256
+      },
+      {
+        "method": "pini_noise",
+        "setting": "contrast_5",
+        "head": "30",
+        "actual_nec": 30.0,
+        "nonzero_connections": 6000,
+        "accuracy": 0.125,
+        "balanced_accuracy": 0.14579141515761232,
+        "images": 256
+      },
+      {
+        "method": "pini_noise",
+        "setting": "contrast_5",
+        "head": "50",
+        "actual_nec": 50.0,
+        "nonzero_connections": 10000,
+        "accuracy": 0.14453125,
+        "balanced_accuracy": 0.16088195841716968,
+        "images": 256
+      },
+      {
+        "method": "pini_noise",
+        "setting": "contrast_5",
+        "head": "80",
+        "actual_nec": 80.0,
+        "nonzero_connections": 16000,
+        "accuracy": 0.13671875,
+        "balanced_accuracy": 0.15149228705566734,
+        "images": 256
+      },
+      {
+        "method": "pini_noise",
+        "setting": "contrast_5",
+        "head": "112",
+        "actual_nec": 105.365,
+        "nonzero_connections": 21073,
+        "accuracy": 0.1328125,
+        "balanced_accuracy": 0.14445003353454058,
+        "images": 256
+      },
+      {
+        "method": "pini_noise",
+        "setting": "contrast_5",
+        "head": "best_val",
+        "actual_nec": 38.45,
+        "nonzero_connections": 7690,
+        "accuracy": 0.14453125,
+        "balanced_accuracy": 0.16088195841716968,
+        "images": 256
+      },
+      {
+        "method": "pini_noise",
+        "setting": "contrast_5",
+        "head": "dense",
+        "actual_nec": 112.0,
+        "nonzero_connections": 22400,
+        "accuracy": 0.13671875,
+        "balanced_accuracy": 0.1374077800134138,
+        "images": 256
+      },
+      {
+        "method": "pini_noise",
+        "setting": "jpeg_1",
+        "head": "1",
+        "actual_nec": 1.0,
+        "nonzero_connections": 200,
+        "accuracy": 0.14453125,
+        "balanced_accuracy": 0.11520791415157611,
+        "images": 256
+      },
+      {
+        "method": "pini_noise",
+        "setting": "jpeg_1",
+        "head": "3",
+        "actual_nec": 3.0,
+        "nonzero_connections": 600,
+        "accuracy": 0.25390625,
+        "balanced_accuracy": 0.227448021462106,
+        "images": 256
+      },
+      {
+        "method": "pini_noise",
+        "setting": "jpeg_1",
+        "head": "5",
+        "actual_nec": 5.0,
+        "nonzero_connections": 1000,
+        "accuracy": 0.34765625,
+        "balanced_accuracy": 0.30016767270288397,
+        "images": 256
+      },
+      {
+        "method": "pini_noise",
+        "setting": "jpeg_1",
+        "head": "10",
+        "actual_nec": 10.0,
+        "nonzero_connections": 2000,
+        "accuracy": 0.4296875,
+        "balanced_accuracy": 0.3857310529845741,
+        "images": 256
+      },
+      {
+        "method": "pini_noise",
+        "setting": "jpeg_1",
+        "head": "15",
+        "actual_nec": 15.0,
+        "nonzero_connections": 3000,
+        "accuracy": 0.46484375,
+        "balanced_accuracy": 0.427280348759222,
+        "images": 256
+      },
+      {
+        "method": "pini_noise",
+        "setting": "jpeg_1",
+        "head": "20",
+        "actual_nec": 20.0,
+        "nonzero_connections": 4000,
+        "accuracy": 0.4921875,
+        "balanced_accuracy": 0.44782025486250837,
+        "images": 256
+      },
+      {
+        "method": "pini_noise",
+        "setting": "jpeg_1",
+        "head": "30",
+        "actual_nec": 30.0,
+        "nonzero_connections": 6000,
+        "accuracy": 0.515625,
+        "balanced_accuracy": 0.46525821596244127,
+        "images": 256
+      },
+      {
+        "method": "pini_noise",
+        "setting": "jpeg_1",
+        "head": "50",
+        "actual_nec": 50.0,
+        "nonzero_connections": 10000,
+        "accuracy": 0.52734375,
+        "balanced_accuracy": 0.4893192488262911,
+        "images": 256
+      },
+      {
+        "method": "pini_noise",
+        "setting": "jpeg_1",
+        "head": "80",
+        "actual_nec": 80.0,
+        "nonzero_connections": 16000,
+        "accuracy": 0.5078125,
+        "balanced_accuracy": 0.4805667337357478,
+        "images": 256
+      },
+      {
+        "method": "pini_noise",
+        "setting": "jpeg_1",
+        "head": "112",
+        "actual_nec": 105.365,
+        "nonzero_connections": 21073,
+        "accuracy": 0.49609375,
+        "balanced_accuracy": 0.4741113346747149,
+        "images": 256
+      },
+      {
+        "method": "pini_noise",
+        "setting": "jpeg_1",
+        "head": "best_val",
+        "actual_nec": 38.45,
+        "nonzero_connections": 7690,
+        "accuracy": 0.53125,
+        "balanced_accuracy": 0.49166666666666664,
+        "images": 256
+      },
+      {
+        "method": "pini_noise",
+        "setting": "jpeg_1",
+        "head": "dense",
+        "actual_nec": 112.0,
+        "nonzero_connections": 22400,
+        "accuracy": 0.54296875,
+        "balanced_accuracy": 0.5139000670690811,
+        "images": 256
+      },
+      {
+        "method": "pini_noise",
+        "setting": "jpeg_3",
+        "head": "1",
+        "actual_nec": 1.0,
+        "nonzero_connections": 200,
+        "accuracy": 0.12890625,
+        "balanced_accuracy": 0.10757880617035546,
+        "images": 256
+      },
+      {
+        "method": "pini_noise",
+        "setting": "jpeg_3",
+        "head": "3",
+        "actual_nec": 3.0,
+        "nonzero_connections": 600,
+        "accuracy": 0.21875,
+        "balanced_accuracy": 0.1902414486921529,
+        "images": 256
+      },
+      {
+        "method": "pini_noise",
+        "setting": "jpeg_3",
+        "head": "5",
+        "actual_nec": 5.0,
+        "nonzero_connections": 1000,
+        "accuracy": 0.31640625,
+        "balanced_accuracy": 0.2690643863179074,
+        "images": 256
+      },
+      {
+        "method": "pini_noise",
+        "setting": "jpeg_3",
+        "head": "10",
+        "actual_nec": 10.0,
+        "nonzero_connections": 2000,
+        "accuracy": 0.390625,
+        "balanced_accuracy": 0.3619047619047619,
+        "images": 256
+      },
+      {
+        "method": "pini_noise",
+        "setting": "jpeg_3",
+        "head": "15",
+        "actual_nec": 15.0,
+        "nonzero_connections": 3000,
+        "accuracy": 0.40625,
+        "balanced_accuracy": 0.39124748490945677,
+        "images": 256
+      },
+      {
+        "method": "pini_noise",
+        "setting": "jpeg_3",
+        "head": "20",
+        "actual_nec": 20.0,
+        "nonzero_connections": 4000,
+        "accuracy": 0.40234375,
+        "balanced_accuracy": 0.39019114688128775,
+        "images": 256
+      },
+      {
+        "method": "pini_noise",
+        "setting": "jpeg_3",
+        "head": "30",
+        "actual_nec": 30.0,
+        "nonzero_connections": 6000,
+        "accuracy": 0.4296875,
+        "balanced_accuracy": 0.4142521797451375,
+        "images": 256
+      },
+      {
+        "method": "pini_noise",
+        "setting": "jpeg_3",
+        "head": "50",
+        "actual_nec": 50.0,
+        "nonzero_connections": 10000,
+        "accuracy": 0.4375,
+        "balanced_accuracy": 0.41906438631790743,
+        "images": 256
+      },
+      {
+        "method": "pini_noise",
+        "setting": "jpeg_3",
+        "head": "80",
+        "actual_nec": 80.0,
+        "nonzero_connections": 16000,
+        "accuracy": 0.42578125,
+        "balanced_accuracy": 0.40690811535881954,
+        "images": 256
+      },
+      {
+        "method": "pini_noise",
+        "setting": "jpeg_3",
+        "head": "112",
+        "actual_nec": 105.365,
+        "nonzero_connections": 21073,
+        "accuracy": 0.4140625,
+        "balanced_accuracy": 0.39845741113346744,
+        "images": 256
+      },
+      {
+        "method": "pini_noise",
+        "setting": "jpeg_3",
+        "head": "best_val",
+        "actual_nec": 38.45,
+        "nonzero_connections": 7690,
+        "accuracy": 0.4375,
+        "balanced_accuracy": 0.41836016096579476,
+        "images": 256
+      },
+      {
+        "method": "pini_noise",
+        "setting": "jpeg_3",
+        "head": "dense",
+        "actual_nec": 112.0,
+        "nonzero_connections": 22400,
+        "accuracy": 0.45703125,
+        "balanced_accuracy": 0.4378940308517773,
+        "images": 256
+      },
+      {
+        "method": "pini_noise",
+        "setting": "jpeg_5",
+        "head": "1",
+        "actual_nec": 1.0,
+        "nonzero_connections": 200,
+        "accuracy": 0.078125,
+        "balanced_accuracy": 0.06291079812206572,
+        "images": 256
+      },
+      {
+        "method": "pini_noise",
+        "setting": "jpeg_5",
+        "head": "3",
+        "actual_nec": 3.0,
+        "nonzero_connections": 600,
+        "accuracy": 0.12109375,
+        "balanced_accuracy": 0.10600268276324615,
+        "images": 256
+      },
+      {
+        "method": "pini_noise",
+        "setting": "jpeg_5",
+        "head": "5",
+        "actual_nec": 5.0,
+        "nonzero_connections": 1000,
+        "accuracy": 0.140625,
+        "balanced_accuracy": 0.11768947015425889,
+        "images": 256
+      },
+      {
+        "method": "pini_noise",
+        "setting": "jpeg_5",
+        "head": "10",
+        "actual_nec": 10.0,
+        "nonzero_connections": 2000,
+        "accuracy": 0.1953125,
+        "balanced_accuracy": 0.16651576123407108,
+        "images": 256
+      },
+      {
+        "method": "pini_noise",
+        "setting": "jpeg_5",
+        "head": "15",
+        "actual_nec": 15.0,
+        "nonzero_connections": 3000,
+        "accuracy": 0.20703125,
+        "balanced_accuracy": 0.1829476861167002,
+        "images": 256
+      },
+      {
+        "method": "pini_noise",
+        "setting": "jpeg_5",
+        "head": "20",
+        "actual_nec": 20.0,
+        "nonzero_connections": 4000,
+        "accuracy": 0.20703125,
+        "balanced_accuracy": 0.18388665325285042,
+        "images": 256
+      },
+      {
+        "method": "pini_noise",
+        "setting": "jpeg_5",
+        "head": "30",
+        "actual_nec": 30.0,
+        "nonzero_connections": 6000,
+        "accuracy": 0.2109375,
+        "balanced_accuracy": 0.18137156270959087,
+        "images": 256
+      },
+      {
+        "method": "pini_noise",
+        "setting": "jpeg_5",
+        "head": "50",
+        "actual_nec": 50.0,
+        "nonzero_connections": 10000,
+        "accuracy": 0.19921875,
+        "balanced_accuracy": 0.16540912139503688,
+        "images": 256
+      },
+      {
+        "method": "pini_noise",
+        "setting": "jpeg_5",
+        "head": "80",
+        "actual_nec": 80.0,
+        "nonzero_connections": 16000,
+        "accuracy": 0.2109375,
+        "balanced_accuracy": 0.20212944332662644,
+        "images": 256
+      },
+      {
+        "method": "pini_noise",
+        "setting": "jpeg_5",
+        "head": "112",
+        "actual_nec": 105.365,
+        "nonzero_connections": 21073,
+        "accuracy": 0.20703125,
+        "balanced_accuracy": 0.19860831656606304,
+        "images": 256
+      },
+      {
+        "method": "pini_noise",
+        "setting": "jpeg_5",
+        "head": "best_val",
+        "actual_nec": 38.45,
+        "nonzero_connections": 7690,
+        "accuracy": 0.2109375,
+        "balanced_accuracy": 0.1873574782025486,
+        "images": 256
+      },
+      {
+        "method": "pini_noise",
+        "setting": "jpeg_5",
+        "head": "dense",
+        "actual_nec": 112.0,
+        "nonzero_connections": 22400,
+        "accuracy": 0.2421875,
+        "balanced_accuracy": 0.22759892689470157,
         "images": 256
       }
     ],
