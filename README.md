@@ -21,7 +21,7 @@ git clone --recurse-submodules https://github.com/Dodocheshire/Pi-CBM-Benchmark.
 
 NEC 网格根据数据集与概念库规模设置，同时保留 NEC=5 和 5–30 的参考区间。参考 [VLG-CBM §5.1 与附录 F](https://arxiv.org/html/2408.01432v3)：使用 GLM-SAGA 正则化路径，选取 NEC 接近目标的权重，再剪除最小连接达到规定平均 NEC。每个点保存实际 NEC、每类连接数与原始路径位置。充分 NEC 对照使用验证集选择的全路径模型和稠密分类头。
 
-结果位于 [同条件评测](reports/EXPERIMENT_REPORT.md)、[三个训练种子汇总](reports/SEED_RESULT.md)、[多种子 NEC 曲线](reports/NEC_SEED_RESULT.md)、[非 CBM 对照](reports/NONCBM_RESULT.md)、[泛化／NEC 曲线](reports/GENERALIZATION_RESULT.md)、[扰动下的概念预测与激活变化](reports/OOD_CONCEPT_RESULT.md)、[CIFAR 与官方 CIFAR-C](reports/CIFAR_RESULT.md) 和 [大规模数据集](reports/SCALE_RESULT.md)。数据、模型和逐图预测写入忽略的 `artifacts/`。
+结果位于 [同条件评测](reports/EXPERIMENT_REPORT.md)、[三个训练种子汇总](reports/SEED_RESULT.md)、[多种子 NEC 曲线](reports/NEC_SEED_RESULT.md)、[非 CBM 对照](reports/NONCBM_RESULT.md)、[泛化／NEC 曲线](reports/GENERALIZATION_RESULT.md)、[扰动下的概念预测与激活变化](reports/OOD_CONCEPT_RESULT.md)、[LF 扰动 NEC 曲线](reports/OOD_NEC_RESULT.md)、[CIFAR 与官方 CIFAR-C](reports/CIFAR_RESULT.md) 和 [大规模数据集](reports/SCALE_RESULT.md)。数据、模型和逐图预测写入忽略的 `artifacts/`。
 
 ## 已执行与继续运行
 
@@ -58,6 +58,7 @@ python -m benchmark.report_matched
 python -m benchmark.report_noncbm
 python -m benchmark.report_generalization
 python -m benchmark.report_ood_concepts
+python -m benchmark.report_ood_nec
 python -m benchmark.report_cifar
 python -m benchmark.report_scale
 python -m benchmark.report_seeds
