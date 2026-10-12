@@ -1,0 +1,3885 @@
+[
+  {
+    "dataset": "rival10",
+    "images": 256,
+    "concept_indices": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      14,
+      17
+    ],
+    "backbone": "ImageNet ResNet18",
+    "training_views": [
+      "original",
+      "changed"
+    ],
+    "training_seed": 42,
+    "noise_draws": 1,
+    "inference_noise_seed": 4242,
+    "protocol_source": "artifacts/ood/rival10/resnet18/paired/seed42/protocol.json",
+    "records": [
+      {
+        "method": "lfcbm",
+        "setting": "original_0",
+        "source": "artifacts/ood/rival10/resnet18/paired/seed42/original_0_lfcbm.npz",
+        "train_reference": "artifacts/matched/lf/rival10/rn18_imagenet/paired_augmentation/seed42/lfcbm_train_original.npz",
+        "quality": {
+          "mAP": 0.6468109685949768,
+          "pearson_macro": 0.4599613222207675,
+          "spearman_macro": 0.4088615568019948,
+          "concepts": 14,
+          "images": 256,
+          "known_pairs": 3584,
+          "mAP_evaluable_concepts": 14,
+          "correlation_evaluable_concepts": 14
+        },
+        "shift": {
+          "raw_mae": 0.0,
+          "raw_mse": 0.0,
+          "images": 256,
+          "standardized_mae": 0.0,
+          "standardized_mse": 0.0,
+          "normalized_concepts": 14
+        }
+      },
+      {
+        "method": "lfcbm",
+        "setting": "gaussian_noise_1",
+        "source": "artifacts/ood/rival10/resnet18/paired/seed42/gaussian_noise_1_lfcbm.npz",
+        "train_reference": "artifacts/matched/lf/rival10/rn18_imagenet/paired_augmentation/seed42/lfcbm_train_original.npz",
+        "quality": {
+          "mAP": 0.630126983476338,
+          "pearson_macro": 0.45276412184547804,
+          "spearman_macro": 0.40662196925515154,
+          "concepts": 14,
+          "images": 256,
+          "known_pairs": 3584,
+          "mAP_evaluable_concepts": 14,
+          "correlation_evaluable_concepts": 14
+        },
+        "shift": {
+          "raw_mae": 0.25448012739409315,
+          "raw_mse": 0.10908296797867845,
+          "images": 256,
+          "standardized_mae": 0.26674675033947187,
+          "standardized_mse": 0.12111335259980256,
+          "normalized_concepts": 14
+        }
+      },
+      {
+        "method": "lfcbm",
+        "setting": "gaussian_noise_3",
+        "source": "artifacts/ood/rival10/resnet18/paired/seed42/gaussian_noise_3_lfcbm.npz",
+        "train_reference": "artifacts/matched/lf/rival10/rn18_imagenet/paired_augmentation/seed42/lfcbm_train_original.npz",
+        "quality": {
+          "mAP": 0.5938305066439591,
+          "pearson_macro": 0.4327588572547499,
+          "spearman_macro": 0.3977106455306862,
+          "concepts": 14,
+          "images": 256,
+          "known_pairs": 3584,
+          "mAP_evaluable_concepts": 14,
+          "correlation_evaluable_concepts": 14
+        },
+        "shift": {
+          "raw_mae": 0.4371750440349566,
+          "raw_mse": 0.319620557788132,
+          "images": 256,
+          "standardized_mae": 0.45765263444001797,
+          "standardized_mse": 0.35302595961265487,
+          "normalized_concepts": 14
+        }
+      },
+      {
+        "method": "lfcbm",
+        "setting": "gaussian_noise_5",
+        "source": "artifacts/ood/rival10/resnet18/paired/seed42/gaussian_noise_5_lfcbm.npz",
+        "train_reference": "artifacts/matched/lf/rival10/rn18_imagenet/paired_augmentation/seed42/lfcbm_train_original.npz",
+        "quality": {
+          "mAP": 0.4829914306435255,
+          "pearson_macro": 0.36321504101616114,
+          "spearman_macro": 0.3465595101149068,
+          "concepts": 14,
+          "images": 256,
+          "known_pairs": 3584,
+          "mAP_evaluable_concepts": 14,
+          "correlation_evaluable_concepts": 14
+        },
+        "shift": {
+          "raw_mae": 0.6327749692024359,
+          "raw_mse": 0.6425848425026414,
+          "images": 256,
+          "standardized_mae": 0.6614043974515511,
+          "standardized_mse": 0.7066306343603953,
+          "normalized_concepts": 14
+        }
+      },
+      {
+        "method": "lfcbm",
+        "setting": "gaussian_blur_1",
+        "source": "artifacts/ood/rival10/resnet18/paired/seed42/gaussian_blur_1_lfcbm.npz",
+        "train_reference": "artifacts/matched/lf/rival10/rn18_imagenet/paired_augmentation/seed42/lfcbm_train_original.npz",
+        "quality": {
+          "mAP": 0.6455501480533075,
+          "pearson_macro": 0.45688273054480816,
+          "spearman_macro": 0.40867996650111166,
+          "concepts": 14,
+          "images": 256,
+          "known_pairs": 3584,
+          "mAP_evaluable_concepts": 14,
+          "correlation_evaluable_concepts": 14
+        },
+        "shift": {
+          "raw_mae": 0.09814658830111155,
+          "raw_mse": 0.016397897981250326,
+          "images": 256,
+          "standardized_mae": 0.10280479277940148,
+          "standardized_mse": 0.018155420101329176,
+          "normalized_concepts": 14
+        }
+      },
+      {
+        "method": "lfcbm",
+        "setting": "gaussian_blur_3",
+        "source": "artifacts/ood/rival10/resnet18/paired/seed42/gaussian_blur_3_lfcbm.npz",
+        "train_reference": "artifacts/matched/lf/rival10/rn18_imagenet/paired_augmentation/seed42/lfcbm_train_original.npz",
+        "quality": {
+          "mAP": 0.5759891014396447,
+          "pearson_macro": 0.4144834786098031,
+          "spearman_macro": 0.3863306929259763,
+          "concepts": 14,
+          "images": 256,
+          "known_pairs": 3584,
+          "mAP_evaluable_concepts": 14,
+          "correlation_evaluable_concepts": 14
+        },
+        "shift": {
+          "raw_mae": 0.34753662569047655,
+          "raw_mse": 0.20154968871770093,
+          "images": 256,
+          "standardized_mae": 0.3632041929156933,
+          "standardized_mse": 0.22103126915973909,
+          "normalized_concepts": 14
+        }
+      },
+      {
+        "method": "lfcbm",
+        "setting": "gaussian_blur_5",
+        "source": "artifacts/ood/rival10/resnet18/paired/seed42/gaussian_blur_5_lfcbm.npz",
+        "train_reference": "artifacts/matched/lf/rival10/rn18_imagenet/paired_augmentation/seed42/lfcbm_train_original.npz",
+        "quality": {
+          "mAP": 0.48864210409749115,
+          "pearson_macro": 0.3598575960471434,
+          "spearman_macro": 0.345836926265708,
+          "concepts": 14,
+          "images": 256,
+          "known_pairs": 3584,
+          "mAP_evaluable_concepts": 14,
+          "correlation_evaluable_concepts": 14
+        },
+        "shift": {
+          "raw_mae": 0.5320853636806889,
+          "raw_mse": 0.45581807036156696,
+          "images": 256,
+          "standardized_mae": 0.5543512747626352,
+          "standardized_mse": 0.4944217827398335,
+          "normalized_concepts": 14
+        }
+      },
+      {
+        "method": "lfcbm",
+        "setting": "contrast_1",
+        "source": "artifacts/ood/rival10/resnet18/paired/seed42/contrast_1_lfcbm.npz",
+        "train_reference": "artifacts/matched/lf/rival10/rn18_imagenet/paired_augmentation/seed42/lfcbm_train_original.npz",
+        "quality": {
+          "mAP": 0.6459034030265968,
+          "pearson_macro": 0.4594805226997927,
+          "spearman_macro": 0.41042377789145157,
+          "concepts": 14,
+          "images": 256,
+          "known_pairs": 3584,
+          "mAP_evaluable_concepts": 14,
+          "correlation_evaluable_concepts": 14
+        },
+        "shift": {
+          "raw_mae": 0.09546669649138753,
+          "raw_mse": 0.015245116144439646,
+          "images": 256,
+          "standardized_mae": 0.09980066728629541,
+          "standardized_mse": 0.016722050978520697,
+          "normalized_concepts": 14
+        }
+      },
+      {
+        "method": "lfcbm",
+        "setting": "contrast_3",
+        "source": "artifacts/ood/rival10/resnet18/paired/seed42/contrast_3_lfcbm.npz",
+        "train_reference": "artifacts/matched/lf/rival10/rn18_imagenet/paired_augmentation/seed42/lfcbm_train_original.npz",
+        "quality": {
+          "mAP": 0.6166318777139509,
+          "pearson_macro": 0.44628447743388616,
+          "spearman_macro": 0.408553648496354,
+          "concepts": 14,
+          "images": 256,
+          "known_pairs": 3584,
+          "mAP_evaluable_concepts": 14,
+          "correlation_evaluable_concepts": 14
+        },
+        "shift": {
+          "raw_mae": 0.32018842981850476,
+          "raw_mse": 0.1688907740034312,
+          "images": 256,
+          "standardized_mae": 0.33549364883365473,
+          "standardized_mse": 0.18669677239736865,
+          "normalized_concepts": 14
+        }
+      },
+      {
+        "method": "lfcbm",
+        "setting": "contrast_5",
+        "source": "artifacts/ood/rival10/resnet18/paired/seed42/contrast_5_lfcbm.npz",
+        "train_reference": "artifacts/matched/lf/rival10/rn18_imagenet/paired_augmentation/seed42/lfcbm_train_original.npz",
+        "quality": {
+          "mAP": 0.5275839225128705,
+          "pearson_macro": 0.3825151363740265,
+          "spearman_macro": 0.35653637211214084,
+          "concepts": 14,
+          "images": 256,
+          "known_pairs": 3584,
+          "mAP_evaluable_concepts": 14,
+          "correlation_evaluable_concepts": 14
+        },
+        "shift": {
+          "raw_mae": 0.5971759001694912,
+          "raw_mse": 0.5949026792520614,
+          "images": 256,
+          "standardized_mae": 0.6268013469345871,
+          "standardized_mse": 0.6628373069751178,
+          "normalized_concepts": 14
+        }
+      },
+      {
+        "method": "lfcbm",
+        "setting": "jpeg_1",
+        "source": "artifacts/ood/rival10/resnet18/paired/seed42/jpeg_1_lfcbm.npz",
+        "train_reference": "artifacts/matched/lf/rival10/rn18_imagenet/paired_augmentation/seed42/lfcbm_train_original.npz",
+        "quality": {
+          "mAP": 0.6462780297412543,
+          "pearson_macro": 0.4593578684130925,
+          "spearman_macro": 0.4081847916057249,
+          "concepts": 14,
+          "images": 256,
+          "known_pairs": 3584,
+          "mAP_evaluable_concepts": 14,
+          "correlation_evaluable_concepts": 14
+        },
+        "shift": {
+          "raw_mae": 0.05846135655745651,
+          "raw_mse": 0.005777568901058989,
+          "images": 256,
+          "standardized_mae": 0.06107191460003288,
+          "standardized_mse": 0.0063472963138031385,
+          "normalized_concepts": 14
+        }
+      },
+      {
+        "method": "lfcbm",
+        "setting": "jpeg_3",
+        "source": "artifacts/ood/rival10/resnet18/paired/seed42/jpeg_3_lfcbm.npz",
+        "train_reference": "artifacts/matched/lf/rival10/rn18_imagenet/paired_augmentation/seed42/lfcbm_train_original.npz",
+        "quality": {
+          "mAP": 0.6241542279739869,
+          "pearson_macro": 0.44566757692528775,
+          "spearman_macro": 0.4047936166083876,
+          "concepts": 14,
+          "images": 256,
+          "known_pairs": 3584,
+          "mAP_evaluable_concepts": 14,
+          "correlation_evaluable_concepts": 14
+        },
+        "shift": {
+          "raw_mae": 0.20261967191117133,
+          "raw_mse": 0.06878049797212292,
+          "images": 256,
+          "standardized_mae": 0.2116624316598375,
+          "standardized_mse": 0.0754749512016315,
+          "normalized_concepts": 14
+        }
+      },
+      {
+        "method": "lfcbm",
+        "setting": "jpeg_5",
+        "source": "artifacts/ood/rival10/resnet18/paired/seed42/jpeg_5_lfcbm.npz",
+        "train_reference": "artifacts/matched/lf/rival10/rn18_imagenet/paired_augmentation/seed42/lfcbm_train_original.npz",
+        "quality": {
+          "mAP": 0.5709376529105975,
+          "pearson_macro": 0.4185135856839116,
+          "spearman_macro": 0.38903920050050667,
+          "concepts": 14,
+          "images": 256,
+          "known_pairs": 3584,
+          "mAP_evaluable_concepts": 14,
+          "correlation_evaluable_concepts": 14
+        },
+        "shift": {
+          "raw_mae": 0.41913054012926765,
+          "raw_mse": 0.29640400486485236,
+          "images": 256,
+          "standardized_mae": 0.4370788921289592,
+          "standardized_mse": 0.3227604479149367,
+          "normalized_concepts": 14
+        }
+      },
+      {
+        "method": "lfpi_single",
+        "setting": "original_0",
+        "source": "artifacts/ood/rival10/resnet18/paired/seed42/original_0_lfpi_single.npz",
+        "train_reference": "artifacts/matched/lf/rival10/rn18_imagenet/paired_augmentation/seed42/single_draw/lfpi_global_train_original.npz",
+        "quality": {
+          "mAP": 0.6687003415967071,
+          "pearson_macro": 0.4782882174302343,
+          "spearman_macro": 0.41536437078786675,
+          "concepts": 14,
+          "images": 256,
+          "known_pairs": 3584,
+          "mAP_evaluable_concepts": 14,
+          "correlation_evaluable_concepts": 14
+        },
+        "shift": {
+          "raw_mae": 0.0,
+          "raw_mse": 0.0,
+          "images": 256,
+          "standardized_mae": 0.0,
+          "standardized_mse": 0.0,
+          "normalized_concepts": 14
+        }
+      },
+      {
+        "method": "lfpi_single",
+        "setting": "gaussian_noise_1",
+        "source": "artifacts/ood/rival10/resnet18/paired/seed42/gaussian_noise_1_lfpi_single.npz",
+        "train_reference": "artifacts/matched/lf/rival10/rn18_imagenet/paired_augmentation/seed42/single_draw/lfpi_global_train_original.npz",
+        "quality": {
+          "mAP": 0.6554280702988624,
+          "pearson_macro": 0.47482904552315236,
+          "spearman_macro": 0.41633760014303306,
+          "concepts": 14,
+          "images": 256,
+          "known_pairs": 3584,
+          "mAP_evaluable_concepts": 14,
+          "correlation_evaluable_concepts": 14
+        },
+        "shift": {
+          "raw_mae": 0.2537169190738083,
+          "raw_mse": 0.10739598699305755,
+          "images": 256,
+          "standardized_mae": 0.2552963282990798,
+          "standardized_mse": 0.11042958324575938,
+          "normalized_concepts": 14
+        }
+      },
+      {
+        "method": "lfpi_single",
+        "setting": "gaussian_noise_3",
+        "source": "artifacts/ood/rival10/resnet18/paired/seed42/gaussian_noise_3_lfpi_single.npz",
+        "train_reference": "artifacts/matched/lf/rival10/rn18_imagenet/paired_augmentation/seed42/single_draw/lfpi_global_train_original.npz",
+        "quality": {
+          "mAP": 0.6280474989994803,
+          "pearson_macro": 0.45485960992520924,
+          "spearman_macro": 0.4091946962753804,
+          "concepts": 14,
+          "images": 256,
+          "known_pairs": 3584,
+          "mAP_evaluable_concepts": 14,
+          "correlation_evaluable_concepts": 14
+        },
+        "shift": {
+          "raw_mae": 0.42396644090322305,
+          "raw_mse": 0.3034155745377447,
+          "images": 256,
+          "standardized_mae": 0.42584549727432536,
+          "standardized_mse": 0.3098410223714172,
+          "normalized_concepts": 14
+        }
+      },
+      {
+        "method": "lfpi_single",
+        "setting": "gaussian_noise_5",
+        "source": "artifacts/ood/rival10/resnet18/paired/seed42/gaussian_noise_5_lfpi_single.npz",
+        "train_reference": "artifacts/matched/lf/rival10/rn18_imagenet/paired_augmentation/seed42/single_draw/lfpi_global_train_original.npz",
+        "quality": {
+          "mAP": 0.5157399835540459,
+          "pearson_macro": 0.3817035625542172,
+          "spearman_macro": 0.3585005658534099,
+          "concepts": 14,
+          "images": 256,
+          "known_pairs": 3584,
+          "mAP_evaluable_concepts": 14,
+          "correlation_evaluable_concepts": 14
+        },
+        "shift": {
+          "raw_mae": 0.6244429043802115,
+          "raw_mse": 0.6255632651295345,
+          "images": 256,
+          "standardized_mae": 0.6256125440161193,
+          "standardized_mse": 0.6336848022243255,
+          "normalized_concepts": 14
+        }
+      },
+      {
+        "method": "lfpi_single",
+        "setting": "gaussian_blur_1",
+        "source": "artifacts/ood/rival10/resnet18/paired/seed42/gaussian_blur_1_lfpi_single.npz",
+        "train_reference": "artifacts/matched/lf/rival10/rn18_imagenet/paired_augmentation/seed42/single_draw/lfpi_global_train_original.npz",
+        "quality": {
+          "mAP": 0.6702428513579175,
+          "pearson_macro": 0.4753857245641844,
+          "spearman_macro": 0.4138191047061025,
+          "concepts": 14,
+          "images": 256,
+          "known_pairs": 3584,
+          "mAP_evaluable_concepts": 14,
+          "correlation_evaluable_concepts": 14
+        },
+        "shift": {
+          "raw_mae": 0.09612645897473472,
+          "raw_mse": 0.015681117285471686,
+          "images": 256,
+          "standardized_mae": 0.09645917994990003,
+          "standardized_mse": 0.01596850977527708,
+          "normalized_concepts": 14
+        }
+      },
+      {
+        "method": "lfpi_single",
+        "setting": "gaussian_blur_3",
+        "source": "artifacts/ood/rival10/resnet18/paired/seed42/gaussian_blur_3_lfpi_single.npz",
+        "train_reference": "artifacts/matched/lf/rival10/rn18_imagenet/paired_augmentation/seed42/single_draw/lfpi_global_train_original.npz",
+        "quality": {
+          "mAP": 0.6122668974480382,
+          "pearson_macro": 0.43871240543225143,
+          "spearman_macro": 0.39896677045852263,
+          "concepts": 14,
+          "images": 256,
+          "known_pairs": 3584,
+          "mAP_evaluable_concepts": 14,
+          "correlation_evaluable_concepts": 14
+        },
+        "shift": {
+          "raw_mae": 0.34090347091264356,
+          "raw_mse": 0.1943201384241783,
+          "images": 256,
+          "standardized_mae": 0.34128451496197726,
+          "standardized_mse": 0.19559058865747794,
+          "normalized_concepts": 14
+        }
+      },
+      {
+        "method": "lfpi_single",
+        "setting": "gaussian_blur_5",
+        "source": "artifacts/ood/rival10/resnet18/paired/seed42/gaussian_blur_5_lfpi_single.npz",
+        "train_reference": "artifacts/matched/lf/rival10/rn18_imagenet/paired_augmentation/seed42/single_draw/lfpi_global_train_original.npz",
+        "quality": {
+          "mAP": 0.5348956592494841,
+          "pearson_macro": 0.3894519750148268,
+          "spearman_macro": 0.3699564151215989,
+          "concepts": 14,
+          "images": 256,
+          "known_pairs": 3584,
+          "mAP_evaluable_concepts": 14,
+          "correlation_evaluable_concepts": 14
+        },
+        "shift": {
+          "raw_mae": 0.533978464801953,
+          "raw_mse": 0.45239444799598577,
+          "images": 256,
+          "standardized_mae": 0.5331354356804348,
+          "standardized_mse": 0.4514849026521199,
+          "normalized_concepts": 14
+        }
+      },
+      {
+        "method": "lfpi_single",
+        "setting": "contrast_1",
+        "source": "artifacts/ood/rival10/resnet18/paired/seed42/contrast_1_lfpi_single.npz",
+        "train_reference": "artifacts/matched/lf/rival10/rn18_imagenet/paired_augmentation/seed42/single_draw/lfpi_global_train_original.npz",
+        "quality": {
+          "mAP": 0.667025185715578,
+          "pearson_macro": 0.47746772318283304,
+          "spearman_macro": 0.41674491524062496,
+          "concepts": 14,
+          "images": 256,
+          "known_pairs": 3584,
+          "mAP_evaluable_concepts": 14,
+          "correlation_evaluable_concepts": 14
+        },
+        "shift": {
+          "raw_mae": 0.09423686863488356,
+          "raw_mse": 0.015143750272929286,
+          "images": 256,
+          "standardized_mae": 0.09435844910501887,
+          "standardized_mse": 0.015264832625676449,
+          "normalized_concepts": 14
+        }
+      },
+      {
+        "method": "lfpi_single",
+        "setting": "contrast_3",
+        "source": "artifacts/ood/rival10/resnet18/paired/seed42/contrast_3_lfpi_single.npz",
+        "train_reference": "artifacts/matched/lf/rival10/rn18_imagenet/paired_augmentation/seed42/single_draw/lfpi_global_train_original.npz",
+        "quality": {
+          "mAP": 0.6400953934636873,
+          "pearson_macro": 0.465923424569962,
+          "spearman_macro": 0.416639076461138,
+          "concepts": 14,
+          "images": 256,
+          "known_pairs": 3584,
+          "mAP_evaluable_concepts": 14,
+          "correlation_evaluable_concepts": 14
+        },
+        "shift": {
+          "raw_mae": 0.31808894249484154,
+          "raw_mse": 0.1658450482513647,
+          "images": 256,
+          "standardized_mae": 0.31958915504785407,
+          "standardized_mse": 0.16918458938506883,
+          "normalized_concepts": 14
+        }
+      },
+      {
+        "method": "lfpi_single",
+        "setting": "contrast_5",
+        "source": "artifacts/ood/rival10/resnet18/paired/seed42/contrast_5_lfpi_single.npz",
+        "train_reference": "artifacts/matched/lf/rival10/rn18_imagenet/paired_augmentation/seed42/single_draw/lfpi_global_train_original.npz",
+        "quality": {
+          "mAP": 0.5519814355018008,
+          "pearson_macro": 0.40779206737430035,
+          "spearman_macro": 0.37682074323376563,
+          "concepts": 14,
+          "images": 256,
+          "known_pairs": 3584,
+          "mAP_evaluable_concepts": 14,
+          "correlation_evaluable_concepts": 14
+        },
+        "shift": {
+          "raw_mae": 0.5919535816764621,
+          "raw_mse": 0.58555376086948,
+          "images": 256,
+          "standardized_mae": 0.5963288733600047,
+          "standardized_mse": 0.6052126354559153,
+          "normalized_concepts": 14
+        }
+      },
+      {
+        "method": "lfpi_single",
+        "setting": "jpeg_1",
+        "source": "artifacts/ood/rival10/resnet18/paired/seed42/jpeg_1_lfpi_single.npz",
+        "train_reference": "artifacts/matched/lf/rival10/rn18_imagenet/paired_augmentation/seed42/single_draw/lfpi_global_train_original.npz",
+        "quality": {
+          "mAP": 0.6696843587173891,
+          "pearson_macro": 0.47765162652906,
+          "spearman_macro": 0.4147497925432675,
+          "concepts": 14,
+          "images": 256,
+          "known_pairs": 3584,
+          "mAP_evaluable_concepts": 14,
+          "correlation_evaluable_concepts": 14
+        },
+        "shift": {
+          "raw_mae": 0.05684857731336886,
+          "raw_mse": 0.005412348859935944,
+          "images": 256,
+          "standardized_mae": 0.05694945739174334,
+          "standardized_mse": 0.005485454690124479,
+          "normalized_concepts": 14
+        }
+      },
+      {
+        "method": "lfpi_single",
+        "setting": "jpeg_3",
+        "source": "artifacts/ood/rival10/resnet18/paired/seed42/jpeg_3_lfpi_single.npz",
+        "train_reference": "artifacts/matched/lf/rival10/rn18_imagenet/paired_augmentation/seed42/single_draw/lfpi_global_train_original.npz",
+        "quality": {
+          "mAP": 0.6458430156205412,
+          "pearson_macro": 0.4669079749250538,
+          "spearman_macro": 0.41393454270590313,
+          "concepts": 14,
+          "images": 256,
+          "known_pairs": 3584,
+          "mAP_evaluable_concepts": 14,
+          "correlation_evaluable_concepts": 14
+        },
+        "shift": {
+          "raw_mae": 0.197586774362679,
+          "raw_mse": 0.06454821206139418,
+          "images": 256,
+          "standardized_mae": 0.1978400267064496,
+          "standardized_mse": 0.06522543457648873,
+          "normalized_concepts": 14
+        }
+      },
+      {
+        "method": "lfpi_single",
+        "setting": "jpeg_5",
+        "source": "artifacts/ood/rival10/resnet18/paired/seed42/jpeg_5_lfpi_single.npz",
+        "train_reference": "artifacts/matched/lf/rival10/rn18_imagenet/paired_augmentation/seed42/single_draw/lfpi_global_train_original.npz",
+        "quality": {
+          "mAP": 0.6090122212170443,
+          "pearson_macro": 0.43873600747178904,
+          "spearman_macro": 0.4005509035544958,
+          "concepts": 14,
+          "images": 256,
+          "known_pairs": 3584,
+          "mAP_evaluable_concepts": 14,
+          "correlation_evaluable_concepts": 14
+        },
+        "shift": {
+          "raw_mae": 0.4170258316982484,
+          "raw_mse": 0.2903254324835251,
+          "images": 256,
+          "standardized_mae": 0.4165383876830872,
+          "standardized_mse": 0.2904341500374797,
+          "normalized_concepts": 14
+        }
+      },
+      {
+        "method": "pini_mean",
+        "setting": "original_0",
+        "source": "artifacts/ood/rival10/resnet18/paired/seed42/original_0_pini_mean.npz",
+        "train_reference": "artifacts/pini_matched/rival10/exports/mean/train_original.npz",
+        "quality": {
+          "mAP": 0.8747264985500312,
+          "pearson_macro": 0.8287775849111397,
+          "spearman_macro": 0.6042758221069515,
+          "concepts": 14,
+          "images": 256,
+          "known_pairs": 3584,
+          "mAP_evaluable_concepts": 14,
+          "correlation_evaluable_concepts": 14
+        },
+        "shift": {
+          "raw_mae": 0.0,
+          "raw_mse": 0.0,
+          "images": 256,
+          "standardized_mae": 0.0,
+          "standardized_mse": 0.0,
+          "normalized_concepts": 14
+        }
+      },
+      {
+        "method": "pini_mean",
+        "setting": "gaussian_noise_1",
+        "source": "artifacts/ood/rival10/resnet18/paired/seed42/gaussian_noise_1_pini_mean.npz",
+        "train_reference": "artifacts/pini_matched/rival10/exports/mean/train_original.npz",
+        "quality": {
+          "mAP": 0.8673819613150883,
+          "pearson_macro": 0.82703083397508,
+          "spearman_macro": 0.6016234515398724,
+          "concepts": 14,
+          "images": 256,
+          "known_pairs": 3584,
+          "mAP_evaluable_concepts": 14,
+          "correlation_evaluable_concepts": 14
+        },
+        "shift": {
+          "raw_mae": 0.022450263583114888,
+          "raw_mse": 0.0029354297571801253,
+          "images": 256,
+          "standardized_mae": 0.06695427442031686,
+          "standardized_mse": 0.024100157803871727,
+          "normalized_concepts": 14
+        }
+      },
+      {
+        "method": "pini_mean",
+        "setting": "gaussian_noise_3",
+        "source": "artifacts/ood/rival10/resnet18/paired/seed42/gaussian_noise_3_pini_mean.npz",
+        "train_reference": "artifacts/pini_matched/rival10/exports/mean/train_original.npz",
+        "quality": {
+          "mAP": 0.837354954479323,
+          "pearson_macro": 0.7906627015386338,
+          "spearman_macro": 0.5894358528539979,
+          "concepts": 14,
+          "images": 256,
+          "known_pairs": 3584,
+          "mAP_evaluable_concepts": 14,
+          "correlation_evaluable_concepts": 14
+        },
+        "shift": {
+          "raw_mae": 0.05391253619439835,
+          "raw_mse": 0.013974362712326839,
+          "images": 256,
+          "standardized_mae": 0.1575328397499467,
+          "standardized_mse": 0.11395725572169058,
+          "normalized_concepts": 14
+        }
+      },
+      {
+        "method": "pini_mean",
+        "setting": "gaussian_noise_5",
+        "source": "artifacts/ood/rival10/resnet18/paired/seed42/gaussian_noise_5_pini_mean.npz",
+        "train_reference": "artifacts/pini_matched/rival10/exports/mean/train_original.npz",
+        "quality": {
+          "mAP": 0.7557356317273355,
+          "pearson_macro": 0.675250457804802,
+          "spearman_macro": 0.542193330288295,
+          "concepts": 14,
+          "images": 256,
+          "known_pairs": 3584,
+          "mAP_evaluable_concepts": 14,
+          "correlation_evaluable_concepts": 14
+        },
+        "shift": {
+          "raw_mae": 0.11267151485476598,
+          "raw_mse": 0.04563079916441371,
+          "images": 256,
+          "standardized_mae": 0.31721761388547687,
+          "standardized_mse": 0.3565050650464783,
+          "normalized_concepts": 14
+        }
+      },
+      {
+        "method": "pini_mean",
+        "setting": "gaussian_blur_1",
+        "source": "artifacts/ood/rival10/resnet18/paired/seed42/gaussian_blur_1_pini_mean.npz",
+        "train_reference": "artifacts/pini_matched/rival10/exports/mean/train_original.npz",
+        "quality": {
+          "mAP": 0.8715372943171446,
+          "pearson_macro": 0.8294495754680986,
+          "spearman_macro": 0.6041701915506588,
+          "concepts": 14,
+          "images": 256,
+          "known_pairs": 3584,
+          "mAP_evaluable_concepts": 14,
+          "correlation_evaluable_concepts": 14
+        },
+        "shift": {
+          "raw_mae": 0.01116938824346744,
+          "raw_mse": 0.0006620632683883238,
+          "images": 256,
+          "standardized_mae": 0.033821022504433765,
+          "standardized_mse": 0.005933605249014912,
+          "normalized_concepts": 14
+        }
+      },
+      {
+        "method": "pini_mean",
+        "setting": "gaussian_blur_3",
+        "source": "artifacts/ood/rival10/resnet18/paired/seed42/gaussian_blur_3_pini_mean.npz",
+        "train_reference": "artifacts/pini_matched/rival10/exports/mean/train_original.npz",
+        "quality": {
+          "mAP": 0.8472151956746238,
+          "pearson_macro": 0.7967503024147028,
+          "spearman_macro": 0.5920991854308368,
+          "concepts": 14,
+          "images": 256,
+          "known_pairs": 3584,
+          "mAP_evaluable_concepts": 14,
+          "correlation_evaluable_concepts": 14
+        },
+        "shift": {
+          "raw_mae": 0.051518859715224886,
+          "raw_mse": 0.012886288232522134,
+          "images": 256,
+          "standardized_mae": 0.15215293291209658,
+          "standardized_mse": 0.10872835781294721,
+          "normalized_concepts": 14
+        }
+      },
+      {
+        "method": "pini_mean",
+        "setting": "gaussian_blur_5",
+        "source": "artifacts/ood/rival10/resnet18/paired/seed42/gaussian_blur_5_pini_mean.npz",
+        "train_reference": "artifacts/pini_matched/rival10/exports/mean/train_original.npz",
+        "quality": {
+          "mAP": 0.7885096472408248,
+          "pearson_macro": 0.7031723708334281,
+          "spearman_macro": 0.5525395355492257,
+          "concepts": 14,
+          "images": 256,
+          "known_pairs": 3584,
+          "mAP_evaluable_concepts": 14,
+          "correlation_evaluable_concepts": 14
+        },
+        "shift": {
+          "raw_mae": 0.11073795237495201,
+          "raw_mse": 0.041863114362890155,
+          "images": 256,
+          "standardized_mae": 0.3195309015485118,
+          "standardized_mse": 0.3394771039255792,
+          "normalized_concepts": 14
+        }
+      },
+      {
+        "method": "pini_mean",
+        "setting": "contrast_1",
+        "source": "artifacts/ood/rival10/resnet18/paired/seed42/contrast_1_pini_mean.npz",
+        "train_reference": "artifacts/pini_matched/rival10/exports/mean/train_original.npz",
+        "quality": {
+          "mAP": 0.8742395186450563,
+          "pearson_macro": 0.8300345081352118,
+          "spearman_macro": 0.6048992460956335,
+          "concepts": 14,
+          "images": 256,
+          "known_pairs": 3584,
+          "mAP_evaluable_concepts": 14,
+          "correlation_evaluable_concepts": 14
+        },
+        "shift": {
+          "raw_mae": 0.009428322662059492,
+          "raw_mse": 0.0004822712733280688,
+          "images": 256,
+          "standardized_mae": 0.028598001564339882,
+          "standardized_mse": 0.00426273223228165,
+          "normalized_concepts": 14
+        }
+      },
+      {
+        "method": "pini_mean",
+        "setting": "contrast_3",
+        "source": "artifacts/ood/rival10/resnet18/paired/seed42/contrast_3_pini_mean.npz",
+        "train_reference": "artifacts/pini_matched/rival10/exports/mean/train_original.npz",
+        "quality": {
+          "mAP": 0.8601032176308446,
+          "pearson_macro": 0.8144639631115246,
+          "spearman_macro": 0.6005305065861978,
+          "concepts": 14,
+          "images": 256,
+          "known_pairs": 3584,
+          "mAP_evaluable_concepts": 14,
+          "correlation_evaluable_concepts": 14
+        },
+        "shift": {
+          "raw_mae": 0.03374178427344622,
+          "raw_mse": 0.0065929905095543796,
+          "images": 256,
+          "standardized_mae": 0.10052045397032176,
+          "standardized_mse": 0.055606788753301994,
+          "normalized_concepts": 14
+        }
+      },
+      {
+        "method": "pini_mean",
+        "setting": "contrast_5",
+        "source": "artifacts/ood/rival10/resnet18/paired/seed42/contrast_5_pini_mean.npz",
+        "train_reference": "artifacts/pini_matched/rival10/exports/mean/train_original.npz",
+        "quality": {
+          "mAP": 0.8024119099113631,
+          "pearson_macro": 0.7395626930970653,
+          "spearman_macro": 0.5780887763893318,
+          "concepts": 14,
+          "images": 256,
+          "known_pairs": 3584,
+          "mAP_evaluable_concepts": 14,
+          "correlation_evaluable_concepts": 14
+        },
+        "shift": {
+          "raw_mae": 0.08348748185953779,
+          "raw_mse": 0.029031763415372853,
+          "images": 256,
+          "standardized_mae": 0.23973909691116918,
+          "standardized_mse": 0.23211136332903193,
+          "normalized_concepts": 14
+        }
+      },
+      {
+        "method": "pini_mean",
+        "setting": "jpeg_1",
+        "source": "artifacts/ood/rival10/resnet18/paired/seed42/jpeg_1_pini_mean.npz",
+        "train_reference": "artifacts/pini_matched/rival10/exports/mean/train_original.npz",
+        "quality": {
+          "mAP": 0.8671474579151167,
+          "pearson_macro": 0.8292208824243289,
+          "spearman_macro": 0.6048205478334747,
+          "concepts": 14,
+          "images": 256,
+          "known_pairs": 3584,
+          "mAP_evaluable_concepts": 14,
+          "correlation_evaluable_concepts": 14
+        },
+        "shift": {
+          "raw_mae": 0.006287477387670738,
+          "raw_mse": 0.00021106590456359455,
+          "images": 256,
+          "standardized_mae": 0.019019691301311405,
+          "standardized_mse": 0.001941031548841114,
+          "normalized_concepts": 14
+        }
+      },
+      {
+        "method": "pini_mean",
+        "setting": "jpeg_3",
+        "source": "artifacts/ood/rival10/resnet18/paired/seed42/jpeg_3_pini_mean.npz",
+        "train_reference": "artifacts/pini_matched/rival10/exports/mean/train_original.npz",
+        "quality": {
+          "mAP": 0.8574545181138917,
+          "pearson_macro": 0.8204879084621804,
+          "spearman_macro": 0.6019073767639421,
+          "concepts": 14,
+          "images": 256,
+          "known_pairs": 3584,
+          "mAP_evaluable_concepts": 14,
+          "correlation_evaluable_concepts": 14
+        },
+        "shift": {
+          "raw_mae": 0.022930534666903583,
+          "raw_mse": 0.002804264270776871,
+          "images": 256,
+          "standardized_mae": 0.06796407233959754,
+          "standardized_mse": 0.02355812299778042,
+          "normalized_concepts": 14
+        }
+      },
+      {
+        "method": "pini_mean",
+        "setting": "jpeg_5",
+        "source": "artifacts/ood/rival10/resnet18/paired/seed42/jpeg_5_pini_mean.npz",
+        "train_reference": "artifacts/pini_matched/rival10/exports/mean/train_original.npz",
+        "quality": {
+          "mAP": 0.8402926105192318,
+          "pearson_macro": 0.7867532017841145,
+          "spearman_macro": 0.588538256167985,
+          "concepts": 14,
+          "images": 256,
+          "known_pairs": 3584,
+          "mAP_evaluable_concepts": 14,
+          "correlation_evaluable_concepts": 14
+        },
+        "shift": {
+          "raw_mae": 0.06181792685537219,
+          "raw_mse": 0.016852477354710314,
+          "images": 256,
+          "standardized_mae": 0.18015237052199776,
+          "standardized_mse": 0.13791786869261652,
+          "normalized_concepts": 14
+        }
+      },
+      {
+        "method": "pini_noise",
+        "setting": "original_0",
+        "source": "artifacts/ood/rival10/resnet18/paired/seed42/original_0_pini_noise.npz",
+        "train_reference": "artifacts/pini_matched/rival10/exports/noise/train_original.npz",
+        "quality": {
+          "mAP": 0.8736979022169967,
+          "pearson_macro": 0.8290689743675645,
+          "spearman_macro": 0.6041626650223405,
+          "concepts": 14,
+          "images": 256,
+          "known_pairs": 3584,
+          "mAP_evaluable_concepts": 14,
+          "correlation_evaluable_concepts": 14
+        },
+        "shift": {
+          "raw_mae": 0.0,
+          "raw_mse": 0.0,
+          "images": 256,
+          "standardized_mae": 0.0,
+          "standardized_mse": 0.0,
+          "normalized_concepts": 14
+        }
+      },
+      {
+        "method": "pini_noise",
+        "setting": "gaussian_noise_1",
+        "source": "artifacts/ood/rival10/resnet18/paired/seed42/gaussian_noise_1_pini_noise.npz",
+        "train_reference": "artifacts/pini_matched/rival10/exports/noise/train_original.npz",
+        "quality": {
+          "mAP": 0.863166040595729,
+          "pearson_macro": 0.8268559283994893,
+          "spearman_macro": 0.6006880220919802,
+          "concepts": 14,
+          "images": 256,
+          "known_pairs": 3584,
+          "mAP_evaluable_concepts": 14,
+          "correlation_evaluable_concepts": 14
+        },
+        "shift": {
+          "raw_mae": 0.022883803183238374,
+          "raw_mse": 0.0030421290113967847,
+          "images": 256,
+          "standardized_mae": 0.06835394764983686,
+          "standardized_mse": 0.024956184572621932,
+          "normalized_concepts": 14
+        }
+      },
+      {
+        "method": "pini_noise",
+        "setting": "gaussian_noise_3",
+        "source": "artifacts/ood/rival10/resnet18/paired/seed42/gaussian_noise_3_pini_noise.npz",
+        "train_reference": "artifacts/pini_matched/rival10/exports/noise/train_original.npz",
+        "quality": {
+          "mAP": 0.8367209039303466,
+          "pearson_macro": 0.7876768954828667,
+          "spearman_macro": 0.5875613503468884,
+          "concepts": 14,
+          "images": 256,
+          "known_pairs": 3584,
+          "mAP_evaluable_concepts": 14,
+          "correlation_evaluable_concepts": 14
+        },
+        "shift": {
+          "raw_mae": 0.05527599022950126,
+          "raw_mse": 0.01492907819138393,
+          "images": 256,
+          "standardized_mae": 0.16090400948296613,
+          "standardized_mse": 0.1205998276575314,
+          "normalized_concepts": 14
+        }
+      },
+      {
+        "method": "pini_noise",
+        "setting": "gaussian_noise_5",
+        "source": "artifacts/ood/rival10/resnet18/paired/seed42/gaussian_noise_5_pini_noise.npz",
+        "train_reference": "artifacts/pini_matched/rival10/exports/noise/train_original.npz",
+        "quality": {
+          "mAP": 0.7563707763325513,
+          "pearson_macro": 0.6735599147775385,
+          "spearman_macro": 0.5421676278422175,
+          "concepts": 14,
+          "images": 256,
+          "known_pairs": 3584,
+          "mAP_evaluable_concepts": 14,
+          "correlation_evaluable_concepts": 14
+        },
+        "shift": {
+          "raw_mae": 0.1142703510864309,
+          "raw_mse": 0.04671836027399651,
+          "images": 256,
+          "standardized_mae": 0.32163616862643135,
+          "standardized_mse": 0.3640934212798747,
+          "normalized_concepts": 14
+        }
+      },
+      {
+        "method": "pini_noise",
+        "setting": "gaussian_blur_1",
+        "source": "artifacts/ood/rival10/resnet18/paired/seed42/gaussian_blur_1_pini_noise.npz",
+        "train_reference": "artifacts/pini_matched/rival10/exports/noise/train_original.npz",
+        "quality": {
+          "mAP": 0.8733315515031166,
+          "pearson_macro": 0.8289337102186713,
+          "spearman_macro": 0.6042348560406258,
+          "concepts": 14,
+          "images": 256,
+          "known_pairs": 3584,
+          "mAP_evaluable_concepts": 14,
+          "correlation_evaluable_concepts": 14
+        },
+        "shift": {
+          "raw_mae": 0.011100781299594036,
+          "raw_mse": 0.0006620695445314956,
+          "images": 256,
+          "standardized_mae": 0.0336434964431712,
+          "standardized_mse": 0.006079879666867357,
+          "normalized_concepts": 14
+        }
+      },
+      {
+        "method": "pini_noise",
+        "setting": "gaussian_blur_3",
+        "source": "artifacts/ood/rival10/resnet18/paired/seed42/gaussian_blur_3_pini_noise.npz",
+        "train_reference": "artifacts/pini_matched/rival10/exports/noise/train_original.npz",
+        "quality": {
+          "mAP": 0.8484825481440048,
+          "pearson_macro": 0.7964542599269757,
+          "spearman_macro": 0.5926993676392758,
+          "concepts": 14,
+          "images": 256,
+          "known_pairs": 3584,
+          "mAP_evaluable_concepts": 14,
+          "correlation_evaluable_concepts": 14
+        },
+        "shift": {
+          "raw_mae": 0.05151730415701578,
+          "raw_mse": 0.012860150882473323,
+          "images": 256,
+          "standardized_mae": 0.15228262681316623,
+          "standardized_mse": 0.10950064685502578,
+          "normalized_concepts": 14
+        }
+      },
+      {
+        "method": "pini_noise",
+        "setting": "gaussian_blur_5",
+        "source": "artifacts/ood/rival10/resnet18/paired/seed42/gaussian_blur_5_pini_noise.npz",
+        "train_reference": "artifacts/pini_matched/rival10/exports/noise/train_original.npz",
+        "quality": {
+          "mAP": 0.7835467883646255,
+          "pearson_macro": 0.700309860252012,
+          "spearman_macro": 0.5506855343587554,
+          "concepts": 14,
+          "images": 256,
+          "known_pairs": 3584,
+          "mAP_evaluable_concepts": 14,
+          "correlation_evaluable_concepts": 14
+        },
+        "shift": {
+          "raw_mae": 0.11223926262843258,
+          "raw_mse": 0.04245455258782815,
+          "images": 256,
+          "standardized_mae": 0.32349697153413015,
+          "standardized_mse": 0.344549979943708,
+          "normalized_concepts": 14
+        }
+      },
+      {
+        "method": "pini_noise",
+        "setting": "contrast_1",
+        "source": "artifacts/ood/rival10/resnet18/paired/seed42/contrast_1_pini_noise.npz",
+        "train_reference": "artifacts/pini_matched/rival10/exports/noise/train_original.npz",
+        "quality": {
+          "mAP": 0.8746521138254463,
+          "pearson_macro": 0.8293486644068156,
+          "spearman_macro": 0.6046411473427499,
+          "concepts": 14,
+          "images": 256,
+          "known_pairs": 3584,
+          "mAP_evaluable_concepts": 14,
+          "correlation_evaluable_concepts": 14
+        },
+        "shift": {
+          "raw_mae": 0.009267113313217414,
+          "raw_mse": 0.000448397930507203,
+          "images": 256,
+          "standardized_mae": 0.02815243695713778,
+          "standardized_mse": 0.003931705705014268,
+          "normalized_concepts": 14
+        }
+      },
+      {
+        "method": "pini_noise",
+        "setting": "contrast_3",
+        "source": "artifacts/ood/rival10/resnet18/paired/seed42/contrast_3_pini_noise.npz",
+        "train_reference": "artifacts/pini_matched/rival10/exports/noise/train_original.npz",
+        "quality": {
+          "mAP": 0.8587023395482966,
+          "pearson_macro": 0.8141756318418291,
+          "spearman_macro": 0.5998226382106564,
+          "concepts": 14,
+          "images": 256,
+          "known_pairs": 3584,
+          "mAP_evaluable_concepts": 14,
+          "correlation_evaluable_concepts": 14
+        },
+        "shift": {
+          "raw_mae": 0.03347105476414985,
+          "raw_mse": 0.006470446320607916,
+          "images": 256,
+          "standardized_mae": 0.09946798732374253,
+          "standardized_mse": 0.05397668158553596,
+          "normalized_concepts": 14
+        }
+      },
+      {
+        "method": "pini_noise",
+        "setting": "contrast_5",
+        "source": "artifacts/ood/rival10/resnet18/paired/seed42/contrast_5_pini_noise.npz",
+        "train_reference": "artifacts/pini_matched/rival10/exports/noise/train_original.npz",
+        "quality": {
+          "mAP": 0.8008977324388482,
+          "pearson_macro": 0.7308284177466489,
+          "spearman_macro": 0.5773365774161942,
+          "concepts": 14,
+          "images": 256,
+          "known_pairs": 3584,
+          "mAP_evaluable_concepts": 14,
+          "correlation_evaluable_concepts": 14
+        },
+        "shift": {
+          "raw_mae": 0.08517286527103153,
+          "raw_mse": 0.03097637611959158,
+          "images": 256,
+          "standardized_mae": 0.24547350590077904,
+          "standardized_mse": 0.2488327753997567,
+          "normalized_concepts": 14
+        }
+      },
+      {
+        "method": "pini_noise",
+        "setting": "jpeg_1",
+        "source": "artifacts/ood/rival10/resnet18/paired/seed42/jpeg_1_pini_noise.npz",
+        "train_reference": "artifacts/pini_matched/rival10/exports/noise/train_original.npz",
+        "quality": {
+          "mAP": 0.8688789111023585,
+          "pearson_macro": 0.8292242743674205,
+          "spearman_macro": 0.6047067575620602,
+          "concepts": 14,
+          "images": 256,
+          "known_pairs": 3584,
+          "mAP_evaluable_concepts": 14,
+          "correlation_evaluable_concepts": 14
+        },
+        "shift": {
+          "raw_mae": 0.006151738137580639,
+          "raw_mse": 0.00020046122096967705,
+          "images": 256,
+          "standardized_mae": 0.01865718419675175,
+          "standardized_mse": 0.0018283328620543173,
+          "normalized_concepts": 14
+        }
+      },
+      {
+        "method": "pini_noise",
+        "setting": "jpeg_3",
+        "source": "artifacts/ood/rival10/resnet18/paired/seed42/jpeg_3_pini_noise.npz",
+        "train_reference": "artifacts/pini_matched/rival10/exports/noise/train_original.npz",
+        "quality": {
+          "mAP": 0.8577523390833005,
+          "pearson_macro": 0.8212071989091262,
+          "spearman_macro": 0.6021542600613208,
+          "concepts": 14,
+          "images": 256,
+          "known_pairs": 3584,
+          "mAP_evaluable_concepts": 14,
+          "correlation_evaluable_concepts": 14
+        },
+        "shift": {
+          "raw_mae": 0.022720351726631942,
+          "raw_mse": 0.00277126207156183,
+          "images": 256,
+          "standardized_mae": 0.06724473627085856,
+          "standardized_mse": 0.023310878083929596,
+          "normalized_concepts": 14
+        }
+      },
+      {
+        "method": "pini_noise",
+        "setting": "jpeg_5",
+        "source": "artifacts/ood/rival10/resnet18/paired/seed42/jpeg_5_pini_noise.npz",
+        "train_reference": "artifacts/pini_matched/rival10/exports/noise/train_original.npz",
+        "quality": {
+          "mAP": 0.8410313192145213,
+          "pearson_macro": 0.7853493503542351,
+          "spearman_macro": 0.5871315685292178,
+          "concepts": 14,
+          "images": 256,
+          "known_pairs": 3584,
+          "mAP_evaluable_concepts": 14,
+          "correlation_evaluable_concepts": 14
+        },
+        "shift": {
+          "raw_mae": 0.06153132334338418,
+          "raw_mse": 0.017040751827986346,
+          "images": 256,
+          "standardized_mae": 0.1793381460677,
+          "standardized_mse": 0.13988038357085783,
+          "normalized_concepts": 14
+        }
+      }
+    ]
+  },
+  {
+    "dataset": "cub",
+    "images": 256,
+    "concept_indices": [
+      1,
+      6,
+      8,
+      9,
+      12,
+      18,
+      21,
+      27,
+      29,
+      33,
+      34,
+      35,
+      36,
+      41,
+      46,
+      53,
+      56,
+      58,
+      62,
+      66,
+      70,
+      71,
+      72,
+      74,
+      75,
+      91,
+      92,
+      93,
+      94,
+      95,
+      96,
+      98,
+      100,
+      102,
+      104,
+      105,
+      107
+    ],
+    "backbone": "ImageNet ResNet18",
+    "training_views": [
+      "original",
+      "changed"
+    ],
+    "training_seed": 42,
+    "noise_draws": 1,
+    "inference_noise_seed": 4242,
+    "protocol_source": "artifacts/ood/cub/resnet18/paired/seed42/protocol.json",
+    "records": [
+      {
+        "method": "lfcbm",
+        "setting": "original_0",
+        "source": "artifacts/ood/cub/resnet18/paired/seed42/original_0_lfcbm.npz",
+        "train_reference": "artifacts/matched/lf/cub/rn18_imagenet/paired_augmentation/seed42/lfcbm_train_original.npz",
+        "quality": {
+          "mAP": 0.3801140362827435,
+          "pearson_macro": 0.16984231837213842,
+          "spearman_macro": 0.14602611737894583,
+          "concepts": 37,
+          "images": 256,
+          "known_pairs": 7934,
+          "mAP_evaluable_concepts": 37,
+          "correlation_evaluable_concepts": 37
+        },
+        "shift": {
+          "raw_mae": 0.0,
+          "raw_mse": 0.0,
+          "images": 256,
+          "standardized_mae": 0.0,
+          "standardized_mse": 0.0,
+          "normalized_concepts": 37
+        }
+      },
+      {
+        "method": "lfcbm",
+        "setting": "gaussian_noise_1",
+        "source": "artifacts/ood/cub/resnet18/paired/seed42/gaussian_noise_1_lfcbm.npz",
+        "train_reference": "artifacts/matched/lf/cub/rn18_imagenet/paired_augmentation/seed42/lfcbm_train_original.npz",
+        "quality": {
+          "mAP": 0.37431425521900397,
+          "pearson_macro": 0.16599941248013197,
+          "spearman_macro": 0.14570529018185327,
+          "concepts": 37,
+          "images": 256,
+          "known_pairs": 7934,
+          "mAP_evaluable_concepts": 37,
+          "correlation_evaluable_concepts": 37
+        },
+        "shift": {
+          "raw_mae": 0.33720613343381334,
+          "raw_mse": 0.1894937639494709,
+          "images": 256,
+          "standardized_mae": 0.3676380516509358,
+          "standardized_mse": 0.2271536372020858,
+          "normalized_concepts": 37
+        }
+      },
+      {
+        "method": "lfcbm",
+        "setting": "gaussian_noise_3",
+        "source": "artifacts/ood/cub/resnet18/paired/seed42/gaussian_noise_3_lfcbm.npz",
+        "train_reference": "artifacts/matched/lf/cub/rn18_imagenet/paired_augmentation/seed42/lfcbm_train_original.npz",
+        "quality": {
+          "mAP": 0.34546861505531523,
+          "pearson_macro": 0.15569259587926407,
+          "spearman_macro": 0.143387641326795,
+          "concepts": 37,
+          "images": 256,
+          "known_pairs": 7934,
+          "mAP_evaluable_concepts": 37,
+          "correlation_evaluable_concepts": 37
+        },
+        "shift": {
+          "raw_mae": 0.7293052854218045,
+          "raw_mse": 0.8480541590340429,
+          "images": 256,
+          "standardized_mae": 0.7946242220413355,
+          "standardized_mse": 1.0134519833430171,
+          "normalized_concepts": 37
+        }
+      },
+      {
+        "method": "lfcbm",
+        "setting": "gaussian_noise_5",
+        "source": "artifacts/ood/cub/resnet18/paired/seed42/gaussian_noise_5_lfcbm.npz",
+        "train_reference": "artifacts/matched/lf/cub/rn18_imagenet/paired_augmentation/seed42/lfcbm_train_original.npz",
+        "quality": {
+          "mAP": 0.2998442461385891,
+          "pearson_macro": 0.11451003431828925,
+          "spearman_macro": 0.10752373872162928,
+          "concepts": 37,
+          "images": 256,
+          "known_pairs": 7934,
+          "mAP_evaluable_concepts": 37,
+          "correlation_evaluable_concepts": 37
+        },
+        "shift": {
+          "raw_mae": 1.2226994582559751,
+          "raw_mse": 2.233928398298332,
+          "images": 256,
+          "standardized_mae": 1.334753831610264,
+          "standardized_mse": 2.6871638940861087,
+          "normalized_concepts": 37
+        }
+      },
+      {
+        "method": "lfcbm",
+        "setting": "gaussian_blur_1",
+        "source": "artifacts/ood/cub/resnet18/paired/seed42/gaussian_blur_1_lfcbm.npz",
+        "train_reference": "artifacts/matched/lf/cub/rn18_imagenet/paired_augmentation/seed42/lfcbm_train_original.npz",
+        "quality": {
+          "mAP": 0.37689617639920187,
+          "pearson_macro": 0.17185133394151633,
+          "spearman_macro": 0.14948537472718287,
+          "concepts": 37,
+          "images": 256,
+          "known_pairs": 7934,
+          "mAP_evaluable_concepts": 37,
+          "correlation_evaluable_concepts": 37
+        },
+        "shift": {
+          "raw_mae": 0.14224009009459823,
+          "raw_mse": 0.03379538936032846,
+          "images": 256,
+          "standardized_mae": 0.15543576066646697,
+          "standardized_mse": 0.04076942562797255,
+          "normalized_concepts": 37
+        }
+      },
+      {
+        "method": "lfcbm",
+        "setting": "gaussian_blur_3",
+        "source": "artifacts/ood/cub/resnet18/paired/seed42/gaussian_blur_3_lfcbm.npz",
+        "train_reference": "artifacts/matched/lf/cub/rn18_imagenet/paired_augmentation/seed42/lfcbm_train_original.npz",
+        "quality": {
+          "mAP": 0.37124557598330926,
+          "pearson_macro": 0.1819739292284616,
+          "spearman_macro": 0.15980061130000864,
+          "concepts": 37,
+          "images": 256,
+          "known_pairs": 7934,
+          "mAP_evaluable_concepts": 37,
+          "correlation_evaluable_concepts": 37
+        },
+        "shift": {
+          "raw_mae": 0.5574306870646024,
+          "raw_mse": 0.5229394618079428,
+          "images": 256,
+          "standardized_mae": 0.6098932596603759,
+          "standardized_mse": 0.6344265667858673,
+          "normalized_concepts": 37
+        }
+      },
+      {
+        "method": "lfcbm",
+        "setting": "gaussian_blur_5",
+        "source": "artifacts/ood/cub/resnet18/paired/seed42/gaussian_blur_5_lfcbm.npz",
+        "train_reference": "artifacts/matched/lf/cub/rn18_imagenet/paired_augmentation/seed42/lfcbm_train_original.npz",
+        "quality": {
+          "mAP": 0.353897612418538,
+          "pearson_macro": 0.17306533196400067,
+          "spearman_macro": 0.15296071604489667,
+          "concepts": 37,
+          "images": 256,
+          "known_pairs": 7934,
+          "mAP_evaluable_concepts": 37,
+          "correlation_evaluable_concepts": 37
+        },
+        "shift": {
+          "raw_mae": 0.8357893472244988,
+          "raw_mse": 1.14173587408894,
+          "images": 256,
+          "standardized_mae": 0.9166408720826358,
+          "standardized_mse": 1.3970444101468869,
+          "normalized_concepts": 37
+        }
+      },
+      {
+        "method": "lfcbm",
+        "setting": "contrast_1",
+        "source": "artifacts/ood/cub/resnet18/paired/seed42/contrast_1_lfcbm.npz",
+        "train_reference": "artifacts/matched/lf/cub/rn18_imagenet/paired_augmentation/seed42/lfcbm_train_original.npz",
+        "quality": {
+          "mAP": 0.381619211558957,
+          "pearson_macro": 0.16954289808040962,
+          "spearman_macro": 0.14487891628298197,
+          "concepts": 37,
+          "images": 256,
+          "known_pairs": 7934,
+          "mAP_evaluable_concepts": 37,
+          "correlation_evaluable_concepts": 37
+        },
+        "shift": {
+          "raw_mae": 0.13491043579853573,
+          "raw_mse": 0.030245712574097864,
+          "images": 256,
+          "standardized_mae": 0.1470936493970134,
+          "standardized_mse": 0.036223864484892294,
+          "normalized_concepts": 37
+        }
+      },
+      {
+        "method": "lfcbm",
+        "setting": "contrast_3",
+        "source": "artifacts/ood/cub/resnet18/paired/seed42/contrast_3_lfcbm.npz",
+        "train_reference": "artifacts/matched/lf/cub/rn18_imagenet/paired_augmentation/seed42/lfcbm_train_original.npz",
+        "quality": {
+          "mAP": 0.3664141791544063,
+          "pearson_macro": 0.15686072691292305,
+          "spearman_macro": 0.13837885851308787,
+          "concepts": 37,
+          "images": 256,
+          "known_pairs": 7934,
+          "mAP_evaluable_concepts": 37,
+          "correlation_evaluable_concepts": 37
+        },
+        "shift": {
+          "raw_mae": 0.4324406386673716,
+          "raw_mse": 0.3002847300241883,
+          "images": 256,
+          "standardized_mae": 0.47007892208550917,
+          "standardized_mse": 0.35597028078836745,
+          "normalized_concepts": 37
+        }
+      },
+      {
+        "method": "lfcbm",
+        "setting": "contrast_5",
+        "source": "artifacts/ood/cub/resnet18/paired/seed42/contrast_5_lfcbm.npz",
+        "train_reference": "artifacts/matched/lf/cub/rn18_imagenet/paired_augmentation/seed42/lfcbm_train_original.npz",
+        "quality": {
+          "mAP": 0.3108958089272829,
+          "pearson_macro": 0.10949217100529973,
+          "spearman_macro": 0.10045138629782815,
+          "concepts": 37,
+          "images": 256,
+          "known_pairs": 7934,
+          "mAP_evaluable_concepts": 37,
+          "correlation_evaluable_concepts": 37
+        },
+        "shift": {
+          "raw_mae": 0.8279646730700355,
+          "raw_mse": 1.0973813941864612,
+          "images": 256,
+          "standardized_mae": 0.9007751741885499,
+          "standardized_mse": 1.3074426210173353,
+          "normalized_concepts": 37
+        }
+      },
+      {
+        "method": "lfcbm",
+        "setting": "jpeg_1",
+        "source": "artifacts/ood/cub/resnet18/paired/seed42/jpeg_1_lfcbm.npz",
+        "train_reference": "artifacts/matched/lf/cub/rn18_imagenet/paired_augmentation/seed42/lfcbm_train_original.npz",
+        "quality": {
+          "mAP": 0.3794823344313615,
+          "pearson_macro": 0.17848067189215783,
+          "spearman_macro": 0.15692867517024187,
+          "concepts": 37,
+          "images": 256,
+          "known_pairs": 7934,
+          "mAP_evaluable_concepts": 37,
+          "correlation_evaluable_concepts": 37
+        },
+        "shift": {
+          "raw_mae": 0.2850691213918808,
+          "raw_mse": 0.13518723775238212,
+          "images": 256,
+          "standardized_mae": 0.3132039671920547,
+          "standardized_mse": 0.16617298176906387,
+          "normalized_concepts": 37
+        }
+      },
+      {
+        "method": "lfcbm",
+        "setting": "jpeg_3",
+        "source": "artifacts/ood/cub/resnet18/paired/seed42/jpeg_3_lfcbm.npz",
+        "train_reference": "artifacts/matched/lf/cub/rn18_imagenet/paired_augmentation/seed42/lfcbm_train_original.npz",
+        "quality": {
+          "mAP": 0.3699871944709252,
+          "pearson_macro": 0.1711693221032617,
+          "spearman_macro": 0.1525904978823763,
+          "concepts": 37,
+          "images": 256,
+          "known_pairs": 7934,
+          "mAP_evaluable_concepts": 37,
+          "correlation_evaluable_concepts": 37
+        },
+        "shift": {
+          "raw_mae": 0.4375754073346097,
+          "raw_mse": 0.3226156601819993,
+          "images": 256,
+          "standardized_mae": 0.47995007112015015,
+          "standardized_mse": 0.39473744754380125,
+          "normalized_concepts": 37
+        }
+      },
+      {
+        "method": "lfcbm",
+        "setting": "jpeg_5",
+        "source": "artifacts/ood/cub/resnet18/paired/seed42/jpeg_5_lfcbm.npz",
+        "train_reference": "artifacts/matched/lf/cub/rn18_imagenet/paired_augmentation/seed42/lfcbm_train_original.npz",
+        "quality": {
+          "mAP": 0.35767635977425594,
+          "pearson_macro": 0.15790319082873117,
+          "spearman_macro": 0.146218547074723,
+          "concepts": 37,
+          "images": 256,
+          "known_pairs": 7934,
+          "mAP_evaluable_concepts": 37,
+          "correlation_evaluable_concepts": 37
+        },
+        "shift": {
+          "raw_mae": 0.8002041322247474,
+          "raw_mse": 1.0454267477856745,
+          "images": 256,
+          "standardized_mae": 0.8780270364569213,
+          "standardized_mse": 1.2830845713748165,
+          "normalized_concepts": 37
+        }
+      },
+      {
+        "method": "lfpi_single",
+        "setting": "original_0",
+        "source": "artifacts/ood/cub/resnet18/paired/seed42/original_0_lfpi_single.npz",
+        "train_reference": "artifacts/matched/lf/cub/rn18_imagenet/paired_augmentation/seed42/single_draw/lfpi_global_train_original.npz",
+        "quality": {
+          "mAP": 0.38522607148609134,
+          "pearson_macro": 0.18064031425247817,
+          "spearman_macro": 0.15806724402866026,
+          "concepts": 37,
+          "images": 256,
+          "known_pairs": 7934,
+          "mAP_evaluable_concepts": 37,
+          "correlation_evaluable_concepts": 37
+        },
+        "shift": {
+          "raw_mae": 0.0,
+          "raw_mse": 0.0,
+          "images": 256,
+          "standardized_mae": 0.0,
+          "standardized_mse": 0.0,
+          "normalized_concepts": 37
+        }
+      },
+      {
+        "method": "lfpi_single",
+        "setting": "gaussian_noise_1",
+        "source": "artifacts/ood/cub/resnet18/paired/seed42/gaussian_noise_1_lfpi_single.npz",
+        "train_reference": "artifacts/matched/lf/cub/rn18_imagenet/paired_augmentation/seed42/single_draw/lfpi_global_train_original.npz",
+        "quality": {
+          "mAP": 0.37638030064000233,
+          "pearson_macro": 0.1773956652340845,
+          "spearman_macro": 0.1579739416145627,
+          "concepts": 37,
+          "images": 256,
+          "known_pairs": 7934,
+          "mAP_evaluable_concepts": 37,
+          "correlation_evaluable_concepts": 37
+        },
+        "shift": {
+          "raw_mae": 0.371882893118696,
+          "raw_mse": 0.23189894840335395,
+          "images": 256,
+          "standardized_mae": 0.33641673169047565,
+          "standardized_mse": 0.1929370151180727,
+          "normalized_concepts": 37
+        }
+      },
+      {
+        "method": "lfpi_single",
+        "setting": "gaussian_noise_3",
+        "source": "artifacts/ood/cub/resnet18/paired/seed42/gaussian_noise_3_lfpi_single.npz",
+        "train_reference": "artifacts/matched/lf/cub/rn18_imagenet/paired_augmentation/seed42/single_draw/lfpi_global_train_original.npz",
+        "quality": {
+          "mAP": 0.3510171879578103,
+          "pearson_macro": 0.16400422494337033,
+          "spearman_macro": 0.1480590869239788,
+          "concepts": 37,
+          "images": 256,
+          "known_pairs": 7934,
+          "mAP_evaluable_concepts": 37,
+          "correlation_evaluable_concepts": 37
+        },
+        "shift": {
+          "raw_mae": 0.790814851841153,
+          "raw_mse": 1.004252950151668,
+          "images": 256,
+          "standardized_mae": 0.7147427813690226,
+          "standardized_mse": 0.8326494890583366,
+          "normalized_concepts": 37
+        }
+      },
+      {
+        "method": "lfpi_single",
+        "setting": "gaussian_noise_5",
+        "source": "artifacts/ood/cub/resnet18/paired/seed42/gaussian_noise_5_lfpi_single.npz",
+        "train_reference": "artifacts/matched/lf/cub/rn18_imagenet/paired_augmentation/seed42/single_draw/lfpi_global_train_original.npz",
+        "quality": {
+          "mAP": 0.3058122766009257,
+          "pearson_macro": 0.12657794682296594,
+          "spearman_macro": 0.11830521905754411,
+          "concepts": 37,
+          "images": 256,
+          "known_pairs": 7934,
+          "mAP_evaluable_concepts": 37,
+          "correlation_evaluable_concepts": 37
+        },
+        "shift": {
+          "raw_mae": 1.2829377317529589,
+          "raw_mse": 2.504956896121449,
+          "images": 256,
+          "standardized_mae": 1.164296668686851,
+          "standardized_mse": 2.1046466804178157,
+          "normalized_concepts": 37
+        }
+      },
+      {
+        "method": "lfpi_single",
+        "setting": "gaussian_blur_1",
+        "source": "artifacts/ood/cub/resnet18/paired/seed42/gaussian_blur_1_lfpi_single.npz",
+        "train_reference": "artifacts/matched/lf/cub/rn18_imagenet/paired_augmentation/seed42/single_draw/lfpi_global_train_original.npz",
+        "quality": {
+          "mAP": 0.3787851269875149,
+          "pearson_macro": 0.18141306673699598,
+          "spearman_macro": 0.15945589670877616,
+          "concepts": 37,
+          "images": 256,
+          "known_pairs": 7934,
+          "mAP_evaluable_concepts": 37,
+          "correlation_evaluable_concepts": 37
+        },
+        "shift": {
+          "raw_mae": 0.15886273466779552,
+          "raw_mse": 0.04185525665942816,
+          "images": 256,
+          "standardized_mae": 0.14389409843075068,
+          "standardized_mse": 0.03496145877083689,
+          "normalized_concepts": 37
+        }
+      },
+      {
+        "method": "lfpi_single",
+        "setting": "gaussian_blur_3",
+        "source": "artifacts/ood/cub/resnet18/paired/seed42/gaussian_blur_3_lfpi_single.npz",
+        "train_reference": "artifacts/matched/lf/cub/rn18_imagenet/paired_augmentation/seed42/single_draw/lfpi_global_train_original.npz",
+        "quality": {
+          "mAP": 0.3721219040770799,
+          "pearson_macro": 0.19120425260237478,
+          "spearman_macro": 0.1701627726484129,
+          "concepts": 37,
+          "images": 256,
+          "known_pairs": 7934,
+          "mAP_evaluable_concepts": 37,
+          "correlation_evaluable_concepts": 37
+        },
+        "shift": {
+          "raw_mae": 0.6173466136221784,
+          "raw_mse": 0.6493631137238712,
+          "images": 256,
+          "standardized_mae": 0.5599151485561578,
+          "standardized_mse": 0.5459672625367851,
+          "normalized_concepts": 37
+        }
+      },
+      {
+        "method": "lfpi_single",
+        "setting": "gaussian_blur_5",
+        "source": "artifacts/ood/cub/resnet18/paired/seed42/gaussian_blur_5_lfpi_single.npz",
+        "train_reference": "artifacts/matched/lf/cub/rn18_imagenet/paired_augmentation/seed42/single_draw/lfpi_global_train_original.npz",
+        "quality": {
+          "mAP": 0.356007755701396,
+          "pearson_macro": 0.17796270423726224,
+          "spearman_macro": 0.15785688522425353,
+          "concepts": 37,
+          "images": 256,
+          "known_pairs": 7934,
+          "mAP_evaluable_concepts": 37,
+          "correlation_evaluable_concepts": 37
+        },
+        "shift": {
+          "raw_mae": 0.9424600737662067,
+          "raw_mse": 1.461205846516807,
+          "images": 256,
+          "standardized_mae": 0.8555355496205668,
+          "standardized_mse": 1.2305232821566503,
+          "normalized_concepts": 37
+        }
+      },
+      {
+        "method": "lfpi_single",
+        "setting": "contrast_1",
+        "source": "artifacts/ood/cub/resnet18/paired/seed42/contrast_1_lfpi_single.npz",
+        "train_reference": "artifacts/matched/lf/cub/rn18_imagenet/paired_augmentation/seed42/single_draw/lfpi_global_train_original.npz",
+        "quality": {
+          "mAP": 0.38631439786996363,
+          "pearson_macro": 0.18062775854443802,
+          "spearman_macro": 0.15929592008333143,
+          "concepts": 37,
+          "images": 256,
+          "known_pairs": 7934,
+          "mAP_evaluable_concepts": 37,
+          "correlation_evaluable_concepts": 37
+        },
+        "shift": {
+          "raw_mae": 0.14878798027503945,
+          "raw_mse": 0.03689350472810701,
+          "images": 256,
+          "standardized_mae": 0.13428199241347907,
+          "standardized_mse": 0.030369272813416892,
+          "normalized_concepts": 37
+        }
+      },
+      {
+        "method": "lfpi_single",
+        "setting": "contrast_3",
+        "source": "artifacts/ood/cub/resnet18/paired/seed42/contrast_3_lfpi_single.npz",
+        "train_reference": "artifacts/matched/lf/cub/rn18_imagenet/paired_augmentation/seed42/single_draw/lfpi_global_train_original.npz",
+        "quality": {
+          "mAP": 0.36635926418151266,
+          "pearson_macro": 0.16600854042620322,
+          "spearman_macro": 0.14971149423696622,
+          "concepts": 37,
+          "images": 256,
+          "known_pairs": 7934,
+          "mAP_evaluable_concepts": 37,
+          "correlation_evaluable_concepts": 37
+        },
+        "shift": {
+          "raw_mae": 0.4766340462064543,
+          "raw_mse": 0.3677930248943617,
+          "images": 256,
+          "standardized_mae": 0.4283841810690773,
+          "standardized_mse": 0.2985581909517928,
+          "normalized_concepts": 37
+        }
+      },
+      {
+        "method": "lfpi_single",
+        "setting": "contrast_5",
+        "source": "artifacts/ood/cub/resnet18/paired/seed42/contrast_5_lfpi_single.npz",
+        "train_reference": "artifacts/matched/lf/cub/rn18_imagenet/paired_augmentation/seed42/single_draw/lfpi_global_train_original.npz",
+        "quality": {
+          "mAP": 0.31950281169956785,
+          "pearson_macro": 0.12143074570430375,
+          "spearman_macro": 0.1125266091623945,
+          "concepts": 37,
+          "images": 256,
+          "known_pairs": 7934,
+          "mAP_evaluable_concepts": 37,
+          "correlation_evaluable_concepts": 37
+        },
+        "shift": {
+          "raw_mae": 0.9056784982191997,
+          "raw_mse": 1.3242455280486884,
+          "images": 256,
+          "standardized_mae": 0.8174323368011691,
+          "standardized_mse": 1.094381717760101,
+          "normalized_concepts": 37
+        }
+      },
+      {
+        "method": "lfpi_single",
+        "setting": "jpeg_1",
+        "source": "artifacts/ood/cub/resnet18/paired/seed42/jpeg_1_lfpi_single.npz",
+        "train_reference": "artifacts/matched/lf/cub/rn18_imagenet/paired_augmentation/seed42/single_draw/lfpi_global_train_original.npz",
+        "quality": {
+          "mAP": 0.37795802798047495,
+          "pearson_macro": 0.18415328763168895,
+          "spearman_macro": 0.16349176020527229,
+          "concepts": 37,
+          "images": 256,
+          "known_pairs": 7934,
+          "mAP_evaluable_concepts": 37,
+          "correlation_evaluable_concepts": 37
+        },
+        "shift": {
+          "raw_mae": 0.31015309136375196,
+          "raw_mse": 0.1592143569540831,
+          "images": 256,
+          "standardized_mae": 0.2837533991164222,
+          "standardized_mse": 0.13774287120847664,
+          "normalized_concepts": 37
+        }
+      },
+      {
+        "method": "lfpi_single",
+        "setting": "jpeg_3",
+        "source": "artifacts/ood/cub/resnet18/paired/seed42/jpeg_3_lfpi_single.npz",
+        "train_reference": "artifacts/matched/lf/cub/rn18_imagenet/paired_augmentation/seed42/single_draw/lfpi_global_train_original.npz",
+        "quality": {
+          "mAP": 0.3671050571437143,
+          "pearson_macro": 0.1783796463800503,
+          "spearman_macro": 0.1605732251491246,
+          "concepts": 37,
+          "images": 256,
+          "known_pairs": 7934,
+          "mAP_evaluable_concepts": 37,
+          "correlation_evaluable_concepts": 37
+        },
+        "shift": {
+          "raw_mae": 0.4857445505786947,
+          "raw_mse": 0.3978871526588025,
+          "images": 256,
+          "standardized_mae": 0.4428485426992771,
+          "standardized_mse": 0.34045182537956975,
+          "normalized_concepts": 37
+        }
+      },
+      {
+        "method": "lfpi_single",
+        "setting": "jpeg_5",
+        "source": "artifacts/ood/cub/resnet18/paired/seed42/jpeg_5_lfpi_single.npz",
+        "train_reference": "artifacts/matched/lf/cub/rn18_imagenet/paired_augmentation/seed42/single_draw/lfpi_global_train_original.npz",
+        "quality": {
+          "mAP": 0.36014996310857844,
+          "pearson_macro": 0.16476898851859106,
+          "spearman_macro": 0.1509795520198564,
+          "concepts": 37,
+          "images": 256,
+          "known_pairs": 7934,
+          "mAP_evaluable_concepts": 37,
+          "correlation_evaluable_concepts": 37
+        },
+        "shift": {
+          "raw_mae": 0.8713223613633619,
+          "raw_mse": 1.2427095358020857,
+          "images": 256,
+          "standardized_mae": 0.7954268418483852,
+          "standardized_mse": 1.072115370911769,
+          "normalized_concepts": 37
+        }
+      },
+      {
+        "method": "pini_mean",
+        "setting": "original_0",
+        "source": "artifacts/ood/cub/resnet18/paired/seed42/original_0_pini_mean.npz",
+        "train_reference": "artifacts/pini_matched/cub/exports/mean/train_original.npz",
+        "quality": {
+          "mAP": 0.5644159761618196,
+          "pearson_macro": 0.4279842582102413,
+          "spearman_macro": 0.35171674227873734,
+          "concepts": 37,
+          "images": 256,
+          "known_pairs": 7934,
+          "mAP_evaluable_concepts": 37,
+          "correlation_evaluable_concepts": 37
+        },
+        "shift": {
+          "raw_mae": 0.0,
+          "raw_mse": 0.0,
+          "images": 256,
+          "standardized_mae": 0.0,
+          "standardized_mse": 0.0,
+          "normalized_concepts": 37
+        }
+      },
+      {
+        "method": "pini_mean",
+        "setting": "gaussian_noise_1",
+        "source": "artifacts/ood/cub/resnet18/paired/seed42/gaussian_noise_1_pini_mean.npz",
+        "train_reference": "artifacts/pini_matched/cub/exports/mean/train_original.npz",
+        "quality": {
+          "mAP": 0.5608631358064955,
+          "pearson_macro": 0.4167382698235411,
+          "spearman_macro": 0.34300657790450995,
+          "concepts": 37,
+          "images": 256,
+          "known_pairs": 7934,
+          "mAP_evaluable_concepts": 37,
+          "correlation_evaluable_concepts": 37
+        },
+        "shift": {
+          "raw_mae": 0.08179428209595048,
+          "raw_mse": 0.016179035833410623,
+          "images": 256,
+          "standardized_mae": 0.2686904456920727,
+          "standardized_mse": 0.16989499514091302,
+          "normalized_concepts": 37
+        }
+      },
+      {
+        "method": "pini_mean",
+        "setting": "gaussian_noise_3",
+        "source": "artifacts/ood/cub/resnet18/paired/seed42/gaussian_noise_3_pini_mean.npz",
+        "train_reference": "artifacts/pini_matched/cub/exports/mean/train_original.npz",
+        "quality": {
+          "mAP": 0.4989429876734969,
+          "pearson_macro": 0.36616077291474347,
+          "spearman_macro": 0.3080458682383329,
+          "concepts": 37,
+          "images": 256,
+          "known_pairs": 7934,
+          "mAP_evaluable_concepts": 37,
+          "correlation_evaluable_concepts": 37
+        },
+        "shift": {
+          "raw_mae": 0.15836974532769457,
+          "raw_mse": 0.05515544715982222,
+          "images": 256,
+          "standardized_mae": 0.520727887378096,
+          "standardized_mse": 0.5841517843454687,
+          "normalized_concepts": 37
+        }
+      },
+      {
+        "method": "pini_mean",
+        "setting": "gaussian_noise_5",
+        "source": "artifacts/ood/cub/resnet18/paired/seed42/gaussian_noise_5_pini_mean.npz",
+        "train_reference": "artifacts/pini_matched/cub/exports/mean/train_original.npz",
+        "quality": {
+          "mAP": 0.4192706788403705,
+          "pearson_macro": 0.276597336756538,
+          "spearman_macro": 0.23691018113563228,
+          "concepts": 37,
+          "images": 256,
+          "known_pairs": 7934,
+          "mAP_evaluable_concepts": 37,
+          "correlation_evaluable_concepts": 37
+        },
+        "shift": {
+          "raw_mae": 0.22216305986146445,
+          "raw_mse": 0.09735239801844582,
+          "images": 256,
+          "standardized_mae": 0.7294819777716204,
+          "standardized_mse": 1.0335128930947353,
+          "normalized_concepts": 37
+        }
+      },
+      {
+        "method": "pini_mean",
+        "setting": "gaussian_blur_1",
+        "source": "artifacts/ood/cub/resnet18/paired/seed42/gaussian_blur_1_pini_mean.npz",
+        "train_reference": "artifacts/pini_matched/cub/exports/mean/train_original.npz",
+        "quality": {
+          "mAP": 0.5670013457400057,
+          "pearson_macro": 0.4280137476479652,
+          "spearman_macro": 0.35485332049974533,
+          "concepts": 37,
+          "images": 256,
+          "known_pairs": 7934,
+          "mAP_evaluable_concepts": 37,
+          "correlation_evaluable_concepts": 37
+        },
+        "shift": {
+          "raw_mae": 0.035510102976582636,
+          "raw_mse": 0.0032004315718278,
+          "images": 256,
+          "standardized_mae": 0.11706108624504172,
+          "standardized_mse": 0.03410012864267548,
+          "normalized_concepts": 37
+        }
+      },
+      {
+        "method": "pini_mean",
+        "setting": "gaussian_blur_3",
+        "source": "artifacts/ood/cub/resnet18/paired/seed42/gaussian_blur_3_pini_mean.npz",
+        "train_reference": "artifacts/pini_matched/cub/exports/mean/train_original.npz",
+        "quality": {
+          "mAP": 0.5425332960523935,
+          "pearson_macro": 0.3966749177105418,
+          "spearman_macro": 0.33576915024068926,
+          "concepts": 37,
+          "images": 256,
+          "known_pairs": 7934,
+          "mAP_evaluable_concepts": 37,
+          "correlation_evaluable_concepts": 37
+        },
+        "shift": {
+          "raw_mae": 0.1303513393080136,
+          "raw_mse": 0.037991118969814594,
+          "images": 256,
+          "standardized_mae": 0.4289644719959377,
+          "standardized_mse": 0.4028437108854935,
+          "normalized_concepts": 37
+        }
+      },
+      {
+        "method": "pini_mean",
+        "setting": "gaussian_blur_5",
+        "source": "artifacts/ood/cub/resnet18/paired/seed42/gaussian_blur_5_pini_mean.npz",
+        "train_reference": "artifacts/pini_matched/cub/exports/mean/train_original.npz",
+        "quality": {
+          "mAP": 0.47636321682669985,
+          "pearson_macro": 0.3304919172884523,
+          "spearman_macro": 0.281964242743158,
+          "concepts": 37,
+          "images": 256,
+          "known_pairs": 7934,
+          "mAP_evaluable_concepts": 37,
+          "correlation_evaluable_concepts": 37
+        },
+        "shift": {
+          "raw_mae": 0.19553790289955453,
+          "raw_mse": 0.07646477310824171,
+          "images": 256,
+          "standardized_mae": 0.6427567872343172,
+          "standardized_mse": 0.8113183729620248,
+          "normalized_concepts": 37
+        }
+      },
+      {
+        "method": "pini_mean",
+        "setting": "contrast_1",
+        "source": "artifacts/ood/cub/resnet18/paired/seed42/contrast_1_pini_mean.npz",
+        "train_reference": "artifacts/pini_matched/cub/exports/mean/train_original.npz",
+        "quality": {
+          "mAP": 0.5650824165469422,
+          "pearson_macro": 0.4267519377244807,
+          "spearman_macro": 0.35127939357914906,
+          "concepts": 37,
+          "images": 256,
+          "known_pairs": 7934,
+          "mAP_evaluable_concepts": 37,
+          "correlation_evaluable_concepts": 37
+        },
+        "shift": {
+          "raw_mae": 0.03404143030404135,
+          "raw_mse": 0.0028433818355704616,
+          "images": 256,
+          "standardized_mae": 0.11172403774513105,
+          "standardized_mse": 0.02987605101736553,
+          "normalized_concepts": 37
+        }
+      },
+      {
+        "method": "pini_mean",
+        "setting": "contrast_3",
+        "source": "artifacts/ood/cub/resnet18/paired/seed42/contrast_3_pini_mean.npz",
+        "train_reference": "artifacts/pini_matched/cub/exports/mean/train_original.npz",
+        "quality": {
+          "mAP": 0.5244832462311368,
+          "pearson_macro": 0.38944539056209215,
+          "spearman_macro": 0.3268881182504618,
+          "concepts": 37,
+          "images": 256,
+          "known_pairs": 7934,
+          "mAP_evaluable_concepts": 37,
+          "correlation_evaluable_concepts": 37
+        },
+        "shift": {
+          "raw_mae": 0.11615438408200374,
+          "raw_mse": 0.030616398113025224,
+          "images": 256,
+          "standardized_mae": 0.38098615815360704,
+          "standardized_mse": 0.320854665170899,
+          "normalized_concepts": 37
+        }
+      },
+      {
+        "method": "pini_mean",
+        "setting": "contrast_5",
+        "source": "artifacts/ood/cub/resnet18/paired/seed42/contrast_5_pini_mean.npz",
+        "train_reference": "artifacts/pini_matched/cub/exports/mean/train_original.npz",
+        "quality": {
+          "mAP": 0.420687880355945,
+          "pearson_macro": 0.2816653298936223,
+          "spearman_macro": 0.246162542423367,
+          "concepts": 37,
+          "images": 256,
+          "known_pairs": 7934,
+          "mAP_evaluable_concepts": 37,
+          "correlation_evaluable_concepts": 37
+        },
+        "shift": {
+          "raw_mae": 0.21400351844453216,
+          "raw_mse": 0.09041010047063756,
+          "images": 256,
+          "standardized_mae": 0.7008925286014986,
+          "standardized_mse": 0.955839373631157,
+          "normalized_concepts": 37
+        }
+      },
+      {
+        "method": "pini_mean",
+        "setting": "jpeg_1",
+        "source": "artifacts/ood/cub/resnet18/paired/seed42/jpeg_1_pini_mean.npz",
+        "train_reference": "artifacts/pini_matched/cub/exports/mean/train_original.npz",
+        "quality": {
+          "mAP": 0.5525163430090021,
+          "pearson_macro": 0.4269851448663145,
+          "spearman_macro": 0.3514328918232394,
+          "concepts": 37,
+          "images": 256,
+          "known_pairs": 7934,
+          "mAP_evaluable_concepts": 37,
+          "correlation_evaluable_concepts": 37
+        },
+        "shift": {
+          "raw_mae": 0.06418884641026644,
+          "raw_mse": 0.010009061171846684,
+          "images": 256,
+          "standardized_mae": 0.21214977167193044,
+          "standardized_mse": 0.10772190138521125,
+          "normalized_concepts": 37
+        }
+      },
+      {
+        "method": "pini_mean",
+        "setting": "jpeg_3",
+        "source": "artifacts/ood/cub/resnet18/paired/seed42/jpeg_3_pini_mean.npz",
+        "train_reference": "artifacts/pini_matched/cub/exports/mean/train_original.npz",
+        "quality": {
+          "mAP": 0.5418641838557355,
+          "pearson_macro": 0.4147763756635285,
+          "spearman_macro": 0.33937558378031957,
+          "concepts": 37,
+          "images": 256,
+          "known_pairs": 7934,
+          "mAP_evaluable_concepts": 37,
+          "correlation_evaluable_concepts": 37
+        },
+        "shift": {
+          "raw_mae": 0.10689005161912202,
+          "raw_mse": 0.026179366794225955,
+          "images": 256,
+          "standardized_mae": 0.352988091635845,
+          "standardized_mse": 0.28078568917864466,
+          "normalized_concepts": 37
+        }
+      },
+      {
+        "method": "pini_mean",
+        "setting": "jpeg_5",
+        "source": "artifacts/ood/cub/resnet18/paired/seed42/jpeg_5_pini_mean.npz",
+        "train_reference": "artifacts/pini_matched/cub/exports/mean/train_original.npz",
+        "quality": {
+          "mAP": 0.48272289653121325,
+          "pearson_macro": 0.3445818308451467,
+          "spearman_macro": 0.28664111150874255,
+          "concepts": 37,
+          "images": 256,
+          "known_pairs": 7934,
+          "mAP_evaluable_concepts": 37,
+          "correlation_evaluable_concepts": 37
+        },
+        "shift": {
+          "raw_mae": 0.18799834885101294,
+          "raw_mse": 0.07478636783941997,
+          "images": 256,
+          "standardized_mae": 0.6164198953258911,
+          "standardized_mse": 0.7866273544145667,
+          "normalized_concepts": 37
+        }
+      },
+      {
+        "method": "pini_noise",
+        "setting": "original_0",
+        "source": "artifacts/ood/cub/resnet18/paired/seed42/original_0_pini_noise.npz",
+        "train_reference": "artifacts/pini_matched/cub/exports/noise/train_original.npz",
+        "quality": {
+          "mAP": 0.5636628475912057,
+          "pearson_macro": 0.42686958520016705,
+          "spearman_macro": 0.35072531198258455,
+          "concepts": 37,
+          "images": 256,
+          "known_pairs": 7934,
+          "mAP_evaluable_concepts": 37,
+          "correlation_evaluable_concepts": 37
+        },
+        "shift": {
+          "raw_mae": 0.0,
+          "raw_mse": 0.0,
+          "images": 256,
+          "standardized_mae": 0.0,
+          "standardized_mse": 0.0,
+          "normalized_concepts": 37
+        }
+      },
+      {
+        "method": "pini_noise",
+        "setting": "gaussian_noise_1",
+        "source": "artifacts/ood/cub/resnet18/paired/seed42/gaussian_noise_1_pini_noise.npz",
+        "train_reference": "artifacts/pini_matched/cub/exports/noise/train_original.npz",
+        "quality": {
+          "mAP": 0.56090335747707,
+          "pearson_macro": 0.41605995132861756,
+          "spearman_macro": 0.3426626692566229,
+          "concepts": 37,
+          "images": 256,
+          "known_pairs": 7934,
+          "mAP_evaluable_concepts": 37,
+          "correlation_evaluable_concepts": 37
+        },
+        "shift": {
+          "raw_mae": 0.0810554122686123,
+          "raw_mse": 0.01590982944713705,
+          "images": 256,
+          "standardized_mae": 0.26662838356015917,
+          "standardized_mse": 0.16763414787154368,
+          "normalized_concepts": 37
+        }
+      },
+      {
+        "method": "pini_noise",
+        "setting": "gaussian_noise_3",
+        "source": "artifacts/ood/cub/resnet18/paired/seed42/gaussian_noise_3_pini_noise.npz",
+        "train_reference": "artifacts/pini_matched/cub/exports/noise/train_original.npz",
+        "quality": {
+          "mAP": 0.4998417658386983,
+          "pearson_macro": 0.36600640394027956,
+          "spearman_macro": 0.30831027397989746,
+          "concepts": 37,
+          "images": 256,
+          "known_pairs": 7934,
+          "mAP_evaluable_concepts": 37,
+          "correlation_evaluable_concepts": 37
+        },
+        "shift": {
+          "raw_mae": 0.15689261024631354,
+          "raw_mse": 0.05406941296886598,
+          "images": 256,
+          "standardized_mae": 0.5167655393802197,
+          "standardized_mse": 0.5747369234093771,
+          "normalized_concepts": 37
+        }
+      },
+      {
+        "method": "pini_noise",
+        "setting": "gaussian_noise_5",
+        "source": "artifacts/ood/cub/resnet18/paired/seed42/gaussian_noise_5_pini_noise.npz",
+        "train_reference": "artifacts/pini_matched/cub/exports/noise/train_original.npz",
+        "quality": {
+          "mAP": 0.4164851041353956,
+          "pearson_macro": 0.2761009979663031,
+          "spearman_macro": 0.2371639152840365,
+          "concepts": 37,
+          "images": 256,
+          "known_pairs": 7934,
+          "mAP_evaluable_concepts": 37,
+          "correlation_evaluable_concepts": 37
+        },
+        "shift": {
+          "raw_mae": 0.2211896474094344,
+          "raw_mse": 0.09660467591403514,
+          "images": 256,
+          "standardized_mae": 0.7276099352303115,
+          "standardized_mse": 1.0300837356185073,
+          "normalized_concepts": 37
+        }
+      },
+      {
+        "method": "pini_noise",
+        "setting": "gaussian_blur_1",
+        "source": "artifacts/ood/cub/resnet18/paired/seed42/gaussian_blur_1_pini_noise.npz",
+        "train_reference": "artifacts/pini_matched/cub/exports/noise/train_original.npz",
+        "quality": {
+          "mAP": 0.5668532419568848,
+          "pearson_macro": 0.4277710054710642,
+          "spearman_macro": 0.35472931209710507,
+          "concepts": 37,
+          "images": 256,
+          "known_pairs": 7934,
+          "mAP_evaluable_concepts": 37,
+          "correlation_evaluable_concepts": 37
+        },
+        "shift": {
+          "raw_mae": 0.0352205720375196,
+          "raw_mse": 0.0031931247026141547,
+          "images": 256,
+          "standardized_mae": 0.1161075448555947,
+          "standardized_mse": 0.033872519523413275,
+          "normalized_concepts": 37
+        }
+      },
+      {
+        "method": "pini_noise",
+        "setting": "gaussian_blur_3",
+        "source": "artifacts/ood/cub/resnet18/paired/seed42/gaussian_blur_3_pini_noise.npz",
+        "train_reference": "artifacts/pini_matched/cub/exports/noise/train_original.npz",
+        "quality": {
+          "mAP": 0.5433580781402043,
+          "pearson_macro": 0.3980593731839301,
+          "spearman_macro": 0.335569152069918,
+          "concepts": 37,
+          "images": 256,
+          "known_pairs": 7934,
+          "mAP_evaluable_concepts": 37,
+          "correlation_evaluable_concepts": 37
+        },
+        "shift": {
+          "raw_mae": 0.1288348222137378,
+          "raw_mse": 0.037251769995786464,
+          "images": 256,
+          "standardized_mae": 0.4246407894356137,
+          "standardized_mse": 0.39599730081425943,
+          "normalized_concepts": 37
+        }
+      },
+      {
+        "method": "pini_noise",
+        "setting": "gaussian_blur_5",
+        "source": "artifacts/ood/cub/resnet18/paired/seed42/gaussian_blur_5_pini_noise.npz",
+        "train_reference": "artifacts/pini_matched/cub/exports/noise/train_original.npz",
+        "quality": {
+          "mAP": 0.47611845637971345,
+          "pearson_macro": 0.33252464266546555,
+          "spearman_macro": 0.2815195477695194,
+          "concepts": 37,
+          "images": 256,
+          "known_pairs": 7934,
+          "mAP_evaluable_concepts": 37,
+          "correlation_evaluable_concepts": 37
+        },
+        "shift": {
+          "raw_mae": 0.19393211123902931,
+          "raw_mse": 0.0755614763233802,
+          "images": 256,
+          "standardized_mae": 0.6385712404456736,
+          "standardized_mse": 0.8049178863064657,
+          "normalized_concepts": 37
+        }
+      },
+      {
+        "method": "pini_noise",
+        "setting": "contrast_1",
+        "source": "artifacts/ood/cub/resnet18/paired/seed42/contrast_1_pini_noise.npz",
+        "train_reference": "artifacts/pini_matched/cub/exports/noise/train_original.npz",
+        "quality": {
+          "mAP": 0.5627808835251056,
+          "pearson_macro": 0.4258362754255373,
+          "spearman_macro": 0.35082489727315425,
+          "concepts": 37,
+          "images": 256,
+          "known_pairs": 7934,
+          "mAP_evaluable_concepts": 37,
+          "correlation_evaluable_concepts": 37
+        },
+        "shift": {
+          "raw_mae": 0.03356303744393637,
+          "raw_mse": 0.0027717958131437724,
+          "images": 256,
+          "standardized_mae": 0.11034886161939483,
+          "standardized_mse": 0.029282306987008126,
+          "normalized_concepts": 37
+        }
+      },
+      {
+        "method": "pini_noise",
+        "setting": "contrast_3",
+        "source": "artifacts/ood/cub/resnet18/paired/seed42/contrast_3_pini_noise.npz",
+        "train_reference": "artifacts/pini_matched/cub/exports/noise/train_original.npz",
+        "quality": {
+          "mAP": 0.5228406131472668,
+          "pearson_macro": 0.3912573828925799,
+          "spearman_macro": 0.327945535407268,
+          "concepts": 37,
+          "images": 256,
+          "known_pairs": 7934,
+          "mAP_evaluable_concepts": 37,
+          "correlation_evaluable_concepts": 37
+        },
+        "shift": {
+          "raw_mae": 0.11516399537213727,
+          "raw_mse": 0.029930596606797383,
+          "images": 256,
+          "standardized_mae": 0.37798795992925793,
+          "standardized_mse": 0.3143866829388523,
+          "normalized_concepts": 37
+        }
+      },
+      {
+        "method": "pini_noise",
+        "setting": "contrast_5",
+        "source": "artifacts/ood/cub/resnet18/paired/seed42/contrast_5_pini_noise.npz",
+        "train_reference": "artifacts/pini_matched/cub/exports/noise/train_original.npz",
+        "quality": {
+          "mAP": 0.41325502326180674,
+          "pearson_macro": 0.2789214754423215,
+          "spearman_macro": 0.24520668896775435,
+          "concepts": 37,
+          "images": 256,
+          "known_pairs": 7934,
+          "mAP_evaluable_concepts": 37,
+          "correlation_evaluable_concepts": 37
+        },
+        "shift": {
+          "raw_mae": 0.21307999789984908,
+          "raw_mse": 0.08966939658321325,
+          "images": 256,
+          "standardized_mae": 0.6982071429894448,
+          "standardized_mse": 0.9484623829682663,
+          "normalized_concepts": 37
+        }
+      },
+      {
+        "method": "pini_noise",
+        "setting": "jpeg_1",
+        "source": "artifacts/ood/cub/resnet18/paired/seed42/jpeg_1_pini_noise.npz",
+        "train_reference": "artifacts/pini_matched/cub/exports/noise/train_original.npz",
+        "quality": {
+          "mAP": 0.5526554997466508,
+          "pearson_macro": 0.4264992767532128,
+          "spearman_macro": 0.3503935886834347,
+          "concepts": 37,
+          "images": 256,
+          "known_pairs": 7934,
+          "mAP_evaluable_concepts": 37,
+          "correlation_evaluable_concepts": 37
+        },
+        "shift": {
+          "raw_mae": 0.06332950084997839,
+          "raw_mse": 0.00975062046727154,
+          "images": 256,
+          "standardized_mae": 0.20959450681917416,
+          "standardized_mse": 0.10528067454263206,
+          "normalized_concepts": 37
+        }
+      },
+      {
+        "method": "pini_noise",
+        "setting": "jpeg_3",
+        "source": "artifacts/ood/cub/resnet18/paired/seed42/jpeg_3_pini_noise.npz",
+        "train_reference": "artifacts/pini_matched/cub/exports/noise/train_original.npz",
+        "quality": {
+          "mAP": 0.5431242560087188,
+          "pearson_macro": 0.4165951078429712,
+          "spearman_macro": 0.34037332623164906,
+          "concepts": 37,
+          "images": 256,
+          "known_pairs": 7934,
+          "mAP_evaluable_concepts": 37,
+          "correlation_evaluable_concepts": 37
+        },
+        "shift": {
+          "raw_mae": 0.10572071009437634,
+          "raw_mse": 0.0258198070995527,
+          "images": 256,
+          "standardized_mae": 0.3493563598189704,
+          "standardized_mse": 0.27714901955272225,
+          "normalized_concepts": 37
+        }
+      },
+      {
+        "method": "pini_noise",
+        "setting": "jpeg_5",
+        "source": "artifacts/ood/cub/resnet18/paired/seed42/jpeg_5_pini_noise.npz",
+        "train_reference": "artifacts/pini_matched/cub/exports/noise/train_original.npz",
+        "quality": {
+          "mAP": 0.48545154095860193,
+          "pearson_macro": 0.347959511867802,
+          "spearman_macro": 0.2866922053560418,
+          "concepts": 37,
+          "images": 256,
+          "known_pairs": 7934,
+          "mAP_evaluable_concepts": 37,
+          "correlation_evaluable_concepts": 37
+        },
+        "shift": {
+          "raw_mae": 0.1847013970633872,
+          "raw_mse": 0.0728949861482911,
+          "images": 256,
+          "standardized_mae": 0.6062011422262952,
+          "standardized_mse": 0.767044712781396,
+          "normalized_concepts": 37
+        }
+      }
+    ]
+  },
+  {
+    "dataset": "waterbirds",
+    "images": 256,
+    "concept_indices": [
+      1,
+      6,
+      8,
+      9,
+      12,
+      18,
+      21,
+      27,
+      29,
+      33,
+      34,
+      35,
+      36,
+      41,
+      46,
+      53,
+      56,
+      58,
+      62,
+      66,
+      70,
+      71,
+      72,
+      74,
+      75,
+      91,
+      92,
+      93,
+      94,
+      95,
+      96,
+      98,
+      100,
+      102,
+      104,
+      105,
+      107
+    ],
+    "backbone": "ImageNet ResNet18",
+    "training_views": [
+      "original",
+      "changed"
+    ],
+    "training_seed": 42,
+    "noise_draws": 1,
+    "inference_noise_seed": 4242,
+    "protocol_source": "artifacts/ood/waterbirds/resnet18/paired/seed42/protocol.json",
+    "records": [
+      {
+        "method": "lfcbm",
+        "setting": "original_0",
+        "source": "artifacts/ood/waterbirds/resnet18/paired/seed42/original_0_lfcbm.npz",
+        "train_reference": "artifacts/matched/lf/waterbirds/rn18_imagenet/paired_augmentation/seed42/lfcbm_train_original.npz",
+        "quality": {
+          "mAP": 0.38010452869280836,
+          "pearson_macro": 0.169839237302159,
+          "spearman_macro": 0.14600429761212022,
+          "concepts": 37,
+          "images": 256,
+          "known_pairs": 7934,
+          "mAP_evaluable_concepts": 37,
+          "correlation_evaluable_concepts": 37
+        },
+        "shift": {
+          "raw_mae": 0.0,
+          "raw_mse": 0.0,
+          "images": 256,
+          "standardized_mae": 0.0,
+          "standardized_mse": 0.0,
+          "normalized_concepts": 37
+        }
+      },
+      {
+        "method": "lfcbm",
+        "setting": "gaussian_noise_1",
+        "source": "artifacts/ood/waterbirds/resnet18/paired/seed42/gaussian_noise_1_lfcbm.npz",
+        "train_reference": "artifacts/matched/lf/waterbirds/rn18_imagenet/paired_augmentation/seed42/lfcbm_train_original.npz",
+        "quality": {
+          "mAP": 0.3743345530501211,
+          "pearson_macro": 0.16599716248958615,
+          "spearman_macro": 0.14570636511301444,
+          "concepts": 37,
+          "images": 256,
+          "known_pairs": 7934,
+          "mAP_evaluable_concepts": 37,
+          "correlation_evaluable_concepts": 37
+        },
+        "shift": {
+          "raw_mae": 0.3371830391624772,
+          "raw_mse": 0.1894689231305367,
+          "images": 256,
+          "standardized_mae": 0.36761265568456364,
+          "standardized_mse": 0.22712305156053755,
+          "normalized_concepts": 37
+        }
+      },
+      {
+        "method": "lfcbm",
+        "setting": "gaussian_noise_3",
+        "source": "artifacts/ood/waterbirds/resnet18/paired/seed42/gaussian_noise_3_lfcbm.npz",
+        "train_reference": "artifacts/matched/lf/waterbirds/rn18_imagenet/paired_augmentation/seed42/lfcbm_train_original.npz",
+        "quality": {
+          "mAP": 0.3455424639884126,
+          "pearson_macro": 0.15568496576382806,
+          "spearman_macro": 0.14334337128745442,
+          "concepts": 37,
+          "images": 256,
+          "known_pairs": 7934,
+          "mAP_evaluable_concepts": 37,
+          "correlation_evaluable_concepts": 37
+        },
+        "shift": {
+          "raw_mae": 0.7292888834500765,
+          "raw_mse": 0.8480042838746803,
+          "images": 256,
+          "standardized_mae": 0.7946064700976396,
+          "standardized_mse": 1.0133927853827587,
+          "normalized_concepts": 37
+        }
+      },
+      {
+        "method": "lfcbm",
+        "setting": "gaussian_noise_5",
+        "source": "artifacts/ood/waterbirds/resnet18/paired/seed42/gaussian_noise_5_lfcbm.npz",
+        "train_reference": "artifacts/matched/lf/waterbirds/rn18_imagenet/paired_augmentation/seed42/lfcbm_train_original.npz",
+        "quality": {
+          "mAP": 0.2998725360234124,
+          "pearson_macro": 0.11451189317648747,
+          "spearman_macro": 0.10755025297541221,
+          "concepts": 37,
+          "images": 256,
+          "known_pairs": 7934,
+          "mAP_evaluable_concepts": 37,
+          "correlation_evaluable_concepts": 37
+        },
+        "shift": {
+          "raw_mae": 1.2226867423995815,
+          "raw_mse": 2.2338945333610796,
+          "images": 256,
+          "standardized_mae": 1.334740413448135,
+          "standardized_mse": 2.687125847850353,
+          "normalized_concepts": 37
+        }
+      },
+      {
+        "method": "lfcbm",
+        "setting": "gaussian_blur_1",
+        "source": "artifacts/ood/waterbirds/resnet18/paired/seed42/gaussian_blur_1_lfcbm.npz",
+        "train_reference": "artifacts/matched/lf/waterbirds/rn18_imagenet/paired_augmentation/seed42/lfcbm_train_original.npz",
+        "quality": {
+          "mAP": 0.376896687143538,
+          "pearson_macro": 0.17184694644365242,
+          "spearman_macro": 0.14949961746016205,
+          "concepts": 37,
+          "images": 256,
+          "known_pairs": 7934,
+          "mAP_evaluable_concepts": 37,
+          "correlation_evaluable_concepts": 37
+        },
+        "shift": {
+          "raw_mae": 0.14221426918981853,
+          "raw_mse": 0.03379097992880937,
+          "images": 256,
+          "standardized_mae": 0.15540737863226683,
+          "standardized_mse": 0.04076416011984494,
+          "normalized_concepts": 37
+        }
+      },
+      {
+        "method": "lfcbm",
+        "setting": "gaussian_blur_3",
+        "source": "artifacts/ood/waterbirds/resnet18/paired/seed42/gaussian_blur_3_lfcbm.npz",
+        "train_reference": "artifacts/matched/lf/waterbirds/rn18_imagenet/paired_augmentation/seed42/lfcbm_train_original.npz",
+        "quality": {
+          "mAP": 0.3712337110774598,
+          "pearson_macro": 0.1819748339690574,
+          "spearman_macro": 0.15978897497789293,
+          "concepts": 37,
+          "images": 256,
+          "known_pairs": 7934,
+          "mAP_evaluable_concepts": 37,
+          "correlation_evaluable_concepts": 37
+        },
+        "shift": {
+          "raw_mae": 0.5574245465621704,
+          "raw_mse": 0.5229380360226054,
+          "images": 256,
+          "standardized_mae": 0.6098864107691614,
+          "standardized_mse": 0.6344236573963368,
+          "normalized_concepts": 37
+        }
+      },
+      {
+        "method": "lfcbm",
+        "setting": "gaussian_blur_5",
+        "source": "artifacts/ood/waterbirds/resnet18/paired/seed42/gaussian_blur_5_lfcbm.npz",
+        "train_reference": "artifacts/matched/lf/waterbirds/rn18_imagenet/paired_augmentation/seed42/lfcbm_train_original.npz",
+        "quality": {
+          "mAP": 0.3539143488354886,
+          "pearson_macro": 0.17306225293311533,
+          "spearman_macro": 0.15300661596899265,
+          "concepts": 37,
+          "images": 256,
+          "known_pairs": 7934,
+          "mAP_evaluable_concepts": 37,
+          "correlation_evaluable_concepts": 37
+        },
+        "shift": {
+          "raw_mae": 0.8358018240316164,
+          "raw_mse": 1.1417713492856274,
+          "images": 256,
+          "standardized_mae": 0.916654743385768,
+          "standardized_mse": 1.3970876197565236,
+          "normalized_concepts": 37
+        }
+      },
+      {
+        "method": "lfcbm",
+        "setting": "contrast_1",
+        "source": "artifacts/ood/waterbirds/resnet18/paired/seed42/contrast_1_lfcbm.npz",
+        "train_reference": "artifacts/matched/lf/waterbirds/rn18_imagenet/paired_augmentation/seed42/lfcbm_train_original.npz",
+        "quality": {
+          "mAP": 0.38162418713218627,
+          "pearson_macro": 0.1695446151131345,
+          "spearman_macro": 0.14486791169780008,
+          "concepts": 37,
+          "images": 256,
+          "known_pairs": 7934,
+          "mAP_evaluable_concepts": 37,
+          "correlation_evaluable_concepts": 37
+        },
+        "shift": {
+          "raw_mae": 0.13490890855100407,
+          "raw_mse": 0.030246526232622542,
+          "images": 256,
+          "standardized_mae": 0.14709125453011876,
+          "standardized_mse": 0.036224463768145955,
+          "normalized_concepts": 37
+        }
+      },
+      {
+        "method": "lfcbm",
+        "setting": "contrast_3",
+        "source": "artifacts/ood/waterbirds/resnet18/paired/seed42/contrast_3_lfcbm.npz",
+        "train_reference": "artifacts/matched/lf/waterbirds/rn18_imagenet/paired_augmentation/seed42/lfcbm_train_original.npz",
+        "quality": {
+          "mAP": 0.3663611731349471,
+          "pearson_macro": 0.15685616293248658,
+          "spearman_macro": 0.13835881619044063,
+          "concepts": 37,
+          "images": 256,
+          "known_pairs": 7934,
+          "mAP_evaluable_concepts": 37,
+          "correlation_evaluable_concepts": 37
+        },
+        "shift": {
+          "raw_mae": 0.4324435129771649,
+          "raw_mse": 0.3002920077619038,
+          "images": 256,
+          "standardized_mae": 0.47008232012659057,
+          "standardized_mse": 0.3559787710201576,
+          "normalized_concepts": 37
+        }
+      },
+      {
+        "method": "lfcbm",
+        "setting": "contrast_5",
+        "source": "artifacts/ood/waterbirds/resnet18/paired/seed42/contrast_5_lfcbm.npz",
+        "train_reference": "artifacts/matched/lf/waterbirds/rn18_imagenet/paired_augmentation/seed42/lfcbm_train_original.npz",
+        "quality": {
+          "mAP": 0.31093988300417263,
+          "pearson_macro": 0.1094960622043094,
+          "spearman_macro": 0.10044782042744874,
+          "concepts": 37,
+          "images": 256,
+          "known_pairs": 7934,
+          "mAP_evaluable_concepts": 37,
+          "correlation_evaluable_concepts": 37
+        },
+        "shift": {
+          "raw_mae": 0.8279642186172449,
+          "raw_mse": 1.0973828302033541,
+          "images": 256,
+          "standardized_mae": 0.900774794811236,
+          "standardized_mse": 1.307445012430965,
+          "normalized_concepts": 37
+        }
+      },
+      {
+        "method": "lfcbm",
+        "setting": "jpeg_1",
+        "source": "artifacts/ood/waterbirds/resnet18/paired/seed42/jpeg_1_lfcbm.npz",
+        "train_reference": "artifacts/matched/lf/waterbirds/rn18_imagenet/paired_augmentation/seed42/lfcbm_train_original.npz",
+        "quality": {
+          "mAP": 0.37941278517160504,
+          "pearson_macro": 0.17848109822559466,
+          "spearman_macro": 0.1569492789397562,
+          "concepts": 37,
+          "images": 256,
+          "known_pairs": 7934,
+          "mAP_evaluable_concepts": 37,
+          "correlation_evaluable_concepts": 37
+        },
+        "shift": {
+          "raw_mae": 0.2850559624963622,
+          "raw_mse": 0.1351756887368801,
+          "images": 256,
+          "standardized_mae": 0.3131897943453302,
+          "standardized_mse": 0.16615959036125078,
+          "normalized_concepts": 37
+        }
+      },
+      {
+        "method": "lfcbm",
+        "setting": "jpeg_3",
+        "source": "artifacts/ood/waterbirds/resnet18/paired/seed42/jpeg_3_lfcbm.npz",
+        "train_reference": "artifacts/matched/lf/waterbirds/rn18_imagenet/paired_augmentation/seed42/lfcbm_train_original.npz",
+        "quality": {
+          "mAP": 0.37000573617748606,
+          "pearson_macro": 0.17116107390814356,
+          "spearman_macro": 0.15257538034528872,
+          "concepts": 37,
+          "images": 256,
+          "known_pairs": 7934,
+          "mAP_evaluable_concepts": 37,
+          "correlation_evaluable_concepts": 37
+        },
+        "shift": {
+          "raw_mae": 0.43757091783164903,
+          "raw_mse": 0.3226003489856152,
+          "images": 256,
+          "standardized_mae": 0.4799450279311254,
+          "standardized_mse": 0.3947185725398944,
+          "normalized_concepts": 37
+        }
+      },
+      {
+        "method": "lfcbm",
+        "setting": "jpeg_5",
+        "source": "artifacts/ood/waterbirds/resnet18/paired/seed42/jpeg_5_lfcbm.npz",
+        "train_reference": "artifacts/matched/lf/waterbirds/rn18_imagenet/paired_augmentation/seed42/lfcbm_train_original.npz",
+        "quality": {
+          "mAP": 0.3575225488949996,
+          "pearson_macro": 0.15789452213775163,
+          "spearman_macro": 0.14620923824928764,
+          "concepts": 37,
+          "images": 256,
+          "known_pairs": 7934,
+          "mAP_evaluable_concepts": 37,
+          "correlation_evaluable_concepts": 37
+        },
+        "shift": {
+          "raw_mae": 0.8002016481364111,
+          "raw_mse": 1.0454108562652529,
+          "images": 256,
+          "standardized_mae": 0.8780240180103146,
+          "standardized_mse": 1.2830646455420325,
+          "normalized_concepts": 37
+        }
+      },
+      {
+        "method": "lfpi_single",
+        "setting": "original_0",
+        "source": "artifacts/ood/waterbirds/resnet18/paired/seed42/original_0_lfpi_single.npz",
+        "train_reference": "artifacts/matched/lf/waterbirds/rn18_imagenet/paired_augmentation/seed42/single_draw/lfpi_global_train_original.npz",
+        "quality": {
+          "mAP": 0.37805786673939484,
+          "pearson_macro": 0.17126819057730625,
+          "spearman_macro": 0.14702394030842642,
+          "concepts": 37,
+          "images": 256,
+          "known_pairs": 7934,
+          "mAP_evaluable_concepts": 37,
+          "correlation_evaluable_concepts": 37
+        },
+        "shift": {
+          "raw_mae": 0.0,
+          "raw_mse": 0.0,
+          "images": 256,
+          "standardized_mae": 0.0,
+          "standardized_mse": 0.0,
+          "normalized_concepts": 37
+        }
+      },
+      {
+        "method": "lfpi_single",
+        "setting": "gaussian_noise_1",
+        "source": "artifacts/ood/waterbirds/resnet18/paired/seed42/gaussian_noise_1_lfpi_single.npz",
+        "train_reference": "artifacts/matched/lf/waterbirds/rn18_imagenet/paired_augmentation/seed42/single_draw/lfpi_global_train_original.npz",
+        "quality": {
+          "mAP": 0.375629863585449,
+          "pearson_macro": 0.167251117303792,
+          "spearman_macro": 0.14607417881660067,
+          "concepts": 37,
+          "images": 256,
+          "known_pairs": 7934,
+          "mAP_evaluable_concepts": 37,
+          "correlation_evaluable_concepts": 37
+        },
+        "shift": {
+          "raw_mae": 0.3368041754814505,
+          "raw_mse": 0.18934619282745818,
+          "images": 256,
+          "standardized_mae": 0.36356706064257555,
+          "standardized_mse": 0.22345886762318729,
+          "normalized_concepts": 37
+        }
+      },
+      {
+        "method": "lfpi_single",
+        "setting": "gaussian_noise_3",
+        "source": "artifacts/ood/waterbirds/resnet18/paired/seed42/gaussian_noise_3_lfpi_single.npz",
+        "train_reference": "artifacts/matched/lf/waterbirds/rn18_imagenet/paired_augmentation/seed42/single_draw/lfpi_global_train_original.npz",
+        "quality": {
+          "mAP": 0.34766856462398193,
+          "pearson_macro": 0.157711736051907,
+          "spearman_macro": 0.14426635324806672,
+          "concepts": 37,
+          "images": 256,
+          "known_pairs": 7934,
+          "mAP_evaluable_concepts": 37,
+          "correlation_evaluable_concepts": 37
+        },
+        "shift": {
+          "raw_mae": 0.7230988404618255,
+          "raw_mse": 0.8361070191471154,
+          "images": 256,
+          "standardized_mae": 0.7803135177875904,
+          "standardized_mse": 0.9843590186652578,
+          "normalized_concepts": 37
+        }
+      },
+      {
+        "method": "lfpi_single",
+        "setting": "gaussian_noise_5",
+        "source": "artifacts/ood/waterbirds/resnet18/paired/seed42/gaussian_noise_5_lfpi_single.npz",
+        "train_reference": "artifacts/matched/lf/waterbirds/rn18_imagenet/paired_augmentation/seed42/single_draw/lfpi_global_train_original.npz",
+        "quality": {
+          "mAP": 0.2994389558027148,
+          "pearson_macro": 0.11615632492879421,
+          "spearman_macro": 0.10956655412183074,
+          "concepts": 37,
+          "images": 256,
+          "known_pairs": 7934,
+          "mAP_evaluable_concepts": 37,
+          "correlation_evaluable_concepts": 37
+        },
+        "shift": {
+          "raw_mae": 1.2069248152373107,
+          "raw_mse": 2.1833210695348946,
+          "images": 256,
+          "standardized_mae": 1.305282072926358,
+          "standardized_mse": 2.5881897339866184,
+          "normalized_concepts": 37
+        }
+      },
+      {
+        "method": "lfpi_single",
+        "setting": "gaussian_blur_1",
+        "source": "artifacts/ood/waterbirds/resnet18/paired/seed42/gaussian_blur_1_lfpi_single.npz",
+        "train_reference": "artifacts/matched/lf/waterbirds/rn18_imagenet/paired_augmentation/seed42/single_draw/lfpi_global_train_original.npz",
+        "quality": {
+          "mAP": 0.37918277988727417,
+          "pearson_macro": 0.17297988550595356,
+          "spearman_macro": 0.14999620857647705,
+          "concepts": 37,
+          "images": 256,
+          "known_pairs": 7934,
+          "mAP_evaluable_concepts": 37,
+          "correlation_evaluable_concepts": 37
+        },
+        "shift": {
+          "raw_mae": 0.1442223089988319,
+          "raw_mse": 0.03469158848661719,
+          "images": 256,
+          "standardized_mae": 0.15622110207024983,
+          "standardized_mse": 0.04136864790520926,
+          "normalized_concepts": 37
+        }
+      },
+      {
+        "method": "lfpi_single",
+        "setting": "gaussian_blur_3",
+        "source": "artifacts/ood/waterbirds/resnet18/paired/seed42/gaussian_blur_3_lfpi_single.npz",
+        "train_reference": "artifacts/matched/lf/waterbirds/rn18_imagenet/paired_augmentation/seed42/single_draw/lfpi_global_train_original.npz",
+        "quality": {
+          "mAP": 0.3703526236224085,
+          "pearson_macro": 0.18462893025903282,
+          "spearman_macro": 0.1621269388135803,
+          "concepts": 37,
+          "images": 256,
+          "known_pairs": 7934,
+          "mAP_evaluable_concepts": 37,
+          "correlation_evaluable_concepts": 37
+        },
+        "shift": {
+          "raw_mae": 0.5564036247265155,
+          "raw_mse": 0.523730558988535,
+          "images": 256,
+          "standardized_mae": 0.6032160081084438,
+          "standardized_mse": 0.6268628918975672,
+          "normalized_concepts": 37
+        }
+      },
+      {
+        "method": "lfpi_single",
+        "setting": "gaussian_blur_5",
+        "source": "artifacts/ood/waterbirds/resnet18/paired/seed42/gaussian_blur_5_lfpi_single.npz",
+        "train_reference": "artifacts/matched/lf/waterbirds/rn18_imagenet/paired_augmentation/seed42/single_draw/lfpi_global_train_original.npz",
+        "quality": {
+          "mAP": 0.35881819521430186,
+          "pearson_macro": 0.17575852445515933,
+          "spearman_macro": 0.15564804772379637,
+          "concepts": 37,
+          "images": 256,
+          "known_pairs": 7934,
+          "mAP_evaluable_concepts": 37,
+          "correlation_evaluable_concepts": 37
+        },
+        "shift": {
+          "raw_mae": 0.8439194939396707,
+          "raw_mse": 1.1657284213067973,
+          "images": 256,
+          "standardized_mae": 0.9165008993691128,
+          "standardized_mse": 1.4030109070458974,
+          "normalized_concepts": 37
+        }
+      },
+      {
+        "method": "lfpi_single",
+        "setting": "contrast_1",
+        "source": "artifacts/ood/waterbirds/resnet18/paired/seed42/contrast_1_lfpi_single.npz",
+        "train_reference": "artifacts/matched/lf/waterbirds/rn18_imagenet/paired_augmentation/seed42/single_draw/lfpi_global_train_original.npz",
+        "quality": {
+          "mAP": 0.38080619981521746,
+          "pearson_macro": 0.17160025767010859,
+          "spearman_macro": 0.1471605968233561,
+          "concepts": 37,
+          "images": 256,
+          "known_pairs": 7934,
+          "mAP_evaluable_concepts": 37,
+          "correlation_evaluable_concepts": 37
+        },
+        "shift": {
+          "raw_mae": 0.13353983207740636,
+          "raw_mse": 0.029566640574027664,
+          "images": 256,
+          "standardized_mae": 0.14411298428316577,
+          "standardized_mse": 0.034791556953673905,
+          "normalized_concepts": 37
+        }
+      },
+      {
+        "method": "lfpi_single",
+        "setting": "contrast_3",
+        "source": "artifacts/ood/waterbirds/resnet18/paired/seed42/contrast_3_lfpi_single.npz",
+        "train_reference": "artifacts/matched/lf/waterbirds/rn18_imagenet/paired_augmentation/seed42/single_draw/lfpi_global_train_original.npz",
+        "quality": {
+          "mAP": 0.36967601092248803,
+          "pearson_macro": 0.16041814798097667,
+          "spearman_macro": 0.1424777323608245,
+          "concepts": 37,
+          "images": 256,
+          "known_pairs": 7934,
+          "mAP_evaluable_concepts": 37,
+          "correlation_evaluable_concepts": 37
+        },
+        "shift": {
+          "raw_mae": 0.43032664944421206,
+          "raw_mse": 0.29610908061291236,
+          "images": 256,
+          "standardized_mae": 0.46237163194555514,
+          "standardized_mse": 0.34341780571311553,
+          "normalized_concepts": 37
+        }
+      },
+      {
+        "method": "lfpi_single",
+        "setting": "contrast_5",
+        "source": "artifacts/ood/waterbirds/resnet18/paired/seed42/contrast_5_lfpi_single.npz",
+        "train_reference": "artifacts/matched/lf/waterbirds/rn18_imagenet/paired_augmentation/seed42/single_draw/lfpi_global_train_original.npz",
+        "quality": {
+          "mAP": 0.3173661750626422,
+          "pearson_macro": 0.11500044288353026,
+          "spearman_macro": 0.10750986312406036,
+          "concepts": 37,
+          "images": 256,
+          "known_pairs": 7934,
+          "mAP_evaluable_concepts": 37,
+          "correlation_evaluable_concepts": 37
+        },
+        "shift": {
+          "raw_mae": 0.8297772869093841,
+          "raw_mse": 1.099598455175094,
+          "images": 256,
+          "standardized_mae": 0.8913894218797775,
+          "standardized_mse": 1.2783817380310907,
+          "normalized_concepts": 37
+        }
+      },
+      {
+        "method": "lfpi_single",
+        "setting": "jpeg_1",
+        "source": "artifacts/ood/waterbirds/resnet18/paired/seed42/jpeg_1_lfpi_single.npz",
+        "train_reference": "artifacts/matched/lf/waterbirds/rn18_imagenet/paired_augmentation/seed42/single_draw/lfpi_global_train_original.npz",
+        "quality": {
+          "mAP": 0.37839792831567515,
+          "pearson_macro": 0.17960300237533303,
+          "spearman_macro": 0.15702471754078545,
+          "concepts": 37,
+          "images": 256,
+          "known_pairs": 7934,
+          "mAP_evaluable_concepts": 37,
+          "correlation_evaluable_concepts": 37
+        },
+        "shift": {
+          "raw_mae": 0.2950383968703896,
+          "raw_mse": 0.14415349790711263,
+          "images": 256,
+          "standardized_mae": 0.32171602225386076,
+          "standardized_mse": 0.17559082405778964,
+          "normalized_concepts": 37
+        }
+      },
+      {
+        "method": "lfpi_single",
+        "setting": "jpeg_3",
+        "source": "artifacts/ood/waterbirds/resnet18/paired/seed42/jpeg_3_lfpi_single.npz",
+        "train_reference": "artifacts/matched/lf/waterbirds/rn18_imagenet/paired_augmentation/seed42/single_draw/lfpi_global_train_original.npz",
+        "quality": {
+          "mAP": 0.3685410112561605,
+          "pearson_macro": 0.1727311317199811,
+          "spearman_macro": 0.15357838449761302,
+          "concepts": 37,
+          "images": 256,
+          "known_pairs": 7934,
+          "mAP_evaluable_concepts": 37,
+          "correlation_evaluable_concepts": 37
+        },
+        "shift": {
+          "raw_mae": 0.4506934513734923,
+          "raw_mse": 0.34126786929279945,
+          "images": 256,
+          "standardized_mae": 0.4903212622587645,
+          "standardized_mse": 0.4132934831687825,
+          "normalized_concepts": 37
+        }
+      },
+      {
+        "method": "lfpi_single",
+        "setting": "jpeg_5",
+        "source": "artifacts/ood/waterbirds/resnet18/paired/seed42/jpeg_5_lfpi_single.npz",
+        "train_reference": "artifacts/matched/lf/waterbirds/rn18_imagenet/paired_augmentation/seed42/single_draw/lfpi_global_train_original.npz",
+        "quality": {
+          "mAP": 0.36162764950447573,
+          "pearson_macro": 0.1610509995791793,
+          "spearman_macro": 0.14891109317955842,
+          "concepts": 37,
+          "images": 256,
+          "known_pairs": 7934,
+          "mAP_evaluable_concepts": 37,
+          "correlation_evaluable_concepts": 37
+        },
+        "shift": {
+          "raw_mae": 0.8161047696057793,
+          "raw_mse": 1.0847075371558272,
+          "images": 256,
+          "standardized_mae": 0.8875557294171428,
+          "standardized_mse": 1.3147537075061175,
+          "normalized_concepts": 37
+        }
+      },
+      {
+        "method": "pini_mean",
+        "setting": "original_0",
+        "source": "artifacts/ood/waterbirds/resnet18/paired/seed42/original_0_pini_mean.npz",
+        "train_reference": "artifacts/pini_matched/waterbirds/exports/mean/train_original.npz",
+        "quality": {
+          "mAP": 0.5596672296280104,
+          "pearson_macro": 0.43460769482965184,
+          "spearman_macro": 0.35254496801550833,
+          "concepts": 37,
+          "images": 256,
+          "known_pairs": 7934,
+          "mAP_evaluable_concepts": 37,
+          "correlation_evaluable_concepts": 37
+        },
+        "shift": {
+          "raw_mae": 0.0,
+          "raw_mse": 0.0,
+          "images": 256,
+          "standardized_mae": 0.0,
+          "standardized_mse": 0.0,
+          "normalized_concepts": 37
+        }
+      },
+      {
+        "method": "pini_mean",
+        "setting": "gaussian_noise_1",
+        "source": "artifacts/ood/waterbirds/resnet18/paired/seed42/gaussian_noise_1_pini_mean.npz",
+        "train_reference": "artifacts/pini_matched/waterbirds/exports/mean/train_original.npz",
+        "quality": {
+          "mAP": 0.5549912099679388,
+          "pearson_macro": 0.4232776284928538,
+          "spearman_macro": 0.34373078947695285,
+          "concepts": 37,
+          "images": 256,
+          "known_pairs": 7934,
+          "mAP_evaluable_concepts": 37,
+          "correlation_evaluable_concepts": 37
+        },
+        "shift": {
+          "raw_mae": 0.07813126577312883,
+          "raw_mse": 0.014882958978536084,
+          "images": 256,
+          "standardized_mae": 0.26799358983085364,
+          "standardized_mse": 0.17064820638527606,
+          "normalized_concepts": 37
+        }
+      },
+      {
+        "method": "pini_mean",
+        "setting": "gaussian_noise_3",
+        "source": "artifacts/ood/waterbirds/resnet18/paired/seed42/gaussian_noise_3_pini_mean.npz",
+        "train_reference": "artifacts/pini_matched/waterbirds/exports/mean/train_original.npz",
+        "quality": {
+          "mAP": 0.502229377031466,
+          "pearson_macro": 0.3745618930309946,
+          "spearman_macro": 0.31211302442803746,
+          "concepts": 37,
+          "images": 256,
+          "known_pairs": 7934,
+          "mAP_evaluable_concepts": 37,
+          "correlation_evaluable_concepts": 37
+        },
+        "shift": {
+          "raw_mae": 0.14973212360936605,
+          "raw_mse": 0.049604941589509184,
+          "images": 256,
+          "standardized_mae": 0.5135338217735426,
+          "standardized_mse": 0.5694281195049411,
+          "normalized_concepts": 37
+        }
+      },
+      {
+        "method": "pini_mean",
+        "setting": "gaussian_noise_5",
+        "source": "artifacts/ood/waterbirds/resnet18/paired/seed42/gaussian_noise_5_pini_mean.npz",
+        "train_reference": "artifacts/pini_matched/waterbirds/exports/mean/train_original.npz",
+        "quality": {
+          "mAP": 0.424745401903144,
+          "pearson_macro": 0.2899234196174036,
+          "spearman_macro": 0.23839698052903907,
+          "concepts": 37,
+          "images": 256,
+          "known_pairs": 7934,
+          "mAP_evaluable_concepts": 37,
+          "correlation_evaluable_concepts": 37
+        },
+        "shift": {
+          "raw_mae": 0.20629815366489104,
+          "raw_mse": 0.08678121545921144,
+          "images": 256,
+          "standardized_mae": 0.7050853918149418,
+          "standardized_mse": 0.994501781385007,
+          "normalized_concepts": 37
+        }
+      },
+      {
+        "method": "pini_mean",
+        "setting": "gaussian_blur_1",
+        "source": "artifacts/ood/waterbirds/resnet18/paired/seed42/gaussian_blur_1_pini_mean.npz",
+        "train_reference": "artifacts/pini_matched/waterbirds/exports/mean/train_original.npz",
+        "quality": {
+          "mAP": 0.559926786990268,
+          "pearson_macro": 0.4347789502094265,
+          "spearman_macro": 0.3547821819880829,
+          "concepts": 37,
+          "images": 256,
+          "known_pairs": 7934,
+          "mAP_evaluable_concepts": 37,
+          "correlation_evaluable_concepts": 37
+        },
+        "shift": {
+          "raw_mae": 0.033773518316451916,
+          "raw_mse": 0.0029196142522011147,
+          "images": 256,
+          "standardized_mae": 0.11608648938591651,
+          "standardized_mse": 0.03360735100667804,
+          "normalized_concepts": 37
+        }
+      },
+      {
+        "method": "pini_mean",
+        "setting": "gaussian_blur_3",
+        "source": "artifacts/ood/waterbirds/resnet18/paired/seed42/gaussian_blur_3_pini_mean.npz",
+        "train_reference": "artifacts/pini_matched/waterbirds/exports/mean/train_original.npz",
+        "quality": {
+          "mAP": 0.5349080526574272,
+          "pearson_macro": 0.4015343024535494,
+          "spearman_macro": 0.3311974419109463,
+          "concepts": 37,
+          "images": 256,
+          "known_pairs": 7934,
+          "mAP_evaluable_concepts": 37,
+          "correlation_evaluable_concepts": 37
+        },
+        "shift": {
+          "raw_mae": 0.1246075041683656,
+          "raw_mse": 0.035111767998059984,
+          "images": 256,
+          "standardized_mae": 0.42664342782213494,
+          "standardized_mse": 0.39956695162797656,
+          "normalized_concepts": 37
+        }
+      },
+      {
+        "method": "pini_mean",
+        "setting": "gaussian_blur_5",
+        "source": "artifacts/ood/waterbirds/resnet18/paired/seed42/gaussian_blur_5_pini_mean.npz",
+        "train_reference": "artifacts/pini_matched/waterbirds/exports/mean/train_original.npz",
+        "quality": {
+          "mAP": 0.4676152033112493,
+          "pearson_macro": 0.33546355212625645,
+          "spearman_macro": 0.27567541857669126,
+          "concepts": 37,
+          "images": 256,
+          "known_pairs": 7934,
+          "mAP_evaluable_concepts": 37,
+          "correlation_evaluable_concepts": 37
+        },
+        "shift": {
+          "raw_mae": 0.18571438072643345,
+          "raw_mse": 0.07016803682239936,
+          "images": 256,
+          "standardized_mae": 0.6338482257049677,
+          "standardized_mse": 0.796108861277187,
+          "normalized_concepts": 37
+        }
+      },
+      {
+        "method": "pini_mean",
+        "setting": "contrast_1",
+        "source": "artifacts/ood/waterbirds/resnet18/paired/seed42/contrast_1_pini_mean.npz",
+        "train_reference": "artifacts/pini_matched/waterbirds/exports/mean/train_original.npz",
+        "quality": {
+          "mAP": 0.5576883857466679,
+          "pearson_macro": 0.43052770086490283,
+          "spearman_macro": 0.3493998704975801,
+          "concepts": 37,
+          "images": 256,
+          "known_pairs": 7934,
+          "mAP_evaluable_concepts": 37,
+          "correlation_evaluable_concepts": 37
+        },
+        "shift": {
+          "raw_mae": 0.03319025699978987,
+          "raw_mse": 0.002684943402196919,
+          "images": 256,
+          "standardized_mae": 0.11340280064355768,
+          "standardized_mse": 0.03031343363022406,
+          "normalized_concepts": 37
+        }
+      },
+      {
+        "method": "pini_mean",
+        "setting": "contrast_3",
+        "source": "artifacts/ood/waterbirds/resnet18/paired/seed42/contrast_3_pini_mean.npz",
+        "train_reference": "artifacts/pini_matched/waterbirds/exports/mean/train_original.npz",
+        "quality": {
+          "mAP": 0.5102750260021058,
+          "pearson_macro": 0.38690760208625097,
+          "spearman_macro": 0.31918387109032154,
+          "concepts": 37,
+          "images": 256,
+          "known_pairs": 7934,
+          "mAP_evaluable_concepts": 37,
+          "correlation_evaluable_concepts": 37
+        },
+        "shift": {
+          "raw_mae": 0.10873086287182102,
+          "raw_mse": 0.026670098043063317,
+          "images": 256,
+          "standardized_mae": 0.3714505813748923,
+          "standardized_mse": 0.3026083333012223,
+          "normalized_concepts": 37
+        }
+      },
+      {
+        "method": "pini_mean",
+        "setting": "contrast_5",
+        "source": "artifacts/ood/waterbirds/resnet18/paired/seed42/contrast_5_pini_mean.npz",
+        "train_reference": "artifacts/pini_matched/waterbirds/exports/mean/train_original.npz",
+        "quality": {
+          "mAP": 0.41957890476808296,
+          "pearson_macro": 0.2811785284218895,
+          "spearman_macro": 0.24028971538510052,
+          "concepts": 37,
+          "images": 256,
+          "known_pairs": 7934,
+          "mAP_evaluable_concepts": 37,
+          "correlation_evaluable_concepts": 37
+        },
+        "shift": {
+          "raw_mae": 0.1958493520254202,
+          "raw_mse": 0.07711211391006928,
+          "images": 256,
+          "standardized_mae": 0.6684078026357725,
+          "standardized_mse": 0.8909815261400501,
+          "normalized_concepts": 37
+        }
+      },
+      {
+        "method": "pini_mean",
+        "setting": "jpeg_1",
+        "source": "artifacts/ood/waterbirds/resnet18/paired/seed42/jpeg_1_pini_mean.npz",
+        "train_reference": "artifacts/pini_matched/waterbirds/exports/mean/train_original.npz",
+        "quality": {
+          "mAP": 0.5487165569906409,
+          "pearson_macro": 0.43415010473440896,
+          "spearman_macro": 0.3536276720660496,
+          "concepts": 37,
+          "images": 256,
+          "known_pairs": 7934,
+          "mAP_evaluable_concepts": 37,
+          "correlation_evaluable_concepts": 37
+        },
+        "shift": {
+          "raw_mae": 0.05854486602762824,
+          "raw_mse": 0.008332492541344287,
+          "images": 256,
+          "standardized_mae": 0.20149279900398104,
+          "standardized_mse": 0.09690252851634801,
+          "normalized_concepts": 37
+        }
+      },
+      {
+        "method": "pini_mean",
+        "setting": "jpeg_3",
+        "source": "artifacts/ood/waterbirds/resnet18/paired/seed42/jpeg_3_pini_mean.npz",
+        "train_reference": "artifacts/pini_matched/waterbirds/exports/mean/train_original.npz",
+        "quality": {
+          "mAP": 0.5387560047226378,
+          "pearson_macro": 0.4208504643198303,
+          "spearman_macro": 0.34004122912561047,
+          "concepts": 37,
+          "images": 256,
+          "known_pairs": 7934,
+          "mAP_evaluable_concepts": 37,
+          "correlation_evaluable_concepts": 37
+        },
+        "shift": {
+          "raw_mae": 0.09822445591575656,
+          "raw_mse": 0.02201037414395511,
+          "images": 256,
+          "standardized_mae": 0.33785369790987363,
+          "standardized_mse": 0.25496739815903896,
+          "normalized_concepts": 37
+        }
+      },
+      {
+        "method": "pini_mean",
+        "setting": "jpeg_5",
+        "source": "artifacts/ood/waterbirds/resnet18/paired/seed42/jpeg_5_pini_mean.npz",
+        "train_reference": "artifacts/pini_matched/waterbirds/exports/mean/train_original.npz",
+        "quality": {
+          "mAP": 0.48134370254117836,
+          "pearson_macro": 0.35524004234769635,
+          "spearman_macro": 0.28675689537718957,
+          "concepts": 37,
+          "images": 256,
+          "known_pairs": 7934,
+          "mAP_evaluable_concepts": 37,
+          "correlation_evaluable_concepts": 37
+        },
+        "shift": {
+          "raw_mae": 0.1772140100742246,
+          "raw_mse": 0.06725664755573323,
+          "images": 256,
+          "standardized_mae": 0.6040884441538095,
+          "standardized_mse": 0.7592271787339592,
+          "normalized_concepts": 37
+        }
+      },
+      {
+        "method": "pini_noise",
+        "setting": "original_0",
+        "source": "artifacts/ood/waterbirds/resnet18/paired/seed42/original_0_pini_noise.npz",
+        "train_reference": "artifacts/pini_matched/waterbirds/exports/noise/train_original.npz",
+        "quality": {
+          "mAP": 0.5587977133949587,
+          "pearson_macro": 0.439195450266563,
+          "spearman_macro": 0.35087214269715866,
+          "concepts": 37,
+          "images": 256,
+          "known_pairs": 7934,
+          "mAP_evaluable_concepts": 37,
+          "correlation_evaluable_concepts": 37
+        },
+        "shift": {
+          "raw_mae": 0.0,
+          "raw_mse": 0.0,
+          "images": 256,
+          "standardized_mae": 0.0,
+          "standardized_mse": 0.0,
+          "normalized_concepts": 37
+        }
+      },
+      {
+        "method": "pini_noise",
+        "setting": "gaussian_noise_1",
+        "source": "artifacts/ood/waterbirds/resnet18/paired/seed42/gaussian_noise_1_pini_noise.npz",
+        "train_reference": "artifacts/pini_matched/waterbirds/exports/noise/train_original.npz",
+        "quality": {
+          "mAP": 0.5550192938372285,
+          "pearson_macro": 0.4258823076736958,
+          "spearman_macro": 0.34008889645505946,
+          "concepts": 37,
+          "images": 256,
+          "known_pairs": 7934,
+          "mAP_evaluable_concepts": 37,
+          "correlation_evaluable_concepts": 37
+        },
+        "shift": {
+          "raw_mae": 0.0757279892142942,
+          "raw_mse": 0.014140138588106848,
+          "images": 256,
+          "standardized_mae": 0.2673082849952756,
+          "standardized_mse": 0.1724257235987923,
+          "normalized_concepts": 37
+        }
+      },
+      {
+        "method": "pini_noise",
+        "setting": "gaussian_noise_3",
+        "source": "artifacts/ood/waterbirds/resnet18/paired/seed42/gaussian_noise_3_pini_noise.npz",
+        "train_reference": "artifacts/pini_matched/waterbirds/exports/noise/train_original.npz",
+        "quality": {
+          "mAP": 0.5014133981578043,
+          "pearson_macro": 0.37129248794144887,
+          "spearman_macro": 0.3053863547772858,
+          "concepts": 37,
+          "images": 256,
+          "known_pairs": 7934,
+          "mAP_evaluable_concepts": 37,
+          "correlation_evaluable_concepts": 37
+        },
+        "shift": {
+          "raw_mae": 0.1461389336541937,
+          "raw_mse": 0.048292109509857906,
+          "images": 256,
+          "standardized_mae": 0.5145654109814249,
+          "standardized_mse": 0.5842411765152625,
+          "normalized_concepts": 37
+        }
+      },
+      {
+        "method": "pini_noise",
+        "setting": "gaussian_noise_5",
+        "source": "artifacts/ood/waterbirds/resnet18/paired/seed42/gaussian_noise_5_pini_noise.npz",
+        "train_reference": "artifacts/pini_matched/waterbirds/exports/noise/train_original.npz",
+        "quality": {
+          "mAP": 0.420171070236505,
+          "pearson_macro": 0.28259100754872923,
+          "spearman_macro": 0.23259181098127515,
+          "concepts": 37,
+          "images": 256,
+          "known_pairs": 7934,
+          "mAP_evaluable_concepts": 37,
+          "correlation_evaluable_concepts": 37
+        },
+        "shift": {
+          "raw_mae": 0.19982919254140527,
+          "raw_mse": 0.08291901958380221,
+          "images": 256,
+          "standardized_mae": 0.7006647532615804,
+          "standardized_mse": 1.003127149583007,
+          "normalized_concepts": 37
+        }
+      },
+      {
+        "method": "pini_noise",
+        "setting": "gaussian_blur_1",
+        "source": "artifacts/ood/waterbirds/resnet18/paired/seed42/gaussian_blur_1_pini_noise.npz",
+        "train_reference": "artifacts/pini_matched/waterbirds/exports/noise/train_original.npz",
+        "quality": {
+          "mAP": 0.5572381112314775,
+          "pearson_macro": 0.438247672667441,
+          "spearman_macro": 0.3515964717820381,
+          "concepts": 37,
+          "images": 256,
+          "known_pairs": 7934,
+          "mAP_evaluable_concepts": 37,
+          "correlation_evaluable_concepts": 37
+        },
+        "shift": {
+          "raw_mae": 0.03295894613901083,
+          "raw_mse": 0.002922555592014826,
+          "images": 256,
+          "standardized_mae": 0.11548334603676876,
+          "standardized_mse": 0.03462002553752038,
+          "normalized_concepts": 37
+        }
+      },
+      {
+        "method": "pini_noise",
+        "setting": "gaussian_blur_3",
+        "source": "artifacts/ood/waterbirds/resnet18/paired/seed42/gaussian_blur_3_pini_noise.npz",
+        "train_reference": "artifacts/pini_matched/waterbirds/exports/noise/train_original.npz",
+        "quality": {
+          "mAP": 0.5357782092752431,
+          "pearson_macro": 0.4104427399858567,
+          "spearman_macro": 0.33047874859158627,
+          "concepts": 37,
+          "images": 256,
+          "known_pairs": 7934,
+          "mAP_evaluable_concepts": 37,
+          "correlation_evaluable_concepts": 37
+        },
+        "shift": {
+          "raw_mae": 0.11801170303393316,
+          "raw_mse": 0.0328732547433254,
+          "images": 256,
+          "standardized_mae": 0.413428943800069,
+          "standardized_mse": 0.3903307879497963,
+          "normalized_concepts": 37
+        }
+      },
+      {
+        "method": "pini_noise",
+        "setting": "gaussian_blur_5",
+        "source": "artifacts/ood/waterbirds/resnet18/paired/seed42/gaussian_blur_5_pini_noise.npz",
+        "train_reference": "artifacts/pini_matched/waterbirds/exports/noise/train_original.npz",
+        "quality": {
+          "mAP": 0.4534680459977675,
+          "pearson_macro": 0.33287776352922976,
+          "spearman_macro": 0.2656064633880726,
+          "concepts": 37,
+          "images": 256,
+          "known_pairs": 7934,
+          "mAP_evaluable_concepts": 37,
+          "correlation_evaluable_concepts": 37
+        },
+        "shift": {
+          "raw_mae": 0.1751933528938717,
+          "raw_mse": 0.06438675939453378,
+          "images": 256,
+          "standardized_mae": 0.611924469924698,
+          "standardized_mse": 0.7652301953322885,
+          "normalized_concepts": 37
+        }
+      },
+      {
+        "method": "pini_noise",
+        "setting": "contrast_1",
+        "source": "artifacts/ood/waterbirds/resnet18/paired/seed42/contrast_1_pini_noise.npz",
+        "train_reference": "artifacts/pini_matched/waterbirds/exports/noise/train_original.npz",
+        "quality": {
+          "mAP": 0.5521076680444321,
+          "pearson_macro": 0.4335171269504875,
+          "spearman_macro": 0.34586889927906006,
+          "concepts": 37,
+          "images": 256,
+          "known_pairs": 7934,
+          "mAP_evaluable_concepts": 37,
+          "correlation_evaluable_concepts": 37
+        },
+        "shift": {
+          "raw_mae": 0.03291711516564533,
+          "raw_mse": 0.0026946989424778676,
+          "images": 256,
+          "standardized_mae": 0.11514613136234311,
+          "standardized_mse": 0.03207449713728512,
+          "normalized_concepts": 37
+        }
+      },
+      {
+        "method": "pini_noise",
+        "setting": "contrast_3",
+        "source": "artifacts/ood/waterbirds/resnet18/paired/seed42/contrast_3_pini_noise.npz",
+        "train_reference": "artifacts/pini_matched/waterbirds/exports/noise/train_original.npz",
+        "quality": {
+          "mAP": 0.5071378605047233,
+          "pearson_macro": 0.39092053990892306,
+          "spearman_macro": 0.3134566481305009,
+          "concepts": 37,
+          "images": 256,
+          "known_pairs": 7934,
+          "mAP_evaluable_concepts": 37,
+          "correlation_evaluable_concepts": 37
+        },
+        "shift": {
+          "raw_mae": 0.10908065809236037,
+          "raw_mse": 0.027343121519954272,
+          "images": 256,
+          "standardized_mae": 0.3807463365736316,
+          "standardized_mse": 0.3243214766123371,
+          "normalized_concepts": 37
+        }
+      },
+      {
+        "method": "pini_noise",
+        "setting": "contrast_5",
+        "source": "artifacts/ood/waterbirds/resnet18/paired/seed42/contrast_5_pini_noise.npz",
+        "train_reference": "artifacts/pini_matched/waterbirds/exports/noise/train_original.npz",
+        "quality": {
+          "mAP": 0.37844532220282207,
+          "pearson_macro": 0.24648007450647108,
+          "spearman_macro": 0.2126079807606682,
+          "concepts": 37,
+          "images": 256,
+          "known_pairs": 7934,
+          "mAP_evaluable_concepts": 37,
+          "correlation_evaluable_concepts": 37
+        },
+        "shift": {
+          "raw_mae": 0.19837290683385755,
+          "raw_mse": 0.08112579609663903,
+          "images": 256,
+          "standardized_mae": 0.6905003863959762,
+          "standardized_mse": 0.9725007310478913,
+          "normalized_concepts": 37
+        }
+      },
+      {
+        "method": "pini_noise",
+        "setting": "jpeg_1",
+        "source": "artifacts/ood/waterbirds/resnet18/paired/seed42/jpeg_1_pini_noise.npz",
+        "train_reference": "artifacts/pini_matched/waterbirds/exports/noise/train_original.npz",
+        "quality": {
+          "mAP": 0.5428855550647221,
+          "pearson_macro": 0.43443548107317886,
+          "spearman_macro": 0.3472591066219918,
+          "concepts": 37,
+          "images": 256,
+          "known_pairs": 7934,
+          "mAP_evaluable_concepts": 37,
+          "correlation_evaluable_concepts": 37
+        },
+        "shift": {
+          "raw_mae": 0.05736272268993278,
+          "raw_mse": 0.008275869668289177,
+          "images": 256,
+          "standardized_mae": 0.20154153476211562,
+          "standardized_mse": 0.09954719533997508,
+          "normalized_concepts": 37
+        }
+      },
+      {
+        "method": "pini_noise",
+        "setting": "jpeg_3",
+        "source": "artifacts/ood/waterbirds/resnet18/paired/seed42/jpeg_3_pini_noise.npz",
+        "train_reference": "artifacts/pini_matched/waterbirds/exports/noise/train_original.npz",
+        "quality": {
+          "mAP": 0.5296124889766899,
+          "pearson_macro": 0.4179613392574732,
+          "spearman_macro": 0.3319739837877373,
+          "concepts": 37,
+          "images": 256,
+          "known_pairs": 7934,
+          "mAP_evaluable_concepts": 37,
+          "correlation_evaluable_concepts": 37
+        },
+        "shift": {
+          "raw_mae": 0.09517819926189244,
+          "raw_mse": 0.021806356941658542,
+          "images": 256,
+          "standardized_mae": 0.33409609236472343,
+          "standardized_mse": 0.2610903386446772,
+          "normalized_concepts": 37
+        }
+      },
+      {
+        "method": "pini_noise",
+        "setting": "jpeg_5",
+        "source": "artifacts/ood/waterbirds/resnet18/paired/seed42/jpeg_5_pini_noise.npz",
+        "train_reference": "artifacts/pini_matched/waterbirds/exports/noise/train_original.npz",
+        "quality": {
+          "mAP": 0.4780707420165272,
+          "pearson_macro": 0.34921003107736437,
+          "spearman_macro": 0.273998274799945,
+          "concepts": 37,
+          "images": 256,
+          "known_pairs": 7934,
+          "mAP_evaluable_concepts": 37,
+          "correlation_evaluable_concepts": 37
+        },
+        "shift": {
+          "raw_mae": 0.16443004942059866,
+          "raw_mse": 0.06173663510452269,
+          "images": 256,
+          "standardized_mae": 0.5749535374271737,
+          "standardized_mse": 0.7355676382110883,
+          "normalized_concepts": 37
+        }
+      }
+    ]
+  }
+]
