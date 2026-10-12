@@ -1,0 +1,155 @@
+{
+  "audits": [
+    {
+      "dataset": "cifar10",
+      "backbone": "resnet50",
+      "sample_global_ids": [
+        6908,
+        5520
+      ],
+      "feature_shape": [
+        2,
+        2048
+      ],
+      "backbone_sha256": "d7d14ee7c34f78ae386d2f395be284d10cb9067fb657f34a374677e1a29fc355",
+      "manifest_sha256": "3990c5bdd4ff4bc4b5ec21c279e9dfe90781084427ae32c0d2b9761b9b148693",
+      "independent_unsplit_max_abs": 0.0,
+      "canonical_resize_max_abs": 0.0,
+      "official_normalization_max_abs": 0.0,
+      "input_shape": [
+        2,
+        3,
+        224,
+        224
+      ],
+      "pixel_protocol": "q0: native uint8/255 -> bicubic224 antialias align_corners=False -> clamp; no intensity255 roundtrip, no crop",
+      "teacher_shape": [
+        60000,
+        143
+      ],
+      "teacher_sample_sha256": "d45fdd2d299a2e56ab9b0e96e3f09c8c1ba28b4199e0bdd23eed2af853c62b6e",
+      "source_rgb": "/home/pengcheng/Pi-CBM-Benchmark/artifacts/common/cifar10/cache/rgb_gaussian_noise_s1.npy",
+      "source_rgb_sha256": "ae7eda6509e8019b6d3419351574193901ca307be700568ce3d2e8c742e6ae09",
+      "teacher": "/home/pengcheng/Pi-CBM-Benchmark/artifacts/common/cifar10/teacher/gaussian_noise_s1_teacher.npy",
+      "teacher_sha256": "f0385c2407ff8d3b0043ad351199f94b8218e08cecc7be1366c60c47d5e6743c",
+      "original_files_unchanged": true,
+      "native_concept_annotations": false,
+      "encoding_started": false,
+      "cuda_initialized": false
+    },
+    {
+      "dataset": "cifar10",
+      "backbone": "clip_RN50",
+      "sample_global_ids": [
+        6908,
+        5520
+      ],
+      "feature_shape": [
+        2,
+        1024
+      ],
+      "backbone_sha256": "35abc9c6f5ea5080708d06a4e3965144a73dde3b7a25b5ee790e4023f160f57e",
+      "manifest_sha256": "0bf952c22e4237a391c3d77ec3ed072535d8f45780e112f72e9d2e2838b4b3ad",
+      "independent_unsplit_max_abs": 0.0,
+      "canonical_resize_max_abs": 0.0,
+      "official_normalization_max_abs": 0.0,
+      "input_shape": [
+        2,
+        3,
+        224,
+        224
+      ],
+      "pixel_protocol": "q0: native uint8/255 -> bicubic224 antialias align_corners=False -> clamp; no intensity255 roundtrip, no crop",
+      "teacher_shape": [
+        60000,
+        143
+      ],
+      "teacher_sample_sha256": "d45fdd2d299a2e56ab9b0e96e3f09c8c1ba28b4199e0bdd23eed2af853c62b6e",
+      "source_rgb": "/home/pengcheng/Pi-CBM-Benchmark/artifacts/common/cifar10/cache/rgb_gaussian_noise_s1.npy",
+      "source_rgb_sha256": "ae7eda6509e8019b6d3419351574193901ca307be700568ce3d2e8c742e6ae09",
+      "teacher": "/home/pengcheng/Pi-CBM-Benchmark/artifacts/common/cifar10/teacher/gaussian_noise_s1_teacher.npy",
+      "teacher_sha256": "f0385c2407ff8d3b0043ad351199f94b8218e08cecc7be1366c60c47d5e6743c",
+      "original_files_unchanged": true,
+      "native_concept_annotations": false,
+      "encoding_started": false,
+      "cuda_initialized": false
+    },
+    {
+      "dataset": "cifar100",
+      "backbone": "resnet50",
+      "sample_global_ids": [
+        29262,
+        17002
+      ],
+      "feature_shape": [
+        2,
+        2048
+      ],
+      "backbone_sha256": "d7d14ee7c34f78ae386d2f395be284d10cb9067fb657f34a374677e1a29fc355",
+      "manifest_sha256": "8bda9657fd893157c3b39f49ddc1f1d5c7cd09b3405d2693c3783d435863f8ea",
+      "independent_unsplit_max_abs": 0.0,
+      "canonical_resize_max_abs": 0.0,
+      "official_normalization_max_abs": 0.0,
+      "input_shape": [
+        2,
+        3,
+        224,
+        224
+      ],
+      "pixel_protocol": "q0: native uint8/255 -> bicubic224 antialias align_corners=False -> clamp; no intensity255 roundtrip, no crop",
+      "teacher_shape": [
+        60000,
+        892
+      ],
+      "teacher_sample_sha256": "e3dfa89ed3ef5965e8b3f1312778162294ebd83216c841cf2a2f1d00445d46e5",
+      "source_rgb": "/home/pengcheng/Pi-CBM-Benchmark/artifacts/common/cifar100/cache/rgb_gaussian_noise_s1.npy",
+      "source_rgb_sha256": "d7ca7b170b7df18067a32ac4e8f0dfae229a09261f002b95b3357f66b2f6896f",
+      "teacher": "/home/pengcheng/Pi-CBM-Benchmark/artifacts/common/cifar100/teacher/gaussian_noise_s1_teacher.npy",
+      "teacher_sha256": "a3bea1a529841ee23ed3a9e9eccd3441ad2f62b038d3352b534223f8407dbfff",
+      "original_files_unchanged": true,
+      "native_concept_annotations": false,
+      "encoding_started": false,
+      "cuda_initialized": false
+    },
+    {
+      "dataset": "cifar100",
+      "backbone": "clip_RN50",
+      "sample_global_ids": [
+        29262,
+        17002
+      ],
+      "feature_shape": [
+        2,
+        1024
+      ],
+      "backbone_sha256": "35abc9c6f5ea5080708d06a4e3965144a73dde3b7a25b5ee790e4023f160f57e",
+      "manifest_sha256": "855efc8e173412424b8623b2bbaea6cfbdcf3a20de5120a7bbe7e859e46d3986",
+      "independent_unsplit_max_abs": 0.0,
+      "canonical_resize_max_abs": 0.0,
+      "official_normalization_max_abs": 0.0,
+      "input_shape": [
+        2,
+        3,
+        224,
+        224
+      ],
+      "pixel_protocol": "q0: native uint8/255 -> bicubic224 antialias align_corners=False -> clamp; no intensity255 roundtrip, no crop",
+      "teacher_shape": [
+        60000,
+        892
+      ],
+      "teacher_sample_sha256": "e3dfa89ed3ef5965e8b3f1312778162294ebd83216c841cf2a2f1d00445d46e5",
+      "source_rgb": "/home/pengcheng/Pi-CBM-Benchmark/artifacts/common/cifar100/cache/rgb_gaussian_noise_s1.npy",
+      "source_rgb_sha256": "d7ca7b170b7df18067a32ac4e8f0dfae229a09261f002b95b3357f66b2f6896f",
+      "teacher": "/home/pengcheng/Pi-CBM-Benchmark/artifacts/common/cifar100/teacher/gaussian_noise_s1_teacher.npy",
+      "teacher_sha256": "a3bea1a529841ee23ed3a9e9eccd3441ad2f62b038d3352b534223f8407dbfff",
+      "original_files_unchanged": true,
+      "native_concept_annotations": false,
+      "encoding_started": false,
+      "cuda_initialized": false
+    }
+  ],
+  "all_passed": true,
+  "producer_sha256": "d1a1007fcb0d8eca6d0c6eb5f579b69ccd5ad8ab913ee9c29f7d9f935aec4e7a",
+  "full_encoding_started": false
+}
