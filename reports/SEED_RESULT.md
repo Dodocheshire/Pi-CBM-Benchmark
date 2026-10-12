@@ -53,3 +53,9 @@
 ![三种子分类与概念结果](seeds_cub_resnet50_original.png)
 
 ![三种子相关性与偏移](seeds_shift_cub_resnet50_original.png)
+
+## CUB · ImageNet ResNet50 · 背景增强训练
+
+![三种子分类与概念结果](seeds_cub_resnet50_paired.png)
+
+![三种子相关性与偏移](seeds_shift_cub_resnet50_paired.png)

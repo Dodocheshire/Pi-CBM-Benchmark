@@ -5148,5 +5148,597 @@
         "n": 3
       }
     }
+  },
+  {
+    "dataset": "cub",
+    "backbone": "resnet50",
+    "protocol": "paired",
+    "seeds": [
+      42,
+      43,
+      44
+    ],
+    "test_subjects": 5794,
+    "shared_concept_indices": [
+      1,
+      6,
+      7,
+      12,
+      14,
+      18,
+      26,
+      27,
+      29,
+      30,
+      33,
+      34,
+      35,
+      36,
+      41,
+      43,
+      44,
+      46,
+      48,
+      49,
+      53,
+      55,
+      56,
+      58,
+      60,
+      61,
+      62,
+      66,
+      70,
+      71,
+      72,
+      73,
+      74,
+      75,
+      79,
+      91,
+      92,
+      93,
+      94,
+      95,
+      98,
+      100,
+      101,
+      102,
+      104,
+      105,
+      107
+    ],
+    "shared_concepts": 47,
+    "inference_draws": 1,
+    "error_bars": "sample standard deviation over three training seeds, ddof=1",
+    "concept_evaluation": "same native concept columns and known masks across all three seeds and both methods",
+    "per_seed": [
+      {
+        "seed": 42,
+        "retained_concepts": 55,
+        "methods": {
+          "LF-CBM": {
+            "inference_draws": 1,
+            "source": "/home/pengcheng/Pi-CBM-Benchmark/artifacts/matched/lf/cub/rn50_imagenet/paired_augmentation/seed42",
+            "original": {
+              "accuracy": 0.3362098722816707,
+              "concepts": {
+                "mAP": 0.3675886548450338,
+                "pearson_macro": 0.17961711475347306,
+                "spearman_macro": 0.16089442129998877,
+                "concepts": 47,
+                "images": 5794,
+                "known_pairs": 227131,
+                "mAP_evaluable_concepts": 47,
+                "correlation_evaluable_concepts": 47
+              }
+            },
+            "changed": {
+              "accuracy": 0.23110113910942354,
+              "concepts": {
+                "mAP": 0.35186606487960653,
+                "pearson_macro": 0.17091459599589232,
+                "spearman_macro": 0.15496020826628826,
+                "concepts": 47,
+                "images": 5794,
+                "known_pairs": 227131,
+                "mAP_evaluable_concepts": 47,
+                "correlation_evaluable_concepts": 47
+              }
+            },
+            "standardized_concept_shift": 0.8206963841040404
+          },
+          "LF-Pi": {
+            "inference_draws": 1,
+            "source": "/home/pengcheng/Pi-CBM-Benchmark/artifacts/matched/lf/cub/rn50_imagenet/paired_augmentation/seed42/single_draw",
+            "original": {
+              "accuracy": 0.5631687953054885,
+              "concepts": {
+                "mAP": 0.3695381360421928,
+                "pearson_macro": 0.18717024857541828,
+                "spearman_macro": 0.16853505217481057,
+                "concepts": 47,
+                "images": 5794,
+                "known_pairs": 227131,
+                "mAP_evaluable_concepts": 47,
+                "correlation_evaluable_concepts": 47
+              }
+            },
+            "changed": {
+              "accuracy": 0.4540904383845357,
+              "concepts": {
+                "mAP": 0.35672801873642973,
+                "pearson_macro": 0.17848947893050573,
+                "spearman_macro": 0.161812601512378,
+                "concepts": 47,
+                "images": 5794,
+                "known_pairs": 227131,
+                "mAP_evaluable_concepts": 47,
+                "correlation_evaluable_concepts": 47
+              }
+            },
+            "standardized_concept_shift": 0.7340879184383294
+          },
+          "\u975e CBM": {
+            "source": "/home/pengcheng/Pi-CBM-Benchmark/artifacts/noncbm/cub_rn50_imagenet_paired/seed42",
+            "nec": null,
+            "original": {
+              "accuracy": 0.665688643424232
+            },
+            "changed": {
+              "accuracy": 0.5369347600966518
+            }
+          }
+        }
+      },
+      {
+        "seed": 43,
+        "retained_concepts": 51,
+        "methods": {
+          "LF-CBM": {
+            "inference_draws": 1,
+            "source": "/home/pengcheng/Pi-CBM-Benchmark/artifacts/matched/lf/cub/rn50_imagenet/paired_augmentation/seed43",
+            "original": {
+              "accuracy": 0.32447359337245424,
+              "concepts": {
+                "mAP": 0.3702657754989032,
+                "pearson_macro": 0.1837900890563759,
+                "spearman_macro": 0.16465558327549806,
+                "concepts": 47,
+                "images": 5794,
+                "known_pairs": 227131,
+                "mAP_evaluable_concepts": 47,
+                "correlation_evaluable_concepts": 47
+              }
+            },
+            "changed": {
+              "accuracy": 0.2222989299275112,
+              "concepts": {
+                "mAP": 0.35402552930911796,
+                "pearson_macro": 0.17368574429845968,
+                "spearman_macro": 0.15747893430083865,
+                "concepts": 47,
+                "images": 5794,
+                "known_pairs": 227131,
+                "mAP_evaluable_concepts": 47,
+                "correlation_evaluable_concepts": 47
+              }
+            },
+            "standardized_concept_shift": 0.8179841147542145
+          },
+          "LF-Pi": {
+            "inference_draws": 1,
+            "source": "/home/pengcheng/Pi-CBM-Benchmark/artifacts/matched/lf/cub/rn50_imagenet/paired_augmentation/seed43/single_draw",
+            "original": {
+              "accuracy": 0.5655850880220918,
+              "concepts": {
+                "mAP": 0.37013788706005213,
+                "pearson_macro": 0.1890966022922328,
+                "spearman_macro": 0.16988901832859243,
+                "concepts": 47,
+                "images": 5794,
+                "known_pairs": 227131,
+                "mAP_evaluable_concepts": 47,
+                "correlation_evaluable_concepts": 47
+              }
+            },
+            "changed": {
+              "accuracy": 0.45115636865723163,
+              "concepts": {
+                "mAP": 0.3578669163646132,
+                "pearson_macro": 0.17944634675992652,
+                "spearman_macro": 0.16284170696464176,
+                "concepts": 47,
+                "images": 5794,
+                "known_pairs": 227131,
+                "mAP_evaluable_concepts": 47,
+                "correlation_evaluable_concepts": 47
+              }
+            },
+            "standardized_concept_shift": 0.7270701250130998
+          },
+          "\u975e CBM": {
+            "source": "/home/pengcheng/Pi-CBM-Benchmark/artifacts/noncbm/cub_rn50_imagenet_paired/seed43",
+            "nec": null,
+            "original": {
+              "accuracy": 0.6641353123921298
+            },
+            "changed": {
+              "accuracy": 0.5355540214014498
+            }
+          }
+        }
+      },
+      {
+        "seed": 44,
+        "retained_concepts": 53,
+        "methods": {
+          "LF-CBM": {
+            "inference_draws": 1,
+            "source": "/home/pengcheng/Pi-CBM-Benchmark/artifacts/matched/lf/cub/rn50_imagenet/paired_augmentation/seed44",
+            "original": {
+              "accuracy": 0.33482913358646876,
+              "concepts": {
+                "mAP": 0.37086387656373926,
+                "pearson_macro": 0.18348683463797394,
+                "spearman_macro": 0.1643879935425869,
+                "concepts": 47,
+                "images": 5794,
+                "known_pairs": 227131,
+                "mAP_evaluable_concepts": 47,
+                "correlation_evaluable_concepts": 47
+              }
+            },
+            "changed": {
+              "accuracy": 0.23282706247842597,
+              "concepts": {
+                "mAP": 0.3528169026431338,
+                "pearson_macro": 0.17264797754564193,
+                "spearman_macro": 0.156999903268187,
+                "concepts": 47,
+                "images": 5794,
+                "known_pairs": 227131,
+                "mAP_evaluable_concepts": 47,
+                "correlation_evaluable_concepts": 47
+              }
+            },
+            "standardized_concept_shift": 0.8175505336897828
+          },
+          "LF-Pi": {
+            "inference_draws": 1,
+            "source": "/home/pengcheng/Pi-CBM-Benchmark/artifacts/matched/lf/cub/rn50_imagenet/paired_augmentation/seed44/single_draw",
+            "original": {
+              "accuracy": 0.556437694166379,
+              "concepts": {
+                "mAP": 0.3678439839494838,
+                "pearson_macro": 0.1875560612191915,
+                "spearman_macro": 0.16916115743133314,
+                "concepts": 47,
+                "images": 5794,
+                "known_pairs": 227131,
+                "mAP_evaluable_concepts": 47,
+                "correlation_evaluable_concepts": 47
+              }
+            },
+            "changed": {
+              "accuracy": 0.4530548843631343,
+              "concepts": {
+                "mAP": 0.35548527584046313,
+                "pearson_macro": 0.1791761397334646,
+                "spearman_macro": 0.16322818592610364,
+                "concepts": 47,
+                "images": 5794,
+                "known_pairs": 227131,
+                "mAP_evaluable_concepts": 47,
+                "correlation_evaluable_concepts": 47
+              }
+            },
+            "standardized_concept_shift": 0.7231353318601661
+          },
+          "\u975e CBM": {
+            "source": "/home/pengcheng/Pi-CBM-Benchmark/artifacts/noncbm/cub_rn50_imagenet_paired/seed44",
+            "nec": null,
+            "original": {
+              "accuracy": 0.6655160510873317
+            },
+            "changed": {
+              "accuracy": 0.5327925440110459
+            }
+          }
+        }
+      }
+    ],
+    "aggregate": {
+      "LF-CBM": {
+        "original": {
+          "accuracy": {
+            "mean": 0.3318375330801979,
+            "std": 0.006414617358079114,
+            "values": [
+              0.3362098722816707,
+              0.32447359337245424,
+              0.33482913358646876
+            ],
+            "seeds": [
+              42,
+              43,
+              44
+            ],
+            "n": 3
+          },
+          "mAP": {
+            "mean": 0.3695727689692254,
+            "std": 0.0017441223765269644,
+            "values": [
+              0.3675886548450338,
+              0.3702657754989032,
+              0.37086387656373926
+            ],
+            "seeds": [
+              42,
+              43,
+              44
+            ],
+            "n": 3
+          },
+          "pearson_macro": {
+            "mean": 0.18229801281594096,
+            "std": 0.0023266717917614014,
+            "values": [
+              0.17961711475347306,
+              0.1837900890563759,
+              0.18348683463797394
+            ],
+            "seeds": [
+              42,
+              43,
+              44
+            ],
+            "n": 3
+          }
+        },
+        "changed": {
+          "accuracy": {
+            "mean": 0.22874237717178691,
+            "std": 0.005646522129704283,
+            "values": [
+              0.23110113910942354,
+              0.2222989299275112,
+              0.23282706247842597
+            ],
+            "seeds": [
+              42,
+              43,
+              44
+            ],
+            "n": 3
+          },
+          "mAP": {
+            "mean": 0.3529028322772861,
+            "std": 0.0010822936672181156,
+            "values": [
+              0.35186606487960653,
+              0.35402552930911796,
+              0.3528169026431338
+            ],
+            "seeds": [
+              42,
+              43,
+              44
+            ],
+            "n": 3
+          },
+          "pearson_macro": {
+            "mean": 0.17241610594666465,
+            "std": 0.001400049662517264,
+            "values": [
+              0.17091459599589232,
+              0.17368574429845968,
+              0.17264797754564193
+            ],
+            "seeds": [
+              42,
+              43,
+              44
+            ],
+            "n": 3
+          }
+        },
+        "standardized_concept_shift": {
+          "mean": 0.8187436775160126,
+          "std": 0.0017049326670147346,
+          "values": [
+            0.8206963841040404,
+            0.8179841147542145,
+            0.8175505336897828
+          ],
+          "seeds": [
+            42,
+            43,
+            44
+          ],
+          "n": 3
+        }
+      },
+      "LF-Pi": {
+        "original": {
+          "accuracy": {
+            "mean": 0.5617305258313198,
+            "std": 0.004740270867590519,
+            "values": [
+              0.5631687953054885,
+              0.5655850880220918,
+              0.556437694166379
+            ],
+            "seeds": [
+              42,
+              43,
+              44
+            ],
+            "n": 3
+          },
+          "mAP": {
+            "mean": 0.3691733356839096,
+            "std": 0.0011896669055754363,
+            "values": [
+              0.3695381360421928,
+              0.37013788706005213,
+              0.3678439839494838
+            ],
+            "seeds": [
+              42,
+              43,
+              44
+            ],
+            "n": 3
+          },
+          "pearson_macro": {
+            "mean": 0.1879409706956142,
+            "std": 0.0010192282076901475,
+            "values": [
+              0.18717024857541828,
+              0.1890966022922328,
+              0.1875560612191915
+            ],
+            "seeds": [
+              42,
+              43,
+              44
+            ],
+            "n": 3
+          }
+        },
+        "changed": {
+          "accuracy": {
+            "mean": 0.4527672304683006,
+            "std": 0.0014880355720144395,
+            "values": [
+              0.4540904383845357,
+              0.45115636865723163,
+              0.4530548843631343
+            ],
+            "seeds": [
+              42,
+              43,
+              44
+            ],
+            "n": 3
+          },
+          "mAP": {
+            "mean": 0.3566934036471687,
+            "std": 0.0011911975276468103,
+            "values": [
+              0.35672801873642973,
+              0.3578669163646132,
+              0.35548527584046313
+            ],
+            "seeds": [
+              42,
+              43,
+              44
+            ],
+            "n": 3
+          },
+          "pearson_macro": {
+            "mean": 0.1790373218079656,
+            "std": 0.0004933070271899555,
+            "values": [
+              0.17848947893050573,
+              0.17944634675992652,
+              0.1791761397334646
+            ],
+            "seeds": [
+              42,
+              43,
+              44
+            ],
+            "n": 3
+          }
+        },
+        "standardized_concept_shift": {
+          "mean": 0.7280977917705318,
+          "std": 0.0055481404462476465,
+          "values": [
+            0.7340879184383294,
+            0.7270701250130998,
+            0.7231353318601661
+          ],
+          "seeds": [
+            42,
+            43,
+            44
+          ],
+          "n": 3
+        }
+      },
+      "\u975e CBM": {
+        "original": {
+          "accuracy": {
+            "mean": 0.6651133356345645,
+            "std": 0.0008513777808623255,
+            "values": [
+              0.665688643424232,
+              0.6641353123921298,
+              0.6655160510873317
+            ],
+            "seeds": [
+              42,
+              43,
+              44
+            ],
+            "n": 3
+          }
+        },
+        "changed": {
+          "accuracy": {
+            "mean": 0.5350937751697159,
+            "std": 0.002109113195239156,
+            "values": [
+              0.5369347600966518,
+              0.5355540214014498,
+              0.5327925440110459
+            ],
+            "seeds": [
+              42,
+              43,
+              44
+            ],
+            "n": 3
+          }
+        }
+      }
+    },
+    "paired_accuracy_gain": {
+      "original": {
+        "mean": 0.22989299275112188,
+        "std": 0.010077087039692813,
+        "values": [
+          0.22695892302381776,
+          0.2411114946496376,
+          0.22160856057991024
+        ],
+        "seeds": [
+          42,
+          43,
+          44
+        ],
+        "n": 3
+      },
+      "changed": {
+        "mean": 0.22402485329651364,
+        "std": 0.004407022897757586,
+        "values": [
+          0.22298929927511218,
+          0.22885743872972042,
+          0.22022782188470832
+        ],
+        "seeds": [
+          42,
+          43,
+          44
+        ],
+        "n": 3
+      }
+    }
   }
 ]

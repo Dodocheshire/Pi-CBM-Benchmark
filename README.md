@@ -51,7 +51,7 @@ CUB 任务骨干的两视图共享缓存已完成，六份划分文件与原数�
 
 RIVAL10／ImageNet ResNet18、ResNet50 的原图与背景增强训练均已完成种子 42、43、44。`python -m benchmark.report_seeds` 汇总三个种子都完成的组：使用相同有效测试图与三个种子共同保留的概念列，绘制均值、样本标准差及各个种子的结果。这两种骨干的四组三种子 NEC 扫描已完成；`python -m benchmark.report_nec_seeds` 按相同目标预算汇总，并以实际 NEC 的均值和波动绘图。
 
-三个训练种子的汇总已扩展到 9 组：RIVAL10 的三种共享骨干、两种训练视图，以及 CUB／ResNet18 的两种视图和 CUB／ResNet50 的原图组。其余重复实验与 NEC 扫描继续运行。
+三个训练种子的汇总已扩展到 10 组：RIVAL10 的三种共享骨干、两种训练视图，以及 CUB／ResNet18、ResNet50 的原图和背景增强组。RIVAL10 三种骨干的六组多种子 NEC 扫描均已完成；其余重复实验与 NEC 扫描继续运行。
 
 ```bash
 python -m benchmark.report_matched
