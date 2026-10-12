@@ -21,7 +21,7 @@ git clone --recurse-submodules https://github.com/Dodocheshire/Pi-CBM-Benchmark.
 
 NEC 网格根据数据集与概念库规模设置，同时保留 NEC=5 和 5–30 的参考区间。参考 [VLG-CBM §5.1 与附录 F](https://arxiv.org/html/2408.01432v3)：使用 GLM-SAGA 正则化路径，选取 NEC 接近目标的权重，再剪除最小连接达到规定平均 NEC。每个点保存实际 NEC、每类连接数与原始路径位置。充分 NEC 对照使用验证集选择的全路径模型和稠密分类头。
 
-结果位于 [同条件评测](reports/EXPERIMENT_REPORT.md)、[三个训练种子汇总](reports/SEED_RESULT.md)、[多种子 NEC 曲线](reports/NEC_SEED_RESULT.md)、[非 CBM 对照](reports/NONCBM_RESULT.md)、[泛化／NEC 曲线](reports/GENERALIZATION_RESULT.md)、[扰动下的概念预测与激活变化](reports/OOD_CONCEPT_RESULT.md)、[扰动 NEC 曲线](reports/OOD_NEC_RESULT.md)、[CIFAR 与官方 CIFAR-C](reports/CIFAR_RESULT.md) 和 [大规模数据集](reports/SCALE_RESULT.md)。数据、模型和逐图预测写入忽略的 `artifacts/`。
+结果位于 [同条件评测](reports/EXPERIMENT_REPORT.md)、[三个训练种子汇总](reports/SEED_RESULT.md)、[多种子 NEC 曲线](reports/NEC_SEED_RESULT.md)、[非 CBM 对照](reports/NONCBM_RESULT.md)、[泛化／NEC 曲线](reports/GENERALIZATION_RESULT.md)、[扰动下的概念预测与激活变化](reports/OOD_CONCEPT_RESULT.md)、[扰动 NEC 曲线](reports/OOD_NEC_RESULT.md)、[LF-Pi 注入位置比较](reports/LF_SITE_RESULT.md)、[CIFAR 与官方 CIFAR-C](reports/CIFAR_RESULT.md) 和 [大规模数据集](reports/SCALE_RESULT.md)。数据、模型和逐图预测写入忽略的 `artifacts/`。
 
 `python -m benchmark.ood_full_queue` 在显存连续三次达到 16 GiB 后，串行导出三个有原生概念标注数据集的完整 PiNI 概念值，用于固定分类头的扰动 NEC 评测。每组使用同一批 256 张测试图和 13 个原图／腐蚀设置；输出位于独立的 `artifacts/ood_fullraw/`。新增保存逻辑核验见 [完整概念导出入口](reports/pini_ood_full_export_cpu_audit.json)。
 
@@ -61,6 +61,7 @@ python -m benchmark.report_noncbm
 python -m benchmark.report_generalization
 python -m benchmark.report_ood_concepts
 python -m benchmark.report_ood_nec
+python -m benchmark.report_lf_sites
 python -m benchmark.report_cifar
 python -m benchmark.report_scale
 python -m benchmark.report_seeds
@@ -77,3 +78,5 @@ LF-Pi 图像层／内部层适配入口为 `python -m benchmark.lf_sites`，复�
 共同分类头只加载概念值、类别标签和图像编号，并在拼接后释放原始训练／验证字典。必要字段的逐位核验见 [分类头加载器](reports/head_loader_fields_audit.json)；拟合设置与运算保持一致。
 
 `python -m benchmark.lf_sites_profile run --site target_internal --device cuda --batch 256` 实测单批训练显存；图像层改为 `--site target_image`。两个入口均已通过原批量 256 的前向、反向和一步优化测量，见 [内部层显存](reports/lf_sites_target_internal_gpu_profile.json) 与 [图像层显存](reports/lf_sites_target_image_gpu_profile.json)。RIVAL10 两视图完整内部特征缓存已完成，四组原图／背景增强、图像层／内部层正式训练已排入串行队列，保持原 20 轮及 1000 步分类头拟合设置。
+
+完整 RIVAL10 内部缓存通过 [全量数值与骨干输出核验](reports/lf_sites_rival10_full_cache_audit.json)。内部层原图组已完成 20 轮训练、分类头重拟合和六份单采样导出；相同 5282 张有效测试图、13 个概念的结果见 [注入位置比较](reports/LF_SITE_RESULT.md)，共同分类头 NEC 扫描已启动。其余三组按原设置串行运行。

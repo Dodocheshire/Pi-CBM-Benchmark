@@ -1,0 +1,39 @@
+{
+  "dataset": "rival10",
+  "all_cache_values_finite": true,
+  "sample_scope": "four representative rows from each train/val/test fold in each view",
+  "checks": [
+    {
+      "view": "original",
+      "images_all_finite": 26384,
+      "shape": [
+        26384,
+        256,
+        14,
+        14
+      ],
+      "dtype": "float32",
+      "sampled_images": 12,
+      "sampled_global_relative_l2": 0.0006345185684040189,
+      "sampled_global_cosine_min": 0.9999991301278843,
+      "backbone_sha256": "8b35a3a94717bfdd297d31c6bc8e33421b88bb7db8c626ec2bb4e8ffafa27f3a",
+      "point": "pre_layer4"
+    },
+    {
+      "view": "changed",
+      "images_all_finite": 26384,
+      "shape": [
+        26384,
+        256,
+        14,
+        14
+      ],
+      "dtype": "float32",
+      "sampled_images": 12,
+      "sampled_global_relative_l2": 0.0006071813986636698,
+      "sampled_global_cosine_min": 0.9999995313916386,
+      "backbone_sha256": "8b35a3a94717bfdd297d31c6bc8e33421b88bb7db8c626ec2bb4e8ffafa27f3a",
+      "point": "pre_layer4"
+    }
+  ]
+}

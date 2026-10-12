@@ -9,9 +9,9 @@ import numpy as np
 from .metrics import classification_metrics
 from .report_utils import write_metrics, backbone_cache_folder
 
-NAMES={'lfcbm':'LF-CBM','lfpi_global':'LF-Pi（8次采样）','lfpi_global_1draw':'LF-Pi','lfpi':'LF-Pi（8次采样）','lfpi_single':'LF-Pi','pini_mean':'PiNI 均值',
+NAMES={'lfcbm':'LF-CBM','lfpi_global':'LF-Pi（8次采样）','lfpi_global_1draw':'LF-Pi','lfpi':'LF-Pi（8次采样）','lfpi_single':'LF-Pi','lfpi_image':'LF-Pi 图像层','lfpi_internal':'LF-Pi 内部层','pini_mean':'PiNI 均值',
        'pini_noise':'PiNI 均值＋噪声','noncbm':'非 CBM'}
-COLORS={'LF-CBM':'#2878B5','LF-Pi':'#E15759','LF-Pi（8次采样）':'#E15759','PiNI 均值':'#59A14F',
+COLORS={'LF-CBM':'#2878B5','LF-Pi':'#E15759','LF-Pi（8次采样）':'#E15759','LF-Pi 图像层':'#9C755F','LF-Pi 内部层':'#76B7B2','PiNI 均值':'#59A14F',
         'PiNI 均值＋噪声':'#B07AA1','非 CBM':'#F28E2B'}
 
 
