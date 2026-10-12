@@ -75,3 +75,5 @@ LF-Pi 图像层／内部层适配入口为 `python -m benchmark.lf_sites`，复�
 `python -m benchmark.lf_sites encode-internal --dataset rival10 --device cpu --batch 32` 正在生成两种视图的完整内部特征缓存。后续 `train --site target_image` 或 `train --site target_internal` 使用独立的 `artifacts/matched/lf_sites/` 目录；核心代码、已有 global 训练及结果保持原样。
 
 共同分类头只加载概念值、类别标签和图像编号，并在拼接后释放原始训练／验证字典。必要字段的逐位核验见 [分类头加载器](reports/head_loader_fields_audit.json)；拟合设置与运算保持一致。
+
+`python -m benchmark.lf_sites_profile run --site target_internal --device cuda --batch 256` 实测单批训练显存；图像层改为 `--site target_image`。两个入口均已通过原批量 256 的前向、反向和一步优化测量，见 [内部层显存](reports/lf_sites_target_internal_gpu_profile.json) 与 [图像层显存](reports/lf_sites_target_image_gpu_profile.json)。RIVAL10 两视图完整内部特征缓存已完成，四组原图／背景增强、图像层／内部层正式训练已排入串行队列，保持原 20 轮及 1000 步分类头拟合设置。
