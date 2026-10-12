@@ -69,3 +69,7 @@ python -m benchmark.head_queue --workers 2
 ```
 
 共同分类头提供默认关闭的省显存选项：`head_suite --saga-gradient-kernel matmul` 用矩阵乘法计算原 SAGA 的批量平均梯度；`--streaming-dense` 保留原归一化、随机排列和优化器，逐批将训练特征送入显卡。核验记录见 [分类头数值回归](reports/optional_head_regression_audit.json)。小路径的所选正则、实际 NEC 和验证预测一致；2400 张训练样本上的四组稠密头配置，权重与预测逐位一致。
+
+LF-Pi 图像层／内部层适配入口为 `python -m benchmark.lf_sites`，复用已有 LF-CBM 的概念筛选、投影和分类头，并调用原始加噪训练。图像输入使用共享 224×224 RGB 和 ImageNet 归一化；ResNet18 内部输入为真实的 layer4 之前 `256×14×14` 特征。接口核验见 [原图训练参考](reports/lf_sites_rival10_original_cpu_audit.json) 和 [背景增强参考](reports/lf_sites_rival10_paired_cpu_audit.json)。
+
+`python -m benchmark.lf_sites encode-internal --dataset rival10 --device cpu --batch 32` 正在生成两种视图的完整内部特征缓存。后续 `train --site target_image` 或 `train --site target_internal` 使用独立的 `artifacts/matched/lf_sites/` 目录；核心代码、已有 global 训练及结果保持原样。

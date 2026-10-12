@@ -1,0 +1,223 @@
+{
+  "dataset": "rival10",
+  "protocol": "paired",
+  "seed": 42,
+  "audit_scope": "CPU two training samples only; no fitting or full cache",
+  "reference": "/home/pengcheng/Pi-CBM-Benchmark/artifacts/matched/lf/rival10/rn18_imagenet/paired_augmentation/seed42",
+  "reference_checkpoint_sha256": "ea2686f42428af134142a674b641265c1a234c758f3f6e748bddaf05c5a644a3",
+  "selected_indices": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    14,
+    17
+  ],
+  "backbone_sha256": "8b35a3a94717bfdd297d31c6bc8e33421b88bb7db8c626ec2bb4e8ffafa27f3a",
+  "full_cache_started": false,
+  "formal_training_started": false,
+  "gpu_used": false,
+  "views": {
+    "original": {
+      "ids": [
+        0,
+        1
+      ],
+      "internal_shape": [
+        2,
+        256,
+        14,
+        14
+      ],
+      "global_shape": [
+        2,
+        512
+      ],
+      "canonical_rgb_source": "/home/pengcheng/Pi-CBM/PiNI/artifacts/rival10_aligned_rn18/cache/rgb_original.npy",
+      "canonical_sample_rgb_sha256": "c8853c19c9f46208c86a83070786d17135b063d0494e465d1ee213f957a41963",
+      "preprocess": "canonical uint8 /255; ImageNet normalization only; no resize/crop",
+      "cpu_suffix_vs_full_path_max_abs": 0.0,
+      "shared_global_max_abs": 0.003426671028137207,
+      "shared_global_relative_l2": 0.00047338870353996754,
+      "shared_global_cosine_min": 0.9999998736278385,
+      "shared_backend_tolerance": {
+        "relative_l2": 0.001,
+        "cosine_min": 0.99999,
+        "max_abs": 0.03
+      },
+      "sites": {
+        "target_image": {
+          "original_input_loader_exact": true,
+          "target_input_gradient_max_abs": 0.033825185149908066,
+          "gradient_crosses_frozen_suffix": true,
+          "frozen_parameter_gradients_absent": true,
+          "concept_shape": [
+            2,
+            14
+          ],
+          "classifier_shape": [
+            2,
+            10
+          ],
+          "core_build_model_used": true,
+          "generator_channels": 3,
+          "lazy_canonical_input_adapter_exact": true,
+          "baseline_wrapper_vs_direct_probability_max_abs": 0.0,
+          "clean_suffix_concepts_vs_shared_max_abs": 0.0014413893222808838,
+          "clean_suffix_probabilities_vs_shared_max_abs": 0.0003115534782409668,
+          "clean_suffix_class_prediction_changes": 0,
+          "baseline_and_site_two_sample_npz_verified": true
+        },
+        "target_internal": {
+          "original_input_loader_exact": true,
+          "target_input_gradient_max_abs": 0.03507012873888016,
+          "gradient_crosses_frozen_suffix": true,
+          "frozen_parameter_gradients_absent": true,
+          "concept_shape": [
+            2,
+            14
+          ],
+          "classifier_shape": [
+            2,
+            10
+          ],
+          "core_build_model_used": true,
+          "generator_channels": 256,
+          "lazy_canonical_input_adapter_exact": true,
+          "baseline_wrapper_vs_direct_probability_max_abs": 0.0,
+          "clean_suffix_concepts_vs_shared_max_abs": 0.0014413893222808838,
+          "clean_suffix_probabilities_vs_shared_max_abs": 0.0003115534782409668,
+          "clean_suffix_class_prediction_changes": 0,
+          "baseline_and_site_two_sample_npz_verified": true
+        }
+      }
+    },
+    "changed": {
+      "ids": [
+        0,
+        1
+      ],
+      "internal_shape": [
+        2,
+        256,
+        14,
+        14
+      ],
+      "global_shape": [
+        2,
+        512
+      ],
+      "canonical_rgb_source": "/home/pengcheng/Pi-CBM/PiNI/artifacts/rival10_aligned_rn18/cache/rgb_changed.npy",
+      "canonical_sample_rgb_sha256": "8b6ae5e00e22a341ee27daa4fd60651b737da2a1c67afc68450eca41ddea5718",
+      "preprocess": "canonical uint8 /255; ImageNet normalization only; no resize/crop",
+      "cpu_suffix_vs_full_path_max_abs": 0.0,
+      "shared_global_max_abs": 0.005299687385559082,
+      "shared_global_relative_l2": 0.0006982507766224444,
+      "shared_global_cosine_min": 0.9999997369390553,
+      "shared_backend_tolerance": {
+        "relative_l2": 0.001,
+        "cosine_min": 0.99999,
+        "max_abs": 0.03
+      },
+      "sites": {
+        "target_image": {
+          "original_input_loader_exact": true,
+          "target_input_gradient_max_abs": 0.024159755557775497,
+          "gradient_crosses_frozen_suffix": true,
+          "frozen_parameter_gradients_absent": true,
+          "concept_shape": [
+            2,
+            14
+          ],
+          "classifier_shape": [
+            2,
+            10
+          ],
+          "core_build_model_used": true,
+          "generator_channels": 3,
+          "lazy_canonical_input_adapter_exact": true,
+          "baseline_wrapper_vs_direct_probability_max_abs": 0.0,
+          "clean_suffix_concepts_vs_shared_max_abs": 0.002614736557006836,
+          "clean_suffix_probabilities_vs_shared_max_abs": 0.0001679062843322754,
+          "clean_suffix_class_prediction_changes": 0,
+          "baseline_and_site_two_sample_npz_verified": true
+        },
+        "target_internal": {
+          "original_input_loader_exact": true,
+          "target_input_gradient_max_abs": 0.06112930551171303,
+          "gradient_crosses_frozen_suffix": true,
+          "frozen_parameter_gradients_absent": true,
+          "concept_shape": [
+            2,
+            14
+          ],
+          "classifier_shape": [
+            2,
+            10
+          ],
+          "core_build_model_used": true,
+          "generator_channels": 256,
+          "lazy_canonical_input_adapter_exact": true,
+          "baseline_wrapper_vs_direct_probability_max_abs": 0.0,
+          "clean_suffix_concepts_vs_shared_max_abs": 0.002614736557006836,
+          "clean_suffix_probabilities_vs_shared_max_abs": 0.0001679062843322754,
+          "clean_suffix_class_prediction_changes": 0,
+          "baseline_and_site_two_sample_npz_verified": true
+        }
+      }
+    }
+  },
+  "core_split_state_sha256": "d136f188c658c5454ce0b8da4e652a8c965f34c022f040ceaff00564e23ff692",
+  "full_torchvision_state_sha_matches_shared": true,
+  "prefix_suffix_weights_exact_full_torchvision": true,
+  "paired_adapter_fixture": {
+    "target_image": {
+      "views": [
+        "original",
+        "changed"
+      ],
+      "underlying_subjects": 2,
+      "rows": 4,
+      "ordered_subject_ids": [
+        0,
+        1,
+        0,
+        1
+      ],
+      "exact_normalized_input_parity": true,
+      "scope": "input interface fixture only; no paired training or full cache"
+    },
+    "target_internal": {
+      "views": [
+        "original",
+        "changed"
+      ],
+      "underlying_subjects": 2,
+      "rows": 4,
+      "ordered_subject_ids": [
+        0,
+        1,
+        0,
+        1
+      ],
+      "exact_normalized_input_parity": true,
+      "scope": "input interface fixture only; no paired training or full cache"
+    }
+  },
+  "core_source_sha256": {
+    "pipeline.py": "75372cf57240273453a0b0f19a3b4c6227a0dc75d2fed7c8f5cd714c2354757e",
+    "training/adapt.py": "09bfd8be1f2880ec12cf5eb0efff7eefea7db289bc56ee6591afb4b84040bfe2",
+    "inputs.py": "2267269f779433dc74f9bf786fc8c7bb43a0de86fa17fe5ba8590e0f4e3a1486",
+    "injections/sites.py": "2d1a915d23184b0794fa8e33c464dcb9d806bda7411a3279a3cb13f55ccb0e28",
+    "models/backbones.py": "a7b381e6380bf9b064f28fbd9dbaad9ccab9668e615cd5c605ef4f4445df5848",
+    "evaluation/inference.py": "8b5877ffb4be3b48e692937998a96dc7b7c6b1e3c321bc681196767ba0ca537c"
+  }
+}
