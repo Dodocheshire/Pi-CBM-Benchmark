@@ -21,7 +21,7 @@ git clone --recurse-submodules https://github.com/Dodocheshire/Pi-CBM-Benchmark.
 
 NEC 网格根据数据集与概念库规模设置，同时保留 NEC=5 和 5–30 的参考区间。参考 [VLG-CBM §5.1 与附录 F](https://arxiv.org/html/2408.01432v3)：使用 GLM-SAGA 正则化路径，选取 NEC 接近目标的权重，再剪除最小连接达到规定平均 NEC。每个点保存实际 NEC、每类连接数与原始路径位置。充分 NEC 对照使用验证集选择的全路径模型和稠密分类头。
 
-结果位于 [同条件评测](reports/EXPERIMENT_REPORT.md)、[三个训练种子汇总](reports/SEED_RESULT.md)、[多种子 NEC 曲线](reports/NEC_SEED_RESULT.md)、[非 CBM 对照](reports/NONCBM_RESULT.md)、[泛化／NEC 曲线](reports/GENERALIZATION_RESULT.md)、[扰动下的概念预测与激活变化](reports/OOD_CONCEPT_RESULT.md)、[扰动 NEC 曲线](reports/OOD_NEC_RESULT.md)、[LF-Pi 注入位置比较](reports/LF_SITE_RESULT.md)、[CIFAR 与官方 CIFAR-C](reports/CIFAR_RESULT.md) 和 [大规模数据集](reports/SCALE_RESULT.md)。数据、模型和逐图预测写入忽略的 `artifacts/`。
+结果位于 [同条件评测](reports/EXPERIMENT_REPORT.md)、[三个训练种子汇总](reports/SEED_RESULT.md)、[多种子 NEC 曲线](reports/NEC_SEED_RESULT.md)、[非 CBM 对照](reports/NONCBM_RESULT.md)、[泛化／NEC 曲线](reports/GENERALIZATION_RESULT.md)、[扰动下的概念预测与激活变化](reports/OOD_CONCEPT_RESULT.md)、[扰动 NEC 曲线](reports/OOD_NEC_RESULT.md)、[LF-Pi 注入位置比较](reports/LF_SITE_RESULT.md)、[CIFAR 与官方 CIFAR-C](reports/CIFAR_RESULT.md)、[官方 CIFAR-C NEC 曲线](reports/CIFAR_NEC_RESULT.md) 和 [大规模数据集](reports/SCALE_RESULT.md)。数据、模型和逐图预测写入忽略的 `artifacts/`。
 
 `python -m benchmark.ood_full_queue` 在显存连续三次达到 16 GiB 后，串行导出三个有原生概念标注数据集的完整 PiNI 概念值，用于固定分类头的扰动 NEC 评测。每组使用同一批 256 张测试图和 13 个原图／腐蚀设置；输出位于独立的 `artifacts/ood_fullraw/`。新增保存逻辑核验见 [完整概念导出入口](reports/pini_ood_full_export_cpu_audit.json)。
 
@@ -33,9 +33,9 @@ ResNet18 的三个数据集已完成前景／背景分离与四类图像腐蚀�
 
 本机使用环境 `/home/pengcheng/miniconda3/envs/pi-cbm/bin/python`，已有数据与区域缓存来自 `/home/pengcheng/Pi-CBM/PiNI/artifacts/`。
 
-CIFAR10／100 已完成三种共享骨干的原图训练，以及 ResNet18 的高斯噪声增强训练。8 组 LF-CBM／LF-Pi 条件均完成四类官方 CIFAR-C、各三个严重度的测试，非 CBM 每组使用三个种子。Places365 已完成 ResNet18 的 LF-CBM／LF-Pi 与三个种子的非 CBM 对照，使用 73000／7300／36500 张训练／验证／测试图像。ImageNet 已完成 LF-CBM／LF-Pi 与三个种子的非 CBM 分类头，使用 200000／10000／50000 张训练／验证／测试图像；大规模 NEC 扫描和 PiNI 的 CIFAR 区域标注与训练继续运行。
+CIFAR10／100 已完成三种共享骨干的原图训练，以及 ResNet18 的高斯噪声增强训练。8 组 LF-CBM／LF-Pi 条件均完成四类官方 CIFAR-C、各三个严重度的测试，非 CBM 每组使用三个种子。Places365 已完成 ResNet18 的 LF-CBM／LF-Pi 与三个种子的非 CBM 对照，使用 73000／7300／36500 张训练／验证／测试图像。ImageNet 已完成 LF-CBM／LF-Pi 与三个种子的非 CBM 分类头，使用 200000／10000／50000 张训练／验证／测试图像；大规模 NEC 扫描继续运行。PiNI 已完成 CIFAR10／100 的正式训练和 24 份预测导出，官方 CIFAR-C 逐扰动图区域标注与测试正在运行。
 
-PiNI 的 CIFAR 入口为 `python -m benchmark.pini_cifar --datasets cifar10 cifar100 --dino-batch 4`。它复用冻结 ResNet18 和同一图像划分，以训练集 CLIP 相似度生成概念监督，调用子模块原有的均值／加噪训练。区域缓存支持中断续跑；只准备原图区域可使用 `--prepare-only --region-views original`。CIFAR 没有人工概念标注，报告使用 CLIP 教师相关性；区域缓存和初始化完成后，还需完成正式训练及预测导出才计入结果。
+PiNI 的 CIFAR 入口为 `python -m benchmark.pini_cifar --datasets cifar10 cifar100 --dino-batch 4`。它复用冻结 ResNet18 和同一图像划分，以训练集 CLIP 相似度生成概念监督，调用子模块原有的均值／加噪训练。区域缓存支持中断续跑；只准备原图区域可使用 `--prepare-only --region-views original`。CIFAR 没有人工概念标注，报告使用 CLIP 教师相关性；正式训练和导出已完成；官方 CIFAR-C 入口为 `python -m benchmark.pini_cifar_corrupt run --dataset cifar10 --dino-batch 4 --inference-batch 64`。
 
 RIVAL10 的任务预训练 ResNet18 使用 18987 张训练图更新权重、2111 张验证图选轮次，5286 张测试图用于最终评测。共享骨干接口为 `benchmark.task_backbones`；`python -m benchmark.task_backbones audit` 核验权重、特征和像素梯度，`python -m benchmark.task_backbones encode --device cpu --batch 32 --spatial` 生成独立的 `rn18_task_pretrained_train_val_selected` 缓存。核验记录见 [任务骨干来源](reports/task_backbone_audit.json) 和 [CPU 特征核验](reports/rival_task_backbone_cpu_audit.json)。
 
@@ -51,7 +51,7 @@ CUB 任务骨干的两视图共享缓存已完成，六份划分文件与原数�
 
 `python -m benchmark.lf_replication_queue --workers 2` 已完成三种共享骨干、三个有概念标注的数据集、两种训练视图的种子 43／44，共 36 组 LF-CBM／LF-Pi 配对训练。沿用种子 42 的骨干、教师缓存和训练设置；每组完成后导出单次噪声推理预测。运行计划见 [多种子重复实验](reports/lf_replication_plan.json)。
 
-RIVAL10／ImageNet ResNet18、ResNet50 的原图与背景增强训练均已完成种子 42、43、44。`python -m benchmark.report_seeds` 汇总三个种子都完成的组：使用相同有效测试图与三个种子共同保留的概念列，绘制均值、样本标准差及各个种子的结果。这两种骨干的四组三种子 NEC 扫描已完成；`python -m benchmark.report_nec_seeds` 按相同目标预算汇总，并以实际 NEC 的均值和波动绘图。
+RIVAL10、CUB 和 CUB–Places 水鸟二分类的三种共享骨干、原图与背景增强训练，均已完成 LF-CBM／LF-Pi 种子 42、43、44，共 18 组。`python -m benchmark.report_seeds` 汇总三个种子都完成的组：使用相同有效测试图与三个种子共同保留的概念列，绘制均值、样本标准差及各个种子的结果。目前已完成七组三种子 NEC 扫描；`python -m benchmark.report_nec_seeds` 按相同目标预算汇总，并以实际 NEC 的均值和波动绘图。
 
 三个训练种子的汇总已完成全部 18 组：RIVAL10、CUB、CUB–Places Waterbirds 的三种共享骨干、两种训练视图。36 组种子 43／44 的 LF-CBM／LF-Pi 配对训练均已完成；RIVAL10 六组多种子 NEC 曲线已完成，CUB 与 Waterbirds 的剩余分类头扫描继续运行。`python -m benchmark.native_replication_heads --workers 2` 接入新完成的导出，并排除已有队列预留的输出目录。运行范围见 [剩余多种子分类头](reports/native_replication_heads_plan.json)。
 
@@ -73,12 +73,12 @@ python -m benchmark.head_queue --workers 2
 
 LF-Pi 图像层／内部层适配入口为 `python -m benchmark.lf_sites`，复用已有 LF-CBM 的概念筛选、投影和分类头，并调用原始加噪训练。图像输入使用共享 224×224 RGB 和 ImageNet 归一化；ResNet18 内部输入为真实的 layer4 之前 `256×14×14` 特征。接口核验见 [原图训练参考](reports/lf_sites_rival10_original_cpu_audit.json) 和 [背景增强参考](reports/lf_sites_rival10_paired_cpu_audit.json)。
 
-`python -m benchmark.lf_sites encode-internal --dataset rival10 --device cpu --batch 32` 正在生成两种视图的完整内部特征缓存。后续 `train --site target_image` 或 `train --site target_internal` 使用独立的 `artifacts/matched/lf_sites/` 目录；核心代码、已有 global 训练及结果保持原样。
+`python -m benchmark.lf_sites encode-internal --dataset rival10 --device cpu --batch 32` 可生成两种视图的完整内部特征缓存；RIVAL10 缓存已完成。后续 `train --site target_image` 或 `train --site target_internal` 使用独立的 `artifacts/matched/lf_sites/` 目录；核心代码、已有 global 训练及结果保持原样。
 
 共同分类头只加载概念值、类别标签和图像编号，并在拼接后释放原始训练／验证字典。必要字段的逐位核验见 [分类头加载器](reports/head_loader_fields_audit.json)；拟合设置与运算保持一致。
 
 `python -m benchmark.lf_sites_profile run --site target_internal --device cuda --batch 256` 实测单批训练显存；图像层改为 `--site target_image`。两个入口均已通过原批量 256 的前向、反向和一步优化测量，见 [内部层显存](reports/lf_sites_target_internal_gpu_profile.json) 与 [图像层显存](reports/lf_sites_target_image_gpu_profile.json)。RIVAL10 两视图完整内部特征缓存已完成，四组原图／背景增强、图像层／内部层正式训练已排入串行队列，保持原 20 轮及 1000 步分类头拟合设置。
 
-完整 RIVAL10 内部缓存通过 [全量数值与骨干输出核验](reports/lf_sites_rival10_full_cache_audit.json)。内部层原图组已完成 20 轮训练、分类头重拟合和六份单采样导出；相同 5282 张有效测试图、13 个概念的结果见 [注入位置比较](reports/LF_SITE_RESULT.md)，共同分类头 NEC 扫描已启动。其余三组按原设置串行运行。
+完整 RIVAL10 内部缓存通过 [全量数值与骨干输出核验](reports/lf_sites_rival10_full_cache_audit.json)。内部层原图与背景增强两组均完成 20 轮训练、分类头重拟合、各六份单采样导出及共同分类头 NEC 扫描，结果见 [注入位置比较](reports/LF_SITE_RESULT.md)。图像层两组按原设置串行运行。
 
 CUB 任务骨干的 PiNI 均值组已完成共同分类头扫描，24 个分类头／测试视图组合通过 [实际连接数与预测核验](reports/cub_task_pini_mean_nec_audit.json)。内部层原图与背景增强两组均已完成训练及六份预测导出，注入位置报告已更新。
