@@ -340,8 +340,11 @@
     "saga_kernel.py": "33434602752c2bf233f66a3a648384f209d496d08f6677d2139ee3e71ce8be79",
     "lf.py": "684e9fbbe592eead26c934704e72190c17c13b8d9435aa9a273c22ff861d9906",
     "noncbm.py": "b6433f0d23d16e780e50c64ef003225d82e73ac71422fc08e54a8049ca451a19",
-    "head_suite.py": "19d888e464214c48c49a928e5afa93cccfbdc098ca7a8fc026b05a09f7c2158a",
+    "head_suite.py": "4f29ab5d67942be490ff1334d791ec2eb6331a4d980b86526f4068191e6b9df6",
     "optional_head_audit.py": "cbd8bfe50abbf61fe8f0fcda78523371603f1e409122ad8e745cc0bcfa0fd882"
   },
-  "exception_function_and_precision_restored": true
+  "exception_function_and_precision_restored": true,
+  "refresh_evidence": "artifacts/audit/optional_head_regression_refresh.json",
+  "refresh_actual_exit_code": 0,
+  "head_loader_evidence": "reports/head_loader_fields_audit.json"
 }

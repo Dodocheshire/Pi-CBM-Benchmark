@@ -65,3 +65,45 @@
 ![三种子分类与概念结果](seeds_cub_clip_RN50_original.png)
 
 ![三种子相关性与偏移](seeds_shift_cub_clip_RN50_original.png)
+
+## CUB · CLIP RN50 · 背景增强训练
+
+![三种子分类与概念结果](seeds_cub_clip_RN50_paired.png)
+
+![三种子相关性与偏移](seeds_shift_cub_clip_RN50_paired.png)
+
+## WATERBIRDS · ImageNet ResNet18 · 原图训练
+
+![三种子分类与概念结果](seeds_waterbirds_resnet18_original.png)
+
+![三种子相关性与偏移](seeds_shift_waterbirds_resnet18_original.png)
+
+## WATERBIRDS · ImageNet ResNet18 · 背景增强训练
+
+![三种子分类与概念结果](seeds_waterbirds_resnet18_paired.png)
+
+![三种子相关性与偏移](seeds_shift_waterbirds_resnet18_paired.png)
+
+## WATERBIRDS · ImageNet ResNet50 · 原图训练
+
+![三种子分类与概念结果](seeds_waterbirds_resnet50_original.png)
+
+![三种子相关性与偏移](seeds_shift_waterbirds_resnet50_original.png)
+
+## WATERBIRDS · ImageNet ResNet50 · 背景增强训练
+
+![三种子分类与概念结果](seeds_waterbirds_resnet50_paired.png)
+
+![三种子相关性与偏移](seeds_shift_waterbirds_resnet50_paired.png)
+
+## WATERBIRDS · CLIP RN50 · 原图训练
+
+![三种子分类与概念结果](seeds_waterbirds_clip_RN50_original.png)
+
+![三种子相关性与偏移](seeds_shift_waterbirds_clip_RN50_original.png)
+
+## WATERBIRDS · CLIP RN50 · 背景增强训练
+
+![三种子分类与概念结果](seeds_waterbirds_clip_RN50_paired.png)
+
+![三种子相关性与偏移](seeds_shift_waterbirds_clip_RN50_paired.png)
