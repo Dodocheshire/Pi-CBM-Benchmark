@@ -1,0 +1,96 @@
+{
+  "dataset": "cifar10",
+  "backbone": "resnet50",
+  "feature_dim": 2048,
+  "weight_sha256": "d7d14ee7c34f78ae386d2f395be284d10cb9067fb657f34a374677e1a29fc355",
+  "hash_schema": [
+    "lf_core_prefix_suffix_without_fc"
+  ],
+  "views": [
+    {
+      "view": "original",
+      "ids": [
+        6908,
+        32556,
+        54896
+      ],
+      "shape": [
+        3,
+        2048
+      ],
+      "independent_LF_same_q1_CPU_max_abs": 0.0,
+      "pixel_array_samefile": true,
+      "exact_features_claimed": false,
+      "CPU_vs_GPU_backend": true,
+      "relative_l2_vs_LF_q0_GPU": 0.0007787113597703457,
+      "max_abs_vs_LF_q0_GPU": 0.004185676574707031
+    },
+    {
+      "view": "changed",
+      "ids": [
+        6908,
+        32556,
+        54896
+      ],
+      "shape": [
+        3,
+        2048
+      ],
+      "independent_LF_same_q1_CPU_max_abs": 0.0,
+      "pixel_array_samefile": true,
+      "exact_features_claimed": false,
+      "CPU_vs_GPU_backend": true,
+      "shared_changed_features_available": false,
+      "reference": "independent LF original encoder definition on exact shared q1; full q0 GPU cache audit deferred to prepare"
+    }
+  ],
+  "input_gradient_finite": true,
+  "input_gradient_abs_sum": 597.1337890625,
+  "backbone_frozen": true,
+  "core_model_type": "SimpleCBM",
+  "concept_weight_shape": [
+    143,
+    2048
+  ],
+  "classifier_weight_shape": [
+    10,
+    143
+  ],
+  "human_concept_annotations": false,
+  "training_started": false,
+  "GPU_used": false,
+  "core_functions_sha256": {
+    "simple": "73857aa3ead460e977cae357925508e50b7bc78ef63ba1c4be5c88e359c71117",
+    "concept_logits": "84922f0b5298e42a2a68e0f58e0a7d213bec7fa8e8bf69361628cedf8a2b18d8",
+    "classify": "6e897a01b0692e2f275b9e7c4fcea8a97d974aa209439cd0163dc2a853f341d8",
+    "fit_classifier": "a10b996eb5a4cd25d864efb8067932d4280186af1d050d723f8d0fd377ddd8ba",
+    "forward": "3a3827c19e0e586c9b1da3883627e97300bb2393d9d32c78e06ffe6bf5ff043a",
+    "warmup_train": "01a1d2fb6874d37813c332f2c1b498922a07dbe3d82c0f1a7be52205786b9400",
+    "pair_train": "993a69ecb89de9284af05392ca71f4ef51bc24a4a35a3674ad6d30e681a83a8a"
+  },
+  "training": {
+    "simple_steps": 1000,
+    "warmup_epochs": 10,
+    "warmup_batch": 64,
+    "pair_epochs": 5,
+    "pairs": 32,
+    "core_seed": 42,
+    "loss_or_prior_modified": false
+  },
+  "producer_sha256": "04137512ec8250843c948422eef4d07b8c0b5104267f94fe6e0bb9c39984a45e",
+  "source_sha256": {
+    "concepts.json": "b224b15ff0df16c3377f4cca24a8a915de25653b8e0acf9ddc5b600a7b296998",
+    "retained_columns.npy": "9b9353f8a5fefe94fa5addcb89bd4cfd879869b605a86deac50d0c5ec508b8ad",
+    "thresholds.npy": "de17f7ca4a6f3491196aa019da45c84a0df9ae744b4e1675208b3731eeb93061",
+    "attrs.npy": "14f3068b003e38adfe773ec9b193f354555b77908a1f1cb58b6e71f5cd415ec8",
+    "labels.npy": "d13128de212014e257f241a6f6ea7d97f157e02c814dc70456d692fd18a85d32",
+    "protocol.json": "176e455f347842131a5f46cdc75b8b55100b522a65daaff72753866f5584b684",
+    "original_RGB_FEATURE_COMPLETE.json": "ba7a0fb8807f640d24e918f8b1e162ffd5ac858548a57f9bd4d4083fcd3f85bc",
+    "changed_RGB_FEATURE_COMPLETE.json": "9a3ebfea56464786b46c0a046b838eed5c54731ff3467236693f39a40ab4f3dc"
+  },
+  "region_complete_sha256": {
+    "original": "4358c0c964fd1dc045c509f6624b039b3f35445090b8691dcb2cf7d31b8ecd89",
+    "changed": "ac291545e927bcfecfb8bf7b5f7c7919b8c7c478688e8fe3a1b1c646cbb1941e"
+  },
+  "common_manifest_sha256": "3990c5bdd4ff4bc4b5ec21c279e9dfe90781084427ae32c0d2b9761b9b148693"
+}
