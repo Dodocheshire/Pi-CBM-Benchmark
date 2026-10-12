@@ -9205,6 +9205,183 @@
   },
   {
     "group": "artifacts/heads/rival10/resnet18/original/seed42",
+    "method": "LF-Pi \u56fe\u50cf\u5c42",
+    "source": "/home/pengcheng/Pi-CBM-Benchmark/artifacts/matched/lf_sites/rival10/rn18_imagenet/target_image/seed42/single_draw",
+    "train_views": [
+      "original"
+    ],
+    "dataset": "rival10",
+    "concept_field": "concepts",
+    "concept_count": 13,
+    "unconverged_path_points": 0,
+    "validation_selected_path": 23,
+    "test_evaluations": [
+      {
+        "head": "best_val",
+        "view": "original",
+        "accuracy": 0.9687618326391518,
+        "actual_nec": 12.8,
+        "nonzero_connections": 128,
+        "per_class_connections_min": 12,
+        "per_class_connections_max": 13
+      },
+      {
+        "head": "1",
+        "view": "original",
+        "accuracy": 0.7398712608860281,
+        "actual_nec": 1.0,
+        "nonzero_connections": 10,
+        "per_class_connections_min": 0,
+        "per_class_connections_max": 2
+      },
+      {
+        "head": "2",
+        "view": "original",
+        "accuracy": 0.9034456645210147,
+        "actual_nec": 2.0,
+        "nonzero_connections": 20,
+        "per_class_connections_min": 1,
+        "per_class_connections_max": 3
+      },
+      {
+        "head": "3",
+        "view": "original",
+        "accuracy": 0.9278682317304051,
+        "actual_nec": 3.0,
+        "nonzero_connections": 30,
+        "per_class_connections_min": 1,
+        "per_class_connections_max": 6
+      },
+      {
+        "head": "5",
+        "view": "original",
+        "accuracy": 0.9568345323741008,
+        "actual_nec": 5.0,
+        "nonzero_connections": 50,
+        "per_class_connections_min": 4,
+        "per_class_connections_max": 7
+      },
+      {
+        "head": "8",
+        "view": "original",
+        "accuracy": 0.9670579326012874,
+        "actual_nec": 8.0,
+        "nonzero_connections": 80,
+        "per_class_connections_min": 5,
+        "per_class_connections_max": 10
+      },
+      {
+        "head": "12",
+        "view": "original",
+        "accuracy": 0.9689511548655813,
+        "actual_nec": 12.0,
+        "nonzero_connections": 120,
+        "per_class_connections_min": 11,
+        "per_class_connections_max": 13
+      },
+      {
+        "head": "13",
+        "view": "original",
+        "accuracy": 0.9687618326391518,
+        "actual_nec": 12.8,
+        "nonzero_connections": 128,
+        "per_class_connections_min": 12,
+        "per_class_connections_max": 13
+      },
+      {
+        "head": "dense",
+        "view": "original",
+        "accuracy": 0.965921999242711,
+        "actual_nec": 13.0,
+        "nonzero_connections": 130,
+        "per_class_connections_min": 13,
+        "per_class_connections_max": 13
+      },
+      {
+        "head": "best_val",
+        "view": "changed",
+        "accuracy": 0.8326391518364256,
+        "actual_nec": 12.8,
+        "nonzero_connections": 128,
+        "per_class_connections_min": 12,
+        "per_class_connections_max": 13
+      },
+      {
+        "head": "1",
+        "view": "changed",
+        "accuracy": 0.6507004922377887,
+        "actual_nec": 1.0,
+        "nonzero_connections": 10,
+        "per_class_connections_min": 0,
+        "per_class_connections_max": 2
+      },
+      {
+        "head": "2",
+        "view": "changed",
+        "accuracy": 0.7497160166603559,
+        "actual_nec": 2.0,
+        "nonzero_connections": 20,
+        "per_class_connections_min": 1,
+        "per_class_connections_max": 3
+      },
+      {
+        "head": "3",
+        "view": "changed",
+        "accuracy": 0.7671336614918591,
+        "actual_nec": 3.0,
+        "nonzero_connections": 30,
+        "per_class_connections_min": 1,
+        "per_class_connections_max": 6
+      },
+      {
+        "head": "5",
+        "view": "changed",
+        "accuracy": 0.8148428625520636,
+        "actual_nec": 5.0,
+        "nonzero_connections": 50,
+        "per_class_connections_min": 4,
+        "per_class_connections_max": 7
+      },
+      {
+        "head": "8",
+        "view": "changed",
+        "accuracy": 0.8262021961378265,
+        "actual_nec": 8.0,
+        "nonzero_connections": 80,
+        "per_class_connections_min": 5,
+        "per_class_connections_max": 10
+      },
+      {
+        "head": "12",
+        "view": "changed",
+        "accuracy": 0.8322605073835668,
+        "actual_nec": 12.0,
+        "nonzero_connections": 120,
+        "per_class_connections_min": 11,
+        "per_class_connections_max": 13
+      },
+      {
+        "head": "13",
+        "view": "changed",
+        "accuracy": 0.8326391518364256,
+        "actual_nec": 12.8,
+        "nonzero_connections": 128,
+        "per_class_connections_min": 12,
+        "per_class_connections_max": 13
+      },
+      {
+        "head": "dense",
+        "view": "changed",
+        "accuracy": 0.8244982960999622,
+        "actual_nec": 13.0,
+        "nonzero_connections": 130,
+        "per_class_connections_min": 13,
+        "per_class_connections_max": 13
+      }
+    ]
+  },
+  {
+    "group": "artifacts/heads/rival10/resnet18/original/seed42",
     "method": "LF-Pi \u5185\u90e8\u5c42",
     "source": "/home/pengcheng/Pi-CBM-Benchmark/artifacts/matched/lf_sites/rival10/rn18_imagenet/target_internal/seed42/single_draw",
     "train_views": [
