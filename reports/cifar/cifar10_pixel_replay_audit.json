@@ -1,0 +1,53 @@
+{
+  "producer": "benchmark/pini_cifar_corrupt.py",
+  "producer_sha256": "7da1bc1d1a83b0c335ed657af297e3bd561f78e9b44b9f131b611b5f7d67e932",
+  "audit_source": "artifacts/audit/cifar10_official_c_pixel_replay/pixel_replay_audit.json",
+  "measurement": {
+    "records": [
+      {
+        "view": "original",
+        "samples": 256,
+        "batch": 8,
+        "intensity_bit_mismatches": 0,
+        "max_intensity_error": 0.0
+      },
+      {
+        "view": "original",
+        "samples": 256,
+        "batch": 64,
+        "intensity_bit_mismatches": 0,
+        "max_intensity_error": 0.0
+      },
+      {
+        "view": "original",
+        "samples": 256,
+        "batch": 128,
+        "intensity_bit_mismatches": 0,
+        "max_intensity_error": 0.0
+      },
+      {
+        "view": "changed",
+        "samples": 256,
+        "batch": 8,
+        "intensity_bit_mismatches": 0,
+        "max_intensity_error": 0.0
+      },
+      {
+        "view": "changed",
+        "samples": 256,
+        "batch": 64,
+        "intensity_bit_mismatches": 0,
+        "max_intensity_error": 0.0
+      },
+      {
+        "view": "changed",
+        "samples": 256,
+        "batch": 128,
+        "intensity_bit_mismatches": 0,
+        "max_intensity_error": 0.0
+      }
+    ],
+    "passed": true,
+    "no_new_pixel_protocol": true
+  }
+}
