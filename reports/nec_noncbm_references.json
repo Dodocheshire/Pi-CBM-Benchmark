@@ -46,6 +46,26 @@
           "source": "artifacts/noncbm/cifar10_rn18_imagenet_gaussian_noise_augmented/seed44/test_predictions.npz",
           "nec": null
         }
+      ],
+      "gaussian_noise_s1": [
+        {
+          "seed": 42,
+          "accuracy": 0.7555,
+          "source": "artifacts/noncbm/cifar10_rn18_imagenet_gaussian_noise_augmented/seed42/gaussian_noise_s1_predictions.npz",
+          "nec": null
+        },
+        {
+          "seed": 43,
+          "accuracy": 0.7585,
+          "source": "artifacts/noncbm/cifar10_rn18_imagenet_gaussian_noise_augmented/seed43/gaussian_noise_s1_predictions.npz",
+          "nec": null
+        },
+        {
+          "seed": 44,
+          "accuracy": 0.7553,
+          "source": "artifacts/noncbm/cifar10_rn18_imagenet_gaussian_noise_augmented/seed44/gaussian_noise_s1_predictions.npz",
+          "nec": null
+        }
       ]
     }
   },

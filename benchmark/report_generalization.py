@@ -106,18 +106,25 @@ def main():
         if handles:fig.legend(handles,labels,loc='outside lower center',ncol=min(4,len(handles)))
         title=str(group.relative_to(Path('artifacts/heads')));fig.suptitle(title)
         file=f'nec_{index}.png';fig.savefig(out/file,dpi=170);plt.close(fig)
-        labels=['稠密头原图准确率' if view=='original' else '稠密头高斯噪声准确率' if view=='gaussian_noise_s1' else '稠密头换背景准确率' for view in views]
-        lines += [f'## {title}', '', f'![NEC 曲线]({file})','',
-                  '| 方法 | '+' | '.join(labels)+' | SAGA 达到步数上限的路径点 |',
-                  '| '+' | '.join(['---']*(len(views)+2))+' |']
-        for path,r in reports:
-            cells=[f"{100*shared_accuracy(path.parent,r['dataset'],'dense',view):.2f}%"
-                   if (path.parent/f'dense_{view}.npz').exists() else '—' for view in views]
-            lines.append(f"| {NAMES[path.parent.name]} | "+' | '.join(cells)+f" | {r['unconverged_path_points']} |")
-        if any(controls.values()):
-            cells=[f"{100*np.mean([r['accuracy'] for r in controls[view]]):.2f}%" if controls[view] else '—' for view in views]
-            lines.append('| 非 CBM | '+' | '.join(cells)+' | — |')
-        lines += ['']
+        fig,axes=plt.subplots(1,len(views),figsize=(5.5*len(views),4.8),layout='constrained',squeeze=False)
+        for ax,view in zip(axes[0],views):
+            names=[];values=[];errors=[]
+            for path,r in reports:
+                if not (path.parent/f'dense_{view}.npz').exists():continue
+                names.append(NAMES[path.parent.name])
+                values.append(100*shared_accuracy(path.parent,r['dataset'],'dense',view));errors.append(0)
+            if controls[view]:
+                names.append('非 CBM');samples=[100*r['accuracy'] for r in controls[view]]
+                values.append(float(np.mean(samples)))
+                errors.append(float(np.std(samples,ddof=1)) if len(samples)>1 else 0)
+            bars=ax.bar(names,values,color=[COLORS[name] for name in names],yerr=errors,capsize=3)
+            ax.bar_label(bars,fmt='%.1f',padding=3);ax.set_ylim(0,105)
+            ax.tick_params(axis='x',labelrotation=20);ax.set_ylabel('分类准确率（%）')
+            ax.set_title('原图测试' if view=='original' else '高斯噪声测试' if view=='gaussian_noise_s1' else '换背景测试')
+            ax.spines[['top','right']].set_visible(False)
+        fig.suptitle(title+' · 稠密分类头')
+        dense_file=f'nec_dense_{index}.png';fig.savefig(out/dense_file,dpi=170);plt.close(fig)
+        lines += [f'## {title}', '', f'![NEC 曲线]({file})','',f'![充分概念连接下的分类准确率]({dense_file})','']
     shift_groups={};shift_summary=[]
     for path in sorted(Path('artifacts/heads').rglob('shifts/report.json')):
         report=json.loads(path.read_text());shift_groups.setdefault(path.parents[2],[]).append((path,report))

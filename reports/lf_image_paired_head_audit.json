@@ -1,0 +1,150 @@
+{
+  "source": "/home/pengcheng/Pi-CBM-Benchmark/artifacts/matched/lf_sites/rival10/rn18_imagenet/target_image/paired_augmentation/seed42/single_draw",
+  "heads_sha256": "f9548887a363c50974df74747dc09df2ab1c5d32017b5294ee49e4e8eaada37f",
+  "evaluations": [
+    {
+      "head": "1",
+      "view": "original",
+      "images": 5286,
+      "max_logit_reconstruction_error": 0.0,
+      "class_predictions_exact": true,
+      "actual_nec_exact": true
+    },
+    {
+      "head": "2",
+      "view": "original",
+      "images": 5286,
+      "max_logit_reconstruction_error": 0.0,
+      "class_predictions_exact": true,
+      "actual_nec_exact": true
+    },
+    {
+      "head": "3",
+      "view": "original",
+      "images": 5286,
+      "max_logit_reconstruction_error": 0.0,
+      "class_predictions_exact": true,
+      "actual_nec_exact": true
+    },
+    {
+      "head": "5",
+      "view": "original",
+      "images": 5286,
+      "max_logit_reconstruction_error": 0.0,
+      "class_predictions_exact": true,
+      "actual_nec_exact": true
+    },
+    {
+      "head": "8",
+      "view": "original",
+      "images": 5286,
+      "max_logit_reconstruction_error": 0.0,
+      "class_predictions_exact": true,
+      "actual_nec_exact": true
+    },
+    {
+      "head": "12",
+      "view": "original",
+      "images": 5286,
+      "max_logit_reconstruction_error": 0.0,
+      "class_predictions_exact": true,
+      "actual_nec_exact": true
+    },
+    {
+      "head": "14",
+      "view": "original",
+      "images": 5286,
+      "max_logit_reconstruction_error": 0.0,
+      "class_predictions_exact": true,
+      "actual_nec_exact": true
+    },
+    {
+      "head": "best_val",
+      "view": "original",
+      "images": 5286,
+      "max_logit_reconstruction_error": 0.0,
+      "class_predictions_exact": true,
+      "actual_nec_exact": true
+    },
+    {
+      "head": "dense",
+      "view": "original",
+      "images": 5286,
+      "max_logit_reconstruction_error": 0.0,
+      "class_predictions_exact": true,
+      "actual_nec_exact": true
+    },
+    {
+      "head": "1",
+      "view": "changed",
+      "images": 5286,
+      "max_logit_reconstruction_error": 0.0,
+      "class_predictions_exact": true,
+      "actual_nec_exact": true
+    },
+    {
+      "head": "2",
+      "view": "changed",
+      "images": 5286,
+      "max_logit_reconstruction_error": 0.0,
+      "class_predictions_exact": true,
+      "actual_nec_exact": true
+    },
+    {
+      "head": "3",
+      "view": "changed",
+      "images": 5286,
+      "max_logit_reconstruction_error": 0.0,
+      "class_predictions_exact": true,
+      "actual_nec_exact": true
+    },
+    {
+      "head": "5",
+      "view": "changed",
+      "images": 5286,
+      "max_logit_reconstruction_error": 0.0,
+      "class_predictions_exact": true,
+      "actual_nec_exact": true
+    },
+    {
+      "head": "8",
+      "view": "changed",
+      "images": 5286,
+      "max_logit_reconstruction_error": 0.0,
+      "class_predictions_exact": true,
+      "actual_nec_exact": true
+    },
+    {
+      "head": "12",
+      "view": "changed",
+      "images": 5286,
+      "max_logit_reconstruction_error": 0.0,
+      "class_predictions_exact": true,
+      "actual_nec_exact": true
+    },
+    {
+      "head": "14",
+      "view": "changed",
+      "images": 5286,
+      "max_logit_reconstruction_error": 0.0,
+      "class_predictions_exact": true,
+      "actual_nec_exact": true
+    },
+    {
+      "head": "best_val",
+      "view": "changed",
+      "images": 5286,
+      "max_logit_reconstruction_error": 0.0,
+      "class_predictions_exact": true,
+      "actual_nec_exact": true
+    },
+    {
+      "head": "dense",
+      "view": "changed",
+      "images": 5286,
+      "max_logit_reconstruction_error": 0.0,
+      "class_predictions_exact": true,
+      "actual_nec_exact": true
+    }
+  ]
+}
