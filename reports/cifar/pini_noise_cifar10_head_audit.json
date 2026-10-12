@@ -1,0 +1,236 @@
+{
+  "source": "/home/pengcheng/Pi-CBM-Benchmark/artifacts/pini_matched/cifar10/exports/noise",
+  "field": "concept_logits",
+  "heads_sha256": "cd32d2a19764e4acd7e1ddb95732d2f52e492771ddd537b56beef03a17475583",
+  "evaluations": [
+    {
+      "head": "1",
+      "view": "original",
+      "images": 10000,
+      "max_logit_reconstruction_error": 0.0,
+      "class_predictions_exact": true,
+      "actual_nec_exact": true
+    },
+    {
+      "head": "2",
+      "view": "original",
+      "images": 10000,
+      "max_logit_reconstruction_error": 0.0,
+      "class_predictions_exact": true,
+      "actual_nec_exact": true
+    },
+    {
+      "head": "3",
+      "view": "original",
+      "images": 10000,
+      "max_logit_reconstruction_error": 0.0,
+      "class_predictions_exact": true,
+      "actual_nec_exact": true
+    },
+    {
+      "head": "5",
+      "view": "original",
+      "images": 10000,
+      "max_logit_reconstruction_error": 0.0,
+      "class_predictions_exact": true,
+      "actual_nec_exact": true
+    },
+    {
+      "head": "8",
+      "view": "original",
+      "images": 10000,
+      "max_logit_reconstruction_error": 0.0,
+      "class_predictions_exact": true,
+      "actual_nec_exact": true
+    },
+    {
+      "head": "10",
+      "view": "original",
+      "images": 10000,
+      "max_logit_reconstruction_error": 0.0,
+      "class_predictions_exact": true,
+      "actual_nec_exact": true
+    },
+    {
+      "head": "15",
+      "view": "original",
+      "images": 10000,
+      "max_logit_reconstruction_error": 0.0,
+      "class_predictions_exact": true,
+      "actual_nec_exact": true
+    },
+    {
+      "head": "20",
+      "view": "original",
+      "images": 10000,
+      "max_logit_reconstruction_error": 0.0,
+      "class_predictions_exact": true,
+      "actual_nec_exact": true
+    },
+    {
+      "head": "30",
+      "view": "original",
+      "images": 10000,
+      "max_logit_reconstruction_error": 0.0,
+      "class_predictions_exact": true,
+      "actual_nec_exact": true
+    },
+    {
+      "head": "50",
+      "view": "original",
+      "images": 10000,
+      "max_logit_reconstruction_error": 0.0,
+      "class_predictions_exact": true,
+      "actual_nec_exact": true
+    },
+    {
+      "head": "80",
+      "view": "original",
+      "images": 10000,
+      "max_logit_reconstruction_error": 0.0,
+      "class_predictions_exact": true,
+      "actual_nec_exact": true
+    },
+    {
+      "head": "120",
+      "view": "original",
+      "images": 10000,
+      "max_logit_reconstruction_error": 0.0,
+      "class_predictions_exact": true,
+      "actual_nec_exact": true
+    },
+    {
+      "head": "best_val",
+      "view": "original",
+      "images": 10000,
+      "max_logit_reconstruction_error": 0.0,
+      "class_predictions_exact": true,
+      "actual_nec_exact": true
+    },
+    {
+      "head": "dense",
+      "view": "original",
+      "images": 10000,
+      "max_logit_reconstruction_error": 0.0,
+      "class_predictions_exact": true,
+      "actual_nec_exact": true
+    },
+    {
+      "head": "1",
+      "view": "gaussian_noise_s1",
+      "images": 10000,
+      "max_logit_reconstruction_error": 0.0,
+      "class_predictions_exact": true,
+      "actual_nec_exact": true
+    },
+    {
+      "head": "2",
+      "view": "gaussian_noise_s1",
+      "images": 10000,
+      "max_logit_reconstruction_error": 0.0,
+      "class_predictions_exact": true,
+      "actual_nec_exact": true
+    },
+    {
+      "head": "3",
+      "view": "gaussian_noise_s1",
+      "images": 10000,
+      "max_logit_reconstruction_error": 0.0,
+      "class_predictions_exact": true,
+      "actual_nec_exact": true
+    },
+    {
+      "head": "5",
+      "view": "gaussian_noise_s1",
+      "images": 10000,
+      "max_logit_reconstruction_error": 0.0,
+      "class_predictions_exact": true,
+      "actual_nec_exact": true
+    },
+    {
+      "head": "8",
+      "view": "gaussian_noise_s1",
+      "images": 10000,
+      "max_logit_reconstruction_error": 0.0,
+      "class_predictions_exact": true,
+      "actual_nec_exact": true
+    },
+    {
+      "head": "10",
+      "view": "gaussian_noise_s1",
+      "images": 10000,
+      "max_logit_reconstruction_error": 0.0,
+      "class_predictions_exact": true,
+      "actual_nec_exact": true
+    },
+    {
+      "head": "15",
+      "view": "gaussian_noise_s1",
+      "images": 10000,
+      "max_logit_reconstruction_error": 0.0,
+      "class_predictions_exact": true,
+      "actual_nec_exact": true
+    },
+    {
+      "head": "20",
+      "view": "gaussian_noise_s1",
+      "images": 10000,
+      "max_logit_reconstruction_error": 0.0,
+      "class_predictions_exact": true,
+      "actual_nec_exact": true
+    },
+    {
+      "head": "30",
+      "view": "gaussian_noise_s1",
+      "images": 10000,
+      "max_logit_reconstruction_error": 0.0,
+      "class_predictions_exact": true,
+      "actual_nec_exact": true
+    },
+    {
+      "head": "50",
+      "view": "gaussian_noise_s1",
+      "images": 10000,
+      "max_logit_reconstruction_error": 0.0,
+      "class_predictions_exact": true,
+      "actual_nec_exact": true
+    },
+    {
+      "head": "80",
+      "view": "gaussian_noise_s1",
+      "images": 10000,
+      "max_logit_reconstruction_error": 0.0,
+      "class_predictions_exact": true,
+      "actual_nec_exact": true
+    },
+    {
+      "head": "120",
+      "view": "gaussian_noise_s1",
+      "images": 10000,
+      "max_logit_reconstruction_error": 0.0,
+      "class_predictions_exact": true,
+      "actual_nec_exact": true
+    },
+    {
+      "head": "best_val",
+      "view": "gaussian_noise_s1",
+      "images": 10000,
+      "max_logit_reconstruction_error": 0.0,
+      "class_predictions_exact": true,
+      "actual_nec_exact": true
+    },
+    {
+      "head": "dense",
+      "view": "gaussian_noise_s1",
+      "images": 10000,
+      "max_logit_reconstruction_error": 0.0,
+      "class_predictions_exact": true,
+      "actual_nec_exact": true
+    }
+  ],
+  "reconstruction_tolerance": {
+    "atol": 0.0001,
+    "rtol": 0.0001
+  },
+  "backends": "CPU reconstruction vs CUDA original head export"
+}
