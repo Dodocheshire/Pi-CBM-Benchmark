@@ -1,0 +1,47 @@
+{
+  "records": [
+    {
+      "dataset": "cifar10",
+      "method": "pini_mean",
+      "test_images": 10000,
+      "source": "artifacts/pini_matched/cifar10/exports/mean/test_original.npz",
+      "sha256": "4da584557789268c29ec8a2c25376d4a9ae041a0f202782518fc4cedd540c458",
+      "classification_recomputed_exact": true,
+      "teacher_reported_raw_logit_fidelity_recomputed_exact": true,
+      "native_known_all_false": true
+    },
+    {
+      "dataset": "cifar10",
+      "method": "pini_noise",
+      "test_images": 10000,
+      "source": "artifacts/pini_matched/cifar10/exports/noise/test_original.npz",
+      "sha256": "cccf7ef8af87ce75b38c15cc17d873025a6892248b97c9aa3e9737150e358ed7",
+      "classification_recomputed_exact": true,
+      "teacher_reported_raw_logit_fidelity_recomputed_exact": true,
+      "native_known_all_false": true
+    },
+    {
+      "dataset": "cifar100",
+      "method": "pini_mean",
+      "test_images": 10000,
+      "source": "artifacts/pini_matched/cifar100/exports/mean/test_original.npz",
+      "sha256": "de42af0e4a77007f822327553b212435c7558134e46c84a3749437f1e9b206ed",
+      "classification_recomputed_exact": true,
+      "teacher_reported_raw_logit_fidelity_recomputed_exact": true,
+      "native_known_all_false": true
+    },
+    {
+      "dataset": "cifar100",
+      "method": "pini_noise",
+      "test_images": 10000,
+      "source": "artifacts/pini_matched/cifar100/exports/noise/test_original.npz",
+      "sha256": "f4cdccd730a3c0869c8e4167b0d3cf68577d80dad425446c8f1dc4d9d70919af",
+      "classification_recomputed_exact": true,
+      "teacher_reported_raw_logit_fidelity_recomputed_exact": true,
+      "native_known_all_false": true
+    }
+  ],
+  "previous_LF_own_bank_metrics_unchanged": true,
+  "inference_draws": 1,
+  "inference_seed": 4242
+}
