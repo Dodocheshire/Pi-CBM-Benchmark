@@ -1,0 +1,57 @@
+{
+  "verified_utc": "2026-10-12T00:21:16.117308+00:00",
+  "producer_sha256": "7661f99e8b3293cf00266b78f4090bb49977759393a345a3d82458a5b2e383be",
+  "gpu_jobs_started": false,
+  "stochastic_and_model_call_AST_exact": true,
+  "five_method_order_unchanged": true,
+  "LFpi_draws_8_unchanged": true,
+  "seed_4242_unchanged": true,
+  "CPU_save_actual_added_AST_block_roundtrip_exact": true,
+  "existing_selected_probabilities_unchanged": true,
+  "CPU_torch_RNG_state_unchanged": true,
+  "changed_weight_resume_rejected": true,
+  "set_use_kernels_signature": "(self, use_kernels, kernel_config: transformers.utils.kernel_config.KernelConfig | None = None, mode: 'Mode | None' = None)",
+  "checkpoint_selected_epochs": [
+    {
+      "dataset": "rival10",
+      "arm": "mean",
+      "selected_epoch_from_best_pt": 3
+    },
+    {
+      "dataset": "rival10",
+      "arm": "noise",
+      "selected_epoch_from_best_pt": 3
+    },
+    {
+      "dataset": "cub",
+      "arm": "mean",
+      "selected_epoch_from_best_pt": 4
+    },
+    {
+      "dataset": "cub",
+      "arm": "noise",
+      "selected_epoch_from_best_pt": 5
+    },
+    {
+      "dataset": "waterbirds",
+      "arm": "mean",
+      "selected_epoch_from_best_pt": 4
+    },
+    {
+      "dataset": "waterbirds",
+      "arm": "noise",
+      "selected_epoch_from_best_pt": 5
+    }
+  ],
+  "audit_scope": "CPU synthetic tensor serialization and AST preservation; no GPU inference executed",
+  "full_ood_datasets": [
+    "rival10",
+    "cub",
+    "waterbirds"
+  ],
+  "settings_per_dataset": 13,
+  "test_images_per_setting": 256,
+  "batch_size": 8,
+  "minimum_free_MiB": 16384,
+  "gate_samples": 3
+}

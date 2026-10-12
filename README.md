@@ -23,6 +23,8 @@ NEC 网格根据数据集与概念库规模设置，同时保留 NEC=5 和 5–3
 
 结果位于 [同条件评测](reports/EXPERIMENT_REPORT.md)、[三个训练种子汇总](reports/SEED_RESULT.md)、[多种子 NEC 曲线](reports/NEC_SEED_RESULT.md)、[非 CBM 对照](reports/NONCBM_RESULT.md)、[泛化／NEC 曲线](reports/GENERALIZATION_RESULT.md)、[扰动下的概念预测与激活变化](reports/OOD_CONCEPT_RESULT.md)、[LF 扰动 NEC 曲线](reports/OOD_NEC_RESULT.md)、[CIFAR 与官方 CIFAR-C](reports/CIFAR_RESULT.md) 和 [大规模数据集](reports/SCALE_RESULT.md)。数据、模型和逐图预测写入忽略的 `artifacts/`。
 
+`python -m benchmark.ood_full_queue` 在显存连续三次达到 16 GiB 后，串行导出三个有原生概念标注数据集的完整 PiNI 概念值，用于固定分类头的扰动 NEC 评测。每组使用同一批 256 张测试图和 13 个原图／腐蚀设置；输出位于独立的 `artifacts/ood_fullraw/`。新增保存逻辑核验见 [完整概念导出入口](reports/pini_ood_full_export_cpu_audit.json)。
+
 ## 已执行与继续运行
 
 RIVAL10、CUB、CUB–Places Waterbirds 在 ImageNet ResNet18、ImageNet ResNet50、CLIP RN50 上已完成种子 42 的 LF-CBM／LF-Pi 原图与背景增强训练，以及 PiNI 均值／均值加噪训练。非 CBM 对照在相同三种骨干与两种训练视图上使用 42、43、44 三个分类头训练种子。PiNI 当前训练入口固定种子 42。
