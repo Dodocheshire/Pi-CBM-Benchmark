@@ -74,7 +74,7 @@
 
 ## cub/resnet18_cub_trainonly/original/seed42
 
-![NEC 曲线](nec_7.png)
+![NEC 曲线](nec_9.png)
 
 | 方法 | 稠密头原图准确率 | 稠密头换背景准确率 | SAGA 达到步数上限的路径点 |
 | --- | --- | --- | --- |
@@ -84,17 +84,18 @@
 
 ## cub/resnet18_cub_trainonly/paired/seed42
 
-![NEC 曲线](nec_8.png)
+![NEC 曲线](nec_10.png)
 
 | 方法 | 稠密头原图准确率 | 稠密头换背景准确率 | SAGA 达到步数上限的路径点 |
 | --- | --- | --- | --- |
 | LF-CBM | 47.01% | 33.26% | 0 |
 | LF-Pi | 59.23% | 46.17% | 0 |
+| PiNI 均值 | 67.62% | 57.99% | 0 |
 | 非 CBM | 70.62% | 61.58% | — |
 
 ## cub/resnet50/original/seed42
 
-![NEC 曲线](nec_9.png)
+![NEC 曲线](nec_11.png)
 
 | 方法 | 稠密头原图准确率 | 稠密头换背景准确率 | SAGA 达到步数上限的路径点 |
 | --- | --- | --- | --- |
@@ -104,7 +105,7 @@
 
 ## cub/resnet50/paired/seed42
 
-![NEC 曲线](nec_10.png)
+![NEC 曲线](nec_12.png)
 
 | 方法 | 稠密头原图准确率 | 稠密头换背景准确率 | SAGA 达到步数上限的路径点 |
 | --- | --- | --- | --- |
@@ -116,7 +117,7 @@
 
 ## rival10/clip_RN50/original/seed42
 
-![NEC 曲线](nec_11.png)
+![NEC 曲线](nec_14.png)
 
 | 方法 | 稠密头原图准确率 | 稠密头换背景准确率 | SAGA 达到步数上限的路径点 |
 | --- | --- | --- | --- |
@@ -126,7 +127,7 @@
 
 ## rival10/clip_RN50/paired/seed42
 
-![NEC 曲线](nec_12.png)
+![NEC 曲线](nec_17.png)
 
 | 方法 | 稠密头原图准确率 | 稠密头换背景准确率 | SAGA 达到步数上限的路径点 |
 | --- | --- | --- | --- |
@@ -138,7 +139,7 @@
 
 ## rival10/resnet18/original/seed42
 
-![NEC 曲线](nec_13.png)
+![NEC 曲线](nec_20.png)
 
 | 方法 | 稠密头原图准确率 | 稠密头换背景准确率 | SAGA 达到步数上限的路径点 |
 | --- | --- | --- | --- |
@@ -148,7 +149,7 @@
 
 ## rival10/resnet18/paired/seed42
 
-![NEC 曲线](nec_16.png)
+![NEC 曲线](nec_23.png)
 
 | 方法 | 稠密头原图准确率 | 稠密头换背景准确率 | SAGA 达到步数上限的路径点 |
 | --- | --- | --- | --- |
@@ -160,7 +161,7 @@
 
 ## rival10/resnet18_rival10/original/seed42
 
-![NEC 曲线](nec_19.png)
+![NEC 曲线](nec_26.png)
 
 | 方法 | 稠密头原图准确率 | 稠密头换背景准确率 | SAGA 达到步数上限的路径点 |
 | --- | --- | --- | --- |
@@ -170,7 +171,7 @@
 
 ## rival10/resnet18_rival10/paired/seed42
 
-![NEC 曲线](nec_20.png)
+![NEC 曲线](nec_27.png)
 
 | 方法 | 稠密头原图准确率 | 稠密头换背景准确率 | SAGA 达到步数上限的路径点 |
 | --- | --- | --- | --- |
@@ -182,7 +183,7 @@
 
 ## rival10/resnet50/original/seed42
 
-![NEC 曲线](nec_21.png)
+![NEC 曲线](nec_28.png)
 
 | 方法 | 稠密头原图准确率 | 稠密头换背景准确率 | SAGA 达到步数上限的路径点 |
 | --- | --- | --- | --- |
@@ -192,7 +193,7 @@
 
 ## rival10/resnet50/paired/seed42
 
-![NEC 曲线](nec_24.png)
+![NEC 曲线](nec_31.png)
 
 | 方法 | 稠密头原图准确率 | 稠密头换背景准确率 | SAGA 达到步数上限的路径点 |
 | --- | --- | --- | --- |
@@ -204,7 +205,7 @@
 
 ## waterbirds/clip_RN50/original/seed42
 
-![NEC 曲线](nec_27.png)
+![NEC 曲线](nec_34.png)
 
 | 方法 | 稠密头原图准确率 | 稠密头换背景准确率 | SAGA 达到步数上限的路径点 |
 | --- | --- | --- | --- |
@@ -214,7 +215,7 @@
 
 ## waterbirds/clip_RN50/paired/seed42
 
-![NEC 曲线](nec_28.png)
+![NEC 曲线](nec_35.png)
 
 | 方法 | 稠密头原图准确率 | 稠密头换背景准确率 | SAGA 达到步数上限的路径点 |
 | --- | --- | --- | --- |
@@ -225,7 +226,7 @@
 
 ## waterbirds/resnet18/original/seed42
 
-![NEC 曲线](nec_29.png)
+![NEC 曲线](nec_36.png)
 
 | 方法 | 稠密头原图准确率 | 稠密头换背景准确率 | SAGA 达到步数上限的路径点 |
 | --- | --- | --- | --- |
@@ -235,7 +236,7 @@
 
 ## waterbirds/resnet18/paired/seed42
 
-![NEC 曲线](nec_30.png)
+![NEC 曲线](nec_37.png)
 
 | 方法 | 稠密头原图准确率 | 稠密头换背景准确率 | SAGA 达到步数上限的路径点 |
 | --- | --- | --- | --- |
@@ -247,7 +248,7 @@
 
 ## waterbirds/resnet50/original/seed42
 
-![NEC 曲线](nec_31.png)
+![NEC 曲线](nec_38.png)
 
 | 方法 | 稠密头原图准确率 | 稠密头换背景准确率 | SAGA 达到步数上限的路径点 |
 | --- | --- | --- | --- |
@@ -257,7 +258,7 @@
 
 ## waterbirds/resnet50/paired/seed42
 
-![NEC 曲线](nec_32.png)
+![NEC 曲线](nec_39.png)
 
 | 方法 | 稠密头原图准确率 | 稠密头换背景准确率 | SAGA 达到步数上限的路径点 |
 | --- | --- | --- | --- |

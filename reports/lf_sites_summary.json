@@ -3,6 +3,410 @@
     "dataset": "rival10",
     "backbone": "resnet18",
     "train_views": [
+      "original",
+      "changed"
+    ],
+    "seed": 42,
+    "shared_concepts": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      14,
+      17
+    ],
+    "test_subjects": 5282,
+    "methods": {
+      "LF-CBM": {
+        "test_subjects": 5282,
+        "original": {
+          "classification": {
+            "accuracy": 0.9244604316546763,
+            "nll": 0.24986271340419505,
+            "ece_15_bins": 0.042629350392323274,
+            "examples": 5282,
+            "correct": 4883,
+            "balanced_accuracy": 0.923974737993537,
+            "worst_observed_class_accuracy": 0.8386454183266933,
+            "class_counts": [
+              502,
+              534,
+              529,
+              529,
+              532,
+              531,
+              533,
+              529,
+              530,
+              533
+            ],
+            "per_class_accuracy": [
+              0.8386454183266933,
+              0.9662921348314607,
+              0.9168241965973535,
+              0.9376181474480151,
+              0.9492481203007519,
+              0.9246704331450094,
+              0.8911819887429644,
+              0.9395085066162571,
+              0.9264150943396227,
+              0.949343339587242
+            ]
+          },
+          "concepts": {
+            "mAP": 0.6099195300565633,
+            "pearson_macro": 0.4548463304206928,
+            "spearman_macro": 0.4113294168672917,
+            "concepts": 14,
+            "images": 5282,
+            "known_pairs": 73948,
+            "mAP_evaluable_concepts": 14,
+            "correlation_evaluable_concepts": 14
+          }
+        },
+        "changed": {
+          "classification": {
+            "accuracy": 0.8542218856493753,
+            "nll": 0.46884126989323177,
+            "ece_15_bins": 0.027102615113146253,
+            "examples": 5282,
+            "correct": 4512,
+            "balanced_accuracy": 0.8541817829162826,
+            "worst_observed_class_accuracy": 0.8056603773584906,
+            "class_counts": [
+              502,
+              534,
+              529,
+              529,
+              532,
+              531,
+              533,
+              529,
+              530,
+              533
+            ],
+            "per_class_accuracy": [
+              0.8665338645418327,
+              0.9026217228464419,
+              0.8241965973534972,
+              0.8090737240075614,
+              0.8759398496240601,
+              0.8568738229755178,
+              0.849906191369606,
+              0.8223062381852552,
+              0.8056603773584906,
+              0.9287054409005628
+            ]
+          },
+          "concepts": {
+            "mAP": 0.5794022043167082,
+            "pearson_macro": 0.44050664661731753,
+            "spearman_macro": 0.40108660936570617,
+            "concepts": 14,
+            "images": 5282,
+            "known_pairs": 73948,
+            "mAP_evaluable_concepts": 14,
+            "correlation_evaluable_concepts": 14
+          }
+        },
+        "shift": {
+          "raw_mae": 0.6275534427450248,
+          "raw_mse": 0.6773686177470207,
+          "images": 5282,
+          "standardized_mae": 0.6597322826279073,
+          "standardized_mse": 0.7584929129513112,
+          "normalized_concepts": 14
+        }
+      },
+      "LF-Pi \u5168\u5c40\u5c42": {
+        "test_subjects": 5282,
+        "original": {
+          "classification": {
+            "accuracy": 0.9750094661113214,
+            "nll": 0.0893902101642167,
+            "ece_15_bins": 0.01758187647800681,
+            "examples": 5282,
+            "correct": 5150,
+            "balanced_accuracy": 0.9749374717950954,
+            "worst_observed_class_accuracy": 0.9621513944223108,
+            "class_counts": [
+              502,
+              534,
+              529,
+              529,
+              532,
+              531,
+              533,
+              529,
+              530,
+              533
+            ],
+            "per_class_accuracy": [
+              0.9621513944223108,
+              0.9831460674157303,
+              0.9659735349716446,
+              0.9792060491493384,
+              0.9830827067669173,
+              0.9698681732580038,
+              0.9662288930581614,
+              0.9773156899810964,
+              0.9867924528301887,
+              0.975609756097561
+            ]
+          },
+          "concepts": {
+            "mAP": 0.6357221528381718,
+            "pearson_macro": 0.4770624304567132,
+            "spearman_macro": 0.4237417333435225,
+            "concepts": 14,
+            "images": 5282,
+            "known_pairs": 73948,
+            "mAP_evaluable_concepts": 14,
+            "correlation_evaluable_concepts": 14
+          }
+        },
+        "changed": {
+          "classification": {
+            "accuracy": 0.9333585762968573,
+            "nll": 0.2244454624486768,
+            "ece_15_bins": 0.016283875131326342,
+            "examples": 5282,
+            "correct": 4930,
+            "balanced_accuracy": 0.9333310112363579,
+            "worst_observed_class_accuracy": 0.9092627599243857,
+            "class_counts": [
+              502,
+              534,
+              529,
+              529,
+              532,
+              531,
+              533,
+              529,
+              530,
+              533
+            ],
+            "per_class_accuracy": [
+              0.9362549800796812,
+              0.9625468164794008,
+              0.9130434782608695,
+              0.9338374291115312,
+              0.9473684210526315,
+              0.9378531073446328,
+              0.9305816135084428,
+              0.9092627599243857,
+              0.9150943396226415,
+              0.9474671669793621
+            ]
+          },
+          "concepts": {
+            "mAP": 0.6028517076634797,
+            "pearson_macro": 0.45927084220343245,
+            "spearman_macro": 0.4138965649959378,
+            "concepts": 14,
+            "images": 5282,
+            "known_pairs": 73948,
+            "mAP_evaluable_concepts": 14,
+            "correlation_evaluable_concepts": 14
+          }
+        },
+        "shift": {
+          "raw_mae": 0.6228548431269763,
+          "raw_mse": 0.6608319058968123,
+          "images": 5282,
+          "standardized_mae": 0.6268079942831828,
+          "standardized_mse": 0.6794625728335649,
+          "normalized_concepts": 14
+        }
+      },
+      "\u975e CBM": {
+        "original": {
+          "classification": {
+            "accuracy": 0.983150321847785,
+            "nll": 0.057011059016754885,
+            "ece_15_bins": 0.008066754322228368,
+            "examples": 5282,
+            "correct": 5193,
+            "balanced_accuracy": 0.9831098559002278,
+            "worst_observed_class_accuracy": 0.9697542533081286,
+            "class_counts": [
+              502,
+              534,
+              529,
+              529,
+              532,
+              531,
+              533,
+              529,
+              530,
+              533
+            ],
+            "per_class_accuracy": [
+              0.9760956175298805,
+              0.9868913857677902,
+              0.9697542533081286,
+              0.9886578449905482,
+              0.9868421052631579,
+              0.9830508474576272,
+              0.975609756097561,
+              0.9848771266540642,
+              0.9924528301886792,
+              0.9868667917448405
+            ]
+          }
+        },
+        "changed": {
+          "classification": {
+            "accuracy": 0.9507762211283605,
+            "nll": 0.16653897117775762,
+            "ece_15_bins": 0.011022597610739858,
+            "examples": 5282,
+            "correct": 5022,
+            "balanced_accuracy": 0.95080040418488,
+            "worst_observed_class_accuracy": 0.9174484052532833,
+            "class_counts": [
+              502,
+              534,
+              529,
+              529,
+              532,
+              531,
+              533,
+              529,
+              530,
+              533
+            ],
+            "per_class_accuracy": [
+              0.9581673306772909,
+              0.9756554307116105,
+              0.9338374291115312,
+              0.9508506616257089,
+              0.9586466165413534,
+              0.9585687382297552,
+              0.9174484052532833,
+              0.941398865784499,
+              0.9528301886792453,
+              0.9606003752345216
+            ]
+          }
+        }
+      },
+      "LF-Pi \u5185\u90e8\u5c42": {
+        "test_subjects": 5282,
+        "original": {
+          "classification": {
+            "accuracy": 0.9731162438470277,
+            "nll": 0.09070592722108178,
+            "ece_15_bins": 0.014581474814583592,
+            "examples": 5282,
+            "correct": 5140,
+            "balanced_accuracy": 0.9729429593121294,
+            "worst_observed_class_accuracy": 0.9422310756972112,
+            "class_counts": [
+              502,
+              534,
+              529,
+              529,
+              532,
+              531,
+              533,
+              529,
+              530,
+              533
+            ],
+            "per_class_accuracy": [
+              0.9422310756972112,
+              0.9812734082397003,
+              0.9621928166351607,
+              0.9829867674858223,
+              0.9868421052631579,
+              0.9661016949152542,
+              0.9662288930581614,
+              0.9773156899810964,
+              0.9830188679245283,
+              0.9812382739212008
+            ]
+          },
+          "concepts": {
+            "mAP": 0.6428812054013466,
+            "pearson_macro": 0.4797464178300612,
+            "spearman_macro": 0.4261389718963608,
+            "concepts": 14,
+            "images": 5282,
+            "known_pairs": 73948,
+            "mAP_evaluable_concepts": 14,
+            "correlation_evaluable_concepts": 14
+          }
+        },
+        "changed": {
+          "classification": {
+            "accuracy": 0.9392275653161681,
+            "nll": 0.20973261422862313,
+            "ece_15_bins": 0.013123845032135789,
+            "examples": 5282,
+            "correct": 4961,
+            "balanced_accuracy": 0.9391814347287886,
+            "worst_observed_class_accuracy": 0.9169811320754717,
+            "class_counts": [
+              502,
+              534,
+              529,
+              529,
+              532,
+              531,
+              533,
+              529,
+              530,
+              533
+            ],
+            "per_class_accuracy": [
+              0.9382470119521913,
+              0.9644194756554307,
+              0.9224952741020794,
+              0.9376181474480151,
+              0.9473684210526315,
+              0.935969868173258,
+              0.9362101313320825,
+              0.9262759924385633,
+              0.9169811320754717,
+              0.9662288930581614
+            ]
+          },
+          "concepts": {
+            "mAP": 0.613980042679311,
+            "pearson_macro": 0.4689281574803427,
+            "spearman_macro": 0.41985413216454226,
+            "concepts": 14,
+            "images": 5282,
+            "known_pairs": 73948,
+            "mAP_evaluable_concepts": 14,
+            "correlation_evaluable_concepts": 14
+          }
+        },
+        "shift": {
+          "raw_mae": 0.6108914432003762,
+          "raw_mse": 0.6382150140843711,
+          "images": 5282,
+          "standardized_mae": 0.621707459345338,
+          "standardized_mse": 0.6734210142254506,
+          "normalized_concepts": 14
+        },
+        "source": "/home/pengcheng/Pi-CBM-Benchmark/artifacts/matched/lf_sites/rival10/rn18_imagenet/target_internal/paired_augmentation/seed42/single_draw"
+      }
+    }
+  },
+  {
+    "dataset": "rival10",
+    "backbone": "resnet18",
+    "train_views": [
       "original"
     ],
     "seed": 42,

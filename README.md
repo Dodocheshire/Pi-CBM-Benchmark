@@ -80,3 +80,5 @@ LF-Pi 图像层／内部层适配入口为 `python -m benchmark.lf_sites`，复�
 `python -m benchmark.lf_sites_profile run --site target_internal --device cuda --batch 256` 实测单批训练显存；图像层改为 `--site target_image`。两个入口均已通过原批量 256 的前向、反向和一步优化测量，见 [内部层显存](reports/lf_sites_target_internal_gpu_profile.json) 与 [图像层显存](reports/lf_sites_target_image_gpu_profile.json)。RIVAL10 两视图完整内部特征缓存已完成，四组原图／背景增强、图像层／内部层正式训练已排入串行队列，保持原 20 轮及 1000 步分类头拟合设置。
 
 完整 RIVAL10 内部缓存通过 [全量数值与骨干输出核验](reports/lf_sites_rival10_full_cache_audit.json)。内部层原图组已完成 20 轮训练、分类头重拟合和六份单采样导出；相同 5282 张有效测试图、13 个概念的结果见 [注入位置比较](reports/LF_SITE_RESULT.md)，共同分类头 NEC 扫描已启动。其余三组按原设置串行运行。
+
+CUB 任务骨干的 PiNI 均值组已完成共同分类头扫描，24 个分类头／测试视图组合通过 [实际连接数与预测核验](reports/cub_task_pini_mean_nec_audit.json)。内部层原图与背景增强两组均已完成训练及六份预测导出，注入位置报告已更新。

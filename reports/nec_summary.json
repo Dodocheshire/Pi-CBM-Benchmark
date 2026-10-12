@@ -2838,6 +2838,594 @@
     ]
   },
   {
+    "group": "artifacts/heads/cub/resnet18/paired/seed43",
+    "method": "LF-CBM",
+    "source": "/home/pengcheng/Pi-CBM-Benchmark/artifacts/matched/lf/cub/rn18_imagenet/paired_augmentation/seed43",
+    "train_views": [
+      "original",
+      "changed"
+    ],
+    "dataset": "cub",
+    "concept_field": "concepts",
+    "concept_count": 36,
+    "unconverged_path_points": 0,
+    "validation_selected_path": 13,
+    "test_evaluations": [
+      {
+        "head": "best_val",
+        "view": "original",
+        "accuracy": 0.32706247842595787,
+        "actual_nec": 30.43,
+        "nonzero_connections": 6086,
+        "per_class_connections_min": 24,
+        "per_class_connections_max": 35
+      },
+      {
+        "head": "1",
+        "view": "original",
+        "accuracy": 0.059026579219882636,
+        "actual_nec": 1.0,
+        "nonzero_connections": 200,
+        "per_class_connections_min": 0,
+        "per_class_connections_max": 5
+      },
+      {
+        "head": "3",
+        "view": "original",
+        "accuracy": 0.113565757680359,
+        "actual_nec": 3.0,
+        "nonzero_connections": 600,
+        "per_class_connections_min": 0,
+        "per_class_connections_max": 8
+      },
+      {
+        "head": "5",
+        "view": "original",
+        "accuracy": 0.16016568864342423,
+        "actual_nec": 5.0,
+        "nonzero_connections": 1000,
+        "per_class_connections_min": 1,
+        "per_class_connections_max": 12
+      },
+      {
+        "head": "10",
+        "view": "original",
+        "accuracy": 0.24525371073524335,
+        "actual_nec": 10.0,
+        "nonzero_connections": 2000,
+        "per_class_connections_min": 5,
+        "per_class_connections_max": 19
+      },
+      {
+        "head": "15",
+        "view": "original",
+        "accuracy": 0.28460476354849845,
+        "actual_nec": 15.0,
+        "nonzero_connections": 3000,
+        "per_class_connections_min": 7,
+        "per_class_connections_max": 25
+      },
+      {
+        "head": "20",
+        "view": "original",
+        "accuracy": 0.3006558508802209,
+        "actual_nec": 20.0,
+        "nonzero_connections": 4000,
+        "per_class_connections_min": 12,
+        "per_class_connections_max": 28
+      },
+      {
+        "head": "30",
+        "view": "original",
+        "accuracy": 0.3274076630997584,
+        "actual_nec": 30.0,
+        "nonzero_connections": 6000,
+        "per_class_connections_min": 23,
+        "per_class_connections_max": 35
+      },
+      {
+        "head": "36",
+        "view": "original",
+        "accuracy": 0.32309285467725235,
+        "actual_nec": 35.9,
+        "nonzero_connections": 7180,
+        "per_class_connections_min": 34,
+        "per_class_connections_max": 36
+      },
+      {
+        "head": "dense",
+        "view": "original",
+        "accuracy": 0.3239558163617535,
+        "actual_nec": 35.995,
+        "nonzero_connections": 7199,
+        "per_class_connections_min": 35,
+        "per_class_connections_max": 36
+      },
+      {
+        "head": "best_val",
+        "view": "changed",
+        "accuracy": 0.20952709699689334,
+        "actual_nec": 30.43,
+        "nonzero_connections": 6086,
+        "per_class_connections_min": 24,
+        "per_class_connections_max": 35
+      },
+      {
+        "head": "1",
+        "view": "changed",
+        "accuracy": 0.04867103900586814,
+        "actual_nec": 1.0,
+        "nonzero_connections": 200,
+        "per_class_connections_min": 0,
+        "per_class_connections_max": 5
+      },
+      {
+        "head": "3",
+        "view": "changed",
+        "accuracy": 0.08146358301691405,
+        "actual_nec": 3.0,
+        "nonzero_connections": 600,
+        "per_class_connections_min": 0,
+        "per_class_connections_max": 8
+      },
+      {
+        "head": "5",
+        "view": "changed",
+        "accuracy": 0.10562651018294787,
+        "actual_nec": 5.0,
+        "nonzero_connections": 1000,
+        "per_class_connections_min": 1,
+        "per_class_connections_max": 12
+      },
+      {
+        "head": "10",
+        "view": "changed",
+        "accuracy": 0.15688643424231963,
+        "actual_nec": 10.0,
+        "nonzero_connections": 2000,
+        "per_class_connections_min": 5,
+        "per_class_connections_max": 19
+      },
+      {
+        "head": "15",
+        "view": "changed",
+        "accuracy": 0.18312046945115637,
+        "actual_nec": 15.0,
+        "nonzero_connections": 3000,
+        "per_class_connections_min": 7,
+        "per_class_connections_max": 25
+      },
+      {
+        "head": "20",
+        "view": "changed",
+        "accuracy": 0.19554711770797376,
+        "actual_nec": 20.0,
+        "nonzero_connections": 4000,
+        "per_class_connections_min": 12,
+        "per_class_connections_max": 28
+      },
+      {
+        "head": "30",
+        "view": "changed",
+        "accuracy": 0.20969968933379357,
+        "actual_nec": 30.0,
+        "nonzero_connections": 6000,
+        "per_class_connections_min": 23,
+        "per_class_connections_max": 35
+      },
+      {
+        "head": "36",
+        "view": "changed",
+        "accuracy": 0.20503969623748705,
+        "actual_nec": 35.9,
+        "nonzero_connections": 7180,
+        "per_class_connections_min": 34,
+        "per_class_connections_max": 36
+      },
+      {
+        "head": "dense",
+        "view": "changed",
+        "accuracy": 0.21470486710390058,
+        "actual_nec": 35.995,
+        "nonzero_connections": 7199,
+        "per_class_connections_min": 35,
+        "per_class_connections_max": 36
+      }
+    ]
+  },
+  {
+    "group": "artifacts/heads/cub/resnet18/paired/seed43",
+    "method": "LF-Pi",
+    "source": "/home/pengcheng/Pi-CBM-Benchmark/artifacts/matched/lf/cub/rn18_imagenet/paired_augmentation/seed43/single_draw",
+    "train_views": [
+      "original",
+      "changed"
+    ],
+    "dataset": "cub",
+    "concept_field": "concepts",
+    "concept_count": 36,
+    "unconverged_path_points": 0,
+    "validation_selected_path": 12,
+    "test_evaluations": [
+      {
+        "head": "best_val",
+        "view": "original",
+        "accuracy": 0.4937866758715913,
+        "actual_nec": 26.07,
+        "nonzero_connections": 5214,
+        "per_class_connections_min": 19,
+        "per_class_connections_max": 32
+      },
+      {
+        "head": "1",
+        "view": "original",
+        "accuracy": 0.06972730410769762,
+        "actual_nec": 1.0,
+        "nonzero_connections": 200,
+        "per_class_connections_min": 0,
+        "per_class_connections_max": 5
+      },
+      {
+        "head": "3",
+        "view": "original",
+        "accuracy": 0.21798412150500518,
+        "actual_nec": 3.0,
+        "nonzero_connections": 600,
+        "per_class_connections_min": 0,
+        "per_class_connections_max": 8
+      },
+      {
+        "head": "5",
+        "view": "original",
+        "accuracy": 0.3201587849499482,
+        "actual_nec": 5.0,
+        "nonzero_connections": 1000,
+        "per_class_connections_min": 1,
+        "per_class_connections_max": 14
+      },
+      {
+        "head": "10",
+        "view": "original",
+        "accuracy": 0.42423196410079395,
+        "actual_nec": 10.0,
+        "nonzero_connections": 2000,
+        "per_class_connections_min": 4,
+        "per_class_connections_max": 16
+      },
+      {
+        "head": "15",
+        "view": "original",
+        "accuracy": 0.4701415257162582,
+        "actual_nec": 15.0,
+        "nonzero_connections": 3000,
+        "per_class_connections_min": 6,
+        "per_class_connections_max": 22
+      },
+      {
+        "head": "20",
+        "view": "original",
+        "accuracy": 0.49240593717638936,
+        "actual_nec": 20.0,
+        "nonzero_connections": 4000,
+        "per_class_connections_min": 10,
+        "per_class_connections_max": 27
+      },
+      {
+        "head": "30",
+        "view": "original",
+        "accuracy": 0.4934414911977908,
+        "actual_nec": 30.0,
+        "nonzero_connections": 6000,
+        "per_class_connections_min": 22,
+        "per_class_connections_max": 36
+      },
+      {
+        "head": "36",
+        "view": "original",
+        "accuracy": 0.48653779772178113,
+        "actual_nec": 35.84,
+        "nonzero_connections": 7168,
+        "per_class_connections_min": 34,
+        "per_class_connections_max": 36
+      },
+      {
+        "head": "dense",
+        "view": "original",
+        "accuracy": 0.4975837072833966,
+        "actual_nec": 36.0,
+        "nonzero_connections": 7200,
+        "per_class_connections_min": 36,
+        "per_class_connections_max": 36
+      },
+      {
+        "head": "best_val",
+        "view": "changed",
+        "accuracy": 0.387124611667242,
+        "actual_nec": 26.07,
+        "nonzero_connections": 5214,
+        "per_class_connections_min": 19,
+        "per_class_connections_max": 32
+      },
+      {
+        "head": "1",
+        "view": "changed",
+        "accuracy": 0.06351397997928893,
+        "actual_nec": 1.0,
+        "nonzero_connections": 200,
+        "per_class_connections_min": 0,
+        "per_class_connections_max": 5
+      },
+      {
+        "head": "3",
+        "view": "changed",
+        "accuracy": 0.18363824646185709,
+        "actual_nec": 3.0,
+        "nonzero_connections": 600,
+        "per_class_connections_min": 0,
+        "per_class_connections_max": 8
+      },
+      {
+        "head": "5",
+        "view": "changed",
+        "accuracy": 0.24732481877804627,
+        "actual_nec": 5.0,
+        "nonzero_connections": 1000,
+        "per_class_connections_min": 1,
+        "per_class_connections_max": 14
+      },
+      {
+        "head": "10",
+        "view": "changed",
+        "accuracy": 0.3251639627200552,
+        "actual_nec": 10.0,
+        "nonzero_connections": 2000,
+        "per_class_connections_min": 4,
+        "per_class_connections_max": 16
+      },
+      {
+        "head": "15",
+        "view": "changed",
+        "accuracy": 0.36555056955471177,
+        "actual_nec": 15.0,
+        "nonzero_connections": 3000,
+        "per_class_connections_min": 6,
+        "per_class_connections_max": 22
+      },
+      {
+        "head": "20",
+        "view": "changed",
+        "accuracy": 0.38125647221263376,
+        "actual_nec": 20.0,
+        "nonzero_connections": 4000,
+        "per_class_connections_min": 10,
+        "per_class_connections_max": 27
+      },
+      {
+        "head": "30",
+        "view": "changed",
+        "accuracy": 0.3898860890576458,
+        "actual_nec": 30.0,
+        "nonzero_connections": 6000,
+        "per_class_connections_min": 22,
+        "per_class_connections_max": 36
+      },
+      {
+        "head": "36",
+        "view": "changed",
+        "accuracy": 0.3826372109078357,
+        "actual_nec": 35.84,
+        "nonzero_connections": 7168,
+        "per_class_connections_min": 34,
+        "per_class_connections_max": 36
+      },
+      {
+        "head": "dense",
+        "view": "changed",
+        "accuracy": 0.3835001725923369,
+        "actual_nec": 36.0,
+        "nonzero_connections": 7200,
+        "per_class_connections_min": 36,
+        "per_class_connections_max": 36
+      }
+    ]
+  },
+  {
+    "group": "artifacts/heads/cub/resnet18/paired/seed44",
+    "method": "LF-CBM",
+    "source": "/home/pengcheng/Pi-CBM-Benchmark/artifacts/matched/lf/cub/rn18_imagenet/paired_augmentation/seed44",
+    "train_views": [
+      "original",
+      "changed"
+    ],
+    "dataset": "cub",
+    "concept_field": "concepts",
+    "concept_count": 33,
+    "unconverged_path_points": 0,
+    "validation_selected_path": 12,
+    "test_evaluations": [
+      {
+        "head": "best_val",
+        "view": "original",
+        "accuracy": 0.34898170521228855,
+        "actual_nec": 26.98,
+        "nonzero_connections": 5396,
+        "per_class_connections_min": 19,
+        "per_class_connections_max": 32
+      },
+      {
+        "head": "1",
+        "view": "original",
+        "accuracy": 0.06610286503279254,
+        "actual_nec": 1.0,
+        "nonzero_connections": 200,
+        "per_class_connections_min": 0,
+        "per_class_connections_max": 6
+      },
+      {
+        "head": "3",
+        "view": "original",
+        "accuracy": 0.09665170866413532,
+        "actual_nec": 3.0,
+        "nonzero_connections": 600,
+        "per_class_connections_min": 0,
+        "per_class_connections_max": 9
+      },
+      {
+        "head": "5",
+        "view": "original",
+        "accuracy": 0.17949603037625128,
+        "actual_nec": 5.0,
+        "nonzero_connections": 1000,
+        "per_class_connections_min": 1,
+        "per_class_connections_max": 11
+      },
+      {
+        "head": "10",
+        "view": "original",
+        "accuracy": 0.23403520883672765,
+        "actual_nec": 10.0,
+        "nonzero_connections": 2000,
+        "per_class_connections_min": 5,
+        "per_class_connections_max": 16
+      },
+      {
+        "head": "15",
+        "view": "original",
+        "accuracy": 0.3044528822920262,
+        "actual_nec": 15.0,
+        "nonzero_connections": 3000,
+        "per_class_connections_min": 9,
+        "per_class_connections_max": 22
+      },
+      {
+        "head": "20",
+        "view": "original",
+        "accuracy": 0.3296513634794615,
+        "actual_nec": 20.0,
+        "nonzero_connections": 4000,
+        "per_class_connections_min": 13,
+        "per_class_connections_max": 28
+      },
+      {
+        "head": "30",
+        "view": "original",
+        "accuracy": 0.3515705902657922,
+        "actual_nec": 30.0,
+        "nonzero_connections": 6000,
+        "per_class_connections_min": 25,
+        "per_class_connections_max": 33
+      },
+      {
+        "head": "33",
+        "view": "original",
+        "accuracy": 0.3470831895063859,
+        "actual_nec": 32.955,
+        "nonzero_connections": 6591,
+        "per_class_connections_min": 32,
+        "per_class_connections_max": 33
+      },
+      {
+        "head": "dense",
+        "view": "original",
+        "accuracy": 0.35001725923369004,
+        "actual_nec": 33.0,
+        "nonzero_connections": 6600,
+        "per_class_connections_min": 33,
+        "per_class_connections_max": 33
+      },
+      {
+        "head": "best_val",
+        "view": "changed",
+        "accuracy": 0.21574042112530203,
+        "actual_nec": 26.98,
+        "nonzero_connections": 5396,
+        "per_class_connections_min": 19,
+        "per_class_connections_max": 32
+      },
+      {
+        "head": "1",
+        "view": "changed",
+        "accuracy": 0.050051777701070076,
+        "actual_nec": 1.0,
+        "nonzero_connections": 200,
+        "per_class_connections_min": 0,
+        "per_class_connections_max": 6
+      },
+      {
+        "head": "3",
+        "view": "changed",
+        "accuracy": 0.06938211943389713,
+        "actual_nec": 3.0,
+        "nonzero_connections": 600,
+        "per_class_connections_min": 0,
+        "per_class_connections_max": 9
+      },
+      {
+        "head": "5",
+        "view": "changed",
+        "accuracy": 0.11839834311356576,
+        "actual_nec": 5.0,
+        "nonzero_connections": 1000,
+        "per_class_connections_min": 1,
+        "per_class_connections_max": 11
+      },
+      {
+        "head": "10",
+        "view": "changed",
+        "accuracy": 0.1484294097342078,
+        "actual_nec": 10.0,
+        "nonzero_connections": 2000,
+        "per_class_connections_min": 5,
+        "per_class_connections_max": 16
+      },
+      {
+        "head": "15",
+        "view": "changed",
+        "accuracy": 0.1898515705902658,
+        "actual_nec": 15.0,
+        "nonzero_connections": 3000,
+        "per_class_connections_min": 9,
+        "per_class_connections_max": 22
+      },
+      {
+        "head": "20",
+        "view": "changed",
+        "accuracy": 0.20762858129099068,
+        "actual_nec": 20.0,
+        "nonzero_connections": 4000,
+        "per_class_connections_min": 13,
+        "per_class_connections_max": 28
+      },
+      {
+        "head": "30",
+        "view": "changed",
+        "accuracy": 0.22005522954780807,
+        "actual_nec": 30.0,
+        "nonzero_connections": 6000,
+        "per_class_connections_min": 25,
+        "per_class_connections_max": 33
+      },
+      {
+        "head": "33",
+        "view": "changed",
+        "accuracy": 0.21936486020020712,
+        "actual_nec": 32.955,
+        "nonzero_connections": 6591,
+        "per_class_connections_min": 32,
+        "per_class_connections_max": 33
+      },
+      {
+        "head": "dense",
+        "view": "changed",
+        "accuracy": 0.22385226095961339,
+        "actual_nec": 33.0,
+        "nonzero_connections": 6600,
+        "per_class_connections_min": 33,
+        "per_class_connections_max": 33
+      }
+    ]
+  },
+  {
     "group": "artifacts/heads/cub/resnet18_cub_trainonly/original/seed42",
     "method": "LF-CBM",
     "source": "/home/pengcheng/Pi-CBM-Benchmark/artifacts/matched/lf/cub/rn18_task_pretrained_cub_train_val_selected/seed42",
@@ -3544,6 +4132,238 @@
         "nonzero_connections": 3600,
         "per_class_connections_min": 18,
         "per_class_connections_max": 18
+      }
+    ]
+  },
+  {
+    "group": "artifacts/heads/cub/resnet18_cub_trainonly/paired/seed42",
+    "method": "PiNI \u5747\u503c",
+    "source": "/home/pengcheng/Pi-CBM-Benchmark/artifacts/pini_matched/resnet18_cub_trainonly/cub/exports/mean",
+    "train_views": [
+      "original",
+      "changed"
+    ],
+    "dataset": "cub",
+    "concept_field": "concept_logits",
+    "concept_count": 112,
+    "unconverged_path_points": 0,
+    "validation_selected_path": 13,
+    "test_evaluations": [
+      {
+        "head": "best_val",
+        "view": "original",
+        "accuracy": 0.6670693821194339,
+        "actual_nec": 26.765,
+        "nonzero_connections": 5353,
+        "per_class_connections_min": 8,
+        "per_class_connections_max": 49
+      },
+      {
+        "head": "1",
+        "view": "original",
+        "accuracy": 0.20866413531239214,
+        "actual_nec": 1.0,
+        "nonzero_connections": 200,
+        "per_class_connections_min": 0,
+        "per_class_connections_max": 3
+      },
+      {
+        "head": "3",
+        "view": "original",
+        "accuracy": 0.437866758715913,
+        "actual_nec": 3.0,
+        "nonzero_connections": 600,
+        "per_class_connections_min": 0,
+        "per_class_connections_max": 7
+      },
+      {
+        "head": "5",
+        "view": "original",
+        "accuracy": 0.5990680013807387,
+        "actual_nec": 5.0,
+        "nonzero_connections": 1000,
+        "per_class_connections_min": 2,
+        "per_class_connections_max": 10
+      },
+      {
+        "head": "10",
+        "view": "original",
+        "accuracy": 0.6501553331032102,
+        "actual_nec": 10.0,
+        "nonzero_connections": 2000,
+        "per_class_connections_min": 3,
+        "per_class_connections_max": 21
+      },
+      {
+        "head": "15",
+        "view": "original",
+        "accuracy": 0.6629271660338281,
+        "actual_nec": 15.0,
+        "nonzero_connections": 3000,
+        "per_class_connections_min": 5,
+        "per_class_connections_max": 29
+      },
+      {
+        "head": "20",
+        "view": "original",
+        "accuracy": 0.6653434587504314,
+        "actual_nec": 20.0,
+        "nonzero_connections": 4000,
+        "per_class_connections_min": 7,
+        "per_class_connections_max": 35
+      },
+      {
+        "head": "30",
+        "view": "original",
+        "accuracy": 0.6698308595098378,
+        "actual_nec": 30.0,
+        "nonzero_connections": 6000,
+        "per_class_connections_min": 8,
+        "per_class_connections_max": 53
+      },
+      {
+        "head": "50",
+        "view": "original",
+        "accuracy": 0.6651708664135313,
+        "actual_nec": 50.0,
+        "nonzero_connections": 10000,
+        "per_class_connections_min": 19,
+        "per_class_connections_max": 78
+      },
+      {
+        "head": "80",
+        "view": "original",
+        "accuracy": 0.6627545736969278,
+        "actual_nec": 80.0,
+        "nonzero_connections": 16000,
+        "per_class_connections_min": 41,
+        "per_class_connections_max": 106
+      },
+      {
+        "head": "112",
+        "view": "original",
+        "accuracy": 0.660683465654125,
+        "actual_nec": 97.75,
+        "nonzero_connections": 19550,
+        "per_class_connections_min": 73,
+        "per_class_connections_max": 111
+      },
+      {
+        "head": "dense",
+        "view": "original",
+        "accuracy": 0.6762167759751467,
+        "actual_nec": 111.995,
+        "nonzero_connections": 22399,
+        "per_class_connections_min": 111,
+        "per_class_connections_max": 112
+      },
+      {
+        "head": "best_val",
+        "view": "changed",
+        "accuracy": 0.5749050742147048,
+        "actual_nec": 26.765,
+        "nonzero_connections": 5353,
+        "per_class_connections_min": 8,
+        "per_class_connections_max": 49
+      },
+      {
+        "head": "1",
+        "view": "changed",
+        "accuracy": 0.18363824646185709,
+        "actual_nec": 1.0,
+        "nonzero_connections": 200,
+        "per_class_connections_min": 0,
+        "per_class_connections_max": 3
+      },
+      {
+        "head": "3",
+        "view": "changed",
+        "accuracy": 0.3624439074905074,
+        "actual_nec": 3.0,
+        "nonzero_connections": 600,
+        "per_class_connections_min": 0,
+        "per_class_connections_max": 7
+      },
+      {
+        "head": "5",
+        "view": "changed",
+        "accuracy": 0.49309630652399034,
+        "actual_nec": 5.0,
+        "nonzero_connections": 1000,
+        "per_class_connections_min": 2,
+        "per_class_connections_max": 10
+      },
+      {
+        "head": "10",
+        "view": "changed",
+        "accuracy": 0.5438384535726614,
+        "actual_nec": 10.0,
+        "nonzero_connections": 2000,
+        "per_class_connections_min": 3,
+        "per_class_connections_max": 21
+      },
+      {
+        "head": "15",
+        "view": "changed",
+        "accuracy": 0.5604073179150846,
+        "actual_nec": 15.0,
+        "nonzero_connections": 3000,
+        "per_class_connections_min": 5,
+        "per_class_connections_max": 29
+      },
+      {
+        "head": "20",
+        "view": "changed",
+        "accuracy": 0.567828788401795,
+        "actual_nec": 20.0,
+        "nonzero_connections": 4000,
+        "per_class_connections_min": 7,
+        "per_class_connections_max": 35
+      },
+      {
+        "head": "30",
+        "view": "changed",
+        "accuracy": 0.5709354504659994,
+        "actual_nec": 30.0,
+        "nonzero_connections": 6000,
+        "per_class_connections_min": 8,
+        "per_class_connections_max": 53
+      },
+      {
+        "head": "50",
+        "view": "changed",
+        "accuracy": 0.5673110113910942,
+        "actual_nec": 50.0,
+        "nonzero_connections": 10000,
+        "per_class_connections_min": 19,
+        "per_class_connections_max": 78
+      },
+      {
+        "head": "80",
+        "view": "changed",
+        "accuracy": 0.5647221263375906,
+        "actual_nec": 80.0,
+        "nonzero_connections": 16000,
+        "per_class_connections_min": 41,
+        "per_class_connections_max": 106
+      },
+      {
+        "head": "112",
+        "view": "changed",
+        "accuracy": 0.5650673110113911,
+        "actual_nec": 97.75,
+        "nonzero_connections": 19550,
+        "per_class_connections_min": 73,
+        "per_class_connections_max": 111
+      },
+      {
+        "head": "dense",
+        "view": "changed",
+        "accuracy": 0.5799102519848118,
+        "actual_nec": 111.995,
+        "nonzero_connections": 22399,
+        "per_class_connections_min": 111,
+        "per_class_connections_max": 112
       }
     ]
   },
@@ -4902,6 +5722,220 @@
     ]
   },
   {
+    "group": "artifacts/heads/cub/resnet50/paired/seed43",
+    "method": "LF-Pi",
+    "source": "/home/pengcheng/Pi-CBM-Benchmark/artifacts/matched/lf/cub/rn50_imagenet/paired_augmentation/seed43/single_draw",
+    "train_views": [
+      "original",
+      "changed"
+    ],
+    "dataset": "cub",
+    "concept_field": "concepts",
+    "concept_count": 51,
+    "unconverged_path_points": 0,
+    "validation_selected_path": 12,
+    "test_evaluations": [
+      {
+        "head": "best_val",
+        "view": "original",
+        "accuracy": 0.591473938557128,
+        "actual_nec": 27.255,
+        "nonzero_connections": 5451,
+        "per_class_connections_min": 14,
+        "per_class_connections_max": 39
+      },
+      {
+        "head": "1",
+        "view": "original",
+        "accuracy": 0.14342423196410078,
+        "actual_nec": 1.0,
+        "nonzero_connections": 200,
+        "per_class_connections_min": 0,
+        "per_class_connections_max": 3
+      },
+      {
+        "head": "3",
+        "view": "original",
+        "accuracy": 0.31360027614773905,
+        "actual_nec": 3.0,
+        "nonzero_connections": 600,
+        "per_class_connections_min": 1,
+        "per_class_connections_max": 7
+      },
+      {
+        "head": "5",
+        "view": "original",
+        "accuracy": 0.43268898860890576,
+        "actual_nec": 5.0,
+        "nonzero_connections": 1000,
+        "per_class_connections_min": 2,
+        "per_class_connections_max": 10
+      },
+      {
+        "head": "10",
+        "view": "original",
+        "accuracy": 0.5533310321021747,
+        "actual_nec": 10.0,
+        "nonzero_connections": 2000,
+        "per_class_connections_min": 4,
+        "per_class_connections_max": 16
+      },
+      {
+        "head": "15",
+        "view": "original",
+        "accuracy": 0.5712806351397998,
+        "actual_nec": 15.0,
+        "nonzero_connections": 3000,
+        "per_class_connections_min": 8,
+        "per_class_connections_max": 25
+      },
+      {
+        "head": "20",
+        "view": "original",
+        "accuracy": 0.5873317224715222,
+        "actual_nec": 20.0,
+        "nonzero_connections": 4000,
+        "per_class_connections_min": 10,
+        "per_class_connections_max": 31
+      },
+      {
+        "head": "30",
+        "view": "original",
+        "accuracy": 0.5906109768726269,
+        "actual_nec": 30.0,
+        "nonzero_connections": 6000,
+        "per_class_connections_min": 15,
+        "per_class_connections_max": 42
+      },
+      {
+        "head": "50",
+        "view": "original",
+        "accuracy": 0.5802554366586123,
+        "actual_nec": 50.0,
+        "nonzero_connections": 10000,
+        "per_class_connections_min": 44,
+        "per_class_connections_max": 51
+      },
+      {
+        "head": "51",
+        "view": "original",
+        "accuracy": 0.5785295132896099,
+        "actual_nec": 50.28,
+        "nonzero_connections": 10056,
+        "per_class_connections_min": 46,
+        "per_class_connections_max": 51
+      },
+      {
+        "head": "dense",
+        "view": "original",
+        "accuracy": 0.5980324473593372,
+        "actual_nec": 51.0,
+        "nonzero_connections": 10200,
+        "per_class_connections_min": 51,
+        "per_class_connections_max": 51
+      },
+      {
+        "head": "best_val",
+        "view": "changed",
+        "accuracy": 0.47790818087676906,
+        "actual_nec": 27.255,
+        "nonzero_connections": 5451,
+        "per_class_connections_min": 14,
+        "per_class_connections_max": 39
+      },
+      {
+        "head": "1",
+        "view": "changed",
+        "accuracy": 0.118570935450466,
+        "actual_nec": 1.0,
+        "nonzero_connections": 200,
+        "per_class_connections_min": 0,
+        "per_class_connections_max": 3
+      },
+      {
+        "head": "3",
+        "view": "changed",
+        "accuracy": 0.2537107352433552,
+        "actual_nec": 3.0,
+        "nonzero_connections": 600,
+        "per_class_connections_min": 1,
+        "per_class_connections_max": 7
+      },
+      {
+        "head": "5",
+        "view": "changed",
+        "accuracy": 0.3453572661373835,
+        "actual_nec": 5.0,
+        "nonzero_connections": 1000,
+        "per_class_connections_min": 2,
+        "per_class_connections_max": 10
+      },
+      {
+        "head": "10",
+        "view": "changed",
+        "accuracy": 0.4411460131170176,
+        "actual_nec": 10.0,
+        "nonzero_connections": 2000,
+        "per_class_connections_min": 4,
+        "per_class_connections_max": 16
+      },
+      {
+        "head": "15",
+        "view": "changed",
+        "accuracy": 0.45788746979634104,
+        "actual_nec": 15.0,
+        "nonzero_connections": 3000,
+        "per_class_connections_min": 8,
+        "per_class_connections_max": 25
+      },
+      {
+        "head": "20",
+        "view": "changed",
+        "accuracy": 0.47238522609596134,
+        "actual_nec": 20.0,
+        "nonzero_connections": 4000,
+        "per_class_connections_min": 10,
+        "per_class_connections_max": 31
+      },
+      {
+        "head": "30",
+        "view": "changed",
+        "accuracy": 0.4770452191922679,
+        "actual_nec": 30.0,
+        "nonzero_connections": 6000,
+        "per_class_connections_min": 15,
+        "per_class_connections_max": 42
+      },
+      {
+        "head": "50",
+        "view": "changed",
+        "accuracy": 0.4613393165343459,
+        "actual_nec": 50.0,
+        "nonzero_connections": 10000,
+        "per_class_connections_min": 44,
+        "per_class_connections_max": 51
+      },
+      {
+        "head": "51",
+        "view": "changed",
+        "accuracy": 0.46013117017604416,
+        "actual_nec": 50.28,
+        "nonzero_connections": 10056,
+        "per_class_connections_min": 46,
+        "per_class_connections_max": 51
+      },
+      {
+        "head": "dense",
+        "view": "changed",
+        "accuracy": 0.4855022437003797,
+        "actual_nec": 51.0,
+        "nonzero_connections": 10200,
+        "per_class_connections_min": 51,
+        "per_class_connections_max": 51
+      }
+    ]
+  },
+  {
     "group": "artifacts/heads/rival10/clip_RN50/original/seed42",
     "method": "LF-CBM",
     "source": "/home/pengcheng/Pi-CBM-Benchmark/artifacts/matched/lf/rival10/clip_RN50/seed42",
@@ -5248,6 +6282,714 @@
         "head": "dense",
         "view": "changed",
         "accuracy": 0.9066641423703142,
+        "actual_nec": 16.0,
+        "nonzero_connections": 160,
+        "per_class_connections_min": 16,
+        "per_class_connections_max": 16
+      }
+    ]
+  },
+  {
+    "group": "artifacts/heads/rival10/clip_RN50/original/seed43",
+    "method": "LF-CBM",
+    "source": "/home/pengcheng/Pi-CBM-Benchmark/artifacts/matched/lf/rival10/clip_RN50/seed43",
+    "train_views": [
+      "original"
+    ],
+    "dataset": "rival10",
+    "concept_field": "concepts",
+    "concept_count": 16,
+    "unconverged_path_points": 0,
+    "validation_selected_path": 23,
+    "test_evaluations": [
+      {
+        "head": "best_val",
+        "view": "original",
+        "accuracy": 0.9714123438091632,
+        "actual_nec": 15.8,
+        "nonzero_connections": 158,
+        "per_class_connections_min": 15,
+        "per_class_connections_max": 16
+      },
+      {
+        "head": "1",
+        "view": "original",
+        "accuracy": 0.6967057932601287,
+        "actual_nec": 1.0,
+        "nonzero_connections": 10,
+        "per_class_connections_min": 0,
+        "per_class_connections_max": 2
+      },
+      {
+        "head": "2",
+        "view": "original",
+        "accuracy": 0.8290420295342673,
+        "actual_nec": 2.0,
+        "nonzero_connections": 20,
+        "per_class_connections_min": 1,
+        "per_class_connections_max": 3
+      },
+      {
+        "head": "3",
+        "view": "original",
+        "accuracy": 0.9000378644452859,
+        "actual_nec": 3.0,
+        "nonzero_connections": 30,
+        "per_class_connections_min": 1,
+        "per_class_connections_max": 5
+      },
+      {
+        "head": "5",
+        "view": "original",
+        "accuracy": 0.9513441878076486,
+        "actual_nec": 5.0,
+        "nonzero_connections": 50,
+        "per_class_connections_min": 2,
+        "per_class_connections_max": 7
+      },
+      {
+        "head": "8",
+        "view": "original",
+        "accuracy": 0.9638394547519878,
+        "actual_nec": 8.0,
+        "nonzero_connections": 80,
+        "per_class_connections_min": 4,
+        "per_class_connections_max": 11
+      },
+      {
+        "head": "12",
+        "view": "original",
+        "accuracy": 0.9706550549034456,
+        "actual_nec": 12.0,
+        "nonzero_connections": 120,
+        "per_class_connections_min": 7,
+        "per_class_connections_max": 16
+      },
+      {
+        "head": "16",
+        "view": "original",
+        "accuracy": 0.9714123438091632,
+        "actual_nec": 15.8,
+        "nonzero_connections": 158,
+        "per_class_connections_min": 15,
+        "per_class_connections_max": 16
+      },
+      {
+        "head": "dense",
+        "view": "original",
+        "accuracy": 0.9685725104127224,
+        "actual_nec": 16.0,
+        "nonzero_connections": 160,
+        "per_class_connections_min": 16,
+        "per_class_connections_max": 16
+      },
+      {
+        "head": "best_val",
+        "view": "changed",
+        "accuracy": 0.87731919727376,
+        "actual_nec": 15.8,
+        "nonzero_connections": 158,
+        "per_class_connections_min": 15,
+        "per_class_connections_max": 16
+      },
+      {
+        "head": "1",
+        "view": "changed",
+        "accuracy": 0.54600530102234,
+        "actual_nec": 1.0,
+        "nonzero_connections": 10,
+        "per_class_connections_min": 0,
+        "per_class_connections_max": 2
+      },
+      {
+        "head": "2",
+        "view": "changed",
+        "accuracy": 0.6902688375615297,
+        "actual_nec": 2.0,
+        "nonzero_connections": 20,
+        "per_class_connections_min": 1,
+        "per_class_connections_max": 3
+      },
+      {
+        "head": "3",
+        "view": "changed",
+        "accuracy": 0.7659977281332828,
+        "actual_nec": 3.0,
+        "nonzero_connections": 30,
+        "per_class_connections_min": 1,
+        "per_class_connections_max": 5
+      },
+      {
+        "head": "5",
+        "view": "changed",
+        "accuracy": 0.8421052631578947,
+        "actual_nec": 5.0,
+        "nonzero_connections": 50,
+        "per_class_connections_min": 2,
+        "per_class_connections_max": 7
+      },
+      {
+        "head": "8",
+        "view": "changed",
+        "accuracy": 0.8657705414615676,
+        "actual_nec": 8.0,
+        "nonzero_connections": 80,
+        "per_class_connections_min": 4,
+        "per_class_connections_max": 11
+      },
+      {
+        "head": "12",
+        "view": "changed",
+        "accuracy": 0.8735327527451723,
+        "actual_nec": 12.0,
+        "nonzero_connections": 120,
+        "per_class_connections_min": 7,
+        "per_class_connections_max": 16
+      },
+      {
+        "head": "16",
+        "view": "changed",
+        "accuracy": 0.87731919727376,
+        "actual_nec": 15.8,
+        "nonzero_connections": 158,
+        "per_class_connections_min": 15,
+        "per_class_connections_max": 16
+      },
+      {
+        "head": "dense",
+        "view": "changed",
+        "accuracy": 0.8657705414615676,
+        "actual_nec": 16.0,
+        "nonzero_connections": 160,
+        "per_class_connections_min": 16,
+        "per_class_connections_max": 16
+      }
+    ]
+  },
+  {
+    "group": "artifacts/heads/rival10/clip_RN50/original/seed43",
+    "method": "LF-Pi",
+    "source": "/home/pengcheng/Pi-CBM-Benchmark/artifacts/matched/lf/rival10/clip_RN50/seed43/single_draw",
+    "train_views": [
+      "original"
+    ],
+    "dataset": "rival10",
+    "concept_field": "concepts",
+    "concept_count": 16,
+    "unconverged_path_points": 0,
+    "validation_selected_path": 23,
+    "test_evaluations": [
+      {
+        "head": "best_val",
+        "view": "original",
+        "accuracy": 0.9884513441878077,
+        "actual_nec": 15.4,
+        "nonzero_connections": 154,
+        "per_class_connections_min": 14,
+        "per_class_connections_max": 16
+      },
+      {
+        "head": "1",
+        "view": "original",
+        "accuracy": 0.7372207497160167,
+        "actual_nec": 1.0,
+        "nonzero_connections": 10,
+        "per_class_connections_min": 0,
+        "per_class_connections_max": 2
+      },
+      {
+        "head": "2",
+        "view": "original",
+        "accuracy": 0.9051495645588792,
+        "actual_nec": 2.0,
+        "nonzero_connections": 20,
+        "per_class_connections_min": 1,
+        "per_class_connections_max": 3
+      },
+      {
+        "head": "3",
+        "view": "original",
+        "accuracy": 0.9651647103369936,
+        "actual_nec": 3.0,
+        "nonzero_connections": 30,
+        "per_class_connections_min": 1,
+        "per_class_connections_max": 5
+      },
+      {
+        "head": "5",
+        "view": "original",
+        "accuracy": 0.9837182885270731,
+        "actual_nec": 5.0,
+        "nonzero_connections": 50,
+        "per_class_connections_min": 2,
+        "per_class_connections_max": 7
+      },
+      {
+        "head": "8",
+        "view": "original",
+        "accuracy": 0.9869367663763726,
+        "actual_nec": 8.0,
+        "nonzero_connections": 80,
+        "per_class_connections_min": 4,
+        "per_class_connections_max": 11
+      },
+      {
+        "head": "12",
+        "view": "original",
+        "accuracy": 0.9882620219613782,
+        "actual_nec": 12.0,
+        "nonzero_connections": 120,
+        "per_class_connections_min": 9,
+        "per_class_connections_max": 15
+      },
+      {
+        "head": "16",
+        "view": "original",
+        "accuracy": 0.9884513441878077,
+        "actual_nec": 15.4,
+        "nonzero_connections": 154,
+        "per_class_connections_min": 14,
+        "per_class_connections_max": 16
+      },
+      {
+        "head": "dense",
+        "view": "original",
+        "accuracy": 0.9873154108292314,
+        "actual_nec": 16.0,
+        "nonzero_connections": 160,
+        "per_class_connections_min": 16,
+        "per_class_connections_max": 16
+      },
+      {
+        "head": "best_val",
+        "view": "changed",
+        "accuracy": 0.9091253313138963,
+        "actual_nec": 15.4,
+        "nonzero_connections": 154,
+        "per_class_connections_min": 14,
+        "per_class_connections_max": 16
+      },
+      {
+        "head": "1",
+        "view": "changed",
+        "accuracy": 0.588034835289663,
+        "actual_nec": 1.0,
+        "nonzero_connections": 10,
+        "per_class_connections_min": 0,
+        "per_class_connections_max": 2
+      },
+      {
+        "head": "2",
+        "view": "changed",
+        "accuracy": 0.7631578947368421,
+        "actual_nec": 2.0,
+        "nonzero_connections": 20,
+        "per_class_connections_min": 1,
+        "per_class_connections_max": 3
+      },
+      {
+        "head": "3",
+        "view": "changed",
+        "accuracy": 0.8536539189700871,
+        "actual_nec": 3.0,
+        "nonzero_connections": 30,
+        "per_class_connections_min": 1,
+        "per_class_connections_max": 5
+      },
+      {
+        "head": "5",
+        "view": "changed",
+        "accuracy": 0.9017417644831504,
+        "actual_nec": 5.0,
+        "nonzero_connections": 50,
+        "per_class_connections_min": 2,
+        "per_class_connections_max": 7
+      },
+      {
+        "head": "8",
+        "view": "changed",
+        "accuracy": 0.9087466868610374,
+        "actual_nec": 8.0,
+        "nonzero_connections": 80,
+        "per_class_connections_min": 4,
+        "per_class_connections_max": 11
+      },
+      {
+        "head": "12",
+        "view": "changed",
+        "accuracy": 0.9089360090874669,
+        "actual_nec": 12.0,
+        "nonzero_connections": 120,
+        "per_class_connections_min": 9,
+        "per_class_connections_max": 15
+      },
+      {
+        "head": "16",
+        "view": "changed",
+        "accuracy": 0.9091253313138963,
+        "actual_nec": 15.4,
+        "nonzero_connections": 154,
+        "per_class_connections_min": 14,
+        "per_class_connections_max": 16
+      },
+      {
+        "head": "dense",
+        "view": "changed",
+        "accuracy": 0.8977659977281333,
+        "actual_nec": 16.0,
+        "nonzero_connections": 160,
+        "per_class_connections_min": 16,
+        "per_class_connections_max": 16
+      }
+    ]
+  },
+  {
+    "group": "artifacts/heads/rival10/clip_RN50/original/seed44",
+    "method": "LF-CBM",
+    "source": "/home/pengcheng/Pi-CBM-Benchmark/artifacts/matched/lf/rival10/clip_RN50/seed44",
+    "train_views": [
+      "original"
+    ],
+    "dataset": "rival10",
+    "concept_field": "concepts",
+    "concept_count": 16,
+    "unconverged_path_points": 0,
+    "validation_selected_path": 23,
+    "test_evaluations": [
+      {
+        "head": "best_val",
+        "view": "original",
+        "accuracy": 0.9723589549413101,
+        "actual_nec": 15.8,
+        "nonzero_connections": 158,
+        "per_class_connections_min": 15,
+        "per_class_connections_max": 16
+      },
+      {
+        "head": "1",
+        "view": "original",
+        "accuracy": 0.6830745929572132,
+        "actual_nec": 1.0,
+        "nonzero_connections": 10,
+        "per_class_connections_min": 0,
+        "per_class_connections_max": 2
+      },
+      {
+        "head": "2",
+        "view": "original",
+        "accuracy": 0.8246876183263915,
+        "actual_nec": 2.0,
+        "nonzero_connections": 20,
+        "per_class_connections_min": 1,
+        "per_class_connections_max": 4
+      },
+      {
+        "head": "3",
+        "view": "original",
+        "accuracy": 0.9057175312381673,
+        "actual_nec": 3.0,
+        "nonzero_connections": 30,
+        "per_class_connections_min": 1,
+        "per_class_connections_max": 5
+      },
+      {
+        "head": "5",
+        "view": "original",
+        "accuracy": 0.9530480878455131,
+        "actual_nec": 5.0,
+        "nonzero_connections": 50,
+        "per_class_connections_min": 3,
+        "per_class_connections_max": 7
+      },
+      {
+        "head": "8",
+        "view": "original",
+        "accuracy": 0.9651647103369936,
+        "actual_nec": 8.0,
+        "nonzero_connections": 80,
+        "per_class_connections_min": 4,
+        "per_class_connections_max": 12
+      },
+      {
+        "head": "12",
+        "view": "original",
+        "accuracy": 0.9700870882241576,
+        "actual_nec": 12.0,
+        "nonzero_connections": 120,
+        "per_class_connections_min": 8,
+        "per_class_connections_max": 15
+      },
+      {
+        "head": "16",
+        "view": "original",
+        "accuracy": 0.9723589549413101,
+        "actual_nec": 15.8,
+        "nonzero_connections": 158,
+        "per_class_connections_min": 15,
+        "per_class_connections_max": 16
+      },
+      {
+        "head": "dense",
+        "view": "original",
+        "accuracy": 0.9710336993563045,
+        "actual_nec": 16.0,
+        "nonzero_connections": 160,
+        "per_class_connections_min": 16,
+        "per_class_connections_max": 16
+      },
+      {
+        "head": "best_val",
+        "view": "changed",
+        "accuracy": 0.8708822415751609,
+        "actual_nec": 15.8,
+        "nonzero_connections": 158,
+        "per_class_connections_min": 15,
+        "per_class_connections_max": 16
+      },
+      {
+        "head": "1",
+        "view": "changed",
+        "accuracy": 0.5526315789473685,
+        "actual_nec": 1.0,
+        "nonzero_connections": 10,
+        "per_class_connections_min": 0,
+        "per_class_connections_max": 2
+      },
+      {
+        "head": "2",
+        "view": "changed",
+        "accuracy": 0.7020068156001514,
+        "actual_nec": 2.0,
+        "nonzero_connections": 20,
+        "per_class_connections_min": 1,
+        "per_class_connections_max": 4
+      },
+      {
+        "head": "3",
+        "view": "changed",
+        "accuracy": 0.7836046951912155,
+        "actual_nec": 3.0,
+        "nonzero_connections": 30,
+        "per_class_connections_min": 1,
+        "per_class_connections_max": 5
+      },
+      {
+        "head": "5",
+        "view": "changed",
+        "accuracy": 0.8413479742521772,
+        "actual_nec": 5.0,
+        "nonzero_connections": 50,
+        "per_class_connections_min": 3,
+        "per_class_connections_max": 7
+      },
+      {
+        "head": "8",
+        "view": "changed",
+        "accuracy": 0.8646346081029913,
+        "actual_nec": 8.0,
+        "nonzero_connections": 80,
+        "per_class_connections_min": 4,
+        "per_class_connections_max": 12
+      },
+      {
+        "head": "12",
+        "view": "changed",
+        "accuracy": 0.868421052631579,
+        "actual_nec": 12.0,
+        "nonzero_connections": 120,
+        "per_class_connections_min": 8,
+        "per_class_connections_max": 15
+      },
+      {
+        "head": "16",
+        "view": "changed",
+        "accuracy": 0.8708822415751609,
+        "actual_nec": 15.8,
+        "nonzero_connections": 158,
+        "per_class_connections_min": 15,
+        "per_class_connections_max": 16
+      },
+      {
+        "head": "dense",
+        "view": "changed",
+        "accuracy": 0.8602801968951155,
+        "actual_nec": 16.0,
+        "nonzero_connections": 160,
+        "per_class_connections_min": 16,
+        "per_class_connections_max": 16
+      }
+    ]
+  },
+  {
+    "group": "artifacts/heads/rival10/clip_RN50/original/seed44",
+    "method": "LF-Pi",
+    "source": "/home/pengcheng/Pi-CBM-Benchmark/artifacts/matched/lf/rival10/clip_RN50/seed44/single_draw",
+    "train_views": [
+      "original"
+    ],
+    "dataset": "rival10",
+    "concept_field": "concepts",
+    "concept_count": 16,
+    "unconverged_path_points": 0,
+    "validation_selected_path": 23,
+    "test_evaluations": [
+      {
+        "head": "best_val",
+        "view": "original",
+        "accuracy": 0.9882620219613782,
+        "actual_nec": 14.9,
+        "nonzero_connections": 149,
+        "per_class_connections_min": 13,
+        "per_class_connections_max": 16
+      },
+      {
+        "head": "1",
+        "view": "original",
+        "accuracy": 0.7262400605831124,
+        "actual_nec": 1.0,
+        "nonzero_connections": 10,
+        "per_class_connections_min": 0,
+        "per_class_connections_max": 2
+      },
+      {
+        "head": "2",
+        "view": "original",
+        "accuracy": 0.8953048087845513,
+        "actual_nec": 2.0,
+        "nonzero_connections": 20,
+        "per_class_connections_min": 1,
+        "per_class_connections_max": 3
+      },
+      {
+        "head": "3",
+        "view": "original",
+        "accuracy": 0.9553199545626656,
+        "actual_nec": 3.0,
+        "nonzero_connections": 30,
+        "per_class_connections_min": 1,
+        "per_class_connections_max": 5
+      },
+      {
+        "head": "5",
+        "view": "original",
+        "accuracy": 0.9825823551684968,
+        "actual_nec": 5.0,
+        "nonzero_connections": 50,
+        "per_class_connections_min": 2,
+        "per_class_connections_max": 8
+      },
+      {
+        "head": "8",
+        "view": "original",
+        "accuracy": 0.9858008330177963,
+        "actual_nec": 8.0,
+        "nonzero_connections": 80,
+        "per_class_connections_min": 5,
+        "per_class_connections_max": 12
+      },
+      {
+        "head": "12",
+        "view": "original",
+        "accuracy": 0.9871260886028019,
+        "actual_nec": 12.0,
+        "nonzero_connections": 120,
+        "per_class_connections_min": 9,
+        "per_class_connections_max": 14
+      },
+      {
+        "head": "16",
+        "view": "original",
+        "accuracy": 0.9882620219613782,
+        "actual_nec": 14.9,
+        "nonzero_connections": 149,
+        "per_class_connections_min": 13,
+        "per_class_connections_max": 16
+      },
+      {
+        "head": "dense",
+        "view": "original",
+        "accuracy": 0.9876940552820901,
+        "actual_nec": 16.0,
+        "nonzero_connections": 160,
+        "per_class_connections_min": 16,
+        "per_class_connections_max": 16
+      },
+      {
+        "head": "best_val",
+        "view": "changed",
+        "accuracy": 0.9085573646346081,
+        "actual_nec": 14.9,
+        "nonzero_connections": 149,
+        "per_class_connections_min": 13,
+        "per_class_connections_max": 16
+      },
+      {
+        "head": "1",
+        "view": "changed",
+        "accuracy": 0.5783794017417645,
+        "actual_nec": 1.0,
+        "nonzero_connections": 10,
+        "per_class_connections_min": 0,
+        "per_class_connections_max": 2
+      },
+      {
+        "head": "2",
+        "view": "changed",
+        "accuracy": 0.7572889057175313,
+        "actual_nec": 2.0,
+        "nonzero_connections": 20,
+        "per_class_connections_min": 1,
+        "per_class_connections_max": 3
+      },
+      {
+        "head": "3",
+        "view": "changed",
+        "accuracy": 0.8373722074971601,
+        "actual_nec": 3.0,
+        "nonzero_connections": 30,
+        "per_class_connections_min": 1,
+        "per_class_connections_max": 5
+      },
+      {
+        "head": "5",
+        "view": "changed",
+        "accuracy": 0.9004165088981446,
+        "actual_nec": 5.0,
+        "nonzero_connections": 50,
+        "per_class_connections_min": 2,
+        "per_class_connections_max": 8
+      },
+      {
+        "head": "8",
+        "view": "changed",
+        "accuracy": 0.9074214312760318,
+        "actual_nec": 8.0,
+        "nonzero_connections": 80,
+        "per_class_connections_min": 5,
+        "per_class_connections_max": 12
+      },
+      {
+        "head": "12",
+        "view": "changed",
+        "accuracy": 0.9083680424081787,
+        "actual_nec": 12.0,
+        "nonzero_connections": 120,
+        "per_class_connections_min": 9,
+        "per_class_connections_max": 14
+      },
+      {
+        "head": "16",
+        "view": "changed",
+        "accuracy": 0.9085573646346081,
+        "actual_nec": 14.9,
+        "nonzero_connections": 149,
+        "per_class_connections_min": 13,
+        "per_class_connections_max": 16
+      },
+      {
+        "head": "dense",
+        "view": "changed",
+        "accuracy": 0.8973873532752745,
         "actual_nec": 16.0,
         "nonzero_connections": 160,
         "per_class_connections_min": 16,
@@ -5964,6 +7706,718 @@
         "nonzero_connections": 180,
         "per_class_connections_min": 18,
         "per_class_connections_max": 18
+      }
+    ]
+  },
+  {
+    "group": "artifacts/heads/rival10/clip_RN50/paired/seed43",
+    "method": "LF-CBM",
+    "source": "/home/pengcheng/Pi-CBM-Benchmark/artifacts/matched/lf/rival10/clip_RN50/paired_augmentation/seed43",
+    "train_views": [
+      "original",
+      "changed"
+    ],
+    "dataset": "rival10",
+    "concept_field": "concepts",
+    "concept_count": 17,
+    "unconverged_path_points": 0,
+    "validation_selected_path": 23,
+    "test_evaluations": [
+      {
+        "head": "best_val",
+        "view": "original",
+        "accuracy": 0.9655433547898523,
+        "actual_nec": 16.6,
+        "nonzero_connections": 166,
+        "per_class_connections_min": 16,
+        "per_class_connections_max": 17
+      },
+      {
+        "head": "1",
+        "view": "original",
+        "accuracy": 0.7016281711472927,
+        "actual_nec": 1.0,
+        "nonzero_connections": 10,
+        "per_class_connections_min": 0,
+        "per_class_connections_max": 2
+      },
+      {
+        "head": "2",
+        "view": "original",
+        "accuracy": 0.8051874290041651,
+        "actual_nec": 2.0,
+        "nonzero_connections": 20,
+        "per_class_connections_min": 1,
+        "per_class_connections_max": 4
+      },
+      {
+        "head": "3",
+        "view": "original",
+        "accuracy": 0.8841347974252177,
+        "actual_nec": 3.0,
+        "nonzero_connections": 30,
+        "per_class_connections_min": 1,
+        "per_class_connections_max": 6
+      },
+      {
+        "head": "5",
+        "view": "original",
+        "accuracy": 0.93865959863688,
+        "actual_nec": 5.0,
+        "nonzero_connections": 50,
+        "per_class_connections_min": 3,
+        "per_class_connections_max": 7
+      },
+      {
+        "head": "8",
+        "view": "original",
+        "accuracy": 0.9553199545626656,
+        "actual_nec": 8.0,
+        "nonzero_connections": 80,
+        "per_class_connections_min": 6,
+        "per_class_connections_max": 10
+      },
+      {
+        "head": "12",
+        "view": "original",
+        "accuracy": 0.9645967436577054,
+        "actual_nec": 12.0,
+        "nonzero_connections": 120,
+        "per_class_connections_min": 9,
+        "per_class_connections_max": 15
+      },
+      {
+        "head": "17",
+        "view": "original",
+        "accuracy": 0.9655433547898523,
+        "actual_nec": 16.7,
+        "nonzero_connections": 167,
+        "per_class_connections_min": 16,
+        "per_class_connections_max": 17
+      },
+      {
+        "head": "dense",
+        "view": "original",
+        "accuracy": 0.9653540325634229,
+        "actual_nec": 17.0,
+        "nonzero_connections": 170,
+        "per_class_connections_min": 17,
+        "per_class_connections_max": 17
+      },
+      {
+        "head": "best_val",
+        "view": "changed",
+        "accuracy": 0.9102612646724726,
+        "actual_nec": 16.6,
+        "nonzero_connections": 166,
+        "per_class_connections_min": 16,
+        "per_class_connections_max": 17
+      },
+      {
+        "head": "1",
+        "view": "changed",
+        "accuracy": 0.557364634608103,
+        "actual_nec": 1.0,
+        "nonzero_connections": 10,
+        "per_class_connections_min": 0,
+        "per_class_connections_max": 2
+      },
+      {
+        "head": "2",
+        "view": "changed",
+        "accuracy": 0.6713366149185914,
+        "actual_nec": 2.0,
+        "nonzero_connections": 20,
+        "per_class_connections_min": 1,
+        "per_class_connections_max": 4
+      },
+      {
+        "head": "3",
+        "view": "changed",
+        "accuracy": 0.7983718288527073,
+        "actual_nec": 3.0,
+        "nonzero_connections": 30,
+        "per_class_connections_min": 1,
+        "per_class_connections_max": 6
+      },
+      {
+        "head": "5",
+        "view": "changed",
+        "accuracy": 0.8735327527451723,
+        "actual_nec": 5.0,
+        "nonzero_connections": 50,
+        "per_class_connections_min": 3,
+        "per_class_connections_max": 7
+      },
+      {
+        "head": "8",
+        "view": "changed",
+        "accuracy": 0.897576675501704,
+        "actual_nec": 8.0,
+        "nonzero_connections": 80,
+        "per_class_connections_min": 6,
+        "per_class_connections_max": 10
+      },
+      {
+        "head": "12",
+        "view": "changed",
+        "accuracy": 0.9104505868989019,
+        "actual_nec": 12.0,
+        "nonzero_connections": 120,
+        "per_class_connections_min": 9,
+        "per_class_connections_max": 15
+      },
+      {
+        "head": "17",
+        "view": "changed",
+        "accuracy": 0.9102612646724726,
+        "actual_nec": 16.7,
+        "nonzero_connections": 167,
+        "per_class_connections_min": 16,
+        "per_class_connections_max": 17
+      },
+      {
+        "head": "dense",
+        "view": "changed",
+        "accuracy": 0.9096932979931844,
+        "actual_nec": 17.0,
+        "nonzero_connections": 170,
+        "per_class_connections_min": 17,
+        "per_class_connections_max": 17
+      }
+    ]
+  },
+  {
+    "group": "artifacts/heads/rival10/clip_RN50/paired/seed43",
+    "method": "LF-Pi",
+    "source": "/home/pengcheng/Pi-CBM-Benchmark/artifacts/matched/lf/rival10/clip_RN50/paired_augmentation/seed43/single_draw",
+    "train_views": [
+      "original",
+      "changed"
+    ],
+    "dataset": "rival10",
+    "concept_field": "concepts",
+    "concept_count": 17,
+    "unconverged_path_points": 0,
+    "validation_selected_path": 23,
+    "test_evaluations": [
+      {
+        "head": "best_val",
+        "view": "original",
+        "accuracy": 0.9901552442256721,
+        "actual_nec": 16.5,
+        "nonzero_connections": 165,
+        "per_class_connections_min": 15,
+        "per_class_connections_max": 17
+      },
+      {
+        "head": "1",
+        "view": "original",
+        "accuracy": 0.7656190836804241,
+        "actual_nec": 1.0,
+        "nonzero_connections": 10,
+        "per_class_connections_min": 0,
+        "per_class_connections_max": 2
+      },
+      {
+        "head": "2",
+        "view": "original",
+        "accuracy": 0.8924649753881105,
+        "actual_nec": 2.0,
+        "nonzero_connections": 20,
+        "per_class_connections_min": 1,
+        "per_class_connections_max": 3
+      },
+      {
+        "head": "3",
+        "view": "original",
+        "accuracy": 0.951533510034078,
+        "actual_nec": 3.0,
+        "nonzero_connections": 30,
+        "per_class_connections_min": 1,
+        "per_class_connections_max": 6
+      },
+      {
+        "head": "5",
+        "view": "original",
+        "accuracy": 0.9791745550927679,
+        "actual_nec": 5.0,
+        "nonzero_connections": 50,
+        "per_class_connections_min": 2,
+        "per_class_connections_max": 7
+      },
+      {
+        "head": "8",
+        "view": "original",
+        "accuracy": 0.9878833775085195,
+        "actual_nec": 8.0,
+        "nonzero_connections": 80,
+        "per_class_connections_min": 6,
+        "per_class_connections_max": 11
+      },
+      {
+        "head": "12",
+        "view": "original",
+        "accuracy": 0.9899659219992427,
+        "actual_nec": 12.0,
+        "nonzero_connections": 120,
+        "per_class_connections_min": 10,
+        "per_class_connections_max": 14
+      },
+      {
+        "head": "17",
+        "view": "original",
+        "accuracy": 0.9901552442256721,
+        "actual_nec": 16.5,
+        "nonzero_connections": 165,
+        "per_class_connections_min": 15,
+        "per_class_connections_max": 17
+      },
+      {
+        "head": "dense",
+        "view": "original",
+        "accuracy": 0.9901552442256721,
+        "actual_nec": 17.0,
+        "nonzero_connections": 170,
+        "per_class_connections_min": 17,
+        "per_class_connections_max": 17
+      },
+      {
+        "head": "best_val",
+        "view": "changed",
+        "accuracy": 0.9598636879969709,
+        "actual_nec": 16.5,
+        "nonzero_connections": 165,
+        "per_class_connections_min": 15,
+        "per_class_connections_max": 17
+      },
+      {
+        "head": "1",
+        "view": "changed",
+        "accuracy": 0.600908746686861,
+        "actual_nec": 1.0,
+        "nonzero_connections": 10,
+        "per_class_connections_min": 0,
+        "per_class_connections_max": 2
+      },
+      {
+        "head": "2",
+        "view": "changed",
+        "accuracy": 0.7758424839076108,
+        "actual_nec": 2.0,
+        "nonzero_connections": 20,
+        "per_class_connections_min": 1,
+        "per_class_connections_max": 3
+      },
+      {
+        "head": "3",
+        "view": "changed",
+        "accuracy": 0.8932222642938281,
+        "actual_nec": 3.0,
+        "nonzero_connections": 30,
+        "per_class_connections_min": 1,
+        "per_class_connections_max": 6
+      },
+      {
+        "head": "5",
+        "view": "changed",
+        "accuracy": 0.9409314653540326,
+        "actual_nec": 5.0,
+        "nonzero_connections": 50,
+        "per_class_connections_min": 2,
+        "per_class_connections_max": 7
+      },
+      {
+        "head": "8",
+        "view": "changed",
+        "accuracy": 0.9572131768269595,
+        "actual_nec": 8.0,
+        "nonzero_connections": 80,
+        "per_class_connections_min": 6,
+        "per_class_connections_max": 11
+      },
+      {
+        "head": "12",
+        "view": "changed",
+        "accuracy": 0.9596743657705414,
+        "actual_nec": 12.0,
+        "nonzero_connections": 120,
+        "per_class_connections_min": 10,
+        "per_class_connections_max": 14
+      },
+      {
+        "head": "17",
+        "view": "changed",
+        "accuracy": 0.9598636879969709,
+        "actual_nec": 16.5,
+        "nonzero_connections": 165,
+        "per_class_connections_min": 15,
+        "per_class_connections_max": 17
+      },
+      {
+        "head": "dense",
+        "view": "changed",
+        "accuracy": 0.9585384324119651,
+        "actual_nec": 17.0,
+        "nonzero_connections": 170,
+        "per_class_connections_min": 17,
+        "per_class_connections_max": 17
+      }
+    ]
+  },
+  {
+    "group": "artifacts/heads/rival10/clip_RN50/paired/seed44",
+    "method": "LF-CBM",
+    "source": "/home/pengcheng/Pi-CBM-Benchmark/artifacts/matched/lf/rival10/clip_RN50/paired_augmentation/seed44",
+    "train_views": [
+      "original",
+      "changed"
+    ],
+    "dataset": "rival10",
+    "concept_field": "concepts",
+    "concept_count": 17,
+    "unconverged_path_points": 0,
+    "validation_selected_path": 23,
+    "test_evaluations": [
+      {
+        "head": "best_val",
+        "view": "original",
+        "accuracy": 0.9680045437334343,
+        "actual_nec": 16.8,
+        "nonzero_connections": 168,
+        "per_class_connections_min": 16,
+        "per_class_connections_max": 17
+      },
+      {
+        "head": "1",
+        "view": "original",
+        "accuracy": 0.6944339265429762,
+        "actual_nec": 1.0,
+        "nonzero_connections": 10,
+        "per_class_connections_min": 0,
+        "per_class_connections_max": 2
+      },
+      {
+        "head": "2",
+        "view": "original",
+        "accuracy": 0.8182506626277926,
+        "actual_nec": 2.0,
+        "nonzero_connections": 20,
+        "per_class_connections_min": 1,
+        "per_class_connections_max": 4
+      },
+      {
+        "head": "3",
+        "view": "original",
+        "accuracy": 0.8894358197652404,
+        "actual_nec": 3.0,
+        "nonzero_connections": 30,
+        "per_class_connections_min": 1,
+        "per_class_connections_max": 6
+      },
+      {
+        "head": "5",
+        "view": "original",
+        "accuracy": 0.9449072321090496,
+        "actual_nec": 5.0,
+        "nonzero_connections": 50,
+        "per_class_connections_min": 2,
+        "per_class_connections_max": 8
+      },
+      {
+        "head": "8",
+        "view": "original",
+        "accuracy": 0.9574024990533889,
+        "actual_nec": 8.0,
+        "nonzero_connections": 80,
+        "per_class_connections_min": 6,
+        "per_class_connections_max": 11
+      },
+      {
+        "head": "12",
+        "view": "original",
+        "accuracy": 0.9657326770162817,
+        "actual_nec": 12.0,
+        "nonzero_connections": 120,
+        "per_class_connections_min": 9,
+        "per_class_connections_max": 16
+      },
+      {
+        "head": "17",
+        "view": "original",
+        "accuracy": 0.9680045437334343,
+        "actual_nec": 16.8,
+        "nonzero_connections": 168,
+        "per_class_connections_min": 16,
+        "per_class_connections_max": 17
+      },
+      {
+        "head": "dense",
+        "view": "original",
+        "accuracy": 0.9664899659219992,
+        "actual_nec": 17.0,
+        "nonzero_connections": 170,
+        "per_class_connections_min": 17,
+        "per_class_connections_max": 17
+      },
+      {
+        "head": "best_val",
+        "view": "changed",
+        "accuracy": 0.9136690647482014,
+        "actual_nec": 16.8,
+        "nonzero_connections": 168,
+        "per_class_connections_min": 16,
+        "per_class_connections_max": 17
+      },
+      {
+        "head": "1",
+        "view": "changed",
+        "accuracy": 0.5619083680424082,
+        "actual_nec": 1.0,
+        "nonzero_connections": 10,
+        "per_class_connections_min": 0,
+        "per_class_connections_max": 2
+      },
+      {
+        "head": "2",
+        "view": "changed",
+        "accuracy": 0.6881862930708065,
+        "actual_nec": 2.0,
+        "nonzero_connections": 20,
+        "per_class_connections_min": 1,
+        "per_class_connections_max": 4
+      },
+      {
+        "head": "3",
+        "view": "changed",
+        "accuracy": 0.8067020068156001,
+        "actual_nec": 3.0,
+        "nonzero_connections": 30,
+        "per_class_connections_min": 1,
+        "per_class_connections_max": 6
+      },
+      {
+        "head": "5",
+        "view": "changed",
+        "accuracy": 0.8799697084437713,
+        "actual_nec": 5.0,
+        "nonzero_connections": 50,
+        "per_class_connections_min": 2,
+        "per_class_connections_max": 8
+      },
+      {
+        "head": "8",
+        "view": "changed",
+        "accuracy": 0.9013631200302915,
+        "actual_nec": 8.0,
+        "nonzero_connections": 80,
+        "per_class_connections_min": 6,
+        "per_class_connections_max": 11
+      },
+      {
+        "head": "12",
+        "view": "changed",
+        "accuracy": 0.9106399091253313,
+        "actual_nec": 12.0,
+        "nonzero_connections": 120,
+        "per_class_connections_min": 9,
+        "per_class_connections_max": 16
+      },
+      {
+        "head": "17",
+        "view": "changed",
+        "accuracy": 0.9140477092010602,
+        "actual_nec": 16.8,
+        "nonzero_connections": 168,
+        "per_class_connections_min": 16,
+        "per_class_connections_max": 17
+      },
+      {
+        "head": "dense",
+        "view": "changed",
+        "accuracy": 0.9138583869746308,
+        "actual_nec": 17.0,
+        "nonzero_connections": 170,
+        "per_class_connections_min": 17,
+        "per_class_connections_max": 17
+      }
+    ]
+  },
+  {
+    "group": "artifacts/heads/rival10/clip_RN50/paired/seed44",
+    "method": "LF-Pi",
+    "source": "/home/pengcheng/Pi-CBM-Benchmark/artifacts/matched/lf/rival10/clip_RN50/paired_augmentation/seed44/single_draw",
+    "train_views": [
+      "original",
+      "changed"
+    ],
+    "dataset": "rival10",
+    "concept_field": "concepts",
+    "concept_count": 17,
+    "unconverged_path_points": 0,
+    "validation_selected_path": 23,
+    "test_evaluations": [
+      {
+        "head": "best_val",
+        "view": "original",
+        "accuracy": 0.9892086330935251,
+        "actual_nec": 16.3,
+        "nonzero_connections": 163,
+        "per_class_connections_min": 15,
+        "per_class_connections_max": 17
+      },
+      {
+        "head": "1",
+        "view": "original",
+        "accuracy": 0.7461188943581977,
+        "actual_nec": 1.0,
+        "nonzero_connections": 10,
+        "per_class_connections_min": 0,
+        "per_class_connections_max": 2
+      },
+      {
+        "head": "2",
+        "view": "original",
+        "accuracy": 0.8687996970844377,
+        "actual_nec": 2.0,
+        "nonzero_connections": 20,
+        "per_class_connections_min": 1,
+        "per_class_connections_max": 3
+      },
+      {
+        "head": "3",
+        "view": "original",
+        "accuracy": 0.9553199545626656,
+        "actual_nec": 3.0,
+        "nonzero_connections": 30,
+        "per_class_connections_min": 1,
+        "per_class_connections_max": 6
+      },
+      {
+        "head": "5",
+        "view": "original",
+        "accuracy": 0.9780386217341916,
+        "actual_nec": 5.0,
+        "nonzero_connections": 50,
+        "per_class_connections_min": 2,
+        "per_class_connections_max": 7
+      },
+      {
+        "head": "8",
+        "view": "original",
+        "accuracy": 0.9876940552820901,
+        "actual_nec": 8.0,
+        "nonzero_connections": 80,
+        "per_class_connections_min": 6,
+        "per_class_connections_max": 12
+      },
+      {
+        "head": "12",
+        "view": "original",
+        "accuracy": 0.9893979553199546,
+        "actual_nec": 12.0,
+        "nonzero_connections": 120,
+        "per_class_connections_min": 10,
+        "per_class_connections_max": 15
+      },
+      {
+        "head": "17",
+        "view": "original",
+        "accuracy": 0.9892086330935251,
+        "actual_nec": 16.3,
+        "nonzero_connections": 163,
+        "per_class_connections_min": 15,
+        "per_class_connections_max": 17
+      },
+      {
+        "head": "dense",
+        "view": "original",
+        "accuracy": 0.9892086330935251,
+        "actual_nec": 17.0,
+        "nonzero_connections": 170,
+        "per_class_connections_min": 17,
+        "per_class_connections_max": 17
+      },
+      {
+        "head": "best_val",
+        "view": "changed",
+        "accuracy": 0.9594850435441121,
+        "actual_nec": 16.3,
+        "nonzero_connections": 163,
+        "per_class_connections_min": 15,
+        "per_class_connections_max": 17
+      },
+      {
+        "head": "1",
+        "view": "changed",
+        "accuracy": 0.6139719803104885,
+        "actual_nec": 1.0,
+        "nonzero_connections": 10,
+        "per_class_connections_min": 0,
+        "per_class_connections_max": 2
+      },
+      {
+        "head": "2",
+        "view": "changed",
+        "accuracy": 0.7620219613782658,
+        "actual_nec": 2.0,
+        "nonzero_connections": 20,
+        "per_class_connections_min": 1,
+        "per_class_connections_max": 3
+      },
+      {
+        "head": "3",
+        "view": "changed",
+        "accuracy": 0.9032563422945854,
+        "actual_nec": 3.0,
+        "nonzero_connections": 30,
+        "per_class_connections_min": 1,
+        "per_class_connections_max": 6
+      },
+      {
+        "head": "5",
+        "view": "changed",
+        "accuracy": 0.943581976524044,
+        "actual_nec": 5.0,
+        "nonzero_connections": 50,
+        "per_class_connections_min": 2,
+        "per_class_connections_max": 7
+      },
+      {
+        "head": "8",
+        "view": "changed",
+        "accuracy": 0.9574024990533889,
+        "actual_nec": 8.0,
+        "nonzero_connections": 80,
+        "per_class_connections_min": 6,
+        "per_class_connections_max": 12
+      },
+      {
+        "head": "12",
+        "view": "changed",
+        "accuracy": 0.9591063990912533,
+        "actual_nec": 12.0,
+        "nonzero_connections": 120,
+        "per_class_connections_min": 10,
+        "per_class_connections_max": 15
+      },
+      {
+        "head": "17",
+        "view": "changed",
+        "accuracy": 0.9594850435441121,
+        "actual_nec": 16.3,
+        "nonzero_connections": 163,
+        "per_class_connections_min": 15,
+        "per_class_connections_max": 17
+      },
+      {
+        "head": "dense",
+        "view": "changed",
+        "accuracy": 0.9592957213176827,
+        "actual_nec": 17.0,
+        "nonzero_connections": 170,
+        "per_class_connections_min": 17,
+        "per_class_connections_max": 17
       }
     ]
   },

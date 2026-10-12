@@ -1,0 +1,17 @@
+{
+  "dataset": "cub",
+  "backbone": "resnet18_cub_trainonly",
+  "arm": "pini_mean",
+  "concepts": 112,
+  "classes": 200,
+  "selection_split": "val",
+  "training_views": [
+    "original",
+    "changed"
+  ],
+  "verified_head_view_evaluations": 24,
+  "threshold": 1e-05,
+  "actual_counts_match_weights": true,
+  "same_native_test_subjects": 5794,
+  "outputs_finite": true
+}
