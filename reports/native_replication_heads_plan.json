@@ -1,0 +1,358 @@
+{
+  "device": "cpu",
+  "workers": 2,
+  "training_seeds": [
+    43,
+    44
+  ],
+  "inference_draws": 1,
+  "selection_split": "val",
+  "saga_steps": 1000,
+  "head_grid": "configs/matrix.yaml",
+  "jobs": [
+    {
+      "dataset": "cub",
+      "backbone": "resnet50",
+      "train_views": [
+        "original",
+        "changed"
+      ],
+      "seed": 43,
+      "arm": "lfcbm"
+    },
+    {
+      "dataset": "cub",
+      "backbone": "resnet50",
+      "train_views": [
+        "original",
+        "changed"
+      ],
+      "seed": 43,
+      "arm": "lfpi_global_1draw"
+    },
+    {
+      "dataset": "cub",
+      "backbone": "resnet50",
+      "train_views": [
+        "original",
+        "changed"
+      ],
+      "seed": 44,
+      "arm": "lfcbm"
+    },
+    {
+      "dataset": "cub",
+      "backbone": "resnet50",
+      "train_views": [
+        "original",
+        "changed"
+      ],
+      "seed": 44,
+      "arm": "lfpi_global_1draw"
+    },
+    {
+      "dataset": "cub",
+      "backbone": "clip_RN50",
+      "train_views": [
+        "original"
+      ],
+      "seed": 43,
+      "arm": "lfcbm"
+    },
+    {
+      "dataset": "cub",
+      "backbone": "clip_RN50",
+      "train_views": [
+        "original"
+      ],
+      "seed": 43,
+      "arm": "lfpi_global_1draw"
+    },
+    {
+      "dataset": "cub",
+      "backbone": "clip_RN50",
+      "train_views": [
+        "original"
+      ],
+      "seed": 44,
+      "arm": "lfcbm"
+    },
+    {
+      "dataset": "cub",
+      "backbone": "clip_RN50",
+      "train_views": [
+        "original"
+      ],
+      "seed": 44,
+      "arm": "lfpi_global_1draw"
+    },
+    {
+      "dataset": "cub",
+      "backbone": "clip_RN50",
+      "train_views": [
+        "original",
+        "changed"
+      ],
+      "seed": 43,
+      "arm": "lfcbm"
+    },
+    {
+      "dataset": "cub",
+      "backbone": "clip_RN50",
+      "train_views": [
+        "original",
+        "changed"
+      ],
+      "seed": 43,
+      "arm": "lfpi_global_1draw"
+    },
+    {
+      "dataset": "cub",
+      "backbone": "clip_RN50",
+      "train_views": [
+        "original",
+        "changed"
+      ],
+      "seed": 44,
+      "arm": "lfcbm"
+    },
+    {
+      "dataset": "cub",
+      "backbone": "clip_RN50",
+      "train_views": [
+        "original",
+        "changed"
+      ],
+      "seed": 44,
+      "arm": "lfpi_global_1draw"
+    },
+    {
+      "dataset": "waterbirds",
+      "backbone": "resnet18",
+      "train_views": [
+        "original"
+      ],
+      "seed": 43,
+      "arm": "lfcbm"
+    },
+    {
+      "dataset": "waterbirds",
+      "backbone": "resnet18",
+      "train_views": [
+        "original"
+      ],
+      "seed": 43,
+      "arm": "lfpi_global_1draw"
+    },
+    {
+      "dataset": "waterbirds",
+      "backbone": "resnet18",
+      "train_views": [
+        "original"
+      ],
+      "seed": 44,
+      "arm": "lfcbm"
+    },
+    {
+      "dataset": "waterbirds",
+      "backbone": "resnet18",
+      "train_views": [
+        "original"
+      ],
+      "seed": 44,
+      "arm": "lfpi_global_1draw"
+    },
+    {
+      "dataset": "waterbirds",
+      "backbone": "resnet18",
+      "train_views": [
+        "original",
+        "changed"
+      ],
+      "seed": 43,
+      "arm": "lfcbm"
+    },
+    {
+      "dataset": "waterbirds",
+      "backbone": "resnet18",
+      "train_views": [
+        "original",
+        "changed"
+      ],
+      "seed": 43,
+      "arm": "lfpi_global_1draw"
+    },
+    {
+      "dataset": "waterbirds",
+      "backbone": "resnet18",
+      "train_views": [
+        "original",
+        "changed"
+      ],
+      "seed": 44,
+      "arm": "lfcbm"
+    },
+    {
+      "dataset": "waterbirds",
+      "backbone": "resnet18",
+      "train_views": [
+        "original",
+        "changed"
+      ],
+      "seed": 44,
+      "arm": "lfpi_global_1draw"
+    },
+    {
+      "dataset": "waterbirds",
+      "backbone": "resnet50",
+      "train_views": [
+        "original"
+      ],
+      "seed": 43,
+      "arm": "lfcbm"
+    },
+    {
+      "dataset": "waterbirds",
+      "backbone": "resnet50",
+      "train_views": [
+        "original"
+      ],
+      "seed": 43,
+      "arm": "lfpi_global_1draw"
+    },
+    {
+      "dataset": "waterbirds",
+      "backbone": "resnet50",
+      "train_views": [
+        "original"
+      ],
+      "seed": 44,
+      "arm": "lfcbm"
+    },
+    {
+      "dataset": "waterbirds",
+      "backbone": "resnet50",
+      "train_views": [
+        "original"
+      ],
+      "seed": 44,
+      "arm": "lfpi_global_1draw"
+    },
+    {
+      "dataset": "waterbirds",
+      "backbone": "resnet50",
+      "train_views": [
+        "original",
+        "changed"
+      ],
+      "seed": 43,
+      "arm": "lfcbm"
+    },
+    {
+      "dataset": "waterbirds",
+      "backbone": "resnet50",
+      "train_views": [
+        "original",
+        "changed"
+      ],
+      "seed": 43,
+      "arm": "lfpi_global_1draw"
+    },
+    {
+      "dataset": "waterbirds",
+      "backbone": "resnet50",
+      "train_views": [
+        "original",
+        "changed"
+      ],
+      "seed": 44,
+      "arm": "lfcbm"
+    },
+    {
+      "dataset": "waterbirds",
+      "backbone": "resnet50",
+      "train_views": [
+        "original",
+        "changed"
+      ],
+      "seed": 44,
+      "arm": "lfpi_global_1draw"
+    },
+    {
+      "dataset": "waterbirds",
+      "backbone": "clip_RN50",
+      "train_views": [
+        "original"
+      ],
+      "seed": 43,
+      "arm": "lfcbm"
+    },
+    {
+      "dataset": "waterbirds",
+      "backbone": "clip_RN50",
+      "train_views": [
+        "original"
+      ],
+      "seed": 43,
+      "arm": "lfpi_global_1draw"
+    },
+    {
+      "dataset": "waterbirds",
+      "backbone": "clip_RN50",
+      "train_views": [
+        "original"
+      ],
+      "seed": 44,
+      "arm": "lfcbm"
+    },
+    {
+      "dataset": "waterbirds",
+      "backbone": "clip_RN50",
+      "train_views": [
+        "original"
+      ],
+      "seed": 44,
+      "arm": "lfpi_global_1draw"
+    },
+    {
+      "dataset": "waterbirds",
+      "backbone": "clip_RN50",
+      "train_views": [
+        "original",
+        "changed"
+      ],
+      "seed": 43,
+      "arm": "lfcbm"
+    },
+    {
+      "dataset": "waterbirds",
+      "backbone": "clip_RN50",
+      "train_views": [
+        "original",
+        "changed"
+      ],
+      "seed": 43,
+      "arm": "lfpi_global_1draw"
+    },
+    {
+      "dataset": "waterbirds",
+      "backbone": "clip_RN50",
+      "train_views": [
+        "original",
+        "changed"
+      ],
+      "seed": 44,
+      "arm": "lfcbm"
+    },
+    {
+      "dataset": "waterbirds",
+      "backbone": "clip_RN50",
+      "train_views": [
+        "original",
+        "changed"
+      ],
+      "seed": 44,
+      "arm": "lfpi_global_1draw"
+    }
+  ]
+}
