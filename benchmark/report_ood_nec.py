@@ -1,4 +1,4 @@
-"""Evaluate frozen LF sparse/dense heads on aligned native RGB corruptions."""
+"""Evaluate frozen sparse/dense heads on aligned native RGB corruptions."""
 import hashlib
 import json
 from pathlib import Path
@@ -24,13 +24,29 @@ def evaluate(dataset):
     assert selected == protocol['concept_indices']
     settings = ['original_0'] + [f'{kind}_{severity}' for kind, _ in KINDS for severity in (1, 3, 5)]
     records, fingerprints = [], {}
-    for method, arm in [('lfcbm', 'lfcbm'), ('lfpi_single', 'lfpi_global_1draw')]:
+    methods = [('lfcbm', 'lfcbm'), ('lfpi_single', 'lfpi_global_1draw')]
+    full_directory = Path('artifacts/ood_fullraw') / dataset / 'resnet18/paired/seed42'
+    full_ready = (full_directory / 'protocol.json').exists() and all(
+        (full_directory / f'{setting}_COMPLETE.json').exists() and
+        all((full_directory / f'{setting}_pini_{arm}.npz').exists() for arm in ('mean', 'noise'))
+        for setting in settings)
+    if full_ready:
+        from .ood_full_queue import verify
+        verify(dataset, full_directory)
+        full_protocol = json.loads((full_directory / 'protocol.json').read_text())
+        assert full_protocol['sample_ids'] == protocol['sample_ids']
+        methods += [('pini_mean', 'pini_mean'), ('pini_noise', 'pini_noise')]
+    for method, arm in methods:
         head_directory = Path('artifacts/heads') / dataset / 'resnet18/paired/seed42' / arm
         report = json.loads((head_directory / 'report.json').read_text())
         assert report['selection_split'] == 'val' and not report['test_selection']
-        assert report['concept_count'] == len(selected) and report['concept_field'] == 'concepts'
+        pini = method.startswith('pini_')
+        field = 'concept_logits' if pini else 'concepts'
+        expected_concepts = full_protocol['full_concept_count'] if pini else len(selected)
+        assert report['concept_count'] == expected_concepts and report['concept_field'] == field
         assert report['train_views'] == ['original', 'changed'] and report['seed'] == 42
-        expected_source = source if method == 'lfcbm' else source / 'single_draw'
+        expected_source = (Path('artifacts/pini_matched') / dataset / 'exports' / method.removeprefix('pini_')
+                           if pini else source if method == 'lfcbm' else source / 'single_draw')
         assert Path(report['source']).resolve() == expected_source.resolve()
         path = head_directory / 'heads.pt'
         fingerprints[method] = hashlib.sha256(path.read_bytes()).hexdigest()
@@ -41,18 +57,19 @@ def evaluate(dataset):
         assert len(positions) == len(reference['ids'])
         heads = {**state['sparse']['budgets'], 'best_val': state['sparse']['best'], 'dense': state['dense']['head']}
         for setting in settings:
-            data = read(directory / f'{setting}_{method}.npz')
+            prediction_directory = full_directory if pini else directory
+            data = read(prediction_directory / f'{setting}_{method}.npz')
             assert np.array_equal(data['ids'], np.asarray(protocol['sample_ids']))
             assert len(np.unique(data['ids'])) == 256
             rows = [positions[int(identifier)] for identifier in data['ids']]
             assert np.array_equal(data['labels'], reference['labels'][rows])
-            assert data['concepts'].shape == (256, len(selected)) and np.isfinite(data['concepts']).all()
+            assert data[field].shape == (256, expected_concepts) and np.isfinite(data[field]).all()
             for name, head in heads.items():
                 if name == 'dense':
                     mean, scale = state['dense']['mean'].numpy(), state['dense']['std'].numpy()
                 else:
                     mean, scale = normalization['mean'], normalization['scale']
-                inputs = torch.as_tensor((data['concepts'] - mean) / scale).float()
+                inputs = torch.as_tensor((data[field] - mean) / scale).float()
                 logits = torch.nn.functional.linear(inputs, head['weight'], head['bias']).numpy()
                 metrics = classification_metrics(logits, data['labels'])
                 connections = nec(head['weight'].numpy())
@@ -85,14 +102,14 @@ def main():
         plt.rcParams['font.family'] = font_manager.FontProperties(fname=str(font)).get_name()
     plt.rcParams['axes.unicode_minus'] = False
     results = [evaluate(dataset) for dataset in DATASETS]
-    lines = ['# LF-CBM／LF-Pi 图像扰动下的实际 NEC 曲线', '']
+    lines = ['# 图像扰动下的实际 NEC 曲线', '']
     for result in results:
         lines += [f'## {DATASETS[result["dataset"]]} · ImageNet ResNet18 · 背景增强训练', '']
         for severity in (1, 3, 5):
             fig, axes = plt.subplots(2, 2, figsize=(11, 8), layout='constrained')
             for ax, (kind, title) in zip(axes.flat, KINDS):
                 setting = f'{kind}_{severity}'
-                for method in ('lfcbm', 'lfpi_single'):
+                for method in result['head_fingerprints']:
                     points = sorted((r['actual_nec'], 100*r['accuracy']) for r in result['records']
                                     if r['method'] == method and r['setting'] == setting and r['head'] not in ('dense', 'best_val'))
                     name = NAMES[method]

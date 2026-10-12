@@ -1,4 +1,4 @@
-# LF-CBM／LF-Pi 图像扰动下的实际 NEC 曲线
+# 图像扰动下的实际 NEC 曲线
 
 ## RIVAL10 · ImageNet ResNet18 · 背景增强训练
 

@@ -21,7 +21,7 @@ git clone --recurse-submodules https://github.com/Dodocheshire/Pi-CBM-Benchmark.
 
 NEC 网格根据数据集与概念库规模设置，同时保留 NEC=5 和 5–30 的参考区间。参考 [VLG-CBM §5.1 与附录 F](https://arxiv.org/html/2408.01432v3)：使用 GLM-SAGA 正则化路径，选取 NEC 接近目标的权重，再剪除最小连接达到规定平均 NEC。每个点保存实际 NEC、每类连接数与原始路径位置。充分 NEC 对照使用验证集选择的全路径模型和稠密分类头。
 
-结果位于 [同条件评测](reports/EXPERIMENT_REPORT.md)、[三个训练种子汇总](reports/SEED_RESULT.md)、[多种子 NEC 曲线](reports/NEC_SEED_RESULT.md)、[非 CBM 对照](reports/NONCBM_RESULT.md)、[泛化／NEC 曲线](reports/GENERALIZATION_RESULT.md)、[扰动下的概念预测与激活变化](reports/OOD_CONCEPT_RESULT.md)、[LF 扰动 NEC 曲线](reports/OOD_NEC_RESULT.md)、[CIFAR 与官方 CIFAR-C](reports/CIFAR_RESULT.md) 和 [大规模数据集](reports/SCALE_RESULT.md)。数据、模型和逐图预测写入忽略的 `artifacts/`。
+结果位于 [同条件评测](reports/EXPERIMENT_REPORT.md)、[三个训练种子汇总](reports/SEED_RESULT.md)、[多种子 NEC 曲线](reports/NEC_SEED_RESULT.md)、[非 CBM 对照](reports/NONCBM_RESULT.md)、[泛化／NEC 曲线](reports/GENERALIZATION_RESULT.md)、[扰动下的概念预测与激活变化](reports/OOD_CONCEPT_RESULT.md)、[扰动 NEC 曲线](reports/OOD_NEC_RESULT.md)、[CIFAR 与官方 CIFAR-C](reports/CIFAR_RESULT.md) 和 [大规模数据集](reports/SCALE_RESULT.md)。数据、模型和逐图预测写入忽略的 `artifacts/`。
 
 `python -m benchmark.ood_full_queue` 在显存连续三次达到 16 GiB 后，串行导出三个有原生概念标注数据集的完整 PiNI 概念值，用于固定分类头的扰动 NEC 评测。每组使用同一批 256 张测试图和 13 个原图／腐蚀设置；输出位于独立的 `artifacts/ood_fullraw/`。新增保存逻辑核验见 [完整概念导出入口](reports/pini_ood_full_export_cpu_audit.json)。
 
@@ -73,3 +73,5 @@ python -m benchmark.head_queue --workers 2
 LF-Pi 图像层／内部层适配入口为 `python -m benchmark.lf_sites`，复用已有 LF-CBM 的概念筛选、投影和分类头，并调用原始加噪训练。图像输入使用共享 224×224 RGB 和 ImageNet 归一化；ResNet18 内部输入为真实的 layer4 之前 `256×14×14` 特征。接口核验见 [原图训练参考](reports/lf_sites_rival10_original_cpu_audit.json) 和 [背景增强参考](reports/lf_sites_rival10_paired_cpu_audit.json)。
 
 `python -m benchmark.lf_sites encode-internal --dataset rival10 --device cpu --batch 32` 正在生成两种视图的完整内部特征缓存。后续 `train --site target_image` 或 `train --site target_internal` 使用独立的 `artifacts/matched/lf_sites/` 目录；核心代码、已有 global 训练及结果保持原样。
+
+共同分类头只加载概念值、类别标签和图像编号，并在拼接后释放原始训练／验证字典。必要字段的逐位核验见 [分类头加载器](reports/head_loader_fields_audit.json)；拟合设置与运算保持一致。

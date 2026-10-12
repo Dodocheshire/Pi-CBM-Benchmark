@@ -1,0 +1,62 @@
+{
+  "actual_function_executed": true,
+  "solver_and_normalization_unchanged": true,
+  "existing_fits_restarted": false,
+  "records": [
+    {
+      "split": "train",
+      "view": "original",
+      "images": 18987,
+      "needed_fields_bitwise_equal": true,
+      "previous_loaded_bytes": 43101162,
+      "new_loaded_bytes": 1367064
+    },
+    {
+      "split": "train",
+      "view": "changed",
+      "images": 18987,
+      "needed_fields_bitwise_equal": true,
+      "previous_loaded_bytes": 43101162,
+      "new_loaded_bytes": 1367064
+    },
+    {
+      "split": "val",
+      "view": "original",
+      "images": 2111,
+      "needed_fields_bitwise_equal": true,
+      "previous_loaded_bytes": 4792642,
+      "new_loaded_bytes": 151992
+    },
+    {
+      "split": "val",
+      "view": "changed",
+      "images": 2111,
+      "needed_fields_bitwise_equal": true,
+      "previous_loaded_bytes": 4792642,
+      "new_loaded_bytes": 151992
+    },
+    {
+      "split": "test",
+      "view": "original",
+      "images": 5286,
+      "needed_fields_bitwise_equal": true,
+      "previous_loaded_bytes": 11999892,
+      "new_loaded_bytes": 380592
+    },
+    {
+      "split": "test",
+      "view": "changed",
+      "images": 5286,
+      "needed_fields_bitwise_equal": true,
+      "previous_loaded_bytes": 11999892,
+      "new_loaded_bytes": 380592
+    }
+  ],
+  "imagenet_train_export_sizes": {
+    "source": "artifacts/matched/lf/imagenet_200_per_class/rn18_imagenet/seed42/single_draw/lfpi_global_train_original.npz",
+    "legacy_uncompressed_npy_bytes": 9162877792,
+    "necessary_uncompressed_npy_bytes": 3180800384,
+    "omitted_uncompressed_npy_bytes": 5982077408,
+    "estimate_scope": "NPY payload plus headers; not measured live RSS"
+  }
+}

@@ -44,20 +44,23 @@ def main():
             return
     def load(split, view):
         with np.load(args.source/f'{args.prefix}{split}_{view}.npz') as z:
-            return {k: np.array(z[k]) for k in z.files}
+            # Feature maps, proxy targets and native-head predictions are not
+            # used by this fixed-concept head fit and can occupy many GiB.
+            return {k: z[k] for k in [args.field, 'labels', 'ids']}
     training = [load('train', v) for v in views]
     validation = [load('val', v) for v in views]
     if set(training[0]['ids']) & set(validation[0]['ids']):
         raise ValueError('Underlying train/val subjects overlap')
     for group in [training, validation]:
-        for data in group[1:]:
-            if not (np.array_equal(group[0]['ids'], data['ids']) and
-                    np.array_equal(group[0]['labels'], data['labels'])):
+        for index in range(1, len(group)):
+            if not (np.array_equal(group[0]['ids'], group[index]['ids']) and
+                    np.array_equal(group[0]['labels'], group[index]['labels'])):
                 raise ValueError('Training views are not aligned')
     tr = np.concatenate([d[args.field] for d in training]).astype('float32')
     va = np.concatenate([d[args.field] for d in validation]).astype('float32')
     y = np.concatenate([d['labels'] for d in training])
     vy = np.concatenate([d['labels'] for d in validation])
+    del training, validation, group
     mean = tr.mean(0); scale = tr.std(0, ddof=1).clip(1e-5)
     x = torch.from_numpy((tr-mean)/scale); vx = torch.from_numpy((va-mean)/scale)
     labels = torch.as_tensor(y).long(); vlabels = torch.as_tensor(vy).long()
