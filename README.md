@@ -30,7 +30,9 @@ NEC 网格根据数据集与概念库规模设置，同时保留 NEC=5 和 5–3
 | 数据集 | 骨干 | 方法与训练条件 |
 | --- | --- | --- |
 | RIVAL10、CUB、CUB–Places Waterbirds | ImageNet ResNet18、ResNet50、CLIP RN50 | LF-CBM／LF-Pi 原图与背景增强训练，PiNI 均值／均值加噪，非 CBM 对照 |
-| CIFAR-10、CIFAR-100 | ImageNet ResNet18、ResNet50、CLIP RN50 | 三种骨干的 LF-CBM／LF-Pi 原图训练；ResNet18 高斯噪声增强训练与 PiNI；非 CBM 对照 |
+| CIFAR-10、CIFAR-100 | ImageNet ResNet18、ResNet50、CLIP RN50 | LF-CBM／LF-Pi 原图与高斯噪声增强训练；非 CBM 对照；官方 CIFAR-C 四类扰动、12 个设置 |
+| CIFAR-10 | ImageNet ResNet18、ResNet50 | PiNI 均值／均值加噪；官方 CIFAR-C 四类扰动、12 个设置 |
+| CIFAR-100 | ImageNet ResNet18 | PiNI 均值／均值加噪；官方 CIFAR-C 四类扰动、12 个设置 |
 | ImageNet 每类 200 张训练图、Places365 | ImageNet ResNet18 | LF-CBM／LF-Pi、非 CBM、稀疏与稠密分类头 |
 
 三个原生概念数据集的共享骨干 LF-CBM／LF-Pi 使用 42、43、44 三个训练种子；PiNI 使用原入口固定的种子 42。非 CBM 的三个种子对应冻结特征上的分类头训练。CUB 另包含仅在官方训练划分训练的 ResNet18 对照。
@@ -39,7 +41,7 @@ NEC 网格根据数据集与概念库规模设置，同时保留 NEC=5 和 5–3
 
 RIVAL10 的 LF-Pi 图像层、内部层、全局特征层比较已完成。图像层与内部层各包含原图训练和背景增强训练，结果见 [注入位置比较](reports/LF_SITE_RESULT.md)。
 
-本轮继续补齐宽骨干的 CIFAR 噪声增强对照与剩余共同分类头。报告只纳入完成并通过核验的结果；逐组状态以 `artifacts/` 中的结果、权重和预测文件为准。
+本轮继续补齐 CIFAR-10 的 CLIP RN50 PiNI 对照与剩余共同分类头。报告只纳入完成并通过核验的结果；逐组状态以 `artifacts/` 中的结果、权重和预测文件为准。
 
 ## 运行入口
 
