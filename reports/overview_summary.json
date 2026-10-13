@@ -1,0 +1,378 @@
+{
+  "training_protocol": "paired",
+  "model_seed": 42,
+  "noncbm_head_seeds": [
+    42,
+    43,
+    44
+  ],
+  "classification_head": "validation-selected dense head on frozen concept outputs",
+  "concept_evaluation": "native labels, matched columns and known masks per row",
+  "source_sha256": {
+    "matched_summary.json": "040fea6cb21c5415de0e005374c6564cf6ea940af0a9e43b682a3ed71bfbbbc5",
+    "nec_summary.json": "c9b5f402a44ee92b92fb90f2854f4e3e119a91ddf31dcc85d6da8bbac7ee9c40",
+    "nec_noncbm_references.json": "160feec8063c5c1bc1deaf998b06c8bf5ba014f3bad1f9374bec8391182bebcc"
+  },
+  "rows": [
+    {
+      "dataset": "rival10",
+      "backbone": "resnet18",
+      "head_group": "artifacts/heads/rival10/resnet18/paired/seed42",
+      "shared_concepts": 14,
+      "dense_accuracy": {
+        "original": {
+          "LF-CBM": 0.9255963650132526,
+          "LF-Pi": 0.973305566073457,
+          "PiNI 均值": 0.9799318439984854,
+          "PiNI 均值＋噪声": 0.9791745550927679,
+          "非 CBM": 0.9834658588918339
+        },
+        "changed": {
+          "LF-CBM": 0.8547898523286633,
+          "LF-Pi": 0.9356304430140099,
+          "PiNI 均值": 0.9473684210526315,
+          "PiNI 均值＋噪声": 0.9477470655054904,
+          "非 CBM": 0.9508393285371702
+        }
+      },
+      "changed_concepts": {
+        "LF-CBM": {
+          "mAP": 0.5794022043167082,
+          "pearson_macro": 0.44050664661731753
+        },
+        "LF-Pi": {
+          "mAP": 0.6028517076634797,
+          "pearson_macro": 0.45927084220343245
+        },
+        "PiNI 均值": {
+          "mAP": 0.8452224005326888,
+          "pearson_macro": 0.7936156952590536
+        },
+        "PiNI 均值＋噪声": {
+          "mAP": 0.8448921338389335,
+          "pearson_macro": 0.7934030830326461
+        }
+      }
+    },
+    {
+      "dataset": "rival10",
+      "backbone": "resnet50",
+      "head_group": "artifacts/heads/rival10/resnet50/paired/seed42",
+      "shared_concepts": 16,
+      "dense_accuracy": {
+        "original": {
+          "LF-CBM": 0.9594850435441121,
+          "LF-Pi": 0.9865581219235138,
+          "PiNI 均值": 0.9880726997349489,
+          "PiNI 均值＋噪声": 0.9871260886028019,
+          "非 CBM": 0.9910387479490091
+        },
+        "changed": {
+          "LF-CBM": 0.9140477092010602,
+          "LF-Pi": 0.9570238546005301,
+          "PiNI 均值": 0.9645967436577054,
+          "PiNI 均值＋噪声": 0.964407421431276,
+          "非 CBM": 0.9641549917960369
+        }
+      },
+      "changed_concepts": {
+        "LF-CBM": {
+          "mAP": 0.5552856424361721,
+          "pearson_macro": 0.38495394370685443
+        },
+        "LF-Pi": {
+          "mAP": 0.5739537122905704,
+          "pearson_macro": 0.3985217045405878
+        },
+        "PiNI 均值": {
+          "mAP": 0.8627446315917638,
+          "pearson_macro": 0.8132315963917434
+        },
+        "PiNI 均值＋噪声": {
+          "mAP": 0.8627996888940285,
+          "pearson_macro": 0.8138655968912745
+        }
+      }
+    },
+    {
+      "dataset": "rival10",
+      "backbone": "clip_RN50",
+      "head_group": "artifacts/heads/rival10/clip_RN50/paired/seed42",
+      "shared_concepts": 17,
+      "dense_accuracy": {
+        "original": {
+          "LF-CBM": 0.9664899659219992,
+          "LF-Pi": 0.9888299886406664,
+          "PiNI 均值": 0.9901552442256721,
+          "PiNI 均值＋噪声": 0.9903445664521014,
+          "非 CBM": 0.9917960368547267
+        },
+        "changed": {
+          "LF-CBM": 0.9110185535781901,
+          "LF-Pi": 0.9587277546383945,
+          "PiNI 均值": 0.9657326770162817,
+          "PiNI 均值＋噪声": 0.9676258992805755,
+          "非 CBM": 0.9709705919474946
+        }
+      },
+      "changed_concepts": {
+        "LF-CBM": {
+          "mAP": 0.5461162949149218,
+          "pearson_macro": 0.3594369327455468
+        },
+        "LF-Pi": {
+          "mAP": 0.5645860412836746,
+          "pearson_macro": 0.3743317722006278
+        },
+        "PiNI 均值": {
+          "mAP": 0.8665085188409061,
+          "pearson_macro": 0.8176497707664897
+        },
+        "PiNI 均值＋噪声": {
+          "mAP": 0.866709785161368,
+          "pearson_macro": 0.8180560601268718
+        }
+      }
+    },
+    {
+      "dataset": "cub",
+      "backbone": "resnet18",
+      "head_group": "artifacts/heads/cub/resnet18/paired/seed42",
+      "shared_concepts": 37,
+      "dense_accuracy": {
+        "original": {
+          "LF-CBM": 0.33396617190196753,
+          "LF-Pi": 0.5065585088022092,
+          "PiNI 均值": 0.5773213669313082,
+          "PiNI 均值＋噪声": 0.572833966171902,
+          "非 CBM": 0.6308249913703832
+        },
+        "changed": {
+          "LF-CBM": 0.22126337590610975,
+          "LF-Pi": 0.39247497411114945,
+          "PiNI 均值": 0.4670348636520538,
+          "PiNI 均值＋噪声": 0.47065930272695894,
+          "非 CBM": 0.5040846853066391
+        }
+      },
+      "changed_concepts": {
+        "LF-CBM": {
+          "mAP": 0.34804822802121027,
+          "pearson_macro": 0.1874739157095278
+        },
+        "LF-Pi": {
+          "mAP": 0.3562282303895382,
+          "pearson_macro": 0.20006229409059176
+        },
+        "PiNI 均值": {
+          "mAP": 0.5332696605396766,
+          "pearson_macro": 0.43120398047044406
+        },
+        "PiNI 均值＋噪声": {
+          "mAP": 0.5341540020911588,
+          "pearson_macro": 0.43293175875924483
+        }
+      }
+    },
+    {
+      "dataset": "cub",
+      "backbone": "resnet50",
+      "head_group": "artifacts/heads/cub/resnet50/paired/seed42",
+      "shared_concepts": 55,
+      "dense_accuracy": {
+        "original": {
+          "LF-CBM": 0.4518467380048326,
+          "LF-Pi": 0.603555402140145,
+          "PiNI 均值": 0.6444597859855022,
+          "PiNI 均值＋噪声": 0.6422160856057991,
+          "非 CBM": 0.6651133356345645
+        },
+        "changed": {
+          "LF-CBM": 0.33103210217466345,
+          "LF-Pi": 0.4798066965826717,
+          "PiNI 均值": 0.5417673455298585,
+          "PiNI 均值＋噪声": 0.5429754918881602,
+          "非 CBM": 0.5350937751697159
+        }
+      },
+      "changed_concepts": {
+        "LF-CBM": {
+          "mAP": 0.3567135914124869,
+          "pearson_macro": 0.15733134017965902
+        },
+        "LF-Pi": {
+          "mAP": 0.3627950087267904,
+          "pearson_macro": 0.16676296421268832
+        },
+        "PiNI 均值": {
+          "mAP": 0.5500075536638922,
+          "pearson_macro": 0.42017811111449377
+        },
+        "PiNI 均值＋噪声": {
+          "mAP": 0.5510674927410248,
+          "pearson_macro": 0.4238165135955706
+        }
+      }
+    },
+    {
+      "dataset": "cub",
+      "backbone": "clip_RN50",
+      "head_group": "artifacts/heads/cub/clip_RN50/paired/seed42",
+      "shared_concepts": 86,
+      "dense_accuracy": {
+        "original": {
+          "LF-CBM": 0.5833620987228167,
+          "LF-Pi": 0.6741456679323438,
+          "PiNI 均值": 0.6834656541249569,
+          "PiNI 均值＋噪声": 0.6789782533655506,
+          "非 CBM": 0.7104475894603612
+        },
+        "changed": {
+          "LF-CBM": 0.35018985157059024,
+          "LF-Pi": 0.4815326199516741,
+          "PiNI 均值": 0.4665170866413531,
+          "PiNI 均值＋噪声": 0.4654815326199517,
+          "非 CBM": 0.5204809573121619
+        }
+      },
+      "changed_concepts": {
+        "LF-CBM": {
+          "mAP": 0.3462376458855319,
+          "pearson_macro": 0.12709516877009472
+        },
+        "LF-Pi": {
+          "mAP": 0.3553751173088873,
+          "pearson_macro": 0.14084463848392115
+        },
+        "PiNI 均值": {
+          "mAP": 0.5124645354091016,
+          "pearson_macro": 0.38272217369847533
+        },
+        "PiNI 均值＋噪声": {
+          "mAP": 0.5117789505778301,
+          "pearson_macro": 0.3824687155956037
+        }
+      }
+    },
+    {
+      "dataset": "waterbirds",
+      "backbone": "resnet18",
+      "head_group": "artifacts/heads/waterbirds/resnet18/paired/seed42",
+      "shared_concepts": 37,
+      "dense_accuracy": {
+        "original": {
+          "LF-CBM": 0.9088712461166725,
+          "LF-Pi": 0.9656541249568519,
+          "PiNI 均值": 0.9613393165343459,
+          "PiNI 均值＋噪声": 0.9623748705557473,
+          "非 CBM": 0.9623748705557474
+        },
+        "changed": {
+          "LF-CBM": 0.8191232309285468,
+          "LF-Pi": 0.9319986192613048,
+          "PiNI 均值": 0.9295823265447014,
+          "PiNI 均值＋噪声": 0.9319986192613048,
+          "非 CBM": 0.9253250489011622
+        }
+      },
+      "changed_concepts": {
+        "LF-CBM": {
+          "mAP": 0.34804822802121027,
+          "pearson_macro": 0.1874739157095278
+        },
+        "LF-Pi": {
+          "mAP": 0.35086395618794325,
+          "pearson_macro": 0.19016870810140493
+        },
+        "PiNI 均值": {
+          "mAP": 0.5319750833319589,
+          "pearson_macro": 0.43869409951766947
+        },
+        "PiNI 均值＋噪声": {
+          "mAP": 0.5317905569216815,
+          "pearson_macro": 0.4441294854517267
+        }
+      }
+    },
+    {
+      "dataset": "waterbirds",
+      "backbone": "resnet50",
+      "head_group": "artifacts/heads/waterbirds/resnet50/paired/seed42",
+      "shared_concepts": 55,
+      "dense_accuracy": {
+        "original": {
+          "LF-CBM": 0.958577839143942,
+          "LF-Pi": 0.9729030031066621,
+          "PiNI 均值": 0.9632378322402485,
+          "PiNI 均值＋噪声": 0.9644459785985502,
+          "非 CBM": 0.9685306639051893
+        },
+        "changed": {
+          "LF-CBM": 0.9126682775284778,
+          "LF-Pi": 0.9477045219192268,
+          "PiNI 均值": 0.9442526751812219,
+          "PiNI 均值＋噪声": 0.94287193648602,
+          "非 CBM": 0.9326889886089057
+        }
+      },
+      "changed_concepts": {
+        "LF-CBM": {
+          "mAP": 0.35671363835636727,
+          "pearson_macro": 0.15733231459449099
+        },
+        "LF-Pi": {
+          "mAP": 0.3593341816748403,
+          "pearson_macro": 0.1616718616483046
+        },
+        "PiNI 均值": {
+          "mAP": 0.54873375641321,
+          "pearson_macro": 0.43213346989271617
+        },
+        "PiNI 均值＋噪声": {
+          "mAP": 0.548287545243332,
+          "pearson_macro": 0.4383337992417289
+        }
+      }
+    },
+    {
+      "dataset": "waterbirds",
+      "backbone": "clip_RN50",
+      "head_group": "artifacts/heads/waterbirds/clip_RN50/paired/seed42",
+      "shared_concepts": 86,
+      "dense_accuracy": {
+        "original": {
+          "LF-CBM": 0.9687607870210563,
+          "LF-Pi": 0.9701415257162582,
+          "PiNI 均值": 0.9678978253365551,
+          "PiNI 均值＋噪声": 0.9672074559889541,
+          "非 CBM": 0.9659417788516858
+        },
+        "changed": {
+          "LF-CBM": 0.9256127027959958,
+          "LF-Pi": 0.9338971349672075,
+          "PiNI 均值": 0.9318260269244045,
+          "PiNI 均值＋噪声": 0.9306178805661028,
+          "非 CBM": 0.9298699804395353
+        }
+      },
+      "changed_concepts": {
+        "LF-CBM": {
+          "mAP": 0.3462376458855319,
+          "pearson_macro": 0.12709516877009472
+        },
+        "LF-Pi": {
+          "mAP": 0.3493270527508378,
+          "pearson_macro": 0.13024444280664924
+        },
+        "PiNI 均值": {
+          "mAP": 0.4992191584767745,
+          "pearson_macro": 0.3717591059648069
+        },
+        "PiNI 均值＋噪声": {
+          "mAP": 0.4985742420276433,
+          "pearson_macro": 0.3716862252272756
+        }
+      }
+    }
+  ]
+}

@@ -116,7 +116,13 @@ def main():
                                label=f'非 CBM（{len(values)} 个头种子）')
                     ax.axhspan(mean-std, mean+std, color=COLORS['非 CBM'], alpha=.12)
                 ax.set_title(label); ax.set_ylim(0, 102)
-                ax.set_xlabel('每类有效概念连接数（实际 NEC）'); ax.set_ylabel('分类准确率（%）')
+                # Keep low-NEC curves legible beside dense heads with hundreds of connections.
+                ax.set_xscale('symlog', linthresh=1, linscale=.3)
+                ax.margins(x=.08)
+                right = ax.get_xlim()[1]
+                ticks = [v for v in (0, 1, 5, 20, 100, 500, 2000, 10000) if v <= right]
+                ax.set_xticks(ticks, [str(v) for v in ticks]); ax.set_xlim(0, right)
+                ax.set_xlabel('每类有效概念连接数（实际 NEC；分段对数）'); ax.set_ylabel('分类准确率（%）')
                 ax.grid(alpha=.18); ax.spines[['top', 'right']].set_visible(False)
             handles, labels = axes[0, 0].get_legend_handles_labels()
             fig.legend(handles, labels, loc='outside lower center', ncol=3)

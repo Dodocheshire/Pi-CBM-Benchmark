@@ -527,8 +527,56 @@
       "actual_nec_from_weights": true,
       "classification_from_saved_logits": true,
       "validation_only_selection": true
+    },
+    {
+      "report": "artifacts/heads/cifar100/resnet50/corruption_augmented/seed42/lfcbm/report.json",
+      "heads_sha256": "3c8965a0a4cab7b97267029ff4af643869491e10969238340700a7786234c6e9",
+      "verified_evaluations": 26,
+      "actual_nec_from_weights": true,
+      "classification_from_saved_logits": true,
+      "validation_only_selection": true
+    },
+    {
+      "report": "artifacts/heads/cifar100/resnet50/corruption_augmented/seed42/lfpi_global_1draw/report.json",
+      "heads_sha256": "d98fab7af7e89649515288b76c01867e67f2f6022d221ddeaa81fabc8313f727",
+      "verified_evaluations": 26,
+      "actual_nec_from_weights": true,
+      "classification_from_saved_logits": true,
+      "validation_only_selection": true
+    },
+    {
+      "report": "artifacts/heads/cifar100/clip_RN50/corruption_augmented/seed42/lfcbm/report.json",
+      "heads_sha256": "9927b36884869a1f4decd8867a6360ebf59cb934538872896e7b3f9cfc8284d2",
+      "verified_evaluations": 26,
+      "actual_nec_from_weights": true,
+      "classification_from_saved_logits": true,
+      "validation_only_selection": true
+    },
+    {
+      "report": "artifacts/heads/cub/clip_RN50/paired/seed42/pini_mean/report.json",
+      "heads_sha256": "aa08f09ffcf299c76944b6ba015e76baeafd6a78ca1e4079903880adfd9159b5",
+      "verified_evaluations": 24,
+      "actual_nec_from_weights": true,
+      "classification_from_saved_logits": true,
+      "validation_only_selection": true
+    },
+    {
+      "report": "artifacts/heads/cub/clip_RN50/paired/seed42/pini_noise/report.json",
+      "heads_sha256": "b9842b3cbdafd6d79147e14cdb63567279351ade297236822dd7dca65ffecca3",
+      "verified_evaluations": 24,
+      "actual_nec_from_weights": true,
+      "classification_from_saved_logits": true,
+      "validation_only_selection": true
+    },
+    {
+      "report": "artifacts/heads/cifar100/clip_RN50/corruption_augmented/seed42/lfpi_global_1draw/report.json",
+      "heads_sha256": "bc70d69102dac797fee99f2d982c1253f5f481f98cb6909d5c8f39123fa56f2e",
+      "verified_evaluations": 26,
+      "actual_nec_from_weights": true,
+      "classification_from_saved_logits": true,
+      "validation_only_selection": true
     }
   ],
-  "heads": 66,
-  "evaluations": 1490
+  "heads": 72,
+  "evaluations": 1642
 }

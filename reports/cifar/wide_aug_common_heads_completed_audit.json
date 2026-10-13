@@ -1,0 +1,272 @@
+{
+  "audit_pid": 2717356,
+  "state": "complete",
+  "expected_heads": 8,
+  "expected_fixed_shift_settings_per_head": 12,
+  "training_performed": false,
+  "records": [
+    {
+      "output": "/home/pengcheng/Pi-CBM-Benchmark/artifacts/heads/cifar10/resnet50/corruption_augmented/seed42/lfcbm",
+      "report_sha256": "cbb209d2e8b2ab614ea73672cbeb8d34a237b8a21aeb633cdcf020b71bfdd753",
+      "heads_sha256": "e89cbdb1f99cafd2ef3897e2bef8e66956e1cf1a5dabba44661ef6dbe4c6b9af",
+      "normalization_sha256": "673ecb484074cd987543ae3bd6f81a8b7ba7f3625a4b25c8c05f8714808d76bd",
+      "gradient_kernel": "upstream",
+      "streaming_dense": false,
+      "path_points": 24,
+      "steps_limit": 1000,
+      "seed": 42,
+      "train_views": [
+        "original",
+        "gaussian_noise_s1"
+      ],
+      "actual_weights_shape": [
+        10,
+        128
+      ],
+      "concept_count": 128,
+      "unconverged_path_points": 0,
+      "fixed_shifts": {
+        "output": "/home/pengcheng/Pi-CBM-Benchmark/artifacts/heads/cifar10/resnet50/corruption_augmented/seed42/lfcbm",
+        "settings": 12,
+        "evaluations": 168,
+        "rows_per_setting": 10000,
+        "heads_sha256": "e89cbdb1f99cafd2ef3897e2bef8e66956e1cf1a5dabba44661ef6dbe4c6b9af",
+        "source": "/home/pengcheng/Pi-CBM-Benchmark/artifacts/matched/lf/cifar10/rn50_imagenet/gaussian_noise_augmented/seed42/corruptions",
+        "actual_NEC_weight_parity": true,
+        "IDs_labels_original_parity": true,
+        "refitting": false
+      }
+    },
+    {
+      "output": "/home/pengcheng/Pi-CBM-Benchmark/artifacts/heads/cifar10/resnet50/corruption_augmented/seed42/lfpi_global_1draw",
+      "report_sha256": "bc2da3f05803ac602d65c7ffdc49e952482acb1623cbb56a769ba4692b001530",
+      "heads_sha256": "12ef2ee79fc60167c470f30def8859700eaae7d23b00b3e043a64992a2d4794a",
+      "normalization_sha256": "1ffbb4e31dc4bfc4cee3c458f805f394e8ed9b4a9e483e0c7ce7174162d22f96",
+      "gradient_kernel": "upstream",
+      "streaming_dense": false,
+      "path_points": 24,
+      "steps_limit": 1000,
+      "seed": 42,
+      "train_views": [
+        "original",
+        "gaussian_noise_s1"
+      ],
+      "actual_weights_shape": [
+        10,
+        128
+      ],
+      "concept_count": 128,
+      "unconverged_path_points": 0,
+      "fixed_shifts": {
+        "output": "/home/pengcheng/Pi-CBM-Benchmark/artifacts/heads/cifar10/resnet50/corruption_augmented/seed42/lfpi_global_1draw",
+        "settings": 12,
+        "evaluations": 168,
+        "rows_per_setting": 10000,
+        "heads_sha256": "12ef2ee79fc60167c470f30def8859700eaae7d23b00b3e043a64992a2d4794a",
+        "source": "/home/pengcheng/Pi-CBM-Benchmark/artifacts/matched/lf/cifar10/rn50_imagenet/gaussian_noise_augmented/seed42/corruptions",
+        "actual_NEC_weight_parity": true,
+        "IDs_labels_original_parity": true,
+        "refitting": false
+      }
+    },
+    {
+      "output": "/home/pengcheng/Pi-CBM-Benchmark/artifacts/heads/cifar10/clip_RN50/corruption_augmented/seed42/lfcbm",
+      "report_sha256": "21f54a5bcb1e5785f2dffa934c0fdb752731b53ef64c4e954eaf7242ce37a893",
+      "heads_sha256": "24e8df561af74444a4bb6e9196c2b6fb7291c49607106817023b534c8c81ecd9",
+      "normalization_sha256": "46505f71f0193c7b121fcf812bd776e6f0bb3e276a8431f8b566b6a5de4da660",
+      "gradient_kernel": "upstream",
+      "streaming_dense": false,
+      "path_points": 24,
+      "steps_limit": 1000,
+      "seed": 42,
+      "train_views": [
+        "original",
+        "gaussian_noise_s1"
+      ],
+      "actual_weights_shape": [
+        10,
+        128
+      ],
+      "concept_count": 128,
+      "unconverged_path_points": 0,
+      "fixed_shifts": {
+        "output": "/home/pengcheng/Pi-CBM-Benchmark/artifacts/heads/cifar10/clip_RN50/corruption_augmented/seed42/lfcbm",
+        "settings": 12,
+        "evaluations": 168,
+        "rows_per_setting": 10000,
+        "heads_sha256": "24e8df561af74444a4bb6e9196c2b6fb7291c49607106817023b534c8c81ecd9",
+        "source": "/home/pengcheng/Pi-CBM-Benchmark/artifacts/matched/lf/cifar10/clip_RN50/gaussian_noise_augmented/seed42/corruptions",
+        "actual_NEC_weight_parity": true,
+        "IDs_labels_original_parity": true,
+        "refitting": false
+      }
+    },
+    {
+      "output": "/home/pengcheng/Pi-CBM-Benchmark/artifacts/heads/cifar10/clip_RN50/corruption_augmented/seed42/lfpi_global_1draw",
+      "report_sha256": "a9367dc58f08a7c573ff610dca473c70ba89cf949464996ad194abc52f7a9463",
+      "heads_sha256": "8582ac86960727621113f761082920b10ff8fb9d71967e1e33089c6c267794ef",
+      "normalization_sha256": "688703176e065622ba0ca532666c670cea8ca484e442551e0deae0df0169ed96",
+      "gradient_kernel": "upstream",
+      "streaming_dense": false,
+      "path_points": 24,
+      "steps_limit": 1000,
+      "seed": 42,
+      "train_views": [
+        "original",
+        "gaussian_noise_s1"
+      ],
+      "actual_weights_shape": [
+        10,
+        128
+      ],
+      "concept_count": 128,
+      "unconverged_path_points": 0,
+      "fixed_shifts": {
+        "output": "/home/pengcheng/Pi-CBM-Benchmark/artifacts/heads/cifar10/clip_RN50/corruption_augmented/seed42/lfpi_global_1draw",
+        "settings": 12,
+        "evaluations": 168,
+        "rows_per_setting": 10000,
+        "heads_sha256": "8582ac86960727621113f761082920b10ff8fb9d71967e1e33089c6c267794ef",
+        "source": "/home/pengcheng/Pi-CBM-Benchmark/artifacts/matched/lf/cifar10/clip_RN50/gaussian_noise_augmented/seed42/corruptions",
+        "actual_NEC_weight_parity": true,
+        "IDs_labels_original_parity": true,
+        "refitting": false
+      }
+    },
+    {
+      "output": "/home/pengcheng/Pi-CBM-Benchmark/artifacts/heads/cifar100/resnet50/corruption_augmented/seed42/lfcbm",
+      "report_sha256": "28ef8b2cfee75db5318b1047cc734d64faf6cbc3d81191ea550fd3b654205be6",
+      "heads_sha256": "3c8965a0a4cab7b97267029ff4af643869491e10969238340700a7786234c6e9",
+      "normalization_sha256": "3bcc13446c5274374f8a1fe121fb6eab4c03f1e8ffd86e38b5d8a90e7814563a",
+      "gradient_kernel": "upstream",
+      "streaming_dense": false,
+      "path_points": 24,
+      "steps_limit": 1000,
+      "seed": 42,
+      "train_views": [
+        "original",
+        "gaussian_noise_s1"
+      ],
+      "actual_weights_shape": [
+        100,
+        820
+      ],
+      "concept_count": 820,
+      "unconverged_path_points": 0,
+      "fixed_shifts": {
+        "output": "/home/pengcheng/Pi-CBM-Benchmark/artifacts/heads/cifar100/resnet50/corruption_augmented/seed42/lfcbm",
+        "settings": 12,
+        "evaluations": 156,
+        "rows_per_setting": 10000,
+        "heads_sha256": "3c8965a0a4cab7b97267029ff4af643869491e10969238340700a7786234c6e9",
+        "source": "/home/pengcheng/Pi-CBM-Benchmark/artifacts/matched/lf/cifar100/rn50_imagenet/gaussian_noise_augmented/seed42/corruptions",
+        "actual_NEC_weight_parity": true,
+        "IDs_labels_original_parity": true,
+        "refitting": false
+      }
+    },
+    {
+      "output": "/home/pengcheng/Pi-CBM-Benchmark/artifacts/heads/cifar100/resnet50/corruption_augmented/seed42/lfpi_global_1draw",
+      "report_sha256": "f02d1dfe6f7e78c66ed3586bfd40efda2a4b2aea764c8fa1c062b27ba48c592e",
+      "heads_sha256": "d98fab7af7e89649515288b76c01867e67f2f6022d221ddeaa81fabc8313f727",
+      "normalization_sha256": "5fb157b3b08a234e677a4ec07f3542270100bb8b83a53c46a3b4dd730c0f1377",
+      "gradient_kernel": "matmul",
+      "streaming_dense": false,
+      "path_points": 24,
+      "steps_limit": 1000,
+      "seed": 42,
+      "train_views": [
+        "original",
+        "gaussian_noise_s1"
+      ],
+      "actual_weights_shape": [
+        100,
+        820
+      ],
+      "concept_count": 820,
+      "unconverged_path_points": 0,
+      "fixed_shifts": {
+        "output": "/home/pengcheng/Pi-CBM-Benchmark/artifacts/heads/cifar100/resnet50/corruption_augmented/seed42/lfpi_global_1draw",
+        "settings": 12,
+        "evaluations": 156,
+        "rows_per_setting": 10000,
+        "heads_sha256": "d98fab7af7e89649515288b76c01867e67f2f6022d221ddeaa81fabc8313f727",
+        "source": "/home/pengcheng/Pi-CBM-Benchmark/artifacts/matched/lf/cifar100/rn50_imagenet/gaussian_noise_augmented/seed42/corruptions",
+        "actual_NEC_weight_parity": true,
+        "IDs_labels_original_parity": true,
+        "refitting": false
+      }
+    },
+    {
+      "output": "/home/pengcheng/Pi-CBM-Benchmark/artifacts/heads/cifar100/clip_RN50/corruption_augmented/seed42/lfcbm",
+      "report_sha256": "41f1c9514419f428b63b3359f69b02d7c2d04109390ec5deba90e99a9ba1a48a",
+      "heads_sha256": "9927b36884869a1f4decd8867a6360ebf59cb934538872896e7b3f9cfc8284d2",
+      "normalization_sha256": "3ad9dff188d42ff664f6ff77afc20410cab3cf40beab3e34f5a25e8e43e2c46c",
+      "gradient_kernel": "matmul",
+      "streaming_dense": false,
+      "path_points": 24,
+      "steps_limit": 1000,
+      "seed": 42,
+      "train_views": [
+        "original",
+        "gaussian_noise_s1"
+      ],
+      "actual_weights_shape": [
+        100,
+        807
+      ],
+      "concept_count": 807,
+      "unconverged_path_points": 0,
+      "fixed_shifts": {
+        "output": "/home/pengcheng/Pi-CBM-Benchmark/artifacts/heads/cifar100/clip_RN50/corruption_augmented/seed42/lfcbm",
+        "settings": 12,
+        "evaluations": 156,
+        "rows_per_setting": 10000,
+        "heads_sha256": "9927b36884869a1f4decd8867a6360ebf59cb934538872896e7b3f9cfc8284d2",
+        "source": "/home/pengcheng/Pi-CBM-Benchmark/artifacts/matched/lf/cifar100/clip_RN50/gaussian_noise_augmented/seed42/corruptions",
+        "actual_NEC_weight_parity": true,
+        "IDs_labels_original_parity": true,
+        "refitting": false
+      }
+    },
+    {
+      "output": "/home/pengcheng/Pi-CBM-Benchmark/artifacts/heads/cifar100/clip_RN50/corruption_augmented/seed42/lfpi_global_1draw",
+      "report_sha256": "2f5fe9e24abe805bd30e43d637d4a2117eb8df75cb855c68bd23aaf7fc688e8e",
+      "heads_sha256": "bc70d69102dac797fee99f2d982c1253f5f481f98cb6909d5c8f39123fa56f2e",
+      "normalization_sha256": "144defa9f73536359e84cf9ca37cf6cb7f6515ac5643486009a5b1cc05c332fe",
+      "gradient_kernel": "matmul",
+      "streaming_dense": false,
+      "path_points": 24,
+      "steps_limit": 1000,
+      "seed": 42,
+      "train_views": [
+        "original",
+        "gaussian_noise_s1"
+      ],
+      "actual_weights_shape": [
+        100,
+        807
+      ],
+      "concept_count": 807,
+      "unconverged_path_points": 0,
+      "fixed_shifts": {
+        "output": "/home/pengcheng/Pi-CBM-Benchmark/artifacts/heads/cifar100/clip_RN50/corruption_augmented/seed42/lfpi_global_1draw",
+        "settings": 12,
+        "evaluations": 156,
+        "rows_per_setting": 10000,
+        "heads_sha256": "bc70d69102dac797fee99f2d982c1253f5f481f98cb6909d5c8f39123fa56f2e",
+        "source": "/home/pengcheng/Pi-CBM-Benchmark/artifacts/matched/lf/cifar100/clip_RN50/gaussian_noise_augmented/seed42/corruptions",
+        "actual_NEC_weight_parity": true,
+        "IDs_labels_original_parity": true,
+        "refitting": false
+      }
+    }
+  ],
+  "missing_outputs": [],
+  "all_actual_files_verified": true,
+  "completed_heads": 8,
+  "total_fixed_shift_settings": 96,
+  "core_changed": false,
+  "matmul_numeric_audit_sha256": "55009c88e27d781269cf67b102a2d8f4b8c78af7bb2a98f88f0684daf3887138",
+  "matmul_not_bitwise_equivalent": true
+}

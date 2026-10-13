@@ -1,0 +1,188 @@
+{
+  "all_passed": true,
+  "mode": "matmul",
+  "kernel_metadata": {
+    "name": "matmul",
+    "optional_benchmark_runtime_wrapper": true,
+    "original_function_source_sha256": "ac1d0bcab8dbc07e81f9442d5c0ae76c0f81c2255cc98e266b3ec2d6947a3557",
+    "replacement_function_source_sha256": "39d8107e24c2a97149a40140fef6b9ad9da40d8c29222268669960fdc6011b15",
+    "replacement_sites": 2,
+    "core_file_modified": false,
+    "numeric_audit": "artifacts/audit/saga_outer_gemm_cpu.json",
+    "cuda_numeric_and_training_audit": "artifacts/audit/optional_head_regression.json",
+    "float32_matmul_precision": "highest",
+    "matmul_allow_tf32": false,
+    "cudnn_allow_tf32": false
+  },
+  "float32_precision": "highest",
+  "matmul_tf32": false,
+  "cudnn_tf32": false,
+  "different_reduction_not_bitwise_equivalent": true,
+  "core_files_modified": false,
+  "formal_training_performed": false,
+  "streaming_dense": false,
+  "records": [
+    {
+      "output": "/home/pengcheng/Pi-CBM-Benchmark/artifacts/heads/cifar100/resnet50/corruption_augmented/seed42/lfpi_global_1draw",
+      "classes": 100,
+      "concepts": 820,
+      "batch": 16,
+      "source": "/home/pengcheng/Pi-CBM-Benchmark/artifacts/matched/lf/cifar100/rn50_imagenet/gaussian_noise_augmented/seed42/single_draw",
+      "prefix": "lfpi_global_",
+      "training_rows_for_mean_sample_std": 90000,
+      "actual_batch_global_ids": [
+        29262,
+        17002,
+        43146,
+        14717,
+        42487,
+        6259,
+        24189,
+        11736,
+        35816,
+        12605,
+        13599,
+        36239,
+        42192,
+        4230,
+        44663,
+        44649
+      ],
+      "normalized_batch_sha256": "b41e73c3801e4b5b1bf000d6bff95960b454bdea139273b1bc7eaf6db1586e6d",
+      "a_source": "Actual native trained classifier logits for same original trainingrows",
+      "previous_a_source": "Actual same-row other LF model logits, contractionaudit only; not a recorded chronological SAGA memory state",
+      "weight_source": "Actual trained native classifier weights; zero mean-gradient table for synthetic one-step comparison",
+      "prox_lr": 0.1,
+      "lambda": 0.0007,
+      "alpha": 0.99,
+      "comparisons": [
+        {
+          "dtype": "torch.float64",
+          "gradient_max_abs": 5.551115123125783e-17,
+          "previous_gradient_max_abs": 5.551115123125783e-17,
+          "saga_gradient_max_abs": 5.551115123125783e-17,
+          "prox_weight_max_abs": 2.7755575615628914e-17,
+          "connection_mask_changes_eps1e5": 0,
+          "peak_cuda_allocated_MiB": 16.47802734375
+        },
+        {
+          "dtype": "torch.float32",
+          "gradient_max_abs": 2.2351741790771484e-08,
+          "previous_gradient_max_abs": 2.9802322387695312e-08,
+          "saga_gradient_max_abs": 2.9802322387695312e-08,
+          "prox_weight_max_abs": 2.9802322387695312e-08,
+          "connection_mask_changes_eps1e5": 0,
+          "peak_cuda_allocated_MiB": 14.13818359375
+        }
+      ]
+    },
+    {
+      "output": "/home/pengcheng/Pi-CBM-Benchmark/artifacts/heads/cifar100/clip_RN50/corruption_augmented/seed42/lfcbm",
+      "classes": 100,
+      "concepts": 807,
+      "batch": 16,
+      "source": "/home/pengcheng/Pi-CBM-Benchmark/artifacts/matched/lf/cifar100/clip_RN50/gaussian_noise_augmented/seed42",
+      "prefix": "lfcbm_",
+      "training_rows_for_mean_sample_std": 90000,
+      "actual_batch_global_ids": [
+        29262,
+        17002,
+        43146,
+        14717,
+        42487,
+        6259,
+        24189,
+        11736,
+        35816,
+        12605,
+        13599,
+        36239,
+        42192,
+        4230,
+        44663,
+        44649
+      ],
+      "normalized_batch_sha256": "8940d8dbee1a241ec010b25e61990cc893d0e545284a55f8f87e4394b94c94a9",
+      "a_source": "Actual native trained classifier logits for same original trainingrows",
+      "previous_a_source": "Actual same-row other LF model logits, contractionaudit only; not a recorded chronological SAGA memory state",
+      "weight_source": "Actual trained native classifier weights; zero mean-gradient table for synthetic one-step comparison",
+      "prox_lr": 0.1,
+      "lambda": 0.0007,
+      "alpha": 0.99,
+      "comparisons": [
+        {
+          "dtype": "torch.float64",
+          "gradient_max_abs": 8.326672684688674e-17,
+          "previous_gradient_max_abs": 5.551115123125783e-17,
+          "saga_gradient_max_abs": 1.1102230246251565e-16,
+          "prox_weight_max_abs": 1.1102230246251565e-16,
+          "connection_mask_changes_eps1e5": 0,
+          "peak_cuda_allocated_MiB": 19.95849609375
+        },
+        {
+          "dtype": "torch.float32",
+          "gradient_max_abs": 2.9802322387695312e-08,
+          "previous_gradient_max_abs": 2.9802322387695312e-08,
+          "saga_gradient_max_abs": 4.470348358154297e-08,
+          "prox_weight_max_abs": 1.1920928955078125e-07,
+          "connection_mask_changes_eps1e5": 0,
+          "peak_cuda_allocated_MiB": 14.04345703125
+        }
+      ]
+    },
+    {
+      "output": "/home/pengcheng/Pi-CBM-Benchmark/artifacts/heads/cifar100/clip_RN50/corruption_augmented/seed42/lfpi_global_1draw",
+      "classes": 100,
+      "concepts": 807,
+      "batch": 16,
+      "source": "/home/pengcheng/Pi-CBM-Benchmark/artifacts/matched/lf/cifar100/clip_RN50/gaussian_noise_augmented/seed42/single_draw",
+      "prefix": "lfpi_global_",
+      "training_rows_for_mean_sample_std": 90000,
+      "actual_batch_global_ids": [
+        29262,
+        17002,
+        43146,
+        14717,
+        42487,
+        6259,
+        24189,
+        11736,
+        35816,
+        12605,
+        13599,
+        36239,
+        42192,
+        4230,
+        44663,
+        44649
+      ],
+      "normalized_batch_sha256": "7f47830d488365df3eee00462ca26e37c104878db5f2d1ae4aa5fd3dbbfc3806",
+      "a_source": "Actual native trained classifier logits for same original trainingrows",
+      "previous_a_source": "Actual same-row other LF model logits, contractionaudit only; not a recorded chronological SAGA memory state",
+      "weight_source": "Actual trained native classifier weights; zero mean-gradient table for synthetic one-step comparison",
+      "prox_lr": 0.1,
+      "lambda": 0.0007,
+      "alpha": 0.99,
+      "comparisons": [
+        {
+          "dtype": "torch.float64",
+          "gradient_max_abs": 8.326672684688674e-17,
+          "previous_gradient_max_abs": 8.326672684688674e-17,
+          "saga_gradient_max_abs": 1.3877787807814457e-16,
+          "prox_weight_max_abs": 2.7755575615628914e-17,
+          "connection_mask_changes_eps1e5": 0,
+          "peak_cuda_allocated_MiB": 19.95849609375
+        },
+        {
+          "dtype": "torch.float32",
+          "gradient_max_abs": 2.9802322387695312e-08,
+          "previous_gradient_max_abs": 2.9802322387695312e-08,
+          "saga_gradient_max_abs": 5.21540641784668e-08,
+          "prox_weight_max_abs": 2.9802322387695312e-08,
+          "connection_mask_changes_eps1e5": 0,
+          "peak_cuda_allocated_MiB": 14.04345703125
+        }
+      ]
+    }
+  ]
+}

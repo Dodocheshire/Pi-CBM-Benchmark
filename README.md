@@ -15,13 +15,19 @@ git clone --recurse-submodules https://github.com/Dodocheshire/Pi-CBM-Benchmark.
 
 ## 评测设置
 
-完整矩阵见 [configs/matrix.yaml](configs/matrix.yaml)。先运行一个种子检查数据与方法匹配，再执行三个种子。原图训练和背景增强训练分开比较，所有方法共用图像清单与冻结骨干版本。
+评测配置见 [configs/matrix.yaml](configs/matrix.yaml)。先运行一个种子检查数据与方法匹配，再执行三个种子。原图训练和背景增强训练分开比较，所有方法共用图像清单与冻结骨干版本。
 
 概念指标分别统计人工逐图标注 mAP／相关系数、类级概念标签和 CLIP 教师相关性。概念映射由训练数据或官方属性名称决定。CIFAR 的 LF 方法拟合连续 CLIP 教师值，PiNI 使用仅在训练集确定 Otsu 阈值的伪二值概念标签。非 CBM 对照在同一图像特征上直接训练分类头。
 
-NEC 网格根据数据集与概念库规模设置，同时保留 NEC=5 和 5–30 的参考区间。参考 [VLG-CBM §5.1 与附录 F](https://arxiv.org/html/2408.01432v3)：使用 GLM-SAGA 正则化路径，选取 NEC 接近目标的权重，再剪除最小连接达到规定平均 NEC。每个点保存实际 NEC、每类连接数与原始路径位置。充分 NEC 对照使用验证集选择的全路径模型和稠密分类头。
+NEC 网格根据数据集与概念库规模设置，同时保留 NEC=5 和 5–30 的参考区间。参考 [VLG-CBM §5.1 与附录 F](https://arxiv.org/html/2408.01432v3)：使用 GLM-SAGA 正则化路径，选取 NEC 接近目标的权重，再按目标预算剪除最小连接。横轴使用最终权重的实际 NEC，每个点保存每类连接数与原始路径位置。充分 NEC 对照使用验证集选择的全路径模型和稠密分类头。
 
-结果位于 [同条件评测](reports/EXPERIMENT_REPORT.md)、[三个训练种子汇总](reports/SEED_RESULT.md)、[多种子 NEC 曲线](reports/NEC_SEED_RESULT.md)、[非 CBM 对照](reports/NONCBM_RESULT.md)、[泛化／NEC 曲线](reports/GENERALIZATION_RESULT.md)、[扰动下的概念预测与激活变化](reports/OOD_CONCEPT_RESULT.md)、[扰动 NEC 曲线](reports/OOD_NEC_RESULT.md)、[LF-Pi 注入位置比较](reports/LF_SITE_RESULT.md)、[CIFAR 与官方 CIFAR-C](reports/CIFAR_RESULT.md)、[官方 CIFAR-C NEC 曲线](reports/CIFAR_NEC_RESULT.md) 和 [大规模数据集](reports/SCALE_RESULT.md)。数据、模型和逐图预测写入忽略的 `artifacts/`。
+主要结果：
+
+- 原生概念与换背景：[同条件评测](reports/EXPERIMENT_REPORT.md)、[三个训练种子](reports/SEED_RESULT.md)、[非 CBM 对照](reports/NONCBM_RESULT.md)。
+- 分类头容量：[稀疏／稠密分类头](reports/GENERALIZATION_RESULT.md)、[多种子 NEC 曲线](reports/NEC_SEED_RESULT.md)。
+- CIFAR 泛化：[原图与官方 CIFAR-C](reports/CIFAR_RESULT.md)、[官方 CIFAR-C NEC 曲线](reports/CIFAR_NEC_RESULT.md)。
+
+补充结果：[扰动下的概念预测与激活变化](reports/OOD_CONCEPT_RESULT.md)、[扰动 NEC 曲线](reports/OOD_NEC_RESULT.md)、[LF-Pi 注入位置](reports/LF_SITE_RESULT.md)、[大规模数据集](reports/SCALE_RESULT.md)。数据、模型和逐图预测写入忽略的 `artifacts/`。
 
 `python -m benchmark.ood_full_queue` 在显存连续三次达到 16 GiB 后，串行导出三个有原生概念标注数据集的完整 PiNI 概念值，用于固定分类头的扰动 NEC 评测。每组使用同一批 256 张测试图和 13 个原图／腐蚀设置；输出位于独立的 `artifacts/ood_fullraw/`。新增保存逻辑核验见 [完整概念导出入口](reports/pini_ood_full_export_cpu_audit.json)。
 
@@ -42,15 +48,23 @@ NEC 网格根据数据集与概念库规模设置，同时保留 NEC=5 和 5–3
 
 RIVAL10 的 LF-Pi 图像层、内部层、全局特征层比较已完成。图像层与内部层各包含原图训练和背景增强训练，结果见 [注入位置比较](reports/LF_SITE_RESULT.md)。
 
-本轮继续补齐剩余共同分类头及其扰动测试。
+本轮评测的实际覆盖、子模块版本与产物校验见 [完成清单](reports/benchmark_completion.json)。
+
+## 主要对照总览
+
+![原图与换背景分类准确率](reports/overview_dense_accuracy.png)
+
+![换背景后的原生概念预测](reports/overview_native_concepts.png)
 
 ## 运行入口
 
-- 数据与 LF-CBM／LF-Pi：`python -m benchmark.lf_cifar --help`。
+- 原生概念数据：`python -m benchmark.lf_matched --help`、`python -m benchmark.pini_matched --help`。
+- CIFAR 的 LF-CBM／LF-Pi：`python -m benchmark.lf_cifar --help`。
 - PiNI CIFAR：`python -m benchmark.pini_cifar --help`；宽骨干：`python -m benchmark.pini_cifar_wide --help`。
 - 相同概念输出上的稀疏／稠密分类头：`python -m benchmark.head_suite --help`。
 - CIFAR 图表：`python -m benchmark.report_cifar`。
 - 容量与多种子图表：`python -m benchmark.report_generalization`、`python -m benchmark.report_nec_seeds`。
+- 原生数据总览：在容量图表更新后运行 `python -m benchmark.report_overview`。
 
 本机环境为 `/home/pengcheng/miniconda3/envs/pi-cbm/bin/python`。数据、区域缓存、训练权重和逐图预测存放在忽略的 `artifacts/` 中；图表与紧凑统计保存在 `reports/`。
 
