@@ -1,0 +1,629 @@
+{
+  "dataset": "cifar10",
+  "backbone": "clip_rn50",
+  "CPU_interface_verified": true,
+  "GPU_started": false,
+  "full_settings": 12,
+  "images_per_setting": 10000,
+  "feature_dim": 1024,
+  "head_reconstruction_max_abs": 0.0,
+  "model_source": "core inherited model interface with seed42 disposable weights; final checkpoints still pending",
+  "final_training_pending": [
+    "/home/pengcheng/Pi-CBM-Benchmark/artifacts/pini_matched/clip_rn50/cifar10/CIFAR_COMPLETE.json",
+    "/home/pengcheng/Pi-CBM-Benchmark/artifacts/pini_matched/clip_rn50/cifar10/pair_explore/selection/mean/best.pt",
+    "/home/pengcheng/Pi-CBM-Benchmark/artifacts/pini_matched/clip_rn50/cifar10/pair_explore/selection/noise/best.pt",
+    "/home/pengcheng/Pi-CBM-Benchmark/artifacts/pini_matched/clip_rn50/cifar10/initialization_chain.json"
+  ],
+  "binding": {
+    "dataset": "cifar10",
+    "backbone": "clip_rn50",
+    "files": {
+      "producer": {
+        "path": "/home/pengcheng/Pi-CBM-Benchmark/benchmark/pini_cifar_wide_corrupt.py",
+        "sha256": "6595dee46ddf9555d8820b792050936e87bcef5157ef7814dc345a3aef109486"
+      },
+      "shared_evaluator": {
+        "path": "/home/pengcheng/Pi-CBM-Benchmark/benchmark/pini_cifar_corrupt.py",
+        "sha256": "7da1bc1d1a83b0c335ed657af297e3bd561f78e9b44b9f131b611b5f7d67e932"
+      },
+      "wide_adapter": {
+        "path": "/home/pengcheng/Pi-CBM-Benchmark/benchmark/pini_cifar_wide.py",
+        "sha256": "04137512ec8250843c948422eef4d07b8c0b5104267f94fe6e0bb9c39984a45e"
+      },
+      "primary_input_manifest": {
+        "path": "/home/pengcheng/Pi-CBM-Benchmark/artifacts/pini_cifar_c/cifar10/rn18_imagenet/seed42/input_manifest.json",
+        "sha256": "0a1e87ef68e0481ca3d4ab1fe1c08d99c84f97f8b7d9349ffaed3e178c011125"
+      },
+      "primary_complete": {
+        "path": "/home/pengcheng/Pi-CBM-Benchmark/artifacts/pini_cifar_c/cifar10/rn18_imagenet/seed42/CIFAR_C_COMPLETE.json",
+        "sha256": "611dc0905048b260580a17db4a86f6cda4c3e1ff81a32aa57de34b13afc1202a"
+      },
+      "feature_manifest": {
+        "path": "/home/pengcheng/Pi-CBM-Benchmark/artifacts/common/cifar10/clip_RN50/manifest.json",
+        "sha256": "0bf952c22e4237a391c3d77ec3ed072535d8f45780e112f72e9d2e2838b4b3ad"
+      },
+      "core_forward": {
+        "path": "/home/pengcheng/Pi-CBM-Benchmark/methods/PiNI/spatial_noise/cub_noise.py",
+        "sha256": "67ea36013194faf284cdd07ed77de787ca612aef7c6d16959c50f2d10e277b76"
+      },
+      "core_grounding": {
+        "path": "/home/pengcheng/Pi-CBM-Benchmark/methods/PiNI/spatial_noise/grounding.py",
+        "sha256": "858342c898b7f3cd473832e013f290cb893592aed779e1d4bb7531b456abecd9"
+      },
+      "renderer": {
+        "path": "/home/pengcheng/Pi-CBM-Benchmark/benchmark/lf_cifar.py",
+        "sha256": "90126fd57716d18715a76de200c454910e8d1388dd4892eed084d76d34fb2f04"
+      },
+      "private_original_features": {
+        "path": "/home/pengcheng/Pi-CBM-Benchmark/artifacts/pini_matched/clip_rn50/cifar10/cache/original_FEATURE_COMPLETE.json",
+        "sha256": "fbf3ebcad32e97180ff6a4694445581ba1ac8a22d4b7080f8c9dcf9017dd7687"
+      },
+      "private_changed_features": {
+        "path": "/home/pengcheng/Pi-CBM-Benchmark/artifacts/pini_matched/clip_rn50/cifar10/cache/changed_FEATURE_COMPLETE.json",
+        "sha256": "30b80d239cf1b636cc8844aaa9860d204d75bb2c89f0816a1f2f80128178b29d"
+      },
+      "official_gaussian_noise": {
+        "path": "/home/pengcheng/Pi-CBM-Benchmark/artifacts/common/cifar_c/CIFAR-10-C/gaussian_noise.npy",
+        "sha256": "269c7f8f1b896cb96cf194814171d0cfc6d73a1546cd718ba629756a906ecaf1"
+      },
+      "region_gaussian_noise_1_features.npy": {
+        "path": "/home/pengcheng/Pi-CBM-Benchmark/artifacts/pini_cifar_c/cifar10/rn18_imagenet/seed42/regions/gaussian_noise_1/features.npy",
+        "sha256": "646d6d9b1d05f08cf17894d19e94a4f51da8b2bbc297473fe613768fa7662792"
+      },
+      "region_gaussian_noise_1_maps.npy": {
+        "path": "/home/pengcheng/Pi-CBM-Benchmark/artifacts/pini_cifar_c/cifar10/rn18_imagenet/seed42/regions/gaussian_noise_1/maps.npy",
+        "sha256": "e01793ab99af42130e634dca26c3b06efe8d6759d53fa289284006111a6baa8c"
+      },
+      "region_gaussian_noise_1_valid.npy": {
+        "path": "/home/pengcheng/Pi-CBM-Benchmark/artifacts/pini_cifar_c/cifar10/rn18_imagenet/seed42/regions/gaussian_noise_1/valid.npy",
+        "sha256": "97522baffcbc768efd212e6011ffc32ba3b57baf95407088f03539146ef471f5"
+      },
+      "region_gaussian_noise_1_boxes.npy": {
+        "path": "/home/pengcheng/Pi-CBM-Benchmark/artifacts/pini_cifar_c/cifar10/rn18_imagenet/seed42/regions/gaussian_noise_1/boxes.npy",
+        "sha256": "971e1fad19d5315a2b1d9ddd7a57ab1b1ba8f54793cd7be01aa0e00915ffea39"
+      },
+      "region_gaussian_noise_1_scores.npy": {
+        "path": "/home/pengcheng/Pi-CBM-Benchmark/artifacts/pini_cifar_c/cifar10/rn18_imagenet/seed42/regions/gaussian_noise_1/scores.npy",
+        "sha256": "6d30ceeb2ab7b096dea454ec3fc95669454c445fb15da9656ac1cfff5bb929cd"
+      },
+      "region_gaussian_noise_1_COMPLETE.json": {
+        "path": "/home/pengcheng/Pi-CBM-Benchmark/artifacts/pini_cifar_c/cifar10/rn18_imagenet/seed42/regions/gaussian_noise_1/COMPLETE.json",
+        "sha256": "8b27bb97402cff35c543decfc55f8b0cafd384b9d755fb90c63ff9d35dce739c"
+      },
+      "common_gaussian_noise_1": {
+        "path": "/home/pengcheng/Pi-CBM-Benchmark/artifacts/common/cifar10/clip_RN50/corruptions/test_gaussian_noise_1.npz",
+        "sha256": "b8a370bfeb777a1d7da5007a9e911b6f9d0caff10313a6900baba244bd1c3c7a"
+      },
+      "common_metadata_gaussian_noise_1": {
+        "path": "/home/pengcheng/Pi-CBM-Benchmark/artifacts/common/cifar10/clip_RN50/corruptions/test_gaussian_noise_1.metadata.json",
+        "sha256": "55deae73284297e0b0c6222806766f3f7e1352bc6abcb16c5158af12551d599e"
+      },
+      "region_gaussian_noise_3_features.npy": {
+        "path": "/home/pengcheng/Pi-CBM-Benchmark/artifacts/pini_cifar_c/cifar10/rn18_imagenet/seed42/regions/gaussian_noise_3/features.npy",
+        "sha256": "7e81eef35fb175fc6cfbb4bf74603350c29e45d868ea210f9b08a2638f1971ee"
+      },
+      "region_gaussian_noise_3_maps.npy": {
+        "path": "/home/pengcheng/Pi-CBM-Benchmark/artifacts/pini_cifar_c/cifar10/rn18_imagenet/seed42/regions/gaussian_noise_3/maps.npy",
+        "sha256": "3cbdcd6e88be3306a002997dbb6cc32c875cec85d5130c56bd4b7809f7f9b295"
+      },
+      "region_gaussian_noise_3_valid.npy": {
+        "path": "/home/pengcheng/Pi-CBM-Benchmark/artifacts/pini_cifar_c/cifar10/rn18_imagenet/seed42/regions/gaussian_noise_3/valid.npy",
+        "sha256": "7ab5e982894c5d51cfdb5f986e1845e3a34ecc22c1db086fc9a6447c028d01dd"
+      },
+      "region_gaussian_noise_3_boxes.npy": {
+        "path": "/home/pengcheng/Pi-CBM-Benchmark/artifacts/pini_cifar_c/cifar10/rn18_imagenet/seed42/regions/gaussian_noise_3/boxes.npy",
+        "sha256": "2a1db6b272f31b8571c452e4fc8858d4e41eff33f6a3ce7550f5bd120b0bca36"
+      },
+      "region_gaussian_noise_3_scores.npy": {
+        "path": "/home/pengcheng/Pi-CBM-Benchmark/artifacts/pini_cifar_c/cifar10/rn18_imagenet/seed42/regions/gaussian_noise_3/scores.npy",
+        "sha256": "c22730c2879716352ec164f02246738d8e2c4d50faaa21d0d2cffdb3251f3921"
+      },
+      "region_gaussian_noise_3_COMPLETE.json": {
+        "path": "/home/pengcheng/Pi-CBM-Benchmark/artifacts/pini_cifar_c/cifar10/rn18_imagenet/seed42/regions/gaussian_noise_3/COMPLETE.json",
+        "sha256": "831456ca38b9860192ec95ddff876251c96eebf18994cec71820e92cc687c1ea"
+      },
+      "common_gaussian_noise_3": {
+        "path": "/home/pengcheng/Pi-CBM-Benchmark/artifacts/common/cifar10/clip_RN50/corruptions/test_gaussian_noise_3.npz",
+        "sha256": "63e27dc3aaefefcb778398b455fffa8df251eb824e40057ddf622bca762b048f"
+      },
+      "common_metadata_gaussian_noise_3": {
+        "path": "/home/pengcheng/Pi-CBM-Benchmark/artifacts/common/cifar10/clip_RN50/corruptions/test_gaussian_noise_3.metadata.json",
+        "sha256": "46ce0706b931ed9237f5e29c7ea6fadc3288ef41f228e10f2c5bb0f10acf5698"
+      },
+      "region_gaussian_noise_5_features.npy": {
+        "path": "/home/pengcheng/Pi-CBM-Benchmark/artifacts/pini_cifar_c/cifar10/rn18_imagenet/seed42/regions/gaussian_noise_5/features.npy",
+        "sha256": "70d745c2ab1c7029a5d5ea5127a57c5539bc3a1e30726a11f0801683100f3a11"
+      },
+      "region_gaussian_noise_5_maps.npy": {
+        "path": "/home/pengcheng/Pi-CBM-Benchmark/artifacts/pini_cifar_c/cifar10/rn18_imagenet/seed42/regions/gaussian_noise_5/maps.npy",
+        "sha256": "14daf0861fb0db7a0c7b2dbe5b8de2db4c8c67014583ec45176c4e0f7ba18514"
+      },
+      "region_gaussian_noise_5_valid.npy": {
+        "path": "/home/pengcheng/Pi-CBM-Benchmark/artifacts/pini_cifar_c/cifar10/rn18_imagenet/seed42/regions/gaussian_noise_5/valid.npy",
+        "sha256": "02a7027ec0ce425e958a52eacc07274e16a6c3bb691832f2b617b7fd218b9727"
+      },
+      "region_gaussian_noise_5_boxes.npy": {
+        "path": "/home/pengcheng/Pi-CBM-Benchmark/artifacts/pini_cifar_c/cifar10/rn18_imagenet/seed42/regions/gaussian_noise_5/boxes.npy",
+        "sha256": "7eb64d3ee5cefe084b8ca4fb8847f585cf0f03502bb71ae70459aab2da3c4b2a"
+      },
+      "region_gaussian_noise_5_scores.npy": {
+        "path": "/home/pengcheng/Pi-CBM-Benchmark/artifacts/pini_cifar_c/cifar10/rn18_imagenet/seed42/regions/gaussian_noise_5/scores.npy",
+        "sha256": "a0a3c4557470a58f0e0619e15ec57c8b9b8014596c2593c0bb7a036d3b22a186"
+      },
+      "region_gaussian_noise_5_COMPLETE.json": {
+        "path": "/home/pengcheng/Pi-CBM-Benchmark/artifacts/pini_cifar_c/cifar10/rn18_imagenet/seed42/regions/gaussian_noise_5/COMPLETE.json",
+        "sha256": "bc120617d30c82248b46e2e5ed4b8475097ec4471accd7825ab6f2f4a66139ac"
+      },
+      "common_gaussian_noise_5": {
+        "path": "/home/pengcheng/Pi-CBM-Benchmark/artifacts/common/cifar10/clip_RN50/corruptions/test_gaussian_noise_5.npz",
+        "sha256": "3ce5fd83592826faa20fc2d5d1c26ef46d10e0266512bc7106be825403c21e10"
+      },
+      "common_metadata_gaussian_noise_5": {
+        "path": "/home/pengcheng/Pi-CBM-Benchmark/artifacts/common/cifar10/clip_RN50/corruptions/test_gaussian_noise_5.metadata.json",
+        "sha256": "90520bdf0020966f408368e8f26b89dc2df68e884b4afe7347844572e4197aab"
+      },
+      "official_gaussian_blur": {
+        "path": "/home/pengcheng/Pi-CBM-Benchmark/artifacts/common/cifar_c/CIFAR-10-C/gaussian_blur.npy",
+        "sha256": "704835158ce2e0e1e16b54186b13fd963c0e7338072f430f82bb5a638a055393"
+      },
+      "region_gaussian_blur_1_features.npy": {
+        "path": "/home/pengcheng/Pi-CBM-Benchmark/artifacts/pini_cifar_c/cifar10/rn18_imagenet/seed42/regions/gaussian_blur_1/features.npy",
+        "sha256": "95393d9bc408f086e306340de47574af535af13d2aa7b86f2ea26cc9035c0830"
+      },
+      "region_gaussian_blur_1_maps.npy": {
+        "path": "/home/pengcheng/Pi-CBM-Benchmark/artifacts/pini_cifar_c/cifar10/rn18_imagenet/seed42/regions/gaussian_blur_1/maps.npy",
+        "sha256": "1e510ca54686525a8f254744fa65f2856c068844ca13227e8bd1e4210895b3d5"
+      },
+      "region_gaussian_blur_1_valid.npy": {
+        "path": "/home/pengcheng/Pi-CBM-Benchmark/artifacts/pini_cifar_c/cifar10/rn18_imagenet/seed42/regions/gaussian_blur_1/valid.npy",
+        "sha256": "05246dff67c3d6f7326b735b726d7b6ee7a650c91c78e4354dbd8e5864ffb8b8"
+      },
+      "region_gaussian_blur_1_boxes.npy": {
+        "path": "/home/pengcheng/Pi-CBM-Benchmark/artifacts/pini_cifar_c/cifar10/rn18_imagenet/seed42/regions/gaussian_blur_1/boxes.npy",
+        "sha256": "58ea5267d3ddd0cffccdc7242fdd318957c781805011a460fdc2940a4891af52"
+      },
+      "region_gaussian_blur_1_scores.npy": {
+        "path": "/home/pengcheng/Pi-CBM-Benchmark/artifacts/pini_cifar_c/cifar10/rn18_imagenet/seed42/regions/gaussian_blur_1/scores.npy",
+        "sha256": "bd4d15fcc9778dfc06d61ec4f0bffff1e69b43bfeb63a85580479d1098ec03e6"
+      },
+      "region_gaussian_blur_1_COMPLETE.json": {
+        "path": "/home/pengcheng/Pi-CBM-Benchmark/artifacts/pini_cifar_c/cifar10/rn18_imagenet/seed42/regions/gaussian_blur_1/COMPLETE.json",
+        "sha256": "5682b1cac85cb934f34886ff41dc9fcb1bceff88a31b5179e0a61eca55f815ad"
+      },
+      "common_gaussian_blur_1": {
+        "path": "/home/pengcheng/Pi-CBM-Benchmark/artifacts/common/cifar10/clip_RN50/corruptions/test_gaussian_blur_1.npz",
+        "sha256": "720572ea124c4fb3db5a73d296a1c0773145a49360e70dab073f766520f58b34"
+      },
+      "common_metadata_gaussian_blur_1": {
+        "path": "/home/pengcheng/Pi-CBM-Benchmark/artifacts/common/cifar10/clip_RN50/corruptions/test_gaussian_blur_1.metadata.json",
+        "sha256": "ccbac53596390846235e5bc9eb820a4c4ce7a14fcebc5ed0ef849ad37ad4097b"
+      },
+      "region_gaussian_blur_3_features.npy": {
+        "path": "/home/pengcheng/Pi-CBM-Benchmark/artifacts/pini_cifar_c/cifar10/rn18_imagenet/seed42/regions/gaussian_blur_3/features.npy",
+        "sha256": "aece12bd5b19f8d93b6806104284d99d508be0b49f119727a9ce535df1fd8bdd"
+      },
+      "region_gaussian_blur_3_maps.npy": {
+        "path": "/home/pengcheng/Pi-CBM-Benchmark/artifacts/pini_cifar_c/cifar10/rn18_imagenet/seed42/regions/gaussian_blur_3/maps.npy",
+        "sha256": "d48693c8774d1c172d06b0b7026fe55b954ee29ba18c2c5e959fd95b0abd079b"
+      },
+      "region_gaussian_blur_3_valid.npy": {
+        "path": "/home/pengcheng/Pi-CBM-Benchmark/artifacts/pini_cifar_c/cifar10/rn18_imagenet/seed42/regions/gaussian_blur_3/valid.npy",
+        "sha256": "6d38616c2f550feac13d8dbcecb61b7ed0e7940f2b431a622323a5f5c6c3cdc8"
+      },
+      "region_gaussian_blur_3_boxes.npy": {
+        "path": "/home/pengcheng/Pi-CBM-Benchmark/artifacts/pini_cifar_c/cifar10/rn18_imagenet/seed42/regions/gaussian_blur_3/boxes.npy",
+        "sha256": "b6568389910229cec22efef573829f0f4f5ddbdc96a2f2389d88cf184a7fb14d"
+      },
+      "region_gaussian_blur_3_scores.npy": {
+        "path": "/home/pengcheng/Pi-CBM-Benchmark/artifacts/pini_cifar_c/cifar10/rn18_imagenet/seed42/regions/gaussian_blur_3/scores.npy",
+        "sha256": "d5067775a8a1de0de9aff31bfab846c3d76e63c88761f064f19923a24ff27129"
+      },
+      "region_gaussian_blur_3_COMPLETE.json": {
+        "path": "/home/pengcheng/Pi-CBM-Benchmark/artifacts/pini_cifar_c/cifar10/rn18_imagenet/seed42/regions/gaussian_blur_3/COMPLETE.json",
+        "sha256": "9c67844f4ff1d152afd674d15c39ba13a690e04ecb45ec4e9dbc9084f9f2eb1e"
+      },
+      "common_gaussian_blur_3": {
+        "path": "/home/pengcheng/Pi-CBM-Benchmark/artifacts/common/cifar10/clip_RN50/corruptions/test_gaussian_blur_3.npz",
+        "sha256": "97b8f8f84825771e036fbc9d1b5f95fe0eabd8be5b4f002f62e89a8f3fba4d18"
+      },
+      "common_metadata_gaussian_blur_3": {
+        "path": "/home/pengcheng/Pi-CBM-Benchmark/artifacts/common/cifar10/clip_RN50/corruptions/test_gaussian_blur_3.metadata.json",
+        "sha256": "d71b46b6f92776c132291b2e77aa289d1eecd1c1b07166c4964c1541eb028000"
+      },
+      "region_gaussian_blur_5_features.npy": {
+        "path": "/home/pengcheng/Pi-CBM-Benchmark/artifacts/pini_cifar_c/cifar10/rn18_imagenet/seed42/regions/gaussian_blur_5/features.npy",
+        "sha256": "4d62d2216e30f4849326837487c326f62717ef020946d3bd370e29291683076a"
+      },
+      "region_gaussian_blur_5_maps.npy": {
+        "path": "/home/pengcheng/Pi-CBM-Benchmark/artifacts/pini_cifar_c/cifar10/rn18_imagenet/seed42/regions/gaussian_blur_5/maps.npy",
+        "sha256": "e0e669a6add275612480569dafb5df4ba6569d327e12fa8f44b4990a5a00e4be"
+      },
+      "region_gaussian_blur_5_valid.npy": {
+        "path": "/home/pengcheng/Pi-CBM-Benchmark/artifacts/pini_cifar_c/cifar10/rn18_imagenet/seed42/regions/gaussian_blur_5/valid.npy",
+        "sha256": "e6e3b0d095a939dce17f8e5478834aab2d8c532925fb6d6ef0a868f4dc750f53"
+      },
+      "region_gaussian_blur_5_boxes.npy": {
+        "path": "/home/pengcheng/Pi-CBM-Benchmark/artifacts/pini_cifar_c/cifar10/rn18_imagenet/seed42/regions/gaussian_blur_5/boxes.npy",
+        "sha256": "da60a35aaa69e235e4160d186e70fe89bb349e8bb8e09d1907fa29fcda7ad2b9"
+      },
+      "region_gaussian_blur_5_scores.npy": {
+        "path": "/home/pengcheng/Pi-CBM-Benchmark/artifacts/pini_cifar_c/cifar10/rn18_imagenet/seed42/regions/gaussian_blur_5/scores.npy",
+        "sha256": "5ffa781f0666b667effaa8da3b3e5e249ce893b9b045377d4bf15cd0f1bd0730"
+      },
+      "region_gaussian_blur_5_COMPLETE.json": {
+        "path": "/home/pengcheng/Pi-CBM-Benchmark/artifacts/pini_cifar_c/cifar10/rn18_imagenet/seed42/regions/gaussian_blur_5/COMPLETE.json",
+        "sha256": "3898bfd72a05fec4a0d014052c4b77795b876e3afb82ba778c57ce4448095dc4"
+      },
+      "common_gaussian_blur_5": {
+        "path": "/home/pengcheng/Pi-CBM-Benchmark/artifacts/common/cifar10/clip_RN50/corruptions/test_gaussian_blur_5.npz",
+        "sha256": "2b0d1952e9a6ba8962c22f719b46940178aa27e3f979a66bb24bbef89c6855ad"
+      },
+      "common_metadata_gaussian_blur_5": {
+        "path": "/home/pengcheng/Pi-CBM-Benchmark/artifacts/common/cifar10/clip_RN50/corruptions/test_gaussian_blur_5.metadata.json",
+        "sha256": "8ed6dd533f73093a0309675a86e23d7fd5412cc22ed41068d36fa9f0566cb76f"
+      },
+      "official_contrast": {
+        "path": "/home/pengcheng/Pi-CBM-Benchmark/artifacts/common/cifar_c/CIFAR-10-C/contrast.npy",
+        "sha256": "cb5e3765f52a172a380ce8c8c3096b78669d2f01f4f6e958ee30729f680bb9fb"
+      },
+      "region_contrast_1_features.npy": {
+        "path": "/home/pengcheng/Pi-CBM-Benchmark/artifacts/pini_cifar_c/cifar10/rn18_imagenet/seed42/regions/contrast_1/features.npy",
+        "sha256": "8ffa3e5943f8f39fcee44471362261a73a65d4e37a145925cb3eba594c566f2c"
+      },
+      "region_contrast_1_maps.npy": {
+        "path": "/home/pengcheng/Pi-CBM-Benchmark/artifacts/pini_cifar_c/cifar10/rn18_imagenet/seed42/regions/contrast_1/maps.npy",
+        "sha256": "d4cf860515a9956614384c5c60eebcdef61d6ee1a75c29826d825b03d451824e"
+      },
+      "region_contrast_1_valid.npy": {
+        "path": "/home/pengcheng/Pi-CBM-Benchmark/artifacts/pini_cifar_c/cifar10/rn18_imagenet/seed42/regions/contrast_1/valid.npy",
+        "sha256": "66b4277951f86ad24169acb9dfd4c43a9848cf6bfd24d20bc60d345a8f00a4c5"
+      },
+      "region_contrast_1_boxes.npy": {
+        "path": "/home/pengcheng/Pi-CBM-Benchmark/artifacts/pini_cifar_c/cifar10/rn18_imagenet/seed42/regions/contrast_1/boxes.npy",
+        "sha256": "fb582dbf3b86965db6ff6962d596f8c757849c7b58b32e7d647b28ee59b3b732"
+      },
+      "region_contrast_1_scores.npy": {
+        "path": "/home/pengcheng/Pi-CBM-Benchmark/artifacts/pini_cifar_c/cifar10/rn18_imagenet/seed42/regions/contrast_1/scores.npy",
+        "sha256": "da60a7754f61cbf06e276ccbf1aeb0f95a75500c71f13f4cb17cc333f151abb5"
+      },
+      "region_contrast_1_COMPLETE.json": {
+        "path": "/home/pengcheng/Pi-CBM-Benchmark/artifacts/pini_cifar_c/cifar10/rn18_imagenet/seed42/regions/contrast_1/COMPLETE.json",
+        "sha256": "566b9af572128c3658561dcdf8ecfa0df2a4c14b25528505b5a7107deda2be08"
+      },
+      "common_contrast_1": {
+        "path": "/home/pengcheng/Pi-CBM-Benchmark/artifacts/common/cifar10/clip_RN50/corruptions/test_contrast_1.npz",
+        "sha256": "159bc529befb464d5558ac0d28ab0d4c8e6d77769892ac26d21a70609acd8e5b"
+      },
+      "common_metadata_contrast_1": {
+        "path": "/home/pengcheng/Pi-CBM-Benchmark/artifacts/common/cifar10/clip_RN50/corruptions/test_contrast_1.metadata.json",
+        "sha256": "5a9442f0af5913c7b3a49d8ef550c416bc223c788862bf97e1448f7119913bbe"
+      },
+      "region_contrast_3_features.npy": {
+        "path": "/home/pengcheng/Pi-CBM-Benchmark/artifacts/pini_cifar_c/cifar10/rn18_imagenet/seed42/regions/contrast_3/features.npy",
+        "sha256": "d67c94b0c9ae1e7ec41db1dd2b00120393f5fdedbbdd4e0f87bd0b76a799100a"
+      },
+      "region_contrast_3_maps.npy": {
+        "path": "/home/pengcheng/Pi-CBM-Benchmark/artifacts/pini_cifar_c/cifar10/rn18_imagenet/seed42/regions/contrast_3/maps.npy",
+        "sha256": "1b977c845227a980255d12ab44ebda458f46c7868b08601f6c577bc6904bd69f"
+      },
+      "region_contrast_3_valid.npy": {
+        "path": "/home/pengcheng/Pi-CBM-Benchmark/artifacts/pini_cifar_c/cifar10/rn18_imagenet/seed42/regions/contrast_3/valid.npy",
+        "sha256": "1818edbd39b63caa9d364eb5d84b8444a4ec1e6ba68c1f25358d159b59fbbd3a"
+      },
+      "region_contrast_3_boxes.npy": {
+        "path": "/home/pengcheng/Pi-CBM-Benchmark/artifacts/pini_cifar_c/cifar10/rn18_imagenet/seed42/regions/contrast_3/boxes.npy",
+        "sha256": "05f1708c8918c1f33986ef8d4f3bdec5eedf6788bca04aa56c73988e6865665d"
+      },
+      "region_contrast_3_scores.npy": {
+        "path": "/home/pengcheng/Pi-CBM-Benchmark/artifacts/pini_cifar_c/cifar10/rn18_imagenet/seed42/regions/contrast_3/scores.npy",
+        "sha256": "f38911523929acf9e4e059bb2a5b989440f571e588a4aa35bdc5abcacc3c8ab4"
+      },
+      "region_contrast_3_COMPLETE.json": {
+        "path": "/home/pengcheng/Pi-CBM-Benchmark/artifacts/pini_cifar_c/cifar10/rn18_imagenet/seed42/regions/contrast_3/COMPLETE.json",
+        "sha256": "625fd21dc46f8c2dcc6811dbff71cb95c0712eb9297e075092be1cb9427ce8a8"
+      },
+      "common_contrast_3": {
+        "path": "/home/pengcheng/Pi-CBM-Benchmark/artifacts/common/cifar10/clip_RN50/corruptions/test_contrast_3.npz",
+        "sha256": "af71c4ab34df62820d7a8377d3def12f96abb8e18d432f15ab74295e7716e59e"
+      },
+      "common_metadata_contrast_3": {
+        "path": "/home/pengcheng/Pi-CBM-Benchmark/artifacts/common/cifar10/clip_RN50/corruptions/test_contrast_3.metadata.json",
+        "sha256": "d09b349242f1d63dce1c8eb4f0fe2c447fc262d014aa9c17254b453d92f3edb8"
+      },
+      "region_contrast_5_features.npy": {
+        "path": "/home/pengcheng/Pi-CBM-Benchmark/artifacts/pini_cifar_c/cifar10/rn18_imagenet/seed42/regions/contrast_5/features.npy",
+        "sha256": "7504b093749807f2a802eb1538fb23d1b53bdbcef6e5a73abd3917b3cbb4dd8f"
+      },
+      "region_contrast_5_maps.npy": {
+        "path": "/home/pengcheng/Pi-CBM-Benchmark/artifacts/pini_cifar_c/cifar10/rn18_imagenet/seed42/regions/contrast_5/maps.npy",
+        "sha256": "f1c83dc4fa09be4a0d4d38415f1a652336de573f1d2343deb89892cfe4ed49d4"
+      },
+      "region_contrast_5_valid.npy": {
+        "path": "/home/pengcheng/Pi-CBM-Benchmark/artifacts/pini_cifar_c/cifar10/rn18_imagenet/seed42/regions/contrast_5/valid.npy",
+        "sha256": "fd87672efcdba35582d798ec475ccfbd3e28000ed9e1a66c493a61e3fb330646"
+      },
+      "region_contrast_5_boxes.npy": {
+        "path": "/home/pengcheng/Pi-CBM-Benchmark/artifacts/pini_cifar_c/cifar10/rn18_imagenet/seed42/regions/contrast_5/boxes.npy",
+        "sha256": "aef15c7ef6ca483927e3c6328ab3e591804e0da93f0102b6dee175cb93285e44"
+      },
+      "region_contrast_5_scores.npy": {
+        "path": "/home/pengcheng/Pi-CBM-Benchmark/artifacts/pini_cifar_c/cifar10/rn18_imagenet/seed42/regions/contrast_5/scores.npy",
+        "sha256": "590069bf28aa9b3556d4242e982154cd37261a1602a607417780089603e2c5aa"
+      },
+      "region_contrast_5_COMPLETE.json": {
+        "path": "/home/pengcheng/Pi-CBM-Benchmark/artifacts/pini_cifar_c/cifar10/rn18_imagenet/seed42/regions/contrast_5/COMPLETE.json",
+        "sha256": "a3c5015aa6b2b6fc89930b6505eac4bd27ee951f754f569a2d3eed887a43a25a"
+      },
+      "common_contrast_5": {
+        "path": "/home/pengcheng/Pi-CBM-Benchmark/artifacts/common/cifar10/clip_RN50/corruptions/test_contrast_5.npz",
+        "sha256": "578e0a6719db2094b09db15cd0f83638de4543783473850d4912807476f67efb"
+      },
+      "common_metadata_contrast_5": {
+        "path": "/home/pengcheng/Pi-CBM-Benchmark/artifacts/common/cifar10/clip_RN50/corruptions/test_contrast_5.metadata.json",
+        "sha256": "375b9540a97fced32f8f749b61ada1e696a113e9b56c6418b69ac082a6fac0c1"
+      },
+      "official_jpeg_compression": {
+        "path": "/home/pengcheng/Pi-CBM-Benchmark/artifacts/common/cifar_c/CIFAR-10-C/jpeg_compression.npy",
+        "sha256": "60bd735b9bba513df1f22adc460942de6ef03f9e5870340464db1fc7e6331d51"
+      },
+      "region_jpeg_compression_1_features.npy": {
+        "path": "/home/pengcheng/Pi-CBM-Benchmark/artifacts/pini_cifar_c/cifar10/rn18_imagenet/seed42/regions/jpeg_compression_1/features.npy",
+        "sha256": "62f4e650c10adf00417b1aba0c428e2bf9eaf455a09f34d9fd2d1f2bb45f01c6"
+      },
+      "region_jpeg_compression_1_maps.npy": {
+        "path": "/home/pengcheng/Pi-CBM-Benchmark/artifacts/pini_cifar_c/cifar10/rn18_imagenet/seed42/regions/jpeg_compression_1/maps.npy",
+        "sha256": "12f344367c698d154fd4d69529f8a76fddec93a15bb04d4380fa8eaf3d522e4d"
+      },
+      "region_jpeg_compression_1_valid.npy": {
+        "path": "/home/pengcheng/Pi-CBM-Benchmark/artifacts/pini_cifar_c/cifar10/rn18_imagenet/seed42/regions/jpeg_compression_1/valid.npy",
+        "sha256": "674d2b4601003a957b3df8e8f20bb5afefe1b22196ff86d704b9c59c0e6e2b4d"
+      },
+      "region_jpeg_compression_1_boxes.npy": {
+        "path": "/home/pengcheng/Pi-CBM-Benchmark/artifacts/pini_cifar_c/cifar10/rn18_imagenet/seed42/regions/jpeg_compression_1/boxes.npy",
+        "sha256": "ace417696d0298d21680fdc38433249167402152e5884e628386427c0e9a0f9f"
+      },
+      "region_jpeg_compression_1_scores.npy": {
+        "path": "/home/pengcheng/Pi-CBM-Benchmark/artifacts/pini_cifar_c/cifar10/rn18_imagenet/seed42/regions/jpeg_compression_1/scores.npy",
+        "sha256": "61f71f0268308c63f6e3b98a2f13d5fb3f08076bc4fe858d509fd01ce1a932e8"
+      },
+      "region_jpeg_compression_1_COMPLETE.json": {
+        "path": "/home/pengcheng/Pi-CBM-Benchmark/artifacts/pini_cifar_c/cifar10/rn18_imagenet/seed42/regions/jpeg_compression_1/COMPLETE.json",
+        "sha256": "297c21d40ae0f4e265ceddf7a2929e77969e03caf1940fb9b2214e4a77297b90"
+      },
+      "common_jpeg_compression_1": {
+        "path": "/home/pengcheng/Pi-CBM-Benchmark/artifacts/common/cifar10/clip_RN50/corruptions/test_jpeg_compression_1.npz",
+        "sha256": "447854a6e34fa930c28e87ebcb138a1b07003ab114083a19ee58bae53eaa97b8"
+      },
+      "common_metadata_jpeg_compression_1": {
+        "path": "/home/pengcheng/Pi-CBM-Benchmark/artifacts/common/cifar10/clip_RN50/corruptions/test_jpeg_compression_1.metadata.json",
+        "sha256": "b98a548f2a3a55b3ef9c4af50e70233f2180aa9e33e1738306250c997666a1bb"
+      },
+      "region_jpeg_compression_3_features.npy": {
+        "path": "/home/pengcheng/Pi-CBM-Benchmark/artifacts/pini_cifar_c/cifar10/rn18_imagenet/seed42/regions/jpeg_compression_3/features.npy",
+        "sha256": "44ed83294f0a2eac9d1bdba3ade8f95ba3d4d254afe265065829fde79ef863c5"
+      },
+      "region_jpeg_compression_3_maps.npy": {
+        "path": "/home/pengcheng/Pi-CBM-Benchmark/artifacts/pini_cifar_c/cifar10/rn18_imagenet/seed42/regions/jpeg_compression_3/maps.npy",
+        "sha256": "49ca068af0db9931ba48a6d4bdd578683a538ea609b6275c31fffb07e9e32085"
+      },
+      "region_jpeg_compression_3_valid.npy": {
+        "path": "/home/pengcheng/Pi-CBM-Benchmark/artifacts/pini_cifar_c/cifar10/rn18_imagenet/seed42/regions/jpeg_compression_3/valid.npy",
+        "sha256": "98eaf76c719a8b6eae85ba4a0fd18b05fe6692bb8ba2403828b76701ed50493c"
+      },
+      "region_jpeg_compression_3_boxes.npy": {
+        "path": "/home/pengcheng/Pi-CBM-Benchmark/artifacts/pini_cifar_c/cifar10/rn18_imagenet/seed42/regions/jpeg_compression_3/boxes.npy",
+        "sha256": "9f79d63bd5e714785b25cc61a7596cd520423bae691d4a5e94b543637a6b60df"
+      },
+      "region_jpeg_compression_3_scores.npy": {
+        "path": "/home/pengcheng/Pi-CBM-Benchmark/artifacts/pini_cifar_c/cifar10/rn18_imagenet/seed42/regions/jpeg_compression_3/scores.npy",
+        "sha256": "60bb4b17d9d8ed951a67abd848197d111c944600ade3fc20931a2bad50f9bdfe"
+      },
+      "region_jpeg_compression_3_COMPLETE.json": {
+        "path": "/home/pengcheng/Pi-CBM-Benchmark/artifacts/pini_cifar_c/cifar10/rn18_imagenet/seed42/regions/jpeg_compression_3/COMPLETE.json",
+        "sha256": "0c330dd685aba7cb954260304da3fb6157d0af137bf2168c1c93688b31f4c52b"
+      },
+      "common_jpeg_compression_3": {
+        "path": "/home/pengcheng/Pi-CBM-Benchmark/artifacts/common/cifar10/clip_RN50/corruptions/test_jpeg_compression_3.npz",
+        "sha256": "74f36d5874beb52163d749c88d5e4cd71841df87bd43dc8648d0caec68ab0f27"
+      },
+      "common_metadata_jpeg_compression_3": {
+        "path": "/home/pengcheng/Pi-CBM-Benchmark/artifacts/common/cifar10/clip_RN50/corruptions/test_jpeg_compression_3.metadata.json",
+        "sha256": "416a22badf79d3ee454eeaff6c2f98f859fa3c8bde39d04ce6ebf8b695b9a06c"
+      },
+      "region_jpeg_compression_5_features.npy": {
+        "path": "/home/pengcheng/Pi-CBM-Benchmark/artifacts/pini_cifar_c/cifar10/rn18_imagenet/seed42/regions/jpeg_compression_5/features.npy",
+        "sha256": "3f46b292483a8c05baa108cd28618ed1391dcd3f0c8fb63903871c150c376376"
+      },
+      "region_jpeg_compression_5_maps.npy": {
+        "path": "/home/pengcheng/Pi-CBM-Benchmark/artifacts/pini_cifar_c/cifar10/rn18_imagenet/seed42/regions/jpeg_compression_5/maps.npy",
+        "sha256": "6eeb824d12b7bc197448be171202ea19de778fee45e08f02e7e66be0386e469e"
+      },
+      "region_jpeg_compression_5_valid.npy": {
+        "path": "/home/pengcheng/Pi-CBM-Benchmark/artifacts/pini_cifar_c/cifar10/rn18_imagenet/seed42/regions/jpeg_compression_5/valid.npy",
+        "sha256": "1e66c0dfb83d863c48f78aa442426bc0b4bb4a6dd47fe25bc2c744dee75a6a9f"
+      },
+      "region_jpeg_compression_5_boxes.npy": {
+        "path": "/home/pengcheng/Pi-CBM-Benchmark/artifacts/pini_cifar_c/cifar10/rn18_imagenet/seed42/regions/jpeg_compression_5/boxes.npy",
+        "sha256": "68ad20cd1213b1bd24a591567a946bd93c81610b401566471c9d7ea32abcd887"
+      },
+      "region_jpeg_compression_5_scores.npy": {
+        "path": "/home/pengcheng/Pi-CBM-Benchmark/artifacts/pini_cifar_c/cifar10/rn18_imagenet/seed42/regions/jpeg_compression_5/scores.npy",
+        "sha256": "4e511691caa918762cd39dd5621db46c9d2a03334c01aaa381fd0c686f1d425b"
+      },
+      "region_jpeg_compression_5_COMPLETE.json": {
+        "path": "/home/pengcheng/Pi-CBM-Benchmark/artifacts/pini_cifar_c/cifar10/rn18_imagenet/seed42/regions/jpeg_compression_5/COMPLETE.json",
+        "sha256": "167e26c8840104dbb1ea50003ea71adc28934e74593c86de038a155bcf1b045c"
+      },
+      "common_jpeg_compression_5": {
+        "path": "/home/pengcheng/Pi-CBM-Benchmark/artifacts/common/cifar10/clip_RN50/corruptions/test_jpeg_compression_5.npz",
+        "sha256": "b0af6f8b872d6d5e57c911f977929684a62e8a3b55fa6653786bddcf6ab5a654"
+      },
+      "common_metadata_jpeg_compression_5": {
+        "path": "/home/pengcheng/Pi-CBM-Benchmark/artifacts/common/cifar10/clip_RN50/corruptions/test_jpeg_compression_5.metadata.json",
+        "sha256": "f53c0da585e3b00a5aa798c2792c0992cb45ba56fde32fce56985f605589b068"
+      }
+    },
+    "concept_indices": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24,
+      25,
+      26,
+      27,
+      28,
+      29,
+      30,
+      31,
+      32,
+      33,
+      34,
+      35,
+      36,
+      37,
+      38,
+      39,
+      40,
+      41,
+      42,
+      43,
+      44,
+      45,
+      46,
+      47,
+      48,
+      49,
+      50,
+      51,
+      52,
+      53,
+      54,
+      55,
+      56,
+      57,
+      58,
+      59,
+      60,
+      61,
+      62,
+      63,
+      64,
+      65,
+      66,
+      67,
+      68,
+      69,
+      70,
+      71,
+      72,
+      73,
+      74,
+      75,
+      76,
+      77,
+      78,
+      79,
+      80,
+      81,
+      82,
+      83,
+      84,
+      85,
+      86,
+      87,
+      88,
+      89,
+      90,
+      91,
+      92,
+      93,
+      94,
+      95,
+      96,
+      97,
+      98,
+      99,
+      100,
+      101,
+      102,
+      103,
+      104,
+      105,
+      106,
+      107,
+      108,
+      109,
+      110,
+      111,
+      112,
+      113,
+      114,
+      115,
+      116,
+      117,
+      118,
+      119,
+      120,
+      121,
+      122,
+      123,
+      124,
+      125,
+      126,
+      127,
+      128,
+      129,
+      130,
+      131,
+      132,
+      133,
+      134,
+      135,
+      136,
+      137,
+      138,
+      139,
+      140,
+      141,
+      142
+    ],
+    "DINO_recomputed": false,
+    "regions_source": "/home/pengcheng/Pi-CBM-Benchmark/artifacts/pini_cifar_c/cifar10/rn18_imagenet/seed42/regions",
+    "pixel_protocol": "unchanged Native32IntensityReader CUDA q0*255 then original core /255=q1",
+    "draws": 1,
+    "seed": 4242,
+    "batch": 64,
+    "feature_audit_batch": 16,
+    "feature_audit_matches_original_cache_batch": true,
+    "training_performed": false,
+    "final_training_pending": [
+      "/home/pengcheng/Pi-CBM-Benchmark/artifacts/pini_matched/clip_rn50/cifar10/CIFAR_COMPLETE.json",
+      "/home/pengcheng/Pi-CBM-Benchmark/artifacts/pini_matched/clip_rn50/cifar10/pair_explore/selection/mean/best.pt",
+      "/home/pengcheng/Pi-CBM-Benchmark/artifacts/pini_matched/clip_rn50/cifar10/pair_explore/selection/noise/best.pt",
+      "/home/pengcheng/Pi-CBM-Benchmark/artifacts/pini_matched/clip_rn50/cifar10/initialization_chain.json"
+    ],
+    "test_rows": 10000,
+    "ids_json_sha256": "54ec0d00c08ededa9b0c15f9a03697e2c71c99c2e11dfbb1ed716ef9a524d754"
+  }
+}

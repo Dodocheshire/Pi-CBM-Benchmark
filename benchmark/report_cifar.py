@@ -13,14 +13,14 @@ import numpy as np
 
 from .lf_cifar import ROOT,CORRUPTIONS
 from .metrics import classification_metrics,teacher_fidelity
-from .report_utils import write_metrics,backbone_label
+from .report_utils import write_metrics,backbone_label,backbone_cache_folder
 
 COLORS={'lfcbm':'#2878B5','lfpi_global':'#D84A49','pini_mean':'#2CA02C','pini_noise':'#9467BD','noncbm':'#FF8C00'}
 METHODS={'lfcbm':'LF-CBM','lfpi_global':'LF-Pi','pini_mean':'PiNI 均值','pini_noise':'PiNI 噪声','noncbm':'非 CBM'}
 
 
-def collect_pini_corruptions(dataset):
-    directory=ROOT/'artifacts/pini_cifar_c'/dataset/'rn18_imagenet/seed42'
+def collect_pini_corruptions(dataset,backbone='rn18_imagenet'):
+    directory=ROOT/'artifacts/pini_cifar_c'/dataset/backbone/'seed42'
     marker=directory/'CIFAR_C_COMPLETE.json'
     if not marker.exists():return None
     completion=json.loads(marker.read_text())
@@ -34,7 +34,8 @@ def collect_pini_corruptions(dataset):
     assert not report['native_concept_annotations']
     settings={f'{kind}_{severity}' for kind in CORRUPTIONS for severity in [1,3,5]}
     assert set(report['settings'])==settings
-    with np.load(ROOT/'artifacts/common'/dataset/'rn18_imagenet/test_original.npz') as reference:
+    cache_bone='clip_RN50' if backbone=='clip_rn50' else backbone_cache_folder(backbone)
+    with np.load(ROOT/'artifacts/common'/dataset/cache_bone/'test_original.npz') as reference:
         ids,labels=reference['ids'],reference['labels']
     for setting,arms in report['settings'].items():
         assert set(arms)=={'mean','noise'}
@@ -132,11 +133,12 @@ def run(out,pini_root=None):
                     if 'feature_provenance' in report:
                         report['feature_provenance']={k:v for k,v in report['feature_provenance'].items() if k!='splits'}
                     corruption_reports[key]=report
-        pini_corruptions=collect_pini_corruptions(dataset)
-        if pini_corruptions is not None:
-            key=dataset+'/rn18_imagenet/gaussian_noise_s1_augmented'
-            if key in corruption_reports:
-                corruption_reports[key]['pini_corruptions']=pini_corruptions
+        for archive,bone in [('rn18_imagenet','rn18_imagenet'),('resnet50','rn50_imagenet'),('clip_rn50','clip_RN50')]:
+            pini_corruptions=collect_pini_corruptions(dataset,archive)
+            if pini_corruptions is not None:
+                key=dataset+'/'+bone+'/gaussian_noise_s1_augmented'
+                if key in corruption_reports:
+                    corruption_reports[key]['pini_corruptions']=pini_corruptions
     for dataset in ['cifar10','cifar100']:
         for paired in [False,True]:
             group=[r for r in rows if r['dataset']==dataset and (len(r['train_views'])>1)==paired]
