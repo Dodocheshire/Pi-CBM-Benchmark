@@ -97,23 +97,26 @@ def run(out,pini_root=None):
             rows+=collect(wide.parent/'gaussian_noise_augmented/seed42',dataset,teacher_dir,metadata)
         if pini_root:
             for run_dir in (Path(pini_root)/dataset).glob('**/seed42'):rows+=collect(run_dir,dataset,teacher_dir,metadata)
-            for method in ['mean','noise']:
-                directory=Path(pini_root)/dataset/'exports'/method
-                path=directory/'test_original.npz'
-                if not path.exists() or not (directory/'results.json').exists():continue
-                values=np.load(path);result=json.loads((directory/'results.json').read_text())
-                if values['known'].any():raise ValueError('PiNI CIFAR pseudo supervision is not native truth')
-                index=values['concept_indices'];teacher=np.load(teacher_dir/'original_teacher.npy',mmap_mode='r')
-                fidelity=teacher_fidelity(values['concept_logits'],teacher[values['ids']][:,index])
-                rows.append({'dataset':dataset,'backbone':'rn18_imagenet','method':'pini_'+method,'source':str(path),'run':str(directory),
-                    'training_seed':result['training_seed'],'train_views':result['train_views'],
-                    'inference_draws':result['inference_draws'],'inference_seed':result['inference_seed'],
-                    'candidate_concepts':len(metadata['names']),'retained_concepts':len(index),
-                    'bank_coverage':len(index)/len(metadata['names']),'selected_indices':index.tolist(),
-                    'human_annotations_available':False,'native_concept_mAP':None,
-                    'classification':classification_metrics(values['logits'],values['labels']),
-                    'teacher_score_field':'concept_logits',
-                    'CLIP_teacher':fidelity,'CLIP_teacher_probability_secondary':teacher_fidelity(values['concepts'],teacher[values['ids']][:,index])})
+            for relative,bone in [(Path(dataset),'rn18_imagenet'),(Path('resnet50')/dataset,'rn50_imagenet'),(Path('clip_rn50')/dataset,'clip_RN50')]:
+                experiment=Path(pini_root)/relative
+                if not (experiment/'CIFAR_COMPLETE.json').exists():continue
+                for method in ['mean','noise']:
+                    directory=experiment/'exports'/method
+                    path=directory/'test_original.npz'
+                    if not path.exists() or not (directory/'results.json').exists():continue
+                    values=np.load(path);result=json.loads((directory/'results.json').read_text())
+                    if values['known'].any():raise ValueError('PiNI CIFAR pseudo supervision is not native truth')
+                    index=values['concept_indices'];teacher=np.load(teacher_dir/'original_teacher.npy',mmap_mode='r')
+                    fidelity=teacher_fidelity(values['concept_logits'],teacher[values['ids']][:,index])
+                    rows.append({'dataset':dataset,'backbone':bone,'method':'pini_'+method,'source':str(path),'run':str(directory),
+                        'training_seed':result['training_seed'],'train_views':result['train_views'],
+                        'inference_draws':result['inference_draws'],'inference_seed':result['inference_seed'],
+                        'candidate_concepts':len(metadata['names']),'retained_concepts':len(index),
+                        'bank_coverage':len(index)/len(metadata['names']),'selected_indices':index.tolist(),
+                        'human_annotations_available':False,'native_concept_mAP':None,
+                        'classification':classification_metrics(values['logits'],values['labels']),
+                        'teacher_score_field':'concept_logits',
+                        'CLIP_teacher':fidelity,'CLIP_teacher_probability_secondary':teacher_fidelity(values['concepts'],teacher[values['ids']][:,index])})
         for bone in ['rn18_imagenet','rn50_imagenet','clip_RN50']:
             for augmented in [False,True]:
                 directory=lf.parent.parent/bone
