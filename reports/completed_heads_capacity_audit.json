@@ -423,8 +423,32 @@
       "actual_nec_from_weights": true,
       "classification_from_saved_logits": true,
       "validation_only_selection": true
+    },
+    {
+      "report": "artifacts/heads/cifar10/resnet50/corruption_augmented/seed42/pini_mean/report.json",
+      "heads_sha256": "e15e4e286f7761c327d56843e7400fcef89b2d021ea2b2744430deb3b486a53e",
+      "verified_evaluations": 28,
+      "actual_nec_from_weights": true,
+      "classification_from_saved_logits": true,
+      "validation_only_selection": true
+    },
+    {
+      "report": "artifacts/heads/cifar100/resnet18/corruption_augmented/seed42/pini_mean/report.json",
+      "heads_sha256": "078063ce9a41dc69d365150d10e9093f0c82c0715fba4bd6daa31b547785005f",
+      "verified_evaluations": 26,
+      "actual_nec_from_weights": true,
+      "classification_from_saved_logits": true,
+      "validation_only_selection": true
+    },
+    {
+      "report": "artifacts/heads/cub/clip_RN50/paired/seed42/lfcbm/report.json",
+      "heads_sha256": "ef2de5660150039d9753df98dce798e2c2dcddfe186c4906c865feed2ae84c10",
+      "verified_evaluations": 24,
+      "actual_nec_from_weights": true,
+      "classification_from_saved_logits": true,
+      "validation_only_selection": true
     }
   ],
-  "heads": 53,
-  "evaluations": 1140
+  "heads": 56,
+  "evaluations": 1218
 }
