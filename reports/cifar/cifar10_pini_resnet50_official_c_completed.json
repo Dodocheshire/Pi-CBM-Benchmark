@@ -1,0 +1,209 @@
+{
+  "state": "verified",
+  "dataset": "cifar10",
+  "backbone": "resnet50",
+  "predictions": 24,
+  "images_per_prediction": 10000,
+  "draws": 1,
+  "seed": 4242,
+  "actual_DINO_reused": true,
+  "source_sha_verified": true,
+  "source_manifest_sha256": "87afc464d54f9d411691e1ecd4cffd528644fdcc92328a2e91142369dfebe8cd",
+  "feature_audit_batch": 16,
+  "native_annotations": false,
+  "records": [
+    {
+      "arm": "mean",
+      "setting": "contrast_1",
+      "images": 10000,
+      "native_classifier_max_abs": 9.5367431640625e-06,
+      "argmax_changes": 0,
+      "prediction_sha256": "22f47f608b994f85fd9d2c4d4f9ac2aec0afeeabd3c553603378a964f8edacd6"
+    },
+    {
+      "arm": "mean",
+      "setting": "contrast_3",
+      "images": 10000,
+      "native_classifier_max_abs": 5.7220458984375e-06,
+      "argmax_changes": 0,
+      "prediction_sha256": "4d5207901a9c696fbf01e217118c1c0747e22eae8f90c4753c2c2a9123098104"
+    },
+    {
+      "arm": "mean",
+      "setting": "contrast_5",
+      "images": 10000,
+      "native_classifier_max_abs": 4.76837158203125e-06,
+      "argmax_changes": 0,
+      "prediction_sha256": "ecd6757cfbc10fda8bb93834eb1630f743db8ec9cc7ed59597536723e4a4a31f"
+    },
+    {
+      "arm": "mean",
+      "setting": "gaussian_blur_1",
+      "images": 10000,
+      "native_classifier_max_abs": 7.62939453125e-06,
+      "argmax_changes": 0,
+      "prediction_sha256": "bc8ce621b7f9f06953101c2c7ce3ed55dbbfd49ef326b683a3ca1838eaf53ca7"
+    },
+    {
+      "arm": "mean",
+      "setting": "gaussian_blur_3",
+      "images": 10000,
+      "native_classifier_max_abs": 5.7220458984375e-06,
+      "argmax_changes": 0,
+      "prediction_sha256": "3af5cf8f2e61978a4c99f1ec702ae135250ecf75a6e9c9c94bd4af3c9dddb1d2"
+    },
+    {
+      "arm": "mean",
+      "setting": "gaussian_blur_5",
+      "images": 10000,
+      "native_classifier_max_abs": 5.7220458984375e-06,
+      "argmax_changes": 0,
+      "prediction_sha256": "7ef8ca768fb45e8c967ec5d1e2c5b652fdebd5999ab2786dbbc2bd3bc5cca641"
+    },
+    {
+      "arm": "mean",
+      "setting": "gaussian_noise_1",
+      "images": 10000,
+      "native_classifier_max_abs": 7.62939453125e-06,
+      "argmax_changes": 0,
+      "prediction_sha256": "946cd22cc64757b109ef1fe7de45b5c13daeef0c4942caf734c67d1fc56d099c"
+    },
+    {
+      "arm": "mean",
+      "setting": "gaussian_noise_3",
+      "images": 10000,
+      "native_classifier_max_abs": 5.7220458984375e-06,
+      "argmax_changes": 0,
+      "prediction_sha256": "54be81f4de582e2ea59d166c8f8ff5f760a56bfaee2f48de730941bd7b249966"
+    },
+    {
+      "arm": "mean",
+      "setting": "gaussian_noise_5",
+      "images": 10000,
+      "native_classifier_max_abs": 5.7220458984375e-06,
+      "argmax_changes": 0,
+      "prediction_sha256": "11937348d32ea928f30cd38e0da1a120d73b05da7e8ab6685cbe2175743bd13d"
+    },
+    {
+      "arm": "mean",
+      "setting": "jpeg_compression_1",
+      "images": 10000,
+      "native_classifier_max_abs": 7.62939453125e-06,
+      "argmax_changes": 0,
+      "prediction_sha256": "faf02c08577085eefd4ca679e94debd387d896e0277885e16ec0693b738e3c47"
+    },
+    {
+      "arm": "mean",
+      "setting": "jpeg_compression_3",
+      "images": 10000,
+      "native_classifier_max_abs": 7.62939453125e-06,
+      "argmax_changes": 0,
+      "prediction_sha256": "d69bf91422e9796c9d929900308905dbe4eee5935b642465e081253bad1a87e6"
+    },
+    {
+      "arm": "mean",
+      "setting": "jpeg_compression_5",
+      "images": 10000,
+      "native_classifier_max_abs": 7.62939453125e-06,
+      "argmax_changes": 0,
+      "prediction_sha256": "39ba7c0168c0795463d99254f8fb23ed47e14ecbffe9da95a74a1414c72b708f"
+    },
+    {
+      "arm": "noise",
+      "setting": "contrast_1",
+      "images": 10000,
+      "native_classifier_max_abs": 7.62939453125e-06,
+      "argmax_changes": 0,
+      "prediction_sha256": "d84134fba2b22cfd8c46c711a4563916e72df81063bb54e2842fd0b649482559"
+    },
+    {
+      "arm": "noise",
+      "setting": "contrast_3",
+      "images": 10000,
+      "native_classifier_max_abs": 5.7220458984375e-06,
+      "argmax_changes": 0,
+      "prediction_sha256": "4fb631a624890ac1d87c84fe61bf7a31969cb2f891ea3999aa8267ce5f05a260"
+    },
+    {
+      "arm": "noise",
+      "setting": "contrast_5",
+      "images": 10000,
+      "native_classifier_max_abs": 3.814697265625e-06,
+      "argmax_changes": 0,
+      "prediction_sha256": "8c7b2db5694abd199281a646db3a7329f5c6726b6916ccd17c7f20395a356e54"
+    },
+    {
+      "arm": "noise",
+      "setting": "gaussian_blur_1",
+      "images": 10000,
+      "native_classifier_max_abs": 7.62939453125e-06,
+      "argmax_changes": 0,
+      "prediction_sha256": "9ba22a65fb5227e0a62e91c0420782b73d70bcdd9614817ce14ff790caaccc3b"
+    },
+    {
+      "arm": "noise",
+      "setting": "gaussian_blur_3",
+      "images": 10000,
+      "native_classifier_max_abs": 5.7220458984375e-06,
+      "argmax_changes": 0,
+      "prediction_sha256": "61f621a91be61927b0a177c4b355f796a81b0f2f85ef51050ac04ffa1253284f"
+    },
+    {
+      "arm": "noise",
+      "setting": "gaussian_blur_5",
+      "images": 10000,
+      "native_classifier_max_abs": 3.814697265625e-06,
+      "argmax_changes": 0,
+      "prediction_sha256": "8c7b645b0fe5d2fb20c9f89ef8cac2bed698876e5b1010f9100883b055dc227c"
+    },
+    {
+      "arm": "noise",
+      "setting": "gaussian_noise_1",
+      "images": 10000,
+      "native_classifier_max_abs": 7.62939453125e-06,
+      "argmax_changes": 0,
+      "prediction_sha256": "fb4adb5303421a3b25bbae31f1de5d484911e4ac568d77f617bc381174e5fe61"
+    },
+    {
+      "arm": "noise",
+      "setting": "gaussian_noise_3",
+      "images": 10000,
+      "native_classifier_max_abs": 5.7220458984375e-06,
+      "argmax_changes": 0,
+      "prediction_sha256": "0e615c2c81a8b0fd121d461308ff6edd21a6876f1afd6b74e923b279ce75eb4e"
+    },
+    {
+      "arm": "noise",
+      "setting": "gaussian_noise_5",
+      "images": 10000,
+      "native_classifier_max_abs": 5.7220458984375e-06,
+      "argmax_changes": 0,
+      "prediction_sha256": "2e7ad0ca6765557dbf6c9a9564a751dc085bf5aa5361b9fd730de45fc56c2915"
+    },
+    {
+      "arm": "noise",
+      "setting": "jpeg_compression_1",
+      "images": 10000,
+      "native_classifier_max_abs": 7.62939453125e-06,
+      "argmax_changes": 0,
+      "prediction_sha256": "07152f2a5e3d5fb00716addf02cc40805e87edf05db37ab7da7020ac8eeefb1c"
+    },
+    {
+      "arm": "noise",
+      "setting": "jpeg_compression_3",
+      "images": 10000,
+      "native_classifier_max_abs": 7.62939453125e-06,
+      "argmax_changes": 0,
+      "prediction_sha256": "694efc400a524b773bbd87e9253e1ec7dd8cadbf7715bab32c1e57b94dfcae7f"
+    },
+    {
+      "arm": "noise",
+      "setting": "jpeg_compression_5",
+      "images": 10000,
+      "native_classifier_max_abs": 5.7220458984375e-06,
+      "argmax_changes": 0,
+      "prediction_sha256": "bcfe30ce3157e71e64311e0f2b652dd987b7ef94411f722666ff6832cc1d9619"
+    }
+  ],
+  "GPU_used": false
+}
