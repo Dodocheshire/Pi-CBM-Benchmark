@@ -519,8 +519,16 @@
       "actual_nec_from_weights": true,
       "classification_from_saved_logits": true,
       "validation_only_selection": true
+    },
+    {
+      "report": "artifacts/heads/cifar100/resnet18/corruption_augmented/seed42/pini_noise/report.json",
+      "heads_sha256": "7db0b8601ca257f38d4f9feb56ded560e3d6a7a90ef5a2f03d665426a318e8a3",
+      "verified_evaluations": 26,
+      "actual_nec_from_weights": true,
+      "classification_from_saved_logits": true,
+      "validation_only_selection": true
     }
   ],
-  "heads": 65,
-  "evaluations": 1464
+  "heads": 66,
+  "evaluations": 1490
 }

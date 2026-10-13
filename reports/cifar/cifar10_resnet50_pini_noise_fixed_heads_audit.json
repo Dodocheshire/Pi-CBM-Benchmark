@@ -1,0 +1,1187 @@
+{
+  "state": "verified",
+  "heads": "/home/pengcheng/Pi-CBM-Benchmark/artifacts/heads/cifar10/resnet50/corruption_augmented/seed42/pini_noise",
+  "source": "/home/pengcheng/Pi-CBM-Benchmark/artifacts/pini_cifar_c/cifar10/resnet50/seed42/exports/noise",
+  "heads_sha256": "5ce3f2507492086282da5938f9f7a979769fa58359779adda4392c0673911e24",
+  "source_field": "concept_logits",
+  "refitting": false,
+  "settings": 12,
+  "rows": [
+    {
+      "setting": "contrast_1",
+      "head": "best_val",
+      "max_reconstruction_abs": 0.0,
+      "examples": 10000,
+      "nec": 74.9
+    },
+    {
+      "setting": "contrast_1",
+      "head": "1",
+      "max_reconstruction_abs": 0.0,
+      "examples": 10000,
+      "nec": 1.0
+    },
+    {
+      "setting": "contrast_1",
+      "head": "2",
+      "max_reconstruction_abs": 0.0,
+      "examples": 10000,
+      "nec": 2.0
+    },
+    {
+      "setting": "contrast_1",
+      "head": "3",
+      "max_reconstruction_abs": 0.0,
+      "examples": 10000,
+      "nec": 3.0
+    },
+    {
+      "setting": "contrast_1",
+      "head": "5",
+      "max_reconstruction_abs": 0.0,
+      "examples": 10000,
+      "nec": 5.0
+    },
+    {
+      "setting": "contrast_1",
+      "head": "8",
+      "max_reconstruction_abs": 0.0,
+      "examples": 10000,
+      "nec": 8.0
+    },
+    {
+      "setting": "contrast_1",
+      "head": "10",
+      "max_reconstruction_abs": 0.0,
+      "examples": 10000,
+      "nec": 10.0
+    },
+    {
+      "setting": "contrast_1",
+      "head": "15",
+      "max_reconstruction_abs": 0.0,
+      "examples": 10000,
+      "nec": 15.0
+    },
+    {
+      "setting": "contrast_1",
+      "head": "20",
+      "max_reconstruction_abs": 0.0,
+      "examples": 10000,
+      "nec": 20.0
+    },
+    {
+      "setting": "contrast_1",
+      "head": "30",
+      "max_reconstruction_abs": 0.0,
+      "examples": 10000,
+      "nec": 30.0
+    },
+    {
+      "setting": "contrast_1",
+      "head": "50",
+      "max_reconstruction_abs": 0.0,
+      "examples": 10000,
+      "nec": 50.0
+    },
+    {
+      "setting": "contrast_1",
+      "head": "80",
+      "max_reconstruction_abs": 0.0,
+      "examples": 10000,
+      "nec": 80.0
+    },
+    {
+      "setting": "contrast_1",
+      "head": "120",
+      "max_reconstruction_abs": 0.0,
+      "examples": 10000,
+      "nec": 120.0
+    },
+    {
+      "setting": "contrast_1",
+      "head": "dense",
+      "max_reconstruction_abs": 0.0,
+      "examples": 10000,
+      "nec": 143.0
+    },
+    {
+      "setting": "contrast_3",
+      "head": "best_val",
+      "max_reconstruction_abs": 0.0,
+      "examples": 10000,
+      "nec": 74.9
+    },
+    {
+      "setting": "contrast_3",
+      "head": "1",
+      "max_reconstruction_abs": 0.0,
+      "examples": 10000,
+      "nec": 1.0
+    },
+    {
+      "setting": "contrast_3",
+      "head": "2",
+      "max_reconstruction_abs": 0.0,
+      "examples": 10000,
+      "nec": 2.0
+    },
+    {
+      "setting": "contrast_3",
+      "head": "3",
+      "max_reconstruction_abs": 0.0,
+      "examples": 10000,
+      "nec": 3.0
+    },
+    {
+      "setting": "contrast_3",
+      "head": "5",
+      "max_reconstruction_abs": 0.0,
+      "examples": 10000,
+      "nec": 5.0
+    },
+    {
+      "setting": "contrast_3",
+      "head": "8",
+      "max_reconstruction_abs": 0.0,
+      "examples": 10000,
+      "nec": 8.0
+    },
+    {
+      "setting": "contrast_3",
+      "head": "10",
+      "max_reconstruction_abs": 0.0,
+      "examples": 10000,
+      "nec": 10.0
+    },
+    {
+      "setting": "contrast_3",
+      "head": "15",
+      "max_reconstruction_abs": 0.0,
+      "examples": 10000,
+      "nec": 15.0
+    },
+    {
+      "setting": "contrast_3",
+      "head": "20",
+      "max_reconstruction_abs": 0.0,
+      "examples": 10000,
+      "nec": 20.0
+    },
+    {
+      "setting": "contrast_3",
+      "head": "30",
+      "max_reconstruction_abs": 0.0,
+      "examples": 10000,
+      "nec": 30.0
+    },
+    {
+      "setting": "contrast_3",
+      "head": "50",
+      "max_reconstruction_abs": 0.0,
+      "examples": 10000,
+      "nec": 50.0
+    },
+    {
+      "setting": "contrast_3",
+      "head": "80",
+      "max_reconstruction_abs": 0.0,
+      "examples": 10000,
+      "nec": 80.0
+    },
+    {
+      "setting": "contrast_3",
+      "head": "120",
+      "max_reconstruction_abs": 0.0,
+      "examples": 10000,
+      "nec": 120.0
+    },
+    {
+      "setting": "contrast_3",
+      "head": "dense",
+      "max_reconstruction_abs": 0.0,
+      "examples": 10000,
+      "nec": 143.0
+    },
+    {
+      "setting": "contrast_5",
+      "head": "best_val",
+      "max_reconstruction_abs": 0.0,
+      "examples": 10000,
+      "nec": 74.9
+    },
+    {
+      "setting": "contrast_5",
+      "head": "1",
+      "max_reconstruction_abs": 0.0,
+      "examples": 10000,
+      "nec": 1.0
+    },
+    {
+      "setting": "contrast_5",
+      "head": "2",
+      "max_reconstruction_abs": 0.0,
+      "examples": 10000,
+      "nec": 2.0
+    },
+    {
+      "setting": "contrast_5",
+      "head": "3",
+      "max_reconstruction_abs": 0.0,
+      "examples": 10000,
+      "nec": 3.0
+    },
+    {
+      "setting": "contrast_5",
+      "head": "5",
+      "max_reconstruction_abs": 0.0,
+      "examples": 10000,
+      "nec": 5.0
+    },
+    {
+      "setting": "contrast_5",
+      "head": "8",
+      "max_reconstruction_abs": 0.0,
+      "examples": 10000,
+      "nec": 8.0
+    },
+    {
+      "setting": "contrast_5",
+      "head": "10",
+      "max_reconstruction_abs": 0.0,
+      "examples": 10000,
+      "nec": 10.0
+    },
+    {
+      "setting": "contrast_5",
+      "head": "15",
+      "max_reconstruction_abs": 0.0,
+      "examples": 10000,
+      "nec": 15.0
+    },
+    {
+      "setting": "contrast_5",
+      "head": "20",
+      "max_reconstruction_abs": 0.0,
+      "examples": 10000,
+      "nec": 20.0
+    },
+    {
+      "setting": "contrast_5",
+      "head": "30",
+      "max_reconstruction_abs": 0.0,
+      "examples": 10000,
+      "nec": 30.0
+    },
+    {
+      "setting": "contrast_5",
+      "head": "50",
+      "max_reconstruction_abs": 0.0,
+      "examples": 10000,
+      "nec": 50.0
+    },
+    {
+      "setting": "contrast_5",
+      "head": "80",
+      "max_reconstruction_abs": 0.0,
+      "examples": 10000,
+      "nec": 80.0
+    },
+    {
+      "setting": "contrast_5",
+      "head": "120",
+      "max_reconstruction_abs": 0.0,
+      "examples": 10000,
+      "nec": 120.0
+    },
+    {
+      "setting": "contrast_5",
+      "head": "dense",
+      "max_reconstruction_abs": 0.0,
+      "examples": 10000,
+      "nec": 143.0
+    },
+    {
+      "setting": "gaussian_blur_1",
+      "head": "best_val",
+      "max_reconstruction_abs": 0.0,
+      "examples": 10000,
+      "nec": 74.9
+    },
+    {
+      "setting": "gaussian_blur_1",
+      "head": "1",
+      "max_reconstruction_abs": 0.0,
+      "examples": 10000,
+      "nec": 1.0
+    },
+    {
+      "setting": "gaussian_blur_1",
+      "head": "2",
+      "max_reconstruction_abs": 0.0,
+      "examples": 10000,
+      "nec": 2.0
+    },
+    {
+      "setting": "gaussian_blur_1",
+      "head": "3",
+      "max_reconstruction_abs": 0.0,
+      "examples": 10000,
+      "nec": 3.0
+    },
+    {
+      "setting": "gaussian_blur_1",
+      "head": "5",
+      "max_reconstruction_abs": 0.0,
+      "examples": 10000,
+      "nec": 5.0
+    },
+    {
+      "setting": "gaussian_blur_1",
+      "head": "8",
+      "max_reconstruction_abs": 0.0,
+      "examples": 10000,
+      "nec": 8.0
+    },
+    {
+      "setting": "gaussian_blur_1",
+      "head": "10",
+      "max_reconstruction_abs": 0.0,
+      "examples": 10000,
+      "nec": 10.0
+    },
+    {
+      "setting": "gaussian_blur_1",
+      "head": "15",
+      "max_reconstruction_abs": 0.0,
+      "examples": 10000,
+      "nec": 15.0
+    },
+    {
+      "setting": "gaussian_blur_1",
+      "head": "20",
+      "max_reconstruction_abs": 0.0,
+      "examples": 10000,
+      "nec": 20.0
+    },
+    {
+      "setting": "gaussian_blur_1",
+      "head": "30",
+      "max_reconstruction_abs": 0.0,
+      "examples": 10000,
+      "nec": 30.0
+    },
+    {
+      "setting": "gaussian_blur_1",
+      "head": "50",
+      "max_reconstruction_abs": 0.0,
+      "examples": 10000,
+      "nec": 50.0
+    },
+    {
+      "setting": "gaussian_blur_1",
+      "head": "80",
+      "max_reconstruction_abs": 0.0,
+      "examples": 10000,
+      "nec": 80.0
+    },
+    {
+      "setting": "gaussian_blur_1",
+      "head": "120",
+      "max_reconstruction_abs": 0.0,
+      "examples": 10000,
+      "nec": 120.0
+    },
+    {
+      "setting": "gaussian_blur_1",
+      "head": "dense",
+      "max_reconstruction_abs": 0.0,
+      "examples": 10000,
+      "nec": 143.0
+    },
+    {
+      "setting": "gaussian_blur_3",
+      "head": "best_val",
+      "max_reconstruction_abs": 0.0,
+      "examples": 10000,
+      "nec": 74.9
+    },
+    {
+      "setting": "gaussian_blur_3",
+      "head": "1",
+      "max_reconstruction_abs": 0.0,
+      "examples": 10000,
+      "nec": 1.0
+    },
+    {
+      "setting": "gaussian_blur_3",
+      "head": "2",
+      "max_reconstruction_abs": 0.0,
+      "examples": 10000,
+      "nec": 2.0
+    },
+    {
+      "setting": "gaussian_blur_3",
+      "head": "3",
+      "max_reconstruction_abs": 0.0,
+      "examples": 10000,
+      "nec": 3.0
+    },
+    {
+      "setting": "gaussian_blur_3",
+      "head": "5",
+      "max_reconstruction_abs": 0.0,
+      "examples": 10000,
+      "nec": 5.0
+    },
+    {
+      "setting": "gaussian_blur_3",
+      "head": "8",
+      "max_reconstruction_abs": 0.0,
+      "examples": 10000,
+      "nec": 8.0
+    },
+    {
+      "setting": "gaussian_blur_3",
+      "head": "10",
+      "max_reconstruction_abs": 0.0,
+      "examples": 10000,
+      "nec": 10.0
+    },
+    {
+      "setting": "gaussian_blur_3",
+      "head": "15",
+      "max_reconstruction_abs": 0.0,
+      "examples": 10000,
+      "nec": 15.0
+    },
+    {
+      "setting": "gaussian_blur_3",
+      "head": "20",
+      "max_reconstruction_abs": 0.0,
+      "examples": 10000,
+      "nec": 20.0
+    },
+    {
+      "setting": "gaussian_blur_3",
+      "head": "30",
+      "max_reconstruction_abs": 0.0,
+      "examples": 10000,
+      "nec": 30.0
+    },
+    {
+      "setting": "gaussian_blur_3",
+      "head": "50",
+      "max_reconstruction_abs": 0.0,
+      "examples": 10000,
+      "nec": 50.0
+    },
+    {
+      "setting": "gaussian_blur_3",
+      "head": "80",
+      "max_reconstruction_abs": 0.0,
+      "examples": 10000,
+      "nec": 80.0
+    },
+    {
+      "setting": "gaussian_blur_3",
+      "head": "120",
+      "max_reconstruction_abs": 0.0,
+      "examples": 10000,
+      "nec": 120.0
+    },
+    {
+      "setting": "gaussian_blur_3",
+      "head": "dense",
+      "max_reconstruction_abs": 0.0,
+      "examples": 10000,
+      "nec": 143.0
+    },
+    {
+      "setting": "gaussian_blur_5",
+      "head": "best_val",
+      "max_reconstruction_abs": 0.0,
+      "examples": 10000,
+      "nec": 74.9
+    },
+    {
+      "setting": "gaussian_blur_5",
+      "head": "1",
+      "max_reconstruction_abs": 0.0,
+      "examples": 10000,
+      "nec": 1.0
+    },
+    {
+      "setting": "gaussian_blur_5",
+      "head": "2",
+      "max_reconstruction_abs": 0.0,
+      "examples": 10000,
+      "nec": 2.0
+    },
+    {
+      "setting": "gaussian_blur_5",
+      "head": "3",
+      "max_reconstruction_abs": 0.0,
+      "examples": 10000,
+      "nec": 3.0
+    },
+    {
+      "setting": "gaussian_blur_5",
+      "head": "5",
+      "max_reconstruction_abs": 0.0,
+      "examples": 10000,
+      "nec": 5.0
+    },
+    {
+      "setting": "gaussian_blur_5",
+      "head": "8",
+      "max_reconstruction_abs": 0.0,
+      "examples": 10000,
+      "nec": 8.0
+    },
+    {
+      "setting": "gaussian_blur_5",
+      "head": "10",
+      "max_reconstruction_abs": 0.0,
+      "examples": 10000,
+      "nec": 10.0
+    },
+    {
+      "setting": "gaussian_blur_5",
+      "head": "15",
+      "max_reconstruction_abs": 0.0,
+      "examples": 10000,
+      "nec": 15.0
+    },
+    {
+      "setting": "gaussian_blur_5",
+      "head": "20",
+      "max_reconstruction_abs": 0.0,
+      "examples": 10000,
+      "nec": 20.0
+    },
+    {
+      "setting": "gaussian_blur_5",
+      "head": "30",
+      "max_reconstruction_abs": 0.0,
+      "examples": 10000,
+      "nec": 30.0
+    },
+    {
+      "setting": "gaussian_blur_5",
+      "head": "50",
+      "max_reconstruction_abs": 0.0,
+      "examples": 10000,
+      "nec": 50.0
+    },
+    {
+      "setting": "gaussian_blur_5",
+      "head": "80",
+      "max_reconstruction_abs": 0.0,
+      "examples": 10000,
+      "nec": 80.0
+    },
+    {
+      "setting": "gaussian_blur_5",
+      "head": "120",
+      "max_reconstruction_abs": 0.0,
+      "examples": 10000,
+      "nec": 120.0
+    },
+    {
+      "setting": "gaussian_blur_5",
+      "head": "dense",
+      "max_reconstruction_abs": 0.0,
+      "examples": 10000,
+      "nec": 143.0
+    },
+    {
+      "setting": "gaussian_noise_1",
+      "head": "best_val",
+      "max_reconstruction_abs": 0.0,
+      "examples": 10000,
+      "nec": 74.9
+    },
+    {
+      "setting": "gaussian_noise_1",
+      "head": "1",
+      "max_reconstruction_abs": 0.0,
+      "examples": 10000,
+      "nec": 1.0
+    },
+    {
+      "setting": "gaussian_noise_1",
+      "head": "2",
+      "max_reconstruction_abs": 0.0,
+      "examples": 10000,
+      "nec": 2.0
+    },
+    {
+      "setting": "gaussian_noise_1",
+      "head": "3",
+      "max_reconstruction_abs": 0.0,
+      "examples": 10000,
+      "nec": 3.0
+    },
+    {
+      "setting": "gaussian_noise_1",
+      "head": "5",
+      "max_reconstruction_abs": 0.0,
+      "examples": 10000,
+      "nec": 5.0
+    },
+    {
+      "setting": "gaussian_noise_1",
+      "head": "8",
+      "max_reconstruction_abs": 0.0,
+      "examples": 10000,
+      "nec": 8.0
+    },
+    {
+      "setting": "gaussian_noise_1",
+      "head": "10",
+      "max_reconstruction_abs": 0.0,
+      "examples": 10000,
+      "nec": 10.0
+    },
+    {
+      "setting": "gaussian_noise_1",
+      "head": "15",
+      "max_reconstruction_abs": 0.0,
+      "examples": 10000,
+      "nec": 15.0
+    },
+    {
+      "setting": "gaussian_noise_1",
+      "head": "20",
+      "max_reconstruction_abs": 0.0,
+      "examples": 10000,
+      "nec": 20.0
+    },
+    {
+      "setting": "gaussian_noise_1",
+      "head": "30",
+      "max_reconstruction_abs": 0.0,
+      "examples": 10000,
+      "nec": 30.0
+    },
+    {
+      "setting": "gaussian_noise_1",
+      "head": "50",
+      "max_reconstruction_abs": 0.0,
+      "examples": 10000,
+      "nec": 50.0
+    },
+    {
+      "setting": "gaussian_noise_1",
+      "head": "80",
+      "max_reconstruction_abs": 0.0,
+      "examples": 10000,
+      "nec": 80.0
+    },
+    {
+      "setting": "gaussian_noise_1",
+      "head": "120",
+      "max_reconstruction_abs": 0.0,
+      "examples": 10000,
+      "nec": 120.0
+    },
+    {
+      "setting": "gaussian_noise_1",
+      "head": "dense",
+      "max_reconstruction_abs": 0.0,
+      "examples": 10000,
+      "nec": 143.0
+    },
+    {
+      "setting": "gaussian_noise_3",
+      "head": "best_val",
+      "max_reconstruction_abs": 0.0,
+      "examples": 10000,
+      "nec": 74.9
+    },
+    {
+      "setting": "gaussian_noise_3",
+      "head": "1",
+      "max_reconstruction_abs": 0.0,
+      "examples": 10000,
+      "nec": 1.0
+    },
+    {
+      "setting": "gaussian_noise_3",
+      "head": "2",
+      "max_reconstruction_abs": 0.0,
+      "examples": 10000,
+      "nec": 2.0
+    },
+    {
+      "setting": "gaussian_noise_3",
+      "head": "3",
+      "max_reconstruction_abs": 0.0,
+      "examples": 10000,
+      "nec": 3.0
+    },
+    {
+      "setting": "gaussian_noise_3",
+      "head": "5",
+      "max_reconstruction_abs": 0.0,
+      "examples": 10000,
+      "nec": 5.0
+    },
+    {
+      "setting": "gaussian_noise_3",
+      "head": "8",
+      "max_reconstruction_abs": 0.0,
+      "examples": 10000,
+      "nec": 8.0
+    },
+    {
+      "setting": "gaussian_noise_3",
+      "head": "10",
+      "max_reconstruction_abs": 0.0,
+      "examples": 10000,
+      "nec": 10.0
+    },
+    {
+      "setting": "gaussian_noise_3",
+      "head": "15",
+      "max_reconstruction_abs": 0.0,
+      "examples": 10000,
+      "nec": 15.0
+    },
+    {
+      "setting": "gaussian_noise_3",
+      "head": "20",
+      "max_reconstruction_abs": 0.0,
+      "examples": 10000,
+      "nec": 20.0
+    },
+    {
+      "setting": "gaussian_noise_3",
+      "head": "30",
+      "max_reconstruction_abs": 0.0,
+      "examples": 10000,
+      "nec": 30.0
+    },
+    {
+      "setting": "gaussian_noise_3",
+      "head": "50",
+      "max_reconstruction_abs": 0.0,
+      "examples": 10000,
+      "nec": 50.0
+    },
+    {
+      "setting": "gaussian_noise_3",
+      "head": "80",
+      "max_reconstruction_abs": 0.0,
+      "examples": 10000,
+      "nec": 80.0
+    },
+    {
+      "setting": "gaussian_noise_3",
+      "head": "120",
+      "max_reconstruction_abs": 0.0,
+      "examples": 10000,
+      "nec": 120.0
+    },
+    {
+      "setting": "gaussian_noise_3",
+      "head": "dense",
+      "max_reconstruction_abs": 0.0,
+      "examples": 10000,
+      "nec": 143.0
+    },
+    {
+      "setting": "gaussian_noise_5",
+      "head": "best_val",
+      "max_reconstruction_abs": 0.0,
+      "examples": 10000,
+      "nec": 74.9
+    },
+    {
+      "setting": "gaussian_noise_5",
+      "head": "1",
+      "max_reconstruction_abs": 0.0,
+      "examples": 10000,
+      "nec": 1.0
+    },
+    {
+      "setting": "gaussian_noise_5",
+      "head": "2",
+      "max_reconstruction_abs": 0.0,
+      "examples": 10000,
+      "nec": 2.0
+    },
+    {
+      "setting": "gaussian_noise_5",
+      "head": "3",
+      "max_reconstruction_abs": 0.0,
+      "examples": 10000,
+      "nec": 3.0
+    },
+    {
+      "setting": "gaussian_noise_5",
+      "head": "5",
+      "max_reconstruction_abs": 0.0,
+      "examples": 10000,
+      "nec": 5.0
+    },
+    {
+      "setting": "gaussian_noise_5",
+      "head": "8",
+      "max_reconstruction_abs": 0.0,
+      "examples": 10000,
+      "nec": 8.0
+    },
+    {
+      "setting": "gaussian_noise_5",
+      "head": "10",
+      "max_reconstruction_abs": 0.0,
+      "examples": 10000,
+      "nec": 10.0
+    },
+    {
+      "setting": "gaussian_noise_5",
+      "head": "15",
+      "max_reconstruction_abs": 0.0,
+      "examples": 10000,
+      "nec": 15.0
+    },
+    {
+      "setting": "gaussian_noise_5",
+      "head": "20",
+      "max_reconstruction_abs": 0.0,
+      "examples": 10000,
+      "nec": 20.0
+    },
+    {
+      "setting": "gaussian_noise_5",
+      "head": "30",
+      "max_reconstruction_abs": 0.0,
+      "examples": 10000,
+      "nec": 30.0
+    },
+    {
+      "setting": "gaussian_noise_5",
+      "head": "50",
+      "max_reconstruction_abs": 0.0,
+      "examples": 10000,
+      "nec": 50.0
+    },
+    {
+      "setting": "gaussian_noise_5",
+      "head": "80",
+      "max_reconstruction_abs": 0.0,
+      "examples": 10000,
+      "nec": 80.0
+    },
+    {
+      "setting": "gaussian_noise_5",
+      "head": "120",
+      "max_reconstruction_abs": 0.0,
+      "examples": 10000,
+      "nec": 120.0
+    },
+    {
+      "setting": "gaussian_noise_5",
+      "head": "dense",
+      "max_reconstruction_abs": 0.0,
+      "examples": 10000,
+      "nec": 143.0
+    },
+    {
+      "setting": "jpeg_compression_1",
+      "head": "best_val",
+      "max_reconstruction_abs": 0.0,
+      "examples": 10000,
+      "nec": 74.9
+    },
+    {
+      "setting": "jpeg_compression_1",
+      "head": "1",
+      "max_reconstruction_abs": 0.0,
+      "examples": 10000,
+      "nec": 1.0
+    },
+    {
+      "setting": "jpeg_compression_1",
+      "head": "2",
+      "max_reconstruction_abs": 0.0,
+      "examples": 10000,
+      "nec": 2.0
+    },
+    {
+      "setting": "jpeg_compression_1",
+      "head": "3",
+      "max_reconstruction_abs": 0.0,
+      "examples": 10000,
+      "nec": 3.0
+    },
+    {
+      "setting": "jpeg_compression_1",
+      "head": "5",
+      "max_reconstruction_abs": 0.0,
+      "examples": 10000,
+      "nec": 5.0
+    },
+    {
+      "setting": "jpeg_compression_1",
+      "head": "8",
+      "max_reconstruction_abs": 0.0,
+      "examples": 10000,
+      "nec": 8.0
+    },
+    {
+      "setting": "jpeg_compression_1",
+      "head": "10",
+      "max_reconstruction_abs": 0.0,
+      "examples": 10000,
+      "nec": 10.0
+    },
+    {
+      "setting": "jpeg_compression_1",
+      "head": "15",
+      "max_reconstruction_abs": 0.0,
+      "examples": 10000,
+      "nec": 15.0
+    },
+    {
+      "setting": "jpeg_compression_1",
+      "head": "20",
+      "max_reconstruction_abs": 0.0,
+      "examples": 10000,
+      "nec": 20.0
+    },
+    {
+      "setting": "jpeg_compression_1",
+      "head": "30",
+      "max_reconstruction_abs": 0.0,
+      "examples": 10000,
+      "nec": 30.0
+    },
+    {
+      "setting": "jpeg_compression_1",
+      "head": "50",
+      "max_reconstruction_abs": 0.0,
+      "examples": 10000,
+      "nec": 50.0
+    },
+    {
+      "setting": "jpeg_compression_1",
+      "head": "80",
+      "max_reconstruction_abs": 0.0,
+      "examples": 10000,
+      "nec": 80.0
+    },
+    {
+      "setting": "jpeg_compression_1",
+      "head": "120",
+      "max_reconstruction_abs": 0.0,
+      "examples": 10000,
+      "nec": 120.0
+    },
+    {
+      "setting": "jpeg_compression_1",
+      "head": "dense",
+      "max_reconstruction_abs": 0.0,
+      "examples": 10000,
+      "nec": 143.0
+    },
+    {
+      "setting": "jpeg_compression_3",
+      "head": "best_val",
+      "max_reconstruction_abs": 0.0,
+      "examples": 10000,
+      "nec": 74.9
+    },
+    {
+      "setting": "jpeg_compression_3",
+      "head": "1",
+      "max_reconstruction_abs": 0.0,
+      "examples": 10000,
+      "nec": 1.0
+    },
+    {
+      "setting": "jpeg_compression_3",
+      "head": "2",
+      "max_reconstruction_abs": 0.0,
+      "examples": 10000,
+      "nec": 2.0
+    },
+    {
+      "setting": "jpeg_compression_3",
+      "head": "3",
+      "max_reconstruction_abs": 0.0,
+      "examples": 10000,
+      "nec": 3.0
+    },
+    {
+      "setting": "jpeg_compression_3",
+      "head": "5",
+      "max_reconstruction_abs": 0.0,
+      "examples": 10000,
+      "nec": 5.0
+    },
+    {
+      "setting": "jpeg_compression_3",
+      "head": "8",
+      "max_reconstruction_abs": 0.0,
+      "examples": 10000,
+      "nec": 8.0
+    },
+    {
+      "setting": "jpeg_compression_3",
+      "head": "10",
+      "max_reconstruction_abs": 0.0,
+      "examples": 10000,
+      "nec": 10.0
+    },
+    {
+      "setting": "jpeg_compression_3",
+      "head": "15",
+      "max_reconstruction_abs": 0.0,
+      "examples": 10000,
+      "nec": 15.0
+    },
+    {
+      "setting": "jpeg_compression_3",
+      "head": "20",
+      "max_reconstruction_abs": 0.0,
+      "examples": 10000,
+      "nec": 20.0
+    },
+    {
+      "setting": "jpeg_compression_3",
+      "head": "30",
+      "max_reconstruction_abs": 0.0,
+      "examples": 10000,
+      "nec": 30.0
+    },
+    {
+      "setting": "jpeg_compression_3",
+      "head": "50",
+      "max_reconstruction_abs": 0.0,
+      "examples": 10000,
+      "nec": 50.0
+    },
+    {
+      "setting": "jpeg_compression_3",
+      "head": "80",
+      "max_reconstruction_abs": 0.0,
+      "examples": 10000,
+      "nec": 80.0
+    },
+    {
+      "setting": "jpeg_compression_3",
+      "head": "120",
+      "max_reconstruction_abs": 0.0,
+      "examples": 10000,
+      "nec": 120.0
+    },
+    {
+      "setting": "jpeg_compression_3",
+      "head": "dense",
+      "max_reconstruction_abs": 0.0,
+      "examples": 10000,
+      "nec": 143.0
+    },
+    {
+      "setting": "jpeg_compression_5",
+      "head": "best_val",
+      "max_reconstruction_abs": 0.0,
+      "examples": 10000,
+      "nec": 74.9
+    },
+    {
+      "setting": "jpeg_compression_5",
+      "head": "1",
+      "max_reconstruction_abs": 0.0,
+      "examples": 10000,
+      "nec": 1.0
+    },
+    {
+      "setting": "jpeg_compression_5",
+      "head": "2",
+      "max_reconstruction_abs": 0.0,
+      "examples": 10000,
+      "nec": 2.0
+    },
+    {
+      "setting": "jpeg_compression_5",
+      "head": "3",
+      "max_reconstruction_abs": 0.0,
+      "examples": 10000,
+      "nec": 3.0
+    },
+    {
+      "setting": "jpeg_compression_5",
+      "head": "5",
+      "max_reconstruction_abs": 0.0,
+      "examples": 10000,
+      "nec": 5.0
+    },
+    {
+      "setting": "jpeg_compression_5",
+      "head": "8",
+      "max_reconstruction_abs": 0.0,
+      "examples": 10000,
+      "nec": 8.0
+    },
+    {
+      "setting": "jpeg_compression_5",
+      "head": "10",
+      "max_reconstruction_abs": 0.0,
+      "examples": 10000,
+      "nec": 10.0
+    },
+    {
+      "setting": "jpeg_compression_5",
+      "head": "15",
+      "max_reconstruction_abs": 0.0,
+      "examples": 10000,
+      "nec": 15.0
+    },
+    {
+      "setting": "jpeg_compression_5",
+      "head": "20",
+      "max_reconstruction_abs": 0.0,
+      "examples": 10000,
+      "nec": 20.0
+    },
+    {
+      "setting": "jpeg_compression_5",
+      "head": "30",
+      "max_reconstruction_abs": 0.0,
+      "examples": 10000,
+      "nec": 30.0
+    },
+    {
+      "setting": "jpeg_compression_5",
+      "head": "50",
+      "max_reconstruction_abs": 0.0,
+      "examples": 10000,
+      "nec": 50.0
+    },
+    {
+      "setting": "jpeg_compression_5",
+      "head": "80",
+      "max_reconstruction_abs": 0.0,
+      "examples": 10000,
+      "nec": 80.0
+    },
+    {
+      "setting": "jpeg_compression_5",
+      "head": "120",
+      "max_reconstruction_abs": 0.0,
+      "examples": 10000,
+      "nec": 120.0
+    },
+    {
+      "setting": "jpeg_compression_5",
+      "head": "dense",
+      "max_reconstruction_abs": 0.0,
+      "examples": 10000,
+      "nec": 143.0
+    }
+  ]
+}

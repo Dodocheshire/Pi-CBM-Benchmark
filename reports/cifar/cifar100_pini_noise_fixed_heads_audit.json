@@ -1,0 +1,1510 @@
+{
+  "state": "verified",
+  "dataset": "cifar100",
+  "backbone": "resnet18",
+  "method": "pini_noise",
+  "head_sha256": "7db0b8601ca257f38d4f9feb56ded560e3d6a7a90ef5a2f03d665426a318e8a3",
+  "normalization_sha256": "9630fb7fa46b9c0d4980ac8485561b22f54c2174c14f5c00471225182864d64f",
+  "head_report_sha256": "d0c45dea4dd27f2bfb50e5adb49cd0624def7979526b24c3a7bef784097913c4",
+  "shift_report_sha256": "b87fd1f51b12d24617474380434d8f1ae46399c4a17cbb8688aaf9d08d5528c0",
+  "field": "concept_logits",
+  "concepts": 892,
+  "classes": 100,
+  "fit_views": [
+    "original",
+    "gaussian_noise_s1"
+  ],
+  "training_seed": 42,
+  "saga_kernel": {
+    "name": "upstream",
+    "optional_benchmark_runtime_wrapper": false,
+    "original_function_source_sha256": "ac1d0bcab8dbc07e81f9442d5c0ae76c0f81c2255cc98e266b3ec2d6947a3557",
+    "replacement_function_source_sha256": "39d8107e24c2a97149a40140fef6b9ad9da40d8c29222268669960fdc6011b15",
+    "replacement_sites": 0,
+    "core_file_modified": false,
+    "numeric_audit": "artifacts/audit/saga_outer_gemm_cpu.json",
+    "cuda_numeric_and_training_audit": "artifacts/audit/optional_head_regression.json"
+  },
+  "steps_limit": 1000,
+  "path_points": 24,
+  "shift_settings": 12,
+  "rows_per_setting": 10000,
+  "fixed_heads_retrained_for_shift": false,
+  "full_row_reconstruction": true,
+  "raw_source_sha256": {
+    "original": "f4cdccd730a3c0869c8e4167b0d3cf68577d80dad425446c8f1dc4d9d70919af",
+    "gaussian_noise_s1": "b2c62f6dd15c9773fd935a66429a44dc2bbacd2310fb83bb2e64c4d4468964b2",
+    "contrast_1": "cd9c3889ae495810f10348244a1807030fd9fd6a82f00438242326d2569218e5",
+    "contrast_3": "d1e97ac499a906236476e35eb1cb57d49414d13d90a752dc90c2ae4087fb0c01",
+    "contrast_5": "c9cc2def4e531f59ee6b5c098b8d5d06556430eac868a1b1c96b560d212e4f05",
+    "gaussian_blur_1": "94861138d865c05849ab20f7dd3699e2bc6366ded1cbd2160bd2f92b76b1de7f",
+    "gaussian_blur_3": "2518ff79560bf5bb5932e031443f7b79adeaee271fe9d83dd5f66fddd007d0dc",
+    "gaussian_blur_5": "bf649f957cfcb73daf43f6acabde03195a8265b8ab62c57947914401bb5385c3",
+    "gaussian_noise_1": "99f4d17977895ecb898c8ad0775ffa27ce63e60519524f44b8f797d9369b98fb",
+    "gaussian_noise_3": "2eab98c3bf9259fe365181c5e2c6d2dffe5d3efdebf2cb6f06a9ec4dd29e8b0f",
+    "gaussian_noise_5": "f66f85b92898a520fcaf74543d1761ff97b1b03ad349f61c44e141bc7dee2351",
+    "jpeg_compression_1": "180e3522d37894b6c8414b838256dbb846d1c397a3d84926107d9655469aeac2",
+    "jpeg_compression_3": "9c6d444568813bd3d6b0dffe9712cfe7249bea125efd0795767e998c0bb959b3",
+    "jpeg_compression_5": "65e6aace6ae4ae389e3c1bfa9e6262975a6aeb4dc60c688d59501bf76ccdbefa"
+  },
+  "records": [
+    {
+      "setting": "original",
+      "head": "best_val",
+      "examples": 10000,
+      "accuracy": 0.6759,
+      "actual_nec": 150.31,
+      "reconstruction_max_abs": 0.0
+    },
+    {
+      "setting": "original",
+      "head": "1",
+      "examples": 10000,
+      "accuracy": 0.1686,
+      "actual_nec": 1.0,
+      "reconstruction_max_abs": 0.0
+    },
+    {
+      "setting": "original",
+      "head": "3",
+      "examples": 10000,
+      "accuracy": 0.2795,
+      "actual_nec": 3.0,
+      "reconstruction_max_abs": 0.0
+    },
+    {
+      "setting": "original",
+      "head": "5",
+      "examples": 10000,
+      "accuracy": 0.3693,
+      "actual_nec": 5.0,
+      "reconstruction_max_abs": 0.0
+    },
+    {
+      "setting": "original",
+      "head": "10",
+      "examples": 10000,
+      "accuracy": 0.4643,
+      "actual_nec": 10.0,
+      "reconstruction_max_abs": 0.0
+    },
+    {
+      "setting": "original",
+      "head": "15",
+      "examples": 10000,
+      "accuracy": 0.515,
+      "actual_nec": 15.0,
+      "reconstruction_max_abs": 0.0
+    },
+    {
+      "setting": "original",
+      "head": "20",
+      "examples": 10000,
+      "accuracy": 0.5562,
+      "actual_nec": 20.0,
+      "reconstruction_max_abs": 0.0
+    },
+    {
+      "setting": "original",
+      "head": "30",
+      "examples": 10000,
+      "accuracy": 0.5946,
+      "actual_nec": 30.0,
+      "reconstruction_max_abs": 0.0
+    },
+    {
+      "setting": "original",
+      "head": "50",
+      "examples": 10000,
+      "accuracy": 0.6395,
+      "actual_nec": 50.0,
+      "reconstruction_max_abs": 0.0
+    },
+    {
+      "setting": "original",
+      "head": "80",
+      "examples": 10000,
+      "accuracy": 0.665,
+      "actual_nec": 80.0,
+      "reconstruction_max_abs": 0.0
+    },
+    {
+      "setting": "original",
+      "head": "120",
+      "examples": 10000,
+      "accuracy": 0.6712,
+      "actual_nec": 120.0,
+      "reconstruction_max_abs": 0.0
+    },
+    {
+      "setting": "original",
+      "head": "200",
+      "examples": 10000,
+      "accuracy": 0.6741,
+      "actual_nec": 200.0,
+      "reconstruction_max_abs": 0.0
+    },
+    {
+      "setting": "original",
+      "head": "dense",
+      "examples": 10000,
+      "accuracy": 0.6749,
+      "actual_nec": 891.85,
+      "reconstruction_max_abs": 0.0
+    },
+    {
+      "setting": "gaussian_noise_s1",
+      "head": "best_val",
+      "examples": 10000,
+      "accuracy": 0.5476,
+      "actual_nec": 150.31,
+      "reconstruction_max_abs": 0.0
+    },
+    {
+      "setting": "gaussian_noise_s1",
+      "head": "1",
+      "examples": 10000,
+      "accuracy": 0.1503,
+      "actual_nec": 1.0,
+      "reconstruction_max_abs": 0.0
+    },
+    {
+      "setting": "gaussian_noise_s1",
+      "head": "3",
+      "examples": 10000,
+      "accuracy": 0.2325,
+      "actual_nec": 3.0,
+      "reconstruction_max_abs": 0.0
+    },
+    {
+      "setting": "gaussian_noise_s1",
+      "head": "5",
+      "examples": 10000,
+      "accuracy": 0.3016,
+      "actual_nec": 5.0,
+      "reconstruction_max_abs": 0.0
+    },
+    {
+      "setting": "gaussian_noise_s1",
+      "head": "10",
+      "examples": 10000,
+      "accuracy": 0.3651,
+      "actual_nec": 10.0,
+      "reconstruction_max_abs": 0.0
+    },
+    {
+      "setting": "gaussian_noise_s1",
+      "head": "15",
+      "examples": 10000,
+      "accuracy": 0.4074,
+      "actual_nec": 15.0,
+      "reconstruction_max_abs": 0.0
+    },
+    {
+      "setting": "gaussian_noise_s1",
+      "head": "20",
+      "examples": 10000,
+      "accuracy": 0.4415,
+      "actual_nec": 20.0,
+      "reconstruction_max_abs": 0.0
+    },
+    {
+      "setting": "gaussian_noise_s1",
+      "head": "30",
+      "examples": 10000,
+      "accuracy": 0.472,
+      "actual_nec": 30.0,
+      "reconstruction_max_abs": 0.0
+    },
+    {
+      "setting": "gaussian_noise_s1",
+      "head": "50",
+      "examples": 10000,
+      "accuracy": 0.51,
+      "actual_nec": 50.0,
+      "reconstruction_max_abs": 0.0
+    },
+    {
+      "setting": "gaussian_noise_s1",
+      "head": "80",
+      "examples": 10000,
+      "accuracy": 0.5351,
+      "actual_nec": 80.0,
+      "reconstruction_max_abs": 0.0
+    },
+    {
+      "setting": "gaussian_noise_s1",
+      "head": "120",
+      "examples": 10000,
+      "accuracy": 0.5419,
+      "actual_nec": 120.0,
+      "reconstruction_max_abs": 0.0
+    },
+    {
+      "setting": "gaussian_noise_s1",
+      "head": "200",
+      "examples": 10000,
+      "accuracy": 0.5468,
+      "actual_nec": 200.0,
+      "reconstruction_max_abs": 0.0
+    },
+    {
+      "setting": "gaussian_noise_s1",
+      "head": "dense",
+      "examples": 10000,
+      "accuracy": 0.5438,
+      "actual_nec": 891.85,
+      "reconstruction_max_abs": 0.0
+    },
+    {
+      "setting": "contrast_1",
+      "head": "best_val",
+      "examples": 10000,
+      "accuracy": 0.6489,
+      "actual_nec": 150.31,
+      "reconstruction_max_abs": 0.0
+    },
+    {
+      "setting": "contrast_1",
+      "head": "1",
+      "examples": 10000,
+      "accuracy": 0.164,
+      "actual_nec": 1.0,
+      "reconstruction_max_abs": 0.0
+    },
+    {
+      "setting": "contrast_1",
+      "head": "3",
+      "examples": 10000,
+      "accuracy": 0.2643,
+      "actual_nec": 3.0,
+      "reconstruction_max_abs": 0.0
+    },
+    {
+      "setting": "contrast_1",
+      "head": "5",
+      "examples": 10000,
+      "accuracy": 0.3536,
+      "actual_nec": 5.0,
+      "reconstruction_max_abs": 0.0
+    },
+    {
+      "setting": "contrast_1",
+      "head": "10",
+      "examples": 10000,
+      "accuracy": 0.4383,
+      "actual_nec": 10.0,
+      "reconstruction_max_abs": 0.0
+    },
+    {
+      "setting": "contrast_1",
+      "head": "15",
+      "examples": 10000,
+      "accuracy": 0.4882,
+      "actual_nec": 15.0,
+      "reconstruction_max_abs": 0.0
+    },
+    {
+      "setting": "contrast_1",
+      "head": "20",
+      "examples": 10000,
+      "accuracy": 0.5298,
+      "actual_nec": 20.0,
+      "reconstruction_max_abs": 0.0
+    },
+    {
+      "setting": "contrast_1",
+      "head": "30",
+      "examples": 10000,
+      "accuracy": 0.5631,
+      "actual_nec": 30.0,
+      "reconstruction_max_abs": 0.0
+    },
+    {
+      "setting": "contrast_1",
+      "head": "50",
+      "examples": 10000,
+      "accuracy": 0.6088,
+      "actual_nec": 50.0,
+      "reconstruction_max_abs": 0.0
+    },
+    {
+      "setting": "contrast_1",
+      "head": "80",
+      "examples": 10000,
+      "accuracy": 0.6354,
+      "actual_nec": 80.0,
+      "reconstruction_max_abs": 0.0
+    },
+    {
+      "setting": "contrast_1",
+      "head": "120",
+      "examples": 10000,
+      "accuracy": 0.6449,
+      "actual_nec": 120.0,
+      "reconstruction_max_abs": 0.0
+    },
+    {
+      "setting": "contrast_1",
+      "head": "200",
+      "examples": 10000,
+      "accuracy": 0.6488,
+      "actual_nec": 200.0,
+      "reconstruction_max_abs": 0.0
+    },
+    {
+      "setting": "contrast_1",
+      "head": "dense",
+      "examples": 10000,
+      "accuracy": 0.6506,
+      "actual_nec": 891.85,
+      "reconstruction_max_abs": 0.0
+    },
+    {
+      "setting": "contrast_3",
+      "head": "best_val",
+      "examples": 10000,
+      "accuracy": 0.4733,
+      "actual_nec": 150.31,
+      "reconstruction_max_abs": 0.0
+    },
+    {
+      "setting": "contrast_3",
+      "head": "1",
+      "examples": 10000,
+      "accuracy": 0.1234,
+      "actual_nec": 1.0,
+      "reconstruction_max_abs": 0.0
+    },
+    {
+      "setting": "contrast_3",
+      "head": "3",
+      "examples": 10000,
+      "accuracy": 0.1969,
+      "actual_nec": 3.0,
+      "reconstruction_max_abs": 0.0
+    },
+    {
+      "setting": "contrast_3",
+      "head": "5",
+      "examples": 10000,
+      "accuracy": 0.2524,
+      "actual_nec": 5.0,
+      "reconstruction_max_abs": 0.0
+    },
+    {
+      "setting": "contrast_3",
+      "head": "10",
+      "examples": 10000,
+      "accuracy": 0.3076,
+      "actual_nec": 10.0,
+      "reconstruction_max_abs": 0.0
+    },
+    {
+      "setting": "contrast_3",
+      "head": "15",
+      "examples": 10000,
+      "accuracy": 0.3414,
+      "actual_nec": 15.0,
+      "reconstruction_max_abs": 0.0
+    },
+    {
+      "setting": "contrast_3",
+      "head": "20",
+      "examples": 10000,
+      "accuracy": 0.371,
+      "actual_nec": 20.0,
+      "reconstruction_max_abs": 0.0
+    },
+    {
+      "setting": "contrast_3",
+      "head": "30",
+      "examples": 10000,
+      "accuracy": 0.3987,
+      "actual_nec": 30.0,
+      "reconstruction_max_abs": 0.0
+    },
+    {
+      "setting": "contrast_3",
+      "head": "50",
+      "examples": 10000,
+      "accuracy": 0.4362,
+      "actual_nec": 50.0,
+      "reconstruction_max_abs": 0.0
+    },
+    {
+      "setting": "contrast_3",
+      "head": "80",
+      "examples": 10000,
+      "accuracy": 0.4595,
+      "actual_nec": 80.0,
+      "reconstruction_max_abs": 0.0
+    },
+    {
+      "setting": "contrast_3",
+      "head": "120",
+      "examples": 10000,
+      "accuracy": 0.4677,
+      "actual_nec": 120.0,
+      "reconstruction_max_abs": 0.0
+    },
+    {
+      "setting": "contrast_3",
+      "head": "200",
+      "examples": 10000,
+      "accuracy": 0.4779,
+      "actual_nec": 200.0,
+      "reconstruction_max_abs": 0.0
+    },
+    {
+      "setting": "contrast_3",
+      "head": "dense",
+      "examples": 10000,
+      "accuracy": 0.4778,
+      "actual_nec": 891.85,
+      "reconstruction_max_abs": 0.0
+    },
+    {
+      "setting": "contrast_5",
+      "head": "best_val",
+      "examples": 10000,
+      "accuracy": 0.1399,
+      "actual_nec": 150.31,
+      "reconstruction_max_abs": 0.0
+    },
+    {
+      "setting": "contrast_5",
+      "head": "1",
+      "examples": 10000,
+      "accuracy": 0.0595,
+      "actual_nec": 1.0,
+      "reconstruction_max_abs": 0.0
+    },
+    {
+      "setting": "contrast_5",
+      "head": "3",
+      "examples": 10000,
+      "accuracy": 0.0776,
+      "actual_nec": 3.0,
+      "reconstruction_max_abs": 0.0
+    },
+    {
+      "setting": "contrast_5",
+      "head": "5",
+      "examples": 10000,
+      "accuracy": 0.0871,
+      "actual_nec": 5.0,
+      "reconstruction_max_abs": 0.0
+    },
+    {
+      "setting": "contrast_5",
+      "head": "10",
+      "examples": 10000,
+      "accuracy": 0.0955,
+      "actual_nec": 10.0,
+      "reconstruction_max_abs": 0.0
+    },
+    {
+      "setting": "contrast_5",
+      "head": "15",
+      "examples": 10000,
+      "accuracy": 0.1015,
+      "actual_nec": 15.0,
+      "reconstruction_max_abs": 0.0
+    },
+    {
+      "setting": "contrast_5",
+      "head": "20",
+      "examples": 10000,
+      "accuracy": 0.1109,
+      "actual_nec": 20.0,
+      "reconstruction_max_abs": 0.0
+    },
+    {
+      "setting": "contrast_5",
+      "head": "30",
+      "examples": 10000,
+      "accuracy": 0.1166,
+      "actual_nec": 30.0,
+      "reconstruction_max_abs": 0.0
+    },
+    {
+      "setting": "contrast_5",
+      "head": "50",
+      "examples": 10000,
+      "accuracy": 0.1229,
+      "actual_nec": 50.0,
+      "reconstruction_max_abs": 0.0
+    },
+    {
+      "setting": "contrast_5",
+      "head": "80",
+      "examples": 10000,
+      "accuracy": 0.1305,
+      "actual_nec": 80.0,
+      "reconstruction_max_abs": 0.0
+    },
+    {
+      "setting": "contrast_5",
+      "head": "120",
+      "examples": 10000,
+      "accuracy": 0.1364,
+      "actual_nec": 120.0,
+      "reconstruction_max_abs": 0.0
+    },
+    {
+      "setting": "contrast_5",
+      "head": "200",
+      "examples": 10000,
+      "accuracy": 0.1462,
+      "actual_nec": 200.0,
+      "reconstruction_max_abs": 0.0
+    },
+    {
+      "setting": "contrast_5",
+      "head": "dense",
+      "examples": 10000,
+      "accuracy": 0.1421,
+      "actual_nec": 891.85,
+      "reconstruction_max_abs": 0.0
+    },
+    {
+      "setting": "gaussian_blur_1",
+      "head": "best_val",
+      "examples": 10000,
+      "accuracy": 0.6603,
+      "actual_nec": 150.31,
+      "reconstruction_max_abs": 0.0
+    },
+    {
+      "setting": "gaussian_blur_1",
+      "head": "1",
+      "examples": 10000,
+      "accuracy": 0.1683,
+      "actual_nec": 1.0,
+      "reconstruction_max_abs": 0.0
+    },
+    {
+      "setting": "gaussian_blur_1",
+      "head": "3",
+      "examples": 10000,
+      "accuracy": 0.2711,
+      "actual_nec": 3.0,
+      "reconstruction_max_abs": 0.0
+    },
+    {
+      "setting": "gaussian_blur_1",
+      "head": "5",
+      "examples": 10000,
+      "accuracy": 0.3621,
+      "actual_nec": 5.0,
+      "reconstruction_max_abs": 0.0
+    },
+    {
+      "setting": "gaussian_blur_1",
+      "head": "10",
+      "examples": 10000,
+      "accuracy": 0.4542,
+      "actual_nec": 10.0,
+      "reconstruction_max_abs": 0.0
+    },
+    {
+      "setting": "gaussian_blur_1",
+      "head": "15",
+      "examples": 10000,
+      "accuracy": 0.5021,
+      "actual_nec": 15.0,
+      "reconstruction_max_abs": 0.0
+    },
+    {
+      "setting": "gaussian_blur_1",
+      "head": "20",
+      "examples": 10000,
+      "accuracy": 0.5446,
+      "actual_nec": 20.0,
+      "reconstruction_max_abs": 0.0
+    },
+    {
+      "setting": "gaussian_blur_1",
+      "head": "30",
+      "examples": 10000,
+      "accuracy": 0.5778,
+      "actual_nec": 30.0,
+      "reconstruction_max_abs": 0.0
+    },
+    {
+      "setting": "gaussian_blur_1",
+      "head": "50",
+      "examples": 10000,
+      "accuracy": 0.6254,
+      "actual_nec": 50.0,
+      "reconstruction_max_abs": 0.0
+    },
+    {
+      "setting": "gaussian_blur_1",
+      "head": "80",
+      "examples": 10000,
+      "accuracy": 0.6524,
+      "actual_nec": 80.0,
+      "reconstruction_max_abs": 0.0
+    },
+    {
+      "setting": "gaussian_blur_1",
+      "head": "120",
+      "examples": 10000,
+      "accuracy": 0.657,
+      "actual_nec": 120.0,
+      "reconstruction_max_abs": 0.0
+    },
+    {
+      "setting": "gaussian_blur_1",
+      "head": "200",
+      "examples": 10000,
+      "accuracy": 0.6582,
+      "actual_nec": 200.0,
+      "reconstruction_max_abs": 0.0
+    },
+    {
+      "setting": "gaussian_blur_1",
+      "head": "dense",
+      "examples": 10000,
+      "accuracy": 0.6595,
+      "actual_nec": 891.85,
+      "reconstruction_max_abs": 0.0
+    },
+    {
+      "setting": "gaussian_blur_3",
+      "head": "best_val",
+      "examples": 10000,
+      "accuracy": 0.4626,
+      "actual_nec": 150.31,
+      "reconstruction_max_abs": 0.0
+    },
+    {
+      "setting": "gaussian_blur_3",
+      "head": "1",
+      "examples": 10000,
+      "accuracy": 0.1316,
+      "actual_nec": 1.0,
+      "reconstruction_max_abs": 0.0
+    },
+    {
+      "setting": "gaussian_blur_3",
+      "head": "3",
+      "examples": 10000,
+      "accuracy": 0.2004,
+      "actual_nec": 3.0,
+      "reconstruction_max_abs": 0.0
+    },
+    {
+      "setting": "gaussian_blur_3",
+      "head": "5",
+      "examples": 10000,
+      "accuracy": 0.2531,
+      "actual_nec": 5.0,
+      "reconstruction_max_abs": 0.0
+    },
+    {
+      "setting": "gaussian_blur_3",
+      "head": "10",
+      "examples": 10000,
+      "accuracy": 0.2964,
+      "actual_nec": 10.0,
+      "reconstruction_max_abs": 0.0
+    },
+    {
+      "setting": "gaussian_blur_3",
+      "head": "15",
+      "examples": 10000,
+      "accuracy": 0.3284,
+      "actual_nec": 15.0,
+      "reconstruction_max_abs": 0.0
+    },
+    {
+      "setting": "gaussian_blur_3",
+      "head": "20",
+      "examples": 10000,
+      "accuracy": 0.3604,
+      "actual_nec": 20.0,
+      "reconstruction_max_abs": 0.0
+    },
+    {
+      "setting": "gaussian_blur_3",
+      "head": "30",
+      "examples": 10000,
+      "accuracy": 0.3822,
+      "actual_nec": 30.0,
+      "reconstruction_max_abs": 0.0
+    },
+    {
+      "setting": "gaussian_blur_3",
+      "head": "50",
+      "examples": 10000,
+      "accuracy": 0.4262,
+      "actual_nec": 50.0,
+      "reconstruction_max_abs": 0.0
+    },
+    {
+      "setting": "gaussian_blur_3",
+      "head": "80",
+      "examples": 10000,
+      "accuracy": 0.4507,
+      "actual_nec": 80.0,
+      "reconstruction_max_abs": 0.0
+    },
+    {
+      "setting": "gaussian_blur_3",
+      "head": "120",
+      "examples": 10000,
+      "accuracy": 0.4612,
+      "actual_nec": 120.0,
+      "reconstruction_max_abs": 0.0
+    },
+    {
+      "setting": "gaussian_blur_3",
+      "head": "200",
+      "examples": 10000,
+      "accuracy": 0.46,
+      "actual_nec": 200.0,
+      "reconstruction_max_abs": 0.0
+    },
+    {
+      "setting": "gaussian_blur_3",
+      "head": "dense",
+      "examples": 10000,
+      "accuracy": 0.4647,
+      "actual_nec": 891.85,
+      "reconstruction_max_abs": 0.0
+    },
+    {
+      "setting": "gaussian_blur_5",
+      "head": "best_val",
+      "examples": 10000,
+      "accuracy": 0.207,
+      "actual_nec": 150.31,
+      "reconstruction_max_abs": 0.0
+    },
+    {
+      "setting": "gaussian_blur_5",
+      "head": "1",
+      "examples": 10000,
+      "accuracy": 0.0833,
+      "actual_nec": 1.0,
+      "reconstruction_max_abs": 0.0
+    },
+    {
+      "setting": "gaussian_blur_5",
+      "head": "3",
+      "examples": 10000,
+      "accuracy": 0.1165,
+      "actual_nec": 3.0,
+      "reconstruction_max_abs": 0.0
+    },
+    {
+      "setting": "gaussian_blur_5",
+      "head": "5",
+      "examples": 10000,
+      "accuracy": 0.1324,
+      "actual_nec": 5.0,
+      "reconstruction_max_abs": 0.0
+    },
+    {
+      "setting": "gaussian_blur_5",
+      "head": "10",
+      "examples": 10000,
+      "accuracy": 0.1455,
+      "actual_nec": 10.0,
+      "reconstruction_max_abs": 0.0
+    },
+    {
+      "setting": "gaussian_blur_5",
+      "head": "15",
+      "examples": 10000,
+      "accuracy": 0.1509,
+      "actual_nec": 15.0,
+      "reconstruction_max_abs": 0.0
+    },
+    {
+      "setting": "gaussian_blur_5",
+      "head": "20",
+      "examples": 10000,
+      "accuracy": 0.1582,
+      "actual_nec": 20.0,
+      "reconstruction_max_abs": 0.0
+    },
+    {
+      "setting": "gaussian_blur_5",
+      "head": "30",
+      "examples": 10000,
+      "accuracy": 0.1679,
+      "actual_nec": 30.0,
+      "reconstruction_max_abs": 0.0
+    },
+    {
+      "setting": "gaussian_blur_5",
+      "head": "50",
+      "examples": 10000,
+      "accuracy": 0.1802,
+      "actual_nec": 50.0,
+      "reconstruction_max_abs": 0.0
+    },
+    {
+      "setting": "gaussian_blur_5",
+      "head": "80",
+      "examples": 10000,
+      "accuracy": 0.1958,
+      "actual_nec": 80.0,
+      "reconstruction_max_abs": 0.0
+    },
+    {
+      "setting": "gaussian_blur_5",
+      "head": "120",
+      "examples": 10000,
+      "accuracy": 0.2023,
+      "actual_nec": 120.0,
+      "reconstruction_max_abs": 0.0
+    },
+    {
+      "setting": "gaussian_blur_5",
+      "head": "200",
+      "examples": 10000,
+      "accuracy": 0.211,
+      "actual_nec": 200.0,
+      "reconstruction_max_abs": 0.0
+    },
+    {
+      "setting": "gaussian_blur_5",
+      "head": "dense",
+      "examples": 10000,
+      "accuracy": 0.2127,
+      "actual_nec": 891.85,
+      "reconstruction_max_abs": 0.0
+    },
+    {
+      "setting": "gaussian_noise_1",
+      "head": "best_val",
+      "examples": 10000,
+      "accuracy": 0.555,
+      "actual_nec": 150.31,
+      "reconstruction_max_abs": 0.0
+    },
+    {
+      "setting": "gaussian_noise_1",
+      "head": "1",
+      "examples": 10000,
+      "accuracy": 0.1482,
+      "actual_nec": 1.0,
+      "reconstruction_max_abs": 0.0
+    },
+    {
+      "setting": "gaussian_noise_1",
+      "head": "3",
+      "examples": 10000,
+      "accuracy": 0.2333,
+      "actual_nec": 3.0,
+      "reconstruction_max_abs": 0.0
+    },
+    {
+      "setting": "gaussian_noise_1",
+      "head": "5",
+      "examples": 10000,
+      "accuracy": 0.3047,
+      "actual_nec": 5.0,
+      "reconstruction_max_abs": 0.0
+    },
+    {
+      "setting": "gaussian_noise_1",
+      "head": "10",
+      "examples": 10000,
+      "accuracy": 0.3679,
+      "actual_nec": 10.0,
+      "reconstruction_max_abs": 0.0
+    },
+    {
+      "setting": "gaussian_noise_1",
+      "head": "15",
+      "examples": 10000,
+      "accuracy": 0.4098,
+      "actual_nec": 15.0,
+      "reconstruction_max_abs": 0.0
+    },
+    {
+      "setting": "gaussian_noise_1",
+      "head": "20",
+      "examples": 10000,
+      "accuracy": 0.4409,
+      "actual_nec": 20.0,
+      "reconstruction_max_abs": 0.0
+    },
+    {
+      "setting": "gaussian_noise_1",
+      "head": "30",
+      "examples": 10000,
+      "accuracy": 0.4696,
+      "actual_nec": 30.0,
+      "reconstruction_max_abs": 0.0
+    },
+    {
+      "setting": "gaussian_noise_1",
+      "head": "50",
+      "examples": 10000,
+      "accuracy": 0.5152,
+      "actual_nec": 50.0,
+      "reconstruction_max_abs": 0.0
+    },
+    {
+      "setting": "gaussian_noise_1",
+      "head": "80",
+      "examples": 10000,
+      "accuracy": 0.5437,
+      "actual_nec": 80.0,
+      "reconstruction_max_abs": 0.0
+    },
+    {
+      "setting": "gaussian_noise_1",
+      "head": "120",
+      "examples": 10000,
+      "accuracy": 0.5506,
+      "actual_nec": 120.0,
+      "reconstruction_max_abs": 0.0
+    },
+    {
+      "setting": "gaussian_noise_1",
+      "head": "200",
+      "examples": 10000,
+      "accuracy": 0.5569,
+      "actual_nec": 200.0,
+      "reconstruction_max_abs": 0.0
+    },
+    {
+      "setting": "gaussian_noise_1",
+      "head": "dense",
+      "examples": 10000,
+      "accuracy": 0.556,
+      "actual_nec": 891.85,
+      "reconstruction_max_abs": 0.0
+    },
+    {
+      "setting": "gaussian_noise_3",
+      "head": "best_val",
+      "examples": 10000,
+      "accuracy": 0.2963,
+      "actual_nec": 150.31,
+      "reconstruction_max_abs": 0.0
+    },
+    {
+      "setting": "gaussian_noise_3",
+      "head": "1",
+      "examples": 10000,
+      "accuracy": 0.1041,
+      "actual_nec": 1.0,
+      "reconstruction_max_abs": 0.0
+    },
+    {
+      "setting": "gaussian_noise_3",
+      "head": "3",
+      "examples": 10000,
+      "accuracy": 0.143,
+      "actual_nec": 3.0,
+      "reconstruction_max_abs": 0.0
+    },
+    {
+      "setting": "gaussian_noise_3",
+      "head": "5",
+      "examples": 10000,
+      "accuracy": 0.1722,
+      "actual_nec": 5.0,
+      "reconstruction_max_abs": 0.0
+    },
+    {
+      "setting": "gaussian_noise_3",
+      "head": "10",
+      "examples": 10000,
+      "accuracy": 0.1986,
+      "actual_nec": 10.0,
+      "reconstruction_max_abs": 0.0
+    },
+    {
+      "setting": "gaussian_noise_3",
+      "head": "15",
+      "examples": 10000,
+      "accuracy": 0.2162,
+      "actual_nec": 15.0,
+      "reconstruction_max_abs": 0.0
+    },
+    {
+      "setting": "gaussian_noise_3",
+      "head": "20",
+      "examples": 10000,
+      "accuracy": 0.233,
+      "actual_nec": 20.0,
+      "reconstruction_max_abs": 0.0
+    },
+    {
+      "setting": "gaussian_noise_3",
+      "head": "30",
+      "examples": 10000,
+      "accuracy": 0.2495,
+      "actual_nec": 30.0,
+      "reconstruction_max_abs": 0.0
+    },
+    {
+      "setting": "gaussian_noise_3",
+      "head": "50",
+      "examples": 10000,
+      "accuracy": 0.2726,
+      "actual_nec": 50.0,
+      "reconstruction_max_abs": 0.0
+    },
+    {
+      "setting": "gaussian_noise_3",
+      "head": "80",
+      "examples": 10000,
+      "accuracy": 0.2885,
+      "actual_nec": 80.0,
+      "reconstruction_max_abs": 0.0
+    },
+    {
+      "setting": "gaussian_noise_3",
+      "head": "120",
+      "examples": 10000,
+      "accuracy": 0.2932,
+      "actual_nec": 120.0,
+      "reconstruction_max_abs": 0.0
+    },
+    {
+      "setting": "gaussian_noise_3",
+      "head": "200",
+      "examples": 10000,
+      "accuracy": 0.2964,
+      "actual_nec": 200.0,
+      "reconstruction_max_abs": 0.0
+    },
+    {
+      "setting": "gaussian_noise_3",
+      "head": "dense",
+      "examples": 10000,
+      "accuracy": 0.3012,
+      "actual_nec": 891.85,
+      "reconstruction_max_abs": 0.0
+    },
+    {
+      "setting": "gaussian_noise_5",
+      "head": "best_val",
+      "examples": 10000,
+      "accuracy": 0.1861,
+      "actual_nec": 150.31,
+      "reconstruction_max_abs": 0.0
+    },
+    {
+      "setting": "gaussian_noise_5",
+      "head": "1",
+      "examples": 10000,
+      "accuracy": 0.0761,
+      "actual_nec": 1.0,
+      "reconstruction_max_abs": 0.0
+    },
+    {
+      "setting": "gaussian_noise_5",
+      "head": "3",
+      "examples": 10000,
+      "accuracy": 0.0998,
+      "actual_nec": 3.0,
+      "reconstruction_max_abs": 0.0
+    },
+    {
+      "setting": "gaussian_noise_5",
+      "head": "5",
+      "examples": 10000,
+      "accuracy": 0.1144,
+      "actual_nec": 5.0,
+      "reconstruction_max_abs": 0.0
+    },
+    {
+      "setting": "gaussian_noise_5",
+      "head": "10",
+      "examples": 10000,
+      "accuracy": 0.1323,
+      "actual_nec": 10.0,
+      "reconstruction_max_abs": 0.0
+    },
+    {
+      "setting": "gaussian_noise_5",
+      "head": "15",
+      "examples": 10000,
+      "accuracy": 0.1408,
+      "actual_nec": 15.0,
+      "reconstruction_max_abs": 0.0
+    },
+    {
+      "setting": "gaussian_noise_5",
+      "head": "20",
+      "examples": 10000,
+      "accuracy": 0.1484,
+      "actual_nec": 20.0,
+      "reconstruction_max_abs": 0.0
+    },
+    {
+      "setting": "gaussian_noise_5",
+      "head": "30",
+      "examples": 10000,
+      "accuracy": 0.1574,
+      "actual_nec": 30.0,
+      "reconstruction_max_abs": 0.0
+    },
+    {
+      "setting": "gaussian_noise_5",
+      "head": "50",
+      "examples": 10000,
+      "accuracy": 0.1681,
+      "actual_nec": 50.0,
+      "reconstruction_max_abs": 0.0
+    },
+    {
+      "setting": "gaussian_noise_5",
+      "head": "80",
+      "examples": 10000,
+      "accuracy": 0.1809,
+      "actual_nec": 80.0,
+      "reconstruction_max_abs": 0.0
+    },
+    {
+      "setting": "gaussian_noise_5",
+      "head": "120",
+      "examples": 10000,
+      "accuracy": 0.1848,
+      "actual_nec": 120.0,
+      "reconstruction_max_abs": 0.0
+    },
+    {
+      "setting": "gaussian_noise_5",
+      "head": "200",
+      "examples": 10000,
+      "accuracy": 0.1865,
+      "actual_nec": 200.0,
+      "reconstruction_max_abs": 0.0
+    },
+    {
+      "setting": "gaussian_noise_5",
+      "head": "dense",
+      "examples": 10000,
+      "accuracy": 0.187,
+      "actual_nec": 891.85,
+      "reconstruction_max_abs": 0.0
+    },
+    {
+      "setting": "jpeg_compression_1",
+      "head": "best_val",
+      "examples": 10000,
+      "accuracy": 0.5191,
+      "actual_nec": 150.31,
+      "reconstruction_max_abs": 0.0
+    },
+    {
+      "setting": "jpeg_compression_1",
+      "head": "1",
+      "examples": 10000,
+      "accuracy": 0.1489,
+      "actual_nec": 1.0,
+      "reconstruction_max_abs": 0.0
+    },
+    {
+      "setting": "jpeg_compression_1",
+      "head": "3",
+      "examples": 10000,
+      "accuracy": 0.2303,
+      "actual_nec": 3.0,
+      "reconstruction_max_abs": 0.0
+    },
+    {
+      "setting": "jpeg_compression_1",
+      "head": "5",
+      "examples": 10000,
+      "accuracy": 0.294,
+      "actual_nec": 5.0,
+      "reconstruction_max_abs": 0.0
+    },
+    {
+      "setting": "jpeg_compression_1",
+      "head": "10",
+      "examples": 10000,
+      "accuracy": 0.361,
+      "actual_nec": 10.0,
+      "reconstruction_max_abs": 0.0
+    },
+    {
+      "setting": "jpeg_compression_1",
+      "head": "15",
+      "examples": 10000,
+      "accuracy": 0.3971,
+      "actual_nec": 15.0,
+      "reconstruction_max_abs": 0.0
+    },
+    {
+      "setting": "jpeg_compression_1",
+      "head": "20",
+      "examples": 10000,
+      "accuracy": 0.4245,
+      "actual_nec": 20.0,
+      "reconstruction_max_abs": 0.0
+    },
+    {
+      "setting": "jpeg_compression_1",
+      "head": "30",
+      "examples": 10000,
+      "accuracy": 0.4505,
+      "actual_nec": 30.0,
+      "reconstruction_max_abs": 0.0
+    },
+    {
+      "setting": "jpeg_compression_1",
+      "head": "50",
+      "examples": 10000,
+      "accuracy": 0.4877,
+      "actual_nec": 50.0,
+      "reconstruction_max_abs": 0.0
+    },
+    {
+      "setting": "jpeg_compression_1",
+      "head": "80",
+      "examples": 10000,
+      "accuracy": 0.5075,
+      "actual_nec": 80.0,
+      "reconstruction_max_abs": 0.0
+    },
+    {
+      "setting": "jpeg_compression_1",
+      "head": "120",
+      "examples": 10000,
+      "accuracy": 0.5146,
+      "actual_nec": 120.0,
+      "reconstruction_max_abs": 0.0
+    },
+    {
+      "setting": "jpeg_compression_1",
+      "head": "200",
+      "examples": 10000,
+      "accuracy": 0.5193,
+      "actual_nec": 200.0,
+      "reconstruction_max_abs": 0.0
+    },
+    {
+      "setting": "jpeg_compression_1",
+      "head": "dense",
+      "examples": 10000,
+      "accuracy": 0.52,
+      "actual_nec": 891.85,
+      "reconstruction_max_abs": 0.0
+    },
+    {
+      "setting": "jpeg_compression_3",
+      "head": "best_val",
+      "examples": 10000,
+      "accuracy": 0.4189,
+      "actual_nec": 150.31,
+      "reconstruction_max_abs": 0.0
+    },
+    {
+      "setting": "jpeg_compression_3",
+      "head": "1",
+      "examples": 10000,
+      "accuracy": 0.1342,
+      "actual_nec": 1.0,
+      "reconstruction_max_abs": 0.0
+    },
+    {
+      "setting": "jpeg_compression_3",
+      "head": "3",
+      "examples": 10000,
+      "accuracy": 0.1914,
+      "actual_nec": 3.0,
+      "reconstruction_max_abs": 0.0
+    },
+    {
+      "setting": "jpeg_compression_3",
+      "head": "5",
+      "examples": 10000,
+      "accuracy": 0.2386,
+      "actual_nec": 5.0,
+      "reconstruction_max_abs": 0.0
+    },
+    {
+      "setting": "jpeg_compression_3",
+      "head": "10",
+      "examples": 10000,
+      "accuracy": 0.2881,
+      "actual_nec": 10.0,
+      "reconstruction_max_abs": 0.0
+    },
+    {
+      "setting": "jpeg_compression_3",
+      "head": "15",
+      "examples": 10000,
+      "accuracy": 0.317,
+      "actual_nec": 15.0,
+      "reconstruction_max_abs": 0.0
+    },
+    {
+      "setting": "jpeg_compression_3",
+      "head": "20",
+      "examples": 10000,
+      "accuracy": 0.3407,
+      "actual_nec": 20.0,
+      "reconstruction_max_abs": 0.0
+    },
+    {
+      "setting": "jpeg_compression_3",
+      "head": "30",
+      "examples": 10000,
+      "accuracy": 0.3638,
+      "actual_nec": 30.0,
+      "reconstruction_max_abs": 0.0
+    },
+    {
+      "setting": "jpeg_compression_3",
+      "head": "50",
+      "examples": 10000,
+      "accuracy": 0.396,
+      "actual_nec": 50.0,
+      "reconstruction_max_abs": 0.0
+    },
+    {
+      "setting": "jpeg_compression_3",
+      "head": "80",
+      "examples": 10000,
+      "accuracy": 0.4142,
+      "actual_nec": 80.0,
+      "reconstruction_max_abs": 0.0
+    },
+    {
+      "setting": "jpeg_compression_3",
+      "head": "120",
+      "examples": 10000,
+      "accuracy": 0.4175,
+      "actual_nec": 120.0,
+      "reconstruction_max_abs": 0.0
+    },
+    {
+      "setting": "jpeg_compression_3",
+      "head": "200",
+      "examples": 10000,
+      "accuracy": 0.418,
+      "actual_nec": 200.0,
+      "reconstruction_max_abs": 0.0
+    },
+    {
+      "setting": "jpeg_compression_3",
+      "head": "dense",
+      "examples": 10000,
+      "accuracy": 0.4234,
+      "actual_nec": 891.85,
+      "reconstruction_max_abs": 0.0
+    },
+    {
+      "setting": "jpeg_compression_5",
+      "head": "best_val",
+      "examples": 10000,
+      "accuracy": 0.35,
+      "actual_nec": 150.31,
+      "reconstruction_max_abs": 0.0
+    },
+    {
+      "setting": "jpeg_compression_5",
+      "head": "1",
+      "examples": 10000,
+      "accuracy": 0.1222,
+      "actual_nec": 1.0,
+      "reconstruction_max_abs": 0.0
+    },
+    {
+      "setting": "jpeg_compression_5",
+      "head": "3",
+      "examples": 10000,
+      "accuracy": 0.1719,
+      "actual_nec": 3.0,
+      "reconstruction_max_abs": 0.0
+    },
+    {
+      "setting": "jpeg_compression_5",
+      "head": "5",
+      "examples": 10000,
+      "accuracy": 0.2127,
+      "actual_nec": 5.0,
+      "reconstruction_max_abs": 0.0
+    },
+    {
+      "setting": "jpeg_compression_5",
+      "head": "10",
+      "examples": 10000,
+      "accuracy": 0.2506,
+      "actual_nec": 10.0,
+      "reconstruction_max_abs": 0.0
+    },
+    {
+      "setting": "jpeg_compression_5",
+      "head": "15",
+      "examples": 10000,
+      "accuracy": 0.2746,
+      "actual_nec": 15.0,
+      "reconstruction_max_abs": 0.0
+    },
+    {
+      "setting": "jpeg_compression_5",
+      "head": "20",
+      "examples": 10000,
+      "accuracy": 0.2911,
+      "actual_nec": 20.0,
+      "reconstruction_max_abs": 0.0
+    },
+    {
+      "setting": "jpeg_compression_5",
+      "head": "30",
+      "examples": 10000,
+      "accuracy": 0.3101,
+      "actual_nec": 30.0,
+      "reconstruction_max_abs": 0.0
+    },
+    {
+      "setting": "jpeg_compression_5",
+      "head": "50",
+      "examples": 10000,
+      "accuracy": 0.3302,
+      "actual_nec": 50.0,
+      "reconstruction_max_abs": 0.0
+    },
+    {
+      "setting": "jpeg_compression_5",
+      "head": "80",
+      "examples": 10000,
+      "accuracy": 0.3459,
+      "actual_nec": 80.0,
+      "reconstruction_max_abs": 0.0
+    },
+    {
+      "setting": "jpeg_compression_5",
+      "head": "120",
+      "examples": 10000,
+      "accuracy": 0.3487,
+      "actual_nec": 120.0,
+      "reconstruction_max_abs": 0.0
+    },
+    {
+      "setting": "jpeg_compression_5",
+      "head": "200",
+      "examples": 10000,
+      "accuracy": 0.3491,
+      "actual_nec": 200.0,
+      "reconstruction_max_abs": 0.0
+    },
+    {
+      "setting": "jpeg_compression_5",
+      "head": "dense",
+      "examples": 10000,
+      "accuracy": 0.3491,
+      "actual_nec": 891.85,
+      "reconstruction_max_abs": 0.0
+    }
+  ],
+  "GPU_used": false,
+  "verified_utc": "2026-10-13T08:49:58.522856+00:00"
+}

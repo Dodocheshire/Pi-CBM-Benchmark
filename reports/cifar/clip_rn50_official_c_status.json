@@ -1,0 +1,106 @@
+{
+  "state": "diagnosis_completed_precision_gate_failed",
+  "dataset": "cifar10",
+  "backbone": "clip_rn50",
+  "setting": "contrast_1",
+  "images": 10000,
+  "batch": 16,
+  "gate": 0.001,
+  "gate_changed": false,
+  "full_reproduction": {
+    "on": {
+      "rows": 10000,
+      "batch": 16,
+      "q0_vs_cached": {
+        "relative_l2": 0.0,
+        "max_abs": 0.0,
+        "mean_cosine": 1.0,
+        "min_cosine": 0.9999999999999998
+      },
+      "q1_vs_cached": {
+        "relative_l2": 0.001005715439995409,
+        "max_abs": 0.0017213821411132812,
+        "mean_cosine": 0.9999995190981359,
+        "min_cosine": 0.9999975956797719
+      },
+      "q1_vs_q0": {
+        "relative_l2": 0.001005715439995409,
+        "max_abs": 0.0017213821411132812,
+        "mean_cosine": 0.9999995190981359,
+        "min_cosine": 0.9999975956797719
+      },
+      "pixel_max": 5.960464477539063e-08,
+      "verdict": "red",
+      "seconds": 24.694509267807007,
+      "peak_reserved_bytes": 461373440,
+      "source_receipt": "/home/pengcheng/Pi-CBM-Benchmark/artifacts/audit/clip_contrast1_precision_repro/rows10000_offset0_tf32on_repro.json"
+    },
+    "off": {
+      "rows": 10000,
+      "batch": 16,
+      "q0_vs_cached": {
+        "relative_l2": 0.0017486338302187044,
+        "max_abs": 0.004675149917602539,
+        "mean_cosine": 0.9999985354227523,
+        "min_cosine": 0.9999831384651348
+      },
+      "q1_vs_cached": {
+        "relative_l2": 0.0017486378890452109,
+        "max_abs": 0.004675745964050293,
+        "mean_cosine": 0.9999985354169516,
+        "min_cosine": 0.9999831460895012
+      },
+      "q1_vs_q0": {
+        "relative_l2": 1.7778579229608505e-06,
+        "max_abs": 3.2186508178710938e-06,
+        "mean_cosine": 0.9999999999984825,
+        "min_cosine": 0.9999999999901795
+      },
+      "pixel_max": 5.960464477539063e-08,
+      "verdict": "red",
+      "seconds": 30.3852801322937,
+      "peak_reserved_bytes": 694157312,
+      "source_receipt": "/home/pengcheng/Pi-CBM-Benchmark/artifacts/audit/clip_contrast1_precision_repro/rows10000_offset0_tf32off_repro.json"
+    }
+  },
+  "minimum_red_fixture": "/home/pengcheng/Pi-CBM-Benchmark/artifacts/audit/clip_contrast1_precision_repro/rows16_offset0_repro.json",
+  "minimum_command": "/home/pengcheng/miniconda3/envs/pi-cbm/bin/python -u /home/pengcheng/Pi-CBM-Benchmark/artifacts/audit/clip_contrast1_precision_repro/debug_reproducer.py --rows 16 --repeat 2 --tf32 on",
+  "supported_cause": "cuDNN TF32 amplifies float32 q0*255/core-div255 rounding; true fp32 q1-vs-q0 is much smaller, but both true-fp32 outputs mismatch the original TF32 cache beyond the unchanged gate",
+  "hypotheses_tested": [
+    "disable cudnn.allow_tf32 only"
+  ],
+  "additional_hypotheses_tested": false,
+  "existing_cache_unchanged": true,
+  "existing_cache_sha256": "159bc529befb464d5558ac0d28ab0d4c8e6d77769892ac26d21a70609acd8e5b",
+  "core_changed": false,
+  "training_changed": false,
+  "producer_changed": false,
+  "producer_sha256": "6595dee46ddf9555d8820b792050936e87bcef5157ef7814dc345a3aef109486",
+  "partial_completed_settings": {
+    "mean": [
+      "gaussian_blur_1",
+      "gaussian_blur_3",
+      "gaussian_blur_5",
+      "gaussian_noise_1",
+      "gaussian_noise_3",
+      "gaussian_noise_5"
+    ],
+    "noise": [
+      "gaussian_blur_1",
+      "gaussian_blur_3",
+      "gaussian_blur_5",
+      "gaussian_noise_1",
+      "gaussian_noise_3",
+      "gaussian_noise_5"
+    ]
+  },
+  "partial_prediction_files": 12,
+  "rows_per_partial_prediction": 10000,
+  "official_full_completion": false,
+  "publish_as_full_CIFAR_C": false,
+  "diagnostic_GPU_processes_finished": true,
+  "verified_utc": "2026-10-13T08:41:37.144599+00:00",
+  "stable_debug_script": "/home/pengcheng/Pi-CBM-Benchmark/artifacts/audit/clip_contrast1_precision_repro/debug_reproducer.py",
+  "stable_debug_script_sha256": "d439b823eea015add5907a6990d2b8fdb75caac26bb2842582bcf39cc08b9545",
+  "resolution": "Partial CLIP RN50 CIFAR-C evaluation retained; excluded from full 12-setting comparison."
+}
