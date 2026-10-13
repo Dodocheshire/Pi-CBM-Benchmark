@@ -1,0 +1,103 @@
+{
+  "scope": "full feature-cache input comparison before fitting wide PiNI; no performance inference",
+  "producer": "benchmark/pini_cifar_wide.py",
+  "producer_sha256": "04137512ec8250843c948422eef4d07b8c0b5104267f94fe6e0bb9c39984a45e",
+  "records": [
+    {
+      "dataset": "cifar10",
+      "backbone": "resnet50",
+      "view": "original",
+      "receipt": "artifacts/pini_matched/resnet50/cifar10/cache/original_FEATURE_COMPLETE.json",
+      "receipt_sha256": "38d89f2d68e40a56ee45b668c7ec94e165e8a52d43dcc6312fea48d0c9aab056",
+      "shape": [
+        60000,
+        2048,
+        1,
+        1
+      ],
+      "relative_l2": 0.0003016454601079059,
+      "max_abs": 0.0039038658142089844,
+      "backbone_sha256": "d7d14ee7c34f78ae386d2f395be284d10cb9067fb657f34a374677e1a29fc355",
+      "shared_reference_sha256": "1ad77e88f6bbb0eadb6a4868558802f50a750a659480b8c3db9ba55201dd8f54",
+      "reference": "existing shared LF q0 fullcache",
+      "feature_sha256": "7ee3817be3084928138a7feb19466a1157ea967ae9c0d15a9dd7842682c240c4",
+      "pixel_source_sha256": "1ad74cc41218eb7c459bd7cd6784e0cec566b57bf68b085cf8cae589e22af021",
+      "batch": 128,
+      "seconds": 124.72780776023865,
+      "exact_feature_identity_claimed": false,
+      "approved_relative_l2_gate": 0.001
+    },
+    {
+      "dataset": "cifar10",
+      "backbone": "resnet50",
+      "view": "changed",
+      "receipt": "artifacts/pini_matched/resnet50/cifar10/cache/changed_FEATURE_COMPLETE.json",
+      "receipt_sha256": "131f90da2f43e3dfc527ca02cf7ae6961468e27b58c056ffc91ff8236c2285f2",
+      "shape": [
+        60000,
+        2048,
+        1,
+        1
+      ],
+      "relative_l2": 0.00036493818572812356,
+      "max_abs": 0.003978729248046875,
+      "backbone_sha256": "d7d14ee7c34f78ae386d2f395be284d10cb9067fb657f34a374677e1a29fc355",
+      "shared_reference_sha256": "410e3dce060bb4ba0d814b5611a2882f24d6bbd0f0f2113632c7b8e92444ac3c",
+      "reference": "existing shared LF q0 fullcache",
+      "feature_sha256": "6da32ea19d604cd27483aeb2025e4f6cfa8b096bf001ab8481c8b4faaf67dc26",
+      "pixel_source_sha256": "7384f21247a8638ead2cf799ec94e1d9f33e1c1cef69538e155b62f7ed17a124",
+      "batch": 128,
+      "seconds": 247.1671643257141,
+      "exact_feature_identity_claimed": false,
+      "approved_relative_l2_gate": 0.001
+    },
+    {
+      "dataset": "cifar10",
+      "backbone": "clip_rn50",
+      "view": "original",
+      "receipt": "artifacts/pini_matched/clip_rn50/cifar10/cache/original_FEATURE_COMPLETE.json",
+      "receipt_sha256": "fbf3ebcad32e97180ff6a4694445581ba1ac8a22d4b7080f8c9dcf9017dd7687",
+      "shape": [
+        60000,
+        1024,
+        1,
+        1
+      ],
+      "relative_l2": 0.0009897527854423075,
+      "max_abs": 0.0020914077758789062,
+      "backbone_sha256": "35abc9c6f5ea5080708d06a4e3965144a73dde3b7a25b5ee790e4023f160f57e",
+      "shared_reference_sha256": "ff5cd46c9738f4363f01b08236850ca13f006823a29cf9b78eb8942f31c51910",
+      "reference": "existing shared LF q0 fullcache",
+      "feature_sha256": "c16327e490536bfde55158a49183cb8d2929c8b1c485e757f24bb59f79bb39dc",
+      "pixel_source_sha256": "1ad74cc41218eb7c459bd7cd6784e0cec566b57bf68b085cf8cae589e22af021",
+      "batch": 128,
+      "seconds": 100.63885498046875,
+      "exact_feature_identity_claimed": false,
+      "approved_relative_l2_gate": 0.001
+    },
+    {
+      "dataset": "cifar10",
+      "backbone": "clip_rn50",
+      "view": "changed",
+      "receipt": "artifacts/pini_matched/clip_rn50/cifar10/cache/changed_FEATURE_COMPLETE.json",
+      "receipt_sha256": "30b80d239cf1b636cc8844aaa9860d204d75bb2c89f0816a1f2f80128178b29d",
+      "shape": [
+        60000,
+        1024,
+        1,
+        1
+      ],
+      "relative_l2": 0.0009311927054896704,
+      "max_abs": 0.002377152442932129,
+      "backbone_sha256": "35abc9c6f5ea5080708d06a4e3965144a73dde3b7a25b5ee790e4023f160f57e",
+      "shared_reference_sha256": "6c83f63b2e47d0f19709f6fa9c66ba41d34a0a14605cb2267221e16d62fd86a0",
+      "reference": "existing shared LF q0 fullcache",
+      "feature_sha256": "3abe9cb96b745cb1627a5fd8251ab1214a9dcf2e0682c7a4b265e57cfbb7d811",
+      "pixel_source_sha256": "7384f21247a8638ead2cf799ec94e1d9f33e1c1cef69538e155b62f7ed17a124",
+      "batch": 128,
+      "seconds": 97.2592179775238,
+      "exact_feature_identity_claimed": false,
+      "approved_relative_l2_gate": 0.001
+    }
+  ]
+}
