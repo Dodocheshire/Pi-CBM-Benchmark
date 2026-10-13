@@ -1,0 +1,170 @@
+[
+  {
+    "backbone": "rn50_imagenet",
+    "method": "lfcbm",
+    "source": "artifacts/matched/lf/cifar10/rn50_imagenet/gaussian_noise_augmented/seed42/lfcbm_test_original.npz",
+    "sha256": "e082c5e716a6a7b8070260bb93e2c003cf85336a1433eac9bc1c8890b0ba876d",
+    "classification": {
+      "accuracy": 0.8885,
+      "nll": 0.32509945731525414,
+      "ece_15_bins": 0.010308374226582663,
+      "examples": 10000,
+      "correct": 8885,
+      "balanced_accuracy": 0.8885,
+      "worst_observed_class_accuracy": 0.808,
+      "class_counts": [
+        1000,
+        1000,
+        1000,
+        1000,
+        1000,
+        1000,
+        1000,
+        1000,
+        1000,
+        1000
+      ],
+      "per_class_accuracy": [
+        0.921,
+        0.933,
+        0.842,
+        0.808,
+        0.874,
+        0.85,
+        0.896,
+        0.895,
+        0.938,
+        0.928
+      ]
+    },
+    "test_rows": 10000,
+    "single_draw": true,
+    "native_concept_annotations": false
+  },
+  {
+    "backbone": "rn50_imagenet",
+    "method": "lfpi_global",
+    "source": "artifacts/matched/lf/cifar10/rn50_imagenet/gaussian_noise_augmented/seed42/single_draw/lfpi_global_test_original.npz",
+    "sha256": "6a52d3b053d33b951d9235b72791cd2c05b11bea08429704c74b32083f785500",
+    "classification": {
+      "accuracy": 0.9129,
+      "nll": 0.25520282994116017,
+      "ece_15_bins": 0.006207345811446184,
+      "examples": 10000,
+      "correct": 9129,
+      "balanced_accuracy": 0.9128999999999999,
+      "worst_observed_class_accuracy": 0.83,
+      "class_counts": [
+        1000,
+        1000,
+        1000,
+        1000,
+        1000,
+        1000,
+        1000,
+        1000,
+        1000,
+        1000
+      ],
+      "per_class_accuracy": [
+        0.93,
+        0.95,
+        0.879,
+        0.83,
+        0.906,
+        0.885,
+        0.939,
+        0.92,
+        0.951,
+        0.939
+      ]
+    },
+    "test_rows": 10000,
+    "single_draw": true,
+    "native_concept_annotations": false
+  },
+  {
+    "backbone": "clip_RN50",
+    "method": "lfcbm",
+    "source": "artifacts/matched/lf/cifar10/clip_RN50/gaussian_noise_augmented/seed42/lfcbm_test_original.npz",
+    "sha256": "1d0a4875305a78624caa98e616746819b3d1310254e9fbdd18fc311ef7f5a6ed",
+    "classification": {
+      "accuracy": 0.8291,
+      "nll": 0.4840418733700657,
+      "ece_15_bins": 0.013165161339061673,
+      "examples": 10000,
+      "correct": 8291,
+      "balanced_accuracy": 0.8291000000000001,
+      "worst_observed_class_accuracy": 0.709,
+      "class_counts": [
+        1000,
+        1000,
+        1000,
+        1000,
+        1000,
+        1000,
+        1000,
+        1000,
+        1000,
+        1000
+      ],
+      "per_class_accuracy": [
+        0.882,
+        0.927,
+        0.75,
+        0.709,
+        0.786,
+        0.746,
+        0.836,
+        0.845,
+        0.903,
+        0.907
+      ]
+    },
+    "test_rows": 10000,
+    "single_draw": true,
+    "native_concept_annotations": false
+  },
+  {
+    "backbone": "clip_RN50",
+    "method": "lfpi_global",
+    "source": "artifacts/matched/lf/cifar10/clip_RN50/gaussian_noise_augmented/seed42/single_draw/lfpi_global_test_original.npz",
+    "sha256": "a3adfa27a8a161568ffe9f674d52eb5730368dfebe3d0d8c9f60850e6b49212a",
+    "classification": {
+      "accuracy": 0.8535,
+      "nll": 0.4226156466948786,
+      "ece_15_bins": 0.008749030615554746,
+      "examples": 10000,
+      "correct": 8535,
+      "balanced_accuracy": 0.8535,
+      "worst_observed_class_accuracy": 0.739,
+      "class_counts": [
+        1000,
+        1000,
+        1000,
+        1000,
+        1000,
+        1000,
+        1000,
+        1000,
+        1000,
+        1000
+      ],
+      "per_class_accuracy": [
+        0.901,
+        0.942,
+        0.788,
+        0.739,
+        0.817,
+        0.774,
+        0.858,
+        0.872,
+        0.918,
+        0.926
+      ]
+    },
+    "test_rows": 10000,
+    "single_draw": true,
+    "native_concept_annotations": false
+  }
+]

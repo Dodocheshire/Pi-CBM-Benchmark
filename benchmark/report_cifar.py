@@ -13,7 +13,7 @@ import numpy as np
 
 from .lf_cifar import ROOT,CORRUPTIONS
 from .metrics import classification_metrics,teacher_fidelity
-from .report_utils import write_metrics
+from .report_utils import write_metrics,backbone_label
 
 COLORS={'lfcbm':'#2878B5','lfpi_global':'#D84A49','pini_mean':'#2CA02C','pini_noise':'#9467BD','noncbm':'#FF8C00'}
 METHODS={'lfcbm':'LF-CBM','lfpi_global':'LF-Pi','pini_mean':'PiNI 均值','pini_noise':'PiNI 噪声','noncbm':'非 CBM'}
@@ -207,7 +207,7 @@ def run(out,pini_root=None):
                     labels.append(f'非 CBM\n{len(reference)} 个头种子');palette.append(COLORS['noncbm']);plotted.append(float(np.mean(reference)))
                 bars=ax.bar(labels,plotted,color=palette);ax.bar_label(bars,fmt='%.3f',padding=3)
                 if metric_index==0 and reference:ax.errorbar(len(labels)-1,float(np.mean(reference)),yerr=float(np.std(reference,ddof=1)) if len(reference)>1 else 0,color='black',capsize=3)
-                ax.set_title(dataset.upper()+'｜'+bone+'｜'+protocol+'\n'+title);ax.set_ylabel('指标值');ax.tick_params(axis='x',rotation=20);ax.set_ylim(0,1)
+                ax.set_title(dataset.upper()+'｜'+backbone_label(bone)+'\n'+protocol+'\n'+title,fontsize=10);ax.set_ylabel('指标值');ax.tick_params(axis='x',rotation=20);ax.set_ylim(0,1)
         fig.suptitle('训练种子 42｜单次推理\n跨骨干按训练协议比较共同概念交集；CIFAR 无真实逐图概念标注')
         fig.savefig(out/'clean.png',dpi=170);plt.close(fig)
     if corruption_reports:
@@ -236,7 +236,7 @@ def run(out,pini_root=None):
                     if points:
                         ax.errorbar([p[0] for p in points],[p[1] for p in points],yerr=[p[2] for p in points],
                                     marker='s',capsize=3,color=COLORS['noncbm'],label=f'非 CBM（{len(controls_here)} 个头种子）')
-                ax.set_title(dataset.upper()+'｜'+bone+'｜'+protocol+'\n'+titles[kind]);ax.set_xlabel('官方 CIFAR-C 腐蚀强度');ax.set_ylabel('准确率');ax.set_ylim(0,1);ax.set_xticks([1,3,5])
+                ax.set_title(dataset.upper()+'｜'+backbone_label(bone)+'\n'+protocol+'\n'+titles[kind],fontsize=10);ax.set_xlabel('官方 CIFAR-C 腐蚀强度');ax.set_ylabel('准确率');ax.set_ylim(0,1);ax.set_xticks([1,3,5])
                 if ax.lines:ax.legend()
         fig.suptitle('跨骨干｜官方原生 32×32 CIFAR-C 四类腐蚀子集｜每设置全部 10000 测试图｜单次推理')
         fig.savefig(out/'corruptions.png',dpi=170);plt.close(fig)
