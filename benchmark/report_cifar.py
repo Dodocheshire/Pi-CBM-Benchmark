@@ -1,6 +1,7 @@
 """Independent CIFAR reports: classification and continuous CLIP fidelity, no native AP."""
 import argparse
 import csv
+import hashlib
 import json
 from pathlib import Path
 
@@ -16,6 +17,37 @@ from .report_utils import write_metrics
 
 COLORS={'lfcbm':'#2878B5','lfpi_global':'#D84A49','pini_mean':'#2CA02C','pini_noise':'#9467BD','noncbm':'#FF8C00'}
 METHODS={'lfcbm':'LF-CBM','lfpi_global':'LF-Pi','pini_mean':'PiNI 均值','pini_noise':'PiNI 噪声','noncbm':'非 CBM'}
+
+
+def collect_pini_corruptions(dataset):
+    directory=ROOT/'artifacts/pini_cifar_c'/dataset/'rn18_imagenet/seed42'
+    marker=directory/'CIFAR_C_COMPLETE.json'
+    if not marker.exists():return None
+    completion=json.loads(marker.read_text())
+    manifest=directory/'input_manifest.json'
+    assert hashlib.sha256(manifest.read_bytes()).hexdigest()==completion['source_manifest_sha256']
+    assert completion['settings']==12 and completion['rows_per_setting']==10000
+    assert completion['arms']==2 and completion['draws']==1 and not completion['training_performed']
+    report=json.loads((directory/'results.json').read_text())
+    assert report['models_fixed'] and not report['head_retraining']
+    assert report['inference_draws']==1 and report['inference_seed']==4242
+    assert not report['native_concept_annotations']
+    settings={f'{kind}_{severity}' for kind in CORRUPTIONS for severity in [1,3,5]}
+    assert set(report['settings'])==settings
+    with np.load(ROOT/'artifacts/common'/dataset/'rn18_imagenet/test_original.npz') as reference:
+        ids,labels=reference['ids'],reference['labels']
+    for setting,arms in report['settings'].items():
+        assert set(arms)=={'mean','noise'}
+        region=json.loads((directory/'regions'/setting/'COMPLETE.json').read_text())
+        assert region['images']==10000
+        for arm,metrics in arms.items():
+            assert metrics['all_test_rows']==10000 and metrics['native_concept_mAP'] is None
+            assert metrics['inference_draws']==1 and metrics['inference_seed']==4242
+            with np.load(directory/'exports'/arm/f'test_{setting}.npz') as values:
+                assert np.array_equal(values['ids'],ids) and np.array_equal(values['labels'],labels)
+                assert not values['known'].any() and np.isfinite(values['concept_logits']).all()
+                assert classification_metrics(values['logits'],labels)==metrics['classification']
+    return {'source_report':str(directory/'results.json'),'metrics':report['settings']}
 
 
 def collect(run_dir,dataset,teacher_dir,protocol):
@@ -97,6 +129,11 @@ def run(out,pini_root=None):
                     if 'feature_provenance' in report:
                         report['feature_provenance']={k:v for k,v in report['feature_provenance'].items() if k!='splits'}
                     corruption_reports[key]=report
+        pini_corruptions=collect_pini_corruptions(dataset)
+        if pini_corruptions is not None:
+            key=dataset+'/rn18_imagenet/gaussian_noise_s1_augmented'
+            if key in corruption_reports:
+                corruption_reports[key]['pini_corruptions']=pini_corruptions
     for dataset in ['cifar10','cifar100']:
         for paired in [False,True]:
             group=[r for r in rows if r['dataset']==dataset and (len(r['train_views'])>1)==paired]
@@ -180,6 +217,11 @@ def run(out,pini_root=None):
                     points=[(severity,report['metrics'][f'{method}/{kind}_{severity}']['classification']['accuracy'])
                         for severity in [1,3,5] if f'{method}/{kind}_{severity}' in report.get('metrics',{})]
                     if points:ax.plot(*zip(*points),marker='o',label=METHODS[method],color=COLORS[method])
+                if 'pini_corruptions' in report:
+                    for arm in ['mean','noise']:
+                        points=[(severity,report['pini_corruptions']['metrics'][f'{kind}_{severity}'][arm]['classification']['accuracy']) for severity in [1,3,5]]
+                        method='pini_'+arm
+                        ax.plot(*zip(*points),marker='o',label=METHODS[method],color=COLORS[method])
                 controls_here=[c for c in shifted_controls if c['dataset']==dataset and c['backbone']==bone
                                and (len(c['train_views'])>1)==(len(report['training_protocol'])>1)]
                 if controls_here:
@@ -200,4 +242,4 @@ def run(out,pini_root=None):
 
 if __name__=='__main__':
     p=argparse.ArgumentParser(description=__doc__);p.add_argument('--out',default=str(ROOT/'reports/cifar'))
-    p.add_argument('--pini-root');a=p.parse_args();run(a.out,a.pini_root)
+    p.add_argument('--pini-root',default=str(ROOT/'artifacts/pini_matched'));a=p.parse_args();run(a.out,a.pini_root)
