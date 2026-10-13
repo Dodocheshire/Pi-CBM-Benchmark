@@ -2,7 +2,7 @@
 
 所有图表按骨干、训练视图和训练种子分组。分类比较使用相同测试图像；概念比较使用该组 LF-CBM 保留的共同概念列。
 
-LF-CBM／LF-Pi 使用冻结 CLIP 概念相似度监督；PiNI 使用原方法的属性标签监督。CUB 评测使用逐图人工属性，已知标注按 certainty ≥ 3 筛选。
+LF-CBM／LF-Pi 使用冻结 CLIP 概念相似度监督。CUB 的 PiNI 使用 Koh 方案的 112 个物种级属性训练；逐图人工属性用于评测，已知标注按 certainty ≥ 3 筛选。
 
 本轮 Waterbirds 为完整 CUB 鸟类按陆鸟／水鸟分组、配合 Places 换背景的二分类任务。
 

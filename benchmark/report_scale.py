@@ -42,7 +42,7 @@ def main():
         title=f"{dataset} · ImageNet ResNet18 · 保留概念 {report['selected_concepts']}/{report['bank_concepts']}"
         fig.suptitle(title);name=f'scale_{dataset}.png';fig.savefig(out/name,dpi=170);plt.close(fig)
         lines += [f'## {dataset} · {manifest["classes"]} 类','',
-                  f"训练／验证／测试：{manifest['split_counts']['train']}／{manifest['split_counts']['val']}／{manifest['split_counts']['test']} 张；训练种子 42，单次噪声推理。",'',
+                  f"投影与分类头的训练／验证／测试：{manifest['split_counts']['train']}／{manifest['split_counts']['val']}／{manifest['split_counts']['test']} 张；骨干为 ImageNet 监督预训练 ResNet18；训练种子 42，单次噪声推理。",'',
                   f'![分类与概念教师一致性]({name})','']
         rows.append({'dataset':dataset,'backbone':'resnet18','split_counts':manifest['split_counts'],
                      'retained_concepts':report['selected_concepts'],'candidate_concepts':report['bank_concepts'],
