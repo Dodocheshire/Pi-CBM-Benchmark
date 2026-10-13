@@ -1,0 +1,430 @@
+{
+  "records": [
+    {
+      "report": "artifacts/heads/cifar100/clip_RN50/original/seed42/lfcbm/report.json",
+      "heads_sha256": "0efb71f0321b9c6d7368ecd61c0ea2c3bf26ec66ad95f131a8c218c7aaf06823",
+      "verified_evaluations": 13,
+      "actual_nec_from_weights": true,
+      "classification_from_saved_logits": true,
+      "validation_only_selection": true
+    },
+    {
+      "report": "artifacts/heads/cifar100/clip_RN50/original/seed42/lfpi_global_1draw/report.json",
+      "heads_sha256": "ad3735c2aafe9f688eec891bcf24c622f3129a61eaeedef3f3716f6a8f869e46",
+      "verified_evaluations": 13,
+      "actual_nec_from_weights": true,
+      "classification_from_saved_logits": true,
+      "validation_only_selection": true
+    },
+    {
+      "report": "artifacts/heads/cifar100/resnet18/corruption_augmented/seed42/lfcbm/report.json",
+      "heads_sha256": "e783de43159832e2991a40dd72de3cd1d5574ac93a595e28fe7281bb46d908b7",
+      "verified_evaluations": 13,
+      "actual_nec_from_weights": true,
+      "classification_from_saved_logits": true,
+      "validation_only_selection": true
+    },
+    {
+      "report": "artifacts/heads/cifar100/resnet18/corruption_augmented/seed42/lfpi_global_1draw/report.json",
+      "heads_sha256": "da0bb115b6ae88ab1dde4aa282492f47484a6d00defa04041a8956b397df6ded",
+      "verified_evaluations": 13,
+      "actual_nec_from_weights": true,
+      "classification_from_saved_logits": true,
+      "validation_only_selection": true
+    },
+    {
+      "report": "artifacts/heads/cifar100/resnet18/original/seed42/lfcbm/report.json",
+      "heads_sha256": "53fc447bf018c6c5d4275f7436cc72b5c35e1681b34c6383fee616a12e7a669f",
+      "verified_evaluations": 13,
+      "actual_nec_from_weights": true,
+      "classification_from_saved_logits": true,
+      "validation_only_selection": true
+    },
+    {
+      "report": "artifacts/heads/cifar100/resnet18/original/seed42/lfpi_global_1draw/report.json",
+      "heads_sha256": "ecdbd2f916e212dad114e13a298e2b4e6cb2acbfe074177df1eb5a0bf54d5f5d",
+      "verified_evaluations": 13,
+      "actual_nec_from_weights": true,
+      "classification_from_saved_logits": true,
+      "validation_only_selection": true
+    },
+    {
+      "report": "artifacts/heads/cifar100/resnet50/original/seed42/lfcbm/report.json",
+      "heads_sha256": "550b28af5f01dc9f6d99bfe94a57923974d4af8ac822dbd4bcb54754bcf59b0e",
+      "verified_evaluations": 13,
+      "actual_nec_from_weights": true,
+      "classification_from_saved_logits": true,
+      "validation_only_selection": true
+    },
+    {
+      "report": "artifacts/heads/cifar100/resnet50/original/seed42/lfpi_global_1draw/report.json",
+      "heads_sha256": "bcacd3fc54192061cab75009e2778e471296a533ad1289d439db24532e12a781",
+      "verified_evaluations": 13,
+      "actual_nec_from_weights": true,
+      "classification_from_saved_logits": true,
+      "validation_only_selection": true
+    },
+    {
+      "report": "artifacts/heads/cub/clip_RN50/original/seed43/lfcbm/report.json",
+      "heads_sha256": "644d422657ac09342d2c8af3883f77d3ca68f7b2fb43a8356b2b9ad6382c6a97",
+      "verified_evaluations": 24,
+      "actual_nec_from_weights": true,
+      "classification_from_saved_logits": true,
+      "validation_only_selection": true
+    },
+    {
+      "report": "artifacts/heads/cub/clip_RN50/original/seed43/lfpi_global_1draw/report.json",
+      "heads_sha256": "38a00c5bdaa27ae1c88f430108c8e1251f5e5a449a03a8b567076076ac30b308",
+      "verified_evaluations": 24,
+      "actual_nec_from_weights": true,
+      "classification_from_saved_logits": true,
+      "validation_only_selection": true
+    },
+    {
+      "report": "artifacts/heads/cub/clip_RN50/original/seed44/lfcbm/report.json",
+      "heads_sha256": "bbf83ec112f0bfee9c92f1b5f9336e4bf550b8caf6b921fcb502fa3679bf1438",
+      "verified_evaluations": 24,
+      "actual_nec_from_weights": true,
+      "classification_from_saved_logits": true,
+      "validation_only_selection": true
+    },
+    {
+      "report": "artifacts/heads/cub/clip_RN50/original/seed44/lfpi_global_1draw/report.json",
+      "heads_sha256": "1eae960414bffd9191562763ab6cb42b5725c7f84012c9fc945c1337043dd99e",
+      "verified_evaluations": 24,
+      "actual_nec_from_weights": true,
+      "classification_from_saved_logits": true,
+      "validation_only_selection": true
+    },
+    {
+      "report": "artifacts/heads/cub/clip_RN50/paired/seed43/lfcbm/report.json",
+      "heads_sha256": "0d0cc2fe61a1d53204f94c338cb2eb618cf9806d281c276f64263aabf1165bc1",
+      "verified_evaluations": 24,
+      "actual_nec_from_weights": true,
+      "classification_from_saved_logits": true,
+      "validation_only_selection": true
+    },
+    {
+      "report": "artifacts/heads/cub/clip_RN50/paired/seed43/lfpi_global_1draw/report.json",
+      "heads_sha256": "6c489209cabf9e7821cfc60cbc33bb3dc47cafd1aafb1ba02f4c6099879fcd8e",
+      "verified_evaluations": 24,
+      "actual_nec_from_weights": true,
+      "classification_from_saved_logits": true,
+      "validation_only_selection": true
+    },
+    {
+      "report": "artifacts/heads/cub/clip_RN50/paired/seed44/lfcbm/report.json",
+      "heads_sha256": "0dc6558791859ec5b557c96a619ebb1e038784d390fe2d8f591707ff1f814813",
+      "verified_evaluations": 24,
+      "actual_nec_from_weights": true,
+      "classification_from_saved_logits": true,
+      "validation_only_selection": true
+    },
+    {
+      "report": "artifacts/heads/cub/clip_RN50/paired/seed44/lfpi_global_1draw/report.json",
+      "heads_sha256": "dfd5ca11897f65b723bdf6d9a66095a0167ecfc07615545f25fb10c398590645",
+      "verified_evaluations": 24,
+      "actual_nec_from_weights": true,
+      "classification_from_saved_logits": true,
+      "validation_only_selection": true
+    },
+    {
+      "report": "artifacts/heads/cub/resnet18/original/seed44/lfcbm/report.json",
+      "heads_sha256": "3e193829048dd690f77e4c6efcadb8d4b0aa3b28309054313c6ffd29cbf5b63f",
+      "verified_evaluations": 22,
+      "actual_nec_from_weights": true,
+      "classification_from_saved_logits": true,
+      "validation_only_selection": true
+    },
+    {
+      "report": "artifacts/heads/cub/resnet18/original/seed44/lfpi_global_1draw/report.json",
+      "heads_sha256": "9487f9864a38b913fac7ee2db77e922f5c77d1d15762d624b719e81f63546f63",
+      "verified_evaluations": 22,
+      "actual_nec_from_weights": true,
+      "classification_from_saved_logits": true,
+      "validation_only_selection": true
+    },
+    {
+      "report": "artifacts/heads/cub/resnet50/original/seed43/lfcbm/report.json",
+      "heads_sha256": "19135ed822b19253276d4a67e4d2be9558378bbbde23121cd39aaac5d23c973b",
+      "verified_evaluations": 24,
+      "actual_nec_from_weights": true,
+      "classification_from_saved_logits": true,
+      "validation_only_selection": true
+    },
+    {
+      "report": "artifacts/heads/cub/resnet50/original/seed43/lfpi_global_1draw/report.json",
+      "heads_sha256": "c98a8ffb3fe05abc016ae8fb53c8402bd71215e75f1eb345ad91f720b5f5e757",
+      "verified_evaluations": 24,
+      "actual_nec_from_weights": true,
+      "classification_from_saved_logits": true,
+      "validation_only_selection": true
+    },
+    {
+      "report": "artifacts/heads/cub/resnet50/original/seed44/lfcbm/report.json",
+      "heads_sha256": "f8b07e59d516657971a05391e8da673a9c6e94030902d83a7dba58bdbef931c2",
+      "verified_evaluations": 24,
+      "actual_nec_from_weights": true,
+      "classification_from_saved_logits": true,
+      "validation_only_selection": true
+    },
+    {
+      "report": "artifacts/heads/cub/resnet50/original/seed44/lfpi_global_1draw/report.json",
+      "heads_sha256": "e7c3460d029528c8c649b0b7a0bef3321b8bf0764dbe93daba621c9a916d0668",
+      "verified_evaluations": 24,
+      "actual_nec_from_weights": true,
+      "classification_from_saved_logits": true,
+      "validation_only_selection": true
+    },
+    {
+      "report": "artifacts/heads/cub/resnet50/paired/seed43/lfcbm/report.json",
+      "heads_sha256": "a7ae935540fccce35e9e35430193dc355892ba4af1d9e4dae384b2aa0e052a14",
+      "verified_evaluations": 22,
+      "actual_nec_from_weights": true,
+      "classification_from_saved_logits": true,
+      "validation_only_selection": true
+    },
+    {
+      "report": "artifacts/heads/cub/resnet50/paired/seed44/lfcbm/report.json",
+      "heads_sha256": "ded1fcf9dd65265d99ca82da218e6a3855c4bb350ebbf010712a097cbfde6922",
+      "verified_evaluations": 22,
+      "actual_nec_from_weights": true,
+      "classification_from_saved_logits": true,
+      "validation_only_selection": true
+    },
+    {
+      "report": "artifacts/heads/cub/resnet50/paired/seed44/lfpi_global_1draw/report.json",
+      "heads_sha256": "0f0f94dac477d41ad12079e4503554689b7aa5c7a4143db5626712771445e4c4",
+      "verified_evaluations": 22,
+      "actual_nec_from_weights": true,
+      "classification_from_saved_logits": true,
+      "validation_only_selection": true
+    },
+    {
+      "report": "artifacts/heads/imagenet_200_per_class/resnet18/original/seed42/lfcbm/report.json",
+      "heads_sha256": "2297d7ee1c5bd01dcbee22754f36665572fd71f63fd564fb5d21d6014819b16b",
+      "verified_evaluations": 12,
+      "actual_nec_from_weights": true,
+      "classification_from_saved_logits": true,
+      "validation_only_selection": true
+    },
+    {
+      "report": "artifacts/heads/imagenet_200_per_class/resnet18/original/seed42/lfpi_global_1draw/report.json",
+      "heads_sha256": "f0a72c106bd5cf1d79499db23758dc597ba4b2b3526a9037e8375a0a6f263a71",
+      "verified_evaluations": 12,
+      "actual_nec_from_weights": true,
+      "classification_from_saved_logits": true,
+      "validation_only_selection": true
+    },
+    {
+      "report": "artifacts/heads/places365/resnet18/original/seed42/lfcbm/report.json",
+      "heads_sha256": "70bb663ca8f9cc81a28952c4719d98f6bb2a36a8e7d3a26dfcb21ccf3a983d70",
+      "verified_evaluations": 11,
+      "actual_nec_from_weights": true,
+      "classification_from_saved_logits": true,
+      "validation_only_selection": true
+    },
+    {
+      "report": "artifacts/heads/places365/resnet18/original/seed42/lfpi_global_1draw/report.json",
+      "heads_sha256": "eed6f93454c9debbcf052b8b032d0fddf9553fac52025acbe29320b394297eb7",
+      "verified_evaluations": 11,
+      "actual_nec_from_weights": true,
+      "classification_from_saved_logits": true,
+      "validation_only_selection": true
+    },
+    {
+      "report": "artifacts/heads/waterbirds/clip_RN50/original/seed43/lfcbm/report.json",
+      "heads_sha256": "e97984e87d26a18863ea3f61e4f74806f2814df97a9c4e1b49b58297aee11e79",
+      "verified_evaluations": 26,
+      "actual_nec_from_weights": true,
+      "classification_from_saved_logits": true,
+      "validation_only_selection": true
+    },
+    {
+      "report": "artifacts/heads/waterbirds/clip_RN50/original/seed43/lfpi_global_1draw/report.json",
+      "heads_sha256": "4cfdec280fc0f810b8e8d62207a5c92ccf9057ced107c73562bc69b4b4c700d3",
+      "verified_evaluations": 26,
+      "actual_nec_from_weights": true,
+      "classification_from_saved_logits": true,
+      "validation_only_selection": true
+    },
+    {
+      "report": "artifacts/heads/waterbirds/clip_RN50/original/seed44/lfcbm/report.json",
+      "heads_sha256": "bf17843cf9f3d9c4a65f8cb656290af83ce73096955ba901dde451cd2e917c2f",
+      "verified_evaluations": 26,
+      "actual_nec_from_weights": true,
+      "classification_from_saved_logits": true,
+      "validation_only_selection": true
+    },
+    {
+      "report": "artifacts/heads/waterbirds/clip_RN50/original/seed44/lfpi_global_1draw/report.json",
+      "heads_sha256": "6ec9b091408badbad2bfe4c282763fe3938de44a1e432e7c28db3c1849ea453c",
+      "verified_evaluations": 26,
+      "actual_nec_from_weights": true,
+      "classification_from_saved_logits": true,
+      "validation_only_selection": true
+    },
+    {
+      "report": "artifacts/heads/waterbirds/clip_RN50/paired/seed43/lfcbm/report.json",
+      "heads_sha256": "49d1eb94091714cf2a7c66e2d8b6877f1f5fec6c3be327df48663baae73d73a4",
+      "verified_evaluations": 26,
+      "actual_nec_from_weights": true,
+      "classification_from_saved_logits": true,
+      "validation_only_selection": true
+    },
+    {
+      "report": "artifacts/heads/waterbirds/clip_RN50/paired/seed43/lfpi_global_1draw/report.json",
+      "heads_sha256": "5d38e98c161bbd5074b6cf2e515b95d33513e92362b359506333eb4eb298ae47",
+      "verified_evaluations": 26,
+      "actual_nec_from_weights": true,
+      "classification_from_saved_logits": true,
+      "validation_only_selection": true
+    },
+    {
+      "report": "artifacts/heads/waterbirds/clip_RN50/paired/seed44/lfcbm/report.json",
+      "heads_sha256": "f54c788f62e14fdb9fe019bf899918f8602fa38b2ea049f55b0231f276a74107",
+      "verified_evaluations": 26,
+      "actual_nec_from_weights": true,
+      "classification_from_saved_logits": true,
+      "validation_only_selection": true
+    },
+    {
+      "report": "artifacts/heads/waterbirds/clip_RN50/paired/seed44/lfpi_global_1draw/report.json",
+      "heads_sha256": "e13068fb1818a159cace0962132728e5c501b5fa36038991456585c7e974fb5c",
+      "verified_evaluations": 26,
+      "actual_nec_from_weights": true,
+      "classification_from_saved_logits": true,
+      "validation_only_selection": true
+    },
+    {
+      "report": "artifacts/heads/waterbirds/resnet18/original/seed43/lfcbm/report.json",
+      "heads_sha256": "2224739b9d8928071e6db6a1c1d601bc01b94651ed93e5de01fec90d73d45669",
+      "verified_evaluations": 24,
+      "actual_nec_from_weights": true,
+      "classification_from_saved_logits": true,
+      "validation_only_selection": true
+    },
+    {
+      "report": "artifacts/heads/waterbirds/resnet18/original/seed43/lfpi_global_1draw/report.json",
+      "heads_sha256": "3316980ebcd6789c998b9b11295e69c5e24ab08d38dea417cee872926cb3a6ad",
+      "verified_evaluations": 24,
+      "actual_nec_from_weights": true,
+      "classification_from_saved_logits": true,
+      "validation_only_selection": true
+    },
+    {
+      "report": "artifacts/heads/waterbirds/resnet18/original/seed44/lfcbm/report.json",
+      "heads_sha256": "48856dfba9f1caba8f1471e231cfeea6429ac30c0d958b2dee4e8efa3dcc3ebc",
+      "verified_evaluations": 24,
+      "actual_nec_from_weights": true,
+      "classification_from_saved_logits": true,
+      "validation_only_selection": true
+    },
+    {
+      "report": "artifacts/heads/waterbirds/resnet18/original/seed44/lfpi_global_1draw/report.json",
+      "heads_sha256": "54fee24f39e36ad4320c9ce46d06ee611969c34951aba4ea8e76e35b20b85270",
+      "verified_evaluations": 24,
+      "actual_nec_from_weights": true,
+      "classification_from_saved_logits": true,
+      "validation_only_selection": true
+    },
+    {
+      "report": "artifacts/heads/waterbirds/resnet18/paired/seed43/lfcbm/report.json",
+      "heads_sha256": "86dd8a2e840b365bf50c6ca15b5ecdbc1668f66b23a7931a94f2e5633792fe2c",
+      "verified_evaluations": 22,
+      "actual_nec_from_weights": true,
+      "classification_from_saved_logits": true,
+      "validation_only_selection": true
+    },
+    {
+      "report": "artifacts/heads/waterbirds/resnet18/paired/seed43/lfpi_global_1draw/report.json",
+      "heads_sha256": "87b1fd70a0204db5b37193a0179d1dc31b02ceadd0bedb203cf6cbb1c512ca71",
+      "verified_evaluations": 22,
+      "actual_nec_from_weights": true,
+      "classification_from_saved_logits": true,
+      "validation_only_selection": true
+    },
+    {
+      "report": "artifacts/heads/waterbirds/resnet18/paired/seed44/lfcbm/report.json",
+      "heads_sha256": "c77afdefe2621fd966cf2229e9f6f820d0ee460a37f8918e856e43ae5ae8a139",
+      "verified_evaluations": 22,
+      "actual_nec_from_weights": true,
+      "classification_from_saved_logits": true,
+      "validation_only_selection": true
+    },
+    {
+      "report": "artifacts/heads/waterbirds/resnet18/paired/seed44/lfpi_global_1draw/report.json",
+      "heads_sha256": "38ce1749faf4b70560fa166688f384fa8f34c3da7d9779740738a645756ade89",
+      "verified_evaluations": 22,
+      "actual_nec_from_weights": true,
+      "classification_from_saved_logits": true,
+      "validation_only_selection": true
+    },
+    {
+      "report": "artifacts/heads/waterbirds/resnet50/original/seed43/lfcbm/report.json",
+      "heads_sha256": "de312a5dbdc99751d9c05146b4f2221161a122f60af063616685613a7aa64063",
+      "verified_evaluations": 26,
+      "actual_nec_from_weights": true,
+      "classification_from_saved_logits": true,
+      "validation_only_selection": true
+    },
+    {
+      "report": "artifacts/heads/waterbirds/resnet50/original/seed43/lfpi_global_1draw/report.json",
+      "heads_sha256": "7ce59b08c067435a8ae1724090c5c699d97dfc8f2bf7833b286b0b37fd4a05b3",
+      "verified_evaluations": 26,
+      "actual_nec_from_weights": true,
+      "classification_from_saved_logits": true,
+      "validation_only_selection": true
+    },
+    {
+      "report": "artifacts/heads/waterbirds/resnet50/original/seed44/lfcbm/report.json",
+      "heads_sha256": "f66d39475be42f7e62327d82ddc080227037a77985241cfea04ce16f00ceccf2",
+      "verified_evaluations": 26,
+      "actual_nec_from_weights": true,
+      "classification_from_saved_logits": true,
+      "validation_only_selection": true
+    },
+    {
+      "report": "artifacts/heads/waterbirds/resnet50/original/seed44/lfpi_global_1draw/report.json",
+      "heads_sha256": "f95d30ac31cf9b5dc208dfbfc4b2b22e85334cd9f473c1b95e95df106dd412cf",
+      "verified_evaluations": 26,
+      "actual_nec_from_weights": true,
+      "classification_from_saved_logits": true,
+      "validation_only_selection": true
+    },
+    {
+      "report": "artifacts/heads/waterbirds/resnet50/paired/seed43/lfcbm/report.json",
+      "heads_sha256": "12e709037208dfb89d157158d940a491d076b0c2167cacaff3ad8066df4df2c9",
+      "verified_evaluations": 24,
+      "actual_nec_from_weights": true,
+      "classification_from_saved_logits": true,
+      "validation_only_selection": true
+    },
+    {
+      "report": "artifacts/heads/waterbirds/resnet50/paired/seed43/lfpi_global_1draw/report.json",
+      "heads_sha256": "2025dea5e5d46c5bf89547365d478883a4d1ef3c6ad16ae51afdab097c63dcdf",
+      "verified_evaluations": 24,
+      "actual_nec_from_weights": true,
+      "classification_from_saved_logits": true,
+      "validation_only_selection": true
+    },
+    {
+      "report": "artifacts/heads/waterbirds/resnet50/paired/seed44/lfcbm/report.json",
+      "heads_sha256": "e1a4db0e99d870b7a8988656caa6c27280b5aaf5a2f40661f071c2cea5c45f7b",
+      "verified_evaluations": 24,
+      "actual_nec_from_weights": true,
+      "classification_from_saved_logits": true,
+      "validation_only_selection": true
+    },
+    {
+      "report": "artifacts/heads/waterbirds/resnet50/paired/seed44/lfpi_global_1draw/report.json",
+      "heads_sha256": "91124173e648d00c25e1174d6cfc76b809f0f0fc90ea785ecd54a19e0a7ee89b",
+      "verified_evaluations": 24,
+      "actual_nec_from_weights": true,
+      "classification_from_saved_logits": true,
+      "validation_only_selection": true
+    }
+  ],
+  "heads": 53,
+  "evaluations": 1140
+}
