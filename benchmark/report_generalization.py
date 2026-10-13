@@ -7,12 +7,23 @@ import matplotlib.pyplot as plt
 from matplotlib import font_manager
 import numpy as np
 from .metrics import classification_metrics
-from .report_utils import write_metrics, backbone_cache_folder
+from .report_utils import write_metrics, backbone_cache_folder, backbone_label
 
 NAMES={'lfcbm':'LF-CBM','lfpi_global':'LF-Pi（8次采样）','lfpi_global_1draw':'LF-Pi','lfpi':'LF-Pi（8次采样）','lfpi_single':'LF-Pi','lfpi_image':'LF-Pi 图像层','lfpi_internal':'LF-Pi 内部层','pini_mean':'PiNI 均值',
        'pini_noise':'PiNI 均值＋噪声','noncbm':'非 CBM'}
 COLORS={'LF-CBM':'#2878B5','LF-Pi':'#E15759','LF-Pi（8次采样）':'#E15759','LF-Pi 图像层':'#9C755F','LF-Pi 内部层':'#76B7B2','PiNI 均值':'#59A14F',
         'PiNI 均值＋噪声':'#B07AA1','非 CBM':'#F28E2B'}
+
+
+def head_group_title(group):
+    dataset, bone, protocol, seed = group.relative_to(Path('artifacts/heads')).parts
+    dataset = {'rival10': 'RIVAL10', 'cub': 'CUB', 'waterbirds': 'CUB–Places 水鸟',
+               'cifar10': 'CIFAR-10', 'cifar100': 'CIFAR-100',
+               'imagenet_200_per_class': 'ImageNet（每类 200 张训练图）',
+               'places365': 'Places365'}.get(dataset, dataset)
+    protocol = {'original': '原图训练', 'paired': '背景增强训练',
+                'corruption_augmented': '高斯噪声增强训练'}[protocol]
+    return f'{dataset} · {backbone_label(bone)} · {protocol} · 种子 {seed.removeprefix("seed")}'
 
 
 def noncbm_reference(group, view):
@@ -104,7 +115,7 @@ def main():
         if any(controls.values()):noncbm_summary.append({'group':str(group),'references':controls})
         handles,labels=axes[0].get_legend_handles_labels()
         if handles:fig.legend(handles,labels,loc='outside lower center',ncol=min(4,len(handles)))
-        title=str(group.relative_to(Path('artifacts/heads')));fig.suptitle(title)
+        title=head_group_title(group);fig.suptitle(title.replace(' · ', '\n', 1), fontsize=12)
         file=f'nec_{index}.png';fig.savefig(out/file,dpi=170);plt.close(fig)
         fig,axes=plt.subplots(1,len(views),figsize=(5.5*len(views),4.8),layout='constrained',squeeze=False)
         for ax,view in zip(axes[0],views):
@@ -122,7 +133,7 @@ def main():
             ax.tick_params(axis='x',labelrotation=20);ax.set_ylabel('分类准确率（%）')
             ax.set_title('原图测试' if view=='original' else '高斯噪声测试' if view=='gaussian_noise_s1' else '换背景测试')
             ax.spines[['top','right']].set_visible(False)
-        fig.suptitle(title+' · 稠密分类头')
+        fig.suptitle(title.replace(' · ', '\n', 1)+'\n稠密分类头', fontsize=12)
         dense_file=f'nec_dense_{index}.png';fig.savefig(out/dense_file,dpi=170);plt.close(fig)
         lines += [f'## {title}', '', f'![NEC 曲线]({file})','',f'![充分概念连接下的分类准确率]({dense_file})','']
     shift_groups={};shift_summary=[]
@@ -144,8 +155,8 @@ def main():
             ax.set_ylabel('分类准确率（%）');ax.set_ylim(0,102);ax.spines[['top','right']].set_visible(False)
         handles,labels=axes[0,0].get_legend_handles_labels()
         if handles:fig.legend(handles,labels,loc='outside lower center',ncol=3)
-        title=str(group.relative_to(Path('artifacts/heads')))+' · 官方 CIFAR-C · 固定分类头'
-        fig.suptitle(title);name=f'nec_corruptions_{index}.png';fig.savefig(out/name,dpi=170);plt.close(fig)
+        title=head_group_title(group)+' · 官方 CIFAR-C · 固定分类头'
+        fig.suptitle(title.replace(' · ', '\n', 1), fontsize=12);name=f'nec_corruptions_{index}.png';fig.savefig(out/name,dpi=170);plt.close(fig)
         lines += [f'## {title}','',f'![扰动下 NEC 曲线]({name})','']
         for path,report in reports:
             shift_summary.append({'group':str(group),'method':NAMES[path.parents[1].name],
