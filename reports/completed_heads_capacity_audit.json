@@ -447,8 +447,32 @@
       "actual_nec_from_weights": true,
       "classification_from_saved_logits": true,
       "validation_only_selection": true
+    },
+    {
+      "report": "artifacts/heads/cifar10/resnet50/corruption_augmented/seed42/pini_noise/report.json",
+      "heads_sha256": "5ce3f2507492086282da5938f9f7a979769fa58359779adda4392c0673911e24",
+      "verified_evaluations": 28,
+      "actual_nec_from_weights": true,
+      "classification_from_saved_logits": true,
+      "validation_only_selection": true
+    },
+    {
+      "report": "artifacts/heads/cub/clip_RN50/paired/seed42/lfpi_global_1draw/report.json",
+      "heads_sha256": "915c38a12192768a3aba9f617069c427b31bff06c86cb4d6a57e5d4b94044e53",
+      "verified_evaluations": 24,
+      "actual_nec_from_weights": true,
+      "classification_from_saved_logits": true,
+      "validation_only_selection": true
+    },
+    {
+      "report": "artifacts/heads/waterbirds/clip_RN50/paired/seed42/lfcbm/report.json",
+      "heads_sha256": "6c0102743e0bd8950b76f5d768ded2c9129c0e3a14364f440836f3134e0ecbf2",
+      "verified_evaluations": 26,
+      "actual_nec_from_weights": true,
+      "classification_from_saved_logits": true,
+      "validation_only_selection": true
     }
   ],
-  "heads": 56,
-  "evaluations": 1218
+  "heads": 59,
+  "evaluations": 1296
 }
