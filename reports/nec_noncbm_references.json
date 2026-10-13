@@ -1,5 +1,50 @@
 [
   {
+    "group": "artifacts/heads/cifar10/clip_RN50/corruption_augmented/seed42",
+    "references": {
+      "original": [
+        {
+          "seed": 42,
+          "accuracy": 0.8533,
+          "source": "artifacts/noncbm/cifar10_clip_RN50_gaussian_noise_augmented/seed42/test_predictions.npz",
+          "nec": null
+        },
+        {
+          "seed": 43,
+          "accuracy": 0.8533,
+          "source": "artifacts/noncbm/cifar10_clip_RN50_gaussian_noise_augmented/seed43/test_predictions.npz",
+          "nec": null
+        },
+        {
+          "seed": 44,
+          "accuracy": 0.8528,
+          "source": "artifacts/noncbm/cifar10_clip_RN50_gaussian_noise_augmented/seed44/test_predictions.npz",
+          "nec": null
+        }
+      ],
+      "gaussian_noise_s1": [
+        {
+          "seed": 42,
+          "accuracy": 0.7673,
+          "source": "artifacts/noncbm/cifar10_clip_RN50_gaussian_noise_augmented/seed42/gaussian_noise_s1_predictions.npz",
+          "nec": null
+        },
+        {
+          "seed": 43,
+          "accuracy": 0.7661,
+          "source": "artifacts/noncbm/cifar10_clip_RN50_gaussian_noise_augmented/seed43/gaussian_noise_s1_predictions.npz",
+          "nec": null
+        },
+        {
+          "seed": 44,
+          "accuracy": 0.7684,
+          "source": "artifacts/noncbm/cifar10_clip_RN50_gaussian_noise_augmented/seed44/gaussian_noise_s1_predictions.npz",
+          "nec": null
+        }
+      ]
+    }
+  },
+  {
     "group": "artifacts/heads/cifar10/clip_RN50/original/seed42",
     "references": {
       "original": [
@@ -95,6 +140,51 @@
     }
   },
   {
+    "group": "artifacts/heads/cifar10/resnet50/corruption_augmented/seed42",
+    "references": {
+      "original": [
+        {
+          "seed": 42,
+          "accuracy": 0.9142,
+          "source": "artifacts/noncbm/cifar10_rn50_imagenet_gaussian_noise_augmented/seed42/test_predictions.npz",
+          "nec": null
+        },
+        {
+          "seed": 43,
+          "accuracy": 0.9145,
+          "source": "artifacts/noncbm/cifar10_rn50_imagenet_gaussian_noise_augmented/seed43/test_predictions.npz",
+          "nec": null
+        },
+        {
+          "seed": 44,
+          "accuracy": 0.9136,
+          "source": "artifacts/noncbm/cifar10_rn50_imagenet_gaussian_noise_augmented/seed44/test_predictions.npz",
+          "nec": null
+        }
+      ],
+      "gaussian_noise_s1": [
+        {
+          "seed": 42,
+          "accuracy": 0.8396,
+          "source": "artifacts/noncbm/cifar10_rn50_imagenet_gaussian_noise_augmented/seed42/gaussian_noise_s1_predictions.npz",
+          "nec": null
+        },
+        {
+          "seed": 43,
+          "accuracy": 0.8373,
+          "source": "artifacts/noncbm/cifar10_rn50_imagenet_gaussian_noise_augmented/seed43/gaussian_noise_s1_predictions.npz",
+          "nec": null
+        },
+        {
+          "seed": 44,
+          "accuracy": 0.8369,
+          "source": "artifacts/noncbm/cifar10_rn50_imagenet_gaussian_noise_augmented/seed44/gaussian_noise_s1_predictions.npz",
+          "nec": null
+        }
+      ]
+    }
+  },
+  {
     "group": "artifacts/heads/cifar10/resnet50/original/seed42",
     "references": {
       "original": [
@@ -164,6 +254,26 @@
           "seed": 44,
           "accuracy": 0.688,
           "source": "artifacts/noncbm/cifar100_rn18_imagenet_gaussian_noise_augmented/seed44/test_predictions.npz",
+          "nec": null
+        }
+      ],
+      "gaussian_noise_s1": [
+        {
+          "seed": 42,
+          "accuracy": 0.533,
+          "source": "artifacts/noncbm/cifar100_rn18_imagenet_gaussian_noise_augmented/seed42/gaussian_noise_s1_predictions.npz",
+          "nec": null
+        },
+        {
+          "seed": 43,
+          "accuracy": 0.5332,
+          "source": "artifacts/noncbm/cifar100_rn18_imagenet_gaussian_noise_augmented/seed43/gaussian_noise_s1_predictions.npz",
+          "nec": null
+        },
+        {
+          "seed": 44,
+          "accuracy": 0.5348,
+          "source": "artifacts/noncbm/cifar100_rn18_imagenet_gaussian_noise_augmented/seed44/gaussian_noise_s1_predictions.npz",
           "nec": null
         }
       ]
@@ -259,6 +369,51 @@
           "seed": 44,
           "accuracy": 0.3301691404901622,
           "source": "artifacts/noncbm/cub_clip_RN50/seed44/changed_predictions.npz",
+          "nec": null
+        }
+      ]
+    }
+  },
+  {
+    "group": "artifacts/heads/cub/clip_RN50/paired/seed42",
+    "references": {
+      "original": [
+        {
+          "seed": 42,
+          "accuracy": 0.707801173627891,
+          "source": "artifacts/noncbm/cub_clip_RN50_paired/seed42/test_predictions.npz",
+          "nec": null
+        },
+        {
+          "seed": 43,
+          "accuracy": 0.7129789437348981,
+          "source": "artifacts/noncbm/cub_clip_RN50_paired/seed43/test_predictions.npz",
+          "nec": null
+        },
+        {
+          "seed": 44,
+          "accuracy": 0.7105626510182947,
+          "source": "artifacts/noncbm/cub_clip_RN50_paired/seed44/test_predictions.npz",
+          "nec": null
+        }
+      ],
+      "changed": [
+        {
+          "seed": 42,
+          "accuracy": 0.5215740421125302,
+          "source": "artifacts/noncbm/cub_clip_RN50_paired/seed42/changed_predictions.npz",
+          "nec": null
+        },
+        {
+          "seed": 43,
+          "accuracy": 0.5203658957542285,
+          "source": "artifacts/noncbm/cub_clip_RN50_paired/seed43/changed_predictions.npz",
+          "nec": null
+        },
+        {
+          "seed": 44,
+          "accuracy": 0.5195029340697273,
+          "source": "artifacts/noncbm/cub_clip_RN50_paired/seed44/changed_predictions.npz",
           "nec": null
         }
       ]

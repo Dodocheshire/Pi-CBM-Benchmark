@@ -1,0 +1,115 @@
+{
+  "records": [
+    {
+      "directory": "artifacts/heads/cifar10/resnet18/corruption_augmented/seed42/lfcbm",
+      "heads_sha256": "4a5347a62f502f9f93476ce0f83ab58dddbdafaa70c38822a8c31c5817df57ec",
+      "refitting": false,
+      "original_predictions_reconstructed": true,
+      "added_evaluations": 14,
+      "test_views": [
+        "original",
+        "gaussian_noise_s1"
+      ],
+      "inference_extension": {
+        "heads_sha256": "4a5347a62f502f9f93476ce0f83ab58dddbdafaa70c38822a8c31c5817df57ec",
+        "refitting": false,
+        "original_report_sha256": "3f18f7304c7f672af7ac000ef37542f2a68ffbee048663ceac038c8296416fda",
+        "source_exports": {
+          "original": {
+            "path": "/home/pengcheng/Pi-CBM-Benchmark/artifacts/matched/lf/cifar10/rn18_imagenet/gaussian_noise_augmented/seed42/lfcbm_test_original.npz",
+            "sha256": "918d25f04712bf53f6d17a52c0fb2bc8c58b267ae3c6d4f9a9ff17980602520a"
+          },
+          "gaussian_noise_s1": {
+            "path": "/home/pengcheng/Pi-CBM-Benchmark/artifacts/matched/lf/cifar10/rn18_imagenet/gaussian_noise_augmented/seed42/lfcbm_test_gaussian_noise_s1.npz",
+            "sha256": "10727d9586704eaf6eba3fb1aea36f617b7dfdbb1dc19b1db3cb6c8abfabab0f"
+          }
+        },
+        "producer_sha256": "6b2732307117ad5c485f73a0d1299a22ad5ad7695bd396fbbf764d25e9e7ffe4"
+      }
+    },
+    {
+      "directory": "artifacts/heads/cifar10/resnet18/corruption_augmented/seed42/lfpi_global_1draw",
+      "heads_sha256": "9ddbc3e20ca3b53cecaf757066cf3015f193766c89f0bf096da243d985500834",
+      "refitting": false,
+      "original_predictions_reconstructed": true,
+      "added_evaluations": 14,
+      "test_views": [
+        "original",
+        "gaussian_noise_s1"
+      ],
+      "inference_extension": {
+        "heads_sha256": "9ddbc3e20ca3b53cecaf757066cf3015f193766c89f0bf096da243d985500834",
+        "refitting": false,
+        "original_report_sha256": "082c9db53900ef3dc5b89934ba4e598cad612e7cfd7cfceaa7be74578a65f13f",
+        "source_exports": {
+          "original": {
+            "path": "/home/pengcheng/Pi-CBM-Benchmark/artifacts/matched/lf/cifar10/rn18_imagenet/gaussian_noise_augmented/seed42/single_draw/lfpi_global_test_original.npz",
+            "sha256": "3294eac97c4efc6572aaae6f7f41ce377a55b1a17921be979a16bebb84dc762e"
+          },
+          "gaussian_noise_s1": {
+            "path": "/home/pengcheng/Pi-CBM-Benchmark/artifacts/matched/lf/cifar10/rn18_imagenet/gaussian_noise_augmented/seed42/single_draw/lfpi_global_test_gaussian_noise_s1.npz",
+            "sha256": "fdef12925427904604a42911326766bdf74d6a52a1a2235de7c659edefd7047a"
+          }
+        },
+        "producer_sha256": "6b2732307117ad5c485f73a0d1299a22ad5ad7695bd396fbbf764d25e9e7ffe4"
+      }
+    },
+    {
+      "directory": "artifacts/heads/cifar100/resnet18/corruption_augmented/seed42/lfcbm",
+      "heads_sha256": "e783de43159832e2991a40dd72de3cd1d5574ac93a595e28fe7281bb46d908b7",
+      "refitting": false,
+      "original_predictions_reconstructed": true,
+      "added_evaluations": 13,
+      "test_views": [
+        "original",
+        "gaussian_noise_s1"
+      ],
+      "inference_extension": {
+        "heads_sha256": "e783de43159832e2991a40dd72de3cd1d5574ac93a595e28fe7281bb46d908b7",
+        "refitting": false,
+        "original_report_sha256": "814d47e05e87f7d1d77da4ca9d2cd65ae63af09e8fc5a0b6e2af637333cc1df9",
+        "source_exports": {
+          "original": {
+            "path": "/home/pengcheng/Pi-CBM-Benchmark/artifacts/matched/lf/cifar100/rn18_imagenet/gaussian_noise_augmented/seed42/lfcbm_test_original.npz",
+            "sha256": "73de8ce5ebb07eed00b2c023feee406f247b79ec2a04e82c39c80527445c03fb"
+          },
+          "gaussian_noise_s1": {
+            "path": "/home/pengcheng/Pi-CBM-Benchmark/artifacts/matched/lf/cifar100/rn18_imagenet/gaussian_noise_augmented/seed42/lfcbm_test_gaussian_noise_s1.npz",
+            "sha256": "307a8a398ffb7b16fb2f4e0ac8005b259c6a3110d28a80583978eaf15b494834"
+          }
+        },
+        "producer_sha256": "6b2732307117ad5c485f73a0d1299a22ad5ad7695bd396fbbf764d25e9e7ffe4"
+      }
+    },
+    {
+      "directory": "artifacts/heads/cifar100/resnet18/corruption_augmented/seed42/lfpi_global_1draw",
+      "heads_sha256": "da0bb115b6ae88ab1dde4aa282492f47484a6d00defa04041a8956b397df6ded",
+      "refitting": false,
+      "original_predictions_reconstructed": true,
+      "added_evaluations": 13,
+      "test_views": [
+        "original",
+        "gaussian_noise_s1"
+      ],
+      "inference_extension": {
+        "heads_sha256": "da0bb115b6ae88ab1dde4aa282492f47484a6d00defa04041a8956b397df6ded",
+        "refitting": false,
+        "original_report_sha256": "df29e98e2bbdbddb021e39d321c62795d143d96173305f34b14521491d4e3c78",
+        "source_exports": {
+          "original": {
+            "path": "/home/pengcheng/Pi-CBM-Benchmark/artifacts/matched/lf/cifar100/rn18_imagenet/gaussian_noise_augmented/seed42/single_draw/lfpi_global_test_original.npz",
+            "sha256": "1845bafff29fbbbd9af49a925c1bbb62607dea3ed8d6af3bee20a556ca488f71"
+          },
+          "gaussian_noise_s1": {
+            "path": "/home/pengcheng/Pi-CBM-Benchmark/artifacts/matched/lf/cifar100/rn18_imagenet/gaussian_noise_augmented/seed42/single_draw/lfpi_global_test_gaussian_noise_s1.npz",
+            "sha256": "d3559a0ce0cea1eb5dd3b957b633d48ee605b2cd2be9fa629a6da1f1b14e0cbf"
+          }
+        },
+        "producer_sha256": "6b2732307117ad5c485f73a0d1299a22ad5ad7695bd396fbbf764d25e9e7ffe4"
+      }
+    }
+  ],
+  "refitting": false,
+  "inference_only": true,
+  "added_head_view_evaluations": 54
+}

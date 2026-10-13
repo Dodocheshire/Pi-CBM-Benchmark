@@ -32,6 +32,7 @@ NEC 网格根据数据集与概念库规模设置，同时保留 NEC=5 和 5–3
 | RIVAL10、CUB、CUB–Places Waterbirds | ImageNet ResNet18、ResNet50、CLIP RN50 | LF-CBM／LF-Pi 原图与背景增强训练，PiNI 均值／均值加噪，非 CBM 对照 |
 | CIFAR-10、CIFAR-100 | ImageNet ResNet18、ResNet50、CLIP RN50 | LF-CBM／LF-Pi 原图与高斯噪声增强训练；非 CBM 对照；官方 CIFAR-C 四类扰动、12 个设置 |
 | CIFAR-10 | ImageNet ResNet18、ResNet50 | PiNI 均值／均值加噪；官方 CIFAR-C 四类扰动、12 个设置 |
+| CIFAR-10 | CLIP RN50 | PiNI 均值／均值加噪；原图与高斯噪声测试 |
 | CIFAR-100 | ImageNet ResNet18 | PiNI 均值／均值加噪；官方 CIFAR-C 四类扰动、12 个设置 |
 | ImageNet 每类 200 张训练图、Places365 | ImageNet ResNet18 | LF-CBM／LF-Pi、非 CBM、稀疏与稠密分类头 |
 
@@ -41,7 +42,7 @@ NEC 网格根据数据集与概念库规模设置，同时保留 NEC=5 和 5–3
 
 RIVAL10 的 LF-Pi 图像层、内部层、全局特征层比较已完成。图像层与内部层各包含原图训练和背景增强训练，结果见 [注入位置比较](reports/LF_SITE_RESULT.md)。
 
-本轮继续补齐 CIFAR-10 的 CLIP RN50 PiNI 对照与剩余共同分类头。报告只纳入完成并通过核验的结果；逐组状态以 `artifacts/` 中的结果、权重和预测文件为准。
+本轮继续补齐剩余共同分类头及其扰动测试。
 
 ## 运行入口
 
@@ -55,7 +56,7 @@ RIVAL10 的 LF-Pi 图像层、内部层、全局特征层比较已完成。图�
 
 ## 本机输入准备
 
-安装根目录及所用子模块的依赖后，在仓库根目录执行上述入口。当前数据与模型位置：
+本轮使用 Python 3.11.15。安装根目录及所用子模块的依赖后，在仓库根目录执行上述入口。当前数据与模型位置：
 
 - CIFAR、ImageNet、Places 数据：`/home/pengcheng/VLG-CBM/datasets`。
 - PiNI 原始图像、划分和区域缓存：`/home/pengcheng/Pi-CBM/PiNI/artifacts`，由 `benchmark/pini_matched.py` 的 `SOURCE` 指定。
