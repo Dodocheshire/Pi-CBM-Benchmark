@@ -1,0 +1,416 @@
+{
+  "created_utc": "2026-10-13T08:04:04.884507+00:00",
+  "scope": "Four completed wide-backbone CIFAR Gaussian-augmented LF conditions and twelve non-CBM classifier fits.",
+  "included_completed_conditions": 4,
+  "missing_not_included": [],
+  "all_four_completed": true,
+  "rows": [
+    {
+      "dataset": "cifar10",
+      "backbone": "resnet50",
+      "feature_dim": 2048,
+      "backbone_state_sha256": "d7d14ee7c34f78ae386d2f395be284d10cb9067fb657f34a374677e1a29fc355",
+      "pixel_protocol": "canonical q0 native32 uint8/255, bicubic antialias224 align_corners=False, clamp, official backbone mean/std; no recrop/intensity255 roundtrip",
+      "augmentation": "Gaussian sigma .04 native32; RandomState(42+globalrow), full60000rows; teacher rawcosine at same globalIDs",
+      "cache_encoding_batch": 128,
+      "split_subjects": {
+        "train": 45000,
+        "val": 5000,
+        "test": 10000
+      },
+      "ids_labels_teacher_native_fields_exact": true,
+      "split_ID_index_digest_source": "source NPZ/fileSHA bound by private fullparity audit; IDlists intentionally omitted",
+      "candidate_concepts": 143,
+      "retained_concepts": 128,
+      "native_concept_annotations": false,
+      "known_pairs": 0,
+      "LF": {
+        "output": "artifacts/matched/lf/cifar10/rn50_imagenet/gaussian_noise_augmented/seed42",
+        "checkpoint_sha256": "56bc61d5fc7cc317de2d0b981d635666c0c3e1db892981c51d890155b76c9e6f",
+        "training_seed": 42,
+        "training_device": "cpu",
+        "epochs": 20,
+        "training_batch": 256,
+        "projection_steps_limit": 1000,
+        "classifier_steps_limit": 1000,
+        "original_earlystop_preserved": true,
+        "activation_cutoff": 0.25,
+        "interpretability_cutoff": 0.45,
+        "train_views": [
+          "original",
+          "gaussian_noise_s1"
+        ],
+        "val_views": [
+          "original",
+          "gaussian_noise_s1"
+        ],
+        "train_images": 90000,
+        "val_images": 10000,
+        "test_selection": false,
+        "inference_draws": 1,
+        "inference_seed": 3000,
+        "clean_and_augmented_exports": 12,
+        "official_C_settings": 12,
+        "official_C_method_metrics": 24,
+        "official_C_prediction_exports": 24,
+        "official_C_rows_per_setting": 10000,
+        "fixed_checkpoint_no_shift_refit": true,
+        "concept_output_dimension": 128,
+        "source_original_and_Gaussian_export_parity_verified": true,
+        "CIFAR10_existing_audit_reused_without_metric_recomputation": true
+      },
+      "nonCBM": [
+        {
+          "seed": 42,
+          "weights_sha256": "cc0e8a2bd8958f6f0586a0cc7ebe0a62972f541ca114a01fa8b16276cf935863",
+          "output": "artifacts/noncbm/cifar10_rn50_imagenet_gaussian_noise_augmented/seed42",
+          "train_images": 90000,
+          "val_images": 10000,
+          "test_images": 10000,
+          "official_C_settings": 12,
+          "official_C_prediction_files": 12,
+          "selection": "validation NLL, original four LR/weightdecay configurations",
+          "frozen_head_no_shift_refit": true
+        },
+        {
+          "seed": 43,
+          "weights_sha256": "07322e6c82cde289647d01add577ee197890ca7945ab849dbf1c63bd322a08be",
+          "output": "artifacts/noncbm/cifar10_rn50_imagenet_gaussian_noise_augmented/seed43",
+          "train_images": 90000,
+          "val_images": 10000,
+          "test_images": 10000,
+          "official_C_settings": 12,
+          "official_C_prediction_files": 12,
+          "selection": "validation NLL, original four LR/weightdecay configurations",
+          "frozen_head_no_shift_refit": true
+        },
+        {
+          "seed": 44,
+          "weights_sha256": "110ba41aa0820c3fe303d6671c6a21311fc0252b3438cfa20234d20d134384dc",
+          "output": "artifacts/noncbm/cifar10_rn50_imagenet_gaussian_noise_augmented/seed44",
+          "train_images": 90000,
+          "val_images": 10000,
+          "test_images": 10000,
+          "official_C_settings": 12,
+          "official_C_prediction_files": 12,
+          "selection": "validation NLL, original four LR/weightdecay configurations",
+          "frozen_head_no_shift_refit": true
+        }
+      ]
+    },
+    {
+      "dataset": "cifar10",
+      "backbone": "clip_RN50",
+      "feature_dim": 1024,
+      "backbone_state_sha256": "35abc9c6f5ea5080708d06a4e3965144a73dde3b7a25b5ee790e4023f160f57e",
+      "pixel_protocol": "canonical q0 native32 uint8/255, bicubic antialias224 align_corners=False, clamp, official backbone mean/std; no recrop/intensity255 roundtrip",
+      "augmentation": "Gaussian sigma .04 native32; RandomState(42+globalrow), full60000rows; teacher rawcosine at same globalIDs",
+      "cache_encoding_batch": 128,
+      "split_subjects": {
+        "train": 45000,
+        "val": 5000,
+        "test": 10000
+      },
+      "ids_labels_teacher_native_fields_exact": true,
+      "split_ID_index_digest_source": "source NPZ/fileSHA bound by private fullparity audit; IDlists intentionally omitted",
+      "candidate_concepts": 143,
+      "retained_concepts": 128,
+      "native_concept_annotations": false,
+      "known_pairs": 0,
+      "LF": {
+        "output": "artifacts/matched/lf/cifar10/clip_RN50/gaussian_noise_augmented/seed42",
+        "checkpoint_sha256": "c40585ba4607cc2adbf5d99a828e15795dae0931d4ad94e599f81a1b501762bb",
+        "training_seed": 42,
+        "training_device": "cpu",
+        "epochs": 20,
+        "training_batch": 256,
+        "projection_steps_limit": 1000,
+        "classifier_steps_limit": 1000,
+        "original_earlystop_preserved": true,
+        "activation_cutoff": 0.25,
+        "interpretability_cutoff": 0.45,
+        "train_views": [
+          "original",
+          "gaussian_noise_s1"
+        ],
+        "val_views": [
+          "original",
+          "gaussian_noise_s1"
+        ],
+        "train_images": 90000,
+        "val_images": 10000,
+        "test_selection": false,
+        "inference_draws": 1,
+        "inference_seed": 3000,
+        "clean_and_augmented_exports": 12,
+        "official_C_settings": 12,
+        "official_C_method_metrics": 24,
+        "official_C_prediction_exports": 24,
+        "official_C_rows_per_setting": 10000,
+        "fixed_checkpoint_no_shift_refit": true,
+        "concept_output_dimension": 128,
+        "source_original_and_Gaussian_export_parity_verified": true,
+        "CIFAR10_existing_audit_reused_without_metric_recomputation": true
+      },
+      "nonCBM": [
+        {
+          "seed": 42,
+          "weights_sha256": "d77236e051b7182d12c1fc292507e1f59e9487180806d3e6615b86304be04586",
+          "output": "artifacts/noncbm/cifar10_clip_RN50_gaussian_noise_augmented/seed42",
+          "train_images": 90000,
+          "val_images": 10000,
+          "test_images": 10000,
+          "official_C_settings": 12,
+          "official_C_prediction_files": 12,
+          "selection": "validation NLL, original four LR/weightdecay configurations",
+          "frozen_head_no_shift_refit": true
+        },
+        {
+          "seed": 43,
+          "weights_sha256": "a28f957d338119308c08bbf26da665400725c5429c90de2540067c5243e59744",
+          "output": "artifacts/noncbm/cifar10_clip_RN50_gaussian_noise_augmented/seed43",
+          "train_images": 90000,
+          "val_images": 10000,
+          "test_images": 10000,
+          "official_C_settings": 12,
+          "official_C_prediction_files": 12,
+          "selection": "validation NLL, original four LR/weightdecay configurations",
+          "frozen_head_no_shift_refit": true
+        },
+        {
+          "seed": 44,
+          "weights_sha256": "3f01067900025d83be62e39b9dbd0d7bb8f7f48ff8c04173388773baff52feab",
+          "output": "artifacts/noncbm/cifar10_clip_RN50_gaussian_noise_augmented/seed44",
+          "train_images": 90000,
+          "val_images": 10000,
+          "test_images": 10000,
+          "official_C_settings": 12,
+          "official_C_prediction_files": 12,
+          "selection": "validation NLL, original four LR/weightdecay configurations",
+          "frozen_head_no_shift_refit": true
+        }
+      ]
+    },
+    {
+      "dataset": "cifar100",
+      "backbone": "resnet50",
+      "feature_dim": 2048,
+      "backbone_state_sha256": "d7d14ee7c34f78ae386d2f395be284d10cb9067fb657f34a374677e1a29fc355",
+      "pixel_protocol": "canonical q0 native32 uint8/255, bicubic antialias224 align_corners=False, clamp, official backbone mean/std; no recrop/intensity255 roundtrip",
+      "augmentation": "Gaussian sigma .04 native32; RandomState(42+globalrow), full60000rows; teacher rawcosine at same globalIDs",
+      "cache_encoding_batch": 128,
+      "split_subjects": {
+        "train": 45000,
+        "val": 5000,
+        "test": 10000
+      },
+      "ids_labels_teacher_native_fields_exact": true,
+      "split_ID_index_digest_source": "source NPZ/fileSHA bound by private fullparity audit; IDlists intentionally omitted",
+      "candidate_concepts": 892,
+      "retained_concepts": 820,
+      "native_concept_annotations": false,
+      "known_pairs": 0,
+      "LF": {
+        "output": "artifacts/matched/lf/cifar100/rn50_imagenet/gaussian_noise_augmented/seed42",
+        "checkpoint_sha256": "26e70516f9dd58ca3f0a2fea58c2c17afc631cfe65242cdbf110bdeb0288f0a5",
+        "training_seed": 42,
+        "training_device": "cuda",
+        "epochs": 20,
+        "training_batch": 256,
+        "projection_steps_limit": 1000,
+        "classifier_steps_limit": 1000,
+        "original_earlystop_preserved": true,
+        "activation_cutoff": 0.25,
+        "interpretability_cutoff": 0.45,
+        "train_views": [
+          "original",
+          "gaussian_noise_s1"
+        ],
+        "val_views": [
+          "original",
+          "gaussian_noise_s1"
+        ],
+        "train_images": 90000,
+        "val_images": 10000,
+        "test_selection": false,
+        "inference_draws": 1,
+        "inference_seed": 3000,
+        "clean_and_augmented_exports": 12,
+        "official_C_settings": 12,
+        "official_C_method_metrics": 24,
+        "official_C_prediction_exports": 24,
+        "official_C_rows_per_setting": 10000,
+        "fixed_checkpoint_no_shift_refit": true,
+        "concept_output_dimension": 820,
+        "source_original_and_Gaussian_export_parity_verified": true,
+        "CIFAR10_existing_audit_reused_without_metric_recomputation": false
+      },
+      "nonCBM": [
+        {
+          "seed": 42,
+          "weights_sha256": "4d298181a3ba6ac0cf7633141dfeb842ebc0dccd3dd4bc4b94e2c689a277c738",
+          "output": "artifacts/noncbm/cifar100_rn50_imagenet_gaussian_noise_augmented/seed42",
+          "train_images": 90000,
+          "val_images": 10000,
+          "test_images": 10000,
+          "official_C_settings": 12,
+          "official_C_prediction_files": 12,
+          "selection": "validation NLL, original four LR/weightdecay configurations",
+          "frozen_head_no_shift_refit": true
+        },
+        {
+          "seed": 43,
+          "weights_sha256": "43e7dbeaaae388bb59d1afdfa9bfed5965d123285be64b23e67acc942041c94a",
+          "output": "artifacts/noncbm/cifar100_rn50_imagenet_gaussian_noise_augmented/seed43",
+          "train_images": 90000,
+          "val_images": 10000,
+          "test_images": 10000,
+          "official_C_settings": 12,
+          "official_C_prediction_files": 12,
+          "selection": "validation NLL, original four LR/weightdecay configurations",
+          "frozen_head_no_shift_refit": true
+        },
+        {
+          "seed": 44,
+          "weights_sha256": "467d1eb0eccff72c31296b26989bedeac143d69a62c314f34873b746a87ccf09",
+          "output": "artifacts/noncbm/cifar100_rn50_imagenet_gaussian_noise_augmented/seed44",
+          "train_images": 90000,
+          "val_images": 10000,
+          "test_images": 10000,
+          "official_C_settings": 12,
+          "official_C_prediction_files": 12,
+          "selection": "validation NLL, original four LR/weightdecay configurations",
+          "frozen_head_no_shift_refit": true
+        }
+      ]
+    },
+    {
+      "dataset": "cifar100",
+      "backbone": "clip_RN50",
+      "feature_dim": 1024,
+      "backbone_state_sha256": "35abc9c6f5ea5080708d06a4e3965144a73dde3b7a25b5ee790e4023f160f57e",
+      "pixel_protocol": "canonical q0 native32 uint8/255, bicubic antialias224 align_corners=False, clamp, official backbone mean/std; no recrop/intensity255 roundtrip",
+      "augmentation": "Gaussian sigma .04 native32; RandomState(42+globalrow), full60000rows; teacher rawcosine at same globalIDs",
+      "cache_encoding_batch": 128,
+      "split_subjects": {
+        "train": 45000,
+        "val": 5000,
+        "test": 10000
+      },
+      "ids_labels_teacher_native_fields_exact": true,
+      "split_ID_index_digest_source": "source NPZ/fileSHA bound by private fullparity audit; IDlists intentionally omitted",
+      "candidate_concepts": 892,
+      "retained_concepts": 807,
+      "native_concept_annotations": false,
+      "known_pairs": 0,
+      "LF": {
+        "output": "artifacts/matched/lf/cifar100/clip_RN50/gaussian_noise_augmented/seed42",
+        "checkpoint_sha256": "a964d839cd93b073d48afa7b0a8c5946d6ec12acbba9557116a6855fafcf6f88",
+        "training_seed": 42,
+        "training_device": "cuda",
+        "epochs": 20,
+        "training_batch": 256,
+        "projection_steps_limit": 1000,
+        "classifier_steps_limit": 1000,
+        "original_earlystop_preserved": true,
+        "activation_cutoff": 0.25,
+        "interpretability_cutoff": 0.45,
+        "train_views": [
+          "original",
+          "gaussian_noise_s1"
+        ],
+        "val_views": [
+          "original",
+          "gaussian_noise_s1"
+        ],
+        "train_images": 90000,
+        "val_images": 10000,
+        "test_selection": false,
+        "inference_draws": 1,
+        "inference_seed": 3000,
+        "clean_and_augmented_exports": 12,
+        "official_C_settings": 12,
+        "official_C_method_metrics": 24,
+        "official_C_prediction_exports": 24,
+        "official_C_rows_per_setting": 10000,
+        "fixed_checkpoint_no_shift_refit": true,
+        "concept_output_dimension": 807,
+        "source_original_and_Gaussian_export_parity_verified": true,
+        "CIFAR10_existing_audit_reused_without_metric_recomputation": false
+      },
+      "nonCBM": [
+        {
+          "seed": 42,
+          "weights_sha256": "681dbe1c0e98ffedfff8d19a3bf34811477eb9183e55cbaa879e19ab231c47b0",
+          "output": "artifacts/noncbm/cifar100_clip_RN50_gaussian_noise_augmented/seed42",
+          "train_images": 90000,
+          "val_images": 10000,
+          "test_images": 10000,
+          "official_C_settings": 12,
+          "official_C_prediction_files": 12,
+          "selection": "validation NLL, original four LR/weightdecay configurations",
+          "frozen_head_no_shift_refit": true
+        },
+        {
+          "seed": 43,
+          "weights_sha256": "c0824fffb4a2bd7b75094c83d43e2c457c6dcbac062339d53ee33ad1dfee947e",
+          "output": "artifacts/noncbm/cifar100_clip_RN50_gaussian_noise_augmented/seed43",
+          "train_images": 90000,
+          "val_images": 10000,
+          "test_images": 10000,
+          "official_C_settings": 12,
+          "official_C_prediction_files": 12,
+          "selection": "validation NLL, original four LR/weightdecay configurations",
+          "frozen_head_no_shift_refit": true
+        },
+        {
+          "seed": 44,
+          "weights_sha256": "dd8ffddbc0a83cea88be64f888258a39c8bfb29fc87427d89696e14d0fd02abe",
+          "output": "artifacts/noncbm/cifar100_clip_RN50_gaussian_noise_augmented/seed44",
+          "train_images": 90000,
+          "val_images": 10000,
+          "test_images": 10000,
+          "official_C_settings": 12,
+          "official_C_prediction_files": 12,
+          "selection": "validation NLL, original four LR/weightdecay configurations",
+          "frozen_head_no_shift_refit": true
+        }
+      ]
+    }
+  ],
+  "proof_sources": {
+    "full_cache_parity": {
+      "path": "artifacts/audit/cifar_wide_aug_ready_verified.json",
+      "sha256": "7c9ff8db4b0d26d504208000bd274ccdc5df66138d99286f01b12cd2c5afc74e"
+    },
+    "CIFAR10_initial_full_model_audit": {
+      "path": "artifacts/audit/cifar_wide_aug_priority_handoff/prior_queue.json",
+      "sha256": "77c17fd7667eea47e9d1d5604028098968e5cc5cac1380f0689be29a5f7f9305"
+    },
+    "CIFAR100_cuda_fit_terminal": {
+      "path": "artifacts/audit/cifar100_wide_cuda_fit_queue.json",
+      "sha256": "444e234e844fded389e0d5560d8c7d8a0db319736c74f4ef4923c2f8ad27b34a"
+    },
+    "fixed_shift_and_noncbm_actual_output_audit": {
+      "path": "artifacts/audit/cifar_wide_aug_high_priority_verified.json",
+      "sha256": "637269dbc749c6116b9de1098cb1237e43710157381f23b7bdc4b4662f51d9e4",
+      "immutable_completed_snapshot": true
+    },
+    "CPU_attempt_device_change": {
+      "path": "artifacts/audit/cifar100_wide_cpu_to_cuda_transition.json",
+      "sha256": "556ec97ad9a30a0b98537d4a23a48c541b1afc9e602afeef8ece52aa31ade7b9"
+    }
+  },
+  "classification_and_teacher_metrics_recomputed": false,
+  "new_wide_common_NEC_heads_status": "Separatelowerpriority queue; not assumed complete bythisaudit",
+  "immutable_core_pins": {
+    "LF-Pi": {
+      "commit": "ba0e8421ac153c65e6db61fdd5d339e8a2a8161d",
+      "git_clean": true
+    },
+    "PiNI": {
+      "commit": "eb2e4363ed30e4f5a6456ea781288c10cd4cbfcd",
+      "git_clean": true
+    }
+  }
+}
